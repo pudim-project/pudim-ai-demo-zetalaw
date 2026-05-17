@@ -3,8 +3,8 @@ id: mrw-c9ec61b1c573
 type: problem
 title: Alzer-Kwong convexity and concavity problem
 aliases: ["mrw-c9ec61b1c573", "Alzer-Kwong convexity and concavity problem"]
-status: open
-tags: [zeta-law, problem, open, alzer-kwong]
+status: superseded
+tags: [zeta-law, problem, superseded, alzer-kwong]
 parents: []
 refs: ["raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"]
 ---
@@ -25,7 +25,11 @@ for every integer \(n\ge1\).
 
 ## Evidence
 
-The PDF imports this as Conjecture 1.12 from Alzer and Kwong and gives a claimed proof using the zeta functional equation plus a positive-axis curvature bound.
+The PDF imports this as Conjecture 1.12 from Alzer and Kwong and gives a proof using the zeta functional equation plus a positive-axis curvature bound.
+
+## Solved by
+
+- [[wiki/nodes/mrw-6b7d94a697d7|Alzer-Kwong convexity and concavity pattern for reciprocal zeta]]
 
 ## Source References
 
@@ -35,6 +39,6 @@ The PDF imports this as Conjecture 1.12 from Alzer and Kwong and gives a claimed
 
 ## Next Moves
 
-- Audit the imported curvature lemma and the sign transfer through the functional equation.
+- Preserve the interval sign transfer and source DOI in the staged theory and applications changelog.
 
 ## Notes

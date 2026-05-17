@@ -18,7 +18,7 @@ Open this directory itself as an Obsidian vault. Start from `Home.md`, then insp
 
 - total nodes: 17
 - by type: corollary: 1, definition: 4, lemma: 1, note: 2, problem: 3, proposition: 2, theorem: 4
-- by status: open: 3, partial: 8, proved: 6
+- by status: partial: 1, proved: 13, superseded: 3
 
 ## Notation Highlights
 
@@ -30,13 +30,13 @@ This table is an ingestion aid, not a substitute for the LaTeX definitions. Open
 | \(E(n)\) | Definition: Riemann zeta probability law |
 | \(Z(\beta)\) | Definition: Riemann zeta probability law |
 | \(A(\beta)\) | Definition: Zeta free energy |
-| \(A'(\beta)\) | Proposition: Free-energy derivatives |
-| \(A''(\beta)\) | Proposition: Free-energy derivatives |
-| \(\mu_{q,\beta}(a)\) | Definition: Residue distribution |
-| \(B_q(\beta)\) | Definition: Successor entropy |
-| \(\Sigma(\beta)\) | Problem: Successor entropy resolution |
-| \(S_a(p,\beta)\) | Problem: Prime-modulus Dirichlet \(L\)-resolution |
-| \(\mu_{p,\beta}(a)\) | Problem: Prime-modulus Dirichlet \(L\)-resolution |
-| \(\mu_{p,\beta}(0)\) | Problem: Prime-modulus Dirichlet \(L\)-resolution |
+| \(D(\rho_\alpha\Vert\rho_\beta)\) | Proposition: Zeta-law calculus |
+| \(\mu_{q,\beta}(a)\) | Definition: Modular residue distribution and successor entropy |
+| \(B_q(\beta)\) | Definition: Modular residue distribution and successor entropy |
+| \(\Sigma(\beta)\) | Theorem: Zeta-law successor entropy and modular resolution |
+| \(S_a(p,\beta)\) | Corollary: Prime-modulus Dirichlet L-resolution |
+| \(\mu_{p,\beta}(a)\) | Corollary: Prime-modulus Dirichlet L-resolution |
+| \(\mu_{p,\beta}(0)\) | Corollary: Prime-modulus Dirichlet L-resolution |
 | \(\mu_{d,\beta}(0)\) | Theorem: Euler-score decomposition |
 | \(M(s)\) | Definition: Mellin-Planck partition function |
+| \(\zeta(s)\) | Definition: Mellin-Planck partition function |

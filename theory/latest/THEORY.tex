@@ -21,12 +21,13 @@
 
 \DeclareMathOperator{\Var}{Var}
 \DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\supp}{supp}
 \newcommand{\E}{\mathbb E}
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\1}{\mathbf 1}
 
-\title{Zeta-Law Entropy and Zeta-Inequality Framework}
+\title{Zeta-Law Entropy, Modular Resolution, and Applications to Zeta Inequalities}
 \author{/project-pudim}
 \date{}
 
@@ -34,28 +35,29 @@
 \maketitle
 
 \begin{abstract}
-We develop a probabilistic framework for organizing identities and inequalities involving the Riemann zeta function through Gibbs laws, residue distributions, and Mellin-Planck normalizations.  The basic zeta law has partition function \(\zeta(\beta)\), so zeta ratios become moments and logarithmic derivatives become energy averages and variances.  This point of view gives a self-contained derivation of Euler-score identities from the von Mangoldt divisor formula and places finite divisor sums, modular successor entropies, and Gamma-zeta log-convexity within a common notation.  The framework also isolates precise application problems concerning reciprocal-zeta curvature, a positivity question of Nantomah, and a generalized Holder inequality of Sroysang.  These applications are formulated as mathematical frontiers whose final resolution depends on completing the indicated analytic estimates, while the proved identities supply the reusable structural core.
+We study the Riemann zeta function as the partition function of the probability law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on the positive integers.  This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, and divisor identities into probabilistic decompositions.  The first main result identifies the microscopic successor entropy of the zeta law with the limit and supremum of finite modular successor entropies; for prime moduli these modular shadows are explicit nonlinear functionals of Dirichlet \(L\)-values.  The second structural result is an Euler-score decomposition expressing \(-(\log\zeta)'(\beta)\) as a von Mangoldt-weighted divisibility average.  We then use the same calculus to prove three zeta-inequality applications: positivity of a Nantomah expression involving \(\zeta(n+1),\zeta(n+2),\zeta(n+3)\); the Alzer--Kwong convexity and concavity pattern for \(1/\zeta\) on negative real intervals; and a generalized Holder inequality for \(\Gamma(s)\zeta(s)\) that extends Sroysang's formulation.  The framework gives a compact route from zeta probability laws to entropy, curvature, and Mellin-integral inequalities.
 \end{abstract}
 
-\noindent\textbf{Keywords.} Riemann zeta function; Gibbs measure; free energy; von Mangoldt function; entropy; Mellin transform; zeta inequalities.
+\noindent\textbf{Keywords.} Riemann zeta function; zeta probability law; Gibbs measure; entropy; modular residues; Dirichlet \(L\)-functions; von Mangoldt function; reciprocal zeta; Gamma-zeta inequalities; Holder inequality.
 
-\section{Introduction}
+\section{Motivation and main results}
 
-Many inequalities for \(\zeta(s)\) compare neighboring zeta values, logarithmic derivatives, or Gamma-zeta products.  A useful way to normalize these expressions is to treat \(\zeta(\beta)\) as a partition function and \(n^{-\beta}\) as a Gibbs weight.  Under this normalization, zeta ratios are ordinary moments, the logarithmic derivative of \(\zeta\) is an expected energy, and convexity statements become variance inequalities.
+Many classical identities for \(\zeta(s)\) become more transparent after a probabilistic normalization.  For \(\beta>1\), the weights \(n^{-\beta}\) define a Gibbs law whose partition function is precisely \(\zeta(\beta)\).  The energy is \(\log n\), the free energy is \(\log\zeta(\beta)\), and ratios such as \(\zeta(\beta+r)/\zeta(\beta)\) become moments.  This viewpoint is elementary, but it packages several unrelated-looking zeta inequalities into a common calculus.
 
-The purpose of this paper is to make that normalization explicit and to record the verified identities that follow from it.  The main structural output is an Euler-score decomposition: the mean energy of the zeta law can be recovered either from \(-\zeta'(\beta)/\zeta(\beta)\) or from divisibility probabilities weighted by the von Mangoldt function.  We also record a finite version of the same identity and set up two related extensions: modular successor entropy and Mellin-Planck convexity.
+The paper develops four connected layers.  The moment layer records basic zeta-law identities.  The modular entropy layer compares the successor map \(n\mapsto n+1\) with its finite residue shadows modulo \(q\).  The Euler-score layer rewrites zeta energy through von Mangoldt divisibility events.  The Mellin-Planck layer treats \(\Gamma(s)\zeta(s)\) as a continuous partition function and converts generalized Holder inequalities into integral norm inequalities.
 
-The final section explains how the notation interfaces with three external zeta-inequality problems: a curvature question for \(1/\zeta\), a positivity problem posed by Nantomah, and a generalized Holder inequality studied by Sroysang.  Those items are stated conservatively as application problems rather than theorems.
+The application section gives three solved external problems.  The Nantomah positivity question is proved by splitting a zeta expression into a positive linear tail and a controlled quadratic correction.  The Alzer--Kwong reciprocal-zeta conjecture is proved by transporting a positive-axis curvature estimate through the functional equation.  The Sroysang generalized Holder problem is proved directly from generalized Holder applied to the Planck kernel.
 
-\section{Notation and the zeta law}
+\section{Notation and zeta-law calculus}
 
 \begin{definition}[Riemann zeta probability law]
-For \(\beta>1\), define the probability law \(\rho_\beta\) on \(\N\) by
+\label{def:zeta-law}
+For \(\beta>1\), define a probability law \(\rho_\beta\) on \(\N\) by
 \begin{equation}
 \label{eq:zeta-law}
-\rho_\beta(n)=\frac{n^{-\beta}}{\zeta(\beta)},\qquad n\in \N.
+\rho_\beta(n)=\frac{n^{-\beta}}{\zeta(\beta)},\qquad n\in\N.
 \end{equation}
-Equivalently, if \(E(n)=\log n\) and \(Z(\beta)=\zeta(\beta)\), then
+Equivalently, with \(E(n)=\log n\) and \(Z(\beta)=\zeta(\beta)\),
 \begin{equation}
 \label{eq:gibbs-form}
 \rho_\beta(n)=\frac{e^{-\beta E(n)}}{Z(\beta)}.
@@ -63,121 +65,236 @@ Equivalently, if \(E(n)=\log n\) and \(Z(\beta)=\zeta(\beta)\), then
 \end{definition}
 
 \begin{definition}[Zeta free energy]
+\label{def:zeta-free-energy}
 The zeta free energy is
 \begin{equation}
-\label{eq:free-energy}
-A(\beta)=\log \zeta(\beta),\qquad \beta>1.
+\label{eq:zeta-free-energy}
+A(\beta)=\log\zeta(\beta),\qquad \beta>1.
 \end{equation}
 \end{definition}
 
 \begin{proposition}[Free-energy derivatives]
+\label{prop:free-energy-derivatives}
 For every \(\beta>1\),
-\begin{equation}
-\label{eq:free-derivatives}
-A'(\beta)=-\E_\beta[\log N],
-\qquad
-A''(\beta)=\Var_\beta(\log N).
-\end{equation}
+\begin{align}
+\label{eq:free-energy-derivatives}
+A'(\beta)&=-\E_\beta[\log N],&
+A''(\beta)&=\Var_\beta(\log N).
+\end{align}
 \end{proposition}
 
 \begin{proof}
-Absolute convergence of the Dirichlet series and its differentiated series on compact subintervals of \((1,\infty)\) permits termwise differentiation.  Thus
+Absolute convergence of the differentiated Dirichlet series on compact subintervals of \((1,\infty)\) permits termwise differentiation.  Thus
 \begin{equation}
-\label{eq:first-derivative-proof}
+\label{eq:first-free-derivative-proof}
 A'(\beta)=\frac{\zeta'(\beta)}{\zeta(\beta)}
 =-\frac{\sum_{n\ge1}(\log n)n^{-\beta}}{\zeta(\beta)}
 =-\E_\beta[\log N].
 \end{equation}
-Differentiating once more gives the usual Gibbs identity
+Differentiating once more gives
 \begin{equation}
-\label{eq:second-derivative-proof}
+\label{eq:second-free-derivative-proof}
 A''(\beta)=\E_\beta[(\log N)^2]-\E_\beta[\log N]^2
 =\Var_\beta(\log N).
 \end{equation}
 \end{proof}
 
-\begin{corollary}[Zeta ratios as moments]
-For \(r\ge 0\) and \(\beta>1\),
+\begin{proposition}[Zeta-law calculus]
+\label{prop:zeta-law-calculus}
+Let \(\beta>1\), and let \(N\) have law \(\rho_\beta\).  For every \(r\ge0\),
 \begin{equation}
-\label{eq:zeta-ratio-moment}
+\label{eq:zeta-law-moment}
 \E_\beta[N^{-r}]=\frac{\zeta(\beta+r)}{\zeta(\beta)}.
 \end{equation}
-\end{corollary}
+Moreover, for \(\alpha,\beta>1\),
+\begin{equation}
+\label{eq:zeta-law-relative-entropy}
+D(\rho_\alpha\Vert\rho_\beta)
+=(\beta-\alpha)\E_\alpha[\log N]
++\log\zeta(\beta)-\log\zeta(\alpha).
+\end{equation}
+\end{proposition}
 
 \begin{proof}
-Substitute \eqref{eq:zeta-law} and sum the resulting absolutely convergent Dirichlet series:
+The moment identity follows by direct summation:
 \begin{equation}
-\label{eq:zeta-ratio-proof}
+\label{eq:zeta-law-moment-proof}
 \E_\beta[N^{-r}]
-=\sum_{n\ge1}n^{-r}\frac{n^{-\beta}}{\zeta(\beta)}
+=\sum_{n=1}^{\infty}n^{-r}\frac{n^{-\beta}}{\zeta(\beta)}
 =\frac{\zeta(\beta+r)}{\zeta(\beta)}.
 \end{equation}
+For relative entropy, substitute \eqref{eq:zeta-law}:
+\begin{equation}
+\label{eq:zeta-law-relative-entropy-proof}
+D(\rho_\alpha\Vert\rho_\beta)
+=\sum_{n=1}^{\infty}\rho_\alpha(n)
+\left((\beta-\alpha)\log n+\log\zeta(\beta)-\log\zeta(\alpha)\right),
+\end{equation}
+which is \eqref{eq:zeta-law-relative-entropy}.
 \end{proof}
 
 \section{Modular successor entropy}
 
-\begin{definition}[Residue distribution]
-For \(q\ge2\), define the residue distribution of the zeta law modulo \(q\) by
+\begin{definition}[Modular residue distribution and successor entropy]
+\label{def:modular-residue-successor}
+For \(q\ge2\), define the residue distribution of \(\rho_\beta\) modulo \(q\) by
 \begin{equation}
-\label{eq:residue-distribution}
+\label{eq:modular-residue-distribution}
 \mu_{q,\beta}(a)=
 \sum_{\substack{n\ge1\\ n\equiv a\pmod q}}\rho_\beta(n),
-\qquad a\in \Z/q\Z.
+\qquad a\in\Z/q\Z.
 \end{equation}
-\end{definition}
-
-\begin{definition}[Successor entropy]
 Writing \(a+1\) cyclically in \(\Z/q\Z\), define
 \begin{equation}
-\label{eq:successor-entropy}
+\label{eq:modular-successor-entropy}
 B_q(\beta)=
-\sum_{a\in \Z/q\Z}
-\mu_{q,\beta}(a)
-\log\frac{\mu_{q,\beta}(a)}{\mu_{q,\beta}(a+1)}.
+\sum_{a\in\Z/q\Z}
+\mu_{q,\beta}(a)\log\frac{\mu_{q,\beta}(a)}{\mu_{q,\beta}(a+1)}.
 \end{equation}
 \end{definition}
 
-\begin{problem}[Successor entropy resolution]
-Establish the identity
+\begin{theorem}[Zeta-law successor entropy and modular resolution]
+\label{thm:successor-entropy}
+For every \(\beta>1\), define
 \begin{equation}
-\label{eq:sigma-series}
-\Sigma(\beta)
-=\sum_{n=1}^{\infty}\rho_\beta(n)
-\log\frac{\rho_\beta(n)}{\rho_\beta(n+1)}
-=\frac{\beta}{\zeta(\beta)}
+\label{eq:successor-entropy}
+\Sigma(\beta)=\sum_{n=1}^{\infty}\rho_\beta(n)
+\log\frac{\rho_\beta(n)}{\rho_\beta(n+1)}.
+\end{equation}
+Then
+\begin{equation}
+\label{eq:successor-entropy-series}
+\Sigma(\beta)=
+\frac{\beta}{\zeta(\beta)}
 \sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{k}\zeta(\beta+k),
 \end{equation}
-together with the modular variational formula
+and
 \begin{equation}
-\label{eq:modular-variational}
+\label{eq:successor-entropy-modular-resolution}
 \Sigma(\beta)=\sup_{q\ge2}B_q(\beta)=\lim_{q\to\infty}B_q(\beta).
 \end{equation}
-The expected route expands \(\log(1+1/n)\), uses the log-sum inequality, and lets large moduli isolate finite initial intervals.
-\end{problem}
+\end{theorem}
 
-\begin{problem}[Prime-modulus Dirichlet \(L\)-resolution]
-For prime \(p\), let \(\chi\) range over Dirichlet characters modulo \(p\), and set
+\begin{proof}
+Since
 \begin{equation}
-\label{eq:dirichlet-character-sum}
-S_a(p,\beta)=\sum_{\chi\bmod p}\chi(a)L(\beta,\chi).
+\label{eq:successor-ratio}
+\frac{\rho_\beta(n)}{\rho_\beta(n+1)}
+=\left(1+\frac1n\right)^\beta,
 \end{equation}
-Prove the residue formula
+we have
 \begin{equation}
-\label{eq:prime-residue}
+\label{eq:successor-entropy-log-sum}
+\Sigma(\beta)=\frac{\beta}{\zeta(\beta)}
+\sum_{n=1}^{\infty}n^{-\beta}\log\left(1+\frac1n\right).
+\end{equation}
+Using
+\begin{equation}
+\label{eq:log-series}
+\log(1+x)=\sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{k}x^k
+\qquad(0<x\le1)
+\end{equation}
+with Abel limiting at \(x=1\), and summing against \(n^{-\beta}\), gives \eqref{eq:successor-entropy-series}.
+
+For the modular identity, fix \(q\ge2\).  The log-sum inequality gives, for each residue class \(a\),
+\begin{equation}
+\label{eq:modular-log-sum}
+\sum_{\substack{n\ge1\\ n\equiv a\pmod q}}
+\rho_\beta(n)\log\frac{\rho_\beta(n)}{\rho_\beta(n+1)}
+\ge
+\mu_{q,\beta}(a)
+\log\frac{\mu_{q,\beta}(a)}
+{\sum_{n\equiv a\pmod q}\rho_\beta(n+1)}.
+\end{equation}
+For \(a\ne0\), the denominator is \(\mu_{q,\beta}(a+1)\).  For \(a=0\), it is \(\mu_{q,\beta}(1)-\rho_\beta(1)\le\mu_{q,\beta}(1)\).  Summing \eqref{eq:modular-log-sum} over \(a\) gives
+\begin{equation}
+\label{eq:successor-dominates-modular}
+\Sigma(\beta)\ge B_q(\beta)
+\qquad(q\ge2).
+\end{equation}
+
+Conversely, fix \(M\in\N\).  If \(q>M+1\), then for \(1\le a\le M+1\),
+\begin{equation}
+\label{eq:residue-isolation}
+\mu_{q,\beta}(a)=\rho_\beta(a)+O_{\beta,M}(q^{-\beta}),
+\end{equation}
+and \(\mu_{q,\beta}(0)=q^{-\beta}\).  All cyclic terms in \(B_q(\beta)\) are nonnegative except possibly the boundary term, which satisfies
+\begin{equation}
+\label{eq:boundary-term}
+\mu_{q,\beta}(0)\log\frac{\mu_{q,\beta}(0)}{\mu_{q,\beta}(1)}
+=O_\beta(q^{-\beta}\log q).
+\end{equation}
+Therefore
+\begin{equation}
+\label{eq:modular-liminf}
+\liminf_{q\to\infty}B_q(\beta)
+\ge
+\sum_{n=1}^{M}\rho_\beta(n)\log\frac{\rho_\beta(n)}{\rho_\beta(n+1)}.
+\end{equation}
+Letting \(M\to\infty\) gives \(\liminf_qB_q(\beta)\ge\Sigma(\beta)\), which together with \eqref{eq:successor-dominates-modular} proves \eqref{eq:successor-entropy-modular-resolution}.
+\end{proof}
+
+\begin{corollary}[Prime-modulus Dirichlet L-resolution]
+\label{cor:prime-dirichlet-resolution}
+Let \(p\) be prime, let \(\chi\) range over Dirichlet characters modulo \(p\), and define
+\begin{equation}
+\label{eq:prime-dirichlet-shadow}
+S_a(p,\beta)=\sum_{\chi\bmod p}\overline{\chi(a)}L(\beta,\chi)
+\qquad(1\le a\le p-1).
+\end{equation}
+Then
+\begin{equation}
+\label{eq:prime-residue-formula}
 \mu_{p,\beta}(a)=\frac{S_a(p,\beta)}{(p-1)\zeta(\beta)}
-\quad (1\le a\le p-1),
+\quad(1\le a\le p-1),
 \qquad
-\mu_{p,\beta}(0)=p^{-\beta},
+\mu_{p,\beta}(0)=p^{-\beta}.
 \end{equation}
-and derive the corresponding prime-modulus expression for \eqref{eq:successor-entropy}.
-\end{problem}
+Consequently the prime-modulus functionals obtained by substituting \eqref{eq:prime-residue-formula} into \(B_p(\beta)\) satisfy
+\begin{equation}
+\label{eq:prime-functional-limit}
+\Sigma(\beta)=
+\lim_{\substack{p\to\infty\\ p\ {\rm prime}}}
+F_p\bigl(\zeta(\beta),\{L(\beta,\chi)\}_{\chi\bmod p}\bigr)
+=
+\sup_{p\ {\rm prime}}
+F_p\bigl(\zeta(\beta),\{L(\beta,\chi)\}_{\chi\bmod p}\bigr).
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+For \(a\not\equiv0\pmod p\), character orthogonality gives
+\begin{equation}
+\label{eq:character-orthogonality}
+\frac1{p-1}\sum_{\chi\bmod p}\overline{\chi(a)}\chi(n)
+=
+\begin{cases}
+1,& n\equiv a\pmod p,\\
+0,& n\not\equiv a\pmod p.
+\end{cases}
+\end{equation}
+Therefore
+\begin{equation}
+\label{eq:dirichlet-residue-sum}
+\sum_{\substack{n\ge1\\ n\equiv a\pmod p}}n^{-\beta}
+=\frac1{p-1}\sum_{\chi\bmod p}\overline{\chi(a)}L(\beta,\chi).
+\end{equation}
+Dividing by \(\zeta(\beta)\) gives the nonzero residue formula, while
+\begin{equation}
+\label{eq:zero-residue-prime}
+\mu_{p,\beta}(0)=\frac1{\zeta(\beta)}\sum_{m=1}^{\infty}(mp)^{-\beta}
+=p^{-\beta}.
+\end{equation}
+The functional identity follows by substituting these residue formulas into \(B_p(\beta)\) and applying Theorem \ref{thm:successor-entropy} along the prime sequence.
+\end{proof}
 
 \section{Euler-score identities}
 
 \begin{theorem}[Euler-score decomposition]
+\label{thm:euler-score-decomposition}
 For every \(\beta>1\),
 \begin{equation}
-\label{eq:euler-score}
+\label{eq:euler-score-decomposition}
 -\bigl(\log\zeta\bigr)'(\beta)
 =\E_\beta[\log N]
 =\sum_{d=1}^{\infty}\Lambda(d)\mu_{d,\beta}(0)
@@ -185,19 +302,19 @@ For every \(\beta>1\),
 \end{equation}
 Equivalently,
 \begin{equation}
-\label{eq:log-zeta-dirichlet}
+\label{eq:log-zeta-von-mangoldt}
 -\frac{\zeta'(\beta)}{\zeta(\beta)}
 =\sum_{d=1}^{\infty}\frac{\Lambda(d)}{d^\beta}.
 \end{equation}
 \end{theorem}
 
 \begin{proof}
-Use the von Mangoldt identity
+The von Mangoldt identity is
 \begin{equation}
 \label{eq:mangoldt-identity}
 \log n=\sum_{d\mid n}\Lambda(d).
 \end{equation}
-Then, by nonnegative summation and \eqref{eq:zeta-law},
+By nonnegative summation,
 \begin{equation}
 \label{eq:euler-score-proof}
 \E_\beta[\log N]
@@ -208,13 +325,14 @@ The divisibility probability is
 \begin{equation}
 \label{eq:divisibility-probability}
 \Prob_\beta(d\mid N)
-=\frac{1}{\zeta(\beta)}\sum_{m\ge1}(dm)^{-\beta}
+=\frac1{\zeta(\beta)}\sum_{m\ge1}(dm)^{-\beta}
 =d^{-\beta}.
 \end{equation}
-Substituting \eqref{eq:divisibility-probability} into \eqref{eq:euler-score-proof} gives \eqref{eq:euler-score}; \eqref{eq:log-zeta-dirichlet} follows from \eqref{eq:first-derivative-proof}.
+Substitution into \eqref{eq:euler-score-proof} proves \eqref{eq:euler-score-decomposition}; \eqref{eq:log-zeta-von-mangoldt} follows from \eqref{eq:first-free-derivative-proof}.
 \end{proof}
 
 \begin{proposition}[Finite Euler-score identity]
+\label{prop:finite-euler-score}
 For every \(A\subseteq\{1,\ldots,N\}\),
 \begin{equation}
 \label{eq:finite-euler-score}
@@ -229,99 +347,373 @@ Reverse the order of summation:
 \label{eq:finite-euler-score-proof}
 \sum_{d\le N}\Lambda(d)\sum_{m\le N/d}\1_A(md)
 =\sum_{n\in A}\sum_{d\mid n}\Lambda(d)
-=\sum_{n\in A}\log n,
+=\sum_{n\in A}\log n.
 \end{equation}
-where the last equality is \eqref{eq:mangoldt-identity}.
 \end{proof}
 
-\section{Mellin-Planck normalization}
+\section{Curvature and Mellin-Planck tools}
+
+\begin{lemma}[Uniform positive-axis curvature bound]
+\label{lem:uniform-positive-axis-curvature}
+For every \(s\ge3\),
+\begin{equation}
+\label{eq:uniform-curvature-bound}
+(\log\zeta)''(s)=\Var_s(\log N)<\frac13.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+By Proposition \ref{prop:free-energy-derivatives},
+\begin{equation}
+\label{eq:curvature-first-bound}
+(\log\zeta)''(s)
+=\frac{\zeta''(s)}{\zeta(s)}
+-\left(\frac{\zeta'(s)}{\zeta(s)}\right)^2
+\le \frac{\zeta''(s)}{\zeta(s)}
+\le \zeta''(s).
+\end{equation}
+For \(s\ge3\),
+\begin{equation}
+\label{eq:zeta-second-derivative-bound}
+\zeta''(s)=\sum_{m=2}^{\infty}\frac{(\log m)^2}{m^s}
+\le\sum_{m=2}^{\infty}\frac{(\log m)^2}{m^3}.
+\end{equation}
+The function \(x\mapsto(\log x)^2x^{-3}\) is decreasing for \(x\ge2\), so
+\begin{equation}
+\label{eq:curvature-integral-comparison}
+\sum_{m=2}^{\infty}\frac{(\log m)^2}{m^3}
+\le
+\frac{(\log2)^2}{8}
++\int_2^\infty\frac{(\log x)^2}{x^3}\,dx.
+\end{equation}
+Since
+\begin{equation}
+\label{eq:curvature-integral-value}
+\int_2^\infty\frac{(\log x)^2}{x^3}\,dx
+=\frac{(\log2)^2+\log2+\frac12}{8},
+\end{equation}
+we obtain
+\begin{equation}
+\label{eq:curvature-final-bound}
+(\log\zeta)''(s)
+\le
+\frac{2(\log2)^2+\log2+\frac12}{8}
+<\frac13.
+\end{equation}
+\end{proof}
 
 \begin{definition}[Mellin-Planck partition function]
+\label{def:mellin-planck-partition}
 For \(s>1\), define
 \begin{equation}
-\label{eq:mellin-planck}
+\label{eq:mellin-planck-partition}
 M(s)=\Gamma(s)\zeta(s)
-=\int_0^\infty \frac{t^{s-1}}{e^t-1}\,dt.
+=\int_0^\infty\frac{t^{s-1}}{e^t-1}\,dt.
 \end{equation}
-The normalized law associated with \(M\) is
+The corresponding probability law is
 \begin{equation}
 \label{eq:mellin-planck-law}
 \nu_s(dt)=\frac{t^{s-1}}{(e^t-1)M(s)}\,dt.
 \end{equation}
 \end{definition}
 
-\begin{proposition}[Log-convexity of the Mellin-Planck partition function]
+\begin{proposition}[Mellin-Planck log-convexity]
+\label{prop:mellin-planck-log-convexity}
 For \(s>1\),
 \begin{equation}
-\label{eq:mellin-logconvex}
-\frac{d^2}{ds^2}\log M(s)=\Var_{\nu_s}(\log t)\ge 0.
+\label{eq:mellin-planck-log-convexity}
+\frac{d^2}{ds^2}\log M(s)=\Var_{\nu_s}(\log t)\ge0.
 \end{equation}
-In particular, \(M\) is log-convex on \((1,\infty)\).
 \end{proposition}
 
 \begin{proof}
-Differentiate the logarithm of \eqref{eq:mellin-planck} under the integral sign.  The first derivative is the \(\nu_s\)-expectation of \(\log t\), and the second derivative is the corresponding variance, giving \eqref{eq:mellin-logconvex}.
+Differentiate the logarithm of the integral in \eqref{eq:mellin-planck-partition} under the integral sign.  The first derivative is the \(\nu_s\)-expectation of \(\log t\), and the second derivative is its variance:
+\begin{equation}
+\label{eq:mellin-planck-variance-proof}
+\frac{d^2}{ds^2}\log M(s)
+=\E_{\nu_s}[(\log t)^2]-\E_{\nu_s}[\log t]^2.
+\end{equation}
 \end{proof}
 
-\section{Application problems}
+\section{Applications to external zeta inequalities}
 
-\begin{problem}[Nantomah positivity]
-Determine whether, for every \(n\in\N\),
+\begin{theorem}[Affirmative solution of Nantomah zeta positivity problem]
+\label{thm:nantomah-positivity}
+For every \(n\in\N\),
 \begin{equation}
 \label{eq:nantomah-positivity}
 (n+2)\zeta(n+1)\zeta(n+3)
 -(n+1)\zeta(n+2)^2
 -\zeta(n+1)\zeta(n+2)>0.
 \end{equation}
-The zeta-law approach rewrites the expression using moments of \(X(m)=1/m\) under \(\rho_s\), then seeks a positive linear part and a controlled quadratic correction.
-\end{problem}
+\end{theorem}
 
-\begin{problem}[Alzer-Kwong reciprocal-zeta curvature]
-Let \(F(x)=1/\zeta(x)\).  Prove or refute the sign pattern
+\begin{proof}
+Put \(s=n+1\ge2\) and \(Z_s=\zeta(s)\).  The expression in \eqref{eq:nantomah-positivity} becomes
 \begin{equation}
-\label{eq:alzer-kwong-curvature}
-F''(x)>0\quad\text{on }(-4n,-4n+2),
-\qquad
-F''(x)<0\quad\text{on }(-4n-2,-4n)
+\label{eq:nantomah-ks}
+K_s=(s+1)Z_sZ_{s+2}-sZ_{s+1}^2-Z_sZ_{s+1}.
 \end{equation}
-for every integer \(n\ge1\).  A natural route uses the zeta functional equation and positive-axis curvature bounds for \((\log\zeta)''(s)\).
-\end{problem}
+Let \(X(m)=1/m\) under \(\rho_s\).  By \eqref{eq:zeta-law-moment},
+\begin{equation}
+\label{eq:nantomah-moments}
+\E_s[X]=\frac{Z_{s+1}}{Z_s},
+\qquad
+\E_s[X^2]=\frac{Z_{s+2}}{Z_s}.
+\end{equation}
+Thus
+\begin{equation}
+\label{eq:nantomah-moment-form}
+\frac{K_s}{Z_s^2}
+=(s+1)\E_s[X^2]-s\E_s[X]^2-\E_s[X]
+=(s+1)\Var_s(X)+\E_s[X]^2-\E_s[X].
+\end{equation}
 
-\begin{problem}[Sroysang generalized Holder inequality]
+Write \(a=\zeta(s)-1\), \(b=\zeta(s+1)-1\), and \(c=\zeta(s+2)-1\).  Expanding gives
+\begin{align}
+\label{eq:nantomah-lq-split}
+K_s&=L_s+Q_s,&
+L_s&=sa+(s+1)c-(2s+1)b,&
+Q_s&=(s+1)ac-sb^2-ab.
+\end{align}
+The linear part is termwise positive:
+\begin{equation}
+\label{eq:nantomah-linear-positive}
+L_s=
+\sum_{m=2}^{\infty}
+m^{-s}\frac{(m-1)(s(m-1)-1)}{m^2}
+\ge
+2^{-s}\frac{s-1}{4}.
+\end{equation}
+Since \(b\le a/2\) and \(c\ge0\),
+\begin{equation}
+\label{eq:nantomah-quadratic-correction}
+Q_s\ge -sb^2-ab\ge-\frac{s+2}{4}a^2.
+\end{equation}
+For \(s\ge4\),
+\begin{equation}
+\label{eq:nantomah-tail-bound}
+a=\sum_{m=2}^{\infty}m^{-s}
+\le2^{-s}+\int_2^\infty x^{-s}\,dx
+=2^{-s}\left(1+\frac2{s-1}\right).
+\end{equation}
+Equations \eqref{eq:nantomah-linear-positive}, \eqref{eq:nantomah-quadratic-correction}, and \eqref{eq:nantomah-tail-bound} imply
+\begin{equation}
+\label{eq:nantomah-lower-bound}
+K_s\ge
+\frac14\left[
+2^{-s}(s-1)
+-(s+2)2^{-2s}\left(1+\frac2{s-1}\right)^2
+\right].
+\end{equation}
+It is therefore enough to show
+\begin{equation}
+\label{eq:nantomah-sufficient-inequality}
+2^s(s-1)>(s+2)\left(1+\frac2{s-1}\right)^2.
+\end{equation}
+Equivalently,
+\begin{equation}
+\label{eq:nantomah-f-function}
+F(s)=\frac{2^s(s-1)^3}{(s+2)(s+1)^2}>1.
+\end{equation}
+Now \(F(4)=72/25>1\), and
+\begin{equation}
+\label{eq:nantomah-f-monotone}
+\frac{d}{ds}\log F(s)
+=\log2+\frac3{s-1}-\frac1{s+2}-\frac2{s+1}>0
+\qquad(s\ge4).
+\end{equation}
+Thus \(K_s>0\) for \(s\ge4\).
+
+For \(s=2\),
+\begin{equation}
+\label{eq:nantomah-k2}
+K_2=3\zeta(2)\zeta(4)-2\zeta(3)^2-\zeta(2)\zeta(3).
+\end{equation}
+Using \(\zeta(3)<5/4\), \(\zeta(2)=\pi^2/6\), and \(\zeta(4)=\pi^4/90\),
+\begin{equation}
+\label{eq:nantomah-k2-bound}
+K_2>
+\frac{\pi^6}{180}-\frac{5\pi^2}{24}-\frac{25}{8}
+>
+\frac{10415360504209}{180000000000000}>0.
+\end{equation}
+For \(s=3\), the estimates \(\zeta(3)>251/216\), \(\zeta(5)>8051/7776\), and \(\zeta(4)<13/12\) yield
+\begin{equation}
+\label{eq:nantomah-k3-bound}
+K_3>
+\frac{251}{216}
+\left(4\cdot\frac{8051}{7776}-\frac{13}{12}\right)
+-3\left(\frac{13}{12}\right)^2
+=\frac{13783}{419904}>0.
+\end{equation}
+Hence \(K_s>0\) for all integers \(s\ge2\), proving the theorem.  This answers Nantomah's question \cite{nantomah}.
+\end{proof}
+
+\begin{theorem}[Alzer-Kwong convexity and concavity pattern for reciprocal zeta]
+\label{thm:alzer-kwong}
+Let \(F(x)=1/\zeta(x)\).  For every integer \(n\ge1\),
+\begin{equation}
+\label{eq:alzer-kwong-convex}
+F''(x)>0\quad\text{on }(-4n,-4n+2),
+\end{equation}
+and
+\begin{equation}
+\label{eq:alzer-kwong-concave}
+F''(x)<0\quad\text{on }(-4n-2,-4n).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Put \(x=-u\), where \(u>2\).  The functional equation gives
+\begin{equation}
+\label{eq:zeta-functional-equation-negative-axis}
+\zeta(-u)
+=-2^{-u}\pi^{-u-1}\sin\left(\frac{\pi u}{2}\right)\Gamma(u+1)\zeta(u+1),
+\end{equation}
+and hence
+\begin{equation}
+\label{eq:reciprocal-zeta-negative-axis}
+\frac1{\zeta(-u)}
+=-\frac{2^u\pi^{u+1}}
+{\Gamma(u+1)\zeta(u+1)\sin(\pi u/2)}.
+\end{equation}
+Define the positive function
+\begin{equation}
+\label{eq:alzer-g-function}
+G(u)=
+\frac{2^u\pi^{u+1}}
+{\Gamma(u+1)\zeta(u+1)|\sin(\pi u/2)|}.
+\end{equation}
+On \(u\in(4n-2,4n)\), \(\sin(\pi u/2)<0\), so \(F(-u)=G(u)\).  On \(u\in(4n,4n+2)\), \(\sin(\pi u/2)>0\), so \(F(-u)=-G(u)\).  Since second derivatives are unchanged by \(x=-u\), it remains to prove \(G''(u)>0\).
+
+Let \(\ell(u)=\log G(u)\).  Then
+\begin{equation}
+\label{eq:alzer-log-g}
+\ell(u)=u\log2+(u+1)\log\pi-\log\Gamma(u+1)-\log\zeta(u+1)
+-\log\left|\sin\left(\frac{\pi u}{2}\right)\right|.
+\end{equation}
+Differentiating twice gives
+\begin{equation}
+\label{eq:alzer-log-g-second}
+\ell''(u)
+=-\psi'(u+1)-(\log\zeta)''(u+1)
++\frac{\pi^2}{4}\csc^2\left(\frac{\pi u}{2}\right).
+\end{equation}
+With \(s=u+1>3\),
+\begin{equation}
+\label{eq:trigamma-bound}
+\psi'(s)=\sum_{k=0}^{\infty}\frac1{(s+k)^2}
+<
+\int_{s-1}^{\infty}\frac{dt}{t^2}
+=\frac1{s-1}\le\frac12.
+\end{equation}
+Combining \eqref{eq:uniform-curvature-bound}, \eqref{eq:trigamma-bound}, and \(\csc^2(\pi u/2)\ge1\), we get
+\begin{equation}
+\label{eq:alzer-log-convexity}
+\ell''(u)>
+\frac{\pi^2}{4}-\frac12-\frac13
+=\frac{\pi^2}{4}-\frac56>0.
+\end{equation}
+Since \(G>0\),
+\begin{equation}
+\label{eq:alzer-g-second-positive}
+G''(u)=G(u)(\ell''(u)+\ell'(u)^2)>0.
+\end{equation}
+The two signs in \eqref{eq:alzer-kwong-convex} and \eqref{eq:alzer-kwong-concave} now follow from \(F(-u)=G(u)\) on \(u\in(4n-2,4n)\) and \(F(-u)=-G(u)\) on \(u\in(4n,4n+2)\).  This proves the Alzer--Kwong sign pattern \cite{alzer-kwong}.
+\end{proof}
+
+\begin{theorem}[Generalized Holder inequality for Gamma zeta]
+\label{thm:sroysang-holder}
 Let \(m\ge2\), \(r\ge1\), \(x_1,\ldots,x_m>1\), and \(p_1,\ldots,p_m>1\) satisfy
 \begin{equation}
-\label{eq:sroysang-condition}
-\sum_{i=1}^m\frac1{p_i}=\frac1r.
+\label{eq:sroysang-holder-condition}
+\sum_{i=1}^{m}\frac1{p_i}=\frac1r.
 \end{equation}
-With
+Define
 \begin{equation}
 \label{eq:sroysang-t}
-T=r\sum_{i=1}^m\frac{x_i}{p_i},
+T=r\sum_{i=1}^{m}\frac{x_i}{p_i}.
 \end{equation}
-establish conditions under which
+Then \(T>1\) and
 \begin{equation}
-\label{eq:sroysang-inequality}
+\label{eq:sroysang-generalized-holder}
 \zeta(T)\le
-\frac{\prod_{i=1}^m(\Gamma(x_i)\zeta(x_i))^{r/p_i}}{\Gamma(T)}.
+\frac{\prod_{i=1}^{m}(\Gamma(x_i)\zeta(x_i))^{r/p_i}}{\Gamma(T)}.
 \end{equation}
-The Mellin-Planck formulation suggests applying generalized Holder to
+\end{theorem}
+
+\begin{proof}
+Set
 \begin{equation}
-\label{eq:sroysang-holder-functions}
+\label{eq:sroysang-lambda}
+\lambda_i=\frac{r}{p_i}.
+\end{equation}
+Then \(\lambda_i>0\), \(\sum_i\lambda_i=1\), and \(T=\sum_i\lambda_i x_i>1\).  Define
+\begin{equation}
+\label{eq:sroysang-q}
+q_i=\frac{p_i}{r}.
+\end{equation}
+Then \(\sum_i1/q_i=1\), and the assumptions imply \(q_i>1\) for all \(i\); otherwise one term \(1/p_i\) would already be at least \(1/r\), leaving no room for the remaining positive terms in \eqref{eq:sroysang-holder-condition}.
+
+For \(t>0\), let
+\begin{equation}
+\label{eq:sroysang-fi}
 f_i(t)=\left(\frac{t^{x_i-1}}{e^t-1}\right)^{1/p_i}.
 \end{equation}
-\end{problem}
+Then
+\begin{equation}
+\label{eq:sroysang-product}
+\left(\prod_{i=1}^{m}f_i(t)\right)^r
+=\frac{t^{r\sum_i(x_i-1)/p_i}}{e^t-1}
+=\frac{t^{T-1}}{e^t-1}.
+\end{equation}
+Consequently,
+\begin{equation}
+\label{eq:sroysang-lr-norm}
+\left\|\prod_{i=1}^{m}f_i\right\|_{L^r(0,\infty)}^r
+=\int_0^\infty\frac{t^{T-1}}{e^t-1}\,dt
+=\Gamma(T)\zeta(T).
+\end{equation}
+Generalized Holder gives
+\begin{equation}
+\label{eq:sroysang-holder-step}
+\left\|\prod_{i=1}^{m}f_i\right\|_{L^r}
+\le
+\prod_{i=1}^{m}\|f_i\|_{L^{p_i}}.
+\end{equation}
+Moreover,
+\begin{equation}
+\label{eq:sroysang-pi-norm}
+\|f_i\|_{L^{p_i}}^{p_i}
+=\int_0^\infty\frac{t^{x_i-1}}{e^t-1}\,dt
+=\Gamma(x_i)\zeta(x_i).
+\end{equation}
+Combining \eqref{eq:sroysang-lr-norm}, \eqref{eq:sroysang-holder-step}, and \eqref{eq:sroysang-pi-norm}, then raising to the power \(r\), gives
+\begin{equation}
+\label{eq:sroysang-predivide}
+\Gamma(T)\zeta(T)
+\le
+\prod_{i=1}^{m}(\Gamma(x_i)\zeta(x_i))^{r/p_i}.
+\end{equation}
+Division by \(\Gamma(T)\) proves \eqref{eq:sroysang-generalized-holder}.  This solves the generalized Holder problem in Sroysang's notation, where his \(\xi(s)\) is \(\zeta(s)\) for \(s>1\) \cite{sroysang}.
+\end{proof}
+
+\begin{remark}[Free-energy interpretation of the Sroysang inequality]
+The same result follows from log-convexity of \(M(s)=\Gamma(s)\zeta(s)\).  With \(\lambda_i=r/p_i\) and \(T=\sum_i\lambda_ix_i\), Jensen's inequality for \(\log M\) gives
+\begin{equation}
+\label{eq:sroysang-jensen}
+M(T)\le\prod_{i=1}^{m}M(x_i)^{\lambda_i}
+=\prod_{i=1}^{m}(\Gamma(x_i)\zeta(x_i))^{r/p_i},
+\end{equation}
+which is equivalent to \eqref{eq:sroysang-generalized-holder}.
+\end{remark}
 
 \section{Conclusion}
 
-The zeta-law normalization turns several analytic expressions into standard probabilistic objects.  Equations \eqref{eq:zeta-ratio-moment}, \eqref{eq:free-derivatives}, \eqref{eq:euler-score}, and \eqref{eq:mellin-logconvex} are the proved structural core: zeta ratios are moments, logarithmic derivatives are energy averages, Euler scores are divisibility averages, and Mellin-Planck convexity is a variance identity.  The modular entropy formulas \eqref{eq:sigma-series} and \eqref{eq:modular-variational}, together with the application problems \eqref{eq:nantomah-positivity}, \eqref{eq:alzer-kwong-curvature}, and \eqref{eq:sroysang-inequality}, define the next analytic frontier.
+The zeta-law normalization gives a single language for several identities and inequalities involving \(\zeta\).  At the structural level, the paper proves the successor entropy formula \eqref{eq:successor-entropy-series} and its modular resolution \eqref{eq:successor-entropy-modular-resolution}, the Euler-score decomposition \eqref{eq:euler-score-decomposition}, and the Mellin-Planck variance identity \eqref{eq:mellin-planck-log-convexity}.  These results are not only formal translations: they supply direct estimates for external problems.  The Nantomah positivity question follows from a moment split and tail bounds; the Alzer--Kwong reciprocal-zeta curvature pattern follows from the functional equation and a positive-axis curvature estimate; and the Sroysang generalized Holder inequality follows from the Planck-kernel integral representation.  The remaining useful direction is to sharpen the modular entropy side, especially the prime-modulus functionals in \eqref{eq:prime-functional-limit}, where additive successor entropy is encoded by finite Dirichlet \(L\)-value data.
 
 \begin{thebibliography}{9}
-
-\bibitem{alzer-kwong}
-H. Alzer and M. K. Kwong,
-\emph{On the concavity and convexity of \(1/\zeta\)},
-International Journal of Number Theory 21, no. 8 (2025), 1825--1835.
-\url{https://doi.org/10.1142/S1793042125500897}.
 
 \bibitem{nantomah}
 K. Nantomah,
@@ -334,6 +726,36 @@ B. Sroysang,
 \emph{Two Inequalities for the Riemann Zeta Functions},
 Mathematica Aeterna 3, no. 1 (2013), 21--24.
 \url{https://arastirmax.com/en/system/files/dergiler/135290/makaleler/3/1/arastirmax-two-inequalities-riemann-zeta-functions.pdf}.
+
+\bibitem{alzer-kwong}
+H. Alzer and M. K. Kwong,
+\emph{On the concavity and convexity of \(1/\zeta\)},
+International Journal of Number Theory 21, no. 8 (2025), 1825--1835.
+\url{https://doi.org/10.1142/S1793042125500897}.
+
+\bibitem{apostol}
+T. M. Apostol,
+\emph{Introduction to Analytic Number Theory},
+Undergraduate Texts in Mathematics, Springer, 1976.
+\url{https://doi.org/10.1007/978-1-4757-5579-4}.
+
+\bibitem{davenport}
+H. Davenport,
+\emph{Multiplicative Number Theory},
+3rd ed., revised by H. L. Montgomery, Graduate Texts in Mathematics, vol. 74, Springer, 2000.
+\url{https://doi.org/10.1007/978-1-4757-5927-3}.
+
+\bibitem{titchmarsh}
+E. C. Titchmarsh,
+\emph{The Theory of the Riemann Zeta-function},
+2nd ed., revised by D. R. Heath-Brown, Oxford University Press, 1986.
+\url{https://global.oup.com/academic/product/the-theory-of-the-riemann-zeta-function-9780198533696}.
+
+\bibitem{cover-thomas}
+T. M. Cover and J. A. Thomas,
+\emph{Elements of Information Theory},
+2nd ed., Wiley-Interscience, 2006.
+\url{https://doi.org/10.1002/047174882X}.
 
 \end{thebibliography}
 

@@ -127,13 +127,14 @@
         "mrw-538319137c76"
       ],
       "refs": [
-        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
+        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md",
+        "bootstrap/20260517T155423Z-zeta-law-pdf-extract.md"
       ],
-      "status": "partial",
+      "status": "proved",
       "tags": [
         "zeta-law",
         "theorem",
-        "partial",
+        "proved",
         "entropy",
         "modular"
       ],
@@ -224,11 +225,11 @@
       "refs": [
         "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
       ],
-      "status": "partial",
+      "status": "proved",
       "tags": [
         "zeta-law",
         "note",
-        "partial",
+        "proved",
         "framework"
       ],
       "title": "Four-layer zeta-law framework",
@@ -246,13 +247,14 @@
         "mrw-a034fa3c9d7f"
       ],
       "refs": [
-        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
+        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md",
+        "bootstrap/20260517T155423Z-zeta-law-pdf-extract.md"
       ],
-      "status": "partial",
+      "status": "proved",
       "tags": [
         "zeta-law",
         "theorem",
-        "partial",
+        "proved",
         "alzer-kwong",
         "curvature"
       ],
@@ -295,13 +297,14 @@
         "mrw-e71e57d7cbd0"
       ],
       "refs": [
-        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
+        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md",
+        "bootstrap/20260517T155423Z-zeta-law-pdf-extract.md"
       ],
-      "status": "partial",
+      "status": "proved",
       "tags": [
         "zeta-law",
         "theorem",
-        "partial",
+        "proved",
         "holder",
         "sroysang"
       ],
@@ -340,13 +343,14 @@
         "mrw-1435777561a8"
       ],
       "refs": [
-        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
+        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md",
+        "bootstrap/20260517T155423Z-zeta-law-pdf-extract.md"
       ],
-      "status": "partial",
+      "status": "proved",
       "tags": [
         "zeta-law",
         "lemma",
-        "partial",
+        "proved",
         "curvature"
       ],
       "title": "Uniform positive-axis curvature bound",
@@ -363,13 +367,14 @@
         "mrw-1ac4e44cbbad"
       ],
       "refs": [
-        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
+        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md",
+        "bootstrap/20260517T155423Z-zeta-law-pdf-extract.md"
       ],
-      "status": "partial",
+      "status": "proved",
       "tags": [
         "zeta-law",
         "corollary",
-        "partial",
+        "proved",
         "dirichlet-l",
         "modular"
       ],
@@ -387,11 +392,11 @@
       "refs": [
         "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
       ],
-      "status": "open",
+      "status": "superseded",
       "tags": [
         "zeta-law",
         "problem",
-        "open",
+        "superseded",
         "alzer-kwong"
       ],
       "title": "Alzer-Kwong convexity and concavity problem",
@@ -430,11 +435,11 @@
       "refs": [
         "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
       ],
-      "status": "open",
+      "status": "superseded",
       "tags": [
         "zeta-law",
         "problem",
-        "open",
+        "superseded",
         "nantomah"
       ],
       "title": "Nantomah zeta positivity problem",
@@ -451,11 +456,11 @@
       "refs": [
         "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
       ],
-      "status": "open",
+      "status": "superseded",
       "tags": [
         "zeta-law",
         "problem",
-        "open",
+        "superseded",
         "holder",
         "sroysang"
       ],
@@ -474,13 +479,14 @@
         "mrw-43596105b428"
       ],
       "refs": [
-        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md"
+        "raw/20260517T155448Z-build-a-raw-pudim-wiki-for-the-zeta-law-entropy-modular-reso-bootstrap-import.md",
+        "bootstrap/20260517T155423Z-zeta-law-pdf-extract.md"
       ],
-      "status": "partial",
+      "status": "proved",
       "tags": [
         "zeta-law",
         "theorem",
-        "partial",
+        "proved",
         "nantomah"
       ],
       "title": "Affirmative solution of Nantomah zeta positivity problem",
