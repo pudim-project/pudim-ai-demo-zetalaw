@@ -48,9 +48,9 @@ This table is an ingestion aid, not a substitute for the LaTeX definitions. Open
 | \(Z_{s,n}\) | Definition: Tail zeta partition function |
 | \(\zeta_n(s)\) | Definition: Tail zeta partition function |
 | \(\rho_{s,n}(k)\) | Definition: Tail zeta partition function |
-| \(T_7(n)\) | Theorem: Exact inverse-tail floor formula at s=7 |
-| \(\zeta_n(7)\) | Theorem: Exact inverse-tail floor formula at s=7 |
-| \(Q(n)\) | Theorem: Exact inverse-tail floor formula at s=7 |
-| \(P(n)\) | Theorem: Exact inverse-tail floor formula at s=7 |
-| \(\rfloor\) | Theorem: Exact inverse-tail floor formula at s=7 |
-| \(T_8(n)\) | Theorem: Exact inverse-tail floor formula at s=8 |
+| \(T_7(n)\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
+| \(\zeta_n(7)\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
+| \(Q(n)\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
+| \(P(n)\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
+| \(\rfloor\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
+| \(T_8(n)\) | Theorem: APP-0006: Exact inverse-tail floor formula at s=8 |

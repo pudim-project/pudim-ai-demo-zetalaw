@@ -1,6 +1,7 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems. Contact/review notes are intentionally minimal.
+The same application ids appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |

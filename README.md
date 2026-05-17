@@ -4,7 +4,7 @@ Powered by the Pudim Project.
 
 ## Abstract
 
-We study the Riemann zeta function as the partition function of the probability law $\rho_\beta(n)=n^{-\beta}/\zeta(\beta)$ on the positive integers. This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, divisor identities into probabilistic decompositions, and zeta tails into reciprocal partition problems. The first main result identifies the microscopic successor entropy of the zeta law with the limit and supremum of finite modular successor entropies; for prime moduli these modular shadows are explicit nonlinear functionals of Dirichlet $L$-values. The second structural result is an Euler-score decomposition expressing $-(\log\zeta)'(\beta)$ as a von Mangoldt-weighted divisibility average. We then prove six applications: positivity of a Nantomah expression involving $\zeta(n+1),\zeta(n+2),\zeta(n+3)$; the Alzer--Kwong convexity and concavity pattern for $1/\zeta$ on negative real intervals; complete monotonicity of $(\log\Gamma(x)+\log\Gamma(1/x))''$; a generalized Holder inequality for $\Gamma(s)\zeta(s)$ extending Sroysang's formulation; and exact inverse-tail floor formulas for $\zeta_n(7)^{-1}$ and $\zeta_n(8)^{-1}$, where $\zeta_n(s)=\sum_{k=n}^{\infty}k^{-s}$. The framework gives a compact route from zeta probability laws to entropy, curvature, Mellin-integral inequalities, and discrete reciprocal partition formulas.
+We study the Riemann zeta function as the partition function of the probability law $\rho_\beta(n)=n^{-\beta}/\zeta(\beta)$ on the positive integers. This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, divisor identities into probabilistic decompositions, and zeta tails into reciprocal partition problems. The first main result identifies the microscopic successor entropy of the zeta law with the limit and supremum of finite modular successor entropies; for prime moduli these modular shadows are explicit nonlinear functionals of Dirichlet $L$-values. The second structural result is an Euler-score decomposition expressing $-(\log\zeta)'(\beta)$ as a von Mangoldt-weighted divisibility average. We then prove six applications: the Alzer--Kwong convexity and concavity pattern for $1/\zeta$ on negative real intervals; positivity of a Nantomah expression involving $\zeta(n+1),\zeta(n+2),\zeta(n+3)$; a generalized Holder inequality for $\Gamma(s)\zeta(s)$ extending Sroysang's formulation; complete monotonicity of $(\log\Gamma(x)+\log\Gamma(1/x))''$; and exact inverse-tail floor formulas for $\zeta_n(7)^{-1}$ and $\zeta_n(8)^{-1}$, where $\zeta_n(s)=\sum_{k=n}^{\infty}k^{-s}$. The framework gives a compact route from zeta probability laws to entropy, curvature, Mellin-integral inequalities, and discrete reciprocal partition formulas.
 
 ## Keywords
 
@@ -19,6 +19,7 @@ Riemann zeta function, zeta probability law, free energy, entropy, modular distr
 ## Applications
 
 The application ledger records external problems marked solved or superseded by the staged theory.
+The same `APP-000x` labels appear in the manuscript `Applications` section and in the corresponding theorem names.
 
 | id | problem | status | reference |
 | --- | --- | --- | --- |

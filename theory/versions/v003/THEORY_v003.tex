@@ -35,7 +35,7 @@
 \maketitle
 
 \begin{abstract}
-We study the Riemann zeta function as the partition function of the probability law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on the positive integers.  This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, divisor identities into probabilistic decompositions, and zeta tails into reciprocal partition problems.  The first main result identifies the microscopic successor entropy of the zeta law with the limit and supremum of finite modular successor entropies; for prime moduli these modular shadows are explicit nonlinear functionals of Dirichlet \(L\)-values.  The second structural result is an Euler-score decomposition expressing \(-(\log\zeta)'(\beta)\) as a von Mangoldt-weighted divisibility average.  We then prove six applications: positivity of a Nantomah expression involving \(\zeta(n+1),\zeta(n+2),\zeta(n+3)\); the Alzer--Kwong convexity and concavity pattern for \(1/\zeta\) on negative real intervals; complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\); a generalized Holder inequality for \(\Gamma(s)\zeta(s)\) extending Sroysang's formulation; and exact inverse-tail floor formulas for \(\zeta_n(7)^{-1}\) and \(\zeta_n(8)^{-1}\), where \(\zeta_n(s)=\sum_{k=n}^{\infty}k^{-s}\).  The framework gives a compact route from zeta probability laws to entropy, curvature, Mellin-integral inequalities, and discrete reciprocal partition formulas.
+We study the Riemann zeta function as the partition function of the probability law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on the positive integers.  This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, divisor identities into probabilistic decompositions, and zeta tails into reciprocal partition problems.  The first main result identifies the microscopic successor entropy of the zeta law with the limit and supremum of finite modular successor entropies; for prime moduli these modular shadows are explicit nonlinear functionals of Dirichlet \(L\)-values.  The second structural result is an Euler-score decomposition expressing \(-(\log\zeta)'(\beta)\) as a von Mangoldt-weighted divisibility average.  We then prove six applications: the Alzer--Kwong convexity and concavity pattern for \(1/\zeta\) on negative real intervals; positivity of a Nantomah expression involving \(\zeta(n+1),\zeta(n+2),\zeta(n+3)\); a generalized Holder inequality for \(\Gamma(s)\zeta(s)\) extending Sroysang's formulation; complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\); and exact inverse-tail floor formulas for \(\zeta_n(7)^{-1}\) and \(\zeta_n(8)^{-1}\), where \(\zeta_n(s)=\sum_{k=n}^{\infty}k^{-s}\).  The framework gives a compact route from zeta probability laws to entropy, curvature, Mellin-integral inequalities, and discrete reciprocal partition formulas.
 \end{abstract}
 
 \noindent\textbf{Keywords.} Riemann zeta function; zeta probability law; Gibbs measure; entropy; modular residues; Dirichlet \(L\)-functions; von Mangoldt function; reciprocal zeta; zeta tails; Gamma function; polygamma functions; complete monotonicity; Holder inequality.
@@ -46,7 +46,21 @@ Many classical identities for \(\zeta(s)\) become more transparent after a proba
 
 The paper develops five connected layers.  The moment layer records basic zeta-law identities.  The modular entropy layer compares the successor map \(n\mapsto n+1\) with its finite residue shadows modulo \(q\).  The Euler-score layer rewrites zeta energy through von Mangoldt divisibility events.  The Mellin-Planck layer treats \(\Gamma(s)\zeta(s)\) as a continuous partition function and converts generalized Holder inequalities into integral norm inequalities.  The tail layer studies \(\zeta_n(s)^{-1}\) as a reciprocal partition problem for the truncated zeta law.
 
-The application section gives six solved external problems or candidate-problem specializations.  The Nantomah positivity question is proved by splitting a zeta expression into a positive linear tail and a controlled quadratic correction.  The Alzer--Kwong reciprocal-zeta conjecture is proved by transporting a positive-axis curvature estimate through the functional equation.  A reciprocal-Gamma complete-monotonicity problem is solved by a Weierstrass-product Laplace kernel.  The Sroysang generalized Holder problem is proved directly from generalized Holder applied to the Planck kernel.  Finally, two tail-zeta applications give exact formulas for \(\lfloor \zeta_n(7)^{-1}\rfloor\) and \(\lfloor \zeta_n(8)^{-1}\rfloor\), resolving the first two local tail-inversion special cases while leaving the general integer \(s>6\) problem open.
+Section~\ref{sec:applications} records the six solved external problems or candidate-problem specializations with stable application labels.  APP-0001 is the Alzer--Kwong reciprocal-zeta conjecture, proved by transporting a positive-axis curvature estimate through the functional equation.  APP-0002 is the Nantomah positivity question, proved by splitting a zeta expression into a positive linear tail and a controlled quadratic correction.  APP-0003 is the Sroysang generalized Holder problem, proved directly from generalized Holder applied to the Planck kernel.  APP-0004 is a reciprocal-Gamma complete-monotonicity problem, solved by a Weierstrass-product Laplace kernel.  APP-0005 and APP-0006 give exact formulas for \(\lfloor \zeta_n(7)^{-1}\rfloor\) and \(\lfloor \zeta_n(8)^{-1}\rfloor\), resolving the first two local tail-inversion special cases while leaving the general integer \(s>6\) problem open.
+
+\section{Applications}
+\label{sec:applications}
+
+The following application labels are used consistently in the repository landing page, the application changelog, and the theorem names below.  The order here is the landing-page order; the proof bodies are placed where their methods naturally fit the paper.
+
+\begin{enumerate}
+\item \textbf{APP-0001.} Alzer--Kwong convexity and concavity problem.  Solved by Theorem~\ref{thm:alzer-kwong}; source problem reference \cite{alzer-kwong}.
+\item \textbf{APP-0002.} Nantomah zeta positivity problem.  Solved by Theorem~\ref{thm:nantomah-positivity}; source problem reference \cite{nantomah}.
+\item \textbf{APP-0003.} Sroysang generalized Holder problem.  Solved by Theorem~\ref{thm:sroysang-holder}; source problem reference \cite{sroysang}.
+\item \textbf{APP-0004.} Complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\).  Solved by Theorem~\ref{thm:reciprocal-gamma-complete-monotonicity}; source problem reference \cite{qi-lim-nantomah-polygamma}.
+\item \textbf{APP-0005.} Exact inverse-tail floor formula at \(s=7\).  Solved by Theorem~\ref{thm:tail-s7-floor}; source context \cite{kim-song-tail,pan-wu-tail}.
+\item \textbf{APP-0006.} Exact inverse-tail floor formula at \(s=8\).  Solved by Theorem~\ref{thm:tail-s8-floor}; source context \cite{kim-song-tail,pan-wu-tail}.
+\end{enumerate}
 
 \section{Notation and zeta-law calculus}
 
@@ -151,7 +165,7 @@ The corresponding tail zeta law is the probability distribution on \(\{n,n+1,\ld
 
 Exact formulas for integer parts of reciprocal zeta tails have been studied for small integer exponents.  Known formulas include \(s=2,3,4,5\), with a sufficiently-large-\(n\) formula for \(s=6\); Kim and Song record that no analogous formula was known for integer \(s>6\) at the time of their work \cite{kim-song-tail}.  The 2024 asymptotic inverse-tail results of Pan and Wu provide related context \cite{pan-wu-tail}.  The next two theorems give exact formulas at \(s=7\) and \(s=8\).  The first uses a single rational telescoping enclosure, while the second needs adjacent corrected asymptotic truncations.
 
-\begin{theorem}[Exact inverse-tail floor formula at s=7]
+\begin{theorem}[APP-0005: Exact inverse-tail floor formula at s=7]
 \label{thm:tail-s7-floor}
 Let
 \begin{equation}
@@ -281,7 +295,7 @@ then gives
 Therefore \(M_n<T_7(n)^{-1}<M_n+1\), proving \eqref{eq:tail-s7-finite-table}.  The finite rational certificate is stored with the source as a reproducible calculation.
 \end{proof}
 
-\begin{theorem}[Exact inverse-tail floor formula at s=8]
+\begin{theorem}[APP-0006: Exact inverse-tail floor formula at s=8]
 \label{thm:tail-s8-floor}
 Let
 \begin{equation}
@@ -686,7 +700,7 @@ Differentiate the logarithm of the integral in \eqref{eq:mellin-planck-partition
 
 Qi, Lim, and Nantomah asked whether the second derivative of \(\log\Gamma(x)+\log\Gamma(1/x)\) is completely monotonic on \((0,\infty)\) \cite{qi-lim-nantomah-polygamma}.  The next theorem answers this in the affirmative by a reciprocal-Weierstrass Laplace kernel.
 
-\begin{theorem}[Complete monotonicity of reciprocal-Gamma curvature]
+\begin{theorem}[APP-0004: Complete monotonicity of reciprocal-Gamma curvature]
 \label{thm:reciprocal-gamma-complete-monotonicity}
 Let
 \begin{equation}
@@ -813,9 +827,9 @@ Thus \(K(t)>0\) for \(t>0\).  Differentiating under the Laplace integral in \eqr
 This proves \eqref{eq:reciprocal-gamma-complete-monotonicity}.
 \end{proof}
 
-\section{Applications to external zeta inequalities}
+\section{External zeta inequality proofs}
 
-\begin{theorem}[Affirmative solution of Nantomah zeta positivity problem]
+\begin{theorem}[APP-0002: Affirmative solution of Nantomah zeta positivity problem]
 \label{thm:nantomah-positivity}
 For every \(n\in\N\),
 \begin{equation}
@@ -928,7 +942,7 @@ K_3>
 Hence \(K_s>0\) for all integers \(s\ge2\), proving the theorem.  This answers Nantomah's question \cite{nantomah}.
 \end{proof}
 
-\begin{theorem}[Alzer-Kwong convexity and concavity pattern for reciprocal zeta]
+\begin{theorem}[APP-0001: Alzer-Kwong convexity and concavity pattern for reciprocal zeta]
 \label{thm:alzer-kwong}
 Let \(F(x)=1/\zeta(x)\).  For every integer \(n\ge1\),
 \begin{equation}
@@ -1001,7 +1015,7 @@ G''(u)=G(u)(\ell''(u)+\ell'(u)^2)>0.
 The two signs in \eqref{eq:alzer-kwong-convex} and \eqref{eq:alzer-kwong-concave} now follow from \(F(-u)=G(u)\) on \(u\in(4n-2,4n)\) and \(F(-u)=-G(u)\) on \(u\in(4n,4n+2)\).  This proves the Alzer--Kwong sign pattern \cite{alzer-kwong}.
 \end{proof}
 
-\begin{theorem}[Generalized Holder inequality for Gamma zeta]
+\begin{theorem}[APP-0003: Generalized Holder inequality for Gamma zeta]
 \label{thm:sroysang-holder}
 Let \(m\ge2\), \(r\ge1\), \(x_1,\ldots,x_m>1\), and \(p_1,\ldots,p_m>1\) satisfy
 \begin{equation}
@@ -1089,7 +1103,7 @@ which is equivalent to \eqref{eq:sroysang-generalized-holder}.
 
 \section{Conclusion}
 
-The zeta-law normalization gives a single language for several identities and inequalities involving \(\zeta\).  At the structural level, the paper proves the successor entropy formula \eqref{eq:successor-entropy-series} and its modular resolution \eqref{eq:successor-entropy-modular-resolution}, the Euler-score decomposition \eqref{eq:euler-score-decomposition}, the Mellin-Planck variance identity \eqref{eq:mellin-planck-log-convexity}, the reciprocal-Gamma complete-monotonicity theorem \eqref{thm:reciprocal-gamma-complete-monotonicity}, and the tail partition formulas \eqref{eq:tail-s7-floor} and \eqref{eq:tail-s8-floor}.  These results are not only formal translations: they supply direct estimates for external problems.  The Nantomah positivity question follows from a moment split and tail bounds; the Alzer--Kwong reciprocal-zeta curvature pattern follows from the functional equation and a positive-axis curvature estimate; the reciprocal-Gamma curvature problem follows from a positive Laplace kernel; the Sroysang generalized Holder inequality follows from the Planck-kernel integral representation; the \(s=7\) inverse-tail formula follows from a rational telescoping enclosure; and the \(s=8\) inverse-tail formula follows from adjacent corrected asymptotic truncations.  The remaining useful directions are to understand whether the reciprocal-Weierstrass kernel method extends to products of higher polygamma functions and to sharpen the modular entropy side, especially the prime-modulus functionals in \eqref{eq:prime-functional-limit}, where additive successor entropy is encoded by finite Dirichlet \(L\)-value data.
+The zeta-law normalization gives a single language for several identities and inequalities involving \(\zeta\).  At the structural level, the paper proves the successor entropy formula \eqref{eq:successor-entropy-series} and its modular resolution \eqref{eq:successor-entropy-modular-resolution}, the Euler-score decomposition \eqref{eq:euler-score-decomposition}, the Mellin-Planck variance identity \eqref{eq:mellin-planck-log-convexity}, the reciprocal-Gamma complete-monotonicity theorem \eqref{thm:reciprocal-gamma-complete-monotonicity}, and the tail partition formulas \eqref{eq:tail-s7-floor} and \eqref{eq:tail-s8-floor}.  These results are not only formal translations: they supply direct estimates for the six labelled applications in Section~\ref{sec:applications}.  APP-0001 follows from the functional equation and a positive-axis curvature estimate; APP-0002 follows from a moment split and tail bounds; APP-0003 follows from the Planck-kernel integral representation; APP-0004 follows from a positive Laplace kernel; APP-0005 follows from a rational telescoping enclosure; and APP-0006 follows from adjacent corrected asymptotic truncations.  The remaining useful directions are to understand whether the reciprocal-Weierstrass kernel method extends to products of higher polygamma functions and to sharpen the modular entropy side, especially the prime-modulus functionals in \eqref{eq:prime-functional-limit}, where additive successor entropy is encoded by finite Dirichlet \(L\)-value data.
 
 \begin{thebibliography}{10}
 
