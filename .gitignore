@@ -2,6 +2,10 @@
 .math-wiki/staging/github-work/
 .math-wiki/staging/email/
 .math-wiki/staging/logs/
+.math-wiki/staging/bundles/
+.math-wiki/staging/compile/
+.math-wiki/staging/contact_ledger.json
+.math-wiki/staging/*-manifest.json
 
 # OS/editor noise
 .DS_Store

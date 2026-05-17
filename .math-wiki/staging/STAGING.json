@@ -1,19 +1,30 @@
 {
-  "github_repo_full_name": "pudim-project/zetalaw-demo",
-  "github_account": "pudim-project",
-  "github_remote_url": "https://github.com/pudim-project/zetalaw-demo.git",
-  "gmail_account_label": "pudimproject@gmail.com",
-  "gmail_label": "Pudim/zetalaw-demo",
-  "email_subject_prefix": "[PUDIM-APP-zetalaw-demo]",
   "applications_path": "staging/applications.json",
   "contact_ledger_path": "staging/contact_ledger.json",
-  "status": "configured-and-pushed",
+  "email_subject_prefix": "[PUDIM-APP-zetalaw-demo]",
+  "first_stage_utc": "20260517T161743Z",
+  "github_account": "pudim-project",
   "github_live_creation_blocked": false,
   "github_live_creation_blocker": "",
+  "github_remote_url": "https://github.com/pudim-project/zetalaw-demo.git",
+  "github_repo_full_name": "pudim-project/zetalaw-demo",
+  "gmail_account_label": "pudimproject@gmail.com",
+  "gmail_label": "Pudim/zetalaw-demo",
   "latest_push_branch": "main",
+  "latest_stage_id": "stage_v001",
+  "latest_stage_utc": "20260517T161743Z",
+  "latest_theory_version": "v001",
   "notes": [
     "GitHub creation and initial push completed with gh authenticated as pudim-project.",
     "Live Gmail drafting/sending requires the Gmail connector session to be authenticated as pudimproject@gmail.com.",
     "Do not send email without explicit batch confirmation."
-  ]
+  ],
+  "status": "configured-and-pushed",
+  "version_map": {
+    "v001": {
+      "date_utc": "20260517T161743Z",
+      "repo": "pudim-project/zetalaw-demo",
+      "stage_id": "stage_v001"
+    }
+  }
 }
