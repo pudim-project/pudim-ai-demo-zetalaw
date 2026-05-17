@@ -1,6 +1,6 @@
 # Zeta-Law Entropy, Gamma Curvature, and Tail Partition Applications
 
-Powered by the Pudim Project.
+Powered by the [Pudim Project](https://github.com/pudim-project/pudim-project).
 
 ## Abstract
 
