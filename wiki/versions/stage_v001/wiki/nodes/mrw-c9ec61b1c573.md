@@ -27,6 +27,10 @@ for every integer \(n\ge1\).
 
 The PDF imports this as Conjecture 1.12 from Alzer and Kwong and gives a claimed proof using the zeta functional equation plus a positive-axis curvature bound.
 
+## Source References
+
+- Horst Alzer and Man Kam Kwong, "On the concavity and convexity of \(1/\zeta\)", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: https://doi.org/10.1142/S1793042125500897
+
 ## Failed Approaches
 
 ## Next Moves
