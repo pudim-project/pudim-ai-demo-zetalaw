@@ -4,9 +4,9 @@ This changelog records staged applications of the theory to externally stated pr
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
-| APP-0001 | 2026-05-17 | Alzer-Kwong convexity and concavity problem | Alzer-Kwong convexity and concavity pattern for reciprocal zeta | solution candidate at THEORY_v001 | no contact |
-| APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solution candidate at THEORY_v001 | no contact |
-| APP-0003 | 2026-05-17 | Sroysang generalized Holder problem | Generalized Holder inequality for Gamma zeta | solution candidate at THEORY_v001 | no contact |
+| APP-0001 | 2026-05-17 | Alzer-Kwong convexity and concavity problem | Alzer-Kwong convexity and concavity pattern for reciprocal zeta | solution candidate at THEORY_v002 | no contact |
+| APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solution candidate at THEORY_v002 | no contact |
+| APP-0003 | 2026-05-17 | Sroysang generalized Holder problem | Generalized Holder inequality for Gamma zeta | solution candidate at THEORY_v002 | no contact |
 
 ## Application Details
 
@@ -17,8 +17,8 @@ This changelog records staged applications of the theory to externally stated pr
 - solution status: partial
 - problem node: `wiki/nodes/mrw-c9ec61b1c573.md`
 - solution node: `wiki/nodes/mrw-6b7d94a697d7.md`
-- theory version: `v001`
-- stage: `stage_v001`
+- theory version: `v002`
+- stage: `stage_v002`
 - review status: no contact
 
 #### Stated problem
@@ -44,8 +44,8 @@ F''(x)<0\quad\text{on }(-4n-2,-4n),
 - solution status: partial
 - problem node: `wiki/nodes/mrw-eb9a71666a04.md`
 - solution node: `wiki/nodes/mrw-f9e130ed65ef.md`
-- theory version: `v001`
-- stage: `stage_v001`
+- theory version: `v002`
+- stage: `stage_v002`
 - review status: no contact
 
 #### Stated problem
@@ -63,8 +63,8 @@ Determine whether, for every \(n\in\mathbb N\),
 - solution status: partial
 - problem node: `wiki/nodes/mrw-f95d129327fc.md`
 - solution node: `wiki/nodes/mrw-8aa5f1703758.md`
-- theory version: `v001`
-- stage: `stage_v001`
+- theory version: `v002`
+- stage: `stage_v002`
 - review status: no contact
 
 #### Stated problem

@@ -4,7 +4,7 @@ Powered by the Pudim Project.
 
 ## Abstract
 
-This paper develops the audited core of a zeta-law framework for treating zeta-ratio identities, modular entropy shadows, and applications to inequalities for the Riemann zeta function. The fully verified material in this version consists of the Gibbs-law formulation, free-energy notation, modular and Mellin-Planck definitions, and Euler-score identities. Several stronger application claims are recorded as audit targets. The current application ledger connects the framework to Alzer-Kwong convexity and concavity problem, Nantomah zeta positivity problem, and Sroysang generalized Holder problem, while preserving each entry's proof status and source reference. All 3 staged application entries are solution candidates or audit targets until a complete local proof promotes them. The emphasis is a professional, inspectable mathematical artifact: notation is introduced before use, formal claims are separated by proof status, and public references are retained with the staged applications. Version v001 should be read as the latest staged synthesis of the theory together with its conservative application bookkeeping.
+We develop a probabilistic framework for organizing identities and inequalities involving the Riemann zeta function through Gibbs laws, residue distributions, and Mellin-Planck normalizations. The basic zeta law has partition function \(\zeta(\beta)\), so zeta ratios become moments and logarithmic derivatives become energy averages and variances. This point of view gives a self-contained derivation of Euler-score identities from the von Mangoldt divisor formula and places finite divisor sums, modular successor entropies, and Gamma-zeta log-convexity within a common notation. The framework also isolates precise application problems concerning reciprocal-zeta curvature, a positivity question of Nantomah, and a generalized Holder inequality of Sroysang. These applications are formulated as mathematical frontiers whose final resolution depends on completing the indicated analytic estimates, while the proved identities supply the reusable structural core.
 
 ## Keywords
 
@@ -12,8 +12,8 @@ Riemann zeta function, zeta probability law, free energy, entropy, modular distr
 
 ## Latest Theory
 
-- PDF: [`THEORY_v001.pdf`](theory/versions/v001/THEORY_v001.pdf)
-- LaTeX: [`THEORY_v001.tex`](theory/versions/v001/THEORY_v001.tex)
+- PDF: [`THEORY_v002.pdf`](theory/versions/v002/THEORY_v002.pdf)
+- LaTeX: [`THEORY_v002.tex`](theory/versions/v002/THEORY_v002.tex)
 - Latest aliases: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf), [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 
 ## Applications

@@ -5,8 +5,10 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v001/`: immutable wiki snapshot for theory `v001`.
+- `versions/stage_v002/`: immutable wiki snapshot for theory `v002`.
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
+
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v002/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
 
 ## Open In Obsidian
 
@@ -42,13 +44,13 @@ This table is an ingestion aid, not a substitute for the LaTeX definitions. Open
 | \(E(n)\) | Definition: Riemann zeta probability law |
 | \(Z(\beta)\) | Definition: Riemann zeta probability law |
 | \(A(\beta)\) | Definition: Zeta free energy |
-| \(A'(\beta)\) | Definition: Zeta free energy |
-| \(A''(\beta)\) | Definition: Zeta free energy |
-| \(\mu_{q,\beta}(a)\) | Definition: Residue distribution and successor entropy |
-| \(B_q(\beta)\) | Definition: Residue distribution and successor entropy |
+| \(A'(\beta)\) | Proposition: Free-energy derivatives |
+| \(A''(\beta)\) | Proposition: Free-energy derivatives |
+| \(\mu_{q,\beta}(a)\) | Definition: Residue distribution |
+| \(B_q(\beta)\) | Definition: Successor entropy |
 | \(\Sigma(\beta)\) | Problem: Successor entropy resolution |
 | \(S_a(p,\beta)\) | Problem: Prime-modulus Dirichlet \(L\)-resolution |
 | \(\mu_{p,\beta}(a)\) | Problem: Prime-modulus Dirichlet \(L\)-resolution |
 | \(\mu_{p,\beta}(0)\) | Problem: Prime-modulus Dirichlet \(L\)-resolution |
-| \(\mu_{d,\beta}(0)\) | Proposition: Euler-score decomposition |
+| \(\mu_{d,\beta}(0)\) | Theorem: Euler-score decomposition |
 | \(M(s)\) | Definition: Mellin-Planck partition function |

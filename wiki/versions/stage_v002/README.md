@@ -1,6 +1,6 @@
 # Wiki Vault
 
-This directory is the latest mutable wiki vault for theory `v002`.
+This directory is the immutable wiki snapshot `stage_v002` for theory `v002`.
 
 ## Obsidian Ingestion
 
