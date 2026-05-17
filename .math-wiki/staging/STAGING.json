@@ -7,11 +7,12 @@
   "email_subject_prefix": "[PUDIM-APP-zetalaw-demo]",
   "applications_path": "staging/applications.json",
   "contact_ledger_path": "staging/contact_ledger.json",
-  "status": "configured-local-only",
-  "github_live_creation_blocked": true,
-  "github_live_creation_blocker": "Current gh auth account is DomingosSalazar; GitHub rejected creating repositories for pudim-project.",
+  "status": "configured-and-pushed",
+  "github_live_creation_blocked": false,
+  "github_live_creation_blocker": "",
+  "latest_push_branch": "main",
   "notes": [
-    "Live GitHub creation/push requires gh auth for pudim-project.",
+    "GitHub creation and initial push completed with gh authenticated as pudim-project.",
     "Live Gmail drafting/sending requires the Gmail connector session to be authenticated as pudimproject@gmail.com.",
     "Do not send email without explicit batch confirmation."
   ]
