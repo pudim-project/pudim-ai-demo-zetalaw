@@ -1,0 +1,8 @@
+# Pudim local/private staging work
+.math-wiki/staging/github-work/
+.math-wiki/staging/email/
+.math-wiki/staging/logs/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

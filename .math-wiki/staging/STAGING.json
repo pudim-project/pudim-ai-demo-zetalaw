@@ -1,0 +1,18 @@
+{
+  "github_repo_full_name": "pudim-project/zetalaw-demo",
+  "github_account": "pudim-project",
+  "github_remote_url": "https://github.com/pudim-project/zetalaw-demo.git",
+  "gmail_account_label": "pudimproject@gmail.com",
+  "gmail_label": "Pudim/zetalaw-demo",
+  "email_subject_prefix": "[PUDIM-APP-zetalaw-demo]",
+  "applications_path": "staging/applications.json",
+  "contact_ledger_path": "staging/contact_ledger.json",
+  "status": "configured-local-only",
+  "github_live_creation_blocked": true,
+  "github_live_creation_blocker": "Current gh auth account is DomingosSalazar; GitHub rejected creating repositories for pudim-project.",
+  "notes": [
+    "Live GitHub creation/push requires gh auth for pudim-project.",
+    "Live Gmail drafting/sending requires the Gmail connector session to be authenticated as pudimproject@gmail.com.",
+    "Do not send email without explicit batch confirmation."
+  ]
+}
