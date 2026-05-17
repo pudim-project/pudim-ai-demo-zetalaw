@@ -5,10 +5,10 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v002/`: immutable wiki snapshot for theory `v002`.
+- `versions/stage_v003/`: immutable wiki snapshot for theory `v003`.
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
 
-Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v002/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v003/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
 
 ## Open In Obsidian
 
@@ -18,9 +18,9 @@ In Obsidian, start at `Home.md`, then open `wiki/index.md`. Use Backlinks to ins
 
 ## Current Node Summary
 
-- total nodes: 17
-- by type: corollary: 1, definition: 4, lemma: 1, note: 2, problem: 3, proposition: 2, theorem: 4
-- by status: partial: 1, proved: 13, superseded: 3
+- total nodes: 29
+- by type: conjecture: 2, corollary: 1, definition: 5, lemma: 1, note: 2, problem: 9, proposition: 2, theorem: 7
+- by status: conjectural: 1, open: 3, partial: 1, proved: 17, superseded: 7
 
 ## Reading Order
 
@@ -45,12 +45,12 @@ This table is an ingestion aid, not a substitute for the LaTeX definitions. Open
 | \(Z(\beta)\) | Definition: Riemann zeta probability law |
 | \(A(\beta)\) | Definition: Zeta free energy |
 | \(D(\rho_\alpha\Vert\rho_\beta)\) | Proposition: Zeta-law calculus |
-| \(\mu_{q,\beta}(a)\) | Definition: Modular residue distribution and successor entropy |
-| \(B_q(\beta)\) | Definition: Modular residue distribution and successor entropy |
-| \(\Sigma(\beta)\) | Theorem: Zeta-law successor entropy and modular resolution |
-| \(S_a(p,\beta)\) | Corollary: Prime-modulus Dirichlet L-resolution |
-| \(\mu_{p,\beta}(a)\) | Corollary: Prime-modulus Dirichlet L-resolution |
-| \(\mu_{p,\beta}(0)\) | Corollary: Prime-modulus Dirichlet L-resolution |
-| \(\mu_{d,\beta}(0)\) | Theorem: Euler-score decomposition |
-| \(M(s)\) | Definition: Mellin-Planck partition function |
-| \(\zeta(s)\) | Definition: Mellin-Planck partition function |
+| \(Z_{s,n}\) | Definition: Tail zeta partition function |
+| \(\zeta_n(s)\) | Definition: Tail zeta partition function |
+| \(\rho_{s,n}(k)\) | Definition: Tail zeta partition function |
+| \(T_7(n)\) | Theorem: Exact inverse-tail floor formula at s=7 |
+| \(\zeta_n(7)\) | Theorem: Exact inverse-tail floor formula at s=7 |
+| \(Q(n)\) | Theorem: Exact inverse-tail floor formula at s=7 |
+| \(P(n)\) | Theorem: Exact inverse-tail floor formula at s=7 |
+| \(\rfloor\) | Theorem: Exact inverse-tail floor formula at s=7 |
+| \(T_8(n)\) | Theorem: Exact inverse-tail floor formula at s=8 |
