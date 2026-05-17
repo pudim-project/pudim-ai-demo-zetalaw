@@ -1,8 +1,14 @@
-# zetalaw-demo
+# Zeta-Law Entropy and Zeta-Inequality Framework
 
-Live Pudim Project mathematical theory (v001): Active Terminal Goal
+Powered by the Pudim Project.
 
-This repository is a live object updated autonomously and powered by the Pudim Project.
+## Abstract
+
+This paper develops the audited core of a zeta-law framework for treating zeta-ratio identities, modular entropy shadows, and applications to inequalities for the Riemann zeta function. The fully verified material in this version consists of the Gibbs-law formulation, free-energy notation, modular and Mellin-Planck definitions, and Euler-score identities. Several stronger application claims are recorded as audit targets. The current application ledger connects the framework to Alzer-Kwong convexity and concavity problem, Nantomah zeta positivity problem, and Sroysang generalized Holder problem, while preserving each entry's proof status and source reference. All 3 staged application entries are solution candidates or audit targets until a complete local proof promotes them. The emphasis is a professional, inspectable mathematical artifact: notation is introduced before use, formal claims are separated by proof status, and public references are retained with the staged applications. Version v001 should be read as the latest staged synthesis of the theory together with its conservative application bookkeeping.
+
+## Keywords
+
+Riemann zeta function, zeta probability law, free energy, entropy, modular distributions, Dirichlet L-functions, Mellin transform, Holder inequalities, convexity, open problems
 
 ## Latest Theory
 
@@ -10,30 +16,20 @@ This repository is a live object updated autonomously and powered by the Pudim P
 - LaTeX: [`THEORY_v001.tex`](theory/versions/v001/THEORY_v001.tex)
 - Latest aliases: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf), [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 
-## How To Read
-
-Read the PDF first. Then use `wiki/latest/` for provenance, definitions, route state, open frontiers, and atomic mathematical claims. The versioned wiki snapshot for this release is `wiki/versions/stage_v001/`.
-
 ## Applications
 
-# Applications Changelog
+The application ledger currently records external problems connected to the theory. Entries marked as solution candidates are audit targets, not final solved claims.
 
-This changelog records staged applications of the theory to externally stated problems. Contact/review notes are intentionally minimal.
+| id | problem | status | reference |
+| --- | --- | --- | --- |
+| APP-0001 | Alzer-Kwong convexity and concavity problem | solution candidate | Horst Alzer and Man Kam Kwong, "On the concavity and convexity of \(1/\zeta\)", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897) |
+| APP-0002 | Nantomah zeta positivity problem | solution candidate | Kwara Nantomah, "Open Problem on Riemann Zeta Function", ResearchGate problem note, October 2024. [ResearchGate](https://www.researchgate.net/publication/384676538_Open_Problem_on_Riemann_Zeta_Function) |
+| APP-0003 | Sroysang generalized Holder problem | solution candidate | Banyat Sroysang, "Two Inequalities for the Riemann Zeta Functions", Mathematica Aeterna, Vol. 3, No. 1 (2013), 21-24. [PDF](https://arastirmax.com/en/system/files/dergiler/135290/makaleler/3/1/arastirmax-two-inequalities-riemann-zeta-functions.pdf) |
 
-| id | date | stated problem | solution | status | review |
-| --- | --- | --- | --- | --- | --- |
-| APP-0001 | 2026-05-17 | Alzer-Kwong convexity and concavity problem | Alzer-Kwong convexity and concavity pattern for reciprocal zeta | solution candidate at THEORY_v001 | no contact |
-| APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solution candidate at THEORY_v001 | no contact |
-| APP-0003 | 2026-05-17 | Sroysang generalized Holder problem | Generalized Holder inequality for Gamma zeta | solution candidate at THEORY_v001 | no contact |
+See [`APPLICATIONS.md`](APPLICATIONS.md) for the full application changelog and detailed source links.
 
-## Application Details
+## Reading Notes
 
-
-Staged applications:
-- `APP-0001` Alzer-Kwong convexity and concavity problem: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of $1/\zeta$", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)
-- `APP-0002` Nantomah zeta positivity problem: Kwara Nantomah, "Open Problem on Riemann Zeta Function", ResearchGate problem note, October 2024. [ResearchGate](https://www.researchgate.net/publication/384676538_Open_Problem_on_Riemann_Zeta_Function)
-- `APP-0003` Sroysang generalized Holder problem: Banyat Sroysang, "Two Inequalities for the Riemann Zeta Functions", Mathematica Aeterna, Vol. 3, No. 1 (2013), 21-24. [PDF](https://arastirmax.com/en/system/files/dergiler/135290/makaleler/3/1/arastirmax-two-inequalities-riemann-zeta-functions.pdf)
-
-See [`APPLICATIONS.md`](APPLICATIONS.md) for the full changelog.
+Start with the PDF for the paper narrative and the LaTeX source for exact formulas. Human and agent ingestion notes are in [`HUMANS.md`](HUMANS.md) and [`AGENTS.md`](AGENTS.md).
 
 Repository URL: https://github.com/pudim-project/zetalaw-demo

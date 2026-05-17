@@ -12,7 +12,7 @@ This changelog records staged applications of the theory to externally stated pr
 
 ### APP-0001: Alzer-Kwong convexity and concavity problem
 
-- source reference: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of $1/\zeta$", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)
+- source reference: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of \(1/\zeta\)", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)
 - solution: Alzer-Kwong convexity and concavity pattern for reciprocal zeta
 - solution status: partial
 - problem node: `wiki/nodes/mrw-c9ec61b1c573.md`
@@ -23,19 +23,19 @@ This changelog records staged applications of the theory to externally stated pr
 
 #### Stated problem
 
-Alzer and Kwong conjectured the reciprocal zeta function $F(x)=1/\zeta(x)$ has the sign pattern 
+Alzer and Kwong conjectured the reciprocal zeta function \(F(x)=1/\zeta(x)\) has the sign pattern 
 
-$$
+\[
 F''(x)>0\quad\text{on }(-4n,-4n+2),
-$$
+\]
 
  and 
 
-$$
+\[
 F''(x)<0\quad\text{on }(-4n-2,-4n),
-$$
+\]
 
- for every integer $n\ge1$.
+ for every integer \(n\ge1\).
 
 ### APP-0002: Nantomah zeta positivity problem
 
@@ -50,11 +50,11 @@ $$
 
 #### Stated problem
 
-Determine whether, for every $n\in\mathbb N$, 
+Determine whether, for every \(n\in\mathbb N\), 
 
-$$
+\[
 (n+2)\zeta(n+1)\zeta(n+3) -(n+1)\zeta(n+2)^2 -\zeta(n+1)\zeta(n+2)>0.
-$$
+\]
 
 ### APP-0003: Sroysang generalized Holder problem
 
@@ -71,12 +71,12 @@ $$
 
 Sroysang asked how a Holder-type zeta inequality changes when the usual condition 
 
-$$
+\[
 \sum_{i=1}^m\frac1{p_i}=1
-$$
+\]
 
  is replaced by 
 
-$$
+\[
 \sum_{i=1}^m\frac1{p_i}=\frac1r,\qquad r\ge1.
-$$
+\]

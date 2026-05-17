@@ -1,7 +1,9 @@
 # How To Read This Repository
 
-Start with `theory/latest/THEORY.pdf` for the latest readable theory. Use `theory/latest/THEORY.tex` when you want exact source.
+Start with `theory/latest/THEORY.pdf` for the latest readable paper. Use `theory/latest/THEORY.tex` when you need exact LaTeX source, equation labels, or bibliography details.
 
-The `wiki/latest/` directory is a provenance map for the theory: `GOAL.md` states the terminal problem, `STATUS.md` summarizes the current research state, `STRATEGY.md` records the route map, and `wiki/nodes/` contains atomic definitions, lemmas, theorems, conjectures, problems, examples, and notes.
+The generated wiki is intentionally documented inside `wiki/README.md`. For Obsidian, open `wiki/latest/` as the vault folder, then begin at `Home.md` and `wiki/index.md`. The node files under `wiki/latest/wiki/nodes/` are the atomic provenance records behind the paper.
+
+Read node statuses conservatively: `proved` means locally audited with a proof in the node; `open`, `partial`, and `conjectural` are frontier material; application candidates are not solved claims.
 
 Immutable snapshots live under `theory/versions/v001/` and `wiki/versions/stage_v001/`.
