@@ -12,7 +12,7 @@ This changelog records staged applications of the theory to externally stated pr
 
 ### APP-0001: Alzer-Kwong convexity and concavity problem
 
-- source reference: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of \(1/\zeta\)", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)
+- source reference: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of $1/\zeta$", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)
 - solution: Alzer-Kwong convexity and concavity pattern for reciprocal zeta
 - solution status: proved
 - problem node: `wiki/nodes/mrw-c9ec61b1c573.md`
