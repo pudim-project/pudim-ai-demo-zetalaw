@@ -30,9 +30,9 @@ This changelog records staged applications of the theory to externally stated pr
 
 
 Staged solved external problems:
-- `APP-0001` Alzer-Kwong convexity and concavity problem: not recorded
-- `APP-0002` Nantomah zeta positivity problem: not recorded
-- `APP-0003` Sroysang generalized Holder problem: not recorded
+- `APP-0001` Alzer-Kwong convexity and concavity problem: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of \(1/\zeta\)", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835.
+- `APP-0002` Nantomah zeta positivity problem: Kwara Nantomah, "Open Problem on Riemann Zeta Function", ResearchGate problem note, October 2024.
+- `APP-0003` Sroysang generalized Holder problem: Banyat Sroysang, "Two Inequalities for the Riemann Zeta Functions", Mathematica Aeterna, Vol. 3, No. 1 (2013), 21-24.
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the full changelog.
 
