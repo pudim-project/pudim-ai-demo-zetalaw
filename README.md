@@ -16,20 +16,6 @@ Riemann zeta function, zeta probability law, free energy, entropy, modular distr
 - LaTeX: [`THEORY_v002.tex`](theory/versions/v002/THEORY_v002.tex)
 - Latest aliases: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf), [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 
-## Core Formulas
-
-```math
-\rho_\beta(n)=\frac{n^{-\beta}}{\zeta(\beta)},\qquad \beta>1
-```
-
-```math
-\mathbb E_\beta[N^{-r}]=\frac{\zeta(\beta+r)}{\zeta(\beta)},\qquad r\ge0
-```
-
-```math
--(\log\zeta)'(\beta)=\sum_{d=1}^{\infty}\frac{\Lambda(d)}{d^\beta}
-```
-
 ## Applications
 
 The application ledger records external problems marked solved or superseded by the staged theory.
