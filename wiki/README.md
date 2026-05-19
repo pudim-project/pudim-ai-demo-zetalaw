@@ -5,10 +5,10 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v003/`: immutable wiki snapshot for theory `v003`.
+- `versions/stage_v004/`: immutable wiki snapshot for theory `v004`.
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
 
-Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v003/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v004/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
 
 ## Open In Obsidian
 
@@ -18,9 +18,9 @@ In Obsidian, start at `Home.md`, then open `wiki/index.md`. Use Backlinks to ins
 
 ## Current Node Summary
 
-- total nodes: 29
-- by type: conjecture: 2, corollary: 1, definition: 5, lemma: 1, note: 2, problem: 9, proposition: 2, theorem: 7
-- by status: conjectural: 1, open: 3, partial: 1, proved: 17, superseded: 7
+- total nodes: 31
+- by type: conjecture: 2, corollary: 1, definition: 5, lemma: 1, note: 2, problem: 9, proposition: 2, theorem: 9
+- by status: conjectural: 1, open: 1, partial: 2, proved: 19, superseded: 8
 
 ## Reading Order
 
@@ -44,6 +44,8 @@ This table is an ingestion aid, not a substitute for the LaTeX definitions. Open
 | \(E(n)\) | Definition: Riemann zeta probability law |
 | \(Z(\beta)\) | Definition: Riemann zeta probability law |
 | \(A(\beta)\) | Definition: Zeta free energy |
+| \(P_0(x)\) | Theorem: APP-0007: Complete monotonicity of reciprocal digamma product curvature |
+| \(P_n(x)\) | Theorem: APP-0008: Counterexample to complete monotonicity of higher-order polygamma product curvature |
 | \(D(\rho_\alpha\Vert\rho_\beta)\) | Proposition: Zeta-law calculus |
 | \(Z_{s,n}\) | Definition: Tail zeta partition function |
 | \(\zeta_n(s)\) | Definition: Tail zeta partition function |
@@ -52,5 +54,3 @@ This table is an ingestion aid, not a substitute for the LaTeX definitions. Open
 | \(\zeta_n(7)\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
 | \(Q(n)\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
 | \(P(n)\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
-| \(\rfloor\) | Theorem: APP-0005: Exact inverse-tail floor formula at s=7 |
-| \(T_8(n)\) | Theorem: APP-0006: Exact inverse-tail floor formula at s=8 |

@@ -1,13 +1,13 @@
 {
-  "date_utc": "20260517T221014Z",
+  "date_utc": "20260519T010455Z",
   "public_paths": {
-    "latex": "theory/versions/v003/THEORY_v003.tex",
-    "pdf": "theory/versions/v003/THEORY_v003.pdf",
+    "latex": "theory/versions/v004/THEORY_v004.tex",
+    "pdf": "theory/versions/v004/THEORY_v004.pdf",
     "wiki_latest": "wiki/latest",
-    "wiki_snapshot": "wiki/versions/stage_v003"
+    "wiki_snapshot": "wiki/versions/stage_v004"
   },
   "repo_full_name": "pudim-project/zetalaw-demo",
-  "stage_id": "stage_v003",
-  "theory_version": "v003",
+  "stage_id": "stage_v004",
+  "theory_version": "v004",
   "warning": ""
 }
