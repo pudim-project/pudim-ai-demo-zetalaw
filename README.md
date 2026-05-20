@@ -1,6 +1,6 @@
 # Zeta-Law Entropy, Gamma Curvature, and Tail Partition Applications
 
-Powered by the [Pudim Project](https://github.com/pudim-project/pudim-project).
+Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
 ## Abstract
 
@@ -38,4 +38,4 @@ See [`APPLICATIONS.md`](APPLICATIONS.md) for the full application changelog and 
 
 Start with the PDF for the paper narrative and the LaTeX source for exact formulas. Human and agent ingestion notes are in [`HUMANS.md`](HUMANS.md) and [`AGENTS.md`](AGENTS.md).
 
-Repository URL: https://github.com/pudim-project/zetalaw-demo
+Repository URL: https://github.com/pudim-project/pudim-ai-demo-zetalaw

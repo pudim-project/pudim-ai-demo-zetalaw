@@ -8,7 +8,7 @@ three new applications proved / theory v003 built locally
 
 - Bootstrap import from the preserved PDF extract completed earlier.
 - THEORY_v002 was built and staged publicly.
-- The GitHub repository `pudim-project/zetalaw-demo` is public.
+- The GitHub repository `pudim-project/pudim-ai-demo-zetalaw` is public.
 - Gmail outreach drafts were created for review only in the currently connected Gmail account; no messages were sent.
 - Live Oracle/ChatGPT foraging was run from the dry request artifact and ingested conservatively.
 - Focused proof audit `20260517T203210Z-prove-or-refute-the-scout-forage-s-7-inverse-tail-floor-form` proved Candidate 1: the exact inverse-tail floor formula at \(s=7\).
