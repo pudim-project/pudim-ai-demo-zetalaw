@@ -1,6 +1,6 @@
 # Wiki Vault
 
-This directory is the latest mutable wiki vault for theory `v004`.
+This directory is the latest mutable wiki vault for theory `v006`.
 
 ## Obsidian Ingestion
 
@@ -16,9 +16,9 @@ Open this directory itself as an Obsidian vault. Start from `Home.md`, then insp
 
 ## Node Summary
 
-- total nodes: 31
-- by type: conjecture: 2, corollary: 1, definition: 5, lemma: 1, note: 2, problem: 9, proposition: 2, theorem: 9
-- by status: conjectural: 1, open: 1, partial: 2, proved: 19, superseded: 8
+- total nodes: 214
+- by type: conjecture: 2, corollary: 43, counterexample: 5, definition: 5, example: 1, lemma: 4, note: 14, problem: 17, proposition: 98, theorem: 25
+- by status: conjectural: 1, open: 8, partial: 3, proved: 193, superseded: 9
 
 ## Notation Highlights
 

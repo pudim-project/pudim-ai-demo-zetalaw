@@ -5,10 +5,10 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v004/`: immutable wiki snapshot for theory `v004`.
+- `versions/stage_v006/`: immutable wiki snapshot for theory `v006`.
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
 
-Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v004/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v006/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
 
 ## Open In Obsidian
 
@@ -18,9 +18,9 @@ In Obsidian, start at `Home.md`, then open `wiki/index.md`. Use Backlinks to ins
 
 ## Current Node Summary
 
-- total nodes: 31
-- by type: conjecture: 2, corollary: 1, definition: 5, lemma: 1, note: 2, problem: 9, proposition: 2, theorem: 9
-- by status: conjectural: 1, open: 1, partial: 2, proved: 19, superseded: 8
+- total nodes: 214
+- by type: conjecture: 2, corollary: 43, counterexample: 5, definition: 5, example: 1, lemma: 4, note: 14, problem: 17, proposition: 98, theorem: 25
+- by status: conjectural: 1, open: 8, partial: 3, proved: 193, superseded: 9
 
 ## Reading Order
 

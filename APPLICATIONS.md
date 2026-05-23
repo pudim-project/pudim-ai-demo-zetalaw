@@ -5,14 +5,15 @@ The same application ids appear in `theory/latest/THEORY.tex` under the manuscri
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
-| APP-0001 | 2026-05-17 | Alzer-Kwong convexity and concavity problem | Alzer-Kwong convexity and concavity pattern for reciprocal zeta | solved at THEORY_v004 | no reply |
-| APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solved at THEORY_v004 | no reply |
-| APP-0003 | 2026-05-17 | Sroysang generalized Holder problem | Generalized Holder inequality for Gamma zeta | solved at THEORY_v004 | no reply |
-| APP-0004 | 2026-05-17 | Complete monotonicity of $(\log\Gamma(x)+\log\Gamma(1/x))''$ | Complete monotonicity of reciprocal-Gamma curvature | solved at THEORY_v004 | no reply |
-| APP-0005 | 2026-05-17 | Exact inverse-tail floor formula at s=7 | Exact inverse-tail floor formula at s=7 | solved at THEORY_v004 | no reply |
-| APP-0006 | 2026-05-17 | Exact inverse-tail floor formula at s=8 | Exact inverse-tail floor formula at s=8 | solved at THEORY_v004 | no reply |
-| APP-0007 | 2026-05-19 | Concavity or complete monotonicity of the polygamma product P0 | Complete monotonicity of reciprocal digamma product curvature | solved at THEORY_v004 | no reply |
-| APP-0008 | 2026-05-19 | Higher-order monotonicity of polygamma products Pn | Counterexample to complete monotonicity of higher-order polygamma product curvature | solved at THEORY_v004 | no reply |
+| APP-0001 | 2026-05-17 | Alzer-Kwong convexity and concavity problem | Alzer-Kwong convexity and concavity pattern for reciprocal zeta | solved at THEORY_v006 | no reply |
+| APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solved at THEORY_v006 | no reply |
+| APP-0003 | 2026-05-17 | Sroysang generalized Holder problem | Generalized Holder inequality for Gamma zeta | solved at THEORY_v006 | no reply |
+| APP-0004 | 2026-05-17 | Complete monotonicity of $(\log\Gamma(x)+\log\Gamma(1/x))''$ | Complete monotonicity of reciprocal-Gamma curvature | solved at THEORY_v006 | no reply |
+| APP-0005 | 2026-05-17 | Exact inverse-tail floor formula at s=7 | Exact inverse-tail floor formula at s=7 | solved at THEORY_v006 | no reply |
+| APP-0006 | 2026-05-17 | Exact inverse-tail floor formula at s=8 | Exact inverse-tail floor formula at s=8 | solved at THEORY_v006 | no reply |
+| APP-0007 | 2026-05-19 | Concavity or complete monotonicity of the polygamma product P0 | Complete monotonicity of reciprocal digamma product curvature | solved at THEORY_v006 | no reply |
+| APP-0008 | 2026-05-19 | Higher-order monotonicity of polygamma products Pn | Ratio-normal-form reduction for P1 convexity | solved at THEORY_v006 | no reply |
+| APP-0009 | 2026-05-23 | Sharp reciprocal Gamma-product monotonicity threshold | Pointwise variational threshold for positive Gamma numerators | solved at THEORY_v006 | no contact |
 
 ## Application Details
 
@@ -23,8 +24,8 @@ The same application ids appear in `theory/latest/THEORY.tex` under the manuscri
 - solution status: proved
 - problem node: `wiki/nodes/mrw-c9ec61b1c573.md`
 - solution node: `wiki/nodes/mrw-6b7d94a697d7.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -50,8 +51,8 @@ F''(x)<0\quad\text{on }(-4n-2,-4n),
 - solution status: proved
 - problem node: `wiki/nodes/mrw-eb9a71666a04.md`
 - solution node: `wiki/nodes/mrw-f9e130ed65ef.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -69,8 +70,8 @@ Determine whether, for every \(n\in\mathbb N\),
 - solution status: proved
 - problem node: `wiki/nodes/mrw-f95d129327fc.md`
 - solution node: `wiki/nodes/mrw-8aa5f1703758.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -94,8 +95,8 @@ Sroysang asked how a Holder-type zeta inequality changes when the usual conditio
 - solution status: proved
 - problem node: `wiki/nodes/mrw-724ed6e2941c.md`
 - solution node: `wiki/nodes/mrw-48a67678d0c1.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -113,8 +114,8 @@ Determine the complete monotonicity or related sign pattern of the second deriva
 - solution status: proved
 - problem node: `wiki/nodes/mrw-900d84ddee24.md`
 - solution node: `wiki/nodes/mrw-28bcccec471e.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -132,8 +133,8 @@ Find an exact computable formula for
 - solution status: proved
 - problem node: `wiki/nodes/mrw-3f583950a960.md`
 - solution node: `wiki/nodes/mrw-544506a822b8.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -151,8 +152,8 @@ Find an exact computable formula for
 - solution status: proved
 - problem node: `wiki/nodes/mrw-2650caac5236.md`
 - solution node: `wiki/nodes/mrw-0db1ed17aa9a.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -165,13 +166,13 @@ P_0(x)=\psi(x)\psi(1/x).
 
 ### APP-0008: Higher-order monotonicity of polygamma products Pn
 
-- source reference: Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)
-- solution: Counterexample to complete monotonicity of higher-order polygamma product curvature
+- source reference: source: Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5.; The same-point polygamma literature gives complete-monotonicity and Turan-type inequalities for products evaluated at one argument. Gao's 2019 article surveys such inequalities and recalls that $\psi'$ is completely monotonic. Bernstein-Widder theory explains why a nonnegative Laplace kernel would prove complete monotonicity.; These sources concern complete monotonicity and sharp constants for functions built from products of polygamma functions evaluated at t [truncated]
+- solution: Ratio-normal-form reduction for P1 convexity
 - solution status: proved
 - problem node: `wiki/nodes/mrw-f0a031feea8e.md`
-- solution node: `wiki/nodes/mrw-dee642b8e9cb.md`
-- theory version: `v004`
-- stage: `stage_v004`
+- solution node: `wiki/nodes/mrw-a4339be8da59.md`
+- theory version: `v006`
+- stage: `stage_v006`
 - review status: no reply
 
 #### Stated problem
@@ -181,3 +182,36 @@ For \(n\ge 1\), determine convexity, monotonicity, or complete monotonicity prop
 \[
 P_n(x)=\psi^{(n)}(x)\psi^{(n)}(1/x).
 \]
+
+### APP-0009: Sharp reciprocal Gamma-product monotonicity threshold
+
+- source reference: theory/forage/inbox/20260523T165716Z-scout-forage-inbox.md
+- solution: Pointwise variational threshold for positive Gamma numerators
+- solution status: proved
+- problem node: `wiki/nodes/mrw-1396775c6089.md`
+- solution node: `wiki/nodes/mrw-6cd7f677ca40.md`
+- theory version: `v006`
+- stage: `stage_v006`
+- review status: no contact
+
+#### Stated problem
+
+Bulboaca and Zayed ask for the smallest positive parameter values in their Gamma-product monotonicity examples.  In the base example, the question is to find the optimal \(\rho\) for which 
+
+\[
+\varphi_\rho(s)=\frac{1}{\Gamma(s+\rho)\Gamma(s)}
+\]
+
+ is strictly decreasing on \([1,\infty)\), equivalently for which 
+
+\[
+W_\rho(s)=\Gamma(s+\rho)\Gamma(s)
+\]
+
+ is strictly increasing on \([1,\infty)\).  The local theorem Sharp threshold for reciprocal Gamma-product monotonicity solves this base threshold problem.  If 
+
+\[
+\psi(1+\rho_*)=\gamma,
+\]
+
+ then the optimal condition is \(\rho\ge \rho_*\), where numerically \[ \rho_*=1.258396967085 [truncated]
