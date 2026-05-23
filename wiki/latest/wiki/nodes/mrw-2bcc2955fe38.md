@@ -6,7 +6,7 @@ aliases: ["mrw-2bcc2955fe38", "Pair-link two-edge path shadow", "Cross-core path
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, pair-link, hypergraph-independent-set, two-extension-slice, cross-core-coherence, path-shadow, lower-shadow, support-tail, patch-gate-audited]
 parents: [mrw-3c39ca3d1973, mrw-354b105d4977, mrw-a32a6d3a5f20, mrw-55a8d9eddd2e]
-refs: ["references/sources/20260520T110040Z-cross-core-path-shadow-context.md"]
+refs: []
   - raw/20260520T110040Z-erdos-536-cross-core-mantel-defect-stability-and-coherence-f.md
   - references/sources/20260520T110040Z-cross-core-path-shadow-context.md
   - oracle/requests/20260520T110040Z-erdos536-cross-core-path-shadow-oracle-request.md

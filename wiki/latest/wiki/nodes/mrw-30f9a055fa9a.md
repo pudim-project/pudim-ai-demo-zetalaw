@@ -6,7 +6,7 @@ aliases: ["mrw-30f9a055fa9a", "Certified two-sevenths lower obstruction for the 
 status: proved
 tags: ["corollary", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "n-2", "lower-envelope", "rational-certificate", "validated-interval", "theory-growth"]
 parents: [mrw-201bbda2c917, mrw-f27a36284da5, mrw-0241ab931d33]
-refs: ["references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Corollary: Certified two-sevenths lower obstruction for the n=2 beta window

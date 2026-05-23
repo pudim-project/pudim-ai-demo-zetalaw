@@ -6,7 +6,7 @@ aliases: ["mrw-9e0b4f1a5c33", "Fixed-junta comparable-pair visibility forces van
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, union-free, fixed-junta, root-consistency, comparable-pairs, antichain, product-measure, conditional-source, support-tail]
 parents: [mrw-1f7c23e5a9d4, mrw-6a9d1e4f2c8b, mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-b4075311abd3, mrw-cc4f876149b7, mrw-54968b07a069]
-refs: ["references/sources/20260519T153428Z-fixed-junta-root-context.md"]
+refs: []
   - raw/20260519T153428Z-erdos536-fixed-junta-root-consistency.md
   - references/requests/20260519T153428Z-fixed-junta-root-erudition-gate.md
   - references/sources/20260519T153428Z-fixed-junta-root-context.md

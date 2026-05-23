@@ -6,7 +6,7 @@ aliases: ["mrw-da05add5bca1", "Euler-Maclaurin n=2 admissible beta subwindow"]
 status: proved
 tags: ["theorem", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "n-2", "admissible-interval", "hurwitz-zeta", "reciprocal-tail", "euler-maclaurin", "sturm-certificate", "source-grounded", "theory-growth"]
 parents: [mrw-19400778b4b5, mrw-0241ab931d33]
-refs: ["theory/forage/inbox/20260523T184322Z-scout-forage-inbox.md", "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Theorem: Euler-Maclaurin n=2 admissible beta subwindow

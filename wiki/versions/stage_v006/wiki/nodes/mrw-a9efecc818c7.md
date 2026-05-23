@@ -6,7 +6,7 @@ aliases: ["mrw-a9efecc818c7", "Nested cut refinement bounds heavy signature corr
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, pair-link, complete-bipartite, nested-cores, signature-coherence, corridor-refinement, weighted-edge-bound, cross-core-coherence, support-tail, oracle-audited]
 parents: [mrw-fced7420b905, mrw-816fd32c3294, mrw-c7c76faed872]
-refs: ["references/sources/20260521T012914Z-corridor-refinement-context.md"]
+refs: []
   - raw/20260521T012914Z-erdos-536-heavy-complementary-signature-corridor-classificat.md
   - raw/20260521T012656Z-erdos536-heavy-signature-corridor-classification.md
   - theory/forage/responses/20260521T012656Z-erdos536-heavy-signature-corridor-classification-response.md

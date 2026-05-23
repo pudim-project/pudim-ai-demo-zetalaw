@@ -2788,7 +2788,7 @@
     {
       "relation": "depends_on",
       "source": "mrw-e497f41bfc07",
-      "target": "mrw-c3e50abdd2fe"
+      "target": "mrw-ea265a369095"
     },
     {
       "relation": "depends_on",
@@ -2834,6 +2834,16 @@
       "relation": "depends_on",
       "source": "mrw-e844b4203305",
       "target": "mrw-2e217726536f"
+    },
+    {
+      "relation": "depends_on",
+      "source": "mrw-ea265a369095",
+      "target": "mrw-c3e50abdd2fe"
+    },
+    {
+      "relation": "depends_on",
+      "source": "mrw-ea265a369095",
+      "target": "mrw-0241ab931d33"
     },
     {
       "relation": "depends_on",
@@ -3072,10 +3082,7 @@
       "parents": [
         "mrw-f3c6cef2ebb1"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T153713Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -3106,9 +3113,7 @@
         "mrw-37dbc6aeedf9",
         "mrw-4daa694d9526"
       ],
-      "refs": [
-        "references/sources/20260519T073419Z-erdos-536-biased-trace-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -3176,9 +3181,7 @@
         "mrw-4daa694d9526",
         "mrw-9afb17b1b84a"
       ],
-      "refs": [
-        "references/sources/20260519T053417Z-erdos-536-biased-squarefree-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -3305,9 +3308,7 @@
         "mrw-1396775c6089",
         "mrw-0fd149ddc79d"
       ],
-      "refs": [
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -3375,9 +3376,7 @@
         "mrw-cc4f876149b7",
         "mrw-3c39ca3d1973"
       ],
-      "refs": [
-        "references/sources/20260519T133426Z-bounded-deletion-container-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -3446,10 +3445,7 @@
       "parents": [
         "mrw-0db1ed17aa9a"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T151043Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -3477,9 +3473,7 @@
       "parents": [
         "mrw-1396775c6089"
       ],
-      "refs": [
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -3573,9 +3567,7 @@
       "file": "wiki/nodes/mrw-1396775c6089.md",
       "id": "mrw-1396775c6089",
       "parents": [],
-      "refs": [
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "superseded",
       "tags": [
         "problem",
@@ -3623,10 +3615,7 @@
         "mrw-f92c897044c4",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T181156Z-davenport-erdos-multiples-benchmark.md",
-        "references/sources/20260518T185221Z-davenport-erdos-elementary-proof.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -3652,9 +3641,7 @@
         "mrw-3d524c92103b",
         "mrw-ba29cdf1fd30"
       ],
-      "refs": [
-        "references/sources/20260518T181156Z-davenport-erdos-multiples-benchmark.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -3684,9 +3671,7 @@
         "mrw-3c39ca3d1973",
         "mrw-a92d7b6e4031"
       ],
-      "refs": [
-        "references/sources/20260519T225444Z-high-intersection-clique-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -3717,9 +3702,7 @@
         "mrw-5fabc550bd7d",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -3983,9 +3966,7 @@
         "mrw-b4075311abd3",
         "mrw-3c39ca3d1973"
       ],
-      "refs": [
-        "references/sources/20260519T145428Z-rooted-junta-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -4013,10 +3994,7 @@
         "mrw-0241ab931d33",
         "mrw-f3c6cef2ebb1"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T161710Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -4048,9 +4026,7 @@
         "mrw-c5a954e7138b",
         "mrw-3367b245c458"
       ],
-      "refs": [
-        "references/sources/20260519T033518Z-erdos-536-rank-cover-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -4210,9 +4186,7 @@
         "mrw-4f1e9a2d6b73",
         "mrw-6d4a8b0f2c91"
       ],
-      "refs": [
-        "references/sources/20260520T022056Z-one-swap-insertion-fiber-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "erdos-536",
@@ -4257,9 +4231,7 @@
         "mrw-54968b07a069",
         "mrw-55a8d9eddd2e"
       ],
-      "refs": [
-        "references/sources/20260519T113424Z-union-free-fiber-decomposition-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "erdos-536",
@@ -4285,7 +4257,6 @@
         "mrw-1ac4e44cbbad"
       ],
       "refs": [
-        "references/sources/20260518T225329Z-erdos-25-residue-structured-dispersion-and-lcm-restart-context.md",
         "https://www.erdosproblems.com/536"
       ],
       "status": "open",
@@ -4339,9 +4310,7 @@
         "mrw-536639208ce1",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T185221Z-davenport-erdos-elementary-proof.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -4373,9 +4342,7 @@
         "mrw-3c39ca3d1973",
         "mrw-37dbc6aeedf9"
       ],
-      "refs": [
-        "references/sources/20260519T093421Z-erdos-536-tilted-thinning-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -4409,9 +4376,7 @@
         "mrw-201bbda2c917",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -4476,9 +4441,7 @@
         "mrw-73218406186e",
         "mrw-1396775c6089"
       ],
-      "refs": [
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -4541,9 +4504,7 @@
         "mrw-a32a6d3a5f20",
         "mrw-55a8d9eddd2e"
       ],
-      "refs": [
-        "references/sources/20260520T110040Z-cross-core-path-shadow-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -4573,7 +4534,6 @@
         "mrw-277fbbb4ccb9"
       ],
       "refs": [
-        "references/sources/20260519T001240Z-erdos-536-lcm-fiber-context.md",
         "https://www.erdosproblems.com/536"
       ],
       "status": "proved",
@@ -4630,9 +4590,7 @@
         "mrw-cc4f876149b7",
         "mrw-37dbc6aeedf9"
       ],
-      "refs": [
-        "references/sources/20260519T073419Z-erdos-536-biased-trace-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -4662,9 +4620,7 @@
         "mrw-f27a36284da5",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -4734,9 +4690,7 @@
         "mrw-c5a954e7138b",
         "mrw-a261a0a4df25"
       ],
-      "refs": [
-        "references/sources/20260519T025623Z-erdos-536-discussion-and-prefix-rank-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -4765,9 +4719,7 @@
         "mrw-55a8d9eddd2e",
         "mrw-265ec9f57561"
       ],
-      "refs": [
-        "references/sources/20260519T121424Z-union-free-compression-context.md"
-      ],
+      "refs": [],
       "status": "open",
       "tags": [
         "problem",
@@ -4795,9 +4747,7 @@
         "mrw-f835f9671070",
         "mrw-c5a954e7138b"
       ],
-      "refs": [
-        "references/sources/20260519T013317Z-erdos-536-three-prime-grid-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -4826,9 +4776,7 @@
         "mrw-b1f87c9d6a42",
         "mrw-55a8d9eddd2e"
       ],
-      "refs": [
-        "references/sources/20260520T030334Z-two-extension-slice-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "erdos-536",
@@ -4885,9 +4833,7 @@
         "mrw-8c1324a498bf",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -4917,9 +4863,7 @@
         "mrw-1396775c6089",
         "mrw-0fd149ddc79d"
       ],
-      "refs": [
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -4947,9 +4891,7 @@
         "mrw-4daa694d9526",
         "mrw-9afb17b1b84a"
       ],
-      "refs": [
-        "references/sources/20260519T053417Z-erdos-536-biased-squarefree-context.md"
-      ],
+      "refs": [],
       "status": "open",
       "tags": [
         "problem",
@@ -4979,9 +4921,7 @@
         "mrw-4daa694d9526",
         "mrw-f835f9671070"
       ],
-      "refs": [
-        "references/sources/20260519T061418Z-erdos-536-pair-link-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -5028,7 +4968,6 @@
         "mrw-1ac4e44cbbad"
       ],
       "refs": [
-        "references/sources/20260518T173138Z-erdos-residue-log-density.md",
         "https://www.erdosproblems.com/25",
         "https://www.erdosproblems.com/486"
       ],
@@ -5147,9 +5086,7 @@
         "mrw-2e217726536f",
         "mrw-c5a954e7138b"
       ],
-      "refs": [
-        "references/sources/20260519T005126Z-erdos-536-weighted-grid-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -5435,9 +5372,7 @@
         "mrw-3c39ca3d1973",
         "mrw-37dbc6aeedf9"
       ],
-      "refs": [
-        "references/sources/20260519T085420Z-erdos-536-fair-thinning-boundary-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -5473,9 +5408,7 @@
         "mrw-cc4f876149b7",
         "mrw-3c39ca3d1973"
       ],
-      "refs": [
-        "references/sources/20260519T165434Z-near-total-root-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -5507,9 +5440,7 @@
         "mrw-c5a954e7138b",
         "mrw-2060f97aad60"
       ],
-      "refs": [
-        "references/sources/20260519T041518Z-erdos-536-growing-prime-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -5541,9 +5472,7 @@
         "mrw-7c6a0e9f2d31",
         "mrw-18e9c7b0a5af"
       ],
-      "refs": [
-        "references/sources/20260520T001456Z-capped-pair-link-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -5713,9 +5642,7 @@
         "mrw-2ff2fe94bc57",
         "mrw-55a8d9eddd2e"
       ],
-      "refs": [
-        "references/sources/20260519T105423Z-product-measure-antichain-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "erdos-536",
@@ -5743,9 +5670,7 @@
         "mrw-2a2c5551301e",
         "mrw-67f99fecf9e2"
       ],
-      "refs": [
-        "references/sources/20260519T101422Z-erdos-536-union-free-context.md"
-      ],
+      "refs": [],
       "status": "open",
       "tags": [
         "problem",
@@ -5775,10 +5700,7 @@
         "mrw-1c9d9f07a4ef",
         "mrw-f0a031feea8e"
       ],
-      "refs": [
-        "references/sources/20260518T142240Z-qiln-open-problem-2-refresh.md",
-        "references/sources/20260518T142240Z-dlmf-polygamma-series.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -5893,11 +5815,7 @@
         "mrw-1c9d9f07a4ef",
         "mrw-f0a031feea8e"
       ],
-      "refs": [
-        "references/sources/20260518T125130Z-qiln-open-problem-2-p1-refresh.md",
-        "references/sources/20260518T125130Z-dlmf-polygamma-partial-fraction-inputs.md",
-        "references/sources/20260518T125130Z-bernstein-widder-pole-family-warning.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -5956,10 +5874,7 @@
       "parents": [
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T174843Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -6023,9 +5938,7 @@
         "mrw-3c39ca3d1973",
         "mrw-37dbc6aeedf9"
       ],
-      "refs": [
-        "references/sources/20260519T093421Z-erdos-536-tilted-thinning-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -6058,9 +5971,7 @@
         "mrw-d0402aea6f58",
         "mrw-3c39ca3d1973"
       ],
-      "refs": [
-        "references/sources/20260519T141427Z-growing-deletion-trace-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -6130,10 +6041,7 @@
         "mrw-0fd149ddc79d",
         "mrw-e0db175f66fc"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T165716Z-scout-forage-inbox.md",
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -6162,9 +6070,7 @@
         "mrw-3c39ca3d1973",
         "mrw-55a8d9eddd2e"
       ],
-      "refs": [
-        "references/sources/20260520T010053Z-rare-pair-link-endpoint-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -6409,9 +6315,7 @@
         "mrw-e0778085804e",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T221010Z-erdos-first-cycle-entropy-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -6566,9 +6470,7 @@
         "mrw-4b9f5c2e6a1d",
         "mrw-9afb17b1b84a"
       ],
-      "refs": [
-        "references/sources/20260519T173438Z-private-shadow-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -6695,9 +6597,7 @@
         "mrw-fced7420b905",
         "mrw-c7c76faed872"
       ],
-      "refs": [
-        "references/sources/20260521T005033Z-signature-fragmentation-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -6729,9 +6629,7 @@
         "mrw-a9efecc818c7",
         "mrw-fced7420b905"
       ],
-      "refs": [
-        "references/sources/20260521T025048Z-coherent-normal-form-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -6766,10 +6664,7 @@
         "mrw-0fd149ddc79d",
         "mrw-e0db175f66fc"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T163715Z-scout-forage-inbox.md",
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -6919,9 +6814,7 @@
         "mrw-816fd32c3294",
         "mrw-fced7420b905"
       ],
-      "refs": [
-        "references/sources/20260521T021237Z-near-full-corridor-purity-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -6953,10 +6846,7 @@
       "parents": [
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T155709Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -7008,9 +6898,7 @@
         "mrw-2a62d2bc84ad",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -7041,9 +6929,7 @@
         "mrw-f1348014e087",
         "mrw-7586943cc138"
       ],
-      "refs": [
-        "references/sources/20260518T225329Z-erdos-25-residue-structured-dispersion-and-lcm-restart-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "lemma",
@@ -7133,9 +7019,7 @@
         "mrw-55a8d9eddd2e",
         "mrw-265ec9f57561"
       ],
-      "refs": [
-        "references/sources/20260519T121424Z-union-free-compression-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "counterexample",
@@ -7255,9 +7139,7 @@
         "mrw-f835f9671070",
         "mrw-4daa694d9526"
       ],
-      "refs": [
-        "references/sources/20260519T045417Z-erdos-536-squarefree-support-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -7341,9 +7223,7 @@
         "mrw-cc4f876149b7",
         "mrw-54968b07a069"
       ],
-      "refs": [
-        "references/sources/20260519T153428Z-fixed-junta-root-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -7489,9 +7369,7 @@
         "mrw-3712cf1c88d8",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -7523,9 +7401,7 @@
         "mrw-25cdd8da0601",
         "mrw-55a8d9eddd2e"
       ],
-      "refs": [
-        "references/sources/20260520T102016Z-cross-core-mantel-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "erdos-536",
@@ -7593,10 +7469,7 @@
         "mrw-5a84b7d9f2c1",
         "mrw-f0a031feea8e"
       ],
-      "refs": [
-        "references/sources/20260518T142240Z-qiln-open-problem-2-refresh.md",
-        "references/sources/20260518T142240Z-dlmf-polygamma-series.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -7663,9 +7536,7 @@
         "mrw-cc4f876149b7",
         "mrw-54968b07a069"
       ],
-      "refs": [
-        "references/sources/20260519T161429Z-outside-variance-root-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -7697,9 +7568,7 @@
         "mrw-816fd32c3294",
         "mrw-c7c76faed872"
       ],
-      "refs": [
-        "references/sources/20260521T012914Z-corridor-refinement-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -7768,9 +7637,7 @@
         "mrw-4f1e9a2d6b73",
         "mrw-6d4a8b0f2c91"
       ],
-      "refs": [
-        "references/sources/20260520T014549Z-rare-pair-link-full-band-projection-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -7851,9 +7718,7 @@
         "mrw-3c39ca3d1973",
         "mrw-37dbc6aeedf9"
       ],
-      "refs": [
-        "references/sources/20260519T101422Z-erdos-536-union-free-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -7912,10 +7777,7 @@
         "mrw-538319137c76",
         "mrw-1ac4e44cbbad"
       ],
-      "refs": [
-        "references/sources/20260518T173138Z-erdos-residue-log-density.md",
-        "references/sources/20260518T181156Z-davenport-erdos-multiples-benchmark.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8010,9 +7872,7 @@
         "mrw-b4075311abd3",
         "mrw-30aae977a4b6"
       ],
-      "refs": [
-        "references/sources/20260519T125425Z-union-aware-decomposition-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8041,9 +7901,7 @@
         "mrw-37dbc6aeedf9",
         "mrw-30aae977a4b6"
       ],
-      "refs": [
-        "references/sources/20260519T081420Z-erdos-536-deletion-noise-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8074,9 +7932,7 @@
         "mrw-73218406186e",
         "mrw-1396775c6089"
       ],
-      "refs": [
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -8105,9 +7961,7 @@
         "mrw-3c39ca3d1973",
         "mrw-37dbc6aeedf9"
       ],
-      "refs": [
-        "references/sources/20260519T081420Z-erdos-536-deletion-noise-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8138,10 +7992,7 @@
         "mrw-da05add5bca1",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T190315Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -8175,9 +8026,7 @@
         "mrw-e844b4203305",
         "mrw-c5a954e7138b"
       ],
-      "refs": [
-        "references/sources/20260519T005126Z-erdos-536-weighted-grid-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8205,15 +8054,7 @@
         "mrw-e844b4203305",
         "mrw-efc6dd81fc95"
       ],
-      "refs": [
-        "references/sources/20260519T001240Z-erdos-536-lcm-fiber-context.md",
-        "references/sources/20260519T005126Z-erdos-536-weighted-grid-context.md",
-        "references/sources/20260519T013317Z-erdos-536-three-prime-grid-context.md",
-        "references/sources/20260519T025623Z-erdos-536-discussion-and-prefix-rank-context.md",
-        "references/sources/20260519T033518Z-erdos-536-rank-cover-context.md",
-        "references/sources/20260519T041518Z-erdos-536-growing-prime-context.md",
-        "references/sources/20260519T045417Z-erdos-536-squarefree-support-context.md"
-      ],
+      "refs": [],
       "status": "open",
       "tags": [
         "problem",
@@ -8242,9 +8083,7 @@
         "mrw-a32a6d3a5f20",
         "mrw-55a8d9eddd2e"
       ],
-      "refs": [
-        "references/sources/20260520T114136Z-path-shadow-overlap-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8312,9 +8151,7 @@
         "mrw-354b105d4977",
         "mrw-a32a6d3a5f20"
       ],
-      "refs": [
-        "references/sources/20260521T001014Z-complete-bipartite-blowup-coherence-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8349,9 +8186,7 @@
         "mrw-cc4f876149b7",
         "mrw-3c39ca3d1973"
       ],
-      "refs": [
-        "references/sources/20260519T233444Z-overlap-entropy-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8436,9 +8271,7 @@
         "mrw-3c39ca3d1973",
         "mrw-37dbc6aeedf9"
       ],
-      "refs": [
-        "references/sources/20260519T065418Z-erdos-536-lower-shadow-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8571,9 +8404,7 @@
         "mrw-9afb17b1b84a",
         "mrw-4daa694d9526"
       ],
-      "refs": [
-        "references/sources/20260519T065418Z-erdos-536-lower-shadow-context.md"
-      ],
+      "refs": [],
       "status": "open",
       "tags": [
         "problem",
@@ -8737,10 +8568,7 @@
         "mrw-19400778b4b5",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T184322Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -8831,9 +8659,7 @@
         "mrw-171478aeed08",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T185221Z-davenport-erdos-elementary-proof.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -8863,9 +8689,7 @@
         "mrw-536639208ce1",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T205009Z-erdos-prefix-defect-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -8893,10 +8717,7 @@
         "mrw-0fd149ddc79d",
         "mrw-37311e7a5a0f"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T151043Z-scout-forage-inbox.md",
-        "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -8999,11 +8820,9 @@
       "parents": [
         "mrw-f3c6cef2ebb1",
         "mrw-fd6576e56da0",
-        "mrw-c3e50abdd2fe"
+        "mrw-ea265a369095"
       ],
-      "refs": [
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -9120,7 +8939,6 @@
         "mrw-2e217726536f"
       ],
       "refs": [
-        "references/sources/20260519T001240Z-erdos-536-lcm-fiber-context.md",
         "https://www.erdosproblems.com/857"
       ],
       "status": "proved",
@@ -9149,7 +8967,6 @@
         "mrw-2e217726536f"
       ],
       "refs": [
-        "references/sources/20260519T001240Z-erdos-536-lcm-fiber-context.md",
         "https://www.erdosproblems.com/536"
       ],
       "status": "proved",
@@ -9167,6 +8984,38 @@
     },
     {
       "aliases": [
+        "mrw-ea265a369095",
+        "Further refined Euler-Maclaurin n=2 admissible beta subwindow"
+      ],
+      "file": "wiki/nodes/mrw-ea265a369095.md",
+      "id": "mrw-ea265a369095",
+      "parents": [
+        "mrw-c3e50abdd2fe",
+        "mrw-0241ab931d33"
+      ],
+      "refs": [],
+      "status": "proved",
+      "tags": [
+        "theorem",
+        "proved",
+        "polygamma",
+        "beta-window",
+        "open-problem-4",
+        "qi-lim-nantomah",
+        "n-2",
+        "admissible-interval",
+        "hurwitz-zeta",
+        "reciprocal-tail",
+        "euler-maclaurin",
+        "sturm-certificate",
+        "source-grounded",
+        "theory-growth"
+      ],
+      "title": "Further refined Euler-Maclaurin n=2 admissible beta subwindow",
+      "type": "theorem"
+    },
+    {
+      "aliases": [
         "mrw-eaf102b5cac0",
         "Activation-scale bound for threshold-aware Erdos first-hit defects"
       ],
@@ -9180,9 +9029,7 @@
         "mrw-e0971c9b820a",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T213009Z-erdos-activation-scale-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -9228,10 +9075,7 @@
       "parents": [
         "mrw-0e9002ec3122"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T153713Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -9260,9 +9104,7 @@
         "mrw-277fbbb4ccb9",
         "mrw-2e217726536f"
       ],
-      "refs": [
-        "references/sources/20260519T001240Z-erdos-536-lcm-fiber-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "note",
@@ -9312,9 +9154,7 @@
         "mrw-e0971c9b820a",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T205009Z-erdos-prefix-defect-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -9341,10 +9181,7 @@
         "mrw-8a146667d25b",
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T161710Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "corollary",
@@ -9372,10 +9209,7 @@
       "parents": [
         "mrw-f0a031feea8e"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T153713Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",
@@ -9405,9 +9239,7 @@
         "mrw-2e217726536f",
         "mrw-c5a954e7138b"
       ],
-      "refs": [
-        "references/sources/20260519T013317Z-erdos-536-three-prime-grid-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -9438,9 +9270,7 @@
         "mrw-a32a6d3a5f20",
         "mrw-3c39ca3d1973"
       ],
-      "refs": [
-        "references/sources/20260520T233725Z-bipartite-path-shadow-collapse-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -9471,10 +9301,7 @@
         "mrw-ba29cdf1fd30",
         "mrw-17f44100cb83"
       ],
-      "refs": [
-        "references/sources/20260518T173138Z-erdos-residue-log-density.md",
-        "references/sources/20260518T181156Z-davenport-erdos-multiples-benchmark.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -9545,9 +9372,7 @@
         "mrw-3c39ca3d1973",
         "mrw-354b105d4977"
       ],
-      "refs": [
-        "references/sources/20260521T001014Z-complete-bipartite-blowup-coherence-context.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "proposition",
@@ -9577,10 +9402,7 @@
       "parents": [
         "mrw-0241ab931d33"
       ],
-      "refs": [
-        "theory/forage/inbox/20260523T181642Z-scout-forage-inbox.md",
-        "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"
-      ],
+      "refs": [],
       "status": "proved",
       "tags": [
         "theorem",

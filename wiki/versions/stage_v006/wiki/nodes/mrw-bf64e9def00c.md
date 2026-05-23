@@ -6,7 +6,7 @@ aliases: ["mrw-bf64e9def00c", "Upward-closed high-support families force lower-s
 status: proved
 tags: ["proposition", "proved", "erdos", "lcm", "squarefree", "biased-measure", "lower-shadow", "union-cover", "monotone-family", "upward-closed", "support-tail", "patch-gate-audited"]
 parents: [mrw-d0402aea6f58, mrw-cc4f876149b7, mrw-37dbc6aeedf9, mrw-30aae977a4b6]
-refs: ["references/sources/20260519T081420Z-erdos-536-deletion-noise-context.md"]
+refs: []
 ---
 
 # Proposition: Upward-closed high-support families force lower-shadow triples

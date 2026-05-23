@@ -6,7 +6,7 @@ aliases: ["mrw-5fabc550bd7d", "Explicit n=2 admissible beta subwindow"]
 status: proved
 tags: ["theorem", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "n-2", "admissible-interval", "hurwitz-zeta", "reciprocal-tail", "scout-audited", "source-grounded", "theory-growth"]
 parents: [mrw-0241ab931d33]
-refs: ["theory/forage/inbox/20260523T174843Z-scout-forage-inbox.md", "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Theorem: Explicit n=2 admissible beta subwindow

@@ -6,7 +6,7 @@ aliases: ["mrw-c165b8d5e4e2", "Exponential scale for polynomial Gamma-product th
 status: proved
 tags: ["theorem", "proved", "gamma", "monotonicity", "sharp-threshold", "polynomial", "asymptotic-scale", "outside-route", "theory-growth"]
 parents: [mrw-37311e7a5a0f, mrw-73218406186e, mrw-1396775c6089]
-refs: ["references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"]
+refs: []
 ---
 
 # Theorem: Exponential scale for polynomial Gamma-product thresholds

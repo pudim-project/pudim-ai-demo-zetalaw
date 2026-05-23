@@ -6,7 +6,7 @@ aliases: ["mrw-e0db175f66fc", "Variational threshold for admissible Gamma numera
 status: proved
 tags: ["theorem", "proved", "gamma", "monotonicity", "sharp-threshold", "polynomial", "admissible-numerator", "variational-threshold", "scout-audited", "source-grounded", "theory-growth"]
 parents: [mrw-1396775c6089, mrw-0fd149ddc79d, mrw-37311e7a5a0f]
-refs: ["theory/forage/inbox/20260523T151043Z-scout-forage-inbox.md", "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"]
+refs: []
 ---
 
 # Theorem: Variational threshold for admissible Gamma numerators

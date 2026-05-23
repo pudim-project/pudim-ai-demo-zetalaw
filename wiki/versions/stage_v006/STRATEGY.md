@@ -2,6 +2,19 @@
 
 ## Active Thesis
 
+- Latest 20260523T192152Z: Scout inbox was clear, so Advisor continued the
+  isolated exceptional \(n=2\) Open Problem 4 route.  New theorem
+  `mrw-ea265a369095` proves
+  \[
+  \left[\frac{397}{170},3\right]\subseteq\mathcal I_2.
+  \]
+  Portfolio effect: the certified gap is now
+  \[
+  \frac{4629}{2000}<L_2\le\frac{397}{170}.
+  \]
+  Next target: one more rational Euler--Maclaurin tail-gate step only if the
+  Sturm certificate remains manageable; otherwise pivot to the derivative-sign
+  equation from `mrw-a3170d192f6c` on \([1409/5000,293/1000]\).
 - Latest 20260523T191151Z: Scout item `20260523T190315Z-scout-forage` was
   audited.  Candidate 1 was duplicate-reviewed because the Open Problem 3
   endpoint obstruction \(\beta<-1\) is already proved in `mrw-0e9002ec3122`;

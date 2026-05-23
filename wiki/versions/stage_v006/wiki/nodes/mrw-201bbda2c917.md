@@ -6,7 +6,7 @@ aliases: ["mrw-201bbda2c917", "Right endpoint theorem for even-order polygamma b
 status: proved
 tags: ["theorem", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "even-order", "right-endpoint", "hurwitz-zeta", "scout-audited", "source-grounded", "theory-growth"]
 parents: [mrw-0241ab931d33, mrw-f3c6cef2ebb1]
-refs: ["theory/forage/inbox/20260523T161710Z-scout-forage-inbox.md", "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Theorem: Right endpoint theorem for even-order polygamma beta windows

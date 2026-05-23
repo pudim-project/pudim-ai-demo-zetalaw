@@ -6,7 +6,7 @@ aliases: ["mrw-277fbbb4ccb9", "Erdos equal pairwise least-common-multiple proble
 status: open
 tags: ["problem", "open", "erdos", "least-common-multiple", "lcm", "finite-shadow", "restart-frontier", "patch-gate-audited"]
 parents: [mrw-538319137c76, mrw-1ac4e44cbbad]
-refs: ["references/sources/20260518T225329Z-erdos-25-residue-structured-dispersion-and-lcm-restart-context.md", "https://www.erdosproblems.com/536"]
+refs: ["https://www.erdosproblems.com/536"]
 ---
 
 # Problem: Erdos equal pairwise least-common-multiple problem

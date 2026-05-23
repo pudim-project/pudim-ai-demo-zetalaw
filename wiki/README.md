@@ -18,9 +18,9 @@ In Obsidian, start at `Home.md`, then open `wiki/index.md`. Use Backlinks to ins
 
 ## Current Node Summary
 
-- total nodes: 214
-- by type: conjecture: 2, corollary: 43, counterexample: 5, definition: 5, example: 1, lemma: 4, note: 14, problem: 17, proposition: 98, theorem: 25
-- by status: conjectural: 1, open: 8, partial: 3, proved: 193, superseded: 9
+- total nodes: 215
+- by type: conjecture: 2, corollary: 43, counterexample: 5, definition: 5, example: 1, lemma: 4, note: 14, problem: 17, proposition: 98, theorem: 26
+- by status: conjectural: 1, open: 8, partial: 3, proved: 194, superseded: 9
 
 ## Reading Order
 

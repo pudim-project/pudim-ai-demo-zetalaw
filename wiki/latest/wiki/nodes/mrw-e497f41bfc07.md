@@ -5,8 +5,8 @@ title: Open Problem 4 reduction to the n=2 beta window
 aliases: ["mrw-e497f41bfc07", "Open Problem 4 reduction to the n=2 beta window"]
 status: proved
 tags: ["corollary", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "classification", "n-2", "exceptional-case", "source-grounded", "theory-growth"]
-parents: [mrw-f3c6cef2ebb1, mrw-fd6576e56da0, mrw-c3e50abdd2fe]
-refs: ["references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+parents: [mrw-f3c6cef2ebb1, mrw-fd6576e56da0, mrw-ea265a369095]
+refs: []
 ---
 
 # Corollary: Open Problem 4 reduction to the n=2 beta window
@@ -41,9 +41,9 @@ Q_2(x)=\frac{\log(P_2(x)/C_2(x))}{\log x},
 \]
 the current certified bounds are
 \[
-\frac{4629}{2000}<L_2\le\frac{257}{110},
+\frac{4629}{2000}<L_2\le\frac{397}{170},
 \qquad
-\left[\frac{257}{110},3\right]\subseteq\mathcal I_2.
+\left[\frac{397}{170},3\right]\subseteq\mathcal I_2.
 \]
 
 ## Proof
@@ -62,9 +62,9 @@ for every even \(n\ge4\).
 
 It remains only to record the present \(n=2\) status.  The upper inclusion
 \[
-\left[\frac{257}{110},3\right]\subseteq\mathcal I_2
+\left[\frac{397}{170},3\right]\subseteq\mathcal I_2
 \]
-is [[wiki/nodes/mrw-c3e50abdd2fe|Refined Euler-Maclaurin n=2 admissible beta subwindow]].  The strict lower obstruction
+is [[wiki/nodes/mrw-ea265a369095|Further refined Euler-Maclaurin n=2 admissible beta subwindow]].  The strict lower obstruction
 \[
 L_2>\frac{4629}{2000}
 \]
@@ -74,7 +74,7 @@ follows from [[wiki/nodes/mrw-3712cf1c88d8|Refined compact localization for the 
 
 - [[wiki/nodes/mrw-f3c6cef2ebb1|Odd-order collapse for polygamma beta windows]]
 - [[wiki/nodes/mrw-fd6576e56da0|Exact even-order beta window outside n=2]]
-- [[wiki/nodes/mrw-c3e50abdd2fe|Refined Euler-Maclaurin n=2 admissible beta subwindow]]
+- [[wiki/nodes/mrw-ea265a369095|Further refined Euler-Maclaurin n=2 admissible beta subwindow]]
 
 ## Used by
 

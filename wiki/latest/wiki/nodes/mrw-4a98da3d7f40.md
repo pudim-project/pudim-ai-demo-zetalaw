@@ -6,7 +6,7 @@ aliases: ["mrw-4a98da3d7f40", "Fair-thinning upward-boundary identity for lower-
 status: proved
 tags: ["proposition", "proved", "erdos", "lcm", "squarefree", "biased-measure", "lower-shadow", "union-cover", "deletion-trace", "fair-thinning", "upward-boundary", "support-tail", "patch-gate-audited"]
 parents: [mrw-c228258e6ab4, mrw-bf64e9def00c, mrw-d0402aea6f58, mrw-cc4f876149b7, mrw-3c39ca3d1973, mrw-37dbc6aeedf9]
-refs: ["references/sources/20260519T085420Z-erdos-536-fair-thinning-boundary-context.md"]
+refs: []
 ---
 
 # Proposition: Fair-thinning upward-boundary identity for lower-shadow candidates

@@ -6,7 +6,7 @@ aliases: ["mrw-eaf102b5cac0", "Activation-scale bound for threshold-aware Erdos 
 status: proved
 tags: ["proposition", "proved", "erdos", "logarithmic-density", "modular-residue", "tail-control", "crt", "uniformity", "threshold", "activation-scale"]
 parents: [mrw-3d524c92103b, mrw-ba29cdf1fd30, mrw-e0778085804e, mrw-f1348014e087, mrw-e0971c9b820a, mrw-17f44100cb83]
-refs: ["references/sources/20260518T213009Z-erdos-activation-scale-context.md"]
+refs: []
 ---
 
 # Proposition: Activation-scale bound for threshold-aware Erdos first-hit defects

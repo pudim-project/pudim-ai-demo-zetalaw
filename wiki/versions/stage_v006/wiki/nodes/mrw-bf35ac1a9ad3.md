@@ -6,7 +6,7 @@ aliases: ["mrw-bf35ac1a9ad3", "Core-fiber decomposition for union-free families"
 status: proved
 tags: [proposition, proved, erdos-536, union-free, decomposition, junta, fiber, lower-shadow, support-tail]
 parents: [mrw-3474bf5c904f, mrw-55a8d9eddd2e, mrw-b4075311abd3, mrw-30aae977a4b6]
-refs: ["references/sources/20260519T125425Z-union-aware-decomposition-context.md"]
+refs: []
   - raw/20260519T125425Z-erdos536-union-aware-decomposition.md
   - references/requests/20260519T125425Z-union-aware-decomposition-erudition-gate.md
   - references/sources/20260519T125425Z-union-aware-decomposition-context.md

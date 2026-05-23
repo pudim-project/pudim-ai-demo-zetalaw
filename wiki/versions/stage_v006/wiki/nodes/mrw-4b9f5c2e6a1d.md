@@ -6,7 +6,7 @@ aliases: ["mrw-4b9f5c2e6a1d", "Near-total-root visibility is terminal-equivalent
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, union-free, near-total-root, root-consistency, outside-variance, terminal-equivalence, padding, support-tail]
 parents: [mrw-a92d7b6e4031, mrw-9e0b4f1a5c33, mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-b4075311abd3, mrw-cc4f876149b7, mrw-3c39ca3d1973]
-refs: ["references/sources/20260519T165434Z-near-total-root-context.md"]
+refs: []
   - raw/20260519T165434Z-erdos536-near-total-root-equivalence.md
   - references/requests/20260519T165434Z-near-total-root-erudition-gate.md
   - references/sources/20260519T165434Z-near-total-root-context.md

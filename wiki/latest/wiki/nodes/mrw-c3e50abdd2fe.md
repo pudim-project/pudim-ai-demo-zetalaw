@@ -6,7 +6,7 @@ aliases: ["mrw-c3e50abdd2fe", "Refined Euler-Maclaurin n=2 admissible beta subwi
 status: proved
 tags: ["theorem", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "n-2", "admissible-interval", "hurwitz-zeta", "reciprocal-tail", "euler-maclaurin", "sturm-certificate", "source-grounded", "theory-growth"]
 parents: [mrw-da05add5bca1, mrw-0241ab931d33]
-refs: ["theory/forage/inbox/20260523T190315Z-scout-forage-inbox.md", "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Theorem: Refined Euler-Maclaurin n=2 admissible beta subwindow
@@ -81,11 +81,13 @@ Thus \(Z_3(1/x)>x^\beta\) for every \(x>0\) and every \(257/110\le\beta\le3\).  
 
 ## Used by
 
+- [[wiki/nodes/mrw-ea265a369095|Further refined Euler-Maclaurin n=2 admissible beta subwindow]]
 - [[wiki/nodes/mrw-e497f41bfc07|Open Problem 4 reduction to the n=2 beta window]]
 
 ## Notes
 
 - This sharpens the previous sufficient interval \([187/80,3]\) to \([257/110,3]\).
+- It is sharpened by [[wiki/nodes/mrw-ea265a369095|Further refined Euler-Maclaurin n=2 admissible beta subwindow]], which proves \([397/170,3]\subseteq\mathcal I_2\).
 - It is still not the exact \(n=2\) lower endpoint.
 - Together with [[wiki/nodes/mrw-3712cf1c88d8|Refined compact localization for the n=2 lower-envelope maximum]], the current certified lower-envelope gap is
 \[

@@ -6,7 +6,7 @@ aliases: ["mrw-8fcc1c2c5cda", "Ordinary shifts do not preserve union-free famili
 status: proved
 tags: [counterexample, proved, erdos-536, union-free, compression, shifting, route-kill, weighted-measure]
 parents: [mrw-55a8d9eddd2e, mrw-265ec9f57561]
-refs: ["references/sources/20260519T121424Z-union-free-compression-context.md"]
+refs: []
   - raw/20260519T121424Z-erdos536-compression-obstruction.md
   - references/requests/20260519T121424Z-union-free-compression-erudition-gate.md
   - references/sources/20260519T121424Z-union-free-compression-context.md

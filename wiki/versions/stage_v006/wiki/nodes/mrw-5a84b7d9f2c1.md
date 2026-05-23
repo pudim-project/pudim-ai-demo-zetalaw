@@ -6,7 +6,7 @@ aliases: ["mrw-5a84b7d9f2c1", "Pole-family obstruction for the P1 kernel route"]
 status: proved
 tags: ["note", "proved", "polygamma", "trigamma", "complete-monotonicity", "pole-family", "laplace-kernel", "frontier"]
 parents: [mrw-1c9d9f07a4ef, mrw-f0a031feea8e]
-refs: ["references/sources/20260518T125130Z-qiln-open-problem-2-p1-refresh.md", "references/sources/20260518T125130Z-dlmf-polygamma-partial-fraction-inputs.md", "references/sources/20260518T125130Z-bernstein-widder-pole-family-warning.md"]
+refs: []
 ---
 
 # Note: Pole-family obstruction for the P1 kernel route

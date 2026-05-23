@@ -207,6 +207,7 @@ Back to Home.
 - [[wiki/nodes/mrw-5fabc550bd7d|Explicit n=2 admissible beta subwindow]] theorem (proved)
 - [[wiki/nodes/mrw-c165b8d5e4e2|Exponential scale for polynomial Gamma-product thresholds]] theorem (proved)
 - [[wiki/nodes/mrw-2b0fbc6dc6db|First-order asymptotic for polynomial Gamma-product thresholds]] theorem (proved)
+- [[wiki/nodes/mrw-ea265a369095|Further refined Euler-Maclaurin n=2 admissible beta subwindow]] theorem (proved)
 - [[wiki/nodes/mrw-8aa5f1703758|Generalized Holder inequality for Gamma zeta]] theorem (proved)
 - [[wiki/nodes/mrw-f3c6cef2ebb1|Odd-order collapse for polygamma beta windows]] theorem (proved)
 - [[wiki/nodes/mrw-c3e50abdd2fe|Refined Euler-Maclaurin n=2 admissible beta subwindow]] theorem (proved)

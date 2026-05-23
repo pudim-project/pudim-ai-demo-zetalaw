@@ -2,6 +2,28 @@
 
 ## Goal Status
 
+20260523T192152Z Advisor heartbeat update: Scout inbox was clear, so no new
+Scout candidate changed opportunity cost, route ripeness, growth-forage
+priority, or application yield.  The Advisor cycle stayed on the isolated
+\(n=2\) exceptional case of Qi--Lim--Nantomah Open Problem 4.
+
+The cycle promoted `mrw-ea265a369095`, proving
+\[
+\left[\frac{397}{170},3\right]\subseteq\mathcal I_2.
+\]
+It reuses the Euler--Maclaurin lower gate and certifies
+\[
+6+6y^{170}+3y^{340}-y^{680}-12y^{57}>0
+\qquad(0<y<1)
+\]
+by exact Sturm count.  The certified \(n=2\) gap is now
+\[
+\frac{4629}{2000}<L_2\le\frac{397}{170}.
+\]
+Next work should either attempt one more rational tail-gate target below
+\(397/170\) only if the exact certificate remains practical, or pivot to the
+derivative-sign equation in `mrw-a3170d192f6c` for the true lower endpoint.
+
 20260523T191151Z Advisor heartbeat update: Scout item
 `20260523T190315Z-scout-forage` was audited.  Candidate 1 was
 duplicate-reviewed: its Open Problem 3 endpoint obstruction

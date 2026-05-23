@@ -6,7 +6,7 @@ aliases: ["mrw-c7c76faed872", "Complete bipartite blow-ups preserve pair-link fr
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, pair-link, complete-bipartite, blow-up, cross-core-coherence, product-measure, support-tail, patch-gate-audited]
 parents: [mrw-f83b56a1aa89, mrw-c6d0c6fa4d30, mrw-3c39ca3d1973, mrw-354b105d4977, mrw-a32a6d3a5f20]
-refs: ["references/sources/20260521T001014Z-complete-bipartite-blowup-coherence-context.md"]
+refs: []
   - raw/20260521T001014Z-erdos-536-global-complete-bipartite-path-shadow-collapse-coh.md
   - oracle/responses/20260521T001014Z-erdos536-bipartite-blowup-coherence-oracle-response.md
   - references/sources/20260521T001014Z-complete-bipartite-blowup-coherence-context.md

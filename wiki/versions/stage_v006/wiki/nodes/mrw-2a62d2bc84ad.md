@@ -6,7 +6,7 @@ aliases: ["mrw-2a62d2bc84ad", "Coarse compact maximum bracket for the n=2 lower 
 status: proved
 tags: ["corollary", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "n-2", "lower-envelope", "maximum-bracket", "rational-certificate", "validated-interval", "theory-growth"]
 parents: [mrw-30f9a055fa9a, mrw-201bbda2c917, mrw-0241ab931d33]
-refs: ["references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Corollary: Coarse compact maximum bracket for the n=2 lower envelope

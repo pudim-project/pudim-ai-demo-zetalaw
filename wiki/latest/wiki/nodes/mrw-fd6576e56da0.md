@@ -6,7 +6,7 @@ aliases: ["mrw-fd6576e56da0", "Exact even-order beta window outside n=2"]
 status: proved
 tags: ["theorem", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "even-order", "n-ge-4", "exact-window", "hurwitz-zeta", "factorial-gap", "scout-audited", "source-grounded", "theory-growth"]
 parents: [mrw-0241ab931d33]
-refs: ["theory/forage/inbox/20260523T181642Z-scout-forage-inbox.md", "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Theorem: Exact even-order beta window outside n=2

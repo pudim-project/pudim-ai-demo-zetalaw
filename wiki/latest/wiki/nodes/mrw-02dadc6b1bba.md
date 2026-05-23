@@ -6,7 +6,7 @@ aliases: ["mrw-02dadc6b1bba", "Rank-only lower-shadow-free families have vanishi
 status: proved
 tags: ["proposition", "proved", "erdos", "lcm", "squarefree", "biased-measure", "lower-shadow", "union-cover", "rank-only", "support-tail", "patch-gate-audited"]
 parents: [mrw-d0402aea6f58, mrw-cc4f876149b7, mrw-37dbc6aeedf9, mrw-4daa694d9526]
-refs: ["references/sources/20260519T073419Z-erdos-536-biased-trace-context.md"]
+refs: []
 ---
 
 # Proposition: Rank-only lower-shadow-free families have vanishing biased mass

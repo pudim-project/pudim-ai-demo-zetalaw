@@ -6,7 +6,7 @@ aliases: ["mrw-37dbc6aeedf9", "Biased squarefree residual problem for Erdos 536"
 status: open
 tags: ["problem", "open", "erdos", "lcm", "squarefree", "biased-measure", "support-tail", "finite-prime", "next-frontier"]
 parents: [mrw-277fbbb4ccb9, mrw-e80e409bf536, mrw-f835f9671070, mrw-4daa694d9526, mrw-9afb17b1b84a]
-refs: ["references/sources/20260519T053417Z-erdos-536-biased-squarefree-context.md"]
+refs: []
 ---
 
 # Problem: Biased squarefree residual problem for Erdos 536

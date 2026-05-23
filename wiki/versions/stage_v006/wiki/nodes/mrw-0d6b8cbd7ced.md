@@ -6,7 +6,7 @@ aliases: ["mrw-0d6b8cbd7ced", "Bounded-deletion rank-congruence obstruction for 
 status: proved
 tags: [note, proved, erdos-536, union-free, bounded-deletion, rank-congruence, obstruction, support-tail, container]
 parents: [mrw-bf35ac1a9ad3, mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-cc4f876149b7, mrw-3c39ca3d1973]
-refs: ["references/sources/20260519T133426Z-bounded-deletion-container-context.md"]
+refs: []
   - raw/20260519T133426Z-erdos536-cross-fiber-container.md
   - references/requests/20260519T133426Z-bounded-deletion-erudition-gate.md
   - references/sources/20260519T133426Z-bounded-deletion-container-context.md

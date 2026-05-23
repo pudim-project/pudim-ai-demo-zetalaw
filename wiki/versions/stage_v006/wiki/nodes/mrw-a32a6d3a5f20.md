@@ -6,7 +6,7 @@ aliases: ["mrw-a32a6d3a5f20", "Weighted cross-core Mantel bound for pair-link-fr
 status: proved
 tags: [erdos-536, squarefree-support, pair-link, hypergraph-independent-set, two-extension-slice, weighted-mantel, cross-core-aggregation, product-measure, support-tail, patch-gate-audited]
 parents: [mrw-354b105d4977, mrw-3c39ca3d1973, mrw-25cdd8da0601, mrw-55a8d9eddd2e]
-refs: ["references/sources/20260520T102016Z-cross-core-mantel-context.md"]
+refs: []
   - raw/20260520T102016Z-erdos-536-weighted-cross-core-aggregation-of-triangle-free-t.md
   - references/sources/20260520T102016Z-cross-core-mantel-context.md
   - oracle/requests/20260520T102016Z-erdos536-cross-core-mantel-oracle-request.md

@@ -6,7 +6,7 @@ aliases: ["mrw-c7f4e0c9a821", "Conditional overlap-energy bound", "Entropy overl
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, union-free, pair-link, overlap-graph, relative-entropy, product-measure, biased-measure, high-intersection, cluster-cover, route-kill]
 parents: [mrw-18e9c7b0a5af, mrw-7c6a0e9f2d31, mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-b4075311abd3, mrw-cc4f876149b7, mrw-3c39ca3d1973]
-refs: ["references/sources/20260519T233444Z-overlap-entropy-context.md"]
+refs: []
   - raw/20260519T233444Z-erdos536-mixed-overlap-graph.md
   - references/requests/20260519T233444Z-overlap-entropy-erudition-gate.md
   - references/sources/20260519T233444Z-overlap-entropy-context.md

@@ -6,7 +6,7 @@ aliases: ["mrw-ba29cdf1fd30", "Finite-shadow reduction for Erdos residue-class l
 status: proved
 tags: ["proposition", "proved", "erdos", "logarithmic-density", "modular-residue", "finite-shadow", "sieve"]
 parents: [mrw-3d524c92103b, mrw-538319137c76, mrw-1ac4e44cbbad]
-refs: ["references/sources/20260518T173138Z-erdos-residue-log-density.md", "references/sources/20260518T181156Z-davenport-erdos-multiples-benchmark.md"]
+refs: []
 ---
 
 # Proposition: Finite-shadow reduction for Erdos residue-class logarithmic density

@@ -6,7 +6,7 @@ aliases: ["mrw-9afb17b1b84a", "Binary-choice squarefree obstruction to pointwise
 status: proved
 tags: ["note", "proved", "erdos", "lcm", "squarefree", "support-tail", "obstruction", "finite-prime", "patch-gate-audited"]
 parents: [mrw-277fbbb4ccb9, mrw-e80e409bf536, mrw-f835f9671070, mrw-4daa694d9526]
-refs: ["references/sources/20260519T045417Z-erdos-536-squarefree-support-context.md"]
+refs: []
 ---
 
 # Note: Binary-choice squarefree obstruction to pointwise support envelopes

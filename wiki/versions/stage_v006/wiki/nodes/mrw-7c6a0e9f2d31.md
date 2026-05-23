@@ -6,7 +6,7 @@ aliases: ["mrw-7c6a0e9f2d31", "Private-shadow sparse-intersection code quarantin
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, union-free, pair-link, sparse-intersection, private-shadow, packing, biased-measure, support-tail, route-kill]
 parents: [mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-b4075311abd3, mrw-cc4f876149b7, mrw-3c39ca3d1973, mrw-4b9f5c2e6a1d, mrw-9afb17b1b84a]
-refs: ["references/sources/20260519T173438Z-private-shadow-context.md"]
+refs: []
   - raw/20260519T173438Z-erdos536-private-shadow-code-quarantine.md
   - references/requests/20260519T173438Z-private-shadow-erudition-gate.md
   - references/sources/20260519T173438Z-private-shadow-context.md

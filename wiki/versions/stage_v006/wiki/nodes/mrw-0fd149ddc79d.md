@@ -6,7 +6,7 @@ aliases: ["mrw-0fd149ddc79d", "Sharp threshold for reciprocal Gamma-product mono
 status: proved
 tags: ["theorem", "proved", "gamma", "monotonicity", "sharp-threshold", "outside-route", "application", "app-0009", "source-grounded"]
 parents: [mrw-1396775c6089]
-refs: ["references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"]
+refs: []
 ---
 
 # Theorem: APP-0009: Sharp threshold for reciprocal Gamma-product monotonicity

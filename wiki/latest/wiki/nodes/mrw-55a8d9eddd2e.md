@@ -6,7 +6,7 @@ aliases: ["mrw-55a8d9eddd2e", "Prime-biased weighted union-free theorem"]
 status: open
 tags: ["problem", "open", "erdos", "lcm", "squarefree", "biased-measure", "union-free", "lower-shadow", "support-tail", "finite-prime", "next-frontier"]
 parents: ["mrw-b4075311abd3", "mrw-d0402aea6f58", "mrw-37dbc6aeedf9", "mrw-4daa694d9526", "mrw-2a2c5551301e", "mrw-67f99fecf9e2"]
-refs: ["references/sources/20260519T101422Z-erdos-536-union-free-context.md"]
+refs: []
 ---
 
 # Problem: Prime-biased weighted union-free theorem

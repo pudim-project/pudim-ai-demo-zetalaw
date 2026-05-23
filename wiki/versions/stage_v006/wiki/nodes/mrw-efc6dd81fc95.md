@@ -6,7 +6,7 @@ aliases: ["mrw-efc6dd81fc95", "Obstruction to naive finite-prime fiber lifting f
 status: proved
 tags: ["note", "proved", "erdos", "lcm", "finite-prime", "fiber", "obstruction", "patch-gate-audited"]
 parents: [mrw-277fbbb4ccb9, mrw-2e217726536f]
-refs: ["references/sources/20260519T001240Z-erdos-536-lcm-fiber-context.md"]
+refs: []
 ---
 
 # Note: Obstruction to naive finite-prime fiber lifting for lcm triangles

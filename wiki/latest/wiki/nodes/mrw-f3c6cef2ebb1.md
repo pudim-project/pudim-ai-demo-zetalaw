@@ -6,7 +6,7 @@ aliases: ["mrw-f3c6cef2ebb1", "Odd-order collapse for polygamma beta windows"]
 status: proved
 tags: ["theorem", "proved", "polygamma", "beta-window", "open-problem-4", "qi-lim-nantomah", "odd-order", "hurwitz-zeta", "scout-audited", "source-grounded", "theory-growth"]
 parents: [mrw-f0a031feea8e]
-refs: ["theory/forage/inbox/20260523T153713Z-scout-forage-inbox.md", "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Theorem: Odd-order collapse for polygamma beta windows

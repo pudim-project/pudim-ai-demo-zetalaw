@@ -6,7 +6,7 @@ aliases: ["mrw-0cb4eef49436", "APP-0009 application record: sharp reciprocal Gam
 status: proved
 tags: [note, proved, application, app-0009, gamma, monotonicity, sharp-threshold, source-grounded, outside-route, not-staged]
 parents: [mrw-1396775c6089, mrw-0fd149ddc79d]
-refs: ["references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"]
+refs: []
   - raw/20260523T133726Z-app-0009-gamma-product-threshold-application.md
   - references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md
 ---

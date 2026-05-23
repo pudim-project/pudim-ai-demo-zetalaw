@@ -6,7 +6,7 @@ aliases: ["mrw-58db958e1bf1", "Convexity of the reciprocal trigamma product"]
 status: proved
 tags: ["theorem", "proved", "polygamma", "trigamma", "convexity", "qi-lim-nantomah", "frontier"]
 parents: [mrw-a4339be8da59, mrw-1c9d9f07a4ef, mrw-f0a031feea8e]
-refs: ["references/sources/20260518T142240Z-qiln-open-problem-2-refresh.md", "references/sources/20260518T142240Z-dlmf-polygamma-series.md"]
+refs: []
 ---
 
 # Theorem: Convexity of the reciprocal trigamma product

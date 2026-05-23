@@ -6,7 +6,7 @@ aliases: ["mrw-a4339be8da59", "Ratio-normal-form reduction for P1 convexity"]
 status: proved
 tags: ["proposition", "proved", "polygamma", "trigamma", "convexity", "ratio-normal-form", "frontier"]
 parents: [mrw-1c9d9f07a4ef, mrw-5a84b7d9f2c1, mrw-f0a031feea8e]
-refs: ["references/sources/20260518T142240Z-qiln-open-problem-2-refresh.md", "references/sources/20260518T142240Z-dlmf-polygamma-series.md"]
+refs: []
 ---
 
 # Proposition: Ratio-normal-form reduction for P1 convexity

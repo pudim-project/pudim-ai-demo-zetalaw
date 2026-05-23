@@ -207,6 +207,7 @@ This directory contains the atomic Pudim wiki nodes for this public vault. Open 
 | [`mrw-5fabc550bd7d.md`](mrw-5fabc550bd7d.md) | theorem | proved | Explicit n=2 admissible beta subwindow |
 | [`mrw-c165b8d5e4e2.md`](mrw-c165b8d5e4e2.md) | theorem | proved | Exponential scale for polynomial Gamma-product thresholds |
 | [`mrw-2b0fbc6dc6db.md`](mrw-2b0fbc6dc6db.md) | theorem | proved | First-order asymptotic for polynomial Gamma-product thresholds |
+| [`mrw-ea265a369095.md`](mrw-ea265a369095.md) | theorem | proved | Further refined Euler-Maclaurin n=2 admissible beta subwindow |
 | [`mrw-8aa5f1703758.md`](mrw-8aa5f1703758.md) | theorem | proved | Generalized Holder inequality for Gamma zeta |
 | [`mrw-f3c6cef2ebb1.md`](mrw-f3c6cef2ebb1.md) | theorem | proved | Odd-order collapse for polygamma beta windows |
 | [`mrw-c3e50abdd2fe.md`](mrw-c3e50abdd2fe.md) | theorem | proved | Refined Euler-Maclaurin n=2 admissible beta subwindow |

@@ -6,7 +6,7 @@ aliases: ["mrw-c6d0c6fa4d30", "Path-shadow overlap bottleneck for endpoint-pair 
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, pair-link, path-shadow, lower-shadow, product-measure, overlap-bottleneck, endpoint-pair-core, support-tail, patch-gate-audited]
 parents: [mrw-2bcc2955fe38, mrw-3c39ca3d1973, mrw-354b105d4977, mrw-a32a6d3a5f20, mrw-55a8d9eddd2e]
-refs: ["references/sources/20260520T114136Z-path-shadow-overlap-context.md"]
+refs: []
   - raw/20260520T114136Z-erdos-536-product-measure-lower-shadow-theorem-for-pair-link.md
   - references/sources/20260520T114136Z-path-shadow-overlap-context.md
   - oracle/requests/20260520T114136Z-erdos536-path-shadow-overlap-oracle-request.md

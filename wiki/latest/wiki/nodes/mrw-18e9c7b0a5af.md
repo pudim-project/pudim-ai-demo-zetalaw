@@ -6,7 +6,7 @@ aliases: ["mrw-18e9c7b0a5af", "High-intersection clique quarantine"]
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, union-free, pair-link, high-intersection, t-intersecting, product-measure, biased-measure, overlap-graph, cluster-cover, route-kill]
 parents: [mrw-7c6a0e9f2d31, mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-b4075311abd3, mrw-cc4f876149b7, mrw-3c39ca3d1973, mrw-a92d7b6e4031]
-refs: ["references/sources/20260519T225444Z-high-intersection-clique-context.md"]
+refs: []
   - raw/20260519T225444Z-erdos536-high-intersection-clustering.md
   - references/requests/20260519T225444Z-high-intersection-clique-erudition-gate.md
   - references/sources/20260519T225444Z-high-intersection-clique-context.md

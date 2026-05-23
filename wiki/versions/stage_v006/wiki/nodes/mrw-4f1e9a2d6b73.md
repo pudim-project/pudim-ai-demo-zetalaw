@@ -6,7 +6,7 @@ aliases: ["mrw-4f1e9a2d6b73", "Capped random pair-link sparsity"]
 status: proved
 tags: [corollary, proved, erdos-536, squarefree-support, union-free, pair-link, overlap-graph, capped-band, random-pair, route-kill]
 parents: [mrw-c7f4e0c9a821, mrw-3c39ca3d1973, mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-b4075311abd3, mrw-7c6a0e9f2d31, mrw-18e9c7b0a5af]
-refs: ["references/sources/20260520T001456Z-capped-pair-link-context.md"]
+refs: []
   - raw/20260520T001456Z-erdos536-sparse-overlap-graph.md
   - references/sources/20260520T001456Z-capped-pair-link-context.md
   - theory/forage/requests/20260520T001456Z-erdos536-sparse-overlap-graph-request.md

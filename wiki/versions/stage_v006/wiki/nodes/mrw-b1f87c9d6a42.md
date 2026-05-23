@@ -6,7 +6,7 @@ aliases: ["mrw-b1f87c9d6a42", "Full rank bands have full genuine pair-link proje
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, pair-link, rank-band, rare-relation, projection-obstruction, support-tail, patch-gate-audited]
 parents: [mrw-3c39ca3d1973, mrw-4f1e9a2d6b73, mrw-6d4a8b0f2c91]
-refs: ["references/sources/20260520T014549Z-rare-pair-link-full-band-projection-context.md"]
+refs: []
   - raw/20260520T014549Z-erdos-536-rare-pair-link-geometry-prove-or-refute-a-rare-hig.md
   - references/sources/20260520T014549Z-rare-pair-link-full-band-projection-context.md
   - oracle/requests/20260520T014549Z-erdos536-rare-pair-link-full-band-projection-oracle-request.md

@@ -6,7 +6,7 @@ aliases: ["mrw-f83b56a1aa89", "Complete bipartite slices saturate path-shadow ov
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, pair-link, path-shadow, overlap-collapse, complete-bipartite, product-measure, obstruction, support-tail, patch-gate-audited]
 parents: [mrw-c6d0c6fa4d30, mrw-2bcc2955fe38, mrw-354b105d4977, mrw-a32a6d3a5f20, mrw-3c39ca3d1973]
-refs: ["references/sources/20260520T233725Z-bipartite-path-shadow-collapse-context.md"]
+refs: []
   - raw/20260520T233725Z-erdos-536-path-shadow-overlap-collapse-stress-test-for-compl.md
   - references/sources/20260520T233725Z-bipartite-path-shadow-collapse-context.md
   - oracle/requests/20260520T233725Z-erdos536-bipartite-path-shadow-collapse-oracle-request.md

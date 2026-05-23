@@ -6,7 +6,7 @@ aliases: ["mrw-6d4a8b0f2c91", "Capped pair-link endpoint-degree invisibility"]
 status: proved
 tags: [corollary, proved, erdos-536, squarefree-support, union-free, pair-link, capped-band, random-pair, endpoint-degree, rectangle-sparsity, route-kill]
 parents: [mrw-4f1e9a2d6b73, mrw-c7f4e0c9a821, mrw-3c39ca3d1973, mrw-55a8d9eddd2e]
-refs: ["references/sources/20260520T010053Z-rare-pair-link-endpoint-context.md"]
+refs: []
   - raw/20260520T010053Z-erdos-536-rare-pair-link-endpoint-degree-invisibility-after.md
   - references/sources/20260520T010053Z-rare-pair-link-endpoint-context.md
   - theory/forage/requests/20260520T005456Z-erdos536-rare-overlap-pair-geometry-request.md

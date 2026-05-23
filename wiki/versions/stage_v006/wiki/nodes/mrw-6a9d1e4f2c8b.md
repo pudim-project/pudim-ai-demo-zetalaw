@@ -6,7 +6,7 @@ aliases: ["mrw-6a9d1e4f2c8b", "Star deletion traces obstruct trace-local growing
 status: proved
 tags: [note, proved, erdos-536, union-free, deletion-trace, intersecting-family, star, obstruction, growing-deletion, support-tail]
 parents: [mrw-cc4f876149b7, mrw-0d6b8cbd7ced, mrw-55a8d9eddd2e, mrw-d0402aea6f58, mrw-3c39ca3d1973]
-refs: ["references/sources/20260519T141427Z-growing-deletion-trace-context.md"]
+refs: []
   - raw/20260519T141427Z-erdos536-growing-deletion-trace.md
   - references/requests/20260519T141427Z-growing-deletion-trace-erudition-gate.md
   - references/sources/20260519T141427Z-growing-deletion-trace-context.md

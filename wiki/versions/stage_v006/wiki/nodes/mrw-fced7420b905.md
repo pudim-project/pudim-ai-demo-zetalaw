@@ -6,7 +6,7 @@ aliases: ["mrw-fced7420b905", "Nested path-shadow coherence for bipartite slice 
 status: proved
 tags: [proposition, proved, erdos-536, squarefree-support, pair-link, path-shadow, complete-bipartite, cross-core-coherence, nested-cores, signature-coherence, support-tail, scout-audited, patch-gate-audited]
 parents: [mrw-2bcc2955fe38, mrw-c6d0c6fa4d30, mrw-f83b56a1aa89, mrw-c7c76faed872, mrw-3c39ca3d1973, mrw-354b105d4977]
-refs: ["references/sources/20260521T001014Z-complete-bipartite-blowup-coherence-context.md"]
+refs: []
   - raw/20260521T001014Z-erdos-536-global-complete-bipartite-path-shadow-collapse-coh.md
   - raw/20260521T001727Z-scout-forage-ingest.md
   - theory/forage/responses/20260521T000655Z-erdos536-global-bipartite-collapse-coherence-response.md

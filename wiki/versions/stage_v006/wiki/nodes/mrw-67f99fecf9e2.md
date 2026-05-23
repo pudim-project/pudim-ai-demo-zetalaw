@@ -6,7 +6,7 @@ aliases: ["mrw-67f99fecf9e2", "Union-tilted boundary expansion and rank-layer ob
 status: proved
 tags: ["proposition", "proved", "erdos", "lcm", "squarefree", "biased-measure", "union-boundary", "lower-shadow", "rank-layer", "obstruction", "support-tail", "patch-gate-audited"]
 parents: ["mrw-2a2c5551301e", "mrw-cc4f876149b7", "mrw-d0402aea6f58", "mrw-02dadc6b1bba", "mrw-3c39ca3d1973", "mrw-37dbc6aeedf9"]
-refs: ["references/sources/20260519T093421Z-erdos-536-tilted-thinning-context.md"]
+refs: []
 ---
 
 # Proposition: Union-tilted boundary expansion and rank-layer obstruction

@@ -6,7 +6,7 @@ aliases: ["mrw-6cd7f677ca40", "Pointwise variational threshold for positive Gamm
 status: proved
 tags: ["proposition", "proved", "gamma", "monotonicity", "sharp-threshold", "c1-numerator", "variational-threshold", "scout-audited", "theory-growth"]
 parents: [mrw-1396775c6089, mrw-0fd149ddc79d, mrw-e0db175f66fc]
-refs: ["theory/forage/inbox/20260523T165716Z-scout-forage-inbox.md", "references/sources/20260518T153717Z-bulboaca-zayed-gamma-monotonicity.md"]
+refs: []
 ---
 
 # Proposition: Pointwise variational threshold for positive Gamma numerators

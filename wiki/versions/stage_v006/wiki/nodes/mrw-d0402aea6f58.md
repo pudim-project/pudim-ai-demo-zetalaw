@@ -6,7 +6,7 @@ aliases: ["mrw-d0402aea6f58", "Biased lower-shadow union-cover problem for Erdos
 status: open
 tags: ["problem", "open", "erdos", "lcm", "squarefree", "biased-measure", "lower-shadow", "union-cover", "support-tail", "finite-prime", "next-frontier"]
 parents: [mrw-37dbc6aeedf9, mrw-3c39ca3d1973, mrw-053bc325c601, mrw-9afb17b1b84a, mrw-4daa694d9526]
-refs: ["references/sources/20260519T065418Z-erdos-536-lower-shadow-context.md"]
+refs: []
 ---
 
 # Problem: Biased lower-shadow union-cover problem for Erdos 536

@@ -6,7 +6,7 @@ aliases: ["mrw-2945dff32e3e", "CRT prefix-dispersion certificate for Erdos first
 status: proved
 tags: ["proposition", "proved", "erdos", "logarithmic-density", "modular-residue", "tail-control", "crt", "uniformity", "sieve"]
 parents: [mrw-3d524c92103b, mrw-ba29cdf1fd30, mrw-e0778085804e, mrw-536639208ce1, mrw-17f44100cb83]
-refs: ["references/sources/20260518T185221Z-davenport-erdos-elementary-proof.md"]
+refs: []
 ---
 
 # Proposition: CRT prefix-dispersion certificate for Erdos first-hit block uniformity

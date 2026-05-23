@@ -6,7 +6,7 @@ aliases: ["mrw-ef08eba06fbe", "Sign partition for reciprocal-digamma beta constr
 status: proved
 tags: ["proposition", "proved", "digamma", "polygamma", "reciprocal-product", "beta-window", "sign-partition", "variational-reduction", "scout-audited", "source-grounded", "theory-growth"]
 parents: [mrw-0e9002ec3122]
-refs: ["theory/forage/inbox/20260523T153713Z-scout-forage-inbox.md", "references/sources/20260518T101945Z-qi-lim-nantomah-polygamma-open-problems.md"]
+refs: []
 ---
 
 # Proposition: Sign partition for reciprocal-digamma beta constraints

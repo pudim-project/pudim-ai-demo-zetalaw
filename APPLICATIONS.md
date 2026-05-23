@@ -12,8 +12,8 @@ The same application ids appear in `theory/latest/THEORY.tex` under the manuscri
 | APP-0005 | 2026-05-17 | Exact inverse-tail floor formula at s=7 | Exact inverse-tail floor formula at s=7 | solved at THEORY_v006 | no reply |
 | APP-0006 | 2026-05-17 | Exact inverse-tail floor formula at s=8 | Exact inverse-tail floor formula at s=8 | solved at THEORY_v006 | no reply |
 | APP-0007 | 2026-05-19 | Concavity or complete monotonicity of the polygamma product P0 | Complete monotonicity of reciprocal digamma product curvature | solved at THEORY_v006 | no reply |
-| APP-0008 | 2026-05-19 | Higher-order monotonicity of polygamma products Pn | Ratio-normal-form reduction for P1 convexity | solved at THEORY_v006 | no reply |
-| APP-0009 | 2026-05-23 | Sharp reciprocal Gamma-product monotonicity threshold | Pointwise variational threshold for positive Gamma numerators | solved at THEORY_v006 | no contact |
+| APP-0008 | 2026-05-19 | Higher-order monotonicity of polygamma products Pn | Counterexample to complete monotonicity of higher-order polygamma product curvature | solved at THEORY_v006 | no reply |
+| APP-0009 | 2026-05-23 | Sharp reciprocal Gamma-product monotonicity threshold | APP-0009: Sharp threshold for reciprocal Gamma-product monotonicity | solved at THEORY_v006 | no contact |
 
 ## Application Details
 
@@ -166,11 +166,11 @@ P_0(x)=\psi(x)\psi(1/x).
 
 ### APP-0008: Higher-order monotonicity of polygamma products Pn
 
-- source reference: source: Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5.; The same-point polygamma literature gives complete-monotonicity and Turan-type inequalities for products evaluated at one argument. Gao's 2019 article surveys such inequalities and recalls that $\psi'$ is completely monotonic. Bernstein-Widder theory explains why a nonnegative Laplace kernel would prove complete monotonicity.; These sources concern complete monotonicity and sharp constants for functions built from products of polygamma functions evaluated at t [truncated]
-- solution: Ratio-normal-form reduction for P1 convexity
+- source reference: source: Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5.
+- solution: Counterexample to complete monotonicity of higher-order polygamma product curvature
 - solution status: proved
 - problem node: `wiki/nodes/mrw-f0a031feea8e.md`
-- solution node: `wiki/nodes/mrw-a4339be8da59.md`
+- solution node: `wiki/nodes/mrw-dee642b8e9cb.md`
 - theory version: `v006`
 - stage: `stage_v006`
 - review status: no reply
@@ -185,11 +185,11 @@ P_n(x)=\psi^{(n)}(x)\psi^{(n)}(1/x).
 
 ### APP-0009: Sharp reciprocal Gamma-product monotonicity threshold
 
-- source reference: theory/forage/inbox/20260523T165716Z-scout-forage-inbox.md
-- solution: Pointwise variational threshold for positive Gamma numerators
+- source reference: source: Teodor Bulboaca and Hanaa M. Zayed, "Monotonic nature of the Gamma function", Journal of Inequalities and Applications 2026, article 27.
+- solution: APP-0009: Sharp threshold for reciprocal Gamma-product monotonicity
 - solution status: proved
 - problem node: `wiki/nodes/mrw-1396775c6089.md`
-- solution node: `wiki/nodes/mrw-6cd7f677ca40.md`
+- solution node: `wiki/nodes/mrw-0fd149ddc79d.md`
 - theory version: `v006`
 - stage: `stage_v006`
 - review status: no contact

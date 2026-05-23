@@ -6,7 +6,7 @@ aliases: ["mrw-25cdd8da0601", "Pair-link-free families have injective one-swap i
 status: proved
 tags: [erdos-536, squarefree-support, pair-link, hypergraph-independent-set, one-swap, insertion-fiber, johnson-exchange, support-tail, patch-gate-audited]
 parents: [mrw-3c39ca3d1973, mrw-b1f87c9d6a42, mrw-4f1e9a2d6b73, mrw-6d4a8b0f2c91]
-refs: ["references/sources/20260520T022056Z-one-swap-insertion-fiber-context.md"]
+refs: []
   - raw/20260520T022056Z-erdos-536-sparse-pair-link-hypergraph-prove-one-swap-inserti.md
   - references/sources/20260520T022056Z-one-swap-insertion-fiber-context.md
   - oracle/requests/20260520T022056Z-erdos536-one-swap-insertion-fibers-oracle-request.md
