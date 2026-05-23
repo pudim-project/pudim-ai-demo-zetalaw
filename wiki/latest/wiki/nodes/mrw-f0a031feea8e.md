@@ -21,7 +21,7 @@ P_n(x)=\psi^{(n)}(x)\psi^{(n)}(1/x).
 Literature status: open candidate from the same 2025 polygamma source.  The stronger complete-monotonicity assertion is now locally refuted by [[wiki/nodes/mrw-dee642b8e9cb|Counterexample to complete monotonicity of higher-order polygamma product curvature]], which proves \(P_n'''(2)>0\) for all \(n\ge29\) and also \(P_7^{(6)}(3)<0\).  The \(n=1\) convexity subcase is solved by [[wiki/nodes/mrw-58db958e1bf1|Convexity of the reciprocal trigamma product]].  The full all-\(n\) convexity question remains open.
 
 References:
-- Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. https://link.springer.com/article/10.1186/s13660-024-03245-8
+- Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: https://doi.org/10.1186/s13660-024-03245-8
 
 Connection to THEORY: This is a higher-polygamma analogue of partition-function curvature.
 
@@ -36,6 +36,8 @@ Imported from scout-forage response. Open-status evidence and references must be
 See the candidate block above and the response artifact.
 
 ## Source References
+
+- Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: https://doi.org/10.1186/s13660-024-03245-8
 
 
 ## Notes

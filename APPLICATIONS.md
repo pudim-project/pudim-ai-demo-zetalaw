@@ -166,7 +166,7 @@ P_0(x)=\psi(x)\psi(1/x).
 
 ### APP-0008: Higher-order monotonicity of polygamma products Pn
 
-- source reference: source: Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5.
+- source reference: Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)
 - solution: Counterexample to complete monotonicity of higher-order polygamma product curvature
 - solution status: proved
 - problem node: `wiki/nodes/mrw-f0a031feea8e.md`
@@ -185,7 +185,7 @@ P_n(x)=\psi^{(n)}(x)\psi^{(n)}(1/x).
 
 ### APP-0009: Sharp reciprocal Gamma-product monotonicity threshold
 
-- source reference: source: Teodor Bulboaca and Hanaa M. Zayed, "Monotonic nature of the Gamma function", Journal of Inequalities and Applications 2026, article 27.
+- source reference: Teodor Bulboaca and Hanaa M. Zayed, "Monotonic nature of the Gamma function", Journal of Inequalities and Applications 2026, article 27. DOI: [DOI](https://doi.org/10.1186/s13660-025-03425-0)
 - solution: APP-0009: Sharp threshold for reciprocal Gamma-product monotonicity
 - solution status: proved
 - problem node: `wiki/nodes/mrw-1396775c6089.md`
