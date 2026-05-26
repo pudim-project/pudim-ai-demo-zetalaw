@@ -6,7 +6,7 @@ This changelog records staged applications of the theory to externally stated pr
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
 | APP-0001 | 2026-05-17 | Alzer-Kwong convexity and concavity problem | Alzer-Kwong convexity and concavity pattern for reciprocal zeta | solved at THEORY_v006 | no reply |
-| APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solved at THEORY_v006 | no reply |
+| APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solved at THEORY_v006 | confirmed correct |
 | APP-0003 | 2026-05-17 | Sroysang generalized Holder problem | Generalized Holder inequality for Gamma zeta | solved at THEORY_v006 | no reply |
 | APP-0004 | 2026-05-17 | Complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\) | Complete monotonicity of reciprocal-Gamma curvature | solved at THEORY_v006 | no reply |
 | APP-0005 | 2026-05-17 | Exact inverse-tail floor formula at s=7 | Exact inverse-tail floor formula at s=7 | solved at THEORY_v006 | no reply |
@@ -54,7 +54,8 @@ F''(x)<0\quad\text{on }(-4n-2,-4n),
 - solution node: `wiki/nodes/mrw-f9e130ed65ef.md`
 - theory version: `v006`
 - stage: `stage_v006`
-- review status: no reply
+- review status: confirmed correct
+- review date: 2026-05-23
 
 #### Stated problem
 
