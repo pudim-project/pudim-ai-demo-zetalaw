@@ -1,5 +1,6 @@
 # Pudim local/private working vault
 .math-wiki/
+.pudim/
 
 # Pudim local/private staging work
 .math-wiki/staging/github-work/

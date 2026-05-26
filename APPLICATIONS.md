@@ -1,25 +1,26 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems. Contact/review notes are intentionally minimal.
-The same application ids appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names.
+`APP-0001`--`APP-0010` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0010` are staged in `THEORY_v007`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
 | APP-0001 | 2026-05-17 | Alzer-Kwong convexity and concavity problem | Alzer-Kwong convexity and concavity pattern for reciprocal zeta | solved at THEORY_v006 | no reply |
 | APP-0002 | 2026-05-17 | Nantomah zeta positivity problem | Affirmative solution of Nantomah zeta positivity problem | solved at THEORY_v006 | no reply |
 | APP-0003 | 2026-05-17 | Sroysang generalized Holder problem | Generalized Holder inequality for Gamma zeta | solved at THEORY_v006 | no reply |
-| APP-0004 | 2026-05-17 | Complete monotonicity of $(\log\Gamma(x)+\log\Gamma(1/x))''$ | Complete monotonicity of reciprocal-Gamma curvature | solved at THEORY_v006 | no reply |
+| APP-0004 | 2026-05-17 | Complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\) | Complete monotonicity of reciprocal-Gamma curvature | solved at THEORY_v006 | no reply |
 | APP-0005 | 2026-05-17 | Exact inverse-tail floor formula at s=7 | Exact inverse-tail floor formula at s=7 | solved at THEORY_v006 | no reply |
 | APP-0006 | 2026-05-17 | Exact inverse-tail floor formula at s=8 | Exact inverse-tail floor formula at s=8 | solved at THEORY_v006 | no reply |
 | APP-0007 | 2026-05-19 | Concavity or complete monotonicity of the polygamma product P0 | Complete monotonicity of reciprocal digamma product curvature | solved at THEORY_v006 | no reply |
 | APP-0008 | 2026-05-19 | Higher-order monotonicity of polygamma products Pn | Counterexample to complete monotonicity of higher-order polygamma product curvature | solved at THEORY_v006 | no reply |
 | APP-0009 | 2026-05-23 | Sharp reciprocal Gamma-product monotonicity threshold | APP-0009: Sharp threshold for reciprocal Gamma-product monotonicity | solved at THEORY_v006 | no contact |
+| APP-0010 | 2026-05-26 | Nielsen \(k\)-beta derivative-ratio monotonicity | Parity law from a complete-monotone Laplace moment-ratio bridge | solved at THEORY_v007 | no contact |
 
 ## Application Details
 
 ### APP-0001: Alzer-Kwong convexity and concavity problem
 
-- source reference: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of $1/\zeta$", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)
+- source reference: Horst Alzer and Man Kam Kwong, "On the concavity and convexity of \(1/\zeta\)", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)
 - solution: Alzer-Kwong convexity and concavity pattern for reciprocal zeta
 - solution status: proved
 - problem node: `wiki/nodes/mrw-c9ec61b1c573.md`
@@ -214,4 +215,49 @@ W_\rho(s)=\Gamma(s+\rho)\Gamma(s)
 \psi(1+\rho_*)=\gamma,
 \]
 
- then the optimal condition is \(\rho\ge \rho_*\), where numerically \[ \rho_*=1.258396967085 [truncated]
+ then the optimal condition is \(\rho\ge \rho_*\), where numerically
+
+\[
+\rho_*=1.2583969670859318174106234224981693941\ldots .
+\]
+
+#### Staged resolution
+
+The staged theorem proves the equivalence by checking the endpoint of
+
+\[
+\frac{d}{ds}\log\left(\Gamma(s+\rho)\Gamma(s)\right)=\psi(s+\rho)+\psi(s).
+\]
+
+Since \(\psi\) is strictly increasing, the left endpoint \(s=1\) controls the sign. Thus \(\varphi_\rho\) is strictly decreasing on \([1,\infty)\) exactly when \(\psi(1+\rho)\ge\gamma\). The same endpoint argument gives the generalized criterion for \(u(s)/(\Gamma(s+\rho)\Gamma(s))\) when \(u'/u\) is nonincreasing.
+
+### APP-0010: Nielsen \(k\)-beta derivative-ratio monotonicity
+
+- source reference: Li Yin and Jumei Zhang, "On some properties of special functions involving \(k\)-gamma and \(k\)-digamma functions", arXiv:2502.15852. [arXiv](https://arxiv.org/abs/2502.15852)
+- solution: parity law from a complete-monotone Laplace moment-ratio bridge
+- solution status: proved
+- bridge result: Lemma `laplace-moment-ratio-bridge` in `THEORY_v007`
+- solution theorem: Theorem `nielsen-k-beta-derivative-ratio` in `THEORY_v007`
+- source problem: Yin--Zhang Nielsen \(k\)-beta derivative-ratio open problem
+- theory version: `v007`
+- review status: no contact
+
+#### Stated problem
+
+For \(k>0\), determine the monotonicity of
+
+\[
+\frac{(x\beta_k(x))^{(n+1)}}{(x\beta_k(x))^{(n)}(x\beta_k(x))^{(n+2)}}
+\]
+
+on \(x>0\).
+
+#### Staged resolution
+
+The precise parity law is: the ratio is strictly increasing for odd \(n\), and strictly decreasing for even \(n\). The proof introduces a reusable bridge lemma: if \(a_j(x)=\int_0^\infty t^j e^{-xt}\,d\mu(t)>0\), then \(a_{n+1}(x)/(a_n(x)a_{n+2}(x))\) is strictly increasing. Applying this to
+
+\[
+x\beta_k(x)=\frac12+\int_0^\infty e^{-xt}\frac{k e^{-kt}}{(1+e^{-kt})^2}\,dt
+\]
+
+solves the source problem.
