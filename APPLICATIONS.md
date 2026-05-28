@@ -1,7 +1,7 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0010` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0010` are staged in `THEORY_v007`.
+`APP-0001`--`APP-0013` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0013` are staged in `THEORY_v008`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -15,6 +15,9 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0008 | 2026-05-19 | Higher-order monotonicity of polygamma products Pn | Counterexample to complete monotonicity of higher-order polygamma product curvature | solved at THEORY_v006 | no reply |
 | APP-0009 | 2026-05-23 | Sharp reciprocal Gamma-product monotonicity threshold | APP-0009: Sharp threshold for reciprocal Gamma-product monotonicity | solved at THEORY_v006 | no contact |
 | APP-0010 | 2026-05-26 | Nielsen \(k\)-beta derivative-ratio monotonicity | Parity law from a complete-monotone Laplace moment-ratio bridge | solved at THEORY_v007 | no contact |
+| APP-0011 | 2026-05-28 | Exact \(n=2\) beta-window endpoint | Exact certified endpoint for the remaining Qi--Lim--Nantomah beta-window case | solved at THEORY_v008 | no contact |
+| APP-0012 | 2026-05-28 | Baricz \(V_q\) strict \(q\)-log-convexity | Positive Laplace representation proving strict parameter log-convexity | solved at THEORY_v008 | no contact |
+| APP-0013 | 2026-05-28 | Yin \((p,k)\)-digamma sharp \(\alpha\)-necessity | Near-zero obstruction proving complete monotonicity forces \(\alpha\le1\) | solved at THEORY_v008 | no contact |
 
 ## Application Details
 
@@ -262,3 +265,92 @@ x\beta_k(x)=\frac12+\int_0^\infty e^{-xt}\frac{k e^{-kt}}{(1+e^{-kt})^2}\,dt
 \]
 
 solves the source problem.
+
+### APP-0011: Exact \(n=2\) beta-window endpoint
+
+- source reference: Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)
+- solution: exact certified endpoint for the remaining Qi--Lim--Nantomah beta-window case
+- solution status: proved
+- solution theorem: Theorem `q2-exact-endpoint` in `THEORY_v008`
+- source problem: Qi--Lim--Nantomah Open Problem 4, remaining \(n=2\) case
+- theory version: `v008`
+- review status: no contact
+
+#### Stated problem
+
+For \(n=2\), determine the exact admissible set
+
+\[
+\mathcal I_2=\left\{\beta:x^\beta C_2(x)-P_2(x)<0\text{ for all }x>0\right\}.
+\]
+
+#### Staged resolution
+
+The staged theorem proves that \(Q_2\) has a unique global maximizer \(\xi\in[287345/1000000,287346/1000000]\). Therefore, with \(L_2=Q_2(\xi)\),
+
+\[
+\mathcal I_2=(L_2,3].
+\]
+
+### APP-0012: Baricz \(V_q\) strict \(q\)-log-convexity
+
+- source reference: Arpad Baricz, "Turan type inequalities for some special functions", Ph.D. thesis, University of Debrecen, 2008. [PDF](https://dea.lib.unideb.hu/bitstreams/bdd4469f-1b1e-4996-9b90-73f5e1a6b0e8/download)
+- solution: positive Laplace representation proving strict parameter log-convexity
+- solution status: proved
+- solution theorem: Theorem `baricz-vq-strict-logconvexity` in `THEORY_v008`
+- source problem: Baricz \(V_q\) parameter log-convexity problem
+- theory version: `v008`
+- review status: no contact
+
+#### Stated problem
+
+For fixed \(x>0\), prove that \(q\mapsto V_q(x)\) is log-convex on \((-1,\infty)\), where
+
+\[
+V_q(x)=\frac{2e^{x^2}}{\Gamma(q+1)}\int_x^\infty e^{-t^2}(t^2-x^2)^q\,dt.
+\]
+
+#### Staged resolution
+
+The staged theorem proves the stronger strict log-convexity statement from
+
+\[
+V_q(x)=\frac1{\sqrt\pi}\int_0^\infty s^{-1/2}e^{-x^2s}(1+s)^{-(q+1)}\,ds,
+\]
+
+a positive nondegenerate Laplace transform in the parameter \(q+1\).
+
+### APP-0013: Yin \((p,k)\)-digamma sharp \(\alpha\)-necessity
+
+- source reference: Li Yin, "Complete monotonicity of a function involving the \((p,k)\)-digamma function", International Journal of Open Problems in Computer Mathematics 11(2), 103-108, 2018. [PDF](https://www.ijopcm.org/Vol/2018/2.9.pdf)
+- solution: near-zero obstruction proving complete monotonicity forces \(\alpha\le1\)
+- solution status: proved
+- solution theorem: Theorem `yin-pk-alpha-necessity` in `THEORY_v008`
+- source problem: Yin Open Problem 4.1 sharp necessity question for \(\delta_{p,k,\alpha}\)
+- theory version: `v008`
+- review status: no contact
+
+#### Stated problem
+
+Yin proved sufficiency of \(\alpha\le1\) for complete monotonicity of
+
+\[
+\delta_{p,k,\alpha}(x)
+=x^\alpha\left[
+\frac1k\log\frac{pkx}{x+k(p+1)}-\psi_{p,k}(x)
+\right],
+\]
+
+and asked whether complete monotonicity implies the same sharp condition.
+
+#### Staged resolution
+
+The staged theorem proves necessity. The bracket is positive and satisfies
+
+\[
+\frac1k\log\frac{pkx}{x+k(p+1)}-\psi_{p,k}(x)
+=\frac1x+O(|\log x|)
+\qquad (x\to0^+).
+\]
+
+Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to \(0\) at the left endpoint, contradicting positivity and nonincreasingness of a nonzero completely monotone function.

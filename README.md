@@ -4,7 +4,7 @@ Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project
 
 ## Abstract
 
-We study the Riemann zeta function as the partition function of the probability law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on the positive integers. This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, divisor identities into probabilistic decompositions, and zeta tails into reciprocal partition problems. The first main result identifies the microscopic successor entropy of the zeta law with the limit and supremum of finite modular successor entropies; for prime moduli these modular shadows are explicit nonlinear functionals of Dirichlet \(L\)-values. The second structural result is an Euler-score decomposition expressing \(-(\log\zeta)'(\beta)\) as a von Mangoldt-weighted divisibility average. We then prove ten applications: the Alzer--Kwong convexity and concavity pattern for \(1/\zeta\) on negative real intervals; positivity of a Nantomah expression involving \(\zeta(n+1),\zeta(n+2),\zeta(n+3)\); a generalized Holder inequality for \(\Gamma(s)\zeta(s)\) extending Sroysang's formulation; complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\); a sharp threshold for reciprocal Gamma-product monotonicity; complete monotonicity of \(-(\psi(x)\psi(1/x))''\); a counterexample showing that the higher-polygamma strengthening \(P_n''\) completely monotone for all \(n\) fails; exact inverse-tail floor formulas for \(\zeta_n(7)^{-1}\) and \(\zeta_n(8)^{-1}\), where \(\zeta_n(s)=\sum_{k=n}^{\infty}k^{-s}\); and a parity-refined Nielsen \(k\)-beta derivative-ratio theorem from a complete-monotone Laplace moment-ratio bridge.
+We study the Riemann zeta function as the partition function of the probability law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on the positive integers. This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, divisor identities into probabilistic decompositions, and zeta tails into reciprocal partition problems. The first main result identifies the microscopic successor entropy of the zeta law with the limit and supremum of finite modular successor entropies; for prime moduli these modular shadows are explicit nonlinear functionals of Dirichlet \(L\)-values. The second structural result is an Euler-score decomposition expressing \(-(\log\zeta)'(\beta)\) as a von Mangoldt-weighted divisibility average. We then prove thirteen applications: the Alzer--Kwong convexity and concavity pattern for \(1/\zeta\) on negative real intervals; positivity of a Nantomah expression involving \(\zeta(n+1),\zeta(n+2),\zeta(n+3)\); a generalized Holder inequality for \(\Gamma(s)\zeta(s)\) extending Sroysang's formulation; complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\); a sharp threshold for reciprocal Gamma-product monotonicity; complete monotonicity of \(-(\psi(x)\psi(1/x))''\); a counterexample showing that the higher-polygamma strengthening \(P_n''\) completely monotone for all \(n\) fails; exact inverse-tail floor formulas for \(\zeta_n(7)^{-1}\) and \(\zeta_n(8)^{-1}\), where \(\zeta_n(s)=\sum_{k=n}^{\infty}k^{-s}\); a parity-refined Nielsen \(k\)-beta derivative-ratio theorem from a complete-monotone Laplace moment-ratio bridge; an exact certified endpoint for the \(n=2\) Qi--Lim--Nantomah beta-window problem; strict \(q\)-log-convexity of Baricz's \(V_q\); and the sharp \(\alpha\le1\) necessity in Yin's \((p,k)\)-digamma complete-monotonicity problem.
 
 ## Keywords
 
@@ -12,14 +12,14 @@ Riemann zeta function, zeta probability law, free energy, entropy, modular distr
 
 ## Latest Theory
 
-- PDF: [`THEORY_v007.pdf`](theory/versions/v007/THEORY_v007.pdf)
-- LaTeX: [`THEORY_v007.tex`](theory/versions/v007/THEORY_v007.tex)
+- PDF: [`THEORY_v008.pdf`](theory/versions/v008/THEORY_v008.pdf)
+- LaTeX: [`THEORY_v008.tex`](theory/versions/v008/THEORY_v008.tex)
 - Latest aliases: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf), [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 
 ## Applications
 
 The application ledger records external problems marked solved or superseded by the staged theory.
-`APP-0001`--`APP-0009` appear in the manuscript `Applications` section and in the corresponding theorem names; `APP-0010` is included in `THEORY_v007`.
+`APP-0001`--`APP-0013` appear in the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0013` are included in `THEORY_v008`.
 
 | id | problem | status | reference |
 | --- | --- | --- | --- |
@@ -33,14 +33,12 @@ The application ledger records external problems marked solved or superseded by 
 | APP-0008 | Higher-order monotonicity of polygamma products Pn | solved | Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8) |
 | APP-0009 | Sharp reciprocal Gamma-product monotonicity threshold | solved | Teodor Bulboaca and Hanaa M. Zayed, "Monotonic nature of the Gamma function", Journal of Inequalities and Applications 2026, article 27. DOI: [DOI](https://doi.org/10.1186/s13660-025-03425-0) |
 | APP-0010 | Nielsen \(k\)-beta derivative-ratio monotonicity | solved at THEORY_v007 | Li Yin and Jumei Zhang, "On some properties of special functions involving \(k\)-gamma and \(k\)-digamma functions", arXiv:2502.15852. [arXiv](https://arxiv.org/abs/2502.15852) |
+| APP-0011 | Exact \(n=2\) beta-window endpoint | solved at THEORY_v008 | Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8) |
+| APP-0012 | Baricz \(V_q\) strict \(q\)-log-convexity | solved at THEORY_v008 | Arpad Baricz, "Turan type inequalities for some special functions", Ph.D. thesis, University of Debrecen, 2008. [PDF](https://dea.lib.unideb.hu/bitstreams/bdd4469f-1b1e-4996-9b90-73f5e1a6b0e8/download) |
+| APP-0013 | Yin \((p,k)\)-digamma sharp \(\alpha\)-necessity | solved at THEORY_v008 | Li Yin, "Complete monotonicity of a function involving the \((p,k)\)-digamma function", International Journal of Open Problems in Computer Mathematics 11(2), 103-108, 2018. [PDF](https://www.ijopcm.org/Vol/2018/2.9.pdf) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the full application changelog and detailed source links.
 
-## Pudim Scout Notes
-
-Local Pudim v2 forage may preserve adjacent research results that were not derived from the staged zeta-law theory. These are not application labels unless a later staging pass admits a real theory-growth path.
-
-- Bessel \(I_\nu\) square-root log-concavity extension: locally refuted at \(\nu=0,u=10\), retained as an adjacent scout result rather than a zeta-law application.
 
 ## Reading Notes
 
