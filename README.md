@@ -35,11 +35,11 @@ Nielsen beta, beta-window, \(q\)-log-convexity, and \((p,k)\)-digamma
 necessity problems.
 
 Version v009 adds a new Laplace-transport layer. The added applications are
-not a loose collection of inequalities: each one starts by isolating a positive
-kernel or transform-normalized measure, then moves it through a permanence
-operation such as Stieltjes transformation, complete-Bernstein integration,
-stable subordination, determinant compression, or triangular coefficient
-extraction. This layer solves ten additional public source problems:
+organized by a common method: isolate a positive kernel or transform-normalized
+measure, then apply a permanence operation such as Stieltjes transformation,
+complete-Bernstein integration, stable subordination, determinant compression,
+or triangular coefficient extraction. This layer solves ten additional public
+source problems:
 Ramanujan-integral Stieltjes classification, Prabhakar measure subordination,
 all-level Mills-ratio extraction, a gamma-quotient Bernstein counterexample,
 the Qi-Guo tau supremum, the Wakrim W-symbol Bernstein range, Qi's

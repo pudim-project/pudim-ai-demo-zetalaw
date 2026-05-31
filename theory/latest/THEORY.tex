@@ -54,13 +54,51 @@ now records twenty-three public applications, all with uniform status
 
 \noindent\textbf{Keywords.} Riemann zeta function; zeta probability law; entropy; Laplace transform; complete monotonicity; Bernstein functions; Stieltjes functions; gamma function; digamma function; Mills ratio; generalized Stieltjes functions.
 
+\section{Global notation and positivity conventions}
+\label{sec:global-notation-positivity}
+
+The Riemann zeta function is denoted by \(\zeta\), and Euler's gamma
+function is denoted by \(\Gamma\).  The digamma function is
+\(\psi=\Gamma'/\Gamma\), its higher derivatives are the polygamma functions
+\(\psi^{(m)}\), and Euler's constant is \(\gamma=-\psi(1)\).  We write
+\(\N=\{1,2,\ldots\}\), \(\mathbb N_0=\{0,1,2,\ldots\}\), and use
+\(\E_\mu\), \(\Prob_\mu\), and \(\Var_\mu\) for expectation, probability, and
+variance under a measure \(\mu\).  When the subscript is \(\beta\), these
+symbols refer to the zeta law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on
+\(\N\), later recorded formally in Definition~\ref{def:zeta-law}.  The rising factorial, or Pochhammer symbol, is
+\((a)_m=a(a+1)\cdots(a+m-1)\) for \(m\ge1\), with \((a)_0=1\).  The notation
+\([z^m]F(z)\) means coefficient extraction from the power series \(F\).
+
+A \(C^\infty\) function \(f:(0,\infty)\to\mathbb R\) is completely monotone if
+\[
+  (-1)^m f^{(m)}(x)\ge0\qquad(m\in\mathbb N_0,\ x>0),
+\]
+and it is strictly completely monotone if all these inequalities are strict
+whenever the derivative is not identically zero.  A positive function \(f\) is
+logarithmically completely monotone in this paper if \(\log f\) has the same
+alternating derivative sign pattern on \((0,\infty)\).  A nonnegative
+\(C^\infty\) function \(B\) is a Bernstein function if \(B'\) is completely
+monotone.  A complete Bernstein function is a Bernstein function with the
+standard Stieltjes-density representation; equivalently, in the applications
+below, it is obtained by integrating a completely monotone density against
+\(1-e^{-xt}\).  A Stieltjes function is a function representable in the form
+\[
+  f(x)=a+\frac{b}{x}+\int_0^\infty \frac{1}{x+t}\,d\mu(t),
+  \qquad a,b\ge0,
+\]
+with \(\mu\) a positive measure satisfying the usual local integrability
+condition.  A generalized Stieltjes function of order \(\lambda>0\) is a
+positive superposition of kernels \((x+t)^{-\lambda}\), in the sense used by
+Sokal.  Source-specific special functions and measures are introduced locally
+before the theorem that uses them.
+
 \section{Motivation and main results}
 
 Many classical identities for \(\zeta(s)\) become more transparent after a probabilistic normalization.  For \(\beta>1\), the weights \(n^{-\beta}\) define a Gibbs law whose partition function is precisely \(\zeta(\beta)\).  The energy is \(\log n\), the free energy is \(\log\zeta(\beta)\), and ratios such as \(\zeta(\beta+r)/\zeta(\beta)\) become moments.  This viewpoint is elementary, but it packages several unrelated-looking zeta inequalities into a common calculus.
 
 The paper develops six connected layers.  The moment layer records basic zeta-law identities.  The modular entropy layer compares the successor map \(n\mapsto n+1\) with its finite residue shadows modulo \(q\).  The Euler-score layer rewrites zeta energy through von Mangoldt divisibility events.  The Mellin-Planck layer treats \(\Gamma(s)\zeta(s)\) as a continuous partition function and converts generalized Holder inequalities into integral norm inequalities.  The tail layer studies \(\zeta_n(s)^{-1}\) as a reciprocal partition problem for the truncated zeta law.  The v009 Laplace-transport layer then carries the same positivity language into Stieltjes, complete-Bernstein, stable-subordination, determinant, and generalized-Stieltjes applications.
 
-Section~\ref{sec:applications} records twenty-three solved external problems with stable application labels.  APP-0001 through APP-0013 are the earlier zeta-law, Gamma, digamma, tail, beta-window, and q-log-convexity entries.  APP-0014 through APP-0023 form the new v009 block: a Ramanujan integral Stieltjes classification, a Prabhakar stable-subordination formula, a Mills-ratio derivative hierarchy, two counterexamples to over-strong Bernstein or degree claims, exact tau, W-symbol, and digamma cutoffs, a Gurland log-complete-monotonicity proof, and a Sokal triangular compression formula.  The added results are staged as one measure-transport story rather than as a list of unrelated inequalities.
+Section~\ref{sec:applications} records twenty-three solved external problems with stable application labels.  APP-0001 through APP-0013 are the earlier zeta-law, Gamma, digamma, tail, beta-window, and q-log-convexity entries.  APP-0014 through APP-0023 form the new v009 block: a Ramanujan integral Stieltjes classification, a Prabhakar stable-subordination formula, a Mills-ratio derivative hierarchy, two counterexamples to over-strong Bernstein or degree claims, exact tau, W-symbol, and digamma cutoffs, a Gurland log-complete-monotonicity proof, and a Sokal triangular compression formula.  These results are presented through a common measure-transport mechanism.
 
 \section{Applications}
 \label{sec:applications}
@@ -96,7 +134,7 @@ complete monotonicity or one of its Stieltjes/Bernstein descendants.
 \item \textbf{APP-0023.} Sokal generalized-Stieltjes lambda-derivative compression.  Solved by Theorem~\ref{thm:app23-sokal-lambda}; source problem reference \cite{sokal-gs}.
 \end{enumerate}
 
-\section{Notation and zeta-law calculus}
+\section{Zeta-law calculus}
 
 \begin{definition}[Riemann zeta probability law]
 \label{def:zeta-law}
@@ -147,7 +185,7 @@ A''(\beta)=\E_\beta[(\log N)^2]-\E_\beta[\log N]^2
 \end{equation}
 \end{proof}
 
-The same source asks whether \(P_0(x)=\psi(x)\psi(1/x)\) is concave, and more strongly whether \(-P_0''\) is completely monotonic on \((0,\infty)\).  The next theorem answers the stronger question.
+Qi, Lim, and Nantomah ask whether \(P_0(x)=\psi(x)\psi(1/x)\) is concave, and more strongly whether \(-P_0''\) is completely monotonic on \((0,\infty)\) \cite{qi-lim-nantomah-polygamma}.  The next theorem answers the stronger question.
 
 \begin{theorem}[APP-0007: Complete monotonicity of reciprocal digamma product curvature]
 \label{thm:reciprocal-digamma-product-complete-monotonicity}
@@ -1908,20 +1946,30 @@ Stieltjes-density characterization of complete Bernstein functions.
 
 \begin{theorem}[APP-0015: Prabhakar Q-measure by stable subordination]
 \label{thm:app15-prabhakar-subordination}
-Let \(0<\alpha<1\), \(\gamma>0\), \(\beta>\alpha\gamma\), and \(\lambda>0\).
-Let \(P_{\alpha,\beta}^{\gamma}\) be the transform-normalized Pollard measure
-for the Prabhakar Mittag-Leffler function, and let \(S_\alpha\) be the positive
-\(\alpha\)-stable variable satisfying
+Let \(0<\alpha<1\), \(\eta>0\), \(\beta>\alpha\eta\), and \(\lambda>0\).
+Let
+\[
+  E_{\alpha,\beta}^{\eta}(z)
+  =\sum_{m=0}^{\infty}{(\eta)_m z^m\over m!\,\Gamma(\alpha m+\beta)}
+\]
+be the Prabhakar Mittag-Leffler function.  Let
+\(P_{\alpha,\beta}^{\eta}\) be the transform-normalized Pollard measure
+characterized in the strict Pollard range by
+\[
+  \int_0^\infty e^{-xr}\,dP_{\alpha,\beta}^{\eta}(r)
+  =E_{\alpha,\beta}^{\eta}(-x),\qquad x>0.
+\]
+Let \(S_\alpha\) be the positive \(\alpha\)-stable variable satisfying
 \(\mathbb E e^{-sS_\alpha}=e^{-s^\alpha}\).  Define the finite measure
 \[
-  Q_{\alpha,\beta}^{\gamma}(A\mid\lambda)
+  Q_{\alpha,\beta}^{\eta}(A\mid\lambda)
   =\int \Pr\{(\lambda r)^{1/\alpha}S_\alpha\in A\}\,
-       dP_{\alpha,\beta}^{\gamma}(r).
+       dP_{\alpha,\beta}^{\eta}(r).
 \]
 Then
 \[
-  \int_0^\infty e^{-xt}\,dQ_{\alpha,\beta}^{\gamma}(t\mid\lambda)
-  =E_{\alpha,\beta}^{\gamma}(-\lambda x^\alpha).
+  \int_0^\infty e^{-xt}\,dQ_{\alpha,\beta}^{\eta}(t\mid\lambda)
+  =E_{\alpha,\beta}^{\eta}(-\lambda x^\alpha).
 \]
 \end{theorem}
 
@@ -1930,8 +1978,8 @@ Conditioning on \(r\) and using the stable transform gives
 \[
  \mathbb E e^{-x(\lambda r)^{1/\alpha}S_\alpha}=e^{-\lambda r x^\alpha}.
 \]
-Integration against \(P_{\alpha,\beta}^{\gamma}\) gives the Pollard
-representation of \(E_{\alpha,\beta}^{\gamma}(-\lambda x^\alpha)\).  The total
+Integration against \(P_{\alpha,\beta}^{\eta}\) gives the Pollard
+representation of \(E_{\alpha,\beta}^{\eta}(-\lambda x^\alpha)\).  The total
 mass is finite, equal to the value at \(x=0\), and no normalization to a
 probability measure is needed for the transform identity.
 \end{proof}
@@ -2075,7 +2123,9 @@ Let
 \]
 The conjecture that
 \(\deg_x^{\rm cm}h_\lambda=\deg_x^{\rm cm}(-h_\mu)=4\) exactly in the stated
-parameter ranges \(\lambda\le0\), \(\mu\ge4\), is false.
+parameter ranges \(\lambda\le0\), \(\mu\ge4\), is false.  Here
+\(\deg_x^{\rm cm}g\) denotes the source convention: the supremal power \(r\)
+for which \(x^rg(x)\) is completely monotone on \((0,\infty)\).
 \end{theorem}
 
 \begin{proof}
@@ -2153,22 +2203,26 @@ alternating sign.  This proves logarithmic complete monotonicity.
 
 \begin{theorem}[APP-0023: Sokal lambda-derivatives have triangular compression]
 \label{thm:app23-sokal-lambda}
-Let \(f\) be a generalized Stieltjes function in Sokal's notation and set
+Let \(n,k\in\mathbb N_0\), \(\lambda>0\), \(x>0\), and let \(f\) be a
+\(C^\infty\) function on \((0,\infty)\).  In Sokal's generalized-Stieltjes
+application, the quantities below are the Hankel-type expressions associated
+with a generalized Stieltjes function of order \(\lambda\).  For \(j\ge0\), set
 \[
   G_j(x)=(-1)^n x^j f^{(n+j)}(x),\qquad a=n+\lambda .
 \]
-For
+For \(0\le r\le k\), define
 \[
-  F^{[\lambda]}_{n,k}(x)
-   =\sum_{j=0}^k {k\choose j}(a+j)_{k-j}G_j(x),
+  F^{[\lambda]}_{n,r}(x)
+   =\sum_{j=0}^r {r\choose j}(a+j)_{r-j}G_j(x).
 \]
-one has, for every integer \(\ell\ge0\),
+Then, for every integer \(0\le\ell\le k\),
 \[
  \partial_\lambda^\ell F^{[\lambda]}_{n,k}(x)
  =\sum_{r=0}^{k-\ell}{k!\over r!}
    [z^{k-r}](-\log(1-z))^\ell\,F^{[\lambda]}_{n,r}(x).
 \]
-The coefficients in this triangular compression are non-negative.
+For \(\ell>k\), \(\partial_\lambda^\ell F^{[\lambda]}_{n,k}(x)=0\).  The
+coefficients in this triangular compression are non-negative.
 \end{theorem}
 
 \begin{proof}
@@ -2187,12 +2241,12 @@ coefficients are non-negative.
 
 \section{Conclusion}
 
-Version v009 turns the public theory from a gamma-ratio catalogue into a
-single Laplace-transport framework.  The zeta-law entropy layer supplies the
-compression viewpoint, the kernel criteria identify complete monotonicity at
-the source, and the new application layer shows that the same positivity can be
-transported through Stieltjes, Bernstein, stable-subordination, determinant,
-and triangular-transform constructions.  The staged public ledger now contains
+Version v009 organizes the public theory through a Laplace-transport
+framework.  The zeta-law entropy layer supplies the compression viewpoint, the
+kernel criteria identify complete monotonicity at the source, and the
+application layer shows that the same positivity can be transported through
+Stieltjes, Bernstein, stable-subordination, determinant, and
+triangular-transform constructions.  The staged public ledger now contains
 twenty-three solved applications with uniform status \emph{Solved}.
 
 \begin{thebibliography}{24}
