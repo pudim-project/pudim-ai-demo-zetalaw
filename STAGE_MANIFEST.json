@@ -1,13 +1,20 @@
 {
-  "date_utc": "20260523T192843Z",
+  "date_utc": "20260601T094613Z",
   "public_paths": {
-    "latex": "theory/versions/v006/THEORY_v006.tex",
-    "pdf": "theory/versions/v006/THEORY_v006.pdf",
+    "latex": "theory/versions/v010/THEORY_v010.tex",
+    "pdf": "theory/versions/v010/THEORY_v010.pdf",
     "wiki_latest": "wiki/latest",
     "wiki_snapshot": "wiki/versions/stage_v006"
   },
   "repo_full_name": "pudim-project/pudim-ai-demo-zetalaw",
-  "stage_id": "stage_v006",
-  "theory_version": "v006",
-  "warning": ""
+  "stage_id": "stage_v010",
+  "theory_version": "v010",
+  "public_doc_paths": [
+    "README.md",
+    "APPLICATIONS.md",
+    "AGENTS.md",
+    "HUMANS.md",
+    "STAGE_MANIFEST.json"
+  ],
+  "warning": "Public wiki snapshot may lag the staged theory; regenerate it separately before treating it as current."
 }

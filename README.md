@@ -3,14 +3,14 @@
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
 This repository contains the public staged theory for the zetalaw-demov2
-research track.  The latest snapshot is `THEORY_v009`, staged on 2026-05-31.
+research track.  The latest snapshot is `THEORY_v010`, staged on 2026-06-01.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v009/THEORY_v009.tex`](theory/versions/v009/THEORY_v009.tex)
-- Versioned PDF: [`theory/versions/v009/THEORY_v009.pdf`](theory/versions/v009/THEORY_v009.pdf)
+- Versioned TeX: [`theory/versions/v010/THEORY_v010.tex`](theory/versions/v010/THEORY_v010.tex)
+- Versioned PDF: [`theory/versions/v010/THEORY_v010.pdf`](theory/versions/v010/THEORY_v010.pdf)
 
 ## Abstract
 
@@ -34,7 +34,7 @@ stages solved reciprocal-zeta, zeta-tail, Gamma-product, polygamma-product,
 Nielsen beta, beta-window, \(q\)-log-convexity, and \((p,k)\)-digamma
 necessity problems.
 
-Version v009 adds a new Laplace-transport layer. The added applications are
+Version v009 added a new Laplace-transport layer. Those applications are
 organized by a common method: isolate a positive kernel or transform-normalized
 measure, then apply a permanence operation such as Stieltjes transformation,
 complete-Bernstein integration, stable subordination, determinant compression,
@@ -47,7 +47,13 @@ the Qi-Guo tau supremum, the Wakrim W-symbol Bernstein range, Qi's
 Gurland log-complete-monotonicity conjecture, and Sokal's generalized-Stieltjes
 lambda-derivative compression.
 
-The public ledger now contains twenty-three applications with uniform status
+Version v010 adds three further applications and expands the proof of APP-0019
+with full derivative-factorization and closure details. The new applications solve Simon's gamma-quotient
+Bernstein problem, classify Du-Wang's \(h_3\) monotonicity problem, and refute
+the Abel-Gawronski-Neuschel even-power Baskakov complete-monotonicity conjecture
+with an explicit inverse-Laplace density sign change.
+
+The public ledger now contains twenty-six applications with uniform status
 `Solved`.
 
 ## Applications
@@ -77,13 +83,16 @@ The public ledger now contains twenty-three applications with uniform status
 | APP-0021 | Szabo asks for the exact cutoff for complete monotonicity of \(y^\alpha H_d(y)\) (2024). | The source sufficiency plus the singular expansion at zero gives the exact cutoff \(\alpha_0=1\). | [Szabo, arXiv:2411.17670](https://arxiv.org/abs/2411.17670) | Solved |
 | APP-0022 | Chen-Choi conjecture logarithmic complete monotonicity of a Gurland gamma ratio (2017). | The Weierstrass product reduces the logarithm to a sum of strictly completely monotone second differences. | [Chen-Choi, MIA 2017](https://doi.org/10.7153/mia-20-43) | Solved |
 | APP-0023 | Sokal's generalized-Stieltjes characterization leaves a lambda-derivative compression structure implicit (2009). | The exponential generating function gives a triangular nonnegative convolution for every lambda derivative. | [Sokal, arXiv:0902.0065](https://arxiv.org/abs/0902.0065) | Solved |
+| APP-0024 | Simon asks whether the gamma quotient \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is Bernstein for \(0<\alpha<1\) (2020). | A complement complete-monotonicity representation proves \(F_\alpha\) is Bernstein. | [Simon, AFST 2020](https://doi.org/10.5802/afst.1640) | Solved |
+| APP-0025 | Du-Wang ask for the monotonicity of \(h_3\) on \((0,\infty)\) when \(0<a<2\) (2022). | A polygamma-ratio kernel proves increasing behavior exactly for \(1/2\le a\le1\), with endpoint/asymptotic sign changes outside. | [Du-Wang, arXiv:2205.12530](https://arxiv.org/abs/2205.12530) | Solved |
+| APP-0026 | Abel-Gawronski-Neuschel conjecture complete monotonicity for all even powers in the Baskakov family (2014). | The \(\alpha=1,r=8\) inverse-Laplace density is negative at \(t=10\pi\), refuting the conjecture. | [Abel-Gawronski-Neuschel, arXiv:1411.7945](https://arxiv.org/abs/1411.7945) | Solved |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application
 ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v009`.  The public wiki vault may
+The latest staged theory snapshot is `stage_v010`.  The public wiki vault may
 lag the staged theory and should be regenerated separately before being treated
 as the current public node graph.
 

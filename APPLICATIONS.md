@@ -1,7 +1,7 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0023` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0023` are staged in `THEORY_v009`.
+`APP-0001`--`APP-0026` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0026` are staged in `THEORY_v010`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -23,11 +23,14 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0016 | 2026-05-31 | Lift the published Mills-ratio bound to the full derivative hierarchy. | The level-\(L\) determinant inequality yields an explicit bound for every derivative quotient and hence for the original Mills ratio. | Solved | no reply |
 | APP-0017 | 2026-05-31 | Decide whether the gamma quotient is Bernstein throughout the full parameter range. | The parameters a=2, b=3 give a rational quotient whose derivative is not completely monotone. | Solved | no reply |
 | APP-0018 | 2026-05-31 | Find the optimal uniform threshold for the tau expression in Open Problem 3. | The exact threshold is the supremum \(a_*/(1+a_*+a_*^2)\), where \(e^{a_*}=1+a_*+a_*^2\); the value is not attained. | Solved | no reply |
-| APP-0019 | 2026-05-31 | Close the open Bernstein-symbol range for the W-operator when \(0<\beta\le1\). | The symbol is Bernstein exactly for \(0\le\beta\le1\) and is not Bernstein for \(\beta>1\). | Solved | no reply |
+| APP-0019 | 2026-05-31 | Close the open Bernstein-symbol range for the W-operator when \(0<\beta\le1\). | The symbol is Bernstein exactly for \(0\le\beta\le1\) and is not Bernstein for \(\beta>1\). | Solved | proof expanded |
 | APP-0020 | 2026-05-31 | Test the conjectured complete-monotonic degree four for \(h_\lambda\) and \(-h_\mu\). | The degree-four transforms fail the first derivative test near zero, so the conjecture is false. | Solved | no reply |
 | APP-0021 | 2026-05-31 | Determine the exact cutoff \(\alpha_0\) for \(y^\alpha H_d(y)\). | The cutoff is \(\alpha_0=1\): sufficiency is the source theorem and necessity follows from the singular expansion at zero. | Solved | no reply |
 | APP-0022 | 2026-05-31 | Prove logarithmic complete monotonicity of the Gurland gamma ratio conjectured in the source. | A Weierstrass product reduces log F to a sum of strictly completely monotone logarithmic second differences. | Solved | no reply |
 | APP-0023 | 2026-05-31 | Explain the lambda-derivative structure of Sokal's generalized-Stieltjes Hankel-type expressions. | The exponential generating function gives a triangular nonnegative convolution formula for every lambda derivative. | Solved | no reply |
+| APP-0024 | 2026-06-01 | Determine whether Simon's gamma quotient \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is Bernstein for \(0<\alpha<1\). | A complement complete-monotonicity representation proves \(F_\alpha\) is Bernstein. | Solved | no contact |
+| APP-0025 | 2026-06-01 | Classify Du-Wang's \(h_3\) monotonicity on \((0,\infty)\) for \(0<a<2\). | A polygamma-ratio kernel proves increasing behavior exactly for \(1/2\le a\le1\), with nonmonotonicity outside. | Solved | no contact |
+| APP-0026 | 2026-06-01 | Decide the Abel-Gawronski-Neuschel complete-monotonicity conjecture for all even powers in the Baskakov family. | The \(\alpha=1,r=8\) inverse-Laplace density is negative at \(t=10\pi\), refuting the conjecture. | Solved | no contact |
 
 ## Application Details
 
@@ -366,7 +369,7 @@ The staged theorem proves necessity. The bracket is positive and satisfies
 Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to \(0\) at the left endpoint, contradicting positivity and nonincreasingness of a nonzero completely monotone function.
 
 
-## APP-0014--APP-0023 details
+## APP-0014--APP-0026 details
 
 ### APP-0014 -- Ramanujan integral is Stieltjes and has a complete Bernstein primitive
 
@@ -417,10 +420,10 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 
 - source: Wakrim, The W-Operator: A Volterra Fractional Time Operator with Non-Bernstein Symbol, arXiv:2601.02876.
 - problem: Close the open Bernstein-symbol range for the W-operator when \(0<\beta\le1\).
-- solution theorem: `thm:app19-w-symbol` in THEORY_v009.
+- solution theorem: `thm:app19-w-symbol` in THEORY_v010.
 - solution status: Solved
-- public result: The symbol is Bernstein exactly for \(0\le\beta\le1\) and is not Bernstein for \(\beta>1\).
-- review status: no reply
+- public result: The symbol is Bernstein exactly for \(0\le\beta\le1\) and is not Bernstein for \(\beta>1\); the public proof now expands the derivative factorization, complete-monotonicity factors, composition theorem, and endpoint cases.
+- review status: proof expanded in THEORY_v010
 
 ### APP-0020 -- Qi's degree-four conjecture for h_lambda is refuted at the endpoint
 
@@ -457,3 +460,30 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - solution status: Solved
 - public result: The exponential generating function gives a triangular nonnegative convolution formula for every lambda derivative.
 - review status: no reply
+
+### APP-0024 -- Simon gamma quotient is Bernstein
+
+- source: Thomas Simon, Moment problems related to Bernstein functions, Ann. Fac. Sci. Toulouse Math. 29 (2020), 577--594.
+- problem: Determine whether \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is Bernstein for \(0<\alpha<1\).
+- solution theorem: `thm:app24-simon-gamma-quotient` in THEORY_v010.
+- solution status: Solved
+- public result: \(1-F_\alpha\) is completely monotone; hence \(F_\alpha'\) is completely monotone and \(F_\alpha\) is Bernstein.
+- review status: no contact
+
+### APP-0025 -- Du-Wang \(h_3\) monotonicity is classified
+
+- source: Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530.
+- problem: Classify the monotonicity of \(h_3\) on \((0,\infty)\) for \(0<a<2\).
+- solution theorem: `thm:app25-du-wang-h3` in THEORY_v010.
+- solution status: Solved
+- public result: \(h_3\) is increasing exactly for \(1/2\le a\le1\), and is not monotone for \(0<a<1/2\) or \(1<a<2\).
+- review status: no contact
+
+### APP-0026 -- Baskakov even-power complete-monotonicity conjecture is false
+
+- source: Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945.
+- problem: Decide the conjectured complete monotonicity of the higher even-power Baskakov family.
+- solution theorem: `thm:app26-baskakov-r8` in THEORY_v010.
+- solution status: Solved
+- public result: The \(\alpha=1,r=8\) member \(1/((1+x)^8-x^8)\) has a sign-changing inverse-Laplace density, so it is not completely monotone.
+- review status: no contact
