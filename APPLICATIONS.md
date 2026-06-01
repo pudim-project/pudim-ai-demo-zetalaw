@@ -23,7 +23,7 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0016 | 2026-05-31 | Lift the published Mills-ratio bound to the full derivative hierarchy. | The level-\(L\) determinant inequality yields an explicit bound for every derivative quotient and hence for the original Mills ratio. | Solved | no reply |
 | APP-0017 | 2026-05-31 | Decide whether the gamma quotient is Bernstein throughout the full parameter range. | The parameters a=2, b=3 give a rational quotient whose derivative is not completely monotone. | Solved | no reply |
 | APP-0018 | 2026-05-31 | Find the optimal uniform threshold for the tau expression in Open Problem 3. | The exact threshold is the supremum \(a_*/(1+a_*+a_*^2)\), where \(e^{a_*}=1+a_*+a_*^2\); the value is not attained. | Solved | no reply |
-| APP-0019 | 2026-05-31 | Close the open Bernstein-symbol range for the W-operator when \(0<\beta\le1\). | The symbol is Bernstein exactly for \(0\le\beta\le1\) and is not Bernstein for \(\beta>1\). | Solved | proof expanded |
+| APP-0019 | 2026-05-31 | Close the open Bernstein-symbol range for the W-operator when \(0<\beta\le1\). | Wakrim's source supplies the \(\beta>1\) obstruction; the staged proof proves the remaining Bernstein range \(0\le\beta\le1\). | Solved | author confirmed; attribution clarified |
 | APP-0020 | 2026-05-31 | Test the conjectured complete-monotonic degree four for \(h_\lambda\) and \(-h_\mu\). | The degree-four transforms fail the first derivative test near zero, so the conjecture is false. | Solved | no reply |
 | APP-0021 | 2026-05-31 | Determine the exact cutoff \(\alpha_0\) for \(y^\alpha H_d(y)\). | The cutoff is \(\alpha_0=1\): sufficiency is the source theorem and necessity follows from the singular expansion at zero. | Solved | no reply |
 | APP-0022 | 2026-05-31 | Prove logarithmic complete monotonicity of the Gurland gamma ratio conjectured in the source. | A Weierstrass product reduces log F to a sum of strictly completely monotone logarithmic second differences. | Solved | no reply |
@@ -422,8 +422,8 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - problem: Close the open Bernstein-symbol range for the W-operator when \(0<\beta\le1\).
 - solution theorem: `thm:app19-w-symbol` in THEORY_v010.
 - solution status: Solved
-- public result: The symbol is Bernstein exactly for \(0\le\beta\le1\) and is not Bernstein for \(\beta>1\); the public proof now expands the derivative factorization, complete-monotonicity factors, composition theorem, and endpoint cases.
-- review status: proof expanded in THEORY_v010
+- public result: Wakrim's source supplies the non-Bernstein obstruction for \(\beta>1\); the staged proof proves the remaining Bernstein side \(0\le\beta\le1\) by expanded derivative factorization, complete-monotonicity factors, the composition theorem, and endpoint cases.  No complete-Bernstein or subordination conclusion is claimed.
+- review status: author confirmed; attribution clarified in THEORY_v010
 
 ### APP-0020 -- Qi's degree-four conjecture for h_lambda is refuted at the endpoint
 
