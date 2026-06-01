@@ -2147,7 +2147,15 @@ We now check complete monotonicity of \(H_{\alpha,\beta}\) for
 \[
   y^{\beta-1}=y^{-(1-\beta)},
 \]
-which is completely monotone because \(1-\beta\ge0\).  The shifted factor
+and this is interpreted as follows.  If \(0\le\beta<1\), put
+\(r=1-\beta>0\).  Then
+\[
+  y^{\beta-1}=y^{-r}
+  ={1\over\Gamma(r)}
+    \int_0^\infty e^{-yt}t^{r-1}\,dt,
+\]
+so \(y^{\beta-1}\) is completely monotone by the Bernstein--Widder
+criterion.  If \(\beta=1\), the same factor is the constant \(1\).  The shifted factor
 \((y+a)^{-\beta}\) is completely monotone for \(\beta>0\) by the Laplace
 representation
 \[
@@ -2171,10 +2179,16 @@ The endpoint \(\beta=1\) has no limiting ambiguity; explicitly
 which is completely monotone.  The endpoint \(\beta=0\) also agrees with the
 direct identity \(\Phi_{\alpha,0}(s)=s^\alpha\).
 
-Finally, let \(g(s)=s^a\).  Then \(g\) is a Bernstein function for \(0<a<1\).
-We use the standard closure theorem that if \(f\) is completely monotone and
-\(g\) is a Bernstein function mapping \((0,\infty)\) into itself, then
-\(f\circ g\) is completely monotone.  Hence
+Finally, let \(g(s)=s^a\).  The composition theorem used here is the standard
+one: if \(f\) is completely monotone on \((0,\infty)\) and \(g\) is a
+Bernstein function with \(g((0,\infty))\subset(0,\infty)\), then \(f\circ g\)
+is completely monotone.  Its hypotheses are satisfied in the present case:
+\(H_{\alpha,\beta}\) is completely monotone by the factor check above,
+\(g(s)=s^a>0\), and \(g\) is a Bernstein function for \(0<a<1\) since
+\[
+  g'(s)=a s^{a-1}=a s^{-(1-a)}
+\]
+is completely monotone.  Hence
 \(\Phi'_{\alpha,\beta}=H_{\alpha,\beta}\circ g\) is completely monotone for
 \(0\le\beta\le1\), so \(\Phi_{\alpha,\beta}\) is a Bernstein function.
 Together with the source obstruction for \(\beta>1\), this gives the exact
