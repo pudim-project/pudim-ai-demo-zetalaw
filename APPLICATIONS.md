@@ -1,7 +1,7 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0026` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0026` are staged in `THEORY_v010`.
+`APP-0001`--`APP-0030` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0030` are staged in `THEORY_v011`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -31,6 +31,10 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0024 | 2026-06-01 | Determine whether Simon's gamma quotient \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is Bernstein for \(0<\alpha<1\). | A complement complete-monotonicity representation proves \(F_\alpha\) is Bernstein. | Solved | no contact |
 | APP-0025 | 2026-06-01 | Classify Du-Wang's \(h_3\) monotonicity on \((0,\infty)\) for \(0<a<2\). | A polygamma-ratio kernel proves increasing behavior exactly for \(1/2\le a\le1\), with nonmonotonicity outside. | Solved | no contact |
 | APP-0026 | 2026-06-01 | Decide the Abel-Gawronski-Neuschel complete-monotonicity conjecture for all even powers in the Baskakov family. | The \(\alpha=1,r=8\) inverse-Laplace density is negative at \(t=10\pi\), refuting the conjecture. | Solved | no contact |
+| APP-0027 | 2026-06-03 | Prove the Ma-Weigert derivative-region descending-chain assertion for log-functions. | Tail vanishing and integration show \(D_{k+1}\subseteq D_k\) for every \(k,n\). | Solved | no contact |
+| APP-0028 | 2026-06-03 | Decide the Qi-Agarwal/Yin divisor-polygamma parity problem. | Odd divisor-polygamma sums are completely monotone, but the even non-CM clause is false because \(f_2\) is completely monotone. | Solved | no contact |
+| APP-0029 | 2026-06-03 | Prove the Bulboaca-Zayed analytic one-critical-point pattern for their Gamma quotient. | A ratio-kernel single-crossing proof on \([1,8]\), plus source and right-tail intervals, gives the unique zero of \(F'\). | Solved | no contact |
+| APP-0030 | 2026-06-03 | Decide the Mishra-Swaminathan Ramanujan integral Turan-window complete-monotonicity problem. | A logarithmic-density moment-ratio asymptotic makes \(H_2(e^{-L};1/2-1/(4L))<0\), refuting the interval. | Solved | no contact |
 
 ## Application Details
 
@@ -369,7 +373,7 @@ The staged theorem proves necessity. The bracket is positive and satisfies
 Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to \(0\) at the left endpoint, contradicting positivity and nonincreasingness of a nonzero completely monotone function.
 
 
-## APP-0014--APP-0026 details
+## APP-0014--APP-0030 details
 
 ### APP-0014 -- Ramanujan integral is Stieltjes and has a complete Bernstein primitive
 
@@ -486,4 +490,40 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - solution theorem: `thm:app26-baskakov-r8` in THEORY_v010.
 - solution status: Solved
 - public result: The \(\alpha=1,r=8\) member \(1/((1+x)^8-x^8)\) has a sign-changing inverse-Laplace density, so it is not completely monotone.
+- review status: no contact
+
+### APP-0027 -- Ma-Weigert derivative regions form a descending chain
+
+- source: Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225.
+- problem: Prove the descending-chain part of Conjecture 4.6 for the derivative-sign regions \(D_k\) in \(\mathcal F_{1,n}\).
+- solution theorem: `thm:app27-ma-weigert-chain` in THEORY_v011.
+- solution status: Solved
+- public result: For \(f(x)=p(\log x)/x\), \(L^k f(x)=x^{-k-1}p_k(\log x)\to0\). If \(L^{k+1}f\ge0\), then \(L^k f(x)=\int_x^\infty L^{k+1}f(t)\,dt\ge0\).
+- review status: no contact
+
+### APP-0028 -- Qi-Agarwal/Yin divisor-polygamma parity is corrected
+
+- source: Feng Qi and Ravi P. Agarwal, On complete monotonicity for several classes of functions related to ratios of gamma functions, Journal of Inequalities and Applications 2019, article 36.
+- problem: Decide the parity claim for \(f_n(x)=\sum_{km=n}[\psi^{(k)}(x)]^m\): odd \(f_n\) completely monotone and even \(f_n\) not completely monotone.
+- solution theorem: `thm:app28-qa-divisor-polygamma` in THEORY_v011.
+- solution status: Solved
+- public result: The odd half follows from the polygamma Laplace representation and product closure. The even clause is false at \(n=2\), since \(f_2=[\psi']^2+\psi''\) is completely monotone.
+- review status: no contact
+
+### APP-0029 -- Bulboaca-Zayed Gamma quotient has one critical point
+
+- source: Teodor Bulboaca and Hanaa M. Zayed, Monotonic nature of the Gamma function, Journal of Inequalities and Applications 2026, article 27.
+- problem: Prove analytically that the continuous extension of \(\log\Gamma(x+1)/(\log(x^2+6)-\log(x+6))\) has the numerically observed unique critical point and derivative sign pattern on \((-1,\infty)\).
+- solution theorem: `thm:app29-bz-gamma-quotient` in THEORY_v011.
+- solution status: Solved
+- public result: The source proves the left interval, a right-tail estimate handles \(x\ge8\), and a ratio-kernel proof gives a single crossing on \([1,8]\).
+- review status: no contact
+
+### APP-0030 -- Ramanujan integral Turan window is false
+
+- source: D. Mishra and A. Swaminathan, Inequalities involving a Ramanujan integral, arXiv:2511.07443.
+- problem: Decide complete monotonicity of \(H_n(x;\alpha)\) in the proposed intermediate Turan parameter interval.
+- solution theorem: `thm:app30-ramanujan-turan` in THEORY_v011.
+- solution status: Solved
+- public result: For \(x=e^{-L}\), \(A_2(x)^2/(A_1(x)A_3(x))=1/2-1/(2L)+O(L^{-2})\), so \(\alpha_L=1/2-1/(4L)\in(0,1/2)\) gives \(H_2(e^{-L};\alpha_L)<0\).
 - review status: no contact
