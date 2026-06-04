@@ -1,10 +1,10 @@
 {
-  "date_utc": "20260604T173849Z",
+  "date_utc": "20260604T180143Z",
   "public_paths": {
     "latex": "theory/versions/v014/THEORY_v014.tex",
     "pdf": "theory/versions/v014/THEORY_v014.pdf",
     "wiki_latest": "wiki/latest",
-    "wiki_snapshot": "wiki/versions/stage_v006"
+    "wiki_snapshot": "wiki/versions/stage_v014"
   },
   "repo_full_name": "pudim-project/pudim-ai-demo-zetalaw",
   "stage_id": "stage_v014",
@@ -16,5 +16,5 @@
     "HUMANS.md",
     "STAGE_MANIFEST.json"
   ],
-  "warning": "Public wiki snapshot may lag the staged theory; regenerate it separately before treating it as current."
+  "warning": ""
 }

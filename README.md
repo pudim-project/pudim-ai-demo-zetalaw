@@ -87,9 +87,9 @@ ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v014`.  The public wiki vault may
-lag the staged theory and should be regenerated separately before being treated
-as the current public node graph.
+The latest staged theory snapshot is `stage_v014`.  The public wiki vault is
+synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored
+under [`wiki/versions/stage_v014`](wiki/versions/stage_v014).
 
 ## Reading Notes
 

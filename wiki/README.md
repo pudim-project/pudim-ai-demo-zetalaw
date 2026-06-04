@@ -5,10 +5,11 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v006/`: immutable wiki snapshot for theory `v006` (legacy).
+- `versions/stage_v014/`: immutable wiki snapshot matching theory `v014`.
+- `versions/stage_v001/`--`versions/stage_v006/`: legacy immutable wiki snapshots.
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
 
-Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v006/wiki/nodes/` for the legacy immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v014/wiki/nodes/` for the current immutable snapshot. The file `T-Tao-Sawin-Weyl-l1-exact-minimum.md`, for example, lives at `wiki/latest/wiki/nodes/T-Tao-Sawin-Weyl-l1-exact-minimum.md`.
 
 ## Open In Obsidian
 
@@ -18,9 +19,9 @@ In Obsidian, start at `Home.md`, then open `wiki/index.md`. Use Backlinks to ins
 
 ## Current Node Summary
 
-- total nodes: 215
-- by type: conjecture: 2, corollary: 43, counterexample: 5, definition: 5, example: 1, lemma: 4, note: 14, problem: 17, proposition: 98, theorem: 26
-- by status: conjectural: 1, open: 8, partial: 3, proved: 194, superseded: 9
+- total nodes: 487
+- by type: corollary: 1, lemma: 4, obstruction: 1, obstruction_lemma: 1, obstruction_theorem: 1, open_problem: 2, theorem: 477
+- by status: accepted_local_node: 1, open: 184, proved: 302
 
 ## Reading Order
 
