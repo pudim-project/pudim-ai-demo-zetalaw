@@ -5,10 +5,10 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v006/`: immutable wiki snapshot for theory `v006`.
+- `versions/stage_v006/`: immutable wiki snapshot for theory `v006` (legacy).
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
 
-Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v006/wiki/nodes/` for this immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v006/wiki/nodes/` for the legacy immutable snapshot. The file `mrw-593af0548f67.md`, for example, lives at `wiki/latest/wiki/nodes/mrw-593af0548f67.md`.
 
 ## Open In Obsidian
 

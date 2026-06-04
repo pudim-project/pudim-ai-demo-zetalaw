@@ -1,7 +1,10 @@
 # Applications Changelog
 
-This changelog records staged applications of the theory to externally stated problems. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0030` appear in `theory/latest/THEORY.tex` under the manuscript `Applications` section and in the corresponding theorem names. Applications through `APP-0030` are staged in `THEORY_v011`.
+This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
+`APP-0001`--`APP-0040` appear in `theory/latest/THEORY.tex` under the manuscript
+`Applications` section and in the corresponding theorem names. Applications through
+`APP-0040` are currently staged in `THEORY_v011`; `APP-0041+` are the next
+strict APP candidates prepared for the next staging refresh.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -35,6 +38,16 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0028 | 2026-06-03 | Decide the Qi-Agarwal/Yin divisor-polygamma parity problem. | Odd divisor-polygamma sums are completely monotone, but the even non-CM clause is false because \(f_2\) is completely monotone. | Solved | no contact |
 | APP-0029 | 2026-06-03 | Prove the Bulboaca-Zayed analytic one-critical-point pattern for their Gamma quotient. | A ratio-kernel single-crossing proof on \([1,8]\), plus source and right-tail intervals, gives the unique zero of \(F'\). | Solved | no contact |
 | APP-0030 | 2026-06-03 | Decide the Mishra-Swaminathan Ramanujan integral Turan-window complete-monotonicity problem. | A logarithmic-density moment-ratio asymptotic makes \(H_2(e^{-L};1/2-1/(4L))<0\), refuting the interval. | Solved | no contact |
+| APP-0031 | 2026-06-03 | Decide whether Baricz's gamma-quotient is Bernstein for every \(a,b>0\). | A single instance \((a,b)=(2,3)\) gives \(g'''(1)<0\), so the universal claim is false. | Solved | no reply |
+| APP-0032 | 2026-06-03 | Solve From's open all-\(L\) Mills-ratio bound problem from Remark 6.5. | A determinant-to-ratio reduction gives a single explicit quadratic bound for every \(L\), and alternating upper/lower inequalities follow uniformly. | Solved | no reply |
+| APP-0033 | 2026-06-03 | Resolve whether the Ramanujan integral antiderivative is a complete Bernstein function. | The Ramanujan density is shown completely monotone, yielding complete-Bernstein structure for the antiderivative. | Solved | no reply |
+| APP-0034 | 2026-06-03 | Solve the Bulboaca-Zayed one-critical-point monotonicity statement for the gamma quotient. | A ratio-kernel signature plus source interval/tail controls proves the claimed sign pattern and unique critical point. | Solved | no reply |
+| APP-0035 | 2026-06-03 | Ask whether a CM self-bijection \((0,\infty)\to(0,\infty)\) must have a CM inverse (Keady Q3). | A local CM decreasing CM bijection is built whose inverse violates the third-derivative sign condition. | Solved | no reply |
+| APP-0036 | 2026-06-03 | Decide the even-line Baskakov complete-monotonicity conjecture at \(r=8\). | The \(\alpha=1\), \(r=8\) inverse-Laplace density changes sign. | Solved | no reply |
+| APP-0037 | 2026-06-03 | Classify Du-Wang \(h_3\) monotonicity on \((0,\infty)\). | \(h_3\) is monotone exactly for \(1/2\le a\le1\). | Solved | no reply |
+| APP-0038 | 2026-06-03 | Prove the Ma-Weigert derivative-region descending chain. | Derivative-sign identities yield \(D_{k+1}\subseteq D_k\) for \(k\ge0\). | Solved | no reply |
+| APP-0039 | 2026-06-03 | Decide the Ramanujan Turan-window complete-monotonicity interval. | A sharper asymptotic refutes the claimed interval. | Solved | no reply |
+| APP-0040 | 2026-06-03 | Solve Yang and Tian's Bessel-\(W\) power-Bernstein conjecture on the source interval. | The conjecture is proved on the source interval. | Solved | no reply |
 
 ## Application Details
 
@@ -373,7 +386,7 @@ The staged theorem proves necessity. The bracket is positive and satisfies
 Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to \(0\) at the left endpoint, contradicting positivity and nonincreasingness of a nonzero completely monotone function.
 
 
-## APP-0014--APP-0030 details
+## APP-0014--APP-0040 details
 
 ### APP-0014 -- Ramanujan integral is Stieltjes and has a complete Bernstein primitive
 
@@ -527,3 +540,93 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - solution status: Solved
 - public result: For \(x=e^{-L}\), \(A_2(x)^2/(A_1(x)A_3(x))=1/2-1/(2L)+O(L^{-2})\), so \(\alpha_L=1/2-1/(4L)\in(0,1/2)\) gives \(H_2(e^{-L};\alpha_L)<0\).
 - review status: no contact
+
+### APP-0031 -- Baricz gamma-quotient Bernstein test is false
+
+- source: Arpad Baricz, Turan type inequalities for hypergeometric functions, Proc. Amer. Math. Soc. 136 (2008), 3223--3229.
+- problem: Decide whether \(\Gamma(x)\Gamma(x-a+b)/(\Gamma(x-a)\Gamma(x+b))\) is a Bernstein function on \((a,\infty)\) for all \(a,b>0\).
+- solution theorem: `T-Baricz-gamma-quotient-BF-forall-negative-answer` in local theory.
+- solution status: Solved
+- public result: For \(a=2,b=3\), the reduction to \(\frac{(x-2)(x-1)}{(x+1)(x+2)}\) gives \(g'''(1)<0\), so \(g\) is not Bernstein and the universal source claim is false.
+- review status: no reply
+
+### APP-0032 -- From's all-\(L\) Mills-ratio bound family is explicit
+
+- source: S. G. From, Some new upper and lower bounds for the Mills ratio, J. Math. Anal. Appl. 486 (2020), 123872.
+- problem: Solve Remark 6.5 by giving explicit alternating bounds for all derivative levels \(L\).
+- solution theorem: `T-From-Mills-all-L-alternating-r-bound-family` in local theory.
+- solution status: Solved
+- public result: The ratio recurrence for \(M_L(t)=\int_0^\infty u^L e^{-tu-u^2/2}\,du\) gives one uniform quadratic bound and alternating bound direction for every \(L\).
+- review status: no reply
+
+### APP-0033 -- Ramanujan antiderivative is complete Bernstein
+
+- source: Deepshikha Mishra and A. Swaminathan, Inequalities involving a Ramanujan Integral, arXiv:2511.07443.
+- problem: Resolve the source-asked question of whether the Ramanujan integral antiderivative is a complete Bernstein function.
+- solution theorem: `T-Ramanujan-antiderivative-complete-Bernstein` in local theory.
+- solution status: Solved
+- public result: The density \(1/[t(\pi^2+\log^2 t)]\) is shown completely monotone, so the antiderivative is Stieltjes/complete-Bernstein.
+- review status: no reply
+
+### APP-0034 -- Bulboaca-Zayed gamma-quotient monotonicity solved
+
+- source: Teodor Bulboaca and Hanaa M. Zayed, Monotonic nature of the Gamma function, Journal of Inequalities and Applications 2026, article 27.
+- problem: Show the continuous extension of the source gamma quotient has the claimed derivative-sign pattern (single critical point).
+- solution theorem: `T-Bulboaca-Zayed-gamma-quotient-full-monotonicity` in local theory.
+- solution status: Solved
+- public result: A ratio-kernel decomposition gives exactly one sign change of the derivative on the source interval with matching source-endpoint and right-tail behavior.
+- review status: no reply
+
+### APP-0035 -- Keady self-bijection inverse-CM question is negative
+
+- source: G. Keady, N. Khajohnsaksumeth, and B. Wiwatanapataphee, On functions and inverses, both positive, decreasing and convex: and Stieltjes functions, Cogent Mathematics & Statistics 5:1 (2018), 1477543.
+- problem: Decide whether every CM self-bijection \((0,\infty)\to(0,\infty)\) has a completely monotone inverse.
+- solution theorem: `T-Keady-Q3-self-bijection-inverse-CM-negative-answer` in local theory.
+- solution status: Solved
+- public result: A CM decreasing CM bijection \(f(x)=x^{-1}+100e^{-x}\) (with the local singular-tail repair used for full self-range) has \(f^{-1}\) failing the third-derivative CM sign.
+- review status: no reply
+
+### APP-0036 -- Baskakov even-line complete-monotonicity fails at \(r=8\)
+
+- source: Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945.
+- problem: Decide whether the Abel-Gawronski-Neuschel even-line complete-monotonicity conjecture should be true for all powers.
+- solution theorem: `thm:app36-baskakov-even-line-negative-answer` in local theory.
+- solution status: Solved
+- public result: For \(\alpha=1\), \(r=8\), the inverse-Laplace density is negative at a finite point, so the conjectured complete-monotonicity fails.
+- review status: no reply
+
+### APP-0037 -- Du-Wang \(h_3\) is increasing exactly on \(\frac12\le a\le1\)
+
+- source: Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530.
+- problem: Classify monotonicity of \(h_3\) on \((0,\infty)\) and identify the sharp parameter window.
+- solution theorem: `thm:app37-du-wang-h3-monotonicity-classification` in local theory.
+- solution status: Solved
+- public result: The source conjecture is fully classified on \(0<a<2\): \(h_3\) is monotone on the sharp interval.
+- review status: no reply
+
+### APP-0038 -- Ma-Weigert derivative-sign regions form a chain
+
+- source: Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225.
+- problem: Prove the descending-chain assertion for derivative-sign regions of \(\mathcal F_{1,n}\).
+- solution theorem: `thm:app38-ma-weigert-Dk-chain` in local theory.
+- solution status: Solved
+- public result: The identities \(L^k f(x)=x^{-k-1}p_k(\log x)\) with \(L=-d/dx\) imply \(D_{k+1}\subseteq D_k\).
+- review status: no reply
+
+### APP-0039 -- Ramanujan Turan-window complete-monotonicity interval is false
+
+- source: Deepshikha Mishra and A. Swaminathan, Inequalities involving a Ramanujan integral, arXiv:2511.07443.
+- problem: Confirm the claimed Turan complete-monotonicity interval for \(H_n(x;\alpha)\).
+- solution theorem: `thm:app39-ramanujan-turan-window-negative-answer` in local theory.
+- solution status: Solved
+- public result: A logarithmic-density asymptotic produces a counterexample inside the proposed source interval.
+- review status: no reply
+
+### APP-0040 -- Yang-Tian Bessel-\(W\) power-Bernstein conjecture is true
+
+- source: Zhen-Hang Yang and Jing-Feng Tian, Convexity of ratios of the modified Bessel functions of the first kind with applications, Revista Matematica Complutense, 2022.
+- problem: Prove the Yang-Tian source conjecture on the Bessel-\(W\) power-Bernstein range.
+- solution theorem: `thm:app40-yt-bessel-W-power-Bernstein-conjecture` in local theory.
+- solution status: Solved
+- public result: The source interval is fully resolved positively by the staged proof.
+- review status: no reply

@@ -1,6 +1,10 @@
 # Wiki Vault
 
-This directory is the latest mutable wiki vault for theory `v006`.
+This directory is the latest mutable wiki vault for theory `v011`.
+
+Note: the underlying node graph is still inherited from the current public wiki
+snapshot and is marked as lagging until a dedicated `stage_v011` regeneration is
+performed.
 
 ## Obsidian Ingestion
 

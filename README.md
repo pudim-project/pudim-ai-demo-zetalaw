@@ -9,8 +9,8 @@ research track.  The latest snapshot is `THEORY_v011`, staged on 2026-06-03.
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v011/THEORY_v011.tex`](theory/versions/v011/THEORY_v011.tex)
-- Versioned PDF: [`theory/versions/v011/THEORY_v011.pdf`](theory/versions/v011/THEORY_v011.pdf)
+- Versioned TeX: [`theory/versions/v013/THEORY_v013.tex`](theory/versions/v013/THEORY_v013.tex)
+- Versioned PDF: [`theory/versions/v013/THEORY_v013.pdf`](theory/versions/v013/THEORY_v013.pdf)
 
 ## Abstract
 
@@ -47,13 +47,12 @@ the Qi-Guo tau supremum, the Wakrim W-symbol Bernstein range, Qi's
 Gurland log-complete-monotonicity conjecture, and Sokal's generalized-Stieltjes
 lambda-derivative compression.
 
-Version v011 adds four further applications. The new applications solve the
-Ma-Weigert derivative-region chain assertion, correct the Qi-Agarwal/Yin
-divisor-polygamma parity problem, prove the Bulboaca-Zayed Gamma quotient
-one-critical-point theorem, and refute the Mishra-Swaminathan Ramanujan
-integral Turan-window complete-monotonicity interval.
+Version v011 adds fourteen further applications relative to v010. In addition to
+the prior four items, `APP-0031` through `APP-0040` are now staged, adding
+further source-specific resolution of gamma-quotient and Bessel-\(W\) claims,
+additional kernel sign-pattern results, and rolling-method refinements.
 
-The public ledger now contains thirty applications with uniform status
+The public ledger now contains forty applications with uniform status
 `Solved`.
 
 ## Applications
@@ -93,6 +92,16 @@ are in [`APPLICATIONS.md`](APPLICATIONS.md).
 | APP-0028 | Divisor-polygamma parity (2019) | Odd sums are CM, but the even non-CM clause fails at f2. | [Qi-Agarwal](https://doi.org/10.1186/s13660-019-1976-z) |
 | APP-0029 | Gamma quotient critical point (2026) | A ratio-kernel proof gives the unique critical point. | [Bulboaca-Zayed](https://doi.org/10.1186/s13660-025-03425-0) |
 | APP-0030 | Ramanujan Turan window (2025) | A moment-ratio asymptotic refutes the proposed CM interval. | [Mishra-Swaminathan](https://arxiv.org/abs/2511.07443) |
+| APP-0031 | Baricz gamma-quotient Bernstein test (2008) | The universal gamma-quotient Bernstein claim is false via a single explicit counterexample. | [Baricz](https://doi.org/10.1090/S0002-9939-08-09353-2) |
+| APP-0032 | From Mills-ratio all-\(L\) bound chain (2020) | A determinant reduction gives alternating explicit bounds for all derivative levels. | [From](https://doi.org/10.1016/j.jmaa.2020.123872) |
+| APP-0033 | Ramanujan antiderivative complete Bernstein (2025) | The antiderivative is complete Bernstein. | [Mishra-Swaminathan](https://arxiv.org/abs/2511.07443) |
+| APP-0034 | Bulboaca-Zayed gamma quotient monotonicity (2026) | A ratio-kernel proof gives the derivative-sign pattern and critical point behavior on the source interval. | [Bulboaca-Zayed](https://doi.org/10.1186/s13660-025-03425-0) |
+| APP-0035 | Keady self-bijection inverse-CM counterexample (2018) | A CM self-bijection with CM inverse failure is given. | [Keady et al.](https://www.ojm.sciendo.com/doi/pdf/10.2478/cogmath-2018-0007) |
+| APP-0036 | Baskakov even-line sign-failure (2014) | The \(\alpha=1\), \(r=8\) density in the even-line family changes sign. | [Abel-Gawronski-Neuschel](https://arxiv.org/abs/1411.7945) |
+| APP-0037 | Du-Wang \(h_3\) monotonicity classification (2022) | Exact monotonicity window classification on the source interval is established. | [Du-Wang](https://arxiv.org/abs/2205.12530) |
+| APP-0038 | Ma-Weigert derivative-sign chain (2025) | Derivative-sign regions for \(L_k\) are nested. | [Ma-Weigert](https://arxiv.org/abs/2505.04225) |
+| APP-0039 | Ramanujan Turan window source interval (2025) | The claimed Turan complete-monotonicity interval is false. | [Mishra-Swaminathan](https://arxiv.org/abs/2511.07443) |
+| APP-0040 | Yang-Tian Bessel-\(W\) Bernstein conjecture (2022) | The power-Bernstein conjecture is proved on the source interval. | [Yang-Tian](https://doi.org/10.1007/s13163-022-00439-w) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application
 ledger and source references.

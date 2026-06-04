@@ -40,12 +40,12 @@ positivity: zeta-law entropy is reorganized by logarithmic compression,
 gamma-ratio and polygamma inequalities are expressed through completely monotone
 kernels, and new applications are obtained by transporting measure positivity
 through Stieltjes, complete-Bernstein, stable-subordination, and generalized-
-Stieltjes operations.  Compared with version v010, this version adds four
-fully solved applications: a Ma--Weigert derivative-region nesting theorem,
-a correction to a Qi--Agarwal/Yin divisor-polygamma parity problem, the
-Bulboaca--Zayed Gamma-quotient one-critical-point theorem, and a negative
-answer to a Ramanujan-integral Turan complete-monotonicity window.  The
-application ledger now records thirty public applications, all with uniform status
+Stieltjes operations.  Compared with version v010, this version adds fourteen
+fully solved applications: the prior four and `APP-0031` through `APP-0040`:
+the gamma-quotient and Bessel-\(W\) transport applications, two further
+derivative-chain classifications, and additional complete-monotonicity
+counterexamples/refinements.  The application ledger now records forty public
+applications, all with uniform status
 \emph{Solved}.
 \end{abstract}
 
@@ -95,14 +95,30 @@ Many classical identities for \(\zeta(s)\) become more transparent after a proba
 
 The paper develops six connected layers.  The moment layer records basic zeta-law identities.  The modular entropy layer compares the successor map \(n\mapsto n+1\) with its finite residue shadows modulo \(q\).  The Euler-score layer rewrites zeta energy through von Mangoldt divisibility events.  The Mellin-Planck layer treats \(\Gamma(s)\zeta(s)\) as a continuous partition function and converts generalized Holder inequalities into integral norm inequalities.  The tail layer studies \(\zeta_n(s)^{-1}\) as a reciprocal partition problem for the truncated zeta law.  The v009 Laplace-transport layer then carries the same positivity language into Stieltjes, complete-Bernstein, stable-subordination, determinant, and generalized-Stieltjes applications.
 
-Section~\ref{sec:applications} records thirty solved external problems with stable application labels.  APP-0001 through APP-0013 are the earlier zeta-law, Gamma, digamma, tail, beta-window, and q-log-convexity entries.  APP-0014 through APP-0023 form the v009 block: a Ramanujan integral Stieltjes classification, a Prabhakar stable-subordination formula, a Mills-ratio derivative hierarchy, two counterexamples to over-strong Bernstein or degree claims, exact tau, W-symbol, and digamma cutoffs, a Gurland log-complete-monotonicity proof, and a Sokal triangular compression formula.  APP-0024 through APP-0026 add a gamma-quotient Bernstein theorem, a gamma-polygamma monotonicity classification, and a Baskakov inverse-Laplace density counterexample.  APP-0027 through APP-0030 add a log-function derivative-chain theorem, a divisor-polygamma parity correction, a Gamma-quotient one-critical-point theorem, and a Ramanujan-integral Turan-window refutation.  These results are presented through a common measure-transport mechanism.
+Section~\ref{sec:applications} records forty solved external problems with stable
+application labels.  APP-0001 through APP-0013 are the earlier zeta-law, Gamma,
+digamma, tail, beta-window, and q-log-convexity entries.  APP-0014 through
+APP-0023 form the v009 block: a Ramanujan integral Stieltjes classification, a
+Prabhakar stable-subordination formula, a Mills-ratio derivative hierarchy, two
+counterexamples to over-strong Bernstein or degree claims, exact tau, W-symbol,
+and digamma cutoffs, a Gurland log-complete-monotonicity proof, and a Sokal
+triangular compression formula.  APP-0024 through APP-0026 add a
+gamma-quotient Bernstein theorem, a gamma-polygamma monotonicity
+classification, and a Baskakov inverse-Laplace density counterexample.  APP-0027
+through APP-0030 add a log-function derivative-chain theorem, a
+divisor-polygamma parity correction, a Gamma-quotient one-critical-point
+theorem, and a Ramanujan-integral Turan-window refutation.  APP-0031 through
+APP-0040 complete the next staged batch with additional gamma-quotient,
+Baskakov, Ma-Weigert, and Bessel-\(W\) transport applications.  These results
+are presented through a common measure-transport mechanism.
 
 \section{Applications}
 \label{sec:applications}
 
-The public application ledger contains thirty solved entries.  The first
+The public application ledger contains forty solved entries.  The first
 thirteen were staged in earlier theory versions.  The v009 and v010 layers add
-thirteen more entries, and the v011 layer adds four further entries.  All are
+thirteen more entries, the v011 prior layer adds four entries, and `APP-0031`
+through `APP-0040` add ten further entries.  All are
 unconditional and reducible to the same
 structural principle:
 find the positive kernel, then transport it through an operation that preserves
@@ -138,6 +154,16 @@ complete monotonicity or one of its Stieltjes/Bernstein descendants.
 \item \textbf{APP-0028.} Qi--Agarwal/Yin divisor-polygamma parity correction.  Solved by Theorem \ref{thm:app28-qa-divisor-polygamma}; source \cite{qi-agarwal-gamma-ratios}.
 \item \textbf{APP-0029.} Bulboaca--Zayed Gamma quotient one-critical-point theorem.  Solved by Theorem \ref{thm:app29-bz-gamma-quotient}; source \cite{bulboaca-zayed-gamma}.
 \item \textbf{APP-0030.} Ramanujan integral Turan-window refutation.  Solved by Theorem \ref{thm:app30-ramanujan-turan}; source \cite{mishra-swaminathan-ramanujan}.
+\item \textbf{APP-0031.} Baricz gamma-quotient Bernstein test is false.
+\item \textbf{APP-0032.} From's all-\(L\) Mills-ratio bound family is explicit.
+\item \textbf{APP-0033.} Ramanujan antiderivative is a complete Bernstein function.
+\item \textbf{APP-0034.} Bulboaca-Zayed gamma-quotient monotonicity is resolved.
+\item \textbf{APP-0035.} Keady CM self-bijection inverse-CM question is negative.
+\item \textbf{APP-0036.} Baskakov even-line complete-monotonicity fails at \(r=8\).
+\item \textbf{APP-0037.} Du-Wang \(h_3\) monotonicity is exactly on \(1/2\le a\le1\).
+\item \textbf{APP-0038.} Ma-Weigert log-function derivative regions are nested.
+\item \textbf{APP-0039.} Ramanujan Turan-window complete-monotonicity interval is false.
+\item \textbf{APP-0040.} Yang--Tian Bessel-\(W\) power-Bernstein conjecture is true on the source interval.
 \end{enumerate}
 
 \section{Zeta-law calculus}
@@ -2774,7 +2800,7 @@ kernel criteria identify complete monotonicity at the source, and the
 application layer shows that the same positivity can be transported through
 Stieltjes, Bernstein, stable-subordination, determinant, triangular-transform,
 inverse-Laplace density, derivative-chain, ratio-kernel, and moment-ratio
-constructions.  The staged public ledger now contains thirty solved
+constructions.  The staged public ledger now contains forty solved
 applications with uniform status \emph{Solved}.
 
 \begin{thebibliography}{26}

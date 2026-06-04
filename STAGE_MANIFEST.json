@@ -1,16 +1,14 @@
 {
-  "date_utc": "20260603T100611Z",
+  "date_utc": "20260604T001905Z",
   "public_paths": {
-    "latex": "theory/versions/v011/THEORY_v011.tex",
-    "pdf": "theory/versions/v011/THEORY_v011.pdf",
+    "latex": "theory/versions/v013/THEORY_v013.tex",
+    "pdf": "theory/versions/v013/THEORY_v013.pdf",
     "wiki_latest": "wiki/latest",
     "wiki_snapshot": "wiki/versions/stage_v006"
   },
   "repo_full_name": "pudim-project/pudim-ai-demo-zetalaw",
-  "stage_id": "stage_v011",
-  "theory_version": "v011",
-  "status": "pdf_compiled",
-  "pdf_engine": ".pudim/staging/tecto-pkg/bin/tectonic.exe",
+  "stage_id": "stage_v013",
+  "theory_version": "v013",
   "public_doc_paths": [
     "README.md",
     "APPLICATIONS.md",
@@ -18,8 +16,5 @@
     "HUMANS.md",
     "STAGE_MANIFEST.json"
   ],
-  "audit": {
-    "issues": []
-  },
   "warning": "Public wiki snapshot may lag the staged theory; regenerate it separately before treating it as current."
 }
