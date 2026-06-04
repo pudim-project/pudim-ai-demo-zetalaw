@@ -1,14 +1,14 @@
 {
-  "date_utc": "20260604T001905Z",
+  "date_utc": "20260604T173849Z",
   "public_paths": {
-    "latex": "theory/versions/v013/THEORY_v013.tex",
-    "pdf": "theory/versions/v013/THEORY_v013.pdf",
+    "latex": "theory/versions/v014/THEORY_v014.tex",
+    "pdf": "theory/versions/v014/THEORY_v014.pdf",
     "wiki_latest": "wiki/latest",
     "wiki_snapshot": "wiki/versions/stage_v006"
   },
   "repo_full_name": "pudim-project/pudim-ai-demo-zetalaw",
-  "stage_id": "stage_v013",
-  "theory_version": "v013",
+  "stage_id": "stage_v014",
+  "theory_version": "v014",
   "public_doc_paths": [
     "README.md",
     "APPLICATIONS.md",

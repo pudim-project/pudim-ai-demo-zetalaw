@@ -1,0 +1,776 @@
+﻿schema_version: 1
+generated_at: "2026-06-04T15:21:32Z"
+applications:
+  - app_id: "APP-0001"
+    app_name: "Alzer-Kwong convexity and concavity problem"
+    created_at: "2026-05-17"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Horst Alzer and Man Kam Kwong, \"On the concavity and convexity of \\(1/\\zeta\\)\", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0002"
+    app_name: "Nantomah zeta positivity problem"
+    created_at: "2026-05-17"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Kwara Nantomah, \"Open Problem on Riemann Zeta Function\", ResearchGate problem note, October 2024. [ResearchGate](https://www.researchgate.net/publication/384676538_Open_Problem_on_Riemann_Zeta_Function)"
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Bessel-I-sqrt-log-concavity-nu-ge-0"
+    dependencies:
+      - "T-Bessel-I-sqrt-log-concavity-nu-ge-0"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0003"
+    app_name: "Sroysang generalized Holder problem"
+    created_at: "2026-05-17"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Banyat Sroysang, \"Two Inequalities for the Riemann Zeta Functions\", Mathematica Aeterna, Vol. 3, No. 1 (2013), 21-24. [PDF](https://arastirmax.com/en/system/files/dergiler/135290/makaleler/3/1/arastirmax-two-inequalities-riemann-zeta-functions.pdf)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0004"
+    app_name: "Complete monotonicity of \\((\\log\\Gamma(x)+\\log\\Gamma(1/x))''\\)"
+    created_at: "2026-05-17"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0005"
+    app_name: "Exact inverse-tail floor formula at s=7"
+    created_at: "2026-05-17"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Donggyun Kim and Kyunghwan Song, \"The inverses of tails of the Riemann zeta function\", Journal of Inequalities and Applications 2018, article 157. [https://link.springer.com/article/10.1186/s13660-018-1743-6](https://link.springer.com/article/10.1186/s13660-018-1743-6); Zhenjiang Pan and Zhengang Wu, \"The inverse of tails of Riemann zeta function, Hurwitz zeta function and Dirichlet L-function\", AIMS Mathematics 9(6), 16564-16585, 2024. DOI: [DOI](https://doi.org/10.3934/math.2024803)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0006"
+    app_name: "Exact inverse-tail floor formula at s=8"
+    created_at: "2026-05-17"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Donggyun Kim and Kyunghwan Song, \"The inverses of tails of the Riemann zeta function\", Journal of Inequalities and Applications 2018, article 157. [https://link.springer.com/article/10.1186/s13660-018-1743-6](https://link.springer.com/article/10.1186/s13660-018-1743-6); Zhenjiang Pan and Zhengang Wu, \"The inverse of tails of Riemann zeta function, Hurwitz zeta function and Dirichlet L-function\", AIMS Mathematics 9(6), 16564-16585, 2024. DOI: [DOI](https://doi.org/10.3934/math.2024803)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0007"
+    app_name: "Concavity or complete monotonicity of the polygamma product P0"
+    created_at: "2026-05-19"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0008"
+    app_name: "Higher-order monotonicity of polygamma products Pn"
+    created_at: "2026-05-19"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0009"
+    app_name: "Sharp reciprocal Gamma-product monotonicity threshold"
+    created_at: "2026-05-23"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Teodor Bulboaca and Hanaa M. Zayed, \"Monotonic nature of the Gamma function\", Journal of Inequalities and Applications 2026, article 27. DOI: [DOI](https://doi.org/10.1186/s13660-025-03425-0)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0010"
+    app_name: "Nielsen \\(k\\)-beta derivative-ratio monotonicity"
+    created_at: "2026-05-26"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Li Yin and Jumei Zhang, \"On some properties of special functions involving \\(k\\)-gamma and \\(k\\)-digamma functions\", arXiv:2502.15852. [arXiv](https://arxiv.org/abs/2502.15852)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0011"
+    app_name: "Exact \\(n=2\\) beta-window endpoint"
+    created_at: "2026-05-28"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0012"
+    app_name: "Baricz \\(V_q\\) strict \\(q\\)-log-convexity"
+    created_at: "2026-05-28"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Arpad Baricz, \"Turan type inequalities for some special functions\", Ph.D. thesis, University of Debrecen, 2008. [PDF](https://dea.lib.unideb.hu/bitstreams/bdd4469f-1b1e-4996-9b90-73f5e1a6b0e8/download)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0013"
+    app_name: "Yin \\((p,k)\\)-digamma sharp \\(\\alpha\\)-necessity"
+    created_at: "2026-05-28"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Li Yin, \"Complete monotonicity of a function involving the \\((p,k)\\)-digamma function\", International Journal of Open Problems in Computer Mathematics 11(2), 103-108, 2018. [PDF](https://www.ijopcm.org/Vol/2018/2.9.pdf)"
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: ""
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0014"
+    app_name: "Ramanujan integral is Stieltjes and has a complete Bernstein primitive"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Mishra and Swaminathan, Inequalities involving a Ramanujan Integral, arXiv:2511.07443."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app14-ramanujan-stieltjes"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0015"
+    app_name: "Sibisi-Prabhakar measure is a stable-subordination push-forward"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Sibisi, A Probabilistic Perspective on Feller, Pollard and the Complete Monotonicity of the Mittag-Leffler Function, arXiv:2301.01466."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app15-prabhakar-subordination"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0016"
+    app_name: "From's Mills-ratio bound extends to every derivative level"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "From, Some new upper and lower bounds for the Mills ratio, J. Math. Anal. Appl. 486 (2020), 123872."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app16-mills-all-l"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0017"
+    app_name: "Baricz gamma-quotient Bernstein-for-all problem has a rational counterexample"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Baricz, Turan type inequalities for hypergeometric functions, Proc. Amer. Math. Soc. 136 (2008), 3223--3229."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app17-baricz-counterexample"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0018"
+    app_name: "Qi-Guo tau threshold has a supremum-corrected exact value"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Qi and Guo, Complete Monotonicities of Functions Involving Gamma and Digamma Functions, RGMIA Res. Rep. Coll. 7 (2004), Article 8."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app18-qg-tau"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0019"
+    app_name: "Wakrim W-symbol Bernstein range closes the beta gap"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Wakrim, The W-Operator: A Volterra Fractional Time Operator with Non-Bernstein Symbol, arXiv:2601.02876."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app19-w-symbol"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0020"
+    app_name: "Qi's degree-four conjecture for h_lambda is refuted at the endpoint"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Qi, Completely monotonic degree of a function involving trigamma and tetragamma functions, AIMS Math. 5 (2020), 3391--3407."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app20-qi-hlambda"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0021"
+    app_name: "Szabo's cutoff problem has \\(\\alpha_0=1\\)"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Szabo, Completely monotone functions in general and some applications, arXiv:2411.17670."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app21-szabo-cutoff"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0022"
+    app_name: "Chen-Choi Gurland gamma-ratio conjecture is logarithmically completely monotone"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Chen and Choi, Completely monotonic functions related to Gurland's ratio for the gamma function, Math. Inequal. Appl. 20 (2017), 651--659."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app22-gurland-logcm"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0023"
+    app_name: "Sokal generalized-Stieltjes lambda-derivatives have a triangular nonnegative compression"
+    created_at: "2026-05-31"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Sokal, Real-variables characterization of generalized Stieltjes functions, Expo. Math. 28 (2010), 179--185."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app23-sokal-lambda"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0024"
+    app_name: "Simon gamma quotient is Bernstein"
+    created_at: "2026-06-01"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Thomas Simon, Moment problems related to Bernstein functions, Ann. Fac. Sci. Toulouse Math. 29 (2020), 577--594."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app24-simon-gamma-quotient"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0025"
+    app_name: "Du-Wang \\(h_3\\) monotonicity is classified"
+    created_at: "2026-06-01"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app25-du-wang-h3"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0026"
+    app_name: "Baskakov even-power complete-monotonicity conjecture is false"
+    created_at: "2026-06-01"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app26-baskakov-r8"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0027"
+    app_name: "Ma-Weigert derivative regions form a descending chain"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app27-ma-weigert-chain"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0028"
+    app_name: "Qi-Agarwal/Yin divisor-polygamma parity is corrected"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Feng Qi and Ravi P. Agarwal, On complete monotonicity for several classes of functions related to ratios of gamma functions, Journal of Inequalities and Applications 2019, article 36."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app28-qa-divisor-polygamma"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0029"
+    app_name: "Bulboaca-Zayed Gamma quotient has one critical point"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Teodor Bulboaca and Hanaa M. Zayed, Monotonic nature of the Gamma function, Journal of Inequalities and Applications 2026, article 27."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app29-bz-gamma-quotient"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0030"
+    app_name: "Ramanujan integral Turan window is false"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "D. Mishra and A. Swaminathan, Inequalities involving a Ramanujan integral, arXiv:2511.07443."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app30-ramanujan-turan"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0031"
+    app_name: "Baricz gamma-quotient Bernstein test is false"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Arpad Baricz, Turan type inequalities for hypergeometric functions, Proc. Amer. Math. Soc. 136 (2008), 3223--3229."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "T-Baricz-gamma-quotient-BF-forall-negative-answer"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0032"
+    app_name: "From's all-\\(L\\) Mills-ratio bound family is explicit"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "S. G. From, Some new upper and lower bounds for the Mills ratio, J. Math. Anal. Appl. 486 (2020), 123872."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "T-From-Mills-all-L-alternating-r-bound-family"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0033"
+    app_name: "Ramanujan antiderivative is complete Bernstein"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Deepshikha Mishra and A. Swaminathan, Inequalities involving a Ramanujan Integral, arXiv:2511.07443."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "T-Ramanujan-antiderivative-complete-Bernstein"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0034"
+    app_name: "Bulboaca-Zayed gamma-quotient monotonicity solved"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Teodor Bulboaca and Hanaa M. Zayed, Monotonic nature of the Gamma function, Journal of Inequalities and Applications 2026, article 27."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "T-Bulboaca-Zayed-gamma-quotient-full-monotonicity"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0035"
+    app_name: "Keady self-bijection inverse-CM question is negative"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "G. Keady, N. Khajohnsaksumeth, and B. Wiwatanapataphee, On functions and inverses, both positive, decreasing and convex: and Stieltjes functions, Cogent Mathematics & Statistics 5:1 (2018), 1477543."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "T-Keady-Q3-self-bijection-inverse-CM-negative-answer"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0036"
+    app_name: "Baskakov even-line complete-monotonicity fails at \\(r=8\\)"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app36-baskakov-even-line-negative-answer"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0037"
+    app_name: "Du-Wang \\(h_3\\) is increasing exactly on \\(\\frac12\\le a\\le1\\)"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app37-du-wang-h3-monotonicity-classification"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0038"
+    app_name: "Ma-Weigert derivative-sign regions form a chain"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225."
+    mechanism_group: ""
+    render_class: "atlas"
+    proof_node: "thm:app38-ma-weigert-Dk-chain"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0039"
+    app_name: "Ramanujan Turan-window complete-monotonicity interval is false"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Deepshikha Mishra and A. Swaminathan, Inequalities involving a Ramanujan integral, arXiv:2511.07443."
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-Ramanujan-Turan-window-negative-answer"
+    dependencies:
+      - "T-Ramanujan-Turan-n2-upper-window-counterfamily"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0040"
+    app_name: "Yang-Tian Bessel-\\(W\\) power-Bernstein conjecture is true"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Zhen-Hang Yang and Jing-Feng Tian, Convexity of ratios of the modified Bessel functions of the first kind with applications, Revista Matematica Complutense, 2022."
+    mechanism_group: "Stieltjes/Bernstein transport"
+    render_class: "atlas"
+    proof_node: "T-YT-Bessel-W-power-Bernstein-conjecture"
+    dependencies:
+      - "T-YT-Bessel-W-general-zero-partial-fraction"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0041"
+    app_name: "Qi \\(h_\\lambda\\) degree-four complete-monotonicity conjecture is false"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Feng Qi, \"Completely monotonic degree of a function involving trigamma and tetragamma functions\", AIMS Mathematics 5 (2020), 3391-3407, DOI: 10.3934/math.2020219."
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Qi-hlambda-degree4-conjecture"
+    dependencies:
+      - "T-Qi-hlambda-x4-source-range-not-CM"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0042"
+    app_name: "Modified Bessel square-root log-concavity fails"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "MihÃ¡ly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001."
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Bessel-I-sqrt-log-concavity-nu-ge-0"
+    dependencies:
+      - "T-Bessel-I-sqrt-log-concavity-nu-ge-0"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0043"
+    app_name: "Riccati log-concavity inequality for \\(I_\\nu\\) is false"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "MihÃ¡ly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001."
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Bessel-I-Riccati-log-concavity-inequality"
+    dependencies:
+      - "T-not-Bessel-I-sqrt-log-concavity-nu-ge-0"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0044"
+    app_name: "Bessel ratio quadratic lower bound is false"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "MihÃ¡ly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001."
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Bessel-I-ratio-quadratic-bound"
+    dependencies:
+      - "T-not-Bessel-I-sqrt-log-concavity-nu-ge-0"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0045"
+    app_name: "Three-regime Bessel log-concavity certificate route is refuted"
+    created_at: "2026-06-03"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "MihÃ¡ly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001."
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Bessel-I-split-regime-log-concavity-certificate"
+    dependencies:
+      - "T-not-Bessel-I-Riccati-log-concavity-inequality"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""

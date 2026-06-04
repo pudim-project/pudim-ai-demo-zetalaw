@@ -3,14 +3,14 @@
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
 This repository contains the public staged theory for the zetalaw-demov2
-research track.  The latest snapshot is `THEORY_v011`, staged on 2026-06-03.
+research track.  The latest snapshot is `THEORY_v014`, staged on 2026-06-04.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v013/THEORY_v013.tex`](theory/versions/v013/THEORY_v013.tex)
-- Versioned PDF: [`theory/versions/v013/THEORY_v013.pdf`](theory/versions/v013/THEORY_v013.pdf)
+- Versioned TeX: [`theory/versions/v014/THEORY_v014.tex`](theory/versions/v014/THEORY_v014.tex)
+- Versioned PDF: [`theory/versions/v014/THEORY_v014.pdf`](theory/versions/v014/THEORY_v014.pdf)
 
 ## Abstract
 
@@ -18,42 +18,16 @@ We study the Riemann zeta function as the partition function of the probability
 law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on the positive integers. This
 normalization turns zeta ratios into moments, logarithmic derivatives into
 energy cumulants, divisor identities into probabilistic decompositions, and
-zeta tails into reciprocal partition problems. The first structural layer
-identifies the microscopic successor entropy of the zeta law with limits and
-suprema of finite modular successor entropies; for prime moduli these modular
-shadows are explicit nonlinear functionals of Dirichlet \(L\)-values. The second
-structural layer rewrites zeta energy through a von Mangoldt-weighted
-Euler-score divisibility average.
+zeta tails into reciprocal partition problems.
 
-The theory then develops a common positivity calculus. Mellin-Planck kernels
-convert generalized Holder inequalities into integral norm inequalities,
-Gamma and digamma curvature problems are reduced to Laplace kernels, and
-complete monotonicity becomes the organizing language for transporting
-inequalities across quotient, product, and derivative constructions. Earlier
-stages solved reciprocal-zeta, zeta-tail, Gamma-product, polygamma-product,
-Nielsen beta, beta-window, \(q\)-log-convexity, and \((p,k)\)-digamma
-necessity problems.
+The public theory develops a common positivity calculus for zeta, gamma,
+polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, and Bernstein
+problems. Its reusable mechanisms include Laplace kernels, moment-ratio
+reductions, determinant compression, stable subordination, triangular
+coefficient extraction, endpoint obstructions, and exact rational certificates.
 
-Version v009 added a new Laplace-transport layer. Those applications are
-organized by a common method: isolate a positive kernel or transform-normalized
-measure, then apply a permanence operation such as Stieltjes transformation,
-complete-Bernstein integration, stable subordination, determinant compression,
-or triangular coefficient extraction. This layer solves ten additional public
-source problems:
-Ramanujan-integral Stieltjes classification, Prabhakar measure subordination,
-all-level Mills-ratio extraction, a gamma-quotient Bernstein counterexample,
-the Qi-Guo tau supremum, the Wakrim W-symbol Bernstein range, Qi's
-\(h_\lambda\) degree-four conjecture, Szabo's cutoff problem, the Chen-Choi
-Gurland log-complete-monotonicity conjecture, and Sokal's generalized-Stieltjes
-lambda-derivative compression.
-
-Version v011 adds fourteen further applications relative to v010. In addition to
-the prior four items, `APP-0031` through `APP-0040` are now staged, adding
-further source-specific resolution of gamma-quotient and Bessel-\(W\) claims,
-additional kernel sign-pattern results, and rolling-method refinements.
-
-The public ledger now contains forty applications with uniform status
-`Solved`.
+The public ledger now contains forty-five solved applications, `APP-0001`
+through `APP-0045`, with immutable APP identifiers and source references.
 
 ## Applications
 
@@ -102,13 +76,18 @@ are in [`APPLICATIONS.md`](APPLICATIONS.md).
 | APP-0038 | Ma-Weigert derivative-sign chain (2025) | Derivative-sign regions for \(L_k\) are nested. | [Ma-Weigert](https://arxiv.org/abs/2505.04225) |
 | APP-0039 | Ramanujan Turan window source interval (2025) | The claimed Turan complete-monotonicity interval is false. | [Mishra-Swaminathan](https://arxiv.org/abs/2511.07443) |
 | APP-0040 | Yang-Tian Bessel-\(W\) Bernstein conjecture (2022) | The power-Bernstein conjecture is proved on the source interval. | [Yang-Tian](https://doi.org/10.1007/s13163-022-00439-w) |
+| APP-0041 | Qi \(h_\lambda\) degree-four conjecture (2020) | Local endpoint expansions refute the degree-four complete-monotonicity conjecture. | [Qi](https://doi.org/10.3934/math.2020219) |
+| APP-0042 | Bessel square-root log-concavity (2011) | A rational certificate at \((\nu,u)=(0,10)\) gives positive logarithmic curvature. | [Baricz-Ponnusamy-Vuorinen](https://doi.org/10.1016/j.exmath.2011.07.001) |
+| APP-0043 | Bessel Riccati log-concavity inequality (2011) | The same endpoint certificate refutes the universal Riccati inequality. | [Baricz-Ponnusamy-Vuorinen](https://doi.org/10.1016/j.exmath.2011.07.001) |
+| APP-0044 | Bessel ratio quadratic lower bound (2011) | The explicit \((\nu,u)=(0,10)\) witness gives the opposite strict inequality. | [Baricz-Ponnusamy-Vuorinen](https://doi.org/10.1016/j.exmath.2011.07.001) |
+| APP-0045 | Bessel three-regime certificate route (2011) | The proposed certificate route is refuted because the target inequality is false. | [Baricz-Ponnusamy-Vuorinen](https://doi.org/10.1016/j.exmath.2011.07.001) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application
 ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v011`.  The public wiki vault may
+The latest staged theory snapshot is `stage_v014`.  The public wiki vault may
 lag the staged theory and should be regenerated separately before being treated
 as the current public node graph.
 

@@ -1,10 +1,9 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0040` appear in `theory/latest/THEORY.tex` under the manuscript
+`APP-0001`--`APP-0045` appear in `theory/latest/THEORY.tex` under the manuscript
 `Applications` section and in the corresponding theorem names. Applications through
-`APP-0040` are currently staged in `THEORY_v011`; `APP-0041+` are the next
-strict APP candidates prepared for the next staging refresh.
+`APP-0045` are currently staged in `THEORY_v014`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -48,6 +47,11 @@ strict APP candidates prepared for the next staging refresh.
 | APP-0038 | 2026-06-03 | Prove the Ma-Weigert derivative-region descending chain. | Derivative-sign identities yield \(D_{k+1}\subseteq D_k\) for \(k\ge0\). | Solved | no reply |
 | APP-0039 | 2026-06-03 | Decide the Ramanujan Turan-window complete-monotonicity interval. | A sharper asymptotic refutes the claimed interval. | Solved | no reply |
 | APP-0040 | 2026-06-03 | Solve Yang and Tian's Bessel-\(W\) power-Bernstein conjecture on the source interval. | The conjecture is proved on the source interval. | Solved | no reply |
+| APP-0041 | 2026-06-03 | Settle Qi's degree-four complete-monotonicity conjecture for \(h_\lambda\). | Local endpoint expansions show the degree-four transforms fail complete monotonicity on the conjectured ranges. | Solved | no reply |
+| APP-0042 | 2026-06-03 | Decide whether \(u\mapsto\sqrt u I_\nu(u)\) is strictly log-concave for every \(\nu\ge0\). | A rational certificate at \((\nu,u)=(0,10)\) gives positive logarithmic curvature. | Solved | no reply |
+| APP-0043 | 2026-06-03 | Decide the universal Riccati log-concavity inequality for \(I_\nu\). | The same endpoint certificate violates the claimed strict Riccati inequality. | Solved | no reply |
+| APP-0044 | 2026-06-03 | Decide the Bessel-ratio quadratic lower bound. | The explicit \((\nu,u)=(0,10)\) witness gives the opposite strict inequality. | Solved | no reply |
+| APP-0045 | 2026-06-03 | Decide whether a three-regime certificate proves universal Bessel Riccati log-concavity. | The certificate route is refuted because the universal target inequality is false. | Solved | no reply |
 
 ## Application Details
 
@@ -386,7 +390,7 @@ The staged theorem proves necessity. The bracket is positive and satisfies
 Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to \(0\) at the left endpoint, contradicting positivity and nonincreasingness of a nonzero completely monotone function.
 
 
-## APP-0014--APP-0040 details
+## APP-0014--APP-0045 details
 
 ### APP-0014 -- Ramanujan integral is Stieltjes and has a complete Bernstein primitive
 
@@ -629,4 +633,49 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - solution theorem: `thm:app40-yt-bessel-W-power-Bernstein-conjecture` in local theory.
 - solution status: Solved
 - public result: The source interval is fully resolved positively by the staged proof.
+- review status: no reply
+
+### APP-0041 -- Qi \(h_\lambda\) degree-four complete-monotonicity conjecture is false
+
+- source: Feng Qi, "Completely monotonic degree of a function involving trigamma and tetragamma functions", AIMS Mathematics 5 (2020), 3391-3407. DOI: [DOI](https://doi.org/10.3934/math.2020219)
+- problem: Settle Qi's degree-four complete-monotonicity conjecture for \(h_\lambda\).
+- solution theorem: `res:not-qi-hlambda-degree4-conjecture` in `THEORY_v014`.
+- solution status: Solved
+- public result: Local endpoint expansions show that \(x^4h_\lambda\) and \(x^4(-h_\mu)\) fail the first-derivative complete-monotonicity test on the conjectured source ranges.
+- review status: no reply
+
+### APP-0042 -- Modified Bessel square-root log-concavity fails
+
+- source: Mihaly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: [DOI](https://doi.org/10.1016/j.exmath.2011.07.001)
+- problem: Decide whether \(u\mapsto\sqrt u\,I_\nu(u)\) is strictly log-concave for all \(\nu\ge0\).
+- solution theorem: `res:not-bessel-i-sqrt-log-concavity-nu-ge-0` in `THEORY_v014`.
+- solution status: Solved
+- public result: At \((\nu,u)=(0,10)\), an exact rational series certificate gives positive logarithmic second derivative.
+- review status: no reply
+
+### APP-0043 -- Riccati log-concavity inequality for \(I_\nu\) is false
+
+- source: Mihaly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: [DOI](https://doi.org/10.1016/j.exmath.2011.07.001)
+- problem: Decide the universal Riccati log-concavity inequality for \(r_\nu(u)=I_\nu'(u)/I_\nu(u)\).
+- solution theorem: `res:not-bessel-i-riccati-log-concavity-inequality` in `THEORY_v014`.
+- solution status: Solved
+- public result: The endpoint certificate used for APP-0042 gives a direct violation of the Riccati inequality at \((\nu,u)=(0,10)\).
+- review status: no reply
+
+### APP-0044 -- Bessel ratio quadratic lower bound is false
+
+- source: Mihaly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: [DOI](https://doi.org/10.1016/j.exmath.2011.07.001)
+- problem: Decide the quadratic lower bound involving \(q_\nu(u)=I_{\nu+1}(u)/I_\nu(u)\).
+- solution theorem: `res:not-bessel-i-ratio-quadratic-bound` in `THEORY_v014`.
+- solution status: Solved
+- public result: At \((\nu,u)=(0,10)\), the same rational bound gives \(q_0(10)^2+q_0(10)/10+1/200<1\), contradicting the claimed strict lower bound.
+- review status: no reply
+
+### APP-0045 -- Three-regime Bessel log-concavity certificate route is refuted
+
+- source: Mihaly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: [DOI](https://doi.org/10.1016/j.exmath.2011.07.001)
+- problem: Decide whether a three-regime certificate can prove universal Bessel Riccati log-concavity.
+- solution theorem: `res:not-bessel-i-split-regime-log-concavity-certificate` in `THEORY_v014`.
+- solution status: Solved
+- public result: The universal Riccati inequality is false, so no valid certificate can prove it on all \(\nu\ge0\) and \(u>0\).
 - review status: no reply
