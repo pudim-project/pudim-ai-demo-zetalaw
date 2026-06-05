@@ -1,4 +1,4 @@
-﻿schema_version: 1
+schema_version: 1
 generated_at: "2026-06-04T15:21:32Z"
 applications:
   - app_id: "APP-0001"
@@ -774,3 +774,94 @@ applications:
     superseded_by: []
     family_id: ""
     family_name: ""
+  - app_id: "APP-0046"
+    app_name: "Tao--Sawin finite Weyl l1 minimum is exact"
+    created_at: "2026-06-05"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Terence Tao, Commutators close to the identity, blog post and comment thread, 2018. https://terrytao.wordpress.com/2018/04/11/commutators-close-to-the-identity/"
+    mechanism_group: "Dual certificates and endpoint obstructions"
+    render_class: "atlas"
+    proof_node: "T-Tao-Sawin-Weyl-l1-exact-minimum"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0047"
+    app_name: "BPV noncentral chi-square HCM range has no positive noncentrality"
+    created_at: "2026-06-05"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Baricz--Prabhu--Singh--Vijesh, Infinitely divisible modified Bessel distributions, Pacific Journal of Mathematics 343 (2026), 261--313. https://doi.org/10.2140/pjm.2026.343.261"
+    mechanism_group: "Bessel zeros and generating-function obstructions"
+    render_class: "atlas"
+    proof_node: "T-BPV-noncentral-chi-square-HCM-no-positive-noncentrality"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0048"
+    app_name: "BMR tau-Gauss ordinary concavity is false"
+    created_at: "2026-06-05"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Bansal--Mehrez--Raina, Certain functional inequalities for the tau-hypergeometric functions, Journal of Inequalities and Special Functions 12(3), 33--43, 2021. https://www.ilirias.com/jiasf/repository/docs/JIASF12-3-4.pdf"
+    mechanism_group: "Endpoint and coefficient obstructions"
+    render_class: "atlas"
+    proof_node: "T-BMR-tau-Gauss-not-globally-concave"
+    dependencies: []
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0049"
+    app_name: "Baricz arithmetic/arithmetic zero-balanced hypergeometric threshold"
+    created_at: "2026-06-05"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Anderson--Vuorinen--Zhang, Topics in special functions III, arXiv:1209.1696. https://arxiv.org/abs/1209.1696"
+    mechanism_group: "Endpoint and coefficient obstructions"
+    render_class: "atlas"
+    proof_node: "T-Baricz-AA-zero-balanced-concavity-threshold"
+    dependencies:
+      - "T-Hypergeometric-Fa-geometric-mean-logconvex-slice"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0050"
+    app_name: "Stolarsky shifted power means with \\(p>1\\) are not Bernstein"
+    created_at: "2026-06-05"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Adam Bessenyei, On complete monotonicity of some functions related to means, Mathematical Inequalities and Applications 16 (2013), 233--239. https://files.ele-math.com/articles/mia-16-17.pdf"
+    mechanism_group: "Curvature obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Stolarsky-power-mean-pgt1-Bernstein-all-shifts"
+    dependencies:
+      - "T-Stolarsky-power-mean-pgt1-asymptotic-obstruction"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+
+
+
+

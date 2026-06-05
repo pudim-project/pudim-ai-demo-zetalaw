@@ -1,4 +1,4 @@
-# Agent Instructions
+﻿# Agent Instructions
 
 Read `README.md` for the public paper summary, then inspect `theory/latest/THEORY.tex` before making any mathematical claim about the staged theory.
 
@@ -8,4 +8,4 @@ Use rendered Markdown LaTeX delimiters in public docs: `\(...\)` for inline math
 
 Do not infer private contact data from public review notes. Contact ledgers, raw logs, Oracle transcripts, and Gmail payloads are intentionally not published.
 
-The latest staged theory snapshot is `stage_v014`; the public wiki vault points at the matching wiki snapshot.
+The latest staged theory snapshot is `stage_v015`; the public wiki vault points at the matching wiki snapshot.

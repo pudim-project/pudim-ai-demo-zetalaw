@@ -1,9 +1,9 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0045` appear in `theory/latest/THEORY.tex` under the manuscript
+`APP-0001`--`APP-0050` appear in `theory/latest/THEORY.tex` under the manuscript
 `Applications` section and in the corresponding theorem names. Applications through
-`APP-0045` are currently staged in `THEORY_v014`.
+`APP-0050` are currently staged in `THEORY_v015`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -22,12 +22,12 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0013 | 2026-05-28 | Yin \((p,k)\)-digamma sharp \(\alpha\)-necessity | Near-zero obstruction proving complete monotonicity forces \(\alpha\le1\) | Solved | no contact |
 | APP-0014 | 2026-05-31 | Classify the Ramanujan integral by a standard positive-kernel transform rather than only by inequalities. | The density is completely monotone, so the integral is Stieltjes and its Bernstein primitive is complete Bernstein. | Solved | no reply |
 | APP-0015 | 2026-05-31 | Give a canonical probabilistic representation of the Prabhakar Q-measure in the strict Pollard range. | The Q-measure is the alpha-stable subordination of the transform-normalized Pollard measure. | Solved | no reply |
-| APP-0016 | 2026-05-31 | Lift the published Mills-ratio bound to the full derivative hierarchy. | The level-\(L\) determinant inequality yields an explicit bound for every derivative quotient and hence for the original Mills ratio. | Solved | no reply |
+| APP-0016 | 2026-05-31 | Lift the published Mills-ratio bound to the full derivative hierarchy. | The level-L determinant inequality yields an explicit bound for every derivative quotient and hence for the original Mills ratio. | Solved | no reply |
 | APP-0017 | 2026-05-31 | Decide whether the gamma quotient is Bernstein throughout the full parameter range. | The parameters a=2, b=3 give a rational quotient whose derivative is not completely monotone. | Solved | no reply |
-| APP-0018 | 2026-05-31 | Find the optimal uniform threshold for the tau expression in Open Problem 3. | The exact threshold is the supremum \(a_*/(1+a_*+a_*^2)\), where \(e^{a_*}=1+a_*+a_*^2\); the value is not attained. | Solved | no reply |
-| APP-0019 | 2026-05-31 | Close the open Bernstein-symbol range for the W-operator when \(0<\beta\le1\). | Wakrim's source supplies the \(\beta>1\) obstruction; the staged proof proves the remaining Bernstein range \(0\le\beta\le1\). | Solved | author confirmed; attribution clarified |
-| APP-0020 | 2026-05-31 | Test the conjectured complete-monotonic degree four for \(h_\lambda\) and \(-h_\mu\). | The degree-four transforms fail the first derivative test near zero, so the conjecture is false. | Solved | no reply |
-| APP-0021 | 2026-05-31 | Determine the exact cutoff \(\alpha_0\) for \(y^\alpha H_d(y)\). | The cutoff is \(\alpha_0=1\): sufficiency is the source theorem and necessity follows from the singular expansion at zero. | Solved | no reply |
+| APP-0018 | 2026-05-31 | Find the optimal uniform threshold for the tau expression in Open Problem 3. | The exact threshold is the supremum a*/(1+a*+a*^2), where e^{a*}=1+a*+a*^2; the value is not attained. | Solved | no reply |
+| APP-0019 | 2026-05-31 | Close the open Bernstein-symbol range for the W-operator when 0<beta<=1. | The symbol is Bernstein exactly for 0<=beta<=1 and is not Bernstein for beta>1. | Solved | author feedback received; proof expanded |
+| APP-0020 | 2026-05-31 | Test the conjectured complete-monotonic degree four for h_lambda and -h_mu. | The degree-four transforms fail the first derivative test near zero, so the conjecture is false. | Solved | no reply |
+| APP-0021 | 2026-05-31 | Determine the exact cutoff alpha_0 for y^alpha H_d(y). | The cutoff is alpha_0=1: sufficiency is the source theorem and necessity follows from the singular expansion at zero. | Solved | no reply |
 | APP-0022 | 2026-05-31 | Prove logarithmic complete monotonicity of the Gurland gamma ratio conjectured in the source. | A Weierstrass product reduces log F to a sum of strictly completely monotone logarithmic second differences. | Solved | no reply |
 | APP-0023 | 2026-05-31 | Explain the lambda-derivative structure of Sokal's generalized-Stieltjes Hankel-type expressions. | The exponential generating function gives a triangular nonnegative convolution formula for every lambda derivative. | Solved | no reply |
 | APP-0024 | 2026-06-01 | Determine whether Simon's gamma quotient \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is Bernstein for \(0<\alpha<1\). | A complement complete-monotonicity representation proves \(F_\alpha\) is Bernstein. | Solved | no contact |
@@ -52,6 +52,11 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0043 | 2026-06-03 | Decide the universal Riccati log-concavity inequality for \(I_\nu\). | The same endpoint certificate violates the claimed strict Riccati inequality. | Solved | no reply |
 | APP-0044 | 2026-06-03 | Decide the Bessel-ratio quadratic lower bound. | The explicit \((\nu,u)=(0,10)\) witness gives the opposite strict inequality. | Solved | no reply |
 | APP-0045 | 2026-06-03 | Decide whether a three-regime certificate proves universal Bessel Riccati log-concavity. | The certificate route is refuted because the universal target inequality is false. | Solved | no reply |
+| APP-0046 | 2026-06-05 | Decide the Tao--Sawin finite Weyl-algebra homogeneous \(\ell^1\) minimum. | A commutator extremizer and Wick-dual functional prove the exact value \(2^n/n!\). | Solved | no contact |
+| APP-0047 | 2026-06-05 | Determine the positive-noncentrality HCM range for BPV noncentral chi-square densities. | A Bell-chain generating function and Bessel-zero obstruction show no positive noncentrality is HCM. | Solved | no contact |
+| APP-0048 | 2026-06-05 | Decide the ordinary-concavity alternative in the Bansal--Mehrez--Raina tau-Gauss open problem. | The classical subcase \(c=2,\tau=1,z=1-e^{-4}\) has positive parameter curvature near \(a=0\). | Solved | no contact |
+| APP-0049 | 2026-06-05 | Determine the arithmetic/arithmetic zero-balanced hypergeometric concavity threshold in Baricz's mean problem. | The forward inequality holds exactly for \(0<c\le1\); for \(c>1\), an endpoint coefficient obstruction violates concavity. | Solved | no contact |
+| APP-0050 | 2026-06-05 | Decide the \(p>1\) unequal-shift power-mean subfamily of the Chen--Qi/Bessenyei shifted Stolarsky problem. | Exact positive curvature of \(H_p(y+d,y-d)\) rules out the Bernstein property. | Solved | no contact |
 
 ## Application Details
 
@@ -679,3 +684,42 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - solution status: Solved
 - public result: The universal Riccati inequality is false, so no valid certificate can prove it on all \(\nu\ge0\) and \(u>0\).
 - review status: no reply
+
+
+## APP-0014--APP-0023 details
+
+### APP-0046 -- Tao--Sawin finite Weyl l1 minimum is exact
+
+- source: Terence Tao, "Commutators close to the identity," blog post and comment thread, with Will Sawin's \(\ell^1\)/LP framing. https://terrytao.wordpress.com/2018/04/11/commutators-close-to-the-identity/
+- problem: Determine the finite Weyl-algebra homogeneous \((n,n)\) \(\ell^1\)-minimum.
+- public result: The minimum is \(2^n/n!\), attained by the normalized iterated commutator and certified by a Wick-dual functional.
+- review status: no contact
+- solution theorem: `T-Tao-Sawin-Weyl-l1-exact-minimum` in local theory.
+### APP-0047 -- BPV noncentral chi-square HCM range has no positive noncentrality
+
+- source: Baricz--Prabhu--Singh--Vijesh, Infinitely divisible modified Bessel distributions, Pacific Journal of Mathematics 343 (2026), 261--313. https://doi.org/10.2140/pjm.2026.343.261
+- problem: Find the optimal HCM parameter range for noncentral chi-square densities.
+- public result: For every \(\mu>0\) and \(\lambda>0\), some HCM derivative sign fails; the positive-noncentrality HCM range is empty.
+- review status: no contact
+- solution theorem: `T-BPV-noncentral-chi-square-HCM-no-positive-noncentrality` in local theory.
+### APP-0048 -- BMR tau-Gauss ordinary concavity is false
+
+- source: Deepak Bansal, Khaled Mehrez, and Ravinder Krishna Raina, Certain functional inequalities for the tau-hypergeometric functions, Journal of Inequalities and Special Functions 12(3), 33--43, 2021. https://www.ilirias.com/jiasf/repository/docs/JIASF12-3-4.pdf
+- problem: Decide the ordinary-concavity alternative in the final tau-Gauss open problem.
+- public result: In the classical subcase \(c=2\), \(\tau=1\), \(z=1-e^{-4}\), the parameter second derivative is positive near \(a=0\), so ordinary concavity fails.
+- review status: no contact
+- solution theorem: `T-BMR-tau-Gauss-not-globally-concave` in local theory.
+### APP-0049 -- Baricz arithmetic/arithmetic zero-balanced hypergeometric threshold
+
+- source: Anderson--Vuorinen--Zhang, Topics in special functions III, arXiv:1209.1696, quoting Baricz's bivariate-means open problem.
+- problem: Decide the arithmetic/arithmetic slice for \(F_a(r)={}_2F_1(a,c-a;c;r)\).
+- public result: The inequality \((F_{a_1}+F_{a_2})/2\le F_{(a_1+a_2)/2}\) holds uniformly if and only if \(0<c\le1\).
+- review status: no contact
+- solution theorem: `T-Baricz-AA-zero-balanced-concavity-threshold` in local theory.
+### APP-0050 -- Stolarsky shifted power means with \(p>1\) are not Bernstein
+
+- source: Adam Bessenyei, On complete monotonicity of some functions related to means, Mathematical Inequalities and Applications 16 (2013), 233--239. https://files.ele-math.com/articles/mia-16-17.pdf
+- problem: Decide the \(p>1\) unequal-shift power-mean subfamily of the Chen--Qi/Bessenyei shifted Stolarsky problem.
+- public result: For \(p>1\) and unequal shifts, \(H_p(y+d,y-d)\) has positive second derivative, so the shifted power mean is not Bernstein.
+- review status: no contact
+- solution theorem: `T-not-Stolarsky-power-mean-pgt1-Bernstein-all-shifts` in local theory.

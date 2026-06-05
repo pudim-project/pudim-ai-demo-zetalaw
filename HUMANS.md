@@ -1,4 +1,4 @@
-# How To Read This Repository
+﻿# How To Read This Repository
 
 Start with `theory/latest/THEORY.pdf` for the latest readable paper. Use `theory/latest/THEORY.tex` when you need exact LaTeX source, equation labels, or bibliography details.
 
@@ -6,4 +6,18 @@ The generated wiki is intentionally documented inside `wiki/README.md`. For Obsi
 
 Read node statuses conservatively: `proved` means locally audited with a proof in the node; `open`, `partial`, and `conjectural` are frontier material; application candidates are not solved claims.
 
-Current immutable snapshots live under `theory/versions/v014/` and `wiki/versions/stage_v014/`.
+Current immutable snapshots live under `theory/versions/v015/` and `wiki/versions/stage_v015/`.
+
+Current immutable snapshots live under `theory/versions/v015/` and `wiki/versions/stage_v015/`.
+
+Current immutable snapshots live under `theory/versions/v015/` and `wiki/versions/stage_v015/`.
+
+Current immutable snapshots live under `theory/versions/v023/` and `wiki/versions/stage_v023/`.
+
+Current immutable snapshots live under `theory/versions/v024/` and `wiki/versions/stage_v024/`.
+
+Current immutable snapshots live under `theory/versions/v025/` and `wiki/versions/stage_v025/`.
+
+Current immutable snapshots live under `theory/versions/v026/` and `wiki/versions/stage_v026/`.
+
+Current immutable snapshots live under `theory/versions/v015/` and `wiki/versions/stage_v015/`.
