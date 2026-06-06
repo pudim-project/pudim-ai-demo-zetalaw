@@ -1,0 +1,1350 @@
+\section{Gamma and polygamma curvature}
+Gamma, digamma, beta, and polygamma questions are organized by logarithmic derivatives and Laplace kernels.  The guiding principle is that complete-monotonicity claims should be reduced to sign-controlled integral kernels or endpoint obstructions.
+\begin{theorem}[Simon gamma quotient complement is CM for alpha in (0,1)]
+\label{res:simon-gamma-quotient-complement-cm}
+For every \(0<\alpha<1\), the function \(1-\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is completely monotone on \((0,\infty)\).
+\end{theorem}
+\begin{proof}
+For \(0<\alpha<1\), put
+\[
+F_\alpha(x)=\frac{\Gamma(x+\alpha)}{\Gamma(x)x^\alpha},\qquad x>0.
+\]
+Then \(F_\alpha\) is a Bernstein function. In fact, \(1-F_\alpha\) is completely monotone.
+
+The stronger route asserting that \(F_\alpha\) is a complete Bernstein function is false.
+
+Let \(\beta=1-\alpha\in(0,1)\). Since \(\Gamma(x+1)=x\Gamma(x)\), the beta integral gives
+\[
+F_\alpha(x)
+=x^\beta\frac{\Gamma(x+\alpha)}{\Gamma(x+1)}
+=\frac{x^\beta}{\Gamma(\beta)}
+\int_0^\infty e^{-xu}(e^u-1)^{-\alpha}\,du.
+\]
+Also
+\[
+1=\frac{x^\beta}{\Gamma(\beta)}
+\int_0^\infty e^{-xu}u^{-\alpha}\,du.
+\]
+Thus
+\[
+1-F_\alpha(x)
+=\frac{x^\beta}{\Gamma(\beta)}
+\int_0^\infty e^{-xu}\left(u^{-\alpha}-(e^u-1)^{-\alpha}\right)\,du.
+\]
+
+Define
+\[
+J_\alpha(t)=\int_0^t (t-u)^{\alpha-1}(e^u-1)^{-\alpha}\,du.
+\]
+By Laplace convolution,
+\[
+\mathcal L[J_\alpha](x)
+=\Gamma(\alpha)x^{-\alpha}
+\int_0^\infty e^{-xu}(e^u-1)^{-\alpha}\,du.
+\]
+Therefore
+\[
+F_\alpha(x)
+=\frac{x}{\Gamma(\alpha)\Gamma(1-\alpha)}\mathcal L[J_\alpha](x).
+\]
+
+After the substitution \(u=tv\),
+\[
+J_\alpha(t)=
+\int_0^1
+(1-v)^{\alpha-1}
+\left(\frac{t}{e^{tv}-1}\right)^\alpha\,dv.
+\]
+For fixed \(v\in(0,1]\), the function
+\[
+t\mapsto \frac{t}{e^{tv}-1}
+\]
+is decreasing because
+\[
+\frac{d}{dt}\frac{t}{e^{tv}-1}
+=
+\frac{e^{tv}-1-tv e^{tv}}{(e^{tv}-1)^2}\le0.
+\]
+The integrand is dominated by \((1-v)^{\alpha-1}v^{-\alpha}\), which is integrable on \((0,1)\). Hence \(J_\alpha\) is decreasing. Moreover,
+\[
+J_\alpha(0+)
+=\int_0^1(1-v)^{\alpha-1}v^{-\alpha}\,dv
+=\Gamma(\alpha)\Gamma(1-\alpha),
+\]
+and \(J_\alpha(t)\to0\) as \(t\to\infty\).
+
+Let \(\mu_\alpha=-dJ_\alpha\). This is a positive finite measure with total mass
+\[
+\mu_\alpha([0,\infty))=\Gamma(\alpha)\Gamma(1-\alpha).
+\]
+Stieltjes integration by parts gives, for \(x>0\),
+\[
+\int_0^\infty e^{-xt}\,\mu_\alpha(dt)
+=
+\Gamma(\alpha)\Gamma(1-\alpha)-x\mathcal L[J_\alpha](x).
+\]
+Using the formula for \(F_\alpha\),
+\[
+1-F_\alpha(x)
+=
+\frac{1}{\Gamma(\alpha)\Gamma(1-\alpha)}
+\int_0^\infty e^{-xt}\,\mu_\alpha(dt).
+\]
+Thus \(1-F_\alpha\) is completely monotone.
+
+Consequently,
+\[
+F_\alpha'(x)
+=
+\frac{1}{\Gamma(\alpha)\Gamma(1-\alpha)}
+\int_0^\infty t e^{-xt}\,\mu_\alpha(dt),
+\]
+so \(F_\alpha'\) is completely monotone. Since \(F_\alpha(x)>0\), \(F_\alpha\) is a Bernstein function.
+
+For \(t>0\), differentiating the \(v\)-integral under the same endpoint domination gives \(\mu_\alpha(dt)=m_\alpha(t)\,dt\), where
+\[
+m_\alpha(t)
+=
+\alpha\int_0^1
+(1-v)^{\alpha-1}
+\left(\frac{t}{e^{tv}-1}\right)^\alpha
+\left(
+\frac{v e^{tv}}{e^{tv}-1}-\frac1t
+\right)\,dv.
+\]
+The bracket is positive, because with \(a=tv>0\),
+\[
+\frac{a e^a}{e^a-1}>1.
+\]
+Therefore the Laplace-density route in the argument is also closed.
+
+The case \(\alpha=1/2\) is the specialization
+\[
+F_{1/2}(x)=\frac{\Gamma(x+1/2)}{\Gamma(x)\sqrt{x}},
+\]
+and the same complement-CM representation proves that \(F_{1/2}\) is Bernstein.
+
+For \(z=-r+i0\) with \(r\in(\alpha,1)\), take the upper-lip branch of \(z^{-\alpha}\). Then
+\[
+F_\alpha(-r+i0)
+=
+\frac{\Gamma(\alpha-r)}{\Gamma(-r)}r^{-\alpha}e^{-i\pi\alpha}.
+\]
+Here \(\Gamma(\alpha-r)<0\) and \(\Gamma(-r)<0\), so the real gamma ratio is positive. Hence
+\[
+\operatorname{Im} F_\alpha(-r+i0)<0.
+\]
+A complete Bernstein function has the Pick property and maps the upper half-plane into itself. Therefore \(F_\alpha\) is not a complete Bernstein function for \(0<\alpha<1\).
+\end{proof}
+
+\begin{proposition}[Baricz V\_q positive Laplace representation in q plus one]
+\label{res:baricz-vq-q-laplace-normal-form}
+For every \(x>0\) and \(q>-1\), Baricz's function satisfies \(V_q(x)=\pi^{-1/2}\int_0^\infty s^{-1/2}e^{-x^2s}(1+s)^{-(q+1)}\,ds\).
+\end{proposition}
+\begin{proof}
+Put \(u=t^2-x^2\). Then \(t=(u+x^2)^{1/2}\) and
+\[
+dt=\frac{du}{2(u+x^2)^{1/2}}.
+\]
+Since \(e^{x^2}e^{-t^2}=e^{-u}\), the factor \(2\) in the definition cancels the \(1/2\) from \(dt\), giving
+\[
+V_q(x)=\frac1{\Gamma(q+1)}
+\int_0^\infty e^{-u}u^q(u+x^2)^{-1/2}\,du.
+\]
+This integral is finite for \(q>-1\): near \(0\) the integrand is \(O(u^q)\), and at infinity it is exponentially decaying.
+
+For \(r>0\),
+\[
+r^{-1/2}=\frac1{\sqrt\pi}\int_0^\infty s^{-1/2}e^{-rs}\,ds.
+\]
+With \(r=u+x^2\), Tonelli's theorem applies because the integrand is nonnegative. Thus
+\[
+\begin{aligned}
+V_q(x)
+&=\frac1{\Gamma(q+1)\sqrt\pi}
+\int_0^\infty\int_0^\infty
+e^{-u}u^q s^{-1/2}e^{-(u+x^2)s}\,ds\,du\\
+&=\frac1{\Gamma(q+1)\sqrt\pi}
+\int_0^\infty s^{-1/2}e^{-x^2s}
+\left(\int_0^\infty u^q e^{-(1+s)u}\,du\right)\,ds\\
+&=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-(q+1)}\,ds.
+\end{aligned}
+\]
+The last step uses
+\[
+\int_0^\infty u^q e^{-(1+s)u}\,du
+=\frac{\Gamma(q+1)}{(1+s)^{q+1}}.
+\]
+
+This proves the claim.
+
+Let \(a=q+1>0\). The normal form becomes
+\[
+V_{a-1}(x)=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds.
+\]
+For each integer \(n\ge0\), differentiation under the integral gives
+\[
+(-1)^n\frac{d^n}{da^n}V_{a-1}(x)
+=\frac1{\sqrt\pi}\int_0^\infty
+(\log(1+s))^n s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds\ge0.
+\]
+The differentiation is justified locally uniformly in \(a>0\): near \(s=0\), \((\log(1+s))^n s^{-1/2}=O(s^{n-1/2})\), and as \(s\to\infty\), the factor \(e^{-x^2s}\) dominates every logarithmic and polynomial factor.
+
+Thus \(a\mapsto V_{a-1}(x)\) is completely monotone on \((0,\infty)\). Equivalently, after the change of variables \(y=\log(1+s)\), it is a positive Laplace transform in \(a\).
+
+This proves the claim.
+
+For \(a>0\), write
+\[
+F_x(a)=V_{a-1}(x)
+=\int_{(0,\infty)} e^{-ay}\,d\nu_x(y),
+\]
+where \(\nu_x\) is the positive pushforward of
+\[
+\frac1{\sqrt\pi}s^{-1/2}e^{-x^2s}\,ds
+\]
+under \(y=\log(1+s)\). This measure is not concentrated at one point because it has positive density on \(s>0\), hence on \(y>0\).
+
+For \(a_1\ne a_2\) and \(0<\lambda<1\), strict Holder inequality gives
+\[
+F_x(\lambda a_1+(1-\lambda)a_2)
+<
+F_x(a_1)^\lambda F_x(a_2)^{1-\lambda}.
+\]
+Strictness holds because \(e^{-a_1y}\) and \(e^{-a_2y}\) are not proportional \(\nu_x\)-almost everywhere unless \(\nu_x\) is supported at a single \(y\).
+
+Thus \(a\mapsto F_x(a)\) is strictly log-convex on \((0,\infty)\). Since \(a=q+1\), the shift preserves strict log-convexity, so \(q\mapsto V_q(x)\) is strictly log-convex on \((-1,\infty)\) for every fixed \(x>0\).
+
+This proves the claim.
+\end{proof}
+
+\begin{proposition}[Chen Choi Gurland Euler product sum normal form]
+\label{res:chen-choi-gurland-euler-sum-normal-form}
+For \(F(x)=\Gamma(1/x)\Gamma(3/x)/\Gamma(2/x)^2\), \(\log F(x)=\log(4/3)+\sum_{m=1}^{\infty}A(mx)\), with locally uniform convergence of all derivative series on compact subintervals of \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+Let
+\[
+A(u)=2\log(u+2)-\log(u+1)-\log(u+3).
+\]
+Then \(A(u)>0\) for \(u>0\), since
+\[
+A(u)=\log\frac{(u+2)^2}{(u+1)(u+3)}
+\]
+and the numerator exceeds the denominator by \(1\).
+Moreover
+\[
+A'(u)=\frac2{u+2}-\frac1{u+1}-\frac1{u+3}
+=-\frac{2}{(u+1)(u+2)(u+3)}.
+\]
+Using
+\[
+\int_0^\infty e^{-ut}e^{-at}\,dt=\frac1{u+a},
+\]
+we get
+\[
+-A'(u)=\int_0^\infty e^{-ut}e^{-t}(1-e^{-t})^2\,dt.
+\]
+Since \(A(u)\to0\) as \(u\to\infty\), integration from \(u\) to infinity gives
+\[
+A(u)=\int_0^\infty e^{-ut}\frac{e^{-t}(1-e^{-t})^2}{t}\,dt.
+\]
+The density is positive, locally integrable at \(0\), and exponentially decaying at infinity. Hence \(A\) is strictly completely monotone.
+
+Weierstrass' product gives
+\[
+\log\Gamma(z)=-\log z-\gamma z-
+\sum_{m=1}^{\infty}\left(\log(1+z/m)-z/m\right).
+\]
+Put \(z=1/x\). In
+\[
+\log\Gamma(z)+\log\Gamma(3z)-2\log\Gamma(2z),
+\]
+the linear terms cancel. The logarithmic terms give \(\log(4/3)\). The summand at index \(m\) becomes
+\[
+\log\frac{(1+2z/m)^2}{(1+z/m)(1+3z/m)}
+=\log\frac{(mx+2)^2}{(mx+1)(mx+3)}=A(mx).
+\]
+Thus
+\[
+\log F(x)=\log\frac43+\sum_{m=1}^{\infty}A(mx).
+\]
+For every compact \(x\in[\varepsilon,M]\) and every \(n\ge0\),
+\[
+\frac{d^n}{dx^n}A(mx)=m^nA^{(n)}(mx)=O_{n,\varepsilon}(m^{-2}),
+\]
+because the three-point second difference in \(A^{(n)}\) is \(O((mx)^{-n-2})\). Therefore the series may be differentiated termwise locally uniformly.
+
+For \(n=0\), \(\log F(x)>0\) follows from \(\log(4/3)>0\) and \(A(mx)>0\). For \(n\ge1\),
+\[
+(-1)^n(\log F)^{(n)}(x)=
+\sum_{m=1}^{\infty}m^n(-1)^nA^{(n)}(mx)>0.
+\]
+Therefore \(\log F\) is strictly completely monotone on \((0,\infty)\), proving Chen-Choi Conjecture 1.
+\end{proof}
+
+\begin{proposition}[Wakrim W symbol Bernstein exact beta range zero to one]
+\label{res:wakrim-w-symbol-exact-bf-range}
+For \(0<\alpha<1\) and \(\beta\ge0\), the Wakrim W-symbol \(\Phi_{\alpha,\beta}(s)=s^\alpha(1+(1-\alpha)s^{\alpha-1})^{-\beta}\) is a Bernstein function on \((0,\infty)\) if and only if \(0\le\beta\le1\).
+\end{proposition}
+\begin{proof}
+Set \(a=1-\alpha\in(0,1)\). Then
+\[
+\Phi_{\alpha,\beta}(s)
+=s^{1-a}\left(1+a s^{-a}\right)^{-\beta}
+=\frac{s^{1-a+a\beta}}{(s^a+a)^\beta}.
+\]
+Write
+\[
+p=1-a+a\beta=\alpha+(1-\alpha)\beta.
+\]
+Differentiating gives
+\[
+\Phi_{\alpha,\beta}'(s)
+=s^{p-1}(s^a+a)^{-\beta-1}
+\left[p(s^a+a)-\beta a s^a\right].
+\]
+Since \(p-\beta a=1-a=\alpha\),
+\[
+\Phi_{\alpha,\beta}'(s)
+=s^{-a(1-\beta)}(s^a+a)^{-\beta-1}
+\left[\alpha s^a+a(\alpha+a\beta)\right].
+\]
+With \(y=s^a\), this becomes
+\[
+\Phi_{\alpha,\beta}'(s)=H(s^a),
+\]
+where
+\[
+H(y)=
+y^{\beta-1}(y+a)^{-\beta}
+\left(\alpha+\frac{a^2\beta}{y+a}\right).
+\]
+
+For \(0<\beta\le1\), each factor in \(H\) is completely monotone on \((0,\infty)\): \(y^{\beta-1}=y^{-(1-\beta)}\), \((y+a)^{-\beta}\), and the positive sum \(\alpha+a^2\beta/(y+a)\). Therefore \(H\) is completely monotone by product and positive-sum closure.
+
+The map \(s\mapsto s^a\) is Bernstein for \(0<a<1\). The standard composition theorem says that if \(f\) is completely monotone and \(g\) is Bernstein, then \(f\circ g\) is completely monotone. Hence \(\Phi_{\alpha,\beta}'\) is completely monotone, and \(\Phi_{\alpha,\beta}\) is Bernstein for \(0<\beta\le1\). The endpoint \(\beta=0\) is \(\Phi_{\alpha,0}(s)=s^\alpha\), also Bernstein.
+
+Combining this local positive range with Wakrim's source proof that \(\Phi_{\alpha,\beta}\) is not Bernstein for \(\beta>1\), the exact range is
+\[
+\Phi_{\alpha,\beta}\in BF
+\quad\Longleftrightarrow\quad
+0\le\beta\le1.
+\]
+\end{proof}
+
+\begin{lemma}[negative derivative of completely monotone function is completely monotone]
+\label{res:chiu-yin-cm-derivative-reflection-lemma}
+If \(g\) is completely monotone on \((0,\infty)\), then \(-g'\) is completely monotone wherever the derivative exists.
+\end{lemma}
+\begin{proof}
+Chiu--Yin Remark 3.5 conjectures the converse of Lemma 3.1: in the Sparre Andersen model, complete monotonicity of the ascending ladder-height density should imply complete monotonicity of the claim-size density. This pass proves only the classical Cramer--Lundberg/equilibrium-ladder slice.
+
+\emph{Setup.}
+In the classical Cramer--Lundberg/equilibrium formulation, let \(H\) be the claim-size distribution, let
+\[
+\overline H(x)=1-H(x),
+\]
+and assume \(H\) is absolutely continuous on \((0,\infty)\). Let
+\[
+m=\int_0^\infty \overline H(u)\,du
+\]
+be the finite mean, with \(0<m<\infty\). The equilibrium excess cdf and density are
+\[
+F_e(x)=\frac1m\int_0^x\overline H(u)\,du,
+\qquad
+f_e(x)=F_e'(x)=\frac{\overline H(x)}{m}.
+\]
+In the classical ladder normalization under discussion, the ascending ladder-height density is this equilibrium density:
+\[
+f_+(x)=f_e(x)=\frac{\overline H(x)}{m}.
+\]
+
+If \(g\) is completely monotone on \((0,\infty)\), then for every \(n\ge0\),
+\[
+(-1)^n g^{(n)}(x)\ge0.
+\]
+Therefore
+\[
+(-1)^n(-g')^{(n)}(x)=(-1)^{n+1}g^{(n+1)}(x)\ge0,
+\]
+so \(-g'\) is completely monotone.
+
+Assume \(f_+\) is completely monotone. Then \(\overline H=m f_+\) is completely monotone. Define the smooth density representative
+\[
+h_*(x)=-\overline H'(x)=-m f_+'(x).
+\]
+By the reflection lemma, \(-f_+'\) is completely monotone; multiplying by \(m>0\) preserves complete monotonicity. Hence \(h_*\) is completely monotone.
+
+Since densities are a.e. representatives, the conclusion is that \(H\) admits a completely monotone density version \(h_*\). Thus the converse of Chiu--Yin Lemma 3.1 is true in the classical equilibrium-ladder slice in this density-version sense.
+
+This does not solve the full Sparre Andersen converse in Remark 3.5. The general case includes the weak descending-ladder renewal factor in the representation of \(F^+\), so the original claim density is not recovered by a single derivative of the ladder-height density.
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0021}.
+\begin{corollary}[APP-0021: Szabo's cutoff problem has \(\alpha\_0=1\)]
+\label{res:dagum-c-endpoints-and-upper-gate}
+For the Dagum threshold \(c(\beta)=\inf\{\alpha\ge0:x^{-\alpha}(1+x^\beta)^{-1}\in CM\}\), one has \(c(1)=0\), \(c(2)=1\), and \(c(\beta)\le\beta/2\) for \(1<\beta\le2\).
+
+This resolves the fixed application label \textbf{APP-0021}: Determine the exact cutoff \(\alpha\_0\) for \(y^\alpha H\_d(y)\).
+\emph{Source reference.} \cite{app-app-0021-source}.
+\end{corollary}
+\begin{proof}
+The source theorem proves complete monotonicity for \(\alpha\le1\).  Conversely,
+as \(y\downarrow0\),
+\[
+  H_d(y)={1-d\over y}+O(1).
+\]
+Hence, for \(\alpha>1\),
+\[
+  y^\alpha H_d(y)=(1-d)y^{\alpha-1}+O(y^\alpha),
+\]
+whose derivative is positive near zero.  A completely monotone function must be
+non-increasing, so no \(\alpha>1\) is admissible.
+\end{proof}
+
+\begin{lemma}[Szabo psi difference exact alpha0 equals one]
+\label{res:szabo-psi-difference-alpha0-exact-one}
+For \(0<d<1\), the sharp cutoff for complete monotonicity of \(y^\alpha[\psi(y+d)-\psi(y)-d/y]\) is \(\alpha_0=1\).
+\end{lemma}
+\begin{proof}
+Let \(0<d<1\), \(y>0\), and
+\[
+H_d(y)=\psi(y+d)-\psi(y)-\frac{d}{y}.
+\]
+Then
+\[
+y^\alpha H_d(y)
+\]
+is strictly completely monotone on \((0,\infty)\) if \(\alpha\le 1\), and is not completely monotone if \(\alpha>1\). Hence the sharp cutoff in Szabo Open Problem 1.5 is
+\[
+\alpha_0=1.
+\]
+
+As \(y\downarrow0\), the digamma Laurent expansion gives
+\[
+\psi(y)=-\frac1y-\gamma+O(y),
+\qquad
+\psi(y+d)=\psi(d)+O(y).
+\]
+Therefore
+\[
+H_d(y)=\psi(y+d)-\psi(y)-\frac{d}{y}
+=\frac{1-d}{y}+O(1).
+\]
+Since \(0<d<1\), the leading coefficient is positive. Hence
+\[
+y^\alpha H_d(y)=(1-d)y^{\alpha-1}+O(y^\alpha).
+\]
+If \(\alpha>1\), then
+\[
+\frac{d}{dy}\left(y^\alpha H_d(y)\right)
+=(1-d)(\alpha-1)y^{\alpha-2}+O(y^{\alpha-1})>0
+\]
+for all sufficiently small \(y>0\). A completely monotone function must be nonincreasing, so no \(\alpha>1\) can be completely monotone.
+
+Combining this with the source-imported strict complete monotonicity for \(\alpha\le1\) proves \(\alpha_0=1\).
+
+Szabo's original function is recovered by \(y=x+a\) and \(d=b-a\), where \(a\ge0\), \(b>0\), and \(0<b-a<1\). Translation from \((-a,\infty)\) to \((0,\infty)\) preserves complete-monotonicity sign tests.
+\end{proof}
+
+\begin{lemma}[Bondesson Steutel c=1/2 Catalan beta Hausdorff representation]
+\label{res:bs-c-half-catalan-hausdorff-representation}
+For the Bondesson--Steutel distribution at \(c=1/2\), \(P_n(1/2)=C_n/(2\cdot4^n)=\frac{1}{\pi}\int_0^1 x^{n-1/2}(1-x)^{1/2}\,dx\), where \(C_n\) is the \(n\)-th Catalan number.
+\end{lemma}
+\begin{proof}
+For \(c=1/2\), the source pgf is
+\[
+P(z)=\frac{1-\sqrt{1-z}}{z}.
+\]
+Using the Catalan generating function
+\[
+\sum_{n\ge0}C_n x^n=\frac{1-\sqrt{1-4x}}{2x},
+\]
+with \(x=z/4\), we get
+\[
+P(z)=\frac12\sum_{n\ge0}C_n\left(\frac z4\right)^n.
+\]
+Hence
+\[
+P_n(1/2)=\frac{C_n}{2\cdot4^n}
+=\frac{1}{2\cdot4^n(n+1)}\binom{2n}{n}.
+\]
+
+Now
+\[
+\frac1\pi\int_0^1 x^{n-1/2}(1-x)^{1/2}\,dx
+=\frac1\pi B(n+1/2,3/2).
+\]
+Since \(\Gamma(3/2)=\sqrt\pi/2\) and
+\[
+\Gamma(n+1/2)=\frac{(2n)!\sqrt\pi}{4^n n!},
+\]
+this beta integral equals
+\[
+\frac{(2n)!}{2\cdot4^n n!(n+1)!}
+=\frac{C_n}{2\cdot4^n}
+=P_n(1/2).
+\]
+Therefore
+\[
+P_n(1/2)=\frac1\pi\int_0^1 x^{n-1/2}(1-x)^{1/2}\,dx.
+\]
+This is a Hausdorff moment representation on \([0,1]\), so \((P_n(1/2))\) is completely monotone as a sequence.
+
+For \(c=1/2\), the canonical sequence is
+\[
+r_n=(n+1/2)P_n(1/2).
+\]
+Using the Hausdorff representation,
+\[
+r_n=\frac{n+1/2}{\pi}\int_0^1 x^{n-1/2}(1-x)^{1/2}\,dx.
+\]
+Because
+\[
+\frac{d}{dx}x^{n+1/2}=(n+1/2)x^{n-1/2},
+\]
+integration by parts gives
+\[
+r_n
+=\frac1\pi\int_0^1 (1-x)^{1/2}\,d(x^{n+1/2})
+=\frac{1}{2\pi}\int_0^1 x^{n+1/2}(1-x)^{-1/2}\,dx.
+\]
+The boundary terms vanish at \(0\) and \(1\). Thus
+\[
+r_n=\int_0^1 x^n\,d\nu(x),
+\qquad
+d\nu(x)=\frac{1}{2\pi}x^{1/2}(1-x)^{-1/2}\,dx.
+\]
+This is a positive finite measure on \([0,1]\). Hence \((r_n)\) is completely monotone.
+\end{proof}
+
+\begin{lemma}[Simon moment property gives entire moment generating normal form]
+\label{res:simon-leroy-moment-property-normal-form}
+For \(\alpha,\beta,\gamma>0\), if Simon's moment property \(M_{\alpha,\beta,\gamma}\) holds for a positive random variable \(X\), then \((\Gamma(\beta))^\gamma F^{(\gamma)}_{\alpha,\beta}(z)={\bf E}[e^{zX}]\) for every \(z\in\mathbb C\).
+\end{lemma}
+\begin{proof}
+\emph{Setup.}
+Let
+\[
+F^{(\gamma)}_{\alpha,\beta}(z)
+=\sum_{n\ge0}\frac{z^n}{\Gamma(\beta+\alpha n)^\gamma},
+\qquad \alpha,\beta,\gamma>0.
+\]
+
+Assume Simon's moment property \(M_{\alpha,\beta,\gamma}\): there is a positive random variable \(X\) with
+\[
+{\bf E}[X^s]
+=\Gamma(1+s)\left(\frac{\Gamma(\beta)}{\Gamma(\beta+\alpha s)}\right)^\gamma,
+\qquad s>0.
+\]
+
+For \(n\ge0\), this gives
+\[
+{\bf E}[X^n]
+=n!\left(\frac{\Gamma(\beta)}{\Gamma(\beta+\alpha n)}\right)^\gamma.
+\]
+
+Set
+\[
+a_n=\left(\frac{\Gamma(\beta)}{\Gamma(\beta+\alpha n)}\right)^\gamma.
+\]
+By the standard Gamma-ratio asymptotic,
+\[
+\frac{a_{n+1}}{a_n}
+=\left(\frac{\Gamma(\beta+\alpha n)}{\Gamma(\beta+\alpha(n+1))}\right)^\gamma
+\sim (\alpha n)^{-\alpha\gamma}\to0.
+\]
+Hence \(\sum_{n\ge0}a_n z^n\) has infinite radius of convergence.
+
+For \(t\ge0\), monotone convergence gives
+\[
+{\bf E}[e^{tX}]
+=\sum_{n\ge0}\frac{t^n{\bf E}[X^n]}{n!}
+=\sum_{n\ge0}a_n t^n
+=(\Gamma(\beta))^\gamma F^{(\gamma)}_{\alpha,\beta}(t).
+\]
+The right-hand side is finite for every \(t\ge0\). Therefore \(e^{|z|X}\) is integrable for every \(z\in\mathbb C\), and dominated convergence gives
+\[
+{\bf E}[e^{zX}]
+=\sum_{n\ge0}\frac{z^n{\bf E}[X^n]}{n!}
+=(\Gamma(\beta))^\gamma F^{(\gamma)}_{\alpha,\beta}(z),
+\qquad z\in\mathbb C.
+\]
+
+This proves the claim.
+
+For \(x>0\), substituting \(z=-x\) yields
+\[
+F^{(\gamma)}_{\alpha,\beta}(-x)
+=\Gamma(\beta)^{-\gamma}{\bf E}[e^{-xX}].
+\]
+This is a positive Laplace transform. More explicitly, for every \(k\ge0\),
+\[
+(-1)^k\frac{d^k}{dx^k}F^{(\gamma)}_{\alpha,\beta}(-x)
+=\Gamma(\beta)^{-\gamma}{\bf E}[X^k e^{-xX}]\ge0,
+\]
+where differentiating under the expectation is justified on compact subintervals of \((0,\infty)\) by the finite moment \({\bf E}[X^k]\).
+
+This proves the claim.
+\end{proof}
+
+\begin{lemma}[Alzer Berg reciprocal Gini Gamma quotient complete monotonicity forces a plus b at most...]
+\label{res:ab-reciprocal-sum-gate-a-plus-b-le-one-third}
+If \(x\mapsto1/P_{a,b}(u,v;x)\) is completely monotone on \((0,\infty)\) for every \(v>u>0\), then \(a+b\le1/3\).
+\end{lemma}
+\begin{proof}
+For \(a\ne b\), the Gini mean is
+\[
+G_{a,b}(u,v)
+=\left(\frac{u^a+v^a}{u^b+v^b}\right)^{1/(a-b)}.
+\]
+The case \(a=b\) is obtained by continuity. Put \(v=u+h=u(1+t)\). Then
+\[
+\log \frac{G_{a,b}(u,u+h)}{u}
+=\frac{1}{a-b}
+\left[
+\log(1+(1+t)^a)-\log(1+(1+t)^b)
+\right].
+\]
+For a real parameter \(c\),
+\[
+\log(1+(1+t)^c)
+=\log2+\frac c2t+\frac{c(c-2)}8t^2+O(t^3).
+\]
+Thus
+\[
+\log \frac{G_{a,b}(u,u+h)}{u}
+=\frac12t+\frac{a+b-2}{8}t^2+O(t^3).
+\]
+Exponentiating gives
+\[
+G_{a,b}(u,u+h)
+=u+\frac h2+\frac{a+b-1}{8u}h^2+O(h^3).
+\]
+
+Let \(Q_{a,b}=1/P_{a,b}\), \(r=a+b\), and \(y=x+u\). With \(v=u+h\),
+\[
+\log Q_{a,b}(u,u+h;x)
+=\log\Gamma(y+h)-\log\Gamma(y)
+-h\,\psi(x+G_{a,b}(u,u+h)).
+\]
+Using the Gini expansion,
+\[
+x+G_{a,b}(u,u+h)
+=y+\frac h2+\frac{r-1}{8u}h^2+O(h^3).
+\]
+Taylor expansion gives
+\[
+\log\Gamma(y+h)-\log\Gamma(y)
+=h\psi(y)+\frac{h^2}{2}\psi'(y)+\frac{h^3}{6}\psi''(y)+O(h^4),
+\]
+and
+\[
+h\psi\left(y+\frac h2+\frac{r-1}{8u}h^2+O(h^3)\right)
+=h\psi(y)+\frac{h^2}{2}\psi'(y)
+h^3\left(\frac{r-1}{8u}\psi'(y)+\frac18\psi''(y)\right)+O(h^4).
+\]
+Therefore
+\[
+\log Q_{a,b}(u,u+h;x)
+=h^3\left(
+\frac{\psi''(y)}{24}
+-\frac{r-1}{8u}\psi'(y)
+\right)+O(h^4).
+\]
+
+Assume \(x\mapsto Q_{a,b}(u,v;x)\) is completely monotone for every \(v>u>0\). Then it is decreasing and nonnegative. Standard Gamma and digamma asymptotics give
+\[
+\lim_{x\to\infty}Q_{a,b}(u,v;x)=1.
+\]
+Hence \(Q_{a,b}(u,v;x)\ge1\), so \(\log Q_{a,b}(u,v;x)\ge0\).
+
+For fixed \(u,x>0\), let \(h\downarrow0\). The leading coefficient in the expansion must be nonnegative:
+\[
+\frac{\psi''(y)}{24}
+-\frac{r-1}{8u}\psi'(y)
+\ge0.
+\]
+Since \(\psi'(y)>0\),
+\[
+r\le 1+\frac{u\psi''(y)}{3\psi'(y)}.
+\]
+Here \(y=x+u\), so for each \(y>0\) and every \(0<u<y\),
+\[
+r\le 1+\frac{u\psi''(y)}{3\psi'(y)}.
+\]
+Letting \(u\uparrow y\) gives
+\[
+r\le 1+\frac{y\psi''(y)}{3\psi'(y)}
+\qquad (y>0).
+\]
+Finally, as \(y\downarrow0\),
+\[
+\psi'(y)\sim y^{-2},
+\qquad
+\psi''(y)\sim -2y^{-3}.
+\]
+Therefore
+\[
+1+\frac{y\psi''(y)}{3\psi'(y)}\to \frac13,
+\]
+and hence
+\[
+a+b=r\le \frac13.
+\]
+\end{proof}
+
+\begin{lemma}[Bulboaca-Zayed gamma quotient derivative sign normal form]
+\label{res:bz-gamma-quotient-derivative-normal-form}
+For \(x>-1\), away from removable points, the sign of \(\widetilde F'(x)\) is the sign of \(N(x)=(x+6)(x^2+6)\psi(x+1)(\log(x^2+6)-\log(x+6))-(x^2+12x-6)\log\Gamma(x+1)\).
+\end{lemma}
+\begin{proof}
+Set
+\[
+P(x)=(x+6)(x^2+6),\qquad Q(x)=x^2+12x-6.
+\]
+For \(x\ge8\), \(Q(x)>0\). The standard inequalities
+\[
+\psi(x+1)>\log x
+\]
+and the Robbins/Stirling upper bound imply
+\[
+\log\Gamma(x+1)\le x\log x
+\qquad (x\ge8).
+\]
+Indeed the Robbins upper bound gives
+\[
+\log\Gamma(x+1)
+<
+\left(x+\frac12\right)\log x-x+\frac12\log(2\pi)+\frac1{12x},
+\]
+and the remaining excess
+\[
+\frac12\log x-x+\frac12\log(2\pi)+\frac1{12x}
+\]
+is already negative at \(x=8\) and decreasing thereafter.
+
+It remains to lower-bound \(D(x)\). Let
+\[
+u(x)=\frac{x^2+6}{x+6}.
+\]
+For \(x\ge8\), \(u(x)>1\), so
+\[
+\log u(x)\ge \frac{2(u(x)-1)}{u(x)+1}.
+\]
+A direct rational simplification gives
+\[
+\frac{2(u(x)-1)}{u(x)+1}
+-\frac{xQ(x)}{P(x)}
+=
+\frac{x^2(x^3-3x^2-18x-78)}
+{(x^2+x+12)(x+6)(x^2+6)}.
+\]
+The denominator is positive, and \(x^3-3x^2-18x-78\) is increasing for \(x\ge8\) and has value \(98>0\) at \(x=8\). Hence
+\[
+D(x)=\log u(x)\ge \frac{xQ(x)}{P(x)}
+\qquad (x\ge8).
+\]
+
+Combining the three inequalities,
+\[
+N(x)
+=P(x)\psi(x+1)D(x)-Q(x)\log\Gamma(x+1)
+>
+P(x)(\log x)D(x)-Q(x)x\log x
+\ge0.
+\]
+Therefore \(N(x)>0\), and consequently
+\[
+\widetilde F'(x)>0
+\qquad (x\ge8).
+\]
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0010}.
+\begin{corollary}[APP-0010: Nielsen \(k\)-beta derivative-ratio monotonicity]
+\label{res:nielsen-k-beta-derivative-ratio-monotonicity}
+For \(k>0\), \(n\ge0\), and \(f_k(x)=x\beta_k(x)\), the ratio \(f_k^{(n+1)}(x)/(f_k^{(n)}(x)f_k^{(n+2)}(x))\) is strictly increasing on \((0,\infty)\) when \(n\) is odd and strictly decreasing on \((0,\infty)\) when \(n\) is even.
+
+This resolves the fixed application label \textbf{APP-0010}: Nielsen \(k\)-beta derivative-ratio monotonicity
+\emph{Source reference.} \cite{app-app-0010-source}.
+\end{corollary}
+\begin{proof}
+Let \(\mu\) be a positive Borel measure on \([0,\infty)\) with finite moments after the tilt \(e^{-xt}\). Define
+\[
+a_j(x)=\int_0^\infty t^j e^{-xt}\,d\mu(t)>0
+\]
+for the needed indices. For fixed \(n\ge0\), set
+\[
+B_n(x)=\frac{a_{n+1}(x)}{a_n(x)a_{n+2}(x)}.
+\]
+Then \(B_n\) is strictly increasing whenever \(a_{n+1}(x)>0\).
+
+Indeed \(a_j'(x)=-a_{j+1}(x)\). Put
+\[
+r_j(x)=\frac{a_{j+1}(x)}{a_j(x)}.
+\]
+Moment log-convexity, equivalently Cauchy--Schwarz applied to
+\[
+\int t^j e^{-xt}\,d\mu(t),
+\]
+gives \(r_{j+1}(x)\ge r_j(x)\). Differentiating,
+\[
+\frac{d}{dx}\log B_n(x)
+=-\frac{a_{n+2}}{a_{n+1}}
++\frac{a_{n+1}}{a_n}
++\frac{a_{n+3}}{a_{n+2}}
+=r_n(x)-r_{n+1}(x)+r_{n+2}(x).
+\]
+Since \(r_{n+2}(x)\ge r_{n+1}(x)\) and \(r_n(x)>0\), the logarithmic derivative is positive. Hence \(B_n\) is strictly increasing.
+
+Let
+\[
+f_k(x)=x\beta_k(x).
+\]
+From the integral representation of \(\beta_k\), integration by parts gives
+\[
+f_k(x)
+=x\int_0^\infty e^{-xt}\frac{dt}{1+e^{-kt}}
+=\frac12+\int_0^\infty e^{-xt}\frac{k e^{-kt}}{(1+e^{-kt})^2}\,dt.
+\]
+Thus \(f_k\) is the Laplace transform of a positive measure consisting of an atom \(1/2\) at \(0\) plus the positive density
+\[
+w_k(t)=\frac{k e^{-kt}}{(1+e^{-kt})^2}
+\]
+on \((0,\infty)\). All tilted moments are finite, and \(a_{j}(x)>0\) for \(j\ge1\).
+
+For \(a_j(x)=(-1)^j f_k^{(j)}(x)\), the bridge lemma gives that
+\[
+B_{k,n}(x)=\frac{a_{n+1}(x)}{a_n(x)a_{n+2}(x)}
+\]
+is strictly increasing for every \(k>0\), \(n\ge0\), and \(x>0\). Since
+\[
+R_{k,n}(x)=(-1)^{n+1}B_{k,n}(x),
+\]
+we get the precise monotonicity law:
+
+if \(n\) is odd, \(R_{k,n}\) is strictly increasing on \((0,\infty)\);
+if \(n\) is even, \(R_{k,n}\) is strictly decreasing on \((0,\infty)\).
+
+This solves the Yin--Zhang Nielsen \(k\)-beta derivative-ratio open problem in the parity-refined form.
+\end{proof}
+
+\begin{proposition}[Baricz V\_q completely monotone in parameter q plus one]
+\label{res:baricz-vq-q-complete-monotonicity}
+For every fixed \(x>0\), the function \(a\mapsto V_{a-1}(x)\) is completely monotone on \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+Put \(u=t^2-x^2\). Then \(t=(u+x^2)^{1/2}\) and
+\[
+dt=\frac{du}{2(u+x^2)^{1/2}}.
+\]
+Since \(e^{x^2}e^{-t^2}=e^{-u}\), the factor \(2\) in the definition cancels the \(1/2\) from \(dt\), giving
+\[
+V_q(x)=\frac1{\Gamma(q+1)}
+\int_0^\infty e^{-u}u^q(u+x^2)^{-1/2}\,du.
+\]
+This integral is finite for \(q>-1\): near \(0\) the integrand is \(O(u^q)\), and at infinity it is exponentially decaying.
+
+For \(r>0\),
+\[
+r^{-1/2}=\frac1{\sqrt\pi}\int_0^\infty s^{-1/2}e^{-rs}\,ds.
+\]
+With \(r=u+x^2\), Tonelli's theorem applies because the integrand is nonnegative. Thus
+\[
+\begin{aligned}
+V_q(x)
+&=\frac1{\Gamma(q+1)\sqrt\pi}
+\int_0^\infty\int_0^\infty
+e^{-u}u^q s^{-1/2}e^{-(u+x^2)s}\,ds\,du\\
+&=\frac1{\Gamma(q+1)\sqrt\pi}
+\int_0^\infty s^{-1/2}e^{-x^2s}
+\left(\int_0^\infty u^q e^{-(1+s)u}\,du\right)\,ds\\
+&=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-(q+1)}\,ds.
+\end{aligned}
+\]
+The last step uses
+\[
+\int_0^\infty u^q e^{-(1+s)u}\,du
+=\frac{\Gamma(q+1)}{(1+s)^{q+1}}.
+\]
+
+This proves the claim.
+
+Let \(a=q+1>0\). The normal form becomes
+\[
+V_{a-1}(x)=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds.
+\]
+For each integer \(n\ge0\), differentiation under the integral gives
+\[
+(-1)^n\frac{d^n}{da^n}V_{a-1}(x)
+=\frac1{\sqrt\pi}\int_0^\infty
+(\log(1+s))^n s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds\ge0.
+\]
+The differentiation is justified locally uniformly in \(a>0\): near \(s=0\), \((\log(1+s))^n s^{-1/2}=O(s^{n-1/2})\), and as \(s\to\infty\), the factor \(e^{-x^2s}\) dominates every logarithmic and polynomial factor.
+
+Thus \(a\mapsto V_{a-1}(x)\) is completely monotone on \((0,\infty)\). Equivalently, after the change of variables \(y=\log(1+s)\), it is a positive Laplace transform in \(a\).
+
+This proves the claim.
+
+For \(a>0\), write
+\[
+F_x(a)=V_{a-1}(x)
+=\int_{(0,\infty)} e^{-ay}\,d\nu_x(y),
+\]
+where \(\nu_x\) is the positive pushforward of
+\[
+\frac1{\sqrt\pi}s^{-1/2}e^{-x^2s}\,ds
+\]
+under \(y=\log(1+s)\). This measure is not concentrated at one point because it has positive density on \(s>0\), hence on \(y>0\).
+
+For \(a_1\ne a_2\) and \(0<\lambda<1\), strict Holder inequality gives
+\[
+F_x(\lambda a_1+(1-\lambda)a_2)
+<
+F_x(a_1)^\lambda F_x(a_2)^{1-\lambda}.
+\]
+Strictness holds because \(e^{-a_1y}\) and \(e^{-a_2y}\) are not proportional \(\nu_x\)-almost everywhere unless \(\nu_x\) is supported at a single \(y\).
+
+Thus \(a\mapsto F_x(a)\) is strictly log-convex on \((0,\infty)\). Since \(a=q+1\), the shift preserves strict log-convexity, so \(q\mapsto V_q(x)\) is strictly log-convex on \((-1,\infty)\) for every fixed \(x>0\).
+
+This proves the claim.
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0022}.
+\begin{corollary}[APP-0022: Chen-Choi Gurland gamma-ratio conjecture is logarithmically completely monotone]
+\label{res:chen-choi-gurland-logf-strict-cm}
+For \(F(x)=\Gamma(1/x)\Gamma(3/x)/\Gamma(2/x)^2\), the function \(x\mapsto\log F(x)\) is strictly completely monotone on \((0,\infty)\).
+
+This resolves the fixed application label \textbf{APP-0022}: Prove logarithmic complete monotonicity of the Gurland gamma ratio conjectured in the source.
+\emph{Source reference.} \cite{app-app-0022-source}.
+\end{corollary}
+\begin{proof}
+Set
+\[
+  A(u)=2\log(u+2)-\log(u+1)-\log(u+3).
+\]
+The identity
+\[
+ A(u)=\int_0^\infty e^{-ut}{e^{-t}(1-e^{-t})^2\over t}\,dt
+\]
+shows that \(A\) is strictly completely monotone.  The Weierstrass product for
+\(\Gamma\) gives
+\[
+  \log F(x)=\log {4\over3}+\sum_{m\ge1}A(mx).
+\]
+Termwise differentiation is justified on compact subintervals of
+\((0,\infty)\), and each differentiated summand has the required strict
+alternating sign.  This proves logarithmic complete monotonicity.
+\end{proof}
+
+\begin{proposition}[Sibisi Prabhakar Q measure is stable subordination of transform-normalized Pollard meas...]
+\label{res:prabhakar-q-stable-subordination-normal-form}
+For \(0<\alpha<1\), \(\gamma>0\), \(\beta>\alpha\gamma\), and \(\lambda>0\), let \(P^\gamma_{\alpha,\beta}\) be Sibisi's transform-normalized Pollard measure satisfying \(E^\gamma_{\alpha,\beta}(-u)=\int_0^\infty e^{-ur}\,dP^\gamma_{\alpha,\beta}(r)\). Then the measure \(Q^\gamma_{\alpha,\beta}(A\mid\lambda)=\int\Pr((\lambda r)^{1/\alpha}S_\alpha\in A)\,dP^\gamma_{\alpha,\beta}(r)\) satisfies \(E^\gamma_{\alpha,\beta}(-\lambda x^\alpha)=\int_0^\infty e^{-xt}\,dQ^\gamma_{\alpha,\beta}(t\mid\lambda)\).
+\end{proposition}
+\begin{proof}
+Let \(P\) be a finite positive measure on \([0,\infty)\), let
+\[
+F(u)=\int_0^\infty e^{-ur}\,dP(r),
+\]
+let \(0<\alpha<1\), \(\lambda>0\), and let \(S_\alpha\) be positive \(\alpha\)-stable:
+\[
+\mathbb E e^{-xS_\alpha}=e^{-x^\alpha}.
+\]
+Define a finite positive measure \(Q\) by
+\[
+Q(A)=\int_{[0,\infty)}
+\Pr\{(\lambda r)^{1/\alpha}S_\alpha\in A\}\,dP(r).
+\]
+Then Tonelli's theorem gives, for \(x>0\),
+\[
+\int_0^\infty e^{-xt}\,dQ(t)
+=\int_{[0,\infty)}
+\mathbb E e^{-x(\lambda r)^{1/\alpha}S_\alpha}\,dP(r)
+=\int_{[0,\infty)}e^{-\lambda r x^\alpha}\,dP(r)
+=F(\lambda x^\alpha).
+\]
+
+Apply the lemma to Sibisi's transform-normalized \(P=P^\gamma_{\alpha,\beta}\) and
+\[
+F(u)=E^\gamma_{\alpha,\beta}(-u).
+\]
+For \(0<\alpha<1\), \(\gamma>0\), \(\beta>\alpha\gamma\), and \(\lambda>0\), set
+\[
+Q^\gamma_{\alpha,\beta}(A\mid\lambda)
+=\int_{[0,\infty)}
+\Pr\{(\lambda r)^{1/\alpha}S_\alpha\in A\}\,
+dP^\gamma_{\alpha,\beta}(r).
+\]
+Then
+\[
+\int_0^\infty e^{-xt}\,dQ^\gamma_{\alpha,\beta}(t\mid\lambda)
+=E^\gamma_{\alpha,\beta}(-\lambda x^\alpha).
+\]
+By uniqueness of finite Laplace transforms, this is Sibisi's \(Q^\gamma_{\alpha,\beta}(\cdot\mid\lambda)\).
+
+If \(S_\alpha\) has density \(f_\alpha\), then the non-atomic density part is
+\[
+q^\gamma_{\alpha,\beta}(t\mid\lambda)
+=\int_{(0,\infty)}
+(\lambda r)^{-1/\alpha}
+f_\alpha\!\left(\frac{t}{(\lambda r)^{1/\alpha}}\right)
+dP^\gamma_{\alpha,\beta}(r),
+\]
+with an atom \(P^\gamma_{\alpha,\beta}(\{0\})\delta_0\) if \(P^\gamma_{\alpha,\beta}\) has an atom at zero. When \(P^\gamma_{\alpha,\beta}\) is represented by Sibisi's Pollard density \(p^\gamma_{\alpha,\beta}(r)\), this becomes
+\[
+q^\gamma_{\alpha,\beta}(t\mid\lambda)
+=\int_0^\infty
+(\lambda r)^{-1/\alpha}
+f_\alpha\!\left(\frac{t}{(\lambda r)^{1/\alpha}}\right)
+p^\gamma_{\alpha,\beta}(r)\,dr.
+\]
+
+Because
+\[
+E^\gamma_{\alpha,\beta}(0)=\frac1{\Gamma(\beta)},
+\]
+the representing measures \(P^\gamma_{\alpha,\beta}\) and \(Q^\gamma_{\alpha,\beta}(\cdot\mid\lambda)\) have total mass \(1/\Gamma(\beta)\). They are finite positive measures, not generally probability measures. The normalized probability version is
+\[
+\widehat Q^\gamma_{\alpha,\beta}=\Gamma(\beta)Q^\gamma_{\alpha,\beta},
+\qquad
+\mathcal L\widehat Q^\gamma_{\alpha,\beta}(x)
+=\Gamma(\beta)E^\gamma_{\alpha,\beta}(-\lambda x^\alpha).
+\]
+
+The boundary \(\beta=\alpha\gamma\) is not included here because Sibisi's ordinary convolution density uses \(1/\Gamma(\beta-\alpha\gamma)\). A limiting treatment is a separate open frontier.
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0012}.
+\begin{corollary}[APP-0012: Baricz \(V\_q\) strict \(q\)-log-convexity]
+\label{res:baricz-vq-strict-q-logconvexity}
+For every fixed \(x>0\), the function \(q\mapsto V_q(x)\) is strictly log-convex on \((-1,\infty)\).
+
+This resolves the fixed application label \textbf{APP-0012}: Baricz \(V\_q\) strict \(q\)-log-convexity
+\emph{Source reference.} \cite{app-app-0012-source}.
+\end{corollary}
+\begin{proof}
+Put \(u=t^2-x^2\).  Then
+\begin{equation}
+\label{eq:baricz-u-normal-form}
+V_q(x)=\frac1{\Gamma(q+1)}
+\int_0^\infty e^{-u}u^q(u+x^2)^{-1/2}\,du.
+\end{equation}
+Using
+\[
+r^{-1/2}=\frac1{\sqrt\pi}\int_0^\infty s^{-1/2}e^{-rs}\,ds
+\]
+and Tonelli's theorem, we obtain
+\begin{equation}
+\label{eq:baricz-laplace-normal-form}
+V_q(x)=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-(q+1)}\,ds.
+\end{equation}
+Let \(a=q+1>0\).  Differentiation under the integral gives
+\begin{equation}
+\label{eq:baricz-complete-monotonicity}
+(-1)^n\frac{d^n}{da^n}V_{a-1}(x)
+=\frac1{\sqrt\pi}\int_0^\infty
+(\log(1+s))^n s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds\ge0.
+\end{equation}
+Equivalently, after the change of variables \(y=\log(1+s)\), \(V_{a-1}(x)\) is a positive Laplace transform in \(a\).  The representing measure is not concentrated at a single point, because the density in \eqref{eq:baricz-laplace-normal-form} is positive on \(s>0\).  Strict Holder inequality for two different exponents therefore gives strict log-convexity in \(a\), and the shift \(a=q+1\) gives the stated strict log-convexity in \(q\).
+\end{proof}
+
+\begin{lemma}[Baricz V\_q parameter q log-convexity open problem]
+\label{res:baricz-vq-q-logconvexity-open-problem}
+For Baricz's function \(V_q(x)=\frac{2e^{x^2}}{\Gamma(q+1)}\int_x^\infty e^{-t^2}(t^2-x^2)^q\,dt\), prove that for every fixed \(x>0\), the map \(q\mapsto V_q(x)\) is log-convex on \((-1,\infty)\).
+\end{lemma}
+\begin{proof}
+Put \(u=t^2-x^2\). Then \(t=(u+x^2)^{1/2}\) and
+\[
+dt=\frac{du}{2(u+x^2)^{1/2}}.
+\]
+Since \(e^{x^2}e^{-t^2}=e^{-u}\), the factor \(2\) in the definition cancels the \(1/2\) from \(dt\), giving
+\[
+V_q(x)=\frac1{\Gamma(q+1)}
+\int_0^\infty e^{-u}u^q(u+x^2)^{-1/2}\,du.
+\]
+This integral is finite for \(q>-1\): near \(0\) the integrand is \(O(u^q)\), and at infinity it is exponentially decaying.
+
+For \(r>0\),
+\[
+r^{-1/2}=\frac1{\sqrt\pi}\int_0^\infty s^{-1/2}e^{-rs}\,ds.
+\]
+With \(r=u+x^2\), Tonelli's theorem applies because the integrand is nonnegative. Thus
+\[
+\begin{aligned}
+V_q(x)
+&=\frac1{\Gamma(q+1)\sqrt\pi}
+\int_0^\infty\int_0^\infty
+e^{-u}u^q s^{-1/2}e^{-(u+x^2)s}\,ds\,du\\
+&=\frac1{\Gamma(q+1)\sqrt\pi}
+\int_0^\infty s^{-1/2}e^{-x^2s}
+\left(\int_0^\infty u^q e^{-(1+s)u}\,du\right)\,ds\\
+&=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-(q+1)}\,ds.
+\end{aligned}
+\]
+The last step uses
+\[
+\int_0^\infty u^q e^{-(1+s)u}\,du
+=\frac{\Gamma(q+1)}{(1+s)^{q+1}}.
+\]
+
+This proves the claim.
+
+Let \(a=q+1>0\). The normal form becomes
+\[
+V_{a-1}(x)=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds.
+\]
+For each integer \(n\ge0\), differentiation under the integral gives
+\[
+(-1)^n\frac{d^n}{da^n}V_{a-1}(x)
+=\frac1{\sqrt\pi}\int_0^\infty
+(\log(1+s))^n s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds\ge0.
+\]
+The differentiation is justified locally uniformly in \(a>0\): near \(s=0\), \((\log(1+s))^n s^{-1/2}=O(s^{n-1/2})\), and as \(s\to\infty\), the factor \(e^{-x^2s}\) dominates every logarithmic and polynomial factor.
+
+Thus \(a\mapsto V_{a-1}(x)\) is completely monotone on \((0,\infty)\). Equivalently, after the change of variables \(y=\log(1+s)\), it is a positive Laplace transform in \(a\).
+
+This proves the claim.
+
+For \(a>0\), write
+\[
+F_x(a)=V_{a-1}(x)
+=\int_{(0,\infty)} e^{-ay}\,d\nu_x(y),
+\]
+where \(\nu_x\) is the positive pushforward of
+\[
+\frac1{\sqrt\pi}s^{-1/2}e^{-x^2s}\,ds
+\]
+under \(y=\log(1+s)\). This measure is not concentrated at one point because it has positive density on \(s>0\), hence on \(y>0\).
+
+For \(a_1\ne a_2\) and \(0<\lambda<1\), strict Holder inequality gives
+\[
+F_x(\lambda a_1+(1-\lambda)a_2)
+<
+F_x(a_1)^\lambda F_x(a_2)^{1-\lambda}.
+\]
+Strictness holds because \(e^{-a_1y}\) and \(e^{-a_2y}\) are not proportional \(\nu_x\)-almost everywhere unless \(\nu_x\) is supported at a single \(y\).
+
+Thus \(a\mapsto F_x(a)\) is strictly log-convex on \((0,\infty)\). Since \(a=q+1\), the shift preserves strict log-convexity, so \(q\mapsto V_q(x)\) is strictly log-convex on \((-1,\infty)\) for every fixed \(x>0\).
+
+This proves the claim.
+\end{proof}
+
+\begin{theorem}[Simon gamma quotient derivative is CM with positive Laplace density]
+\label{res:simon-gamma-quotient-derivative-positive-laplace-density}
+For every \(0<\alpha<1\), the derivative of \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is completely monotone, with a positive Laplace-density representation obtained from the decreasing kernel \(J_\alpha\).
+\end{theorem}
+\begin{proof}
+For \(0<\alpha<1\), put
+\[
+F_\alpha(x)=\frac{\Gamma(x+\alpha)}{\Gamma(x)x^\alpha},\qquad x>0.
+\]
+Then \(F_\alpha\) is a Bernstein function. In fact, \(1-F_\alpha\) is completely monotone.
+
+The stronger route asserting that \(F_\alpha\) is a complete Bernstein function is false.
+
+Let \(\beta=1-\alpha\in(0,1)\). Since \(\Gamma(x+1)=x\Gamma(x)\), the beta integral gives
+\[
+F_\alpha(x)
+=x^\beta\frac{\Gamma(x+\alpha)}{\Gamma(x+1)}
+=\frac{x^\beta}{\Gamma(\beta)}
+\int_0^\infty e^{-xu}(e^u-1)^{-\alpha}\,du.
+\]
+Also
+\[
+1=\frac{x^\beta}{\Gamma(\beta)}
+\int_0^\infty e^{-xu}u^{-\alpha}\,du.
+\]
+Thus
+\[
+1-F_\alpha(x)
+=\frac{x^\beta}{\Gamma(\beta)}
+\int_0^\infty e^{-xu}\left(u^{-\alpha}-(e^u-1)^{-\alpha}\right)\,du.
+\]
+
+Define
+\[
+J_\alpha(t)=\int_0^t (t-u)^{\alpha-1}(e^u-1)^{-\alpha}\,du.
+\]
+By Laplace convolution,
+\[
+\mathcal L[J_\alpha](x)
+=\Gamma(\alpha)x^{-\alpha}
+\int_0^\infty e^{-xu}(e^u-1)^{-\alpha}\,du.
+\]
+Therefore
+\[
+F_\alpha(x)
+=\frac{x}{\Gamma(\alpha)\Gamma(1-\alpha)}\mathcal L[J_\alpha](x).
+\]
+
+After the substitution \(u=tv\),
+\[
+J_\alpha(t)=
+\int_0^1
+(1-v)^{\alpha-1}
+\left(\frac{t}{e^{tv}-1}\right)^\alpha\,dv.
+\]
+For fixed \(v\in(0,1]\), the function
+\[
+t\mapsto \frac{t}{e^{tv}-1}
+\]
+is decreasing because
+\[
+\frac{d}{dt}\frac{t}{e^{tv}-1}
+=
+\frac{e^{tv}-1-tv e^{tv}}{(e^{tv}-1)^2}\le0.
+\]
+The integrand is dominated by \((1-v)^{\alpha-1}v^{-\alpha}\), which is integrable on \((0,1)\). Hence \(J_\alpha\) is decreasing. Moreover,
+\[
+J_\alpha(0+)
+=\int_0^1(1-v)^{\alpha-1}v^{-\alpha}\,dv
+=\Gamma(\alpha)\Gamma(1-\alpha),
+\]
+and \(J_\alpha(t)\to0\) as \(t\to\infty\).
+
+Let \(\mu_\alpha=-dJ_\alpha\). This is a positive finite measure with total mass
+\[
+\mu_\alpha([0,\infty))=\Gamma(\alpha)\Gamma(1-\alpha).
+\]
+Stieltjes integration by parts gives, for \(x>0\),
+\[
+\int_0^\infty e^{-xt}\,\mu_\alpha(dt)
+=
+\Gamma(\alpha)\Gamma(1-\alpha)-x\mathcal L[J_\alpha](x).
+\]
+Using the formula for \(F_\alpha\),
+\[
+1-F_\alpha(x)
+=
+\frac{1}{\Gamma(\alpha)\Gamma(1-\alpha)}
+\int_0^\infty e^{-xt}\,\mu_\alpha(dt).
+\]
+Thus \(1-F_\alpha\) is completely monotone.
+
+Consequently,
+\[
+F_\alpha'(x)
+=
+\frac{1}{\Gamma(\alpha)\Gamma(1-\alpha)}
+\int_0^\infty t e^{-xt}\,\mu_\alpha(dt),
+\]
+so \(F_\alpha'\) is completely monotone. Since \(F_\alpha(x)>0\), \(F_\alpha\) is a Bernstein function.
+
+For \(t>0\), differentiating the \(v\)-integral under the same endpoint domination gives \(\mu_\alpha(dt)=m_\alpha(t)\,dt\), where
+\[
+m_\alpha(t)
+=
+\alpha\int_0^1
+(1-v)^{\alpha-1}
+\left(\frac{t}{e^{tv}-1}\right)^\alpha
+\left(
+\frac{v e^{tv}}{e^{tv}-1}-\frac1t
+\right)\,dv.
+\]
+The bracket is positive, because with \(a=tv>0\),
+\[
+\frac{a e^a}{e^a-1}>1.
+\]
+Therefore the Laplace-density route in the argument is also closed.
+
+The case \(\alpha=1/2\) is the specialization
+\[
+F_{1/2}(x)=\frac{\Gamma(x+1/2)}{\Gamma(x)\sqrt{x}},
+\]
+and the same complement-CM representation proves that \(F_{1/2}\) is Bernstein.
+
+For \(z=-r+i0\) with \(r\in(\alpha,1)\), take the upper-lip branch of \(z^{-\alpha}\). Then
+\[
+F_\alpha(-r+i0)
+=
+\frac{\Gamma(\alpha-r)}{\Gamma(-r)}r^{-\alpha}e^{-i\pi\alpha}.
+\]
+Here \(\Gamma(\alpha-r)<0\) and \(\Gamma(-r)<0\), so the real gamma ratio is positive. Hence
+\[
+\operatorname{Im} F_\alpha(-r+i0)<0.
+\]
+A complete Bernstein function has the Pick property and maps the upper half-plane into itself. Therefore \(F_\alpha\) is not a complete Bernstein function for \(0<\alpha<1\).
+\end{proof}
+
+\begin{lemma}[Simon gamma quotient is Bernstein for alpha in (0,1)]
+\label{res:simon-gamma-quotient-bf-alpha-window-open-problem}
+For every \(0<\alpha<1\), the function \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is a Bernstein function on \((0,\infty)\).
+\end{lemma}
+\begin{proof}
+Source artifacts:
+
+Gomilko--Tomilov source: arXiv:2210.03474, "To the theory of generalized Stieltjes transforms"
+Simon source: Thomas Simon, "Moment problems related to Bernstein functions", Annales de la Faculte des sciences de Toulouse 29 (2020), 577--594, DOI 10.5802/afst.1640
+
+For \(\alpha,\beta>0\), \(s,t\ge0\), and \(x>0\), the beta identity gives
+\[
+(x+s)^{-\alpha}(x+t)^{-\beta}
+=
+\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}
+\int_0^1
+\frac{u^{\alpha-1}(1-u)^{\beta-1}}
+{\bigl(x+us+(1-u)t\bigr)^{\alpha+\beta}}
+\,du.
+\]
+
+If
+\[
+f(x)=\int_{[0,\infty)}(x+s)^{-\alpha}\,d\mu(s),
+\qquad
+g(x)=\int_{[0,\infty)}(x+t)^{-\beta}\,d\nu(t),
+\]
+then Tonelli gives
+\[
+f(x)g(x)=\int_{[0,\infty)}(x+r)^{-(\alpha+\beta)}\,d\kappa(r),
+\]
+where \(\kappa\) is the positive pushforward measure defined by
+\[
+\int \varphi(r)\,d\kappa(r)
+=
+\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}
+\int\!\!\int\!\!\int_0^1
+\varphi\bigl(us+(1-u)t\bigr)
+u^{\alpha-1}(1-u)^{\beta-1}
+\,du\,d\mu(s)\,d\nu(t).
+\]
+
+Thus pure generalized Stieltjes transforms satisfy
+\[
+\mathcal S_\alpha^{0}\mathcal S_\beta^{0}\subseteq \mathcal S_{\alpha+\beta}^{0}.
+\]
+With the usual nonnegative constant term convention, constants and lower-order terms require the standard order-lift convention already recorded in the source vocabulary; no application should rely on constants being absorbed unless that convention is explicitly cited.
+
+For \(0<\alpha<1\), set
+\[
+F_\alpha(x)=\frac{\Gamma(x+\alpha)}{\Gamma(x)x^\alpha},
+\qquad
+L_\alpha(x)=\log F_\alpha(x).
+\]
+Then
+\[
+L_\alpha'(x)
+=
+\psi(x+\alpha)-\psi(x)-\frac{\alpha}{x}
+=
+\int_0^\infty e^{-xt}
+\left(
+\frac{1-e^{-\alpha t}}{1-e^{-t}}-\alpha
+\right)\,dt.
+\]
+The kernel is positive for \(t>0\), because \(u\mapsto 1-e^{-ut}\) is strictly concave on \([0,1]\), hence
+\[
+1-e^{-\alpha t}>\alpha(1-e^{-t}).
+\]
+Therefore \(L_\alpha'\) is completely monotone, and \(1/F_\alpha\) is logarithmically completely monotone.
+
+This does not prove that \(F_\alpha\) is a Bernstein function. Simon's source explicitly states that the Bernstein character of the corresponding \(\Phi(\lambda)=\Gamma(1-t+\lambda)/(\lambda^{1-t}\Gamma(\lambda))\) is a puzzling question, and also says the reciprocal LCM property is necessary but not sufficient.
+\end{proof}

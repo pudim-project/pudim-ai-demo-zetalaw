@@ -1,0 +1,31 @@
+---
+id: "T-Erdos536-nondegenerate-lower-rank-stars-hit-top-code"
+type: "theorem"
+title: "Erdos 536 nondegenerate lower rank moving star fibers hit occupied top code"
+status: "open"
+tags: ["erdos-536", "moving-star", "nondegenerate-lower-rank", "open", "predecessor-obstruction", "theorem"]
+parents: ["T-Erdos536-star-fiber-union-occupied-top-density"]
+refs: ["attack-plans/AP-20260531T203012-erdos536-predecessor-obstruction.json", "librarian/audits/LA-20260531T203012-erdos536-predecessor-obstruction-attack-plan.json", "raw/student/20260531T202634-erdos536-locally-unique-centers.md", "theory/nodes/T-Erdos536-linear-window-predecessor-star-code-avoids-pushforward.json", "theory/nodes/T-Erdos536-star-fiber-union-occupied-top-density.json"]
+---
+
+# Theorem: Erdos 536 nondegenerate lower rank moving star fibers hit occupied top code
+
+## Statement
+
+Nondegenerate-lower-rank theorem: in a positive-mass fork-free threshold-sharp moving-star system \(\mathcal F_k\subseteq H_{k,\theta}\) with locally unique centers, suppose a nonnegligible part of the lower-star incidence has defect size \(|C|-r\) bounded away from the predecessor value \(1\) on central top windows. More concretely, for some \(\delta>0\), the relevant lower-star fibers contain ranks \(r\le |C|-\delta S_k\) on positive \(\nu_k\)-mass of occupied tops. Then the lower-star union push-forward from two incompatible center classes has nonnegligible intersection with the occupied top code. Hence the occupied-top density conclusion of `T-Erdos536-star-fiber-union-occupied-top-density` holds.
+
+## Dependencies
+
+- [[wiki/nodes/T-Erdos536-star-fiber-union-occupied-top-density|Erdos 536 occupied top density for unions of threshold sharp star fibers]]
+
+## Proof and provenance references
+
+- `attack-plans/AP-20260531T203012-erdos536-predecessor-obstruction.json`
+- `librarian/audits/LA-20260531T203012-erdos536-predecessor-obstruction-attack-plan.json`
+- `raw/student/20260531T202634-erdos536-locally-unique-centers.md`
+- `theory/nodes/T-Erdos536-linear-window-predecessor-star-code-avoids-pushforward.json`
+- `theory/nodes/T-Erdos536-star-fiber-union-occupied-top-density.json`
+
+## Tags
+
+`erdos-536`, `moving-star`, `nondegenerate-lower-rank`, `open`, `predecessor-obstruction`, `theorem`

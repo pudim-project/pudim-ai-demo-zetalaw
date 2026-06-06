@@ -1,0 +1,30 @@
+---
+id: "T-Bazhlekova-Wright-branch-audited-kernel-positive"
+type: "theorem"
+title: "Bazhlekova Wright branch audited positive kernel representation"
+status: "open"
+tags: ["attack-plan", "bazhlekova", "open", "positive-kernel", "theorem", "wright-function"]
+parents: ["T-Bazhlekova-no-cover-seeds-Wright-topcap-positive"]
+refs: ["attack-plans/AP-20260601T021500-bazhlekova-post-ten-wright-tail.json", "raw/student/20260601T021000-bazhlekova-wright-post-ten-route-triage.md", "theory/nodes/T-Bazhlekova-Wright-density-topcap-bridge-normal-form.json", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
+---
+
+# Theorem: Bazhlekova Wright branch audited positive kernel representation
+
+## Statement
+
+For the no-cover seed Wright functions, a branch-audited Hankel, Mellin-Barnes, fractional-differential, or total-positivity representation gives a manifestly nonnegative kernel for \(\mathcal W_{3/4,11/10}(x)\) and \(\mathcal W_{11/20,21/20}(x)\) on \((0,\infty)\).
+
+## Dependencies
+
+- [[wiki/nodes/T-Bazhlekova-no-cover-seeds-Wright-topcap-positive|Bazhlekova no cover seeds Wright topcap limit positive]]
+
+## Proof and provenance references
+
+- `attack-plans/AP-20260601T021500-bazhlekova-post-ten-wright-tail.json`
+- `raw/student/20260601T021000-bazhlekova-wright-post-ten-route-triage.md`
+- `theory/nodes/T-Bazhlekova-Wright-density-topcap-bridge-normal-form.json`
+- `wiki/notes/frontier-bazhlekova-square-root-bf-gap.md`
+
+## Tags
+
+`attack-plan`, `bazhlekova`, `open`, `positive-kernel`, `theorem`, `wright-function`

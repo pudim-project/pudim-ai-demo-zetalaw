@@ -1,0 +1,643 @@
+\section{Counterexamples and endpoint obstructions}
+A unified theory should also say where its methods stop.  Endpoint expansions, rational witnesses, and explicit sign failures prevent overstrong conjectures from being absorbed as theorems and clarify which positivity hypotheses are actually necessary.
+
+The results here are separated from the positive theory because their role is diagnostic: they mark boundaries, remove false universal claims, and explain why later theorems need their stated assumptions.  When a counterexample solves a fixed APP, the APP label is preserved, but the presentation emphasizes the obstruction rather than bookkeeping chronology.
+The next result applies the preceding method to the fixed source problem \textbf{APP-0042}.
+\begin{counterexample}[APP-0042: Modified Bessel square-root log-concavity fails]
+\label{res:not-bessel-i-sqrt-log-concavity-nu-ge-0}
+not(For every \(\nu\ge0\), the function \(u\mapsto \sqrt{u}\,I_\nu(u)\) is strictly log-concave on \((0,\infty)\).)
+
+This resolves the fixed application label \textbf{APP-0042}: Is \(u\mapsto \sqrt{u}I\_\nu(u)\) strictly log-concave for all \(\nu\ge0\)?
+\emph{Source reference.} \cite{app-app-0042-source}.
+\end{counterexample}
+\begin{proof}
+Let
+\[
+g_\nu(u)=\log(\sqrt u\,I_\nu(u)),
+\qquad
+r_\nu(u)=\frac{I_\nu'(u)}{I_\nu(u)}.
+\]
+Then
+\[
+g_\nu''(u)=r_\nu'(u)-\frac{1}{2u^2}.
+\]
+The modified Bessel equation
+\[
+u^2I_\nu''(u)+uI_\nu'(u)-(u^2+\nu^2)I_\nu(u)=0
+\]
+gives
+\[
+\frac{I_\nu''(u)}{I_\nu(u)}
+=1+\frac{\nu^2}{u^2}-\frac{r_\nu(u)}{u}.
+\]
+Since
+\[
+r_\nu'(u)=\frac{I_\nu''(u)}{I_\nu(u)}-r_\nu(u)^2,
+\]
+we get
+\[
+g_\nu''(u)
+=
+1+\frac{\nu^2-\frac12}{u^2}
+-\frac{r_\nu(u)}{u}
+-r_\nu(u)^2.
+\]
+This proves the claim.
+
+For \(\nu=0\),
+\[
+r_0(u)=\frac{I_0'(u)}{I_0(u)}=\frac{I_1(u)}{I_0(u)}.
+\]
+At \(u=10\), the Riccati expression is
+\[
+g_0''(10)=\frac{199}{200}-\frac{r_0(10)}{10}-r_0(10)^2.
+\]
+It is enough to prove
+\[
+r_0(10)<\frac{9487}{10000},
+\]
+because
+\[
+\frac{199}{200}
+-\frac{1}{10}\frac{9487}{10000}
+-\left(\frac{9487}{10000}\right)^2
+=\frac{9831}{100000000}>0.
+\]
+
+\[
+I_0(10)=\sum_{k=0}^{\infty}\frac{25^k}{(k!)^2},
+\qquad
+I_1(10)=\sum_{k=0}^{\infty}\frac{5\cdot25^k}{k!(k+1)!}.
+\]
+With \(N=20\), set
+\[
+L_0=\sum_{k=0}^{20}\frac{25^k}{(k!)^2}<I_0(10).
+\]
+For the \(I_1\) tail after \(N=20\), the term ratio is bounded by
+\[
+q=\frac{25}{22\cdot23}<1,
+\]
+so the script computes an exact rational upper bound \(U_1>I_1(10)\) and verifies
+\[
+10000\,U_1<9487\,L_0.
+\]
+Therefore \(I_1(10)/I_0(10)<9487/10000\), and hence
+\[
+g_0''(10)>0.
+\]
+
+This proves the claim.
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0017}.
+\begin{counterexample}[APP-0017: Baricz gamma-quotient Bernstein-for-all problem has a rational counterexample]
+\label{res:baricz-gamma-quotient-a2b3-not-bf}
+For \(a=2\) and \(b=3\), the Baricz Gamma quotient \(x\mapsto\Gamma(x)\Gamma(x-a+b)/(\Gamma(x-a)\Gamma(x+b))\) is not a Bernstein function on \((2,\infty)\).
+
+This resolves the fixed application label \textbf{APP-0017}: Decide whether the gamma quotient is Bernstein throughout the full parameter range.
+\emph{Source reference.} \cite{app-app-0017-source}.
+\end{counterexample}
+\begin{proof}
+Take \(a=2\), \(b=3\), and set \(y=x-2\).  The quotient becomes
+\[
+  g(y)={y(y+1)\over (y+3)(y+4)} .
+\]
+A direct differentiation gives
+\[
+  g'''(y)=
+ {36(y^4+8y^3+12y^2-40y-94)\over (y+3)^4(y+4)^4}.
+\]
+Thus \(g'''(1)<0\).  If \(g\) were Bernstein, then \(g'\) would be completely
+monotone and hence \(g'''\ge0\).  The displayed value contradicts that
+necessary condition.
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0041}.
+\begin{corollary}[APP-0041: Qi \(h\_\lambda\) degree-four complete-monotonicity conjecture is false]
+\label{res:ma-weigert-log-function-dk-chain-conjecture}
+In the Ma--Weigert log-function class \(\mathcal F_{1,n}\), the derivative-sign regions \(D_k=\{f:L^k f\ge0\}\), with \(L=-d/dx\), form a descending chain: \(D_{k+1}\subseteq D_k\) for every \(k,n\).
+
+This resolves the fixed application label \textbf{APP-0041}: Settle Qi's degree-4 complete-monotonicity conjecture for \(h\_\lambda\).
+\emph{Source reference.} \cite{app-app-0041-source}.
+\end{corollary}
+\begin{proof}
+We first prove that for each \(k\ge0\),
+\[
+L^k f(x)=x^{-k-1}p_k(\log x)
+\]
+for some polynomial \(p_k\).
+
+For \(k=0\), this is the definition with \(p_0=p\).  Suppose
+\[
+L^k f(x)=x^{-k-1}p_k(\log x).
+\]
+Then
+\[
+\begin{aligned}
+L^{k+1}f(x)
+&=-\frac{d}{dx}\left(x^{-k-1}p_k(\log x)\right)\\
+&=x^{-k-2}\left((k+1)p_k(\log x)-p_k'(\log x)\right).
+\end{aligned}
+\]
+Thus \(p_{k+1}(y)=(k+1)p_k(y)-p_k'(y)\), which is again a polynomial.
+
+Since every polynomial in \(\log x\) grows slower than every positive power of \(x\),
+\[
+x^{-k-1}p_k(\log x)\to0
+\qquad (x\to\infty).
+\]
+Therefore
+\[
+\lim_{x\to\infty}L^k f(x)=0
+\]
+for every \(k\ge0\).
+
+Assume \(f\in D_{k+1}\).  Then
+\[
+L^{k+1}f(x)\ge0
+\]
+on \((0,\infty)\).  Put
+\[
+g(x)=L^k f(x).
+\]
+By definition of \(L\),
+\[
+-g'(x)=L^{k+1}f(x)\ge0.
+\]
+Using \(g(x)\to0\) as \(x\to\infty\), integrate from \(x\) to \(R\):
+\[
+g(x)-g(R)=\int_x^R L^{k+1}f(t)\,dt.
+\]
+Letting \(R\to\infty\) gives
+\[
+L^k f(x)=g(x)=\int_x^\infty L^{k+1}f(t)\,dt\ge0.
+\]
+Hence \(f\in D_k\).  Therefore
+\[
+D_{k+1}\subseteq D_k
+\]
+for all \(k\ge0\) and all \(n\).
+\end{proof}
+
+\begin{proposition}
+\label{res:gr-cnk-full-sequence-not-hausdorff-any-n}
+For every \(n\ge1\), the full Girjoaba--Rasa sequence \(k\mapsto c(n,k)\), \(0\le k\le2n\), is not a Hausdorff moment sequence in the natural order.
+\end{proposition}
+\begin{proof}
+The source sequence is
+\[
+c(n,k)=\binom{2n}{k}^{-2}
+\sum_{j=0}^k \binom{n}{j}^2\binom{n}{k-j}^2,
+\]
+with binomial coefficients outside their natural range interpreted as \(0\).
+
+For \(n=1\):
+\[
+c(1,0)=\binom20^{-2}\binom10^2\binom10^2=1.
+\]
+For \(k=1\),
+\[
+c(1,1)=\binom21^{-2}
+\left(\binom10^2\binom11^2+\binom11^2\binom10^2\right)
+=\frac14(1+1)=\frac12.
+\]
+For \(k=2\),
+\[
+c(1,2)=\binom22^{-2}
+\left(\binom11^2\binom11^2\right)=1.
+\]
+Thus the full \(n=1\) sequence begins
+\[
+1,\quad \frac12,\quad 1.
+\]
+
+If \((h_k)\) is a Hausdorff moment sequence on \([0,1]\), then
+\[
+h_k=\int_0^1 t^k\,d\mu(t)
+\]
+for some positive measure \(\mu\).  Since \(0\le t\le1\), we have \(t^{k+1}\le t^k\), and therefore
+\[
+h_{k+1}=\int_0^1 t^{k+1}\,d\mu(t)
+\le
+\int_0^1 t^k\,d\mu(t)=h_k.
+\]
+Every Hausdorff moment sequence is nonincreasing.
+
+The \(n=1\) Girjoaba--Rasa sequence violates this necessary condition because
+\[
+c(1,2)=1>\frac12=c(1,1).
+\]
+
+The obstruction is actually uniform in \(n\ge1\).  At the right endpoint,
+\[
+c(n,2n)=1,
+\]
+because only \(j=n\) contributes and \(\binom{2n}{2n}=1\).  At the adjacent point \(k=2n-1\), only \(j=n-1\) and \(j=n\) contribute, so
+\[
+\sum_{j=0}^{2n-1}\binom{n}{j}^2\binom{n}{2n-1-j}^2
+=2n^2.
+\]
+Since \(\binom{2n}{2n-1}=2n\), this gives
+\[
+c(n,2n-1)=\frac{2n^2}{(2n)^2}=\frac12.
+\]
+Thus \(c(n,2n)>c(n,2n-1)\) for every \(n\ge1\), so no full sequence \(0\le k\le2n\) can be Hausdorff moment in the natural order.
+\end{proof}
+
+\begin{counterexample}
+\label{res:gr-cnk-n1-hausdorff-counterexample}
+The \(n=1\) Girjoaba--Rasa sequence \(c(1,0)=1,c(1,1)=1/2,c(1,2)=1\) violates the nonincreasing condition for Hausdorff moment sequences.
+\end{counterexample}
+\begin{proof}
+The source sequence is
+\[
+c(n,k)=\binom{2n}{k}^{-2}
+\sum_{j=0}^k \binom{n}{j}^2\binom{n}{k-j}^2,
+\]
+with binomial coefficients outside their natural range interpreted as \(0\).
+
+For \(n=1\):
+\[
+c(1,0)=\binom20^{-2}\binom10^2\binom10^2=1.
+\]
+For \(k=1\),
+\[
+c(1,1)=\binom21^{-2}
+\left(\binom10^2\binom11^2+\binom11^2\binom10^2\right)
+=\frac14(1+1)=\frac12.
+\]
+For \(k=2\),
+\[
+c(1,2)=\binom22^{-2}
+\left(\binom11^2\binom11^2\right)=1.
+\]
+Thus the full \(n=1\) sequence begins
+\[
+1,\quad \frac12,\quad 1.
+\]
+
+If \((h_k)\) is a Hausdorff moment sequence on \([0,1]\), then
+\[
+h_k=\int_0^1 t^k\,d\mu(t)
+\]
+for some positive measure \(\mu\).  Since \(0\le t\le1\), we have \(t^{k+1}\le t^k\), and therefore
+\[
+h_{k+1}=\int_0^1 t^{k+1}\,d\mu(t)
+\le
+\int_0^1 t^k\,d\mu(t)=h_k.
+\]
+Every Hausdorff moment sequence is nonincreasing.
+
+The \(n=1\) Girjoaba--Rasa sequence violates this necessary condition because
+\[
+c(1,2)=1>\frac12=c(1,1).
+\]
+
+The obstruction is actually uniform in \(n\ge1\).  At the right endpoint,
+\[
+c(n,2n)=1,
+\]
+because only \(j=n\) contributes and \(\binom{2n}{2n}=1\).  At the adjacent point \(k=2n-1\), only \(j=n-1\) and \(j=n\) contribute, so
+\[
+\sum_{j=0}^{2n-1}\binom{n}{j}^2\binom{n}{2n-1-j}^2
+=2n^2.
+\]
+Since \(\binom{2n}{2n-1}=2n\), this gives
+\[
+c(n,2n-1)=\frac{2n^2}{(2n)^2}=\frac12.
+\]
+Thus \(c(n,2n)>c(n,2n-1)\) for every \(n\ge1\), so no full sequence \(0\le k\le2n\) can be Hausdorff moment in the natural order.
+\end{proof}
+
+\begin{proposition}
+\label{res:sqrt-two-term-symbol-exact-concavity-criterion}
+For \(h(s)=\sqrt{c s^a+d s^b}\), \(c,d>0\), the exact condition for \(h\) to be concave on \((0,\infty)\) is: if \(a=b\), then \(0\le a\le2\); if \(a\ne b\), then \(a(a-2)\le0\), \(b(b-2)\le0\), and either \(a^2+b^2-ab-a-b\le0\) or \((a^2+b^2-ab-a-b)^2\le a(a-2)b(b-2)\).
+\end{proposition}
+\begin{proof}
+Write \(f(s)=c s^a+d s^b\). Then
+\[
+h''(s)=\frac{2f(s)f''(s)-f'(s)^2}{4f(s)^{3/2}}.
+\]
+A direct expansion gives
+\[
+4h(s)^3h''(s)
+=c^2 a(a-2)s^{2a-2}
++2cd\bigl(a^2+b^2-ab-a-b\bigr)s^{a+b-2}
++d^2b(b-2)s^{2b-2}.
+\]
+If \(a=b\), then \(h(s)=\sqrt{c+d}\,s^{a/2}\), so \(h\) is concave on \((0,\infty)\) exactly when \(0\le a\le2\).
+
+Assume now \(a\ne b\), and set
+\[
+t=\frac cd\,s^{a-b}.
+\]
+As \(s\) ranges over \((0,\infty)\), so does \(t\). The sign of \(h''\) is therefore the sign of
+\[
+Q(t)=A t^2+2D t+C,\qquad t>0,
+\]
+where
+\[
+A=a(a-2),\qquad C=b(b-2),\qquad D=a^2+b^2-ab-a-b.
+\]
+
+Thus \(h\) is concave exactly when \(Q(t)\le0\) for every \(t>0\).
+
+The condition \(Q(t)\le0\) on \((0,\infty)\) first forces
+\[
+A\le0,\qquad C\le0,
+\]
+by taking \(t\to\infty\) and \(t\to0^+\). These are equivalent to \(a,b\in[0,2]\).
+
+If \(D\le0\), then all three coefficients of \(Q\) are nonpositive, hence \(Q(t)\le0\) for every \(t>0\).
+
+If \(D>0\), the concave quadratic has its maximum at
+\[
+t_*=-\frac DA>0
+\]
+when \(A<0\); endpoint cases \(A=0\) are included by continuity and by the same final inequality. The maximum condition is
+\[
+Q(t_*)=C-\frac{D^2}{A}\le0.
+\]
+Since \(A<0\), this is equivalent to
+\[
+D^2\le AC.
+\]
+When \(A=0\) and \(D>0\), the function \(Q(t)=2Dt+C\) eventually becomes positive, and \(D^2\le AC=0\) fails. The \(C=0\) endpoint is symmetric. Hence no endpoint exception is missing.
+
+Therefore, for \(a\ne b\), \(h\) is concave on \((0,\infty)\) if and only if
+\[
+A\le0,\qquad C\le0,\qquad
+\left(D\le0\quad\text{or}\quad D^2\le AC\right).
+\]
+
+Equivalently,
+\[
+a(a-2)\le0,\qquad b(b-2)\le0,
+\]
+and
+\[
+a^2+b^2-ab-a-b\le0
+\]
+or
+\[
+\bigl(a^2+b^2-ab-a-b\bigr)^2
+\le a(a-2)b(b-2).
+\]
+
+In the Bazhlekova two-term gap regime
+\[
+1<a<2,\qquad 0<b<a-1,
+\]
+the two exponents straddle \(1\). In this regime,
+\[
+D^2-AC=(a-b)^2\left((a-1)^2+(b-1)^2-1\right).
+\]
+Thus the inner disk condition
+\[
+(a-1)^2+(b-1)^2\le1
+\]
+is exactly the condition under which the second-derivative concavity obstruction is absent. The remaining question there is not a concavity question; it requires testing whether \(\sqrt g\) is Bernstein by higher derivatives or proving sign change in the inverse Laplace transform.
+\end{proof}
+
+\begin{counterexample}
+\label{res:keady-self-bijection-inverse-cm-negative-example}
+The function \(f(x)=x^{-1}+100e^{-x}\) is a completely monotone decreasing bijection \((0,\infty)\to(0,\infty)\), but \(f^{-1}\) is not completely monotone.
+\end{counterexample}
+\begin{proof}
+There exists a completely monotone decreasing bijection
+\[
+f:(0,\infty)\to(0,\infty)
+\]
+whose inverse is not completely monotone. One explicit example is
+\[
+f(x)=\frac1x+100e^{-x}.
+\]
+
+For every \(n\ge0\),
+\[
+(-1)^n f^{(n)}(x)=\frac{n!}{x^{n+1}}+100e^{-x}>0.
+\]
+Thus \(f\) is strictly completely monotone. Also
+\[
+f'(x)=-x^{-2}-100e^{-x}<0,
+\]
+so \(f\) is strictly decreasing. Finally,
+\[
+\lim_{x\downarrow0}f(x)=\infty,
+\qquad
+\lim_{x\to\infty}f(x)=0.
+\]
+Therefore \(f\) is a decreasing bijection from \((0,\infty)\) onto \((0,\infty)\).
+
+Let \(g=f^{-1}\) and write \(y=f(x)\). Inverse differentiation gives
+\[
+g'''(f(x))=\frac{3(f''(x))^2-f'''(x)f'(x)}{(f'(x))^5}.
+\]
+For \(f_a(x)=x^{-1}+ae^{-x}\), define
+\[
+N_a(x)=3(f_a''(x))^2-f_a'''(x)f_a'(x).
+\]
+A direct calculation gives
+\[
+N_a(x)=\frac6{x^6}+ae^{-x}\left(-\frac6{x^4}+\frac{12}{x^3}-\frac1{x^2}\right)+2a^2e^{-2x}.
+\]
+At \(a=100\) and \(x_0=1/8\),
+\[
+N_{100}(1/8)=1{,}572{,}864-1{,}849{,}600e^{-1/8}+20{,}000e^{-1/4}.
+\]
+Using \(e^{-1/8}>7/8\) and \(e^{-1/4}<1\),
+\[
+N_{100}(1/8)<1{,}572{,}864-1{,}849{,}600\cdot\frac78+20{,}000=-25{,}536<0.
+\]
+Since \(f'(1/8)<0\), the denominator \((f'(1/8))^5\) is negative. Hence
+\[
+g'''(f(1/8))=\frac{N_{100}(1/8)}{(f'(1/8))^5}>0.
+\]
+A completely monotone function must satisfy \((-1)^3g'''\ge0\), i.e. \(g'''\le0\). Therefore \(g=f^{-1}\) is not completely monotone.
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0028}.
+\begin{counterexample}[APP-0028: Qi-Agarwal/Yin divisor-polygamma parity is corrected]
+\label{res:qa-divisor-polygamma-even-claim-refuted}
+The Qi--Agarwal/Yin claim that \(f_{2\ell}\) is not completely monotone for every \(\ell\in\mathbb N\) is false, because \(f_2\) is completely monotone.
+
+This resolves the fixed application label \textbf{APP-0028}: Decide the Qi-Agarwal/Yin divisor-polygamma parity problem.
+\emph{Source reference.} \cite{app-app-0028-source}.
+\end{counterexample}
+\begin{proof}
+The standard polygamma representation gives, for \(k\ge1\),
+\[
+ (-1)^{k+1}\psi^{(k)}(x)
+ =\int_0^\infty {t^ke^{-xt}\over1-e^{-t}}\,dt .
+\]
+Thus \(\psi^{(k)}\) is a positive completely monotone function whenever
+\(k\) is odd.  If \(n\) is odd and \(km=n\), both \(k\) and \(m\) are odd, so
+each summand \([\psi^{(k)}]^m\) is a finite product of positive completely
+monotone functions.  Finite sums preserve complete monotonicity.
+
+For \(n=2\), the divisor pairs are \((1,2)\) and \((2,1)\), hence
+\[
+ f_2(x)=[\psi'(x)]^2+\psi''(x).
+\]
+Qi--Agarwal record the sharp theorem that
+\[
+ [\psi'(x)]^2+\lambda\psi''(x)
+\]
+is completely monotone on \((0,\infty)\) if and only if \(\lambda\le1\).
+Taking \(\lambda=1\) proves that \(f_2\) is completely monotone.  This refutes
+the stated even-parity clause at \(\ell=1\).
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0044}.
+\begin{corollary}[APP-0044: Bessel ratio quadratic lower bound is false]
+\label{res:from-mills-all-l-moment-ratio-quadratic-bound}
+Let \(M_L(t)=(-1)^L r^{(L)}(t)=\int_0^\infty u^L e^{-tu-u^2/2}\,du\) for the standard normal Mills ratio. For every \(L\ge0\) and \(t\ge0\), with \(m_L=M_{L+1}/M_L\), one has \(m_L(t)<U_L(t)\), where \(U_L(t)\) is the positive root \(\frac{\sqrt{t^2(t^2+4L+7)^2+4(L+1)(t^2+4L+8)(t^2+4L+6)}-t(t^2+4L+7)}{2(t^2+4L+8)}\).
+
+This resolves the fixed application label \textbf{APP-0044}: Prove \(q\_\nu(u)^2+(2\nu+1)q\_\nu(u)/u+(\nu+1/2)/u^2>1\) for all \(\nu\ge0,u>0\), with \(q\_\nu(u)=I\_{\nu+1}(u)/I\_\nu(u)\).
+\emph{Source reference.} \cite{app-app-0044-source}.
+\end{corollary}
+\begin{proof}
+Set
+\[
+m_L(t)=\frac{M_{L+1}(t)}{M_L(t)}.
+\]
+
+The recurrence gives
+\[
+\frac{M_{L+2}}{M_L}=L+1-tm_L,
+\]
+\[
+\frac{M_{L+3}}{M_L}=(t^2+L+2)m_L-t(L+1),
+\]
+and
+\[
+\frac{M_{L+4}}{M_L}=(L+1)(t^2+L+3)-t(t^2+2L+5)m_L.
+\]
+
+Substitution into the determinant inequality and expansion give
+\[
+(L+1)(t^2+4L+6)-t(t^2+4L+7)m_L-(t^2+4L+8)m_L^2>0.
+\]
+
+Equivalently,
+\[
+(t^2+4L+8)m_L^2+t(t^2+4L+7)m_L-(L+1)(t^2+4L+6)<0.
+\]
+
+Since \(m_L>0\), the positive root yields the uniform strict bound
+\[
+m_L(t)<U_L(t),
+\]
+where
+\[
+U_L(t)=
+\frac{
+\sqrt{t^2(t^2+4L+7)^2+4(L+1)(t^2+4L+8)(t^2+4L+6)}
+-t(t^2+4L+7)
+}
+{2(t^2+4L+8)}.
+\]
+
+This is the determinant-to-bound extractor. It is a single theorem for every \(L\ge0\).
+
+Define polynomials \(P_n(t)\) by
+\[
+P_0=1,\qquad P_1=t,\qquad P_{n+1}=tP_n+nP_{n-1}.
+\]
+Define \(B_n(t)\) by
+\[
+B_0=0,\qquad B_1=1,\qquad B_{n+1}=nB_{n-1}-tB_n.
+\]
+
+Then the same recurrence gives
+\[
+M_n(t)=(-1)^nP_n(t)r(t)+B_n(t).
+\]
+
+The ratio bound \(M_{L+1}<U_LM_L\) becomes
+\[
+\left((-1)^{L+1}P_{L+1}-(-1)^L U_LP_L\right)r
+<U_LB_L-B_{L+1}.
+\]
+
+Since \(P_n(t)>0\) for \(t>0\) and \(P_{2j}(0)>0\), the coefficient has sign \((-1)^{L+1}\). Thus the bounds alternate:
+
+For even \(L\ge0\),
+\[
+r(t)>
+\frac{B_{L+1}(t)-U_L(t)B_L(t)}
+{P_{L+1}(t)+U_L(t)P_L(t)}.
+\]
+
+For odd \(L\ge1\),
+\[
+r(t)<
+\frac{U_L(t)B_L(t)-B_{L+1}(t)}
+{P_{L+1}(t)+U_L(t)P_L(t)}.
+\]
+
+These formulas are valid at \(t=0\) by direct evaluation of the recurrences and for \(t>0\) by the positivity of \(M_L\).
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0035}.
+\begin{counterexample}[APP-0035: Keady self-bijection inverse-CM question is negative]
+\label{res:keady-q3-self-bijection-inverse-cm-negative-answer}
+Keady Question 3 has a negative answer for the self-range case: there is a completely monotone decreasing bijection \((0,\infty)\to(0,\infty)\) whose inverse is not completely monotone.
+
+This resolves the fixed application label \textbf{APP-0035}: Ask whether a CM self-bijection \((0,\infty)\to(0,\infty)\) must have a CM inverse (Keady Q3).
+\emph{Source reference.} \cite{app-app-0035-source}.
+\end{counterexample}
+\begin{proof}
+There exists a completely monotone decreasing bijection
+\[
+f:(0,\infty)\to(0,\infty)
+\]
+whose inverse is not completely monotone. One explicit example is
+\[
+f(x)=\frac1x+100e^{-x}.
+\]
+
+For every \(n\ge0\),
+\[
+(-1)^n f^{(n)}(x)=\frac{n!}{x^{n+1}}+100e^{-x}>0.
+\]
+Thus \(f\) is strictly completely monotone. Also
+\[
+f'(x)=-x^{-2}-100e^{-x}<0,
+\]
+so \(f\) is strictly decreasing. Finally,
+\[
+\lim_{x\downarrow0}f(x)=\infty,
+\qquad
+\lim_{x\to\infty}f(x)=0.
+\]
+Therefore \(f\) is a decreasing bijection from \((0,\infty)\) onto \((0,\infty)\).
+
+Let \(g=f^{-1}\) and write \(y=f(x)\). Inverse differentiation gives
+\[
+g'''(f(x))=\frac{3(f''(x))^2-f'''(x)f'(x)}{(f'(x))^5}.
+\]
+For \(f_a(x)=x^{-1}+ae^{-x}\), define
+\[
+N_a(x)=3(f_a''(x))^2-f_a'''(x)f_a'(x).
+\]
+A direct calculation gives
+\[
+N_a(x)=\frac6{x^6}+ae^{-x}\left(-\frac6{x^4}+\frac{12}{x^3}-\frac1{x^2}\right)+2a^2e^{-2x}.
+\]
+At \(a=100\) and \(x_0=1/8\),
+\[
+N_{100}(1/8)=1{,}572{,}864-1{,}849{,}600e^{-1/8}+20{,}000e^{-1/4}.
+\]
+Using \(e^{-1/8}>7/8\) and \(e^{-1/4}<1\),
+\[
+N_{100}(1/8)<1{,}572{,}864-1{,}849{,}600\cdot\frac78+20{,}000=-25{,}536<0.
+\]
+Since \(f'(1/8)<0\), the denominator \((f'(1/8))^5\) is negative. Hence
+\[
+g'''(f(1/8))=\frac{N_{100}(1/8)}{(f'(1/8))^5}>0.
+\]
+A completely monotone function must satisfy \((-1)^3g'''\ge0\), i.e. \(g'''\le0\). Therefore \(g=f^{-1}\) is not completely monotone.
+\end{proof}
+
+\appendix

@@ -1,0 +1,29 @@
+---
+id: "T-Bazhlekova-inner-gap-universal-odd-derivative-obstruction"
+type: "theorem"
+title: "Bazhlekova inner gap universal odd derivative obstruction for square root two term symbol"
+status: "open"
+tags: ["attack-plan", "bazhlekova", "bernstein-functions", "higher-derivative-obstruction", "inner-gap", "open", "theorem"]
+parents: ["T-Bazhlekova-two-term-gap-universal-wt-failure"]
+refs: ["attack-plans/AP-20260601T013500-bazhlekova-two-term-gap-universal.json", "librarian/audits/LA-20260601T013500-bazhlekova-two-term-gap-universal-attack-plan.json", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
+---
+
+# Theorem: Bazhlekova inner gap universal odd derivative obstruction for square root two term symbol
+
+## Statement
+
+In the residual inner gap \(1<a<2\), \(0<b<a-1\), and \((a-1)^2+(b-1)^2\le1\), for every \(c,d>0\) there are an odd integer \(2q+1\ge5\) and a point \(s_0>0\) such that \(d^{2q+1}\sqrt{c s^a+d s^b}/ds^{2q+1}\vert_{s=s_0}<0\).
+
+## Dependencies
+
+- [[wiki/nodes/T-Bazhlekova-two-term-gap-universal-wt-failure|Bazhlekova two term gap universal wt positivity failure]]
+
+## Proof and provenance references
+
+- `attack-plans/AP-20260601T013500-bazhlekova-two-term-gap-universal.json`
+- `librarian/audits/LA-20260601T013500-bazhlekova-two-term-gap-universal-attack-plan.json`
+- `wiki/notes/frontier-bazhlekova-square-root-bf-gap.md`
+
+## Tags
+
+`attack-plan`, `bazhlekova`, `bernstein-functions`, `higher-derivative-obstruction`, `inner-gap`, `open`, `theorem`

@@ -1,0 +1,1748 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-06-04T14:18:35Z",
+  "format": "latex_fragments",
+  "previous_spec": "C:\\Users\\domin\\OneDrive\\Projects_Codex\\pudim\\zetalaw-demov2\\theory\\spec\\latest",
+  "compose_order": [
+    "preamble.tex",
+    "frontmatter/abstract.tex",
+    "frontmatter/introduction.tex",
+    "frontmatter/motivation.tex",
+    "frontmatter/notation.tex",
+    "chapters/01-zeta-law-kernels-and-tail-partitions.tex",
+    "chapters/02-gamma-and-polygamma-curvature.tex",
+    "chapters/03-laplace-stieltjes-and-bernstein-transport.tex",
+    "chapters/04-determinants-and-moment-ratio-tools.tex",
+    "chapters/05-counterexamples-and-endpoint-obstructions.tex",
+    "appendices/technical-examples.tex",
+    "appendices/application-ledger.tex",
+    "appendices/pending-integration.tex",
+    "appendices/bibliography.tex",
+    "end.tex"
+  ],
+  "fragments": {
+    "preamble.tex": {
+      "content_hash": "a158bda2b20f7c2722dab29c365bee33c52ac1e3",
+      "source_hash": "99a201ee02efe3a07646439b2f8191491477dfe3"
+    },
+    "frontmatter/abstract.tex": {
+      "content_hash": "15eb08517dcbe66bdc31214da5a5ec9cb00e5a62",
+      "source_hash": "77782c11c41b23d86835116865e2b95edc96b7b2"
+    },
+    "frontmatter/introduction.tex": {
+      "content_hash": "fe672698080ffa41d62a71f56e7a28e5ae6567a4",
+      "source_hash": "11baf6b45a5433772311a32787fd6382ca80df07"
+    },
+    "frontmatter/motivation.tex": {
+      "content_hash": "64ea2dc1e9485a160edb5f9ad2e2142b43362b00",
+      "source_hash": "e0d7fcad6f94060043da78fd624f2507dd3b82f1"
+    },
+    "frontmatter/notation.tex": {
+      "content_hash": "5c07e0e780eb4d580a3c985c49204711dacb96b8",
+      "source_hash": "87dddc59574b1ae14a9a6927b97a657dbdae95c2"
+    },
+    "chapters/01-zeta-law-kernels-and-tail-partitions.tex": {
+      "content_hash": "2a08c19cded7dfa2be4eab900b876a49a7272ba3",
+      "source_hash": "892eac1641bf797b3ae23cb3896d50a4c1cd72f8"
+    },
+    "chapters/02-gamma-and-polygamma-curvature.tex": {
+      "content_hash": "a1ed8428e1aea8b54e8c90a6cad1990c2e8e02df",
+      "source_hash": "ae5ebf758ee8c17ec97dcdfaa5418b5fa69ae7d0"
+    },
+    "chapters/03-laplace-stieltjes-and-bernstein-transport.tex": {
+      "content_hash": "ee343c8bc53b42255b784844ce3de4ef1b1fcc19",
+      "source_hash": "ce5c9e87cddb7f1c4c5748ba2e087a481c7982c6"
+    },
+    "chapters/04-determinants-and-moment-ratio-tools.tex": {
+      "content_hash": "09bb788660d1e74fe2a132159e4e0fbd2a2ad378",
+      "source_hash": "cb03ed397b19cd89c688e03cea1714cab310b8b6"
+    },
+    "chapters/05-counterexamples-and-endpoint-obstructions.tex": {
+      "content_hash": "62ca59159dab31fab41e07827f100a8e9bea998e",
+      "source_hash": "2d73401fdc6785170cd396714b3a4cad42c2c712"
+    },
+    "appendices/technical-examples.tex": {
+      "content_hash": "dcfec2af7111566de03a14ffb6d6b19f1b31219f",
+      "source_hash": "24aadb6d0b37ab8fdc6cb8b33227a0a4bffc8eec"
+    },
+    "appendices/application-ledger.tex": {
+      "content_hash": "9d9294db6bc3ea35ccca66cd28f4ab47a437f75c",
+      "source_hash": "5065c71c3668361edf07b0b603ea4209a2a5f100"
+    },
+    "appendices/pending-integration.tex": {
+      "content_hash": "c3b6acade48195c77abbc66059d9803f89af6a2c",
+      "source_hash": "daaa6b6b18ac4ad7aa40b6172bdc7ef5e4b17f89"
+    },
+    "appendices/bibliography.tex": {
+      "content_hash": "b1915f89e8a713759e2461f0208a26f49e099ee4",
+      "source_hash": "85fa17c667a44ca2e0875a558c161cef75eb6579"
+    },
+    "end.tex": {
+      "content_hash": "79f550936c205aec8d3a5471d3174a5c7baffb5b",
+      "source_hash": "fe42c808bc99a8b82fa90e32f70b61ab78ee04dd"
+    }
+  },
+  "results": [
+    {
+      "node_id": "T-From-Mills-Laplace-CM-normal-form",
+      "label": "res:from-mills-laplace-cm-normal-form",
+      "role": "theorem",
+      "app_id": "",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-YT-Bessel-W-general-zero-partial-fraction",
+      "label": "res:yt-bessel-w-general-zero-partial-fraction",
+      "role": "theorem",
+      "app_id": "",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-CM-closure-product-positive-mixture",
+      "label": "res:cm-closure-product-positive-mixture",
+      "role": "theorem",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baskakov-alpha1-r8-not-CM",
+      "label": "res:baskakov-alpha1-r8-not-cm",
+      "role": "counterexample",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Qi-hlambda-x4-source-range-not-CM",
+      "label": "res:qi-hlambda-x4-source-range-not-cm",
+      "role": "counterexample",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Keady-inverse-third-derivative-sign-certificate",
+      "label": "res:keady-inverse-third-derivative-sign-certificate",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-CM-Laplace-moment-ratio-monotonicity",
+      "label": "res:cm-laplace-moment-ratio-monotonicity",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Yin-pk-digamma-near-zero-asymptotic",
+      "label": "res:yin-pk-digamma-near-zero-asymptotic",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-QA-divisor-polygamma-f2-CM",
+      "label": "res:qa-divisor-polygamma-f2-cm",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "zeta",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Ramanujan-Turan-n2-upper-window-counterfamily",
+      "label": "res:ramanujan-turan-n2-upper-window-counterfamily",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Simon-gamma-quotient-complement-CM",
+      "label": "res:simon-gamma-quotient-complement-cm",
+      "role": "theorem",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-not-Bessel-I-sqrt-log-concavity-nu-ge-0",
+      "label": "res:not-bessel-i-sqrt-log-concavity-nu-ge-0",
+      "role": "counterexample",
+      "app_id": "APP-0042",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baricz-gamma-quotient-a2b3-not-BF",
+      "label": "res:baricz-gamma-quotient-a2b3-not-bf",
+      "role": "counterexample",
+      "app_id": "APP-0017",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baricz-Vq-q-Laplace-normal-form",
+      "label": "res:baricz-vq-q-laplace-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-BZ-gamma-quotient-N-single-crossing-one-eight",
+      "label": "res:bz-gamma-quotient-n-single-crossing-one-eight",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Chen-Choi-Gurland-Euler-sum-normal-form",
+      "label": "res:chen-choi-gurland-euler-sum-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Prabhakar-Q-density-mixture-formula",
+      "label": "res:prabhakar-q-density-mixture-formula",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Q2-analytic-denominator-reduced-assembly-terminal-certificate",
+      "label": "res:q2-analytic-denominator-reduced-assembly-terminal-certificate",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Q2-compact-taylor-monotonicity-J-terminal-certificate",
+      "label": "res:q2-compact-taylor-monotonicity-j-terminal-certificate",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Q2-remaining-finite-middle-log-cover-terminal-certificate",
+      "label": "res:q2-remaining-finite-middle-log-cover-terminal-certificate",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Wakrim-W-symbol-exact-BF-range",
+      "label": "res:wakrim-w-symbol-exact-bf-range",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Zeta-tail-s9-reusable-certificate",
+      "label": "res:zeta-tail-s9-reusable-certificate",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "zeta",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Chiu-Yin-CM-derivative-reflection-lemma",
+      "label": "res:chiu-yin-cm-derivative-reflection-lemma",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Dagum-c-endpoints-and-upper-gate",
+      "label": "res:dagum-c-endpoints-and-upper-gate",
+      "role": "corollary",
+      "app_id": "APP-0021",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-KS-Lemma1-Stieltjes-normal-form",
+      "label": "res:ks-lemma1-stieltjes-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Ma-Weigert-log-function-Dk-chain-conjecture",
+      "label": "res:ma-weigert-log-function-dk-chain-conjecture",
+      "role": "corollary",
+      "app_id": "APP-0041",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Yang-Detemple-R-n0-CM-certificate",
+      "label": "res:yang-detemple-r-n0-cm-certificate",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "zeta",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-CBF-difference-quotient-Stieltjes",
+      "label": "res:cbf-difference-quotient-stieltjes",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Jovanovic-Treml-arctan-logderivative-CM",
+      "label": "res:jovanovic-treml-arctan-logderivative-cm",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Szabo-psi-difference-alpha0-exact-one",
+      "label": "res:szabo-psi-difference-alpha0-exact-one",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-BS-c-half-Catalan-Hausdorff-representation",
+      "label": "res:bs-c-half-catalan-hausdorff-representation",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baskakov-r4-alpha1-Laplace-density-seed",
+      "label": "res:baskakov-r4-alpha1-laplace-density-seed",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Bouali-falpha-phi-asymptotic",
+      "label": "res:bouali-falpha-phi-asymptotic",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-GR-cnk-full-sequence-not-Hausdorff-any-n",
+      "label": "res:gr-cnk-full-sequence-not-hausdorff-any-n",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-GR-cnk-n1-Hausdorff-counterexample",
+      "label": "res:gr-cnk-n1-hausdorff-counterexample",
+      "role": "counterexample",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-GT-BF-factorized-denominator-power-closure",
+      "label": "res:gt-bf-factorized-denominator-power-closure",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-KMS-arrowhead-riesz-kernel-pminus2",
+      "label": "res:kms-arrowhead-riesz-kernel-pminus2",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "determinant",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Keady-CM-inverse-not-CM-example",
+      "label": "res:keady-cm-inverse-not-cm-example",
+      "role": "counterexample",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Simon-LeRoy-moment-property-normal-form",
+      "label": "res:simon-leroy-moment-property-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Szabo-psi-difference-alpha2-not-CM",
+      "label": "res:szabo-psi-difference-alpha2-not-cm",
+      "role": "counterexample",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-heat-flow-L2-energy-completely-monotone",
+      "label": "res:heat-flow-l2-energy-completely-monotone",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-incomplete-beta-tail-derivative-CM-certificate",
+      "label": "res:incomplete-beta-tail-derivative-cm-certificate",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "zeta",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-log-function-signed-derivative-tail-vanishing",
+      "label": "res:log-function-signed-derivative-tail-vanishing",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "zeta",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-sqrt-two-term-symbol-concavity-loss-criterion",
+      "label": "res:sqrt-two-term-symbol-concavity-loss-criterion",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-sqrt-two-term-symbol-exact-concavity-criterion",
+      "label": "res:sqrt-two-term-symbol-exact-concavity-criterion",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-AB-reciprocal-sum-gate-a-plus-b-le-one-third",
+      "label": "res:ab-reciprocal-sum-gate-a-plus-b-le-one-third",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-BF-reciprocal-is-CM",
+      "label": "res:bf-reciprocal-is-cm",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-BZ-gamma-quotient-derivative-normal-form",
+      "label": "res:bz-gamma-quotient-derivative-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baskakov-alpha1-even-r-frontier-open",
+      "label": "res:baskakov-alpha1-even-r-frontier-open",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Baskakov-alpha1-r6-positive-density-factorization",
+      "label": "res:baskakov-alpha1-r6-positive-density-factorization",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Bazhlekova-Wright-density-topcap-bridge-normal-form",
+      "label": "res:bazhlekova-wright-density-topcap-bridge-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Bazhlekova-odd-derivative-polynomial-normal-form",
+      "label": "res:bazhlekova-odd-derivative-polynomial-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Du-Wang-h3-open-problem-2-classification",
+      "label": "res:du-wang-h3-open-problem-2-classification",
+      "role": "corollary",
+      "app_id": "APP-0037",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-QG-tau-global-supremum",
+      "label": "res:qg-tau-global-supremum",
+      "role": "corollary",
+      "app_id": "APP-0018",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-Sokal-GS-lambda-derivative-generating-function",
+      "label": "res:sokal-gs-lambda-derivative-generating-function",
+      "role": "corollary",
+      "app_id": "APP-0023",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-From-Mills-derivative-determinant-all-L",
+      "label": "res:from-mills-derivative-determinant-all-l",
+      "role": "theorem",
+      "app_id": "",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-YT-Bessel-W-power-Bernstein-conjecture",
+      "label": "res:yt-bessel-w-power-bernstein-conjecture",
+      "role": "corollary",
+      "app_id": "APP-0040",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Yang-Tian-Bessel-W-Bernstein-conjecture",
+      "label": "res:yang-tian-bessel-w-bernstein-conjecture",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Ramanujan-density-logsquare-CM",
+      "label": "res:ramanujan-density-logsquare-cm",
+      "role": "corollary",
+      "app_id": "APP-0014",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-GBF-product-closure",
+      "label": "res:gbf-product-closure",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-not-Baskakov-higher-power-even-conjecture",
+      "label": "res:not-baskakov-higher-power-even-conjecture",
+      "role": "counterexample",
+      "app_id": "APP-0036",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-not-Qi-hlambda-degree4-conjecture",
+      "label": "res:not-qi-hlambda-degree4-conjecture",
+      "role": "counterexample",
+      "app_id": "APP-0020",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Keady-self-bijection-inverse-CM-negative-example",
+      "label": "res:keady-self-bijection-inverse-cm-negative-example",
+      "role": "counterexample",
+      "app_id": "",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Nielsen-k-beta-derivative-ratio-monotonicity",
+      "label": "res:nielsen-k-beta-derivative-ratio-monotonicity",
+      "role": "corollary",
+      "app_id": "APP-0010",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Yin-pk-digamma-alpha-necessity",
+      "label": "res:yin-pk-digamma-alpha-necessity",
+      "role": "corollary",
+      "app_id": "APP-0013",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-QA-divisor-polygamma-even-claim-refuted",
+      "label": "res:qa-divisor-polygamma-even-claim-refuted",
+      "role": "counterexample",
+      "app_id": "APP-0028",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Ramanujan-Turan-window-negative-answer",
+      "label": "res:ramanujan-turan-window-negative-answer",
+      "role": "counterexample",
+      "app_id": "APP-0039",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Baricz-gamma-quotient-BF-forall-negative-answer",
+      "label": "res:baricz-gamma-quotient-bf-forall-negative-answer",
+      "role": "counterexample",
+      "app_id": "APP-0031",
+      "chapter": "counterexample",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-Baricz-Vq-q-complete-monotonicity",
+      "label": "res:baricz-vq-q-complete-monotonicity",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-BZ-gamma-quotient-critical-window-reduction",
+      "label": "res:bz-gamma-quotient-critical-window-reduction",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Chen-Choi-Gurland-logF-strict-CM",
+      "label": "res:chen-choi-gurland-logf-strict-cm",
+      "role": "corollary",
+      "app_id": "APP-0022",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Prabhakar-Q-stable-subordination-normal-form",
+      "label": "res:prabhakar-q-stable-subordination-normal-form",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Q2-terminal-exact",
+      "label": "res:q2-terminal-exact",
+      "role": "corollary",
+      "app_id": "APP-0011",
+      "chapter": "gamma",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-Wakrim-W-operator-BF-gap-solved",
+      "label": "res:wakrim-w-operator-bf-gap-solved",
+      "role": "corollary",
+      "app_id": "APP-0019",
+      "chapter": "gamma",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-Zeta-tail-floor-next-case",
+      "label": "res:zeta-tail-floor-next-case",
+      "role": "corollary",
+      "app_id": "APP-0006",
+      "chapter": "zeta",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-KS-general-q-delta1-sigma1-ratio-Stieltjes-CM",
+      "label": "res:ks-general-q-delta1-sigma1-ratio-stieltjes-cm",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-reciprocal-arctan-LCM",
+      "label": "res:reciprocal-arctan-lcm",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-BS-c-half-canonical-r-sequence-CM",
+      "label": "res:bs-c-half-canonical-r-sequence-cm",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baskakov-diagonal-r4-c-equals-n-CM",
+      "label": "res:baskakov-diagonal-r4-c-equals-n-cm",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-From-Mills-all-L-moment-ratio-quadratic-bound",
+      "label": "res:from-mills-all-l-moment-ratio-quadratic-bound",
+      "role": "corollary",
+      "app_id": "APP-0044",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Ramanujan-integral-Stieltjes",
+      "label": "res:ramanujan-integral-stieltjes",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "laplace",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Ramanujan-antiderivative-complete-Bernstein",
+      "label": "res:ramanujan-antiderivative-complete-bernstein",
+      "role": "corollary",
+      "app_id": "APP-0033",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-Keady-Q3-self-bijection-inverse-CM-negative-answer",
+      "label": "res:keady-q3-self-bijection-inverse-cm-negative-answer",
+      "role": "counterexample",
+      "app_id": "APP-0035",
+      "chapter": "counterexample",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baricz-Vq-strict-q-logconvexity",
+      "label": "res:baricz-vq-strict-q-logconvexity",
+      "role": "corollary",
+      "app_id": "APP-0012",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Bulboaca-Zayed-gamma-quotient-full-monotonicity",
+      "label": "res:bulboaca-zayed-gamma-quotient-full-monotonicity",
+      "role": "corollary",
+      "app_id": "APP-0034",
+      "chapter": "gamma",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "valid application consequence with low main-text narrative value"
+    },
+    {
+      "node_id": "T-Sibisi-Prabhakar-Q-measure-problem-solved-canonical",
+      "label": "res:sibisi-prabhakar-q-measure-problem-solved-canonical",
+      "role": "corollary",
+      "app_id": "APP-0015",
+      "chapter": "laplace",
+      "placement": "technical_appendix",
+      "technical_appendix_reason": "technical certificate or source-specific computation"
+    },
+    {
+      "node_id": "T-From-Mills-all-L-alternating-r-bound-family",
+      "label": "res:from-mills-all-l-alternating-r-bound-family",
+      "role": "corollary",
+      "app_id": "APP-0032",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Baricz-Vq-q-logconvexity-open-problem",
+      "label": "res:baricz-vq-q-logconvexity-open-problem",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-From-Mills-explicit-bound-family-frontier",
+      "label": "res:from-mills-explicit-bound-family-frontier",
+      "role": "corollary",
+      "app_id": "APP-0016",
+      "chapter": "determinant",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Simon-gamma-quotient-derivative-positive-laplace-density",
+      "label": "res:simon-gamma-quotient-derivative-positive-laplace-density",
+      "role": "theorem",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    },
+    {
+      "node_id": "T-Simon-gamma-quotient-BF-alpha-window-open-problem",
+      "label": "res:simon-gamma-quotient-bf-alpha-window-open-problem",
+      "role": "proposition",
+      "app_id": "",
+      "chapter": "gamma",
+      "placement": "main_text",
+      "technical_appendix_reason": ""
+    }
+  ],
+  "applications": [
+    {
+      "application_id": "APP-0001",
+      "title": "Alzer-Kwong convexity and concavity problem",
+      "problem": "Alzer-Kwong convexity and concavity problem",
+      "solution": "Alzer-Kwong convexity and concavity pattern for reciprocal zeta",
+      "reference": "Horst Alzer and Man Kam Kwong, \"On the concavity and convexity of \\(1/\\zeta\\)\", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)",
+      "citation_key": "app-app-0001-source",
+      "solution_node": "",
+      "lineage": [],
+      "lineage_titles": [],
+      "integration_status": "unmatched",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0002",
+      "title": "Nantomah zeta positivity problem",
+      "problem": "Nantomah zeta positivity problem",
+      "solution": "Affirmative solution of Nantomah zeta positivity problem",
+      "reference": "Kwara Nantomah, \"Open Problem on Riemann Zeta Function\", ResearchGate problem note, October 2024. [ResearchGate](https://www.researchgate.net/publication/384676538_Open_Problem_on_Riemann_Zeta_Function)",
+      "citation_key": "app-app-0002-source",
+      "solution_node": "",
+      "lineage": [],
+      "lineage_titles": [],
+      "integration_status": "unmatched",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0003",
+      "title": "Sroysang generalized Holder problem",
+      "problem": "Sroysang generalized Holder problem",
+      "solution": "Generalized Holder inequality for Gamma zeta",
+      "reference": "Banyat Sroysang, \"Two Inequalities for the Riemann Zeta Functions\", Mathematica Aeterna, Vol. 3, No. 1 (2013), 21-24. [PDF](https://arastirmax.com/en/system/files/dergiler/135290/makaleler/3/1/arastirmax-two-inequalities-riemann-zeta-functions.pdf)",
+      "citation_key": "app-app-0003-source",
+      "solution_node": "",
+      "lineage": [],
+      "lineage_titles": [],
+      "integration_status": "unmatched",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0004",
+      "title": "Complete monotonicity of \\((\\log\\Gamma(x)+\\log\\Gamma(1/x))''\\)",
+      "problem": "Complete monotonicity of \\((\\log\\Gamma(x)+\\log\\Gamma(1/x))''\\)",
+      "solution": "Complete monotonicity of reciprocal-Gamma curvature",
+      "reference": "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)",
+      "citation_key": "app-app-0004-source",
+      "solution_node": "T-Baricz-Vq-strict-q-logconvexity",
+      "lineage": [
+        "T-Baricz-Vq-q-Laplace-normal-form",
+        "T-Baricz-Vq-q-complete-monotonicity",
+        "T-Baricz-Vq-strict-q-logconvexity"
+      ],
+      "lineage_titles": [
+        "Baricz V_q positive Laplace representation in q plus one",
+        "Baricz V_q completely monotone in parameter q plus one",
+        "Baricz V_q strictly log-convex in q"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0005",
+      "title": "Exact inverse-tail floor formula at s=7",
+      "problem": "Exact inverse-tail floor formula at \\(s=7\\)",
+      "solution": "Exact inverse-tail floor formula at \\(s=7\\)",
+      "reference": "Donggyun Kim and Kyunghwan Song, \"The inverses of tails of the Riemann zeta function\", Journal of Inequalities and Applications 2018, article 157. [https://link.springer.com/article/10.1186/s13660-018-1743-6](https://link.springer.com/article/10.1186/s13660-018-1743-6); Zhenjiang Pan and Zhengang Wu, \"The inverse of tails of Riemann zeta function, Hurwitz zeta function and Dirichlet L-function\", AIMS Mathematics 9(6), 16564-16585, 2024. DOI: [DOI](https://doi.org/10.3934/math.2024803)",
+      "citation_key": "app-app-0005-source",
+      "solution_node": "T-Zeta-tail-floor-next-case",
+      "lineage": [
+        "T-Zeta-tail-s9-reusable-certificate",
+        "T-Zeta-tail-floor-next-case"
+      ],
+      "lineage_titles": [
+        "s=9 inverse zeta tail floor formula with reusable certificate template",
+        "new exact inverse zeta tail floor formula beyond s=8 or reusable enclosure template"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0006",
+      "title": "Exact inverse-tail floor formula at s=8",
+      "problem": "Exact inverse-tail floor formula at \\(s=8\\)",
+      "solution": "Exact inverse-tail floor formula at \\(s=8\\)",
+      "reference": "Donggyun Kim and Kyunghwan Song, \"The inverses of tails of the Riemann zeta function\", Journal of Inequalities and Applications 2018, article 157. [https://link.springer.com/article/10.1186/s13660-018-1743-6](https://link.springer.com/article/10.1186/s13660-018-1743-6); Zhenjiang Pan and Zhengang Wu, \"The inverse of tails of Riemann zeta function, Hurwitz zeta function and Dirichlet L-function\", AIMS Mathematics 9(6), 16564-16585, 2024. DOI: [DOI](https://doi.org/10.3934/math.2024803)",
+      "citation_key": "app-app-0006-source",
+      "solution_node": "T-Zeta-tail-floor-next-case",
+      "lineage": [
+        "T-Zeta-tail-s9-reusable-certificate",
+        "T-Zeta-tail-floor-next-case"
+      ],
+      "lineage_titles": [
+        "s=9 inverse zeta tail floor formula with reusable certificate template",
+        "new exact inverse zeta tail floor formula beyond s=8 or reusable enclosure template"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0007",
+      "title": "Concavity or complete monotonicity of the polygamma product P0",
+      "problem": "Concavity or complete monotonicity of the polygamma product \\(P_0\\)",
+      "solution": "Complete monotonicity of reciprocal digamma product curvature",
+      "reference": "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)",
+      "citation_key": "app-app-0007-source",
+      "solution_node": "T-Yin-pk-digamma-alpha-necessity",
+      "lineage": [
+        "T-Yin-pk-digamma-near-zero-asymptotic",
+        "T-Yin-pk-digamma-alpha-necessity"
+      ],
+      "lineage_titles": [
+        "Yin p,k-digamma bracket near zero asymptotic x inverse",
+        "Yin p,k-digamma complete monotonicity implies alpha <= 1"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0008",
+      "title": "Higher-order monotonicity of polygamma products Pn",
+      "problem": "Higher-order monotonicity of polygamma products \\(P_n\\)",
+      "solution": "Counterexample to complete monotonicity of higher-order polygamma product curvature",
+      "reference": "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)",
+      "citation_key": "app-app-0008-source",
+      "solution_node": "T-Baricz-Vq-strict-q-logconvexity",
+      "lineage": [
+        "T-Baricz-Vq-q-Laplace-normal-form",
+        "T-Baricz-Vq-q-complete-monotonicity",
+        "T-Baricz-Vq-strict-q-logconvexity"
+      ],
+      "lineage_titles": [
+        "Baricz V_q positive Laplace representation in q plus one",
+        "Baricz V_q completely monotone in parameter q plus one",
+        "Baricz V_q strictly log-convex in q"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0009",
+      "title": "Sharp reciprocal Gamma-product monotonicity threshold",
+      "problem": "Sharp reciprocal Gamma-product monotonicity threshold",
+      "solution": "APP-0009: Sharp threshold for reciprocal Gamma-product monotonicity",
+      "reference": "Teodor Bulboaca and Hanaa M. Zayed, \"Monotonic nature of the Gamma function\", Journal of Inequalities and Applications 2026, article 27. DOI: [DOI](https://doi.org/10.1186/s13660-025-03425-0)",
+      "citation_key": "app-app-0009-source",
+      "solution_node": "T-QG-tau-global-supremum",
+      "lineage": [
+        "T-QG-tau-global-supremum"
+      ],
+      "lineage_titles": [
+        "Qi Guo tau global supremum equals a over 1+a+a^2 where exp(a)=1+a+a^2"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0010",
+      "title": "Nielsen \\(k\\)-beta derivative-ratio monotonicity",
+      "problem": "Nielsen \\(k\\)-beta derivative-ratio monotonicity",
+      "solution": "Parity law from a complete-monotone Laplace moment-ratio bridge",
+      "reference": "Li Yin and Jumei Zhang, \"On some properties of special functions involving \\(k\\)-gamma and \\(k\\)-digamma functions\", arXiv:2502.15852. [arXiv](https://arxiv.org/abs/2502.15852)",
+      "citation_key": "app-app-0010-source",
+      "solution_node": "T-Nielsen-k-beta-derivative-ratio-monotonicity",
+      "lineage": [
+        "T-CM-Laplace-moment-ratio-monotonicity",
+        "T-Nielsen-k-beta-derivative-ratio-monotonicity"
+      ],
+      "lineage_titles": [
+        "positive Laplace tilted moments imply strict monotonicity of a_{n+1}/(a_n a_{n+2})",
+        "Nielsen k-beta derivative ratio has parity monotonicity: odd n increasing, even n decre..."
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0011",
+      "title": "Exact \\(n=2\\) beta-window endpoint",
+      "problem": "Exact \\(n=2\\) beta-window endpoint",
+      "solution": "Exact certified endpoint for the remaining Qi--Lim--Nantomah beta-window case",
+      "reference": "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)",
+      "citation_key": "app-app-0011-source",
+      "solution_node": "T-Q2-terminal-exact",
+      "lineage": [
+        "T-Q2-analytic-denominator-reduced-assembly-terminal-certificate",
+        "T-Q2-terminal-exact"
+      ],
+      "lineage_titles": [
+        "analytic denominator reduced assembly proves terminal endpoint",
+        "determine exact I_2 via certified L_2 description"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0012",
+      "title": "Baricz \\(V_q\\) strict \\(q\\)-log-convexity",
+      "problem": "Baricz \\(V_q\\) strict \\(q\\)-log-convexity",
+      "solution": "Positive Laplace representation proving strict parameter log-convexity",
+      "reference": "Arpad Baricz, \"Turan type inequalities for some special functions\", Ph.D. thesis, University of Debrecen, 2008. [PDF](https://dea.lib.unideb.hu/bitstreams/bdd4469f-1b1e-4996-9b90-73f5e1a6b0e8/download)",
+      "citation_key": "app-app-0012-source",
+      "solution_node": "T-Baricz-Vq-strict-q-logconvexity",
+      "lineage": [
+        "T-Baricz-Vq-q-Laplace-normal-form",
+        "T-Baricz-Vq-q-complete-monotonicity",
+        "T-Baricz-Vq-strict-q-logconvexity"
+      ],
+      "lineage_titles": [
+        "Baricz V_q positive Laplace representation in q plus one",
+        "Baricz V_q completely monotone in parameter q plus one",
+        "Baricz V_q strictly log-convex in q"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0013",
+      "title": "Yin \\((p,k)\\)-digamma sharp \\(\\alpha\\)-necessity",
+      "problem": "Yin \\((p,k)\\)-digamma sharp \\(\\alpha\\)-necessity",
+      "solution": "Near-zero obstruction proving complete monotonicity forces \\(\\alpha\\le1\\)",
+      "reference": "Li Yin, \"Complete monotonicity of a function involving the \\((p,k)\\)-digamma function\", International Journal of Open Problems in Computer Mathematics 11(2), 103-108, 2018. [PDF](https://www.ijopcm.org/Vol/2018/2.9.pdf)",
+      "citation_key": "app-app-0013-source",
+      "solution_node": "T-Yin-pk-digamma-alpha-necessity",
+      "lineage": [
+        "T-Yin-pk-digamma-near-zero-asymptotic",
+        "T-Yin-pk-digamma-alpha-necessity"
+      ],
+      "lineage_titles": [
+        "Yin p,k-digamma bracket near zero asymptotic x inverse",
+        "Yin p,k-digamma complete monotonicity implies alpha <= 1"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0014",
+      "title": "Ramanujan integral is Stieltjes and has a complete Bernstein primitive",
+      "problem": "Classify the Ramanujan integral by a standard positive-kernel transform rather than only by inequalities.",
+      "solution": "The density is completely monotone, so the integral is Stieltjes and its Bernstein primitive is complete Bernstein.",
+      "reference": "Mishra and Swaminathan, Inequalities involving a Ramanujan Integral, arXiv:2511.07443.",
+      "citation_key": "app-app-0014-source",
+      "solution_node": "T-Ramanujan-density-logsquare-CM",
+      "lineage": [
+        "T-CM-closure-product-positive-mixture",
+        "T-Ramanujan-density-logsquare-CM"
+      ],
+      "lineage_titles": [
+        "complete monotone functions closed under product positive sums and positive mixtures",
+        "Ramanujan log square density phi zero is completely monotone"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0015",
+      "title": "Sibisi-Prabhakar measure is a stable-subordination push-forward",
+      "problem": "Give a canonical probabilistic representation of the Prabhakar Q-measure in the strict Pollard range.",
+      "solution": "The Q-measure is the alpha-stable subordination of the transform-normalized Pollard measure.",
+      "reference": "Sibisi, A Probabilistic Perspective on Feller, Pollard and the Complete Monotonicity of the Mittag-Leffler Function, arXiv:2301.01466.",
+      "citation_key": "app-app-0015-source",
+      "solution_node": "T-Sibisi-Prabhakar-Q-measure-problem-solved-canonical",
+      "lineage": [
+        "T-Prabhakar-Q-density-mixture-formula",
+        "T-Prabhakar-Q-stable-subordination-normal-form",
+        "T-Sibisi-Prabhakar-Q-measure-problem-solved-canonical"
+      ],
+      "lineage_titles": [
+        "Prabhakar Q density is stable density mixture over Pollard density",
+        "Sibisi Prabhakar Q measure is stable subordination of transform-normalized Pollard meas...",
+        "Sibisi Prabhakar Q measure determination problem solved canonically by stable subordina..."
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0016",
+      "title": "From's Mills-ratio bound extends to every derivative level",
+      "problem": "Lift the published Mills-ratio bound to the full derivative hierarchy.",
+      "solution": "The level-\\(L\\) determinant inequality yields an explicit bound for every derivative quotient and hence for the original Mills ratio.",
+      "reference": "From, Some new upper and lower bounds for the Mills ratio, J. Math. Anal. Appl. 486 (2020), 123872.",
+      "citation_key": "app-app-0016-source",
+      "solution_node": "T-From-Mills-explicit-bound-family-frontier",
+      "lineage": [
+        "T-From-Mills-Laplace-CM-normal-form",
+        "T-From-Mills-derivative-determinant-all-L",
+        "T-From-Mills-all-L-moment-ratio-quadratic-bound",
+        "T-From-Mills-all-L-alternating-r-bound-family",
+        "T-From-Mills-explicit-bound-family-frontier"
+      ],
+      "lineage_titles": [
+        "Mills ratio positive Laplace representation and complete monotonicity",
+        "Mills ratio all-L fourth-order determinant inequality",
+        "From Mills ratio all-L moment ratio quadratic upper bound",
+        "From Mills ratio explicit alternating all-L upper and lower bound family",
+        "From Mills ratio explicit all-L bound family solved after determinant bridge"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0017",
+      "title": "Baricz gamma-quotient Bernstein-for-all problem has a rational counterexample",
+      "problem": "Decide whether the gamma quotient is Bernstein throughout the full parameter range.",
+      "solution": "The parameters a=2, b=3 give a rational quotient whose derivative is not completely monotone.",
+      "reference": "Baricz, Turan type inequalities for hypergeometric functions, Proc. Amer. Math. Soc. 136 (2008), 3223--3229.",
+      "citation_key": "app-app-0017-source",
+      "solution_node": "T-Baricz-gamma-quotient-a2b3-not-BF",
+      "lineage": [
+        "T-Baricz-gamma-quotient-a2b3-not-BF"
+      ],
+      "lineage_titles": [
+        "Baricz gamma quotient counterexample at a=2 b=3 is not Bernstein"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0018",
+      "title": "Qi-Guo tau threshold has a supremum-corrected exact value",
+      "problem": "Find the optimal uniform threshold for the tau expression in Open Problem 3.",
+      "solution": "The exact threshold is the supremum \\(a_*/(1+a_*+a_*^2)\\), where \\(e^{a_*}=1+a_*+a_*^2\\); the value is not attained.",
+      "reference": "Qi and Guo, Complete Monotonicities of Functions Involving Gamma and Digamma Functions, RGMIA Res. Rep. Coll. 7 (2004), Article 8.",
+      "citation_key": "app-app-0018-source",
+      "solution_node": "T-QG-tau-global-supremum",
+      "lineage": [
+        "T-QG-tau-global-supremum"
+      ],
+      "lineage_titles": [
+        "Qi Guo tau global supremum equals a over 1+a+a^2 where exp(a)=1+a+a^2"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0019",
+      "title": "Wakrim W-symbol Bernstein range closes the beta gap",
+      "problem": "Close the open Bernstein-symbol range for the W-operator when \\(0<\\beta\\le1\\).",
+      "solution": "Wakrim's source supplies the \\(\\beta>1\\) obstruction; the staged proof proves the remaining Bernstein range \\(0\\le\\beta\\le1\\).",
+      "reference": "Wakrim, The W-Operator: A Volterra Fractional Time Operator with Non-Bernstein Symbol, arXiv:2601.02876.",
+      "citation_key": "app-app-0019-source",
+      "solution_node": "T-Wakrim-W-operator-BF-gap-solved",
+      "lineage": [
+        "T-Wakrim-W-symbol-exact-BF-range",
+        "T-Wakrim-W-operator-BF-gap-solved"
+      ],
+      "lineage_titles": [
+        "Wakrim W symbol Bernstein exact beta range zero to one",
+        "Wakrim W operator Bernstein gap beta in zero one solved affirmatively"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0020",
+      "title": "Qi's degree-four conjecture for h_lambda is refuted at the endpoint",
+      "problem": "Test the conjectured complete-monotonic degree four for \\(h_\\lambda\\) and \\(-h_\\mu\\).",
+      "solution": "The degree-four transforms fail the first derivative test near zero, so the conjecture is false.",
+      "reference": "Qi, Completely monotonic degree of a function involving trigamma and tetragamma functions, AIMS Math. 5 (2020), 3391--3407.",
+      "citation_key": "app-app-0020-source",
+      "solution_node": "T-not-Qi-hlambda-degree4-conjecture",
+      "lineage": [
+        "T-Qi-hlambda-x4-source-range-not-CM",
+        "T-not-Qi-hlambda-degree4-conjecture"
+      ],
+      "lineage_titles": [
+        "Qi h_lambda degree four transforms are not completely monotone on source ranges",
+        "not Qi h_lambda degree four conjecture"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0021",
+      "title": "Szabo's cutoff problem has \\(\\alpha_0=1\\)",
+      "problem": "Determine the exact cutoff \\(\\alpha_0\\) for \\(y^\\alpha H_d(y)\\).",
+      "solution": "The cutoff is \\(\\alpha_0=1\\): sufficiency is the source theorem and necessity follows from the singular expansion at zero.",
+      "reference": "Szabo, Completely monotone functions in general and some applications, arXiv:2411.17670.",
+      "citation_key": "app-app-0021-source",
+      "solution_node": "T-Dagum-c-endpoints-and-upper-gate",
+      "lineage": [
+        "T-Dagum-c-endpoints-and-upper-gate"
+      ],
+      "lineage_titles": [
+        "Dagum threshold has c one zero c two one and upper bound beta over two"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0022",
+      "title": "Chen-Choi Gurland gamma-ratio conjecture is logarithmically completely monotone",
+      "problem": "Prove logarithmic complete monotonicity of the Gurland gamma ratio conjectured in the source.",
+      "solution": "A Weierstrass product reduces log F to a sum of strictly completely monotone logarithmic second differences.",
+      "reference": "Chen and Choi, Completely monotonic functions related to Gurland's ratio for the gamma function, Math. Inequal. Appl. 20 (2017), 651--659.",
+      "citation_key": "app-app-0022-source",
+      "solution_node": "T-Chen-Choi-Gurland-logF-strict-CM",
+      "lineage": [
+        "T-Chen-Choi-Gurland-Euler-sum-normal-form",
+        "T-Chen-Choi-Gurland-logF-strict-CM"
+      ],
+      "lineage_titles": [
+        "Chen Choi Gurland Euler product sum normal form",
+        "Chen Choi Gurland log F strictly completely monotone"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0023",
+      "title": "Sokal generalized-Stieltjes lambda-derivatives have a triangular nonnegative compression",
+      "problem": "Explain the lambda-derivative structure of Sokal's generalized-Stieltjes Hankel-type expressions.",
+      "solution": "The exponential generating function gives a triangular nonnegative convolution formula for every lambda derivative.",
+      "reference": "Sokal, Real-variables characterization of generalized Stieltjes functions, Expo. Math. 28 (2010), 179--185.",
+      "citation_key": "app-app-0023-source",
+      "solution_node": "T-Sokal-GS-lambda-derivative-generating-function",
+      "lineage": [
+        "T-Sokal-GS-lambda-derivative-generating-function"
+      ],
+      "lineage_titles": [
+        "Sokal generalized Stieltjes tests have formal exponential generating function in k"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0024",
+      "title": "Simon gamma quotient is Bernstein",
+      "problem": "Determine whether Simon's gamma quotient \\(F_\\alpha(x)=\\Gamma(x+\\alpha)/(\\Gamma(x)x^\\alpha)\\) is Bernstein for \\(0<\\alpha<1\\).",
+      "solution": "A complement complete-monotonicity representation proves \\(F_\\alpha\\) is Bernstein.",
+      "reference": "Thomas Simon, Moment problems related to Bernstein functions, Ann. Fac. Sci. Toulouse Math. 29 (2020), 577--594.",
+      "citation_key": "app-app-0024-source",
+      "solution_node": "T-Baricz-gamma-quotient-BF-forall-negative-answer",
+      "lineage": [
+        "T-Baricz-gamma-quotient-a2b3-not-BF",
+        "T-Baricz-gamma-quotient-BF-forall-negative-answer"
+      ],
+      "lineage_titles": [
+        "Baricz gamma quotient counterexample at a=2 b=3 is not Bernstein",
+        "Baricz gamma quotient Bernstein forall problem has negative answer"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0025",
+      "title": "Du-Wang \\(h_3\\) monotonicity is classified",
+      "problem": "Classify Du-Wang's \\(h_3\\) monotonicity on \\((0,\\infty)\\) for \\(0<a<2\\).",
+      "solution": "A polygamma-ratio kernel proves increasing behavior exactly for \\(1/2\\le a\\le1\\), with nonmonotonicity outside.",
+      "reference": "Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530.",
+      "citation_key": "app-app-0025-source",
+      "solution_node": "T-Du-Wang-h3-open-problem-2-classification",
+      "lineage": [
+        "T-Du-Wang-h3-open-problem-2-classification"
+      ],
+      "lineage_titles": [
+        "Du Wang h3 Open Problem 2 classification increasing exactly middle window and nonmonoto..."
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0026",
+      "title": "Baskakov even-power complete-monotonicity conjecture is false",
+      "problem": "Decide the Abel-Gawronski-Neuschel complete-monotonicity conjecture for all even powers in the Baskakov family.",
+      "solution": "The \\(\\alpha=1,r=8\\) inverse-Laplace density is negative at \\(t=10\\pi\\), refuting the conjecture.",
+      "reference": "Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945.",
+      "citation_key": "app-app-0026-source",
+      "solution_node": "T-not-Baskakov-higher-power-even-conjecture",
+      "lineage": [
+        "T-Baskakov-alpha1-r8-not-CM",
+        "T-not-Baskakov-higher-power-even-conjecture"
+      ],
+      "lineage_titles": [
+        "Baskakov alpha one r eight rational function is not completely monotone",
+        "not Abel Gawronski Neuschel higher even power Baskakov complete monotonicity conjecture"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0027",
+      "title": "Ma-Weigert derivative regions form a descending chain",
+      "problem": "Prove the Ma-Weigert derivative-region descending-chain assertion for log-functions.",
+      "solution": "Tail vanishing and integration show \\(D_{k+1}\\subseteq D_k\\) for every \\(k,n\\).",
+      "reference": "Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225.",
+      "citation_key": "app-app-0027-source",
+      "solution_node": "T-Ma-Weigert-log-function-Dk-chain-conjecture",
+      "lineage": [
+        "T-Ma-Weigert-log-function-Dk-chain-conjecture"
+      ],
+      "lineage_titles": [
+        "Ma Weigert Conjecture 4.6 derivative sign regions descending chain"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0028",
+      "title": "Qi-Agarwal/Yin divisor-polygamma parity is corrected",
+      "problem": "Decide the Qi-Agarwal/Yin divisor-polygamma parity problem.",
+      "solution": "Odd divisor-polygamma sums are completely monotone, but the even non-CM clause is false because \\(f_2\\) is completely monotone.",
+      "reference": "Feng Qi and Ravi P. Agarwal, On complete monotonicity for several classes of functions related to ratios of gamma functions, Journal of Inequalities and Applications 2019, article 36.",
+      "citation_key": "app-app-0028-source",
+      "solution_node": "T-QA-divisor-polygamma-even-claim-refuted",
+      "lineage": [
+        "T-QA-divisor-polygamma-f2-CM",
+        "T-QA-divisor-polygamma-even-claim-refuted"
+      ],
+      "lineage_titles": [
+        "Qi-Agarwal divisor-polygamma f2 is completely monotone",
+        "Qi-Agarwal divisor-polygamma even parity non-CM claim is refuted by n=2"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0029",
+      "title": "Bulboaca-Zayed Gamma quotient has one critical point",
+      "problem": "Prove the Bulboaca-Zayed analytic one-critical-point pattern for their Gamma quotient.",
+      "solution": "A ratio-kernel single-crossing proof on \\([1,8]\\), plus source and right-tail intervals, gives the unique zero of \\(F'\\).",
+      "reference": "Teodor Bulboaca and Hanaa M. Zayed, Monotonic nature of the Gamma function, Journal of Inequalities and Applications 2026, article 27.",
+      "citation_key": "app-app-0029-source",
+      "solution_node": "T-Bulboaca-Zayed-gamma-quotient-full-monotonicity",
+      "lineage": [
+        "T-BZ-gamma-quotient-N-single-crossing-one-eight",
+        "T-BZ-gamma-quotient-critical-window-reduction",
+        "T-Bulboaca-Zayed-gamma-quotient-full-monotonicity"
+      ],
+      "lineage_titles": [
+        "Bulboaca Zayed gamma quotient numerator has one crossing on one eight",
+        "Bulboaca-Zayed gamma quotient critical window reduction",
+        "Bulboaca-Zayed gamma quotient full derivative sign pattern"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0030",
+      "title": "Ramanujan integral Turan window is false",
+      "problem": "Decide the Mishra-Swaminathan Ramanujan integral Turan-window complete-monotonicity problem.",
+      "solution": "A logarithmic-density moment-ratio asymptotic makes \\(H_2(e^{-L};1/2-1/(4L))<0\\), refuting the interval.",
+      "reference": "D. Mishra and A. Swaminathan, Inequalities involving a Ramanujan integral, arXiv:2511.07443.",
+      "citation_key": "app-app-0030-source",
+      "solution_node": "T-Ramanujan-Turan-window-negative-answer",
+      "lineage": [
+        "T-Ramanujan-Turan-n2-upper-window-counterfamily",
+        "T-Ramanujan-Turan-window-negative-answer"
+      ],
+      "lineage_titles": [
+        "Ramanujan Turan n two upper window has small x counterfamily",
+        "Ramanujan integral Turan window complete monotonicity problem negative answer"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0031",
+      "title": "Baricz gamma-quotient Bernstein test is false",
+      "problem": "Decide whether Baricz's gamma-quotient is Bernstein for every \\(a,b>0\\).",
+      "solution": "A single instance \\((a,b)=(2,3)\\) gives \\(g'''(1)<0\\), so the universal claim is false.",
+      "reference": "Arpad Baricz, Turan type inequalities for hypergeometric functions, Proc. Amer. Math. Soc. 136 (2008), 3223--3229.",
+      "citation_key": "app-app-0031-source",
+      "solution_node": "T-Baricz-gamma-quotient-BF-forall-negative-answer",
+      "lineage": [
+        "T-Baricz-gamma-quotient-a2b3-not-BF",
+        "T-Baricz-gamma-quotient-BF-forall-negative-answer"
+      ],
+      "lineage_titles": [
+        "Baricz gamma quotient counterexample at a=2 b=3 is not Bernstein",
+        "Baricz gamma quotient Bernstein forall problem has negative answer"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0032",
+      "title": "From's all-\\(L\\) Mills-ratio bound family is explicit",
+      "problem": "Solve From's open all-\\(L\\) Mills-ratio bound problem from Remark 6.5.",
+      "solution": "A determinant-to-ratio reduction gives a single explicit quadratic bound for every \\(L\\), and alternating upper/lower inequalities follow uniformly.",
+      "reference": "S. G. From, Some new upper and lower bounds for the Mills ratio, J. Math. Anal. Appl. 486 (2020), 123872.",
+      "citation_key": "app-app-0032-source",
+      "solution_node": "T-From-Mills-all-L-alternating-r-bound-family",
+      "lineage": [
+        "T-From-Mills-Laplace-CM-normal-form",
+        "T-From-Mills-derivative-determinant-all-L",
+        "T-From-Mills-all-L-moment-ratio-quadratic-bound",
+        "T-From-Mills-all-L-alternating-r-bound-family"
+      ],
+      "lineage_titles": [
+        "Mills ratio positive Laplace representation and complete monotonicity",
+        "Mills ratio all-L fourth-order determinant inequality",
+        "From Mills ratio all-L moment ratio quadratic upper bound",
+        "From Mills ratio explicit alternating all-L upper and lower bound family"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0033",
+      "title": "Ramanujan antiderivative is complete Bernstein",
+      "problem": "Resolve whether the Ramanujan integral antiderivative is a complete Bernstein function.",
+      "solution": "The Ramanujan density is shown completely monotone, yielding complete-Bernstein structure for the antiderivative.",
+      "reference": "Deepshikha Mishra and A. Swaminathan, Inequalities involving a Ramanujan Integral, arXiv:2511.07443.",
+      "citation_key": "app-app-0033-source",
+      "solution_node": "T-Ramanujan-antiderivative-complete-Bernstein",
+      "lineage": [
+        "T-CM-closure-product-positive-mixture",
+        "T-Ramanujan-density-logsquare-CM",
+        "T-Ramanujan-antiderivative-complete-Bernstein"
+      ],
+      "lineage_titles": [
+        "complete monotone functions closed under product positive sums and positive mixtures",
+        "Ramanujan log square density phi zero is completely monotone",
+        "Ramanujan integral antiderivative is complete Bernstein"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0034",
+      "title": "Bulboaca-Zayed gamma-quotient monotonicity solved",
+      "problem": "Solve the Bulboaca-Zayed one-critical-point monotonicity statement for the gamma quotient.",
+      "solution": "A ratio-kernel signature plus source interval/tail controls proves the claimed sign pattern and unique critical point.",
+      "reference": "Teodor Bulboaca and Hanaa M. Zayed, Monotonic nature of the Gamma function, Journal of Inequalities and Applications 2026, article 27.",
+      "citation_key": "app-app-0034-source",
+      "solution_node": "T-Bulboaca-Zayed-gamma-quotient-full-monotonicity",
+      "lineage": [
+        "T-BZ-gamma-quotient-N-single-crossing-one-eight",
+        "T-BZ-gamma-quotient-critical-window-reduction",
+        "T-Bulboaca-Zayed-gamma-quotient-full-monotonicity"
+      ],
+      "lineage_titles": [
+        "Bulboaca Zayed gamma quotient numerator has one crossing on one eight",
+        "Bulboaca-Zayed gamma quotient critical window reduction",
+        "Bulboaca-Zayed gamma quotient full derivative sign pattern"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0035",
+      "title": "Keady self-bijection inverse-CM question is negative",
+      "problem": "Ask whether a CM self-bijection \\((0,\\infty)\\to(0,\\infty)\\) must have a CM inverse (Keady Q3).",
+      "solution": "A local CM decreasing CM bijection is built whose inverse violates the third-derivative sign condition.",
+      "reference": "G. Keady, N. Khajohnsaksumeth, and B. Wiwatanapataphee, On functions and inverses, both positive, decreasing and convex: and Stieltjes functions, Cogent Mathematics & Statistics 5:1 (2018), 1477543.",
+      "citation_key": "app-app-0035-source",
+      "solution_node": "T-Keady-Q3-self-bijection-inverse-CM-negative-answer",
+      "lineage": [
+        "T-Keady-inverse-third-derivative-sign-certificate",
+        "T-Keady-self-bijection-inverse-CM-negative-example",
+        "T-Keady-Q3-self-bijection-inverse-CM-negative-answer"
+      ],
+      "lineage_titles": [
+        "Keady self-bijection inverse third derivative sign certificate at f(1/8)",
+        "Keady self-bijection completely monotone inverse not completely monotone example",
+        "Keady Question 3 self range inverse CM negative answer"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0036",
+      "title": "Baskakov even-line complete-monotonicity fails at \\(r=8\\)",
+      "problem": "Decide the even-line Baskakov complete-monotonicity conjecture at \\(r=8\\).",
+      "solution": "The \\(\\alpha=1\\), \\(r=8\\) inverse-Laplace density changes sign.",
+      "reference": "Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945.",
+      "citation_key": "app-app-0036-source",
+      "solution_node": "T-not-Baskakov-higher-power-even-conjecture",
+      "lineage": [
+        "T-Baskakov-alpha1-r8-not-CM",
+        "T-not-Baskakov-higher-power-even-conjecture"
+      ],
+      "lineage_titles": [
+        "Baskakov alpha one r eight rational function is not completely monotone",
+        "not Abel Gawronski Neuschel higher even power Baskakov complete monotonicity conjecture"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0037",
+      "title": "Du-Wang \\(h_3\\) is increasing exactly on \\(\\frac12\\le a\\le1\\)",
+      "problem": "Classify Du-Wang \\(h_3\\) monotonicity on \\((0,\\infty)\\).",
+      "solution": "\\(h_3\\) is monotone exactly for \\(1/2\\le a\\le1\\).",
+      "reference": "Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530.",
+      "citation_key": "app-app-0037-source",
+      "solution_node": "T-Du-Wang-h3-open-problem-2-classification",
+      "lineage": [
+        "T-Du-Wang-h3-open-problem-2-classification"
+      ],
+      "lineage_titles": [
+        "Du Wang h3 Open Problem 2 classification increasing exactly middle window and nonmonoto..."
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0038",
+      "title": "Ma-Weigert derivative-sign regions form a chain",
+      "problem": "Prove the Ma-Weigert derivative-region descending chain.",
+      "solution": "Derivative-sign identities yield \\(D_{k+1}\\subseteq D_k\\) for \\(k\\ge0\\).",
+      "reference": "Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225.",
+      "citation_key": "app-app-0038-source",
+      "solution_node": "T-Ma-Weigert-log-function-Dk-chain-conjecture",
+      "lineage": [
+        "T-Ma-Weigert-log-function-Dk-chain-conjecture"
+      ],
+      "lineage_titles": [
+        "Ma Weigert Conjecture 4.6 derivative sign regions descending chain"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0039",
+      "title": "Ramanujan Turan-window complete-monotonicity interval is false",
+      "problem": "Decide the Ramanujan Turan-window complete-monotonicity interval.",
+      "solution": "A sharper asymptotic refutes the claimed interval.",
+      "reference": "Deepshikha Mishra and A. Swaminathan, Inequalities involving a Ramanujan integral, arXiv:2511.07443.",
+      "citation_key": "app-app-0039-source",
+      "solution_node": "T-Ramanujan-Turan-window-negative-answer",
+      "lineage": [
+        "T-Ramanujan-Turan-n2-upper-window-counterfamily",
+        "T-Ramanujan-Turan-window-negative-answer"
+      ],
+      "lineage_titles": [
+        "Ramanujan Turan n two upper window has small x counterfamily",
+        "Ramanujan integral Turan window complete monotonicity problem negative answer"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0040",
+      "title": "Yang-Tian Bessel-\\(W\\) power-Bernstein conjecture is true",
+      "problem": "Solve Yang and Tian's Bessel-\\(W\\) power-Bernstein conjecture on the source interval.",
+      "solution": "The conjecture is proved on the source interval.",
+      "reference": "Zhen-Hang Yang and Jing-Feng Tian, Convexity of ratios of the modified Bessel functions of the first kind with applications, Revista Matematica Complutense, 2022.",
+      "citation_key": "app-app-0040-source",
+      "solution_node": "T-YT-Bessel-W-power-Bernstein-conjecture",
+      "lineage": [
+        "T-YT-Bessel-W-general-zero-partial-fraction",
+        "T-YT-Bessel-W-power-Bernstein-conjecture"
+      ],
+      "lineage_titles": [
+        "Yang Tian Bessel W general zero partial fraction proves W_nu sqrt is Bernstein",
+        "Yang Tian Conjecture 3 Bessel W_nu x^tau Bernstein for tau in (0,1/2], nu > -1"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0041",
+      "title": "Qi \\(h_\\lambda\\) degree-four complete-monotonicity conjecture is false",
+      "problem": "Settle Qi's degree-4 complete-monotonicity conjecture for \\(h_\\lambda\\).",
+      "solution": "Small-\\(x\\) derivative tests for \\(h_\\lambda\\) and \\(-h_\\mu\\) give positive sign on conjectured ranges.",
+      "reference": "Feng Qi, \"Completely monotonic degree of a function involving trigamma and tetragamma functions\", AIMS Mathematics 5 (2020), 3391-3407, DOI: 10.3934/math.2020219.",
+      "citation_key": "app-app-0041-source",
+      "solution_node": "T-Ma-Weigert-log-function-Dk-chain-conjecture",
+      "lineage": [
+        "T-Ma-Weigert-log-function-Dk-chain-conjecture"
+      ],
+      "lineage_titles": [
+        "Ma Weigert Conjecture 4.6 derivative sign regions descending chain"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0042",
+      "title": "Modified Bessel square-root log-concavity fails",
+      "problem": "Is \\(u\\mapsto \\sqrt{u}I_\\nu(u)\\) strictly log-concave for all \\(\\nu\\ge0\\)?",
+      "solution": "A concrete counterexample at \\((\\nu,u)=(0,10)\\) gives positive logarithmic second derivative.",
+      "reference": "Mihály Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001.",
+      "citation_key": "app-app-0042-source",
+      "solution_node": "T-not-Bessel-I-sqrt-log-concavity-nu-ge-0",
+      "lineage": [
+        "T-not-Bessel-I-sqrt-log-concavity-nu-ge-0"
+      ],
+      "lineage_titles": [
+        "exists nu >= 0 and u > 0 such that second derivative of log(sqrt(u) I_nu(u)) is nonnega..."
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0043",
+      "title": "Riccati log-concavity inequality for \\(I_\\nu\\) is false",
+      "problem": "Prove the universal Riccati log-concavity inequality for \\(r_\\nu(u)=I_\\nu'(u)/I_\\nu(u)\\).",
+      "solution": "The inequality is violated at \\((\\nu,u)=(0,10)\\) using explicit rational bounds.",
+      "reference": "Mihály Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001.",
+      "citation_key": "app-app-0043-source",
+      "solution_node": "T-not-Bessel-I-split-regime-log-concavity-certificate",
+      "lineage": [
+        "T-not-Bessel-I-split-regime-log-concavity-certificate"
+      ],
+      "lineage_titles": [
+        "no complete three-regime certificate can prove the false all-nu all-u Riccati log-conca..."
+      ],
+      "integration_status": "orphan_pending_integration",
+      "ledger_location": "appendix_pending_integration"
+    },
+    {
+      "application_id": "APP-0044",
+      "title": "Bessel ratio quadratic lower bound is false",
+      "problem": "Prove \\(q_\\nu(u)^2+(2\\nu+1)q_\\nu(u)/u+(\\nu+1/2)/u^2>1\\) for all \\(\\nu\\ge0,u>0\\), with \\(q_\\nu(u)=I_{\\nu+1}(u)/I_\\nu(u)\\).",
+      "solution": "A concrete counterexample at \\((\\nu,u)=(0,10)\\) gives the opposite strict inequality.",
+      "reference": "Mihály Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001.",
+      "citation_key": "app-app-0044-source",
+      "solution_node": "T-From-Mills-all-L-moment-ratio-quadratic-bound",
+      "lineage": [
+        "T-From-Mills-Laplace-CM-normal-form",
+        "T-From-Mills-derivative-determinant-all-L",
+        "T-From-Mills-all-L-moment-ratio-quadratic-bound"
+      ],
+      "lineage_titles": [
+        "Mills ratio positive Laplace representation and complete monotonicity",
+        "Mills ratio all-L fourth-order determinant inequality",
+        "From Mills ratio all-L moment ratio quadratic upper bound"
+      ],
+      "integration_status": "integrated",
+      "ledger_location": "appendix_application_ledger"
+    },
+    {
+      "application_id": "APP-0045",
+      "title": "Three-regime Bessel log-concavity certificate route is refuted",
+      "problem": "Give a three-regime certificate for universal \\(I_\\nu\\) Riccati log-concavity.",
+      "solution": "The source inequality is already false globally, so the proposed split-regime certificate cannot exist.",
+      "reference": "Mihály Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: 10.1016/j.exmath.2011.07.001.",
+      "citation_key": "app-app-0045-source",
+      "solution_node": "T-not-Bessel-I-split-regime-log-concavity-certificate",
+      "lineage": [
+        "T-not-Bessel-I-split-regime-log-concavity-certificate"
+      ],
+      "lineage_titles": [
+        "no complete three-regime certificate can prove the false all-nu all-u Riccati log-conca..."
+      ],
+      "integration_status": "orphan_pending_integration",
+      "ledger_location": "appendix_pending_integration"
+    }
+  ],
+  "theory_version": "v022"
+}

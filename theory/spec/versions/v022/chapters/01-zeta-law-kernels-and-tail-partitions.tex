@@ -1,0 +1,150 @@
+\section{Zeta-law kernels and tail partitions}
+The first method is to stop treating zeta-normalized formulae as isolated inequalities and instead regard them as probability, kernel, or tail-partition identities.  In this language, a sign assertion becomes a statement about a positive distribution of mass: a moment, a tail, a finite shadow, or a reciprocal partition function.
+
+The strategy in this section is therefore to introduce the kernel model first and then use it to move from identities to inequalities.  Results that are reusable as positive-kernel tools remain in the main text; source-specific estimates and finite certificates are deferred to the technical appendix when they do not change the reader's understanding of the mechanism.
+\begin{proposition}
+\label{res:qa-divisor-polygamma-f2-cm}
+The second divisor-polygamma sum \(f_2(x)=[\psi'(x)]^2+\psi''(x)\) is completely monotone on \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+For every \(k\ge1\), the standard polygamma sign theorem gives
+\[
+(-1)^{k+1}\psi^{(k)}(x)
+=
+\int_0^\infty \frac{t^k e^{-xt}}{1-e^{-t}}\,dt,
+\]
+so \((-1)^{k+1}\psi^{(k)}\) is completely monotone on \((0,\infty)\).
+
+If \(n\) is odd and \(km=n\), then \(k\) and \(m\) are both odd. Hence \(\psi^{(k)}\) itself is a positive completely monotone function, and
+\[
+\bigl[\psi^{(k)}(x)\bigr]^m
+\]
+is completely monotone by finite product closure of positive completely monotone functions. Summing over the finitely many divisor pairs \(km=n\) preserves complete monotonicity. Therefore \(f_n\) is completely monotone for every odd \(n\).
+
+For \(n=2\), the divisor pairs are \((k,m)=(1,2)\) and \((2,1)\), so
+\[
+f_2(x)=\bigl[\psi'(x)\bigr]^2+\psi''(x).
+\]
+The same Qi--Agarwal source records the known sharp theorem that
+\[
+\bigl[\psi'(x)\bigr]^2+\lambda\psi''(x)
+\]
+is completely monotonic on \((0,\infty)\) if and only if \(\lambda\le1\). Taking \(\lambda=1\) gives \(f_2\in CM(0,\infty)\).
+
+Thus the source's proposed even-parity clause, "\(f_{2\ell}\) is not completely monotonic for all \(\ell\in\mathbb N\)", is false already at \(\ell=1\). The source problem is solved negatively/correctively:
+
+the odd half is true;
+the stated even half is false;
+the corrected even frontier begins at \(n=4\), not \(n=2\).
+\end{proof}
+
+\begin{proposition}
+\label{res:incomplete-beta-tail-derivative-cm-certificate}
+For \(b>0\) and \(0<\lambda\le1\), the derivative of \(I_{b,\lambda}(x)=B(b,\lambda)-B(b,\lambda;e^{-x})\) is completely monotone; for \(0<\lambda<1\), \(I_{b,\lambda}'(x)=\sum_{n=0}^\infty (1-\lambda)_n e^{-(b+n)x}/n!\).
+\end{proposition}
+\begin{proof}
+For \(b>0\) and \(0<\lambda\le1\), define
+\[
+I_{b,\lambda}(x)=B(b,\lambda)-B(b,\lambda;e^{-x}).
+\]
+With the lower incomplete beta convention
+\[
+B(b,\lambda;z)=\int_0^z u^{b-1}(1-u)^{\lambda-1}\,du,
+\]
+one has
+\[
+I_{b,\lambda}(x)=\int_0^x e^{-bt}(1-e^{-t})^{\lambda-1}\,dt,
+\]
+and \(I_{b,\lambda}\) is a Bernstein function on \((0,\infty)\).
+
+The substitution \(u=e^{-t}\) gives
+\[
+B(b,\lambda)-B(b,\lambda;e^{-x})
+=\int_{e^{-x}}^1u^{b-1}(1-u)^{\lambda-1}\,du
+=\int_0^x e^{-bt}(1-e^{-t})^{\lambda-1}\,dt.
+\]
+Therefore
+\[
+I_{b,\lambda}'(x)=e^{-bx}(1-e^{-x})^{\lambda-1}.
+\]
+For \(\lambda=1\), this is \(e^{-bx}\), a completely monotone function.
+
+For \(0<\lambda<1\), put \(c=1-\lambda\). Then \(c\in(0,1)\), and
+\[
+(1-e^{-x})^{-c}
+=\sum_{n=0}^\infty \frac{(c)_n}{n!}e^{-nx}
+\]
+with positive coefficients and locally uniform convergence on \((0,\infty)\). Thus
+\[
+I_{b,\lambda}'(x)
+=\sum_{n=0}^\infty \frac{(c)_n}{n!}e^{-(b+n)x},
+\]
+the Laplace transform of the positive discrete measure
+\[
+\sum_{n=0}^\infty \frac{(c)_n}{n!}\delta_{b+n}.
+\]
+So \(I_{b,\lambda}'\) is completely monotone. Since \(I_{b,\lambda}(x)\ge0\), \(I_{b,\lambda}\in C^\infty(0,\infty)\), and \(I_{b,\lambda}'\) is completely monotone, \(I_{b,\lambda}\) is a Bernstein function.
+\end{proof}
+
+\begin{proposition}
+\label{res:log-function-signed-derivative-tail-vanishing}
+For every \(f\in\mathcal F_{1,n}\), where \(f(x)=p(\log x)/x\), and every \(k\ge0\), the signed derivative \(L^k f\) with \(L=-d/dx\) has the form \(x^{-k-1}p_k(\log x)\) for a polynomial \(p_k\), and therefore \(L^k f(x)\to0\) as \(x\to\infty\).
+\end{proposition}
+\begin{proof}
+We first prove that for each \(k\ge0\),
+\[
+L^k f(x)=x^{-k-1}p_k(\log x)
+\]
+for some polynomial \(p_k\).
+
+For \(k=0\), this is the definition with \(p_0=p\).  Suppose
+\[
+L^k f(x)=x^{-k-1}p_k(\log x).
+\]
+Then
+\[
+\begin{aligned}
+L^{k+1}f(x)
+&=-\frac{d}{dx}\left(x^{-k-1}p_k(\log x)\right)\\
+&=x^{-k-2}\left((k+1)p_k(\log x)-p_k'(\log x)\right).
+\end{aligned}
+\]
+Thus \(p_{k+1}(y)=(k+1)p_k(y)-p_k'(y)\), which is again a polynomial.
+
+Since every polynomial in \(\log x\) grows slower than every positive power of \(x\),
+\[
+x^{-k-1}p_k(\log x)\to0
+\qquad (x\to\infty).
+\]
+Therefore
+\[
+\lim_{x\to\infty}L^k f(x)=0
+\]
+for every \(k\ge0\).
+
+Assume \(f\in D_{k+1}\).  Then
+\[
+L^{k+1}f(x)\ge0
+\]
+on \((0,\infty)\).  Put
+\[
+g(x)=L^k f(x).
+\]
+By definition of \(L\),
+\[
+-g'(x)=L^{k+1}f(x)\ge0.
+\]
+Using \(g(x)\to0\) as \(x\to\infty\), integrate from \(x\) to \(R\):
+\[
+g(x)-g(R)=\int_x^R L^{k+1}f(t)\,dt.
+\]
+Letting \(R\to\infty\) gives
+\[
+L^k f(x)=g(x)=\int_x^\infty L^{k+1}f(t)\,dt\ge0.
+\]
+Hence \(f\in D_k\).  Therefore
+\[
+D_{k+1}\subseteq D_k
+\]
+for all \(k\ge0\) and all \(n\).
+\end{proof}
