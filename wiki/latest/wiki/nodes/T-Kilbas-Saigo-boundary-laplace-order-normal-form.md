@@ -4,7 +4,7 @@ type: "theorem"
 title: "boundary Kilbas Saigo conjecture as Laplace order between Gamma comparison and KS variable"
 status: "open"
 tags: ["attack-plan", "gamma-comparison", "kilbas-saigo", "laplace-order", "open", "theorem", "wide"]
-parents: ["T-Kilbas-Saigo-boundary-lower-hyperbolic-conjecture"]
+parents: ["T-Kilbas-Saigo-boundary-lower-hyperbolic-conjecture", "T-Kilbas-Saigo-boundary-mellin-convex-order-certificate"]
 refs: ["attack-plans/AP-20260528T001500-kilbas-saigo.json", "librarian/audits/LA-20260528T001500-kilbas-saigo-attack-plan.json", "wiki/notes/frontier-kilbas-saigo-boundary-hyperbolic.md"]
 ---
 
@@ -17,6 +17,7 @@ Let \(X_{\alpha,m}\) be a nonnegative random variable with Laplace transform \(\
 ## Dependencies
 
 - [[wiki/nodes/T-Kilbas-Saigo-boundary-lower-hyperbolic-conjecture|Boudabsa Simon Conjecture 3 boundary Kilbas Saigo lower hyperbolic bound all alpha in (0,1], m>0, x>=0]]
+- [[wiki/nodes/T-Kilbas-Saigo-boundary-mellin-convex-order-certificate|double Gamma Mellin quotient has positive kernel certificate implying KS Gamma Laplace order]]
 
 ## Proof and provenance references
 

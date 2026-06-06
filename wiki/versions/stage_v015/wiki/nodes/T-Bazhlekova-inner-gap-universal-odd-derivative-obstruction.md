@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bazhlekova inner gap universal odd derivative obstruction for square root two term symbol"
 status: "open"
 tags: ["attack-plan", "bazhlekova", "bernstein-functions", "higher-derivative-obstruction", "inner-gap", "open", "theorem"]
-parents: ["T-Bazhlekova-two-term-gap-universal-wt-failure"]
+parents: ["T-Bazhlekova-inner-gap-Wright-negativity-asymptotic"]
 refs: ["attack-plans/AP-20260601T013500-bazhlekova-two-term-gap-universal.json", "librarian/audits/LA-20260601T013500-bazhlekova-two-term-gap-universal-attack-plan.json", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
 ---
 
@@ -16,7 +16,7 @@ In the residual inner gap \(1<a<2\), \(0<b<a-1\), and \((a-1)^2+(b-1)^2\le1\), f
 
 ## Dependencies
 
-- [[wiki/nodes/T-Bazhlekova-two-term-gap-universal-wt-failure|Bazhlekova two term gap universal wt positivity failure]]
+- [[wiki/nodes/T-Bazhlekova-inner-gap-Wright-negativity-asymptotic|Bazhlekova residual inner gap Wright function high order odd derivative negativity route]]
 
 ## Proof and provenance references
 

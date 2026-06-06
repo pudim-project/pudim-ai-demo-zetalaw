@@ -4,7 +4,7 @@ type: "theorem"
 title: "Erdos 536 biased squarefree pair link supersaturation lifts to high support residual decay"
 status: "open"
 tags: ["biased-measure", "erdos-536", "lcm", "open", "pair-link", "squarefree", "theorem"]
-parents: ["T-Erdos536-high-support-residual-decay"]
+parents: ["T-Erdos536-prime-biased-weighted-union-free-frontier"]
 refs: ["attack-plans/AP-20260531T173500-erdos536-entropy-residual.json", "librarian/audits/LA-20260531T173500-erdos536-entropy-residual-attack-plan.json", "wiki/notes/frontier-erdos536-lcm-triangle-packing.md", "wiki/versions/stage_v006/wiki/nodes/mrw-37dbc6aeedf9.md", "wiki/versions/stage_v006/wiki/nodes/mrw-d0402aea6f58.md"]
 ---
 
@@ -16,7 +16,7 @@ For the first \(k\) primes, every fixed-positive-mass high-support family under 
 
 ## Dependencies
 
-- [[wiki/nodes/T-Erdos536-high-support-residual-decay|Erdos 536 high support prefix rank residual decays along growing prime sets]]
+- [[wiki/nodes/T-Erdos536-prime-biased-weighted-union-free-frontier|Erdos 536 prime biased high support union free theorem frontier]]
 
 ## Proof and provenance references
 

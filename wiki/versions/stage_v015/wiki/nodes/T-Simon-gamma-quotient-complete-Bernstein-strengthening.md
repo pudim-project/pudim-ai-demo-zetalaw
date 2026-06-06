@@ -4,7 +4,7 @@ type: "theorem"
 title: "Simon gamma quotient is CBF for alpha in (0,1)"
 status: "open"
 tags: ["complete-bernstein", "gamma-quotient", "open", "overstrong-route", "simon", "theorem"]
-parents: ["T-Simon-gamma-quotient-BF-alpha-window-open-problem"]
+parents: []
 refs: ["attack-plans/AP-20260531T121500-simon-gamma-quotient-bf.json", "wiki/notes/frontier-simon-gamma-quotient-bernstein.md"]
 ---
 
@@ -13,10 +13,6 @@ refs: ["attack-plans/AP-20260531T121500-simon-gamma-quotient-bf.json", "wiki/not
 ## Statement
 
 For every \(0<\alpha<1\), \(F_\alpha(x)=\Gamma(x+\alpha)/(\Gamma(x)x^\alpha)\) is a complete Bernstein function on \((0,\infty)\).
-
-## Dependencies
-
-- [[wiki/nodes/T-Simon-gamma-quotient-BF-alpha-window-open-problem|Simon gamma quotient is Bernstein for alpha in (0,1)]]
 
 ## Proof and provenance references
 

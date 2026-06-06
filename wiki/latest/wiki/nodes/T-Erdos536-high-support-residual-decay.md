@@ -4,7 +4,7 @@ type: "theorem"
 title: "Erdos 536 high support prefix rank residual decays along growing prime sets"
 status: "open"
 tags: ["erdos-536", "lcm", "open", "support-tail", "theorem", "valuation-entropy"]
-parents: ["T-Erdos536-lcm-triangle-packing-open-problem"]
+parents: ["T-Erdos536-biased-squarefree-pair-link-lift"]
 refs: ["attack-plans/AP-20260531T173500-erdos536-entropy-residual.json", "librarian/audits/LA-20260531T173500-erdos536-entropy-residual-attack-plan.json", "wiki/notes/frontier-erdos536-lcm-triangle-packing.md", "wiki/versions/stage_v006/wiki/nodes/mrw-4daa694d9526.md"]
 ---
 
@@ -16,7 +16,7 @@ There are finite prime sets \(P_j\) with \(S_{P_j}=\sum_{p\in P_j}1/p\to\infty\)
 
 ## Dependencies
 
-- [[wiki/nodes/T-Erdos536-lcm-triangle-packing-open-problem|Erdos 536 LCM-triangle-free maximum density open problem]]
+- [[wiki/nodes/T-Erdos536-biased-squarefree-pair-link-lift|Erdos 536 biased squarefree pair link supersaturation lifts to high support residual decay]]
 
 ## Proof and provenance references
 

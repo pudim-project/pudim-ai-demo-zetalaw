@@ -4,7 +4,7 @@ type: "theorem"
 title: "Polymath15 quartic backward-heat certificate"
 status: "proved"
 tags: ["certificate", "de-bruijn-newman", "finite-model", "heat-flow", "polymath15", "proved", "tao-related", "theorem"]
-parents: []
+parents: ["T-Exact-finite-certificate-verification-principle"]
 refs: [".pudim/attack-plans/AP-20260604T-tao-four-extra-rotation.json", ".pudim/raw/student/20260604T-tao-four-extra-rotation-first-pass.md", ".pudim/wiki/notes/tao-four-extra-rotation-first-pass.md"]
 ---
 
@@ -17,11 +17,23 @@ For F0(x)=(x^2-1)(x^2-4), the deformation Ft=exp(-t d^2/dx^2)F0 has only real ze
 F_t(x)=x^4-(5+12t)x^2+(4+10t+12t^2),\quad \Delta(t)=96t^2+80t+9>0.
 \]
 
+## Dependencies
+
+- [[wiki/nodes/T-Exact-finite-certificate-verification-principle|Exact finite certificate verification principle]]
+
 ## Proof and provenance references
 
 - `.pudim/attack-plans/AP-20260604T-tao-four-extra-rotation.json`
 - `.pudim/raw/student/20260604T-tao-four-extra-rotation-first-pass.md`
 - `.pudim/wiki/notes/tao-four-extra-rotation-first-pass.md`
+
+## Proof source health
+
+_No extractable public proof fragment was found for this proved theorem-like node._
+
+- .pudim/attack-plans/AP-20260604T-tao-four-extra-rotation.json: not a public proof-fragment source
+- .pudim/raw/student/20260604T-tao-four-extra-rotation-first-pass.md: not a public proof-fragment source
+- .pudim/wiki/notes/tao-four-extra-rotation-first-pass.md: not a public proof-fragment source
 
 ## Do not claim
 
