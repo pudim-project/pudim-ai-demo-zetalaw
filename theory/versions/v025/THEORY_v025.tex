@@ -1,0 +1,4649 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{problem}[theorem]{Problem}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{counterexample}[theorem]{Counterexample}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\supp}{supp}
+\newcommand{\E}{\mathbb E}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\1}{\mathbf 1}
+
+\title{Zeta-Law Entropy, Gamma Curvature, and Laplace-Measure Applications}
+\author{Pudim AI Project}
+\date{Version v025 -- 2026-06-05}
+
+\setcounter{tocdepth}{3}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper develops a unified public theory built around Laplace-transform
+positivity.  Zeta-law entropy is organized through logarithmic compression,
+gamma-ratio and polygamma inequalities are expressed by completely monotone
+kernels, and applications are obtained by transporting measure positivity
+through Stieltjes, Bernstein, stable-subordination, determinant, triangular,
+inverse-Laplace, derivative-chain, ratio-kernel, and moment-ratio mechanisms.
+The emphasis is on reusable transformations: source problems enter as fixed
+applications, while the proofs expose the structural tools that connect them.
+\end{abstract}
+
+\tableofcontents
+
+\medskip
+
+
+
+\noindent\textbf{Keywords.} Riemann zeta function; zeta probability law; entropy; Laplace transform; complete monotonicity; Bernstein functions; Stieltjes functions; gamma function; digamma function; Mills ratio; generalized Stieltjes functions.
+
+\section{Motivation and main results}
+
+Many classical identities for \(\zeta(s)\) become more transparent after a
+probabilistic normalization.  For \(\beta>1\), the weights \(n^{-\beta}\)
+define a Gibbs law whose partition function is precisely \(\zeta(\beta)\).
+The energy is \(\log n\), the free energy is \(\log\zeta(\beta)\), and ratios
+such as \(\zeta(\beta+r)/\zeta(\beta)\) become moments.  This viewpoint is
+elementary, but it packages several unrelated-looking zeta inequalities into a
+common calculus.
+
+The same principle guides the special-function part of the paper.  Complete
+monotonicity, Bernstein properties, Stieltjes representations, and endpoint
+obstructions are treated as transport questions: once a positive kernel,
+measure representation, determinant reduction, or rational certificate is
+identified, it can be reused across multiple source problems.  The central
+theme is therefore not an individual inequality, but the mechanism that makes
+families of inequalities stable under analytic transformations.
+
+Section~\ref{sec:applications} records solved external problems with stable
+application labels.  The ledger is not a chronology; it is a public index of
+source questions and the results that resolve them.  The body of the paper
+organizes those results by mechanism: zeta-law compression, gamma and
+polygamma curvature, Laplace and Stieltjes transport, determinant and
+moment-ratio reductions, endpoint obstructions, and explicit certificates.
+This organization lets the reader trace each application back to the tools
+that make it work.
+
+\section{Applications}
+\label{sec:applications}
+The application ledger is append-only public memory.  Each row records the immutable APP identifier, the canonical short description, the result reference used by the paper, and the cited source problem.
+\begin{enumerate}
+\item \label{ledger:app-0001}\textbf{APP-0001.} Alzer-Kwong convexity and concavity problem. Solved by Theorem~\ref{thm:alzer-kwong}; source problem reference \cite{app-app-0001-source}.
+\item \label{ledger:app-0002}\textbf{APP-0002.} Nantomah zeta positivity problem. Solved by Theorem~\ref{thm:nantomah-positivity}; source problem reference \cite{nantomah}.
+\item \label{ledger:app-0003}\textbf{APP-0003.} Sroysang generalized Holder problem. Solved by Theorem~\ref{thm:sroysang-holder}; source problem reference \cite{sroysang}.
+\item \label{ledger:app-0004}\textbf{APP-0004.} Complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\). Solved by Theorem~\ref{thm:reciprocal-gamma-complete-monotonicity}; source problem reference \cite{app-app-0004-source}.
+\item \label{ledger:app-0005}\textbf{APP-0005.} Exact inverse-tail floor formula at s=7. Solved by Theorem~\ref{thm:tail-s7-floor}; source problem reference \cite{kim-song-tail}.
+\item \label{ledger:app-0006}\textbf{APP-0006.} Exact inverse-tail floor formula at s=8. Solved by Theorem~\ref{thm:tail-s8-floor}; source problem reference \cite{kim-song-tail}.
+\item \label{ledger:app-0007}\textbf{APP-0007.} Concavity or complete monotonicity of the polygamma product P0. Solved by Theorem~\ref{thm:reciprocal-digamma-product-complete-monotonicity}; source problem reference \cite{app-app-0004-source}.
+\item \label{ledger:app-0008}\textbf{APP-0008.} Higher-order monotonicity of polygamma products Pn. Solved by Theorem~\ref{thm:pn-complete-monotonicity-counterexample}; source problem reference \cite{app-app-0004-source}.
+\item \label{ledger:app-0009}\textbf{APP-0009.} Sharp reciprocal Gamma-product monotonicity threshold. Solved by Theorem~\ref{thm:gamma-product-sharp-threshold}; source problem reference \cite{app-app-0009-source}.
+\item \label{ledger:app-0010}\textbf{APP-0010.} Nielsen \(k\)-beta derivative-ratio monotonicity. Solved by Theorem~\ref{thm:nielsen-k-beta-derivative-ratio}; source problem reference \cite{yin-zhang-k-beta}.
+\item \label{ledger:app-0011}\textbf{APP-0011.} Exact \(n=2\) beta-window endpoint. Solved by Theorem~\ref{thm:q2-exact-endpoint}; source problem reference \cite{app-app-0004-source}.
+\item \label{ledger:app-0012}\textbf{APP-0012.} Baricz \(V\_q\) strict \(q\)-log-convexity. Solved by Theorem~\ref{thm:baricz-vq-strict-logconvexity}; source problem reference \cite{baricz-turan-thesis}.
+\item \label{ledger:app-0013}\textbf{APP-0013.} Yin \((p,k)\)-digamma sharp \(\alpha\)-necessity. Solved by Theorem~\ref{thm:yin-pk-alpha-necessity}; source problem reference \cite{yin-pk-digamma}.
+\item \label{ledger:app-0014}\textbf{APP-0014.} Ramanujan integral is Stieltjes and has a complete Bernstein primitive. Solved by Theorem~\ref{thm:app14-ramanujan-stieltjes}; source problem reference \cite{mishra-swaminathan-ramanujan}.
+\item \label{ledger:app-0015}\textbf{APP-0015.} Sibisi-Prabhakar measure is a stable-subordination push-forward. Solved by Theorem~\ref{thm:app15-prabhakar-subordination}; source problem reference \cite{sibisi-prabhakar}.
+\item \label{ledger:app-0016}\textbf{APP-0016.} From's Mills-ratio bound extends to every derivative level. Solved by Theorem~\ref{thm:app16-mills-all-l}; source problem reference \cite{from-mills}.
+\item \label{ledger:app-0017}\textbf{APP-0017.} Baricz gamma-quotient Bernstein-for-all problem has a rational counterexample. Solved by Theorem~\ref{thm:app17-baricz-counterexample}; source problem reference \cite{baricz-turan}.
+\item \label{ledger:app-0018}\textbf{APP-0018.} Qi-Guo tau threshold has a supremum-corrected exact value. Solved by Theorem~\ref{thm:app18-qg-tau}; source problem reference \cite{qi-guo-2004}.
+\item \label{ledger:app-0019}\textbf{APP-0019.} Wakrim W-symbol Bernstein range closes the beta gap. Solved by Theorem~\ref{thm:app19-w-symbol}; source problem reference \cite{wakrim-w}.
+\item \label{ledger:app-0020}\textbf{APP-0020.} Qi's degree-four conjecture for h\_lambda is refuted at the endpoint. Solved by Theorem~\ref{thm:app20-qi-hlambda}; source problem reference \cite{qi-hlambda}.
+\item \label{ledger:app-0021}\textbf{APP-0021.} Szabo's cutoff problem has \(\alpha\_0=1\). Solved by Theorem~\ref{thm:app21-szabo-cutoff}; source problem reference \cite{szabo-cm}.
+\item \label{ledger:app-0022}\textbf{APP-0022.} Chen-Choi Gurland gamma-ratio conjecture is logarithmically completely monotone. Solved by Theorem~\ref{thm:app22-gurland-logcm}; source problem reference \cite{chen-choi-gurland}.
+\item \label{ledger:app-0023}\textbf{APP-0023.} Sokal generalized-Stieltjes lambda-derivatives have a triangular nonnegative compression. Solved by Theorem~\ref{thm:app23-sokal-lambda}; source problem reference \cite{sokal-gs}.
+\item \label{ledger:app-0024}\textbf{APP-0024.} Simon gamma quotient is Bernstein. Solved by Theorem~\ref{thm:app24-simon-gamma-quotient}; source problem reference \cite{simon-moment}.
+\item \label{ledger:app-0025}\textbf{APP-0025.} Du-Wang \(h\_3\) monotonicity is classified. Solved by Theorem~\ref{thm:app25-du-wang-h3}; source problem reference \cite{du-wang-h3}.
+\item \label{ledger:app-0026}\textbf{APP-0026.} Baskakov even-power complete-monotonicity conjecture is false. Solved by Theorem~\ref{thm:app26-baskakov-r8}; source problem reference \cite{abel-gawronski-neuschel}.
+\item \label{ledger:app-0027}\textbf{APP-0027.} Ma-Weigert derivative regions form a descending chain. Solved by Theorem~\ref{thm:app27-ma-weigert-chain}; source problem reference \cite{ma-weigert-log-functions}.
+\item \label{ledger:app-0028}\textbf{APP-0028.} Qi-Agarwal/Yin divisor-polygamma parity is corrected. Solved by Theorem~\ref{thm:app28-qa-divisor-polygamma}; source problem reference \cite{qi-agarwal-gamma-ratios}.
+\item \label{ledger:app-0029}\textbf{APP-0029.} Bulboaca-Zayed Gamma quotient has one critical point. Solved by Theorem~\ref{thm:app29-bz-gamma-quotient}; source problem reference \cite{bulboaca-zayed-gamma}.
+\item \label{ledger:app-0030}\textbf{APP-0030.} Ramanujan integral Turan window is false. Solved by Theorem~\ref{thm:app30-ramanujan-turan}; source problem reference \cite{mishra-swaminathan-ramanujan}.
+\item \label{ledger:app-0031}\textbf{APP-0031.} Baricz gamma-quotient Bernstein test is false. Solved by Counterexample~\ref{res:baricz-gamma-quotient-bf-forall-negative-answer}; source problem reference \cite{baricz-turan}.
+\item \label{ledger:app-0032}\textbf{APP-0032.} From's all-\(L\) Mills-ratio bound family is explicit. Solved by Proposition~\ref{res:from-mills-all-l-alternating-r-bound-family}; source problem reference \cite{from-mills}.
+\item \label{ledger:app-0033}\textbf{APP-0033.} Ramanujan antiderivative is complete Bernstein. Solved by Proposition~\ref{res:ramanujan-antiderivative-complete-bernstein}; source problem reference \cite{mishra-swaminathan-ramanujan}.
+\item \label{ledger:app-0034}\textbf{APP-0034.} Bulboaca-Zayed gamma-quotient monotonicity solved. Solved by Proposition~\ref{res:bulboaca-zayed-gamma-quotient-full-monotonicity}; source problem reference \cite{bulboaca-zayed-gamma}.
+\item \label{ledger:app-0035}\textbf{APP-0035.} Keady self-bijection inverse-CM question is negative. Solved by Counterexample~\ref{res:keady-q3-self-bijection-inverse-cm-negative-answer}; source problem reference \cite{app-app-0035-source}.
+\item \label{ledger:app-0036}\textbf{APP-0036.} Baskakov even-line complete-monotonicity fails at \(r=8\). Solved by Counterexample~\ref{res:not-baskakov-higher-power-even-conjecture}; source problem reference \cite{abel-gawronski-neuschel}.
+\item \label{ledger:app-0037}\textbf{APP-0037.} Du-Wang \(h\_3\) is increasing exactly on \(\frac12\le a\le1\). Solved by Counterexample~\ref{res:du-wang-h3-open-problem-2-classification}; source problem reference \cite{du-wang-h3}.
+\item \label{ledger:app-0038}\textbf{APP-0038.} Ma-Weigert derivative-sign regions form a chain. Solved by Proposition~\ref{res:ma-weigert-log-function-dk-chain-conjecture}; source problem reference \cite{ma-weigert-log-functions}.
+\item \label{ledger:app-0039}\textbf{APP-0039.} Ramanujan Turan-window complete-monotonicity interval is false. Solved by Counterexample~\ref{res:ramanujan-turan-window-negative-answer}; source problem reference \cite{mishra-swaminathan-ramanujan}.
+\item \label{ledger:app-0040}\textbf{APP-0040.} Yang-Tian Bessel-\(W\) power-Bernstein conjecture is true. Solved by Corollary~\ref{res:yt-bessel-w-power-bernstein-conjecture}; source problem reference \cite{app-app-0040-source}.
+\item \label{ledger:app-0041}\textbf{APP-0041.} Qi \(h\_\lambda\) degree-four complete-monotonicity conjecture is false. Solved by Counterexample~\ref{res:not-qi-hlambda-degree4-conjecture}; source problem reference \cite{app-app-0041-source}.
+\item \label{ledger:app-0042}\textbf{APP-0042.} Modified Bessel square-root log-concavity fails. Solved by Counterexample~\ref{res:not-bessel-i-sqrt-log-concavity-nu-ge-0}; source problem reference \cite{app-app-0042-source}.
+\item \label{ledger:app-0043}\textbf{APP-0043.} Riccati log-concavity inequality for \(I\_\nu\) is false. Solved by Corollary~\ref{res:not-bessel-i-riccati-log-concavity-inequality}; source problem reference \cite{app-app-0042-source}.
+\item \label{ledger:app-0044}\textbf{APP-0044.} Bessel ratio quadratic lower bound is false. Solved by Counterexample~\ref{res:not-bessel-i-ratio-quadratic-bound}; source problem reference \cite{app-app-0042-source}.
+\item \label{ledger:app-0045}\textbf{APP-0045.} Three-regime Bessel log-concavity certificate route is refuted. Solved by Corollary~\ref{res:not-bessel-i-split-regime-log-concavity-certificate}; source problem reference \cite{app-app-0042-source}.
+\item \label{ledger:app-0046}\textbf{APP-0046.} Tao--Sawin finite Weyl l1 minimum is exact. Solved by Proposition~\ref{res:tao-sawin-weyl-l1-exact-minimum}; source problem reference \cite{app-app-0046-source}.
+\item \label{ledger:app-0047}\textbf{APP-0047.} BPV noncentral chi-square HCM range has no positive noncentrality. Solved by Counterexample~\ref{res:bpv-noncentral-chi-square-hcm-no-positive-noncentrality}; source problem reference \cite{app-app-0047-source}.
+\item \label{ledger:app-0048}\textbf{APP-0048.} BMR tau-Gauss ordinary concavity is false. Solved by Counterexample~\ref{res:bmr-tau-gauss-not-globally-concave}; source problem reference \cite{app-app-0048-source}.
+\item \label{ledger:app-0049}\textbf{APP-0049.} Baricz arithmetic/arithmetic zero-balanced hypergeometric threshold. Solved by Proposition~\ref{res:baricz-aa-zero-balanced-concavity-threshold}; source problem reference \cite{app-app-0049-source}.
+\item \label{ledger:app-0050}\textbf{APP-0050.} Stolarsky shifted power means with \(p>1\) are not Bernstein. Solved by Counterexample~\ref{res:not-stolarsky-power-mean-pgt1-bernstein-all-shifts}; source problem reference \cite{app-app-0050-source}.
+\end{enumerate}
+
+\section{Zeta-law calculus}
+
+\begin{definition}[Riemann zeta probability law]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thetheorem: Riemann zeta probability law}
+\label{def:zeta-law}
+For \(\beta>1\), define a probability law \(\rho_\beta\) on \(\N\) by
+\begin{equation}
+\label{eq:zeta-law}
+\rho_\beta(n)=\frac{n^{-\beta}}{\zeta(\beta)},\qquad n\in\N.
+\end{equation}
+Equivalently, with \(E(n)=\log n\) and \(Z(\beta)=\zeta(\beta)\),
+\begin{equation}
+\label{eq:gibbs-form}
+\rho_\beta(n)=\frac{e^{-\beta E(n)}}{Z(\beta)}.
+\end{equation}
+\end{definition}
+
+\begin{definition}[Zeta free energy]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thetheorem: Zeta free energy}
+\label{def:zeta-free-energy}
+The zeta free energy is
+\begin{equation}
+\label{eq:zeta-free-energy}
+A(\beta)=\log\zeta(\beta),\qquad \beta>1.
+\end{equation}
+\end{definition}
+
+\begin{proposition}[Free-energy derivatives]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Free-energy derivatives}
+\label{prop:free-energy-derivatives}
+For every \(\beta>1\),
+\begin{align}
+\label{eq:free-energy-derivatives}
+A'(\beta)&=-\E_\beta[\log N],&
+A''(\beta)&=\Var_\beta(\log N).
+\end{align}
+\end{proposition}
+
+\begin{proof}
+Absolute convergence of the differentiated Dirichlet series on compact subintervals of \((1,\infty)\) permits termwise differentiation.  Thus
+\begin{equation}
+\label{eq:first-free-derivative-proof}
+A'(\beta)=\frac{\zeta'(\beta)}{\zeta(\beta)}
+=-\frac{\sum_{n\ge1}(\log n)n^{-\beta}}{\zeta(\beta)}
+=-\E_\beta[\log N].
+\end{equation}
+Differentiating once more gives
+\begin{equation}
+\label{eq:second-free-derivative-proof}
+A''(\beta)=\E_\beta[(\log N)^2]-\E_\beta[\log N]^2
+=\Var_\beta(\log N).
+\end{equation}
+\end{proof}
+
+Qi, Lim, and Nantomah ask whether \(P_0(x)=\psi(x)\psi(1/x)\) is concave, and more strongly whether \(-P_0''\) is completely monotonic on \((0,\infty)\) \cite{qi-lim-nantomah-polygamma}.  The next theorem answers the stronger question.
+
+\begin{theorem}[APP-0007: Complete monotonicity of reciprocal digamma product curvature]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0007: Complete monotonicity of reciprocal digamma product curvature}
+\label{thm:reciprocal-digamma-product-complete-monotonicity}
+Let
+\begin{equation}
+\label{eq:reciprocal-digamma-p0}
+P_0(x)=\psi(x)\psi(1/x),\qquad x>0.
+\end{equation}
+Then \(-P_0''\) is strictly completely monotonic on \((0,\infty)\).  In particular, \(P_0\) is strictly concave on \((0,\infty)\).
+\end{theorem}
+
+\begin{proof}
+Direct differentiation gives
+\begin{equation}
+\label{eq:p0-second-derivative}
+\begin{aligned}
+P_0''(x)
+=&\psi''(x)\psi(1/x)
+-\frac{2}{x^2}\psi'(x)\psi'(1/x)\\
+&+\frac{2}{x^3}\psi(x)\psi'(1/x)
++\frac{1}{x^4}\psi(x)\psi''(1/x).
+\end{aligned}
+\end{equation}
+Use the shifted Weierstrass expansion
+\begin{equation}
+\label{eq:digamma-shifted-expansion}
+\psi(x)=-\gamma-\frac1x+\sum_{m=1}^{\infty}a_m(x),
+\qquad
+a_m(x)=\frac{x}{m(m+x)},
+\end{equation}
+and, after substituting \(1/x\),
+\begin{equation}
+\label{eq:reciprocal-digamma-shifted-expansion}
+\psi(1/x)=-\gamma-x+\sum_{n=1}^{\infty}b_n(x),
+\qquad
+b_n(x)=\frac1{n(nx+1)}.
+\end{equation}
+On compact subintervals of \((0,\infty)\), the series for \(a_m\), \(b_n\), and their first two derivatives are uniformly summable; the differentiated double products are dominated by products of summable majorants.  Hence \(P_0\) may be differentiated term by term twice.
+
+Let \(A_0(x)=-\gamma-1/x\) and \(B_0(x)=-\gamma-x\).  The base term satisfies
+\begin{equation}
+\label{eq:p0-base-term}
+-\frac{d^2}{dx^2}\bigl(A_0(x)B_0(x)\bigr)=-\frac{2\gamma}{x^3}.
+\end{equation}
+For \(n\ge1\), elementary rational differentiation and Laplace inversion give
+\begin{equation}
+\label{eq:p0-a0bn-laplace}
+-\frac{d^2}{dx^2}\bigl(A_0(x)b_n(x)\bigr)
+=\int_0^\infty e^{-xt}t^2\frac{n+(\gamma-n)e^{-t/n}}{n^2}\,dt,
+\end{equation}
+and, for \(m\ge1\),
+\begin{equation}
+\label{eq:p0-b0am-laplace}
+-\frac{d^2}{dx^2}\bigl(B_0(x)a_m(x)\bigr)
+=\int_0^\infty e^{-xt}t^2(m-\gamma)e^{-mt}\,dt.
+\end{equation}
+For \(mn>1\),
+\begin{equation}
+\label{eq:p0-ambn-laplace}
+-\frac{d^2}{dx^2}\bigl(a_m(x)b_n(x)\bigr)
+=\int_0^\infty e^{-xt}t^2
+\left[
+\frac{e^{-t/n}}{mn^2(mn-1)}
+-\frac{e^{-mt}}{n(mn-1)}
+\right]dt.
+\end{equation}
+The exceptional product is \(a_1(x)b_1(x)=x/(x+1)^2\), and
+\begin{equation}
+\label{eq:p0-exceptional-laplace}
+-\frac{d^2}{dx^2}\frac{x}{(x+1)^2}
+=\int_0^\infty e^{-xt}t^2(t-1)e^{-t}\,dt.
+\end{equation}
+The identities above follow from
+\begin{equation}
+\label{eq:p0-laplace-powers}
+\frac1{(x+c)^3}=\int_0^\infty e^{-xt}\frac{t^2}{2}e^{-ct}\,dt,
+\qquad
+\frac1{(x+c)^4}=\int_0^\infty e^{-xt}\frac{t^3}{6}e^{-ct}\,dt.
+\end{equation}
+
+The coefficients of the double products group by the two identities
+\begin{equation}
+\label{eq:p0-group-n}
+\sum_{m=1}^{\infty}\frac1{m(mn-1)}
+=-\psi(1-1/n)-\gamma
+\qquad(n\ge2)
+\end{equation}
+and
+\begin{equation}
+\label{eq:p0-group-m}
+\sum_{n=1}^{\infty}\frac1{n(mn-1)}
+=-\psi(1-1/m)-\gamma
+\qquad(m\ge2).
+\end{equation}
+Both are immediate from \(\psi(z+1)+\gamma=\sum_{k=1}^\infty z/(k(k+z))\), with \(z=-1/n\) and \(z=-1/m\).  Combining \eqref{eq:p0-base-term}--\eqref{eq:p0-group-m} gives
+\begin{equation}
+\label{eq:p0-laplace-kernel-representation}
+-P_0''(x)=\int_0^\infty e^{-xt}K(t)\,dt,
+\end{equation}
+where
+\begin{equation}
+\label{eq:p0-kernel}
+\begin{aligned}
+K(t)=t^2\Bigg[
+&1-\gamma+(t-1)e^{-t}\\
+&+\sum_{n=2}^{\infty}
+\frac{n(1-e^{-t/n})-\psi(1-1/n)e^{-t/n}}{n^2}
++\sum_{m=2}^{\infty}\bigl(m+\psi(1-1/m)\bigr)e^{-mt}
+\Bigg].
+\end{aligned}
+\end{equation}
+
+It remains to prove \(K(t)>0\).  Since \(\psi\) is increasing and \(1-1/n\in[1/2,1)\),
+\begin{equation}
+\label{eq:p0-minus-psi-positive}
+-\psi(1-1/n)>0\qquad(n\ge2).
+\end{equation}
+Also
+\begin{equation}
+\label{eq:p0-m-sum-positive}
+m+\psi(1-1/m)\ge 2-\gamma-2\log2>0
+\qquad(m\ge2),
+\end{equation}
+because \(\psi(1-1/m)\ge\psi(1/2)=-\gamma-2\log2\).  Thus the two sums in \eqref{eq:p0-kernel} are positive term by term, apart from the possible need to dominate \(1-\gamma+(t-1)e^{-t}\).
+
+For \(n\ge2\),
+\begin{equation}
+\label{eq:p0-minus-psi-lower}
+-\psi(1-1/n)
+=\gamma+\int_{1-1/n}^{1}\psi'(u)\,du
+>\gamma+\int_{1-1/n}^{1}\frac{du}{u^2}
+=\gamma+\frac1{n-1}.
+\end{equation}
+Consequently the \(n\)-sum in \eqref{eq:p0-kernel} is bounded below by
+\begin{equation}
+\label{eq:p0-n-sum-lower}
+Ae^{-t/2},
+\qquad
+A=\gamma(\zeta(2)-1)+2-\zeta(2).
+\end{equation}
+Therefore \(K(t)/t^2\) is bounded below by
+\begin{equation}
+\label{eq:p0-f-lower}
+f(t)=1-\gamma+(t-1)e^{-t}+Ae^{-t/2}.
+\end{equation}
+Now
+\begin{equation}
+\label{eq:p0-f-endpoints}
+f(0)=A-\gamma=(2-\zeta(2))(1-\gamma)>0,
+\qquad
+\lim_{t\to\infty}f(t)=1-\gamma>0.
+\end{equation}
+Moreover,
+\begin{equation}
+\label{eq:p0-f-derivative}
+f'(t)=e^{-t}\left(2-t-\frac{A}{2}e^{t/2}\right),
+\end{equation}
+and the factor in parentheses is strictly decreasing.  Hence \(f\) has at most one critical point, and any such point is a maximum.  Its minimum on \([0,\infty)\) is attained at an endpoint, so \(f(t)>0\).  Thus \(K(t)>0\) for \(t>0\).
+
+Differentiating under \eqref{eq:p0-laplace-kernel-representation} yields
+\begin{equation}
+\label{eq:p0-complete-monotonicity}
+(-1)^r\frac{d^r}{dx^r}\bigl(-P_0''(x)\bigr)
+=\int_0^\infty t^r e^{-xt}K(t)\,dt>0
+\end{equation}
+for all \(r\ge0\).  This proves strict complete monotonicity of \(-P_0''\), and the case \(r=0\) gives strict concavity of \(P_0\).
+\end{proof}
+
+Qi, Lim, and Nantomah also ask whether the higher-order products \(P_n(x)=\psi^{(n)}(x)\psi^{(n)}(1/x)\), \(n\in\N\), are convex, and more strongly whether \(P_n''\) is completely monotonic.  The following result refutes the stronger assertion.  It does not settle the weaker convexity question.
+
+\begin{theorem}[APP-0008: Counterexample to complete monotonicity of higher-order polygamma product curvature]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0008: Counterexample to complete monotonicity of higher-order polygamma product cur...}
+\label{thm:pn-complete-monotonicity-counterexample}
+Let
+\begin{equation}
+\label{eq:pn-product}
+P_n(x)=\psi^{(n)}(x)\psi^{(n)}(1/x),\qquad n\in\N,\ x>0.
+\end{equation}
+Then \(P_n''\) is not completely monotonic for all \(n\in\N\).  More precisely, for every \(n\ge29\),
+\begin{equation}
+\label{eq:pn-high-order-third-positive}
+P_n'''(2)>0,
+\end{equation}
+and, already at lower order,
+\begin{equation}
+\label{eq:p7-sixth-negative}
+P_7^{(6)}(3)<0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For \(m\ge1\), define the sign-normalized polygamma function
+\begin{equation}
+\label{eq:sign-normalized-polygamma}
+A_m(x)=(-1)^{m+1}\psi^{(m)}(x)
+=m!\sum_{k=0}^{\infty}(x+k)^{-m-1}.
+\end{equation}
+Then \(A_m(x)>0\), \(A_m'(x)=-A_{m+1}(x)\), and \(P_n(x)=A_n(x)A_n(1/x)\).  Differentiating twice gives
+\begin{equation}
+\label{eq:pn-second-derivative-normalized}
+\begin{aligned}
+P_n''(x)=&
+A_{n+2}(x)A_n(1/x)
+-\frac{2}{x^2}A_{n+1}(x)A_{n+1}(1/x)\\
+&-\frac{2}{x^3}A_n(x)A_{n+1}(1/x)
++\frac{1}{x^4}A_n(x)A_{n+2}(1/x).
+\end{aligned}
+\end{equation}
+First prove \eqref{eq:pn-high-order-third-positive}.  Put \(p=n+1\), and normalize
+\begin{equation}
+\label{eq:qp-normalized-product}
+Q_p(x)=\frac{P_n(x)}{(n!)^2}
+=\sum_{m,\ell\ge0}
+\left(\frac{x}{(x+m)(1+\ell x)}\right)^p.
+\end{equation}
+At \(x=2\), the term \((m,\ell)=(0,0)\) is constant, and the unique largest nonconstant base is \((m,\ell)=(1,0)\), equal to \(2/3\).  Write
+\begin{equation}
+\label{eq:qp-dominant-split}
+Q_p(x)=1+\left(\frac{x}{x+1}\right)^p+R_p(x).
+\end{equation}
+For \(h(x)=x/(x+1)\), direct differentiation gives
+\begin{equation}
+\label{eq:h-third-derivative}
+\frac{d^3}{dx^3}h(x)^p
+=p\left(\frac{x}{x+1}\right)^p
+\frac{p^2-6px-3p+6x^2+6x+2}{x^3(x+1)^3}.
+\end{equation}
+Therefore
+\begin{equation}
+\label{eq:h-third-at-two}
+\frac{d^3}{dx^3}h(x)^p\bigg|_{x=2}
+=\frac{p(p^2-15p+38)}{216}\left(\frac23\right)^p.
+\end{equation}
+For \(p\ge30\), this is at least
+\begin{equation}
+\label{eq:h-third-lower}
+\frac{p^3}{432}\left(\frac23\right)^p.
+\end{equation}
+
+For a general summand
+\begin{equation}
+\label{eq:fmell-general}
+F_{m,\ell}(x)=
+\left(\frac{x}{(x+m)(1+\ell x)}\right)^p,
+\end{equation}
+let \(u_{m,\ell}=d(\log F_{m,\ell}^{1/p})/dx\).  At \(x=2\),
+\begin{equation}
+\label{eq:umell-bounds}
+|u_{m,\ell}|\le\frac12,\qquad
+|u_{m,\ell}'|\le\frac14,\qquad
+|u_{m,\ell}''|\le\frac14.
+\end{equation}
+Since
+\begin{equation}
+\label{eq:fmell-third-log}
+F_{m,\ell}'''=F_{m,\ell}\left(p^3u_{m,\ell}^3+3p^2u_{m,\ell}u_{m,\ell}'+pu_{m,\ell}''\right),
+\end{equation}
+we have \(|F_{m,\ell}'''(2)|\le p^3F_{m,\ell}(2)\) for \(p\ge2\).  The remaining mass in \(R_p\) is bounded by
+\begin{equation}
+\label{eq:rp-mass-bound}
+\sum_{(m,\ell)\ne(0,0),(1,0)}F_{m,\ell}(2)<8\cdot2^{-p}
+\qquad(p\ge3).
+\end{equation}
+Indeed, the \(m\ge2,\ell=0\) part is at most \(3\cdot2^{-p}\), while the \(\ell\ge1\) part is at most \(2\cdot2^{-p}(1+(2/3)^p+3\cdot2^{-p})\).
+Combining \eqref{eq:h-third-lower} and \eqref{eq:rp-mass-bound},
+\begin{equation}
+\label{eq:qp-third-lower}
+Q_p'''(2)\ge
+p^3 2^{-p}
+\left[
+\frac1{432}\left(\frac43\right)^p-8
+\right].
+\end{equation}
+Because \((4/3)^{30}>432\cdot8\), \eqref{eq:qp-third-lower} is positive for \(p\ge30\).  Hence \(P_n'''(2)=(n!)^2Q_{n+1}'''(2)>0\) for \(n\ge29\).  Complete monotonicity of \(P_n''\) would require \((P_n'')'=P_n'''\le0\), so \(P_n''\) is not completely monotonic for \(n\ge29\).
+
+We now record the lower-order obstruction \eqref{eq:p7-sixth-negative}.  For bookkeeping, put
+\begin{equation}
+\label{eq:tpij-definition}
+T_{p,i,j}(x)=x^{-p}A_i(x)A_j(1/x).
+\end{equation}
+The identity \(A_m'=-A_{m+1}\) gives the exact recurrence
+\begin{equation}
+\label{eq:tpij-derivative}
+\frac{d}{dx}T_{p,i,j}(x)
+=-pT_{p+1,i,j}(x)-T_{p,i+1,j}(x)+T_{p+2,i,j+1}(x).
+\end{equation}
+Starting with \eqref{eq:pn-second-derivative-normalized}, applying \eqref{eq:tpij-derivative} four times with \(n=7\) expresses \(P_7^{(6)}(3)\) as an exact finite linear combination of \(22\) terms \(T_{p,i,j}(3)\).
+
+The sign of this finite expression can be certified by rational intervals.  For rational \(x>0\) and \(N\ge1\), monotone integral comparison in \eqref{eq:sign-normalized-polygamma} gives
+\begin{equation}
+\label{eq:am-rational-lower}
+m!\left(\sum_{k=0}^{N-1}(x+k)^{-m-1}+\frac{(x+N)^{-m}}{m}\right)
+\le A_m(x),
+\end{equation}
+and
+\begin{equation}
+\label{eq:am-rational-upper}
+A_m(x)\le
+m!\left(\sum_{k=0}^{N-1}(x+k)^{-m-1}+\frac{(x+N)^{-m}}{m}+(x+N)^{-m-1}\right).
+\end{equation}
+Using \(N=80\) in \eqref{eq:am-rational-lower} and \eqref{eq:am-rational-upper} for every \(A_m(3)\) and \(A_m(1/3)\) appearing in the \(22\)-term expression, and choosing upper or lower endpoints according to the sign of each coefficient, yields
+\begin{equation}
+\label{eq:p7-sixth-certified-lower}
+-74998.154649422399828421756528409981771664439555587
+<P_7^{(6)}(3),
+\end{equation}
+and
+\begin{equation}
+\label{eq:p7-sixth-certified-upper}
+P_7^{(6)}(3)
+<-74997.331312439140215056900814096498575289999496021.
+\end{equation}
+Thus \(P_7^{(6)}(3)<0\).  If \(P_7''\) were completely monotonic, then
+\begin{equation}
+\label{eq:p7-cm-required-sign}
+(-1)^4\frac{d^4}{dx^4}P_7''(3)=P_7^{(6)}(3)\ge0,
+\end{equation}
+contradicting \eqref{eq:p7-sixth-certified-upper}.  Hence the proposed complete-monotonicity strengthening for all \(n\in\N\) is false in both an infinite high-order family and already at \(n=7\).
+\end{proof}
+
+\begin{proposition}[Zeta-law calculus]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Zeta-law calculus}
+\label{prop:zeta-law-calculus}
+Let \(\beta>1\), and let \(N\) have law \(\rho_\beta\).  For every \(r\ge0\),
+\begin{equation}
+\label{eq:zeta-law-moment}
+\E_\beta[N^{-r}]=\frac{\zeta(\beta+r)}{\zeta(\beta)}.
+\end{equation}
+Moreover, for \(\alpha,\beta>1\),
+\begin{equation}
+\label{eq:zeta-law-relative-entropy}
+D(\rho_\alpha\Vert\rho_\beta)
+=(\beta-\alpha)\E_\alpha[\log N]
++\log\zeta(\beta)-\log\zeta(\alpha).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The moment identity follows by direct summation:
+\begin{equation}
+\label{eq:zeta-law-moment-proof}
+\E_\beta[N^{-r}]
+=\sum_{n=1}^{\infty}n^{-r}\frac{n^{-\beta}}{\zeta(\beta)}
+=\frac{\zeta(\beta+r)}{\zeta(\beta)}.
+\end{equation}
+For relative entropy, substitute \eqref{eq:zeta-law}:
+\begin{equation}
+\label{eq:zeta-law-relative-entropy-proof}
+D(\rho_\alpha\Vert\rho_\beta)
+=\sum_{n=1}^{\infty}\rho_\alpha(n)
+\left((\beta-\alpha)\log n+\log\zeta(\beta)-\log\zeta(\alpha)\right),
+\end{equation}
+which is \eqref{eq:zeta-law-relative-entropy}.
+\end{proof}
+
+\section{Tail zeta laws and inverse-tail floors}
+
+\begin{definition}[Tail zeta partition function]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thetheorem: Tail zeta partition function}
+\label{def:tail-zeta-partition}
+For \(s>1\) and \(n\in\N\), define the tail zeta partition function by
+\begin{equation}
+\label{eq:tail-zeta-partition}
+Z_{s,n}=\zeta_n(s)=\sum_{k=n}^{\infty}k^{-s}.
+\end{equation}
+The corresponding tail zeta law is the probability distribution on \(\{n,n+1,\ldots\}\) given by
+\begin{equation}
+\label{eq:tail-zeta-law}
+\rho_{s,n}(k)=\frac{k^{-s}}{\zeta_n(s)},\qquad k\ge n.
+\end{equation}
+\end{definition}
+
+Exact formulas for integer parts of reciprocal zeta tails have been studied for small integer exponents.  Known formulas include \(s=2,3,4,5\), with a sufficiently-large-\(n\) formula for \(s=6\); Kim and Song record that no analogous formula was known for integer \(s>6\) at the time of their work \cite{kim-song-tail}.  The 2024 asymptotic inverse-tail results of Pan and Wu provide related context \cite{pan-wu-tail}.  The next two theorems give exact formulas at \(s=7\) and \(s=8\).  The first uses a single rational telescoping enclosure, while the second needs adjacent corrected asymptotic truncations.
+
+\begin{theorem}[APP-0005: Exact inverse-tail floor formula at s=7]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0005: Exact inverse-tail floor formula at s=7}
+\label{thm:tail-s7-floor}
+Let
+\begin{equation}
+\label{eq:tail-s7}
+T_7(n)=\zeta_n(7)=\sum_{k=n}^{\infty}\frac1{k^7}.
+\end{equation}
+Define
+\begin{equation}
+\label{eq:tail-s7-q}
+Q(n)=120n^6-360n^5+660n^4-720n^3+354n^2-54n+375,
+\qquad
+P(n)=\frac{Q(n)}{20}.
+\end{equation}
+Then, for every \(n\ge28\),
+\begin{equation}
+\label{eq:tail-s7-floor}
+\left\lfloor T_7(n)^{-1}\right\rfloor=\left\lfloor P(n)\right\rfloor.
+\end{equation}
+For \(1\le n\le27\), the exact values are
+\begin{equation}
+\label{eq:tail-s7-finite-table}
+\begin{array}{c|r@{\qquad}c|r@{\qquad}c|r}
+n&\lfloor T_7(n)^{-1}\rfloor&n&\lfloor T_7(n)^{-1}\rfloor&n&\lfloor T_7(n)^{-1}\rfloor\\
+\hline
+1&0&10&4495760&19&241765529\\
+2&119&11&8167814&20&331399044\\
+3&1862&12&14061542&21&447175152\\
+4&12573&13&23143975&22&594869693\\
+5&54069&14&36668777&23&781167220\\
+6&175597&15&56228085&24&1013751716\\
+7&471118&16&83808666&25&1301401638\\
+8&1100904&17&121852400&26&1654089273\\
+9&2317459&18&173321080&27&2083084422
+\end{array}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The polynomial \(Q\) is positive on \(\N\), because
+\begin{equation}
+\label{eq:tail-s7-q-positive}
+\begin{aligned}
+Q(n)
+&=120(n-1)^6+360(n-1)^5+660(n-1)^4+720(n-1)^3\\
+&\qquad +354(n-1)^2+54(n-1)+375.
+\end{aligned}
+\end{equation}
+For \(k\ge1\), direct expansion gives
+\begin{equation}
+\label{eq:tail-s7-lower-difference}
+\frac1{k^7}
+-\left(\frac{20}{Q(k)}-\frac{20}{Q(k+1)}\right)
+=
+\frac{9(60284k^4+29176k^2+15625)}
+{k^7Q(k)Q(k+1)}>0.
+\end{equation}
+Summing \eqref{eq:tail-s7-lower-difference} over \(k\ge n\) yields
+\begin{equation}
+\label{eq:tail-s7-lower-sum}
+T_7(n)>\frac{20}{Q(n)}=\frac1{P(n)},
+\end{equation}
+and therefore \(T_7(n)^{-1}<P(n)\).
+
+For \(k\ge28\), another expansion gives
+\begin{equation}
+\label{eq:tail-s7-upper-difference}
+\left(\frac{20}{Q(k)-3}-\frac{20}{Q(k+1)-3}\right)
+-\frac1{k^7}
+=
+\frac{36(20k^6-14961k^4-7235k^2-3844)}
+{k^7(Q(k)-3)(Q(k+1)-3)}.
+\end{equation}
+The numerator in \eqref{eq:tail-s7-upper-difference} is positive for \(k\ge28\).  Indeed, writing \(k=m+28\), it becomes
+\begin{equation}
+\label{eq:tail-s7-upper-positive}
+20m^6+3360m^5+220239m^4+7105168m^3
++114013021m^2+751143512m+436261580,
+\end{equation}
+which has positive coefficients for \(m\ge0\).  Hence, for \(n\ge28\),
+\begin{equation}
+\label{eq:tail-s7-upper-sum}
+T_7(n)<\frac{20}{Q(n)-3}=\frac1{P(n)-3/20}.
+\end{equation}
+Combining \eqref{eq:tail-s7-lower-sum} and \eqref{eq:tail-s7-upper-sum} gives
+\begin{equation}
+\label{eq:tail-s7-inverse-window}
+P(n)-\frac3{20}<T_7(n)^{-1}<P(n).
+\end{equation}
+
+Modulo \(20\),
+\begin{equation}
+\label{eq:tail-s7-q-mod}
+Q(n)\equiv 14n^2-14n+15\pmod {20}.
+\end{equation}
+Since \(n(n-1)\pmod {10}\in\{0,2,6\}\), this implies
+\begin{equation}
+\label{eq:tail-s7-q-residues}
+Q(n)\pmod {20}\in\{3,15,19\}.
+\end{equation}
+Thus the fractional part of \(P(n)\) is one of \(3/20,15/20,19/20\).  If \(a=\lfloor P(n)\rfloor\), then \(P(n)-3/20\ge a\), and \eqref{eq:tail-s7-inverse-window} gives
+\begin{equation}
+\label{eq:tail-s7-floor-trap}
+a<T_7(n)^{-1}<a+1.
+\end{equation}
+This proves \eqref{eq:tail-s7-floor} for \(n\ge28\).
+
+For the finite range, \(T_7(1)>1\), so \(0<T_7(1)^{-1}<1\).  For \(2\le n\le27\), let \(M_n\) denote the corresponding value in \eqref{eq:tail-s7-finite-table}.  With \(N=1500\), exact rational arithmetic verifies
+\begin{equation}
+\label{eq:tail-s7-finite-lower}
+\sum_{k=n}^{N}\frac1{k^7}>\frac1{M_n+1}
+\end{equation}
+and
+\begin{equation}
+\label{eq:tail-s7-finite-upper}
+\sum_{k=n}^{N}\frac1{k^7}+\frac1{6N^6}<\frac1{M_n}.
+\end{equation}
+The monotone integral estimate
+\begin{equation}
+\label{eq:tail-s7-integral-tail}
+\sum_{k=N+1}^{\infty}\frac1{k^7}<\int_N^\infty x^{-7}\,dx=\frac1{6N^6}
+\end{equation}
+then gives
+\begin{equation}
+\label{eq:tail-s7-finite-window}
+\frac1{M_n+1}<T_7(n)<\frac1{M_n}.
+\end{equation}
+Therefore \(M_n<T_7(n)^{-1}<M_n+1\), proving \eqref{eq:tail-s7-finite-table}.  The finite rational certificate is stored with the source as a reproducible calculation.
+\end{proof}
+
+\begin{theorem}[APP-0006: Exact inverse-tail floor formula at s=8]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0006: Exact inverse-tail floor formula at s=8}
+\label{thm:tail-s8-floor}
+Let
+\begin{equation}
+\label{eq:tail-s8}
+T_8(n)=\zeta_n(8)=\sum_{k=n}^{\infty}\frac1{k^8}.
+\end{equation}
+Define
+\begin{align}
+\label{eq:tail-s8-a}
+A_8(n)
+={}&7n^7-\frac{49}{2}n^6+\frac{637}{12}n^5-\frac{1715}{24}n^4
++\frac{7399}{144}n^3-\frac{1715}{96}n^2+\frac{69685}{1728}n-\frac{65611}{3456}\notag\\
+&-\frac{23764069}{103680n}
+-\frac{23764069}{207360n^2}
++\frac{2102131409}{1244160n^3}
++\frac{2149659547}{829440n^4}\notag\\
+&-\frac{203290800013}{14929920n^5}
+-\frac{1146003910541}{29859840n^6}
++\frac{21587525169497}{179159040n^7}.
+\end{align}
+Then, for every \(n\ge6\),
+\begin{equation}
+\label{eq:tail-s8-floor}
+\left\lfloor T_8(n)^{-1}\right\rfloor=\left\lfloor A_8(n)\right\rfloor.
+\end{equation}
+For \(1\le n\le5\), the exact values are
+\begin{equation}
+\label{eq:tail-s8-finite-table}
+\begin{array}{c|rrrrr}
+n&1&2&3&4&5\\
+\hline
+\lfloor T_8(n)^{-1}\rfloor&0&245&5844&53503&291407
+\end{array}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Set
+\begin{equation}
+\label{eq:tail-s8-b}
+B_8(n)=A_8(n)+\frac{200335112892761}{358318080n^8}.
+\end{equation}
+For \(C=A_8\) or \(B_8\), write \(R_C(k)=1/C(k)\).  Exact denominator clearing gives the two telescoping inequalities
+\begin{equation}
+\label{eq:tail-s8-lower-inverse-difference}
+R_{A_8}(k)-R_{A_8}(k+1)-\frac1{k^8}>0\qquad(k\ge3)
+\end{equation}
+and
+\begin{equation}
+\label{eq:tail-s8-upper-inverse-difference}
+\frac1{k^8}-\left(R_{B_8}(k)-R_{B_8}(k+1)\right)>0\qquad(k\ge1).
+\end{equation}
+In \eqref{eq:tail-s8-lower-inverse-difference}, the cleared numerator is a polynomial in \(k-3\) with all coefficients positive; in \eqref{eq:tail-s8-upper-inverse-difference}, the cleared numerator is a polynomial in \(k-1\) with all coefficients positive.  The exact coefficient verification is recorded in the rational certificate accompanying the manuscript.
+
+Summing \eqref{eq:tail-s8-lower-inverse-difference} over \(k\ge n\) gives
+\begin{equation}
+\label{eq:tail-s8-lower-inverse-sum}
+T_8(n)<R_{A_8}(n)=\frac1{A_8(n)}
+\end{equation}
+for \(n\ge3\), and hence \(A_8(n)<T_8(n)^{-1}\).  Summing \eqref{eq:tail-s8-upper-inverse-difference} gives
+\begin{equation}
+\label{eq:tail-s8-upper-inverse-sum}
+T_8(n)>R_{B_8}(n)=\frac1{B_8(n)},
+\end{equation}
+and hence \(T_8(n)^{-1}<B_8(n)\).  Therefore, for \(n\ge6\),
+\begin{equation}
+\label{eq:tail-s8-inverse-window}
+A_8(n)<T_8(n)^{-1}<B_8(n).
+\end{equation}
+
+It remains to see that no integer lies between \(A_8(n)\) and \(B_8(n)\).  Exact integer arithmetic verifies
+\begin{equation}
+\label{eq:tail-s8-floor-gap-finite}
+\lfloor A_8(n)\rfloor=\lfloor B_8(n)\rfloor\qquad(6\le n\le10^6).
+\end{equation}
+For \(n>10^6\), let \(P_8(n)\) be the polynomial part of \(A_8(n)\), through the constant term.  The numerator of \(P_8(n)\) modulo \(3456\) runs through the odd residue classes, so \(P_8(n)\) is at distance at least \(1/3456\) from the next integer.  The correction \(A_8(n)-P_8(n)\) is negative and has absolute value \(<1/3456\), while
+\begin{equation}
+\label{eq:tail-s8-gap-small}
+0<B_8(n)-A_8(n)<\frac1{3456}.
+\end{equation}
+Thus \(B_8(n)\) is still below the next integer after \(A_8(n)\).  Combining this with \eqref{eq:tail-s8-inverse-window} proves \eqref{eq:tail-s8-floor}.
+
+For \(1\le n\le5\), \eqref{eq:tail-s8-finite-table} is certified by exact rational partial sums.  With \(N=300\), the displayed value \(M_n\) satisfies, for \(2\le n\le5\),
+\begin{equation}
+\label{eq:tail-s8-finite-lower}
+\sum_{k=n}^{N}\frac1{k^8}>\frac1{M_n+1}
+\end{equation}
+and
+\begin{equation}
+\label{eq:tail-s8-finite-upper}
+\sum_{k=n}^{N}\frac1{k^8}+\frac1{7N^7}<\frac1{M_n}.
+\end{equation}
+Since
+\begin{equation}
+\label{eq:tail-s8-integral-tail}
+\sum_{k=N+1}^{\infty}\frac1{k^8}<\int_N^\infty x^{-8}\,dx=\frac1{7N^7},
+\end{equation}
+we get \(M_n<T_8(n)^{-1}<M_n+1\).  For \(n=1\), \(T_8(1)>1\), so the floor is \(0\).
+\end{proof}
+
+\section{Modular successor entropy}
+
+\begin{definition}[Modular residue distribution and successor entropy]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thetheorem: Modular residue distribution and successor entropy}
+\label{def:modular-residue-successor}
+For \(q\ge2\), define the residue distribution of \(\rho_\beta\) modulo \(q\) by
+\begin{equation}
+\label{eq:modular-residue-distribution}
+\mu_{q,\beta}(a)=
+\sum_{\substack{n\ge1\\ n\equiv a\pmod q}}\rho_\beta(n),
+\qquad a\in\Z/q\Z.
+\end{equation}
+Writing \(a+1\) cyclically in \(\Z/q\Z\), define
+\begin{equation}
+\label{eq:modular-successor-entropy}
+B_q(\beta)=
+\sum_{a\in\Z/q\Z}
+\mu_{q,\beta}(a)\log\frac{\mu_{q,\beta}(a)}{\mu_{q,\beta}(a+1)}.
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Zeta-law successor entropy and modular resolution]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: Zeta-law successor entropy and modular resolution}
+\label{thm:successor-entropy}
+For every \(\beta>1\), define
+\begin{equation}
+\label{eq:successor-entropy}
+\Sigma(\beta)=\sum_{n=1}^{\infty}\rho_\beta(n)
+\log\frac{\rho_\beta(n)}{\rho_\beta(n+1)}.
+\end{equation}
+Then
+\begin{equation}
+\label{eq:successor-entropy-series}
+\Sigma(\beta)=
+\frac{\beta}{\zeta(\beta)}
+\sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{k}\zeta(\beta+k),
+\end{equation}
+and
+\begin{equation}
+\label{eq:successor-entropy-modular-resolution}
+\Sigma(\beta)=\sup_{q\ge2}B_q(\beta)=\lim_{q\to\infty}B_q(\beta).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Since
+\begin{equation}
+\label{eq:successor-ratio}
+\frac{\rho_\beta(n)}{\rho_\beta(n+1)}
+=\left(1+\frac1n\right)^\beta,
+\end{equation}
+we have
+\begin{equation}
+\label{eq:successor-entropy-log-sum}
+\Sigma(\beta)=\frac{\beta}{\zeta(\beta)}
+\sum_{n=1}^{\infty}n^{-\beta}\log\left(1+\frac1n\right).
+\end{equation}
+Using
+\begin{equation}
+\label{eq:log-series}
+\log(1+x)=\sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{k}x^k
+\qquad(0<x\le1)
+\end{equation}
+with Abel limiting at \(x=1\), and summing against \(n^{-\beta}\), gives \eqref{eq:successor-entropy-series}.
+
+For the modular identity, fix \(q\ge2\).  The log-sum inequality gives, for each residue class \(a\),
+\begin{equation}
+\label{eq:modular-log-sum}
+\sum_{\substack{n\ge1\\ n\equiv a\pmod q}}
+\rho_\beta(n)\log\frac{\rho_\beta(n)}{\rho_\beta(n+1)}
+\ge
+\mu_{q,\beta}(a)
+\log\frac{\mu_{q,\beta}(a)}
+{\sum_{n\equiv a\pmod q}\rho_\beta(n+1)}.
+\end{equation}
+For \(a\ne0\), the denominator is \(\mu_{q,\beta}(a+1)\).  For \(a=0\), it is \(\mu_{q,\beta}(1)-\rho_\beta(1)\le\mu_{q,\beta}(1)\).  Summing \eqref{eq:modular-log-sum} over \(a\) gives
+\begin{equation}
+\label{eq:successor-dominates-modular}
+\Sigma(\beta)\ge B_q(\beta)
+\qquad(q\ge2).
+\end{equation}
+
+Conversely, fix \(M\in\N\).  If \(q>M+1\), then for \(1\le a\le M+1\),
+\begin{equation}
+\label{eq:residue-isolation}
+\mu_{q,\beta}(a)=\rho_\beta(a)+O_{\beta,M}(q^{-\beta}),
+\end{equation}
+and \(\mu_{q,\beta}(0)=q^{-\beta}\).  All cyclic terms in \(B_q(\beta)\) are nonnegative except possibly the boundary term, which satisfies
+\begin{equation}
+\label{eq:boundary-term}
+\mu_{q,\beta}(0)\log\frac{\mu_{q,\beta}(0)}{\mu_{q,\beta}(1)}
+=O_\beta(q^{-\beta}\log q).
+\end{equation}
+Therefore
+\begin{equation}
+\label{eq:modular-liminf}
+\liminf_{q\to\infty}B_q(\beta)
+\ge
+\sum_{n=1}^{M}\rho_\beta(n)\log\frac{\rho_\beta(n)}{\rho_\beta(n+1)}.
+\end{equation}
+Letting \(M\to\infty\) gives \(\liminf_qB_q(\beta)\ge\Sigma(\beta)\), which together with \eqref{eq:successor-dominates-modular} proves \eqref{eq:successor-entropy-modular-resolution}.
+\end{proof}
+
+\begin{corollary}[Prime-modulus Dirichlet L-resolution]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: Prime-modulus Dirichlet L-resolution}
+\label{cor:prime-dirichlet-resolution}
+Let \(p\) be prime, let \(\chi\) range over Dirichlet characters modulo \(p\), and define
+\begin{equation}
+\label{eq:prime-dirichlet-shadow}
+S_a(p,\beta)=\sum_{\chi\bmod p}\overline{\chi(a)}L(\beta,\chi)
+\qquad(1\le a\le p-1).
+\end{equation}
+Then
+\begin{equation}
+\label{eq:prime-residue-formula}
+\mu_{p,\beta}(a)=\frac{S_a(p,\beta)}{(p-1)\zeta(\beta)}
+\quad(1\le a\le p-1),
+\qquad
+\mu_{p,\beta}(0)=p^{-\beta}.
+\end{equation}
+Consequently the prime-modulus functionals obtained by substituting \eqref{eq:prime-residue-formula} into \(B_p(\beta)\) satisfy
+\begin{equation}
+\label{eq:prime-functional-limit}
+\Sigma(\beta)=
+\lim_{\substack{p\to\infty\\ p\ {\rm prime}}}
+F_p\bigl(\zeta(\beta),\{L(\beta,\chi)\}_{\chi\bmod p}\bigr)
+=
+\sup_{p\ {\rm prime}}
+F_p\bigl(\zeta(\beta),\{L(\beta,\chi)\}_{\chi\bmod p}\bigr).
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+For \(a\not\equiv0\pmod p\), character orthogonality gives
+\begin{equation}
+\label{eq:character-orthogonality}
+\frac1{p-1}\sum_{\chi\bmod p}\overline{\chi(a)}\chi(n)
+=
+\begin{cases}
+1,& n\equiv a\pmod p,\\
+0,& n\not\equiv a\pmod p.
+\end{cases}
+\end{equation}
+Therefore
+\begin{equation}
+\label{eq:dirichlet-residue-sum}
+\sum_{\substack{n\ge1\\ n\equiv a\pmod p}}n^{-\beta}
+=\frac1{p-1}\sum_{\chi\bmod p}\overline{\chi(a)}L(\beta,\chi).
+\end{equation}
+Dividing by \(\zeta(\beta)\) gives the nonzero residue formula, while
+\begin{equation}
+\label{eq:zero-residue-prime}
+\mu_{p,\beta}(0)=\frac1{\zeta(\beta)}\sum_{m=1}^{\infty}(mp)^{-\beta}
+=p^{-\beta}.
+\end{equation}
+The functional identity follows by substituting these residue formulas into \(B_p(\beta)\) and applying Theorem \ref{thm:successor-entropy} along the prime sequence.
+\end{proof}
+
+\section{Euler-score identities}
+
+\begin{theorem}[Euler-score decomposition]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: Euler-score decomposition}
+\label{thm:euler-score-decomposition}
+For every \(\beta>1\),
+\begin{equation}
+\label{eq:euler-score-decomposition}
+-\bigl(\log\zeta\bigr)'(\beta)
+=\E_\beta[\log N]
+=\sum_{d=1}^{\infty}\Lambda(d)\mu_{d,\beta}(0)
+=\sum_{d=1}^{\infty}\frac{\Lambda(d)}{d^\beta}.
+\end{equation}
+Equivalently,
+\begin{equation}
+\label{eq:log-zeta-von-mangoldt}
+-\frac{\zeta'(\beta)}{\zeta(\beta)}
+=\sum_{d=1}^{\infty}\frac{\Lambda(d)}{d^\beta}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The von Mangoldt identity is
+\begin{equation}
+\label{eq:mangoldt-identity}
+\log n=\sum_{d\mid n}\Lambda(d).
+\end{equation}
+By nonnegative summation,
+\begin{equation}
+\label{eq:euler-score-proof}
+\E_\beta[\log N]
+=\sum_{n\ge1}\rho_\beta(n)\sum_{d\mid n}\Lambda(d)
+=\sum_{d\ge1}\Lambda(d)\Prob_\beta(d\mid N).
+\end{equation}
+The divisibility probability is
+\begin{equation}
+\label{eq:divisibility-probability}
+\Prob_\beta(d\mid N)
+=\frac1{\zeta(\beta)}\sum_{m\ge1}(dm)^{-\beta}
+=d^{-\beta}.
+\end{equation}
+Substitution into \eqref{eq:euler-score-proof} proves \eqref{eq:euler-score-decomposition}; \eqref{eq:log-zeta-von-mangoldt} follows from \eqref{eq:first-free-derivative-proof}.
+\end{proof}
+
+\begin{proposition}[Finite Euler-score identity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Finite Euler-score identity}
+\label{prop:finite-euler-score}
+For every \(A\subseteq\{1,\ldots,N\}\),
+\begin{equation}
+\label{eq:finite-euler-score}
+\sum_{n\in A}\log n
+=\sum_{d\le N}\Lambda(d)\sum_{m\le N/d}\1_A(md).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Reverse the order of summation:
+\begin{equation}
+\label{eq:finite-euler-score-proof}
+\sum_{d\le N}\Lambda(d)\sum_{m\le N/d}\1_A(md)
+=\sum_{n\in A}\sum_{d\mid n}\Lambda(d)
+=\sum_{n\in A}\log n.
+\end{equation}
+\end{proof}
+
+\section{Curvature and Mellin-Planck tools}
+
+\begin{lemma}[Uniform positive-axis curvature bound]
+\phantomsection\addcontentsline{toc}{subsubsection}{Lemma~\thetheorem: Uniform positive-axis curvature bound}
+\label{lem:uniform-positive-axis-curvature}
+For every \(s\ge3\),
+\begin{equation}
+\label{eq:uniform-curvature-bound}
+(\log\zeta)''(s)=\Var_s(\log N)<\frac13.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+By Proposition \ref{prop:free-energy-derivatives},
+\begin{equation}
+\label{eq:curvature-first-bound}
+(\log\zeta)''(s)
+=\frac{\zeta''(s)}{\zeta(s)}
+-\left(\frac{\zeta'(s)}{\zeta(s)}\right)^2
+\le \frac{\zeta''(s)}{\zeta(s)}
+\le \zeta''(s).
+\end{equation}
+For \(s\ge3\),
+\begin{equation}
+\label{eq:zeta-second-derivative-bound}
+\zeta''(s)=\sum_{m=2}^{\infty}\frac{(\log m)^2}{m^s}
+\le\sum_{m=2}^{\infty}\frac{(\log m)^2}{m^3}.
+\end{equation}
+The function \(x\mapsto(\log x)^2x^{-3}\) is decreasing for \(x\ge2\), so
+\begin{equation}
+\label{eq:curvature-integral-comparison}
+\sum_{m=2}^{\infty}\frac{(\log m)^2}{m^3}
+\le
+\frac{(\log2)^2}{8}
++\int_2^\infty\frac{(\log x)^2}{x^3}\,dx.
+\end{equation}
+Since
+\begin{equation}
+\label{eq:curvature-integral-value}
+\int_2^\infty\frac{(\log x)^2}{x^3}\,dx
+=\frac{(\log2)^2+\log2+\frac12}{8},
+\end{equation}
+we obtain
+\begin{equation}
+\label{eq:curvature-final-bound}
+(\log\zeta)''(s)
+\le
+\frac{2(\log2)^2+\log2+\frac12}{8}
+<\frac13.
+\end{equation}
+\end{proof}
+
+\begin{definition}[Mellin-Planck partition function]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thetheorem: Mellin-Planck partition function}
+\label{def:mellin-planck-partition}
+For \(s>1\), define
+\begin{equation}
+\label{eq:mellin-planck-partition}
+M(s)=\Gamma(s)\zeta(s)
+=\int_0^\infty\frac{t^{s-1}}{e^t-1}\,dt.
+\end{equation}
+The corresponding probability law is
+\begin{equation}
+\label{eq:mellin-planck-law}
+\nu_s(dt)=\frac{t^{s-1}}{(e^t-1)M(s)}\,dt.
+\end{equation}
+\end{definition}
+
+\begin{proposition}[Mellin-Planck log-convexity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Mellin-Planck log-convexity}
+\label{prop:mellin-planck-log-convexity}
+For \(s>1\),
+\begin{equation}
+\label{eq:mellin-planck-log-convexity}
+\frac{d^2}{ds^2}\log M(s)=\Var_{\nu_s}(\log t)\ge0.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Differentiate the logarithm of the integral in \eqref{eq:mellin-planck-partition} under the integral sign.  The first derivative is the \(\nu_s\)-expectation of \(\log t\), and the second derivative is its variance:
+\begin{equation}
+\label{eq:mellin-planck-variance-proof}
+\frac{d^2}{ds^2}\log M(s)
+=\E_{\nu_s}[(\log t)^2]-\E_{\nu_s}[\log t]^2.
+\end{equation}
+\end{proof}
+
+Bulboaca and Zayed proved several monotonicity criteria for functions of the form
+\(u(s)/(\Gamma(s+\rho)\Gamma(s))\) and asked for best possible positive
+values of \(\rho\) in their examples \cite{bulboaca-zayed-gamma}.  The next
+application gives the sharp endpoint in the base reciprocal Gamma-product
+case and the corresponding endpoint criterion for monotone logarithmic
+derivatives.
+
+\begin{theorem}[APP-0009: Sharp reciprocal Gamma-product monotonicity threshold]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0009: Sharp reciprocal Gamma-product monotonicity threshold}
+\label{thm:gamma-product-sharp-threshold}
+Let \(\psi=\Gamma'/\Gamma\), let \(\gamma\) be Euler's constant, and let
+\(\rho_*>0\) be the unique solution of
+\begin{equation}
+\label{eq:gamma-product-rho-star}
+\psi(1+\rho_*)=\gamma.
+\end{equation}
+For \(\rho>-1\), define
+\begin{equation}
+\label{eq:gamma-product-reciprocal}
+\varphi_\rho(s)=\frac{1}{\Gamma(s+\rho)\Gamma(s)},\qquad s\ge1.
+\end{equation}
+Then \(\varphi_\rho\) is strictly decreasing on \([1,\infty)\) if and only if
+\begin{equation}
+\label{eq:gamma-product-threshold}
+\rho\ge\rho_*.
+\end{equation}
+Equivalently,
+\begin{equation}
+\label{eq:gamma-product-W}
+W_\rho(s)=\Gamma(s+\rho)\Gamma(s)
+\end{equation}
+is strictly increasing on \([1,\infty)\) if and only if
+\eqref{eq:gamma-product-threshold} holds.  Numerically,
+\begin{equation}
+\label{eq:gamma-product-rho-star-numeric}
+\rho_*=1.2583969670859318174106234224981693941\ldots .
+\end{equation}
+
+More generally, let \(u:[1,\infty)\to(0,\infty)\) be differentiable and suppose
+\begin{equation}
+\label{eq:gamma-product-J}
+J(s)=\frac{u'(s)}{u(s)}
+\end{equation}
+is nonincreasing on \([1,\infty)\).  Then
+\begin{equation}
+\label{eq:gamma-product-general-Phi}
+\Phi_{\rho,u}(s)=\frac{u(s)}{\Gamma(s+\rho)\Gamma(s)}
+\end{equation}
+is strictly decreasing on \([1,\infty)\) if and only if
+\begin{equation}
+\label{eq:gamma-product-general-threshold}
+\psi(1+\rho)\ge\gamma+J(1).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The digamma function is strictly increasing on \((0,\infty)\), since
+\begin{equation}
+\label{eq:digamma-positive-series}
+\psi'(x)=\sum_{k=0}^{\infty}\frac{1}{(x+k)^2}>0.
+\end{equation}
+Hence \eqref{eq:gamma-product-rho-star} has a unique positive solution.
+
+For \(s\ge1\), the logarithmic derivative of
+\eqref{eq:gamma-product-W} is
+\begin{equation}
+\label{eq:gamma-product-log-derivative}
+\frac{d}{ds}\log W_\rho(s)=\psi(s+\rho)+\psi(s).
+\end{equation}
+The right-hand side is strictly increasing in \(s\).  Its minimum on
+\([1,\infty)\) is therefore
+\begin{equation}
+\label{eq:gamma-product-left-endpoint}
+\psi(1+\rho)+\psi(1)=\psi(1+\rho)-\gamma.
+\end{equation}
+If \(\rho\ge\rho_*\), then \eqref{eq:gamma-product-left-endpoint} is
+nonnegative, and it is positive for every \(s>1\).  Thus, for
+\(1\le a<b\),
+\begin{equation}
+\label{eq:gamma-product-integrated-positive}
+\log W_\rho(b)-\log W_\rho(a)
+=\int_a^b\bigl(\psi(s+\rho)+\psi(s)\bigr)\,ds>0.
+\end{equation}
+So \(W_\rho\) is strictly increasing and \(\varphi_\rho=1/W_\rho\) is
+strictly decreasing.  Conversely, if \(\rho<\rho_*\), then
+\eqref{eq:gamma-product-left-endpoint} is negative, so by continuity
+\(W_\rho\) decreases initially and \(\varphi_\rho\) increases initially.
+This proves the base equivalence.
+
+For the general statement,
+\begin{equation}
+\label{eq:gamma-product-general-log-derivative}
+\frac{d}{ds}\log\Phi_{\rho,u}(s)
+=J(s)-\psi(s+\rho)-\psi(s).
+\end{equation}
+The term \(J\) is nonincreasing by hypothesis, while
+\(\psi(s+\rho)+\psi(s)\) is strictly increasing.  Therefore the logarithmic
+derivative in \eqref{eq:gamma-product-general-log-derivative} is strictly
+decreasing, and its maximum on \([1,\infty)\) is
+\begin{equation}
+\label{eq:gamma-product-general-left-endpoint}
+J(1)-\psi(1+\rho)-\psi(1)
+=J(1)-\psi(1+\rho)+\gamma.
+\end{equation}
+The function \(\Phi_{\rho,u}\) is strictly decreasing exactly when this maximum
+is nonpositive, which is \eqref{eq:gamma-product-general-threshold}.  If the
+inequality fails, the logarithmic derivative is positive near \(s=1\), so
+monotonicity fails.
+\end{proof}
+
+Qi, Lim, and Nantomah asked whether the second derivative of \(\log\Gamma(x)+\log\Gamma(1/x)\) is completely monotonic on \((0,\infty)\) \cite{qi-lim-nantomah-polygamma}.  The next theorem answers this in the affirmative by a reciprocal-Weierstrass Laplace kernel.
+
+\begin{theorem}[APP-0004: Complete monotonicity of reciprocal-Gamma curvature]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0004: Complete monotonicity of reciprocal-Gamma curvature}
+\label{thm:reciprocal-gamma-complete-monotonicity}
+Let
+\begin{equation}
+\label{eq:reciprocal-gamma-h}
+H(x)=\log\Gamma(x)+\log\Gamma(1/x),\qquad x>0.
+\end{equation}
+Then \(H''\) is strictly completely monotonic on \((0,\infty)\); that is,
+\begin{equation}
+\label{eq:reciprocal-gamma-complete-monotonicity}
+(-1)^m\frac{d^m}{dx^m}H''(x)>0
+\qquad(m\ge0,\ x>0).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The Weierstrass product gives, for \(x>0\),
+\begin{equation}
+\label{eq:gamma-weierstrass-log}
+\log\Gamma(x)
+=-\log x-\gamma x-\sum_{n=1}^{\infty}
+\left(\log\left(1+\frac{x}{n}\right)-\frac{x}{n}\right).
+\end{equation}
+After substituting \(1/x\) in \eqref{eq:gamma-weierstrass-log}, adding the two formulas, and differentiating twice on compact subintervals of \((0,\infty)\), the logarithmic second-derivative terms cancel and
+\begin{equation}
+\label{eq:reciprocal-gamma-second-series}
+\begin{aligned}
+H''(x)
+&=\sum_{n=1}^{\infty}\frac1{(x+n)^2}
+-\frac{2\gamma}{x^3}\\
+&\qquad+
+\sum_{n=1}^{\infty}
+\left[
+\frac1{(x+1/n)^2}
+-\frac1{x^2}
++\frac{2}{nx^3}
+\right].
+\end{aligned}
+\end{equation}
+The elementary Laplace identities
+\begin{equation}
+\label{eq:reciprocal-gamma-laplace-identities}
+\frac1{(x+a)^2}=\int_0^\infty t e^{-(x+a)t}\,dt,\qquad
+\frac1{x^2}=\int_0^\infty t e^{-xt}\,dt,\qquad
+\frac{2a}{x^3}=a\int_0^\infty t^2e^{-xt}\,dt
+\end{equation}
+show that, with \(a=1/n\),
+\begin{equation}
+\label{eq:reciprocal-gamma-defect-laplace}
+\frac1{(x+1/n)^2}-\frac1{x^2}+\frac{2}{nx^3}
+=\int_0^\infty e^{-xt}t\left(e^{-t/n}-1+\frac{t}{n}\right)\,dt.
+\end{equation}
+Also,
+\begin{equation}
+\label{eq:reciprocal-gamma-trigamma-laplace}
+\sum_{n=1}^{\infty}\frac1{(x+n)^2}
+=\int_0^\infty e^{-xt}\frac{t}{e^t-1}\,dt,
+\end{equation}
+and
+\begin{equation}
+\label{eq:reciprocal-gamma-euler-laplace}
+-\frac{2\gamma}{x^3}
+=\int_0^\infty e^{-xt}(-\gamma t^2)\,dt.
+\end{equation}
+Combining \eqref{eq:reciprocal-gamma-second-series}--\eqref{eq:reciprocal-gamma-euler-laplace} gives
+\begin{equation}
+\label{eq:reciprocal-gamma-kernel-representation}
+H''(x)=\int_0^\infty e^{-xt}K(t)\,dt,
+\end{equation}
+where
+\begin{equation}
+\label{eq:reciprocal-gamma-kernel}
+K(t)=\frac{t}{e^t-1}
++t\sum_{n=1}^{\infty}\left(e^{-t/n}-1+\frac{t}{n}\right)
+-\gamma t^2.
+\end{equation}
+
+It remains to prove \(K(t)>0\).  Put
+\begin{equation}
+\label{eq:reciprocal-gamma-phi}
+\phi(u)=e^{-u}-1+u.
+\end{equation}
+Then \(\phi\ge0\), \(\phi'=1-e^{-u}\ge0\), and \(u\mapsto\phi(t/u)\) is positive and decreasing on \([1,\infty)\).  Therefore
+\begin{equation}
+\label{eq:reciprocal-gamma-sum-integral}
+\sum_{n=1}^{\infty}\phi(t/n)\ge\int_1^\infty \phi(t/u)\,du.
+\end{equation}
+With \(v=t/u\), integration by parts gives
+\begin{equation}
+\label{eq:reciprocal-gamma-integral-transform}
+\int_1^\infty\phi(t/u)\,du
+=t\int_0^t\frac{\phi(v)}{v^2}\,dv
+=-\phi(t)+t\int_0^t\frac{1-e^{-v}}{v}\,dv.
+\end{equation}
+Using
+\begin{equation}
+\label{eq:reciprocal-gamma-e1-identity}
+\int_0^t\frac{1-e^{-v}}{v}\,dv
+=\gamma+\log t+E_1(t),
+\qquad
+E_1(t)=\int_t^\infty\frac{e^{-v}}{v}\,dv,
+\end{equation}
+we obtain
+\begin{equation}
+\label{eq:reciprocal-gamma-kernel-lower-bound}
+\frac{K(t)}{t}
+\ge
+\frac1{e^t-1}-\phi(t)+t\log t+tE_1(t).
+\end{equation}
+Since \(E_1(t)>0\) and \(\log t\ge1-1/t\) for \(t>0\),
+\begin{equation}
+\label{eq:reciprocal-gamma-kernel-positive}
+\frac{K(t)}{t}
+>
+\frac1{e^t-1}-\phi(t)+t-1
+=\frac1{e^t-1}-e^{-t}
+=\frac{e^{-t}}{e^t-1}>0.
+\end{equation}
+Thus \(K(t)>0\) for \(t>0\).  Differentiating under the Laplace integral in \eqref{eq:reciprocal-gamma-kernel-representation} gives
+\begin{equation}
+\label{eq:reciprocal-gamma-alternating-integral}
+(-1)^m\frac{d^m}{dx^m}H''(x)
+=\int_0^\infty t^m e^{-xt}K(t)\,dt>0.
+\end{equation}
+This proves \eqref{eq:reciprocal-gamma-complete-monotonicity}.
+\end{proof}
+
+\section{External zeta inequality proofs}
+
+\begin{theorem}[APP-0002: Affirmative solution of Nantomah zeta positivity problem]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0002: Affirmative solution of Nantomah zeta positivity problem}
+\label{thm:nantomah-positivity}
+For every \(n\in\N\),
+\begin{equation}
+\label{eq:nantomah-positivity}
+(n+2)\zeta(n+1)\zeta(n+3)
+-(n+1)\zeta(n+2)^2
+-\zeta(n+1)\zeta(n+2)>0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Put \(s=n+1\ge2\) and \(Z_s=\zeta(s)\).  The expression in \eqref{eq:nantomah-positivity} becomes
+\begin{equation}
+\label{eq:nantomah-ks}
+K_s=(s+1)Z_sZ_{s+2}-sZ_{s+1}^2-Z_sZ_{s+1}.
+\end{equation}
+Let \(X(m)=1/m\) under \(\rho_s\).  By \eqref{eq:zeta-law-moment},
+\begin{equation}
+\label{eq:nantomah-moments}
+\E_s[X]=\frac{Z_{s+1}}{Z_s},
+\qquad
+\E_s[X^2]=\frac{Z_{s+2}}{Z_s}.
+\end{equation}
+Thus
+\begin{equation}
+\label{eq:nantomah-moment-form}
+\frac{K_s}{Z_s^2}
+=(s+1)\E_s[X^2]-s\E_s[X]^2-\E_s[X]
+=(s+1)\Var_s(X)+\E_s[X]^2-\E_s[X].
+\end{equation}
+
+Write \(a=\zeta(s)-1\), \(b=\zeta(s+1)-1\), and \(c=\zeta(s+2)-1\).  Expanding gives
+\begin{align}
+\label{eq:nantomah-lq-split}
+K_s&=L_s+Q_s,&
+L_s&=sa+(s+1)c-(2s+1)b,&
+Q_s&=(s+1)ac-sb^2-ab.
+\end{align}
+The linear part is termwise positive:
+\begin{equation}
+\label{eq:nantomah-linear-positive}
+L_s=
+\sum_{m=2}^{\infty}
+m^{-s}\frac{(m-1)(s(m-1)-1)}{m^2}
+\ge
+2^{-s}\frac{s-1}{4}.
+\end{equation}
+Since \(b\le a/2\) and \(c\ge0\),
+\begin{equation}
+\label{eq:nantomah-quadratic-correction}
+Q_s\ge -sb^2-ab\ge-\frac{s+2}{4}a^2.
+\end{equation}
+For \(s\ge4\),
+\begin{equation}
+\label{eq:nantomah-tail-bound}
+a=\sum_{m=2}^{\infty}m^{-s}
+\le2^{-s}+\int_2^\infty x^{-s}\,dx
+=2^{-s}\left(1+\frac2{s-1}\right).
+\end{equation}
+Equations \eqref{eq:nantomah-linear-positive}, \eqref{eq:nantomah-quadratic-correction}, and \eqref{eq:nantomah-tail-bound} imply
+\begin{equation}
+\label{eq:nantomah-lower-bound}
+K_s\ge
+\frac14\left[
+2^{-s}(s-1)
+-(s+2)2^{-2s}\left(1+\frac2{s-1}\right)^2
+\right].
+\end{equation}
+It is therefore enough to show
+\begin{equation}
+\label{eq:nantomah-sufficient-inequality}
+2^s(s-1)>(s+2)\left(1+\frac2{s-1}\right)^2.
+\end{equation}
+Equivalently,
+\begin{equation}
+\label{eq:nantomah-f-function}
+F(s)=\frac{2^s(s-1)^3}{(s+2)(s+1)^2}>1.
+\end{equation}
+Now \(F(4)=72/25>1\), and
+\begin{equation}
+\label{eq:nantomah-f-monotone}
+\frac{d}{ds}\log F(s)
+=\log2+\frac3{s-1}-\frac1{s+2}-\frac2{s+1}>0
+\qquad(s\ge4).
+\end{equation}
+Thus \(K_s>0\) for \(s\ge4\).
+
+For \(s=2\),
+\begin{equation}
+\label{eq:nantomah-k2}
+K_2=3\zeta(2)\zeta(4)-2\zeta(3)^2-\zeta(2)\zeta(3).
+\end{equation}
+Using \(\zeta(3)<5/4\), \(\zeta(2)=\pi^2/6\), and \(\zeta(4)=\pi^4/90\),
+\begin{equation}
+\label{eq:nantomah-k2-bound}
+K_2>
+\frac{\pi^6}{180}-\frac{5\pi^2}{24}-\frac{25}{8}
+>
+\frac{10415360504209}{180000000000000}>0.
+\end{equation}
+For \(s=3\), the estimates \(\zeta(3)>251/216\), \(\zeta(5)>8051/7776\), and \(\zeta(4)<13/12\) yield
+\begin{equation}
+\label{eq:nantomah-k3-bound}
+K_3>
+\frac{251}{216}
+\left(4\cdot\frac{8051}{7776}-\frac{13}{12}\right)
+-3\left(\frac{13}{12}\right)^2
+=\frac{13783}{419904}>0.
+\end{equation}
+Hence \(K_s>0\) for all integers \(s\ge2\), proving the theorem.  This answers Nantomah's question \cite{nantomah}.
+\end{proof}
+
+\begin{theorem}[APP-0001: Alzer-Kwong convexity and concavity pattern for reciprocal zeta]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0001: Alzer-Kwong convexity and concavity pattern for reciprocal zeta}
+\label{thm:alzer-kwong}
+Let \(F(x)=1/\zeta(x)\).  For every integer \(n\ge1\),
+\begin{equation}
+\label{eq:alzer-kwong-convex}
+F''(x)>0\quad\text{on }(-4n,-4n+2),
+\end{equation}
+and
+\begin{equation}
+\label{eq:alzer-kwong-concave}
+F''(x)<0\quad\text{on }(-4n-2,-4n).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Put \(x=-u\), where \(u>2\).  The functional equation gives
+\begin{equation}
+\label{eq:zeta-functional-equation-negative-axis}
+\zeta(-u)
+=-2^{-u}\pi^{-u-1}\sin\left(\frac{\pi u}{2}\right)\Gamma(u+1)\zeta(u+1),
+\end{equation}
+and hence
+\begin{equation}
+\label{eq:reciprocal-zeta-negative-axis}
+\frac1{\zeta(-u)}
+=-\frac{2^u\pi^{u+1}}
+{\Gamma(u+1)\zeta(u+1)\sin(\pi u/2)}.
+\end{equation}
+Define the positive function
+\begin{equation}
+\label{eq:alzer-g-function}
+G(u)=
+\frac{2^u\pi^{u+1}}
+{\Gamma(u+1)\zeta(u+1)|\sin(\pi u/2)|}.
+\end{equation}
+On \(u\in(4n-2,4n)\), \(\sin(\pi u/2)<0\), so \(F(-u)=G(u)\).  On \(u\in(4n,4n+2)\), \(\sin(\pi u/2)>0\), so \(F(-u)=-G(u)\).  Since second derivatives are unchanged by \(x=-u\), it remains to prove \(G''(u)>0\).
+
+Let \(\ell(u)=\log G(u)\).  Then
+\begin{equation}
+\label{eq:alzer-log-g}
+\ell(u)=u\log2+(u+1)\log\pi-\log\Gamma(u+1)-\log\zeta(u+1)
+-\log\left|\sin\left(\frac{\pi u}{2}\right)\right|.
+\end{equation}
+Differentiating twice gives
+\begin{equation}
+\label{eq:alzer-log-g-second}
+\ell''(u)
+=-\psi'(u+1)-(\log\zeta)''(u+1)
++\frac{\pi^2}{4}\csc^2\left(\frac{\pi u}{2}\right).
+\end{equation}
+With \(s=u+1>3\),
+\begin{equation}
+\label{eq:trigamma-bound}
+\psi'(s)=\sum_{k=0}^{\infty}\frac1{(s+k)^2}
+<
+\int_{s-1}^{\infty}\frac{dt}{t^2}
+=\frac1{s-1}\le\frac12.
+\end{equation}
+Combining \eqref{eq:uniform-curvature-bound}, \eqref{eq:trigamma-bound}, and \(\csc^2(\pi u/2)\ge1\), we get
+\begin{equation}
+\label{eq:alzer-log-convexity}
+\ell''(u)>
+\frac{\pi^2}{4}-\frac12-\frac13
+=\frac{\pi^2}{4}-\frac56>0.
+\end{equation}
+Since \(G>0\),
+\begin{equation}
+\label{eq:alzer-g-second-positive}
+G''(u)=G(u)(\ell''(u)+\ell'(u)^2)>0.
+\end{equation}
+The two signs in \eqref{eq:alzer-kwong-convex} and \eqref{eq:alzer-kwong-concave} now follow from \(F(-u)=G(u)\) on \(u\in(4n-2,4n)\) and \(F(-u)=-G(u)\) on \(u\in(4n,4n+2)\).  This proves the Alzer--Kwong sign pattern \cite{alzer-kwong}.
+\end{proof}
+
+\begin{theorem}[APP-0003: Generalized Holder inequality for Gamma zeta]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0003: Generalized Holder inequality for Gamma zeta}
+\label{thm:sroysang-holder}
+Let \(m\ge2\), \(r\ge1\), \(x_1,\ldots,x_m>1\), and \(p_1,\ldots,p_m>1\) satisfy
+\begin{equation}
+\label{eq:sroysang-holder-condition}
+\sum_{i=1}^{m}\frac1{p_i}=\frac1r.
+\end{equation}
+Define
+\begin{equation}
+\label{eq:sroysang-t}
+T=r\sum_{i=1}^{m}\frac{x_i}{p_i}.
+\end{equation}
+Then \(T>1\) and
+\begin{equation}
+\label{eq:sroysang-generalized-holder}
+\zeta(T)\le
+\frac{\prod_{i=1}^{m}(\Gamma(x_i)\zeta(x_i))^{r/p_i}}{\Gamma(T)}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Set
+\begin{equation}
+\label{eq:sroysang-lambda}
+\lambda_i=\frac{r}{p_i}.
+\end{equation}
+Then \(\lambda_i>0\), \(\sum_i\lambda_i=1\), and \(T=\sum_i\lambda_i x_i>1\).  Define
+\begin{equation}
+\label{eq:sroysang-q}
+q_i=\frac{p_i}{r}.
+\end{equation}
+Then \(\sum_i1/q_i=1\), and the assumptions imply \(q_i>1\) for all \(i\); otherwise one term \(1/p_i\) would already be at least \(1/r\), leaving no room for the remaining positive terms in \eqref{eq:sroysang-holder-condition}.
+
+For \(t>0\), let
+\begin{equation}
+\label{eq:sroysang-fi}
+f_i(t)=\left(\frac{t^{x_i-1}}{e^t-1}\right)^{1/p_i}.
+\end{equation}
+Then
+\begin{equation}
+\label{eq:sroysang-product}
+\left(\prod_{i=1}^{m}f_i(t)\right)^r
+=\frac{t^{r\sum_i(x_i-1)/p_i}}{e^t-1}
+=\frac{t^{T-1}}{e^t-1}.
+\end{equation}
+Consequently,
+\begin{equation}
+\label{eq:sroysang-lr-norm}
+\left\|\prod_{i=1}^{m}f_i\right\|_{L^r(0,\infty)}^r
+=\int_0^\infty\frac{t^{T-1}}{e^t-1}\,dt
+=\Gamma(T)\zeta(T).
+\end{equation}
+Generalized Holder gives
+\begin{equation}
+\label{eq:sroysang-holder-step}
+\left\|\prod_{i=1}^{m}f_i\right\|_{L^r}
+\le
+\prod_{i=1}^{m}\|f_i\|_{L^{p_i}}.
+\end{equation}
+Moreover,
+\begin{equation}
+\label{eq:sroysang-pi-norm}
+\|f_i\|_{L^{p_i}}^{p_i}
+=\int_0^\infty\frac{t^{x_i-1}}{e^t-1}\,dt
+=\Gamma(x_i)\zeta(x_i).
+\end{equation}
+Combining \eqref{eq:sroysang-lr-norm}, \eqref{eq:sroysang-holder-step}, and \eqref{eq:sroysang-pi-norm}, then raising to the power \(r\), gives
+\begin{equation}
+\label{eq:sroysang-predivide}
+\Gamma(T)\zeta(T)
+\le
+\prod_{i=1}^{m}(\Gamma(x_i)\zeta(x_i))^{r/p_i}.
+\end{equation}
+Division by \(\Gamma(T)\) proves \eqref{eq:sroysang-generalized-holder}.  This solves the generalized Holder problem in Sroysang's notation, where his \(\xi(s)\) is \(\zeta(s)\) for \(s>1\) \cite{sroysang}.
+\end{proof}
+
+\begin{remark}[Free-energy interpretation of the Sroysang inequality]
+\phantomsection\addcontentsline{toc}{subsubsection}{Remark~\thetheorem: Free-energy interpretation of the Sroysang inequality}
+The same result follows from log-convexity of \(M(s)=\Gamma(s)\zeta(s)\).  With \(\lambda_i=r/p_i\) and \(T=\sum_i\lambda_ix_i\), Jensen's inequality for \(\log M\) gives
+\begin{equation}
+\label{eq:sroysang-jensen}
+M(T)\le\prod_{i=1}^{m}M(x_i)^{\lambda_i}
+=\prod_{i=1}^{m}(\Gamma(x_i)\zeta(x_i))^{r/p_i},
+\end{equation}
+which is equivalent to \eqref{eq:sroysang-generalized-holder}.
+\end{remark}
+
+\section{Laplace moment-ratio application}
+\label{sec:laplace-moment-ratio-application}
+
+The complete-monotonicity proofs above repeatedly convert special-function curvature questions into positivity statements for Laplace kernels.  The next lemma records a reusable moment-ratio consequence of that viewpoint.
+
+\begin{lemma}[Laplace moment-ratio bridge]
+\phantomsection\addcontentsline{toc}{subsubsection}{Lemma~\thetheorem: Laplace moment-ratio bridge}
+\label{lem:laplace-moment-ratio-bridge}
+Let \(\mu\) be a positive Borel measure on \([0,\infty)\), and assume that the tilted moments
+\begin{equation}
+\label{eq:laplace-moment-ratio-aj}
+a_j(x)=\int_0^\infty t^j e^{-xt}\,d\mu(t)
+\end{equation}
+are finite and positive for the displayed indices.  Then, for every \(n\ge0\),
+\begin{equation}
+\label{eq:laplace-moment-ratio-Bn}
+B_n(x)=\frac{a_{n+1}(x)}{a_n(x)a_{n+2}(x)}
+\end{equation}
+is strictly increasing in \(x\).
+\end{lemma}
+
+\begin{proof}
+Put \(r_j(x)=a_{j+1}(x)/a_j(x)\).  Cauchy--Schwarz gives
+\begin{equation}
+\label{eq:laplace-moment-log-convexity}
+a_{j+1}(x)^2\le a_j(x)a_{j+2}(x),
+\end{equation}
+so \(r_j(x)\le r_{j+1}(x)\).  Since \(a_j'(x)=-a_{j+1}(x)\), differentiating \eqref{eq:laplace-moment-ratio-Bn} logarithmically gives
+\begin{equation}
+\label{eq:laplace-moment-ratio-derivative}
+\frac{d}{dx}\log B_n(x)
+=-\frac{a_{n+2}}{a_{n+1}}
++\frac{a_{n+1}}{a_n}
++\frac{a_{n+3}}{a_{n+2}}
+=r_n(x)-r_{n+1}(x)+r_{n+2}(x).
+\end{equation}
+The right-hand side is at least \(r_n(x)>0\), because \(r_{n+2}(x)\ge r_{n+1}(x)\).  Hence \(B_n\) is strictly increasing.
+\end{proof}
+
+Yin and Zhang define the Nielsen \(k\)-beta function by
+\begin{equation}
+\label{eq:nielsen-k-beta-definition}
+\beta_k(x)=\int_0^1\frac{t^{x-1}}{1+t^k}\,dt
+=\int_0^\infty\frac{e^{-xt}}{1+e^{-kt}}\,dt,
+\qquad k>0,\ x>0.
+\end{equation}
+They ask for the monotonicity of the derivative ratio involving \(x\beta_k(x)\) \cite{yin-zhang-k-beta}.  The bridge lemma gives the exact parity law.
+
+\begin{theorem}[APP-0010: Nielsen \(k\)-beta derivative-ratio monotonicity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0010: Nielsen k-beta derivative-ratio monotonicity}
+\label{thm:nielsen-k-beta-derivative-ratio}
+Let \(k>0\), let \(n\ge0\), and put \(f_k(x)=x\beta_k(x)\).  Then
+\begin{equation}
+\label{eq:nielsen-k-beta-ratio}
+R_{k,n}(x)=
+\frac{f_k^{(n+1)}(x)}
+{f_k^{(n)}(x)f_k^{(n+2)}(x)}
+\end{equation}
+is strictly increasing on \((0,\infty)\) when \(n\) is odd, and strictly decreasing on \((0,\infty)\) when \(n\) is even.
+\end{theorem}
+
+\begin{proof}
+From \eqref{eq:nielsen-k-beta-definition},
+\begin{equation}
+\label{eq:nielsen-k-beta-x-integral}
+f_k(x)=x\int_0^\infty \frac{e^{-xt}}{1+e^{-kt}}\,dt.
+\end{equation}
+Integrating by parts gives
+\begin{equation}
+\label{eq:nielsen-k-beta-laplace-density}
+f_k(x)
+=\frac12+
+\int_0^\infty e^{-xt}
+\frac{k e^{-kt}}{(1+e^{-kt})^2}\,dt.
+\end{equation}
+Thus \(f_k\) is a Laplace transform of a positive measure consisting of an atom \(1/2\) at \(0\) and a positive density on \((0,\infty)\).  Define
+\begin{equation}
+\label{eq:nielsen-k-beta-aj}
+a_j(x)=(-1)^j f_k^{(j)}(x).
+\end{equation}
+For the needed indices these are positive tilted moments of the measure in \eqref{eq:nielsen-k-beta-laplace-density}.  Lemma~\ref{lem:laplace-moment-ratio-bridge} shows that
+\begin{equation}
+\label{eq:nielsen-k-beta-Bn-increasing}
+\frac{a_{n+1}(x)}{a_n(x)a_{n+2}(x)}
+\end{equation}
+is strictly increasing.  But
+\begin{equation}
+\label{eq:nielsen-k-beta-sign}
+R_{k,n}(x)=(-1)^{n+1}
+\frac{a_{n+1}(x)}{a_n(x)a_{n+2}(x)}.
+\end{equation}
+Multiplication by \((-1)^{n+1}\) gives strict increase for odd \(n\) and strict decrease for even \(n\).  This resolves the Nielsen \(k\)-beta derivative-ratio problem with the precise parity convention.
+\end{proof}
+
+\section{Endpoint and parameter applications}
+\label{sec:endpoint-parameter-applications}
+
+The next three applications add one certified endpoint result and two parameter-monotonicity results to the complete-monotonicity layer.  Only fully solved source questions are labelled.
+
+\subsection{Exact \(n=2\) beta-window endpoint}
+
+For \(s>1\), write
+\begin{equation}
+\label{eq:q2-zs-definition}
+Z_s(a)=\sum_{m=0}^\infty (m+a)^{-s}.
+\end{equation}
+In Qi--Lim--Nantomah's notation \cite{qi-lim-nantomah-polygamma}, put
+\begin{equation}
+\label{eq:q2-cp-definition}
+C_2(x)=\psi''(x)+x\psi^{(3)}(x),
+\qquad
+P_2(x)=\psi''(x)\psi''(1/x),
+\end{equation}
+and define
+\begin{equation}
+\label{eq:q2-beta-window}
+\mathcal I_2=
+\{\beta\in\mathbb R:\ x^\beta C_2(x)-P_2(x)<0\text{ for all }x>0\}.
+\end{equation}
+The remaining endpoint is controlled on \(0<x<1\) by
+\begin{equation}
+\label{eq:q2-ratio-q}
+R(x)=\frac{P_2(x)}{C_2(x)}
+=\frac{2Z_3(x)Z_3(1/x)}{3xZ_4(x)-Z_3(x)},
+\qquad
+Q_2(x)=\frac{\log R(x)}{\log x}.
+\end{equation}
+
+\begin{theorem}[APP-0011: exact \(n=2\) beta-window endpoint]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0011: exact n=2 beta-window endpoint}
+\label{thm:q2-exact-endpoint}
+Let
+\begin{equation}
+\label{eq:q2-J-bracket}
+J=\left[\frac{287345}{1000000},\frac{287346}{1000000}\right].
+\end{equation}
+There is a unique \(\xi\in J\) at which \(Q_2\) attains its global supremum on \((0,1)\).  Hence, with \(L_2=Q_2(\xi)\),
+\begin{equation}
+\label{eq:q2-I2-exact}
+\mathcal I_2=(L_2,3].
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The identity \(\psi^{(m)}(x)=(-1)^{m+1}m!Z_{m+1}(x)\) gives \eqref{eq:q2-ratio-q}.  Define
+\begin{equation}
+\label{eq:q2-lambda}
+\Lambda(x)=
+-\frac{3Z_4(x)}{Z_3(x)}
++\frac{3Z_4(1/x)}{x^2Z_3(1/x)}
+-\frac{6Z_4(x)-12xZ_5(x)}{3xZ_4(x)-Z_3(x)}
+\end{equation}
+and
+\begin{equation}
+\label{eq:q2-g-function}
+G(x)=x\log x\,\Lambda(x)-\log R(x).
+\end{equation}
+Differentiating \eqref{eq:q2-ratio-q} gives
+\begin{equation}
+\label{eq:q2-derivative}
+Q_2'(x)=\frac{G(x)}{x(\log x)^2}.
+\end{equation}
+
+All inequalities below are rational interval certificates using the Hurwitz-zeta integral-tail enclosure and the atanh logarithm enclosure.  First,
+\begin{equation}
+\label{eq:q2-endpoint-signs}
+G\!\left(\frac{287345}{1000000}\right)>0,
+\qquad
+G\!\left(\frac{287346}{1000000}\right)<0.
+\end{equation}
+Second, on
+\[
+B=\left[\frac{1409}{5000},\frac{293}{1000}\right],
+\]
+the same enclosure proves
+\begin{equation}
+\label{eq:q2-h-positive}
+H(x)=\Lambda(x)+x\Lambda'(x)>0.
+\end{equation}
+Since \(G'(x)=\log x\,H(x)\) and \(\log x<0\) on \(B\), \(G\) is strictly decreasing on \(B\).  Together with \eqref{eq:q2-endpoint-signs}, this gives a unique zero \(\xi\in J\), and \eqref{eq:q2-derivative} shows that \(Q_2\) is increasing before \(\xi\) and decreasing after \(\xi\) on \(B\).
+
+It remains only to exclude points outside the compact bracket.  The endpoint certificate gives a rational lower witness \(q_J<Q_2(\xi)\) with
+\begin{equation}
+\label{eq:q2-qJ-lower}
+\frac{115727}{50000}<q_J.
+\end{equation}
+On \((0,9/50]\) the scaled near-zero bound gives \(Q_2(x)<23/10<q_J\).  On \([9/10,1)\), a finite rational subdivision proves \(R(x)>1\), hence \(Q_2(x)<0<q_J\).  On
+\[
+\left[\frac9{50},\frac{1409}{5000}\right]
+\cup
+\left[\frac{293}{1000},\frac9{10}\right],
+\]
+a finite rational cover proves \(Q_2(x)<q_J\): the left bridge uses
+\[
+R(x)>Z_3(1/x)>x^{1157/500},
+\]
+and the remaining intervals use the direct comparison
+\[
+\log R(x)>\frac{115727}{50000}\log x.
+\]
+Thus no point outside \(B\) reaches the value at \(\xi\), so \(L_2=Q_2(\xi)\).
+
+The source reduction gives the upper endpoint \(3\) and the convention that the lower endpoint is excluded when equality occurs.  At \(\beta=L_2\), equality occurs at \(x=\xi\); therefore the exact admissible set is \((L_2,3]\).
+\end{proof}
+
+\subsection{Baricz \(V_q\) parameter log-convexity}
+
+Baricz records the question whether, for fixed \(x>0\), the function
+\begin{equation}
+\label{eq:baricz-vq-definition}
+V_q(x)=\frac{2e^{x^2}}{\Gamma(q+1)}
+\int_x^\infty e^{-t^2}(t^2-x^2)^q\,dt,
+\qquad q>-1,
+\end{equation}
+is log-convex as a function of \(q\) \cite{baricz-turan-thesis}.
+
+\begin{theorem}[APP-0012: Baricz \(V_q\) strict \(q\)-log-convexity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0012: Baricz Vq strict q-log-convexity}
+\label{thm:baricz-vq-strict-logconvexity}
+For each fixed \(x>0\), the map \(q\mapsto V_q(x)\) is strictly log-convex on \((-1,\infty)\).
+\end{theorem}
+
+\begin{proof}
+Put \(u=t^2-x^2\).  Then
+\begin{equation}
+\label{eq:baricz-u-normal-form}
+V_q(x)=\frac1{\Gamma(q+1)}
+\int_0^\infty e^{-u}u^q(u+x^2)^{-1/2}\,du.
+\end{equation}
+Using
+\[
+r^{-1/2}=\frac1{\sqrt\pi}\int_0^\infty s^{-1/2}e^{-rs}\,ds
+\]
+and Tonelli's theorem, we obtain
+\begin{equation}
+\label{eq:baricz-laplace-normal-form}
+V_q(x)=\frac1{\sqrt\pi}\int_0^\infty
+s^{-1/2}e^{-x^2s}(1+s)^{-(q+1)}\,ds.
+\end{equation}
+Let \(a=q+1>0\).  Differentiation under the integral gives
+\begin{equation}
+\label{eq:baricz-complete-monotonicity}
+(-1)^n\frac{d^n}{da^n}V_{a-1}(x)
+=\frac1{\sqrt\pi}\int_0^\infty
+(\log(1+s))^n s^{-1/2}e^{-x^2s}(1+s)^{-a}\,ds\ge0.
+\end{equation}
+Equivalently, after the change of variables \(y=\log(1+s)\), \(V_{a-1}(x)\) is a positive Laplace transform in \(a\).  The representing measure is not concentrated at a single point, because the density in \eqref{eq:baricz-laplace-normal-form} is positive on \(s>0\).  Strict Holder inequality for two different exponents therefore gives strict log-convexity in \(a\), and the shift \(a=q+1\) gives the stated strict log-convexity in \(q\).
+\end{proof}
+
+\subsection{Yin \((p,k)\)-digamma sharp necessity}
+
+Yin proved sufficiency of \(\alpha\le1\) for complete monotonicity of
+\begin{equation}
+\label{eq:yin-pk-delta}
+\delta_{p,k,\alpha}(x)
+=x^\alpha\left[
+\frac1k\log\frac{pkx}{x+k(p+1)}-\psi_{p,k}(x)
+\right],
+\qquad p\in\mathbb N,\ k>0,
+\end{equation}
+and asked whether this condition is also necessary \cite{yin-pk-digamma}.
+
+\begin{theorem}[APP-0013: Yin \((p,k)\)-digamma sharp \(\alpha\)-necessity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0013: Yin (p,k)-digamma sharp -necessity}
+\label{thm:yin-pk-alpha-necessity}
+If \(\delta_{p,k,\alpha}\) is completely monotone on \((0,\infty)\), then \(\alpha\le1\).  Combined with Yin's sufficiency theorem, the sharp condition is \(\alpha\le1\).
+\end{theorem}
+
+\begin{proof}
+The source representation is
+\begin{equation}
+\label{eq:yin-pk-digamma-formula}
+\psi_{p,k}(x)=\frac1k\log(pk)-\sum_{n=0}^p\frac1{x+nk}.
+\end{equation}
+Therefore the bracket in \eqref{eq:yin-pk-delta} is
+\begin{equation}
+\label{eq:yin-pk-bracket}
+B_{p,k}(x)=
+\frac1k\log\frac{x}{x+k(p+1)}
++\sum_{n=0}^p\frac1{x+nk}.
+\end{equation}
+With \(t=x/k\),
+\[
+B_{p,k}(x)=\frac1k\left[
+\sum_{n=0}^p\frac1{t+n}
++\log\frac{t}{t+p+1}
+\right].
+\]
+Since \(u\mapsto(t+u)^{-1}\) is strictly decreasing,
+\[
+\sum_{n=0}^p\frac1{t+n}
+>
+\int_0^{p+1}\frac{du}{t+u}
+=\log\frac{t+p+1}{t},
+\]
+so \(B_{p,k}(x)>0\) for \(x>0\).
+
+As \(x\to0^+\), \eqref{eq:yin-pk-bracket} gives
+\begin{equation}
+\label{eq:yin-pk-near-zero}
+B_{p,k}(x)=\frac1x+O(|\log x|),
+\qquad
+\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}.
+\end{equation}
+If \(\alpha>1\), then \(\delta_{p,k,\alpha}(x)\to0\) as \(x\to0^+\).  But a completely monotone nonzero function is positive and nonincreasing on \((0,\infty)\).  For any fixed \(x_0>0\), positivity gives \(\delta_{p,k,\alpha}(x_0)>0\), while the limit at \(0\) gives a point \(0<y<x_0\) with \(\delta_{p,k,\alpha}(y)<\delta_{p,k,\alpha}(x_0)\), contradicting nonincreasingness.  Hence \(\alpha\le1\).
+\end{proof}
+
+
+\section{The Laplace-Transport Application Layer}
+\label{sec:transport-layer}
+
+The applications in this layer are organized by one theme.  A problem is first converted
+into a positive-kernel statement, usually by a logarithmic second difference, a
+Frullani identity, a moment determinant, or a transform normalization.  The
+conclusion then follows by transporting that kernel through a permanence
+operation: Stieltjes transformation, Bernstein integration, stable
+subordination, quotient compression, or triangular coefficient extraction.  This
+section records representative public solves.
+
+\begin{theorem}[APP-0014: Ramanujan integral is Stieltjes]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0014: Ramanujan integral is Stieltjes}
+\label{thm:app14-ramanujan-stieltjes}
+Let
+\[
+  I_R(x)=\int_0^\infty {e^{-xt}\over t(\pi^2+\log^2 t)}\,dt,
+  \qquad x>0 .
+\]
+Then \(I_R\) is a Stieltjes function.  Moreover every primitive of the form
+\[
+  \widetilde I_R(x)=a+\int_0^\infty
+       {1-e^{-xt}\over t(\pi^2+\log^2 t)}\,dt,\qquad a\ge0,
+\]
+is a complete Bernstein function.
+\end{theorem}
+
+\begin{proof}
+For \(t>0\),
+\[
+ {1\over t(\pi^2+\log^2t)}
+   ={1\over \pi(1+t)}\int_0^1 t^{-u}\sin(\pi u)\,du .
+\]
+The right side is a positive superposition of completely monotone powers and is
+therefore completely monotone as a function of \(t\).  The Laplace transform of
+a completely monotone density is Stieltjes.  Integrating the same density
+against \(1-e^{-xt}\) gives a complete Bernstein function by the standard
+Stieltjes-density characterization of complete Bernstein functions.
+\end{proof}
+
+\begin{theorem}[APP-0015: Prabhakar Q-measure by stable subordination]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0015: Prabhakar Q-measure by stable subordination}
+\label{thm:app15-prabhakar-subordination}
+Let \(0<\alpha<1\), \(\eta>0\), \(\beta>\alpha\eta\), and \(\lambda>0\).
+Let
+\[
+  E_{\alpha,\beta}^{\eta}(z)
+  =\sum_{m=0}^{\infty}{(\eta)_m z^m\over m!\,\Gamma(\alpha m+\beta)}
+\]
+be the Prabhakar Mittag-Leffler function.  Let
+\(P_{\alpha,\beta}^{\eta}\) be the transform-normalized Pollard measure
+characterized in the strict Pollard range by
+\[
+  \int_0^\infty e^{-xr}\,dP_{\alpha,\beta}^{\eta}(r)
+  =E_{\alpha,\beta}^{\eta}(-x),\qquad x>0.
+\]
+Let \(S_\alpha\) be the positive \(\alpha\)-stable variable satisfying
+\(\mathbb E e^{-sS_\alpha}=e^{-s^\alpha}\).  Define the finite measure
+\[
+  Q_{\alpha,\beta}^{\eta}(A\mid\lambda)
+  =\int \Pr\{(\lambda r)^{1/\alpha}S_\alpha\in A\}\,
+       dP_{\alpha,\beta}^{\eta}(r).
+\]
+Then
+\[
+  \int_0^\infty e^{-xt}\,dQ_{\alpha,\beta}^{\eta}(t\mid\lambda)
+  =E_{\alpha,\beta}^{\eta}(-\lambda x^\alpha).
+\]
+\end{theorem}
+
+\begin{proof}
+Conditioning on \(r\) and using the stable transform gives
+\[
+ \mathbb E e^{-x(\lambda r)^{1/\alpha}S_\alpha}=e^{-\lambda r x^\alpha}.
+\]
+Integration against \(P_{\alpha,\beta}^{\eta}\) gives the Pollard
+representation of \(E_{\alpha,\beta}^{\eta}(-\lambda x^\alpha)\).  The total
+mass is finite, equal to the value at \(x=0\), and no normalization to a
+probability measure is needed for the transform identity.
+\end{proof}
+
+\begin{theorem}[APP-0016: Mills-ratio bound at every derivative level]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0016: Mills-ratio bound at every derivative level}
+\label{thm:app16-mills-all-l}
+Let
+\[
+  M_L(t)=\int_0^\infty u^L e^{-tu-u^2/2}\,du,\qquad L=0,1,2,\ldots .
+\]
+Put \(m_L(t)=M_{L+1}(t)/M_L(t)\) and
+\[
+ U_L(t)=
+ {\sqrt{t^2(t^2+4L+7)^2+4(L+1)(t^2+4L+8)(t^2+4L+6)}
+       -t(t^2+4L+7)
+  \over 2(t^2+4L+8)} .
+\]
+Then \(m_L(t)<U_L(t)\) for every \(L\ge0\) and \(t>0\).  With
+\[
+P_0=1,\quad P_1=t,\quad P_{n+1}=tP_n+nP_{n-1},
+\]
+and
+\[
+B_0=0,\quad B_1=1,\quad B_{n+1}=nB_{n-1}-tB_n,
+\]
+the classical Mills ratio \(r(t)=M_0(t)\) satisfies
+\[
+ r(t)>{B_{L+1}-U_LB_L\over P_{L+1}+U_LP_L}\quad(L\ge0\ {\rm even}),
+\]
+and
+\[
+ r(t)<{U_LB_L-B_{L+1}\over P_{L+1}+U_LP_L}\quad(L\ge1\ {\rm odd}).
+\]
+\end{theorem}
+
+\begin{proof}
+The density defining \(M_L\) is a positive moment density.  Its order-four
+Hankel-minor consequence gives
+\[
+M_{L+4}M_L-4M_{L+3}M_{L+1}+3M_{L+2}^2>0.
+\]
+Using the recurrence \(M_{n+1}=nM_{n-1}-tM_n\), this determinant inequality
+reduces to a quadratic inequality for \(m_L\); solving the admissible positive
+root gives \(m_L<U_L\).  Iterating the same recurrence expresses \(M_L\) in the
+form
+\[
+M_L=(-1)^L(P_L r-B_L),
+\]
+and substituting the level-\(L\) quotient bound gives the displayed alternating
+upper and lower bounds for \(r\).
+\end{proof}
+
+\begin{theorem}[APP-0017: a gamma quotient need not be Bernstein]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0017: a gamma quotient need not be Bernstein}
+\label{thm:app17-baricz-counterexample}
+The assertion that the gamma quotient
+\[
+ x\longmapsto {\Gamma(x+a)\Gamma(x+b)\over \Gamma(x)\Gamma(x+a+b)}
+\]
+is Bernstein for all positive \(a,b\) is false.
+\end{theorem}
+
+\begin{proof}
+Take \(a=2\), \(b=3\), and set \(y=x-2\).  The quotient becomes
+\[
+  g(y)={y(y+1)\over (y+3)(y+4)} .
+\]
+A direct differentiation gives
+\[
+  g'''(y)=
+ {36(y^4+8y^3+12y^2-40y-94)\over (y+3)^4(y+4)^4}.
+\]
+Thus \(g'''(1)<0\).  If \(g\) were Bernstein, then \(g'\) would be completely
+monotone and hence \(g'''\ge0\).  The displayed value contradicts that
+necessary condition.
+\end{proof}
+
+\begin{theorem}[APP-0018: exact supremum for the Qi-Guo tau threshold]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0018: exact supremum for the Qi-Guo tau threshold}
+\label{thm:app18-qg-tau}
+For \(s\in\mathbb N\) and \(t>0\), define
+\[
+  \tau(s,t)={1\over s}\left[t-(t+s+1)
+        \left({t\over t+1}\right)^{s+1}\right].
+\]
+Let \(a_*>0\) be the unique positive solution of
+\[
+  e^{a_*}=1+a_*+a_*^2 .
+\]
+Then
+\[
+  \sup_{s\in\mathbb N,\ t>0}\tau(s,t)
+   ={a_*\over 1+a_*+a_*^2}
+   =0.298425607525639\ldots .
+\]
+The supremum is not attained.
+\end{theorem}
+
+\begin{proof}
+Writing \(u=t/(t+1)\) gives a two-parameter expression on \(0<u<1\).  The
+Euler-Lagrange equations reduce the interior extremal sequence to the scaling
+limit \(u=e^{-a/s}\).  The limiting profile is maximized exactly when
+\(e^a=1+a+a^2\), and the resulting value is \(a/(1+a+a^2)\).  The source
+one-variable monotonicity estimates bound the finite-\(s\) expressions by this
+limit, while the scaling sequence approaches it.  Hence the number is a
+supremum and is not attained at finite \(s,t\).
+\end{proof}
+
+\begin{theorem}[APP-0019: exact Bernstein range for the W-symbol]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0019: exact Bernstein range for the W-symbol}
+\label{thm:app19-w-symbol}
+Let \(0<\alpha<1\), \(\beta\ge0\), and
+\[
+  \Phi_{\alpha,\beta}(s)
+     =s^\alpha\left(1+(1-\alpha)s^{\alpha-1}\right)^{-\beta}.
+\]
+Then \(\Phi_{\alpha,\beta}\) is a Bernstein function if and only if
+\[
+  0\le \beta\le 1 .
+\]
+\end{theorem}
+
+\begin{proof}
+Wakrim's source proves the non-Bernstein obstruction for \(\beta>1\) and
+leaves the range \(0<\beta\le1\) as the remaining delicate case.  We prove
+that remaining Bernstein half in detail.  No complete-Bernstein or
+subordination conclusion is asserted here.
+
+Put
+\[
+  a=1-\alpha\in(0,1),\qquad y=s^a .
+\]
+Since \(\alpha=1-a\),
+\[
+ \Phi_{\alpha,\beta}(s)
+ =s^{1-a}(1+a s^{-a})^{-\beta}
+ =s^{1-a+a\beta}(s^a+a)^{-\beta}.
+\]
+Let
+\[
+  p=1-a+a\beta=\alpha+a\beta .
+\]
+Differentiating the last expression gives
+\[
+\begin{aligned}
+ \Phi'_{\alpha,\beta}(s)
+ &=s^{p-1}(s^a+a)^{-\beta-1}
+     \{p(s^a+a)-\beta a s^a\}  \\
+ &=s^{p-1}(s^a+a)^{-\beta-1}
+     \{\alpha s^a+\alpha a+a^2\beta\}       \\
+ &=s^{p-1}(s^a+a)^{-\beta}
+     \left(\alpha+{a^2\beta\over s^a+a}\right).
+\end{aligned}
+\]
+Because \(p-1=a(\beta-1)\), this is
+\[
+  \Phi'_{\alpha,\beta}(s)=H_{\alpha,\beta}(s^a),
+\]
+where
+\[
+ H_{\alpha,\beta}(y)
+ =y^{\beta-1}(y+a)^{-\beta}
+      \left(\alpha+{a^2\beta\over y+a}\right).
+\]
+
+We now check complete monotonicity of \(H_{\alpha,\beta}\) for
+\(0\le\beta\le1\).  The first factor is
+\[
+  y^{\beta-1}=y^{-(1-\beta)},
+\]
+and this is interpreted as follows.  If \(0\le\beta<1\), put
+\(r=1-\beta>0\).  Then
+\[
+  y^{\beta-1}=y^{-r}
+  ={1\over\Gamma(r)}
+    \int_0^\infty e^{-yt}t^{r-1}\,dt,
+\]
+so \(y^{\beta-1}\) is completely monotone by the Bernstein--Widder
+criterion.  If \(\beta=1\), the same factor is the constant \(1\).  The shifted factor
+\((y+a)^{-\beta}\) is completely monotone for \(\beta>0\) by the Laplace
+representation
+\[
+ (y+a)^{-\beta}
+ ={1\over\Gamma(\beta)}
+   \int_0^\infty e^{-yt}e^{-at}t^{\beta-1}\,dt,
+\]
+and for \(\beta=0\) it is the constant \(1\).  The last factor
+\[
+  \alpha+{a^2\beta\over y+a}
+\]
+is a positive constant plus a nonnegative multiple of the completely monotone
+resolvent \((y+a)^{-1}\).  By closure of completely monotone functions under
+products and nonnegative sums, \(H_{\alpha,\beta}\) is completely monotone.
+
+The endpoint \(\beta=1\) has no limiting ambiguity; explicitly
+\[
+ H_{\alpha,1}(y)
+ ={\alpha\over y+a}+{a^2\over (y+a)^2},
+\]
+which is completely monotone.  The endpoint \(\beta=0\) also agrees with the
+direct identity \(\Phi_{\alpha,0}(s)=s^\alpha\).
+
+Finally, let \(g(s)=s^a\).  The composition theorem used here is the standard
+one: if \(f\) is completely monotone on \((0,\infty)\) and \(g\) is a
+Bernstein function with \(g((0,\infty))\subset(0,\infty)\), then \(f\circ g\)
+is completely monotone.  Its hypotheses are satisfied in the present case:
+\(H_{\alpha,\beta}\) is completely monotone by the factor check above,
+\(g(s)=s^a>0\), and \(g\) is a Bernstein function for \(0<a<1\) since
+\[
+  g'(s)=a s^{a-1}=a s^{-(1-a)}
+\]
+is completely monotone.  Hence
+\(\Phi'_{\alpha,\beta}=H_{\alpha,\beta}\circ g\) is completely monotone for
+\(0\le\beta\le1\), so \(\Phi_{\alpha,\beta}\) is a Bernstein function.
+Together with Wakrim's source obstruction for \(\beta>1\), this closes the
+remaining case and gives the exact Bernstein range.
+\end{proof}
+
+\begin{theorem}[APP-0020: Qi \(h_\lambda\) degree-four conjecture is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0020: Qi h-lambda degree-four conjecture is false}
+\label{thm:app20-qi-hlambda}
+Let
+\[
+  \Psi(x)=[\psi'(x)]^2+\psi''(x),\qquad
+  h_\lambda(x)=\Psi(x)-
+   {x^2+\lambda x+12\over 12x^4(x+1)^2}.
+\]
+The conjecture that
+\(\deg_x^{\rm cm}h_\lambda=\deg_x^{\rm cm}(-h_\mu)=4\) exactly in the stated
+parameter ranges \(\lambda\le0\), \(\mu\ge4\), is false.  Here
+\(\deg_x^{\rm cm}g\) denotes the source convention: the supremal power \(r\)
+for which \(x^rg(x)\) is completely monotone on \((0,\infty)\).
+\end{theorem}
+
+\begin{proof}
+Near zero,
+\[
+ h_\lambda(x)=-{\lambda\over 12x^3}
+ +\left({\lambda\over6}+{\pi^2\over3}-{37\over12}\right){1\over x^2}
+ +O(x^{-1}).
+\]
+If \(\lambda<0\), then \(x^4h_\lambda(x)=(-\lambda/12)x+O(x^2)\), whose
+derivative is positive near zero.  If \(\lambda=0\), the coefficient
+\(\pi^2/3-37/12\) is positive, again giving a positive derivative for the
+degree-four transform near zero.  Complete monotonicity would require the first
+derivative to be non-positive.  The same small-\(x\) test applied to
+\(-x^4h_\mu\) excludes the claimed \(\mu\)-range.  Hence the degree-four
+conjecture fails.
+\end{proof}
+
+\begin{theorem}[APP-0021: Szabo's cutoff is \(\alpha_0=1\)]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0021: Szabo cutoff alpha0 equals 1}
+\label{thm:app21-szabo-cutoff}
+For \(0<d<1\), define
+\[
+  H_d(y)=\psi(y+d)-\psi(y)-{d\over y}.
+\]
+The exact cutoff for complete monotonicity of \(y^\alpha H_d(y)\) is
+\[
+  \alpha_0=1 .
+\]
+\end{theorem}
+
+\begin{proof}
+The source theorem proves complete monotonicity for \(\alpha\le1\).  Conversely,
+as \(y\downarrow0\),
+\[
+  H_d(y)={1-d\over y}+O(1).
+\]
+Hence, for \(\alpha>1\),
+\[
+  y^\alpha H_d(y)=(1-d)y^{\alpha-1}+O(y^\alpha),
+\]
+whose derivative is positive near zero.  A completely monotone function must be
+non-increasing, so no \(\alpha>1\) is admissible.
+\end{proof}
+
+\begin{theorem}[APP-0022: Chen-Choi Gurland ratio is log-completely monotone]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0022: Chen-Choi Gurland ratio is log-completely monotone}
+\label{thm:app22-gurland-logcm}
+Let
+\[
+  F(x)={\Gamma(1/x)\Gamma(3/x)\over \Gamma(2/x)^2},\qquad x>0.
+\]
+Then \(F\) is logarithmically completely monotone; equivalently,
+\[
+  (-1)^n(\log F)^{(n)}(x)>0,\qquad n=0,1,2,\ldots .
+\]
+\end{theorem}
+
+\begin{proof}
+Set
+\[
+  A(u)=2\log(u+2)-\log(u+1)-\log(u+3).
+\]
+The identity
+\[
+ A(u)=\int_0^\infty e^{-ut}{e^{-t}(1-e^{-t})^2\over t}\,dt
+\]
+shows that \(A\) is strictly completely monotone.  The Weierstrass product for
+\(\Gamma\) gives
+\[
+  \log F(x)=\log {4\over3}+\sum_{m\ge1}A(mx).
+\]
+Termwise differentiation is justified on compact subintervals of
+\((0,\infty)\), and each differentiated summand has the required strict
+alternating sign.  This proves logarithmic complete monotonicity.
+\end{proof}
+
+\begin{theorem}[APP-0023: Sokal lambda-derivatives have triangular compression]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0023: Sokal lambda-derivatives have triangular compression}
+\label{thm:app23-sokal-lambda}
+Let \(n,k\in\mathbb N_0\), \(\lambda>0\), \(x>0\), and let \(f\) be a
+\(C^\infty\) function on \((0,\infty)\).  In Sokal's generalized-Stieltjes
+application, the quantities below are the Hankel-type expressions associated
+with a generalized Stieltjes function of order \(\lambda\).  For \(j\ge0\), set
+\[
+  G_j(x)=(-1)^n x^j f^{(n+j)}(x),\qquad a=n+\lambda .
+\]
+For \(0\le r\le k\), define
+\[
+  F^{[\lambda]}_{n,r}(x)
+   =\sum_{j=0}^r {r\choose j}(a+j)_{r-j}G_j(x).
+\]
+Then, for every integer \(0\le\ell\le k\),
+\[
+ \partial_\lambda^\ell F^{[\lambda]}_{n,k}(x)
+ =\sum_{r=0}^{k-\ell}{k!\over r!}
+   [z^{k-r}](-\log(1-z))^\ell\,F^{[\lambda]}_{n,r}(x).
+\]
+For \(\ell>k\), \(\partial_\lambda^\ell F^{[\lambda]}_{n,k}(x)=0\).  The
+coefficients in this triangular compression are non-negative.
+\end{theorem}
+
+\begin{proof}
+The exponential generating function is
+\[
+ \mathcal F(z)
+ =(1-z)^{-a}\sum_{j\ge0}G_j(x)
+      \left({z\over 1-z}\right)^j{1\over j!}.
+\]
+Differentiating \(\ell\) times with respect to \(\lambda\) multiplies
+\(\mathcal F\) by \((-\log(1-z))^\ell\).  Extracting coefficients gives the
+displayed triangular formula.  Since
+\(-\log(1-z)=\sum_{m\ge1}z^m/m\) has non-negative coefficients, all compression
+coefficients are non-negative.
+\end{proof}
+
+\begin{theorem}[APP-0024: Simon gamma quotient is Bernstein]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0024: Simon gamma quotient is Bernstein}
+\label{thm:app24-simon-gamma-quotient}
+For \(0<\alpha<1\), define
+\[
+  F_\alpha(x)={\Gamma(x+\alpha)\over \Gamma(x)x^\alpha},
+  \qquad x>0 .
+\]
+Then \(F_\alpha\) is a Bernstein function.  More precisely,
+\(1-F_\alpha\) is completely monotone.
+\end{theorem}
+
+\begin{proof}
+Put \(\beta=1-\alpha\).  The beta integral gives
+\[
+ F_\alpha(x)
+ =x^\beta{\Gamma(x+\alpha)\over\Gamma(x+1)}
+ ={x^\beta\over\Gamma(\beta)}
+   \int_0^\infty e^{-xu}(e^u-1)^{-\alpha}\,du .
+\]
+Define
+\[
+ J_\alpha(t)=\int_0^t (t-u)^{\alpha-1}(e^u-1)^{-\alpha}\,du .
+\]
+Laplace convolution gives
+\[
+ F_\alpha(x)
+ ={x\over\Gamma(\alpha)\Gamma(1-\alpha)}
+   \int_0^\infty e^{-xt}J_\alpha(t)\,dt .
+\]
+After the substitution \(u=tv\),
+\[
+J_\alpha(t)=
+\int_0^1(1-v)^{\alpha-1}
+\left({t\over e^{tv}-1}\right)^\alpha\,dv .
+\]
+For each \(v>0\), the function \(t/(e^{tv}-1)\) is decreasing in \(t\).
+The integrand is dominated near the endpoints by
+\((1-v)^{\alpha-1}v^{-\alpha}\), which is integrable because
+\(0<\alpha<1\).  Hence \(J_\alpha\) is decreasing, with
+\[
+ J_\alpha(0+)=\Gamma(\alpha)\Gamma(1-\alpha),
+ \qquad
+ J_\alpha(\infty)=0 .
+\]
+Let \(\mu_\alpha=-dJ_\alpha\).  This is a positive finite measure, and
+Stieltjes integration by parts yields
+\[
+ 1-F_\alpha(x)
+ ={1\over\Gamma(\alpha)\Gamma(1-\alpha)}
+  \int_0^\infty e^{-xt}\,\mu_\alpha(dt).
+\]
+Thus \(1-F_\alpha\) is completely monotone.  Differentiating this Laplace
+representation gives
+\[
+ F_\alpha'(x)
+ ={1\over\Gamma(\alpha)\Gamma(1-\alpha)}
+  \int_0^\infty t e^{-xt}\,\mu_\alpha(dt),
+\]
+so \(F_\alpha'\) is completely monotone.  Therefore \(F_\alpha\) is a
+Bernstein function.
+\end{proof}
+
+\begin{theorem}[APP-0025: Du--Wang \(h_3\) monotonicity classification]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0025: Du--Wang h3 monotonicity classification}
+\label{thm:app25-du-wang-h3}
+For \(0<a<2\), define
+\[
+ h_3(x)=
+ {-x^2\psi'(x+a)+2x\psi(x+a)-2\log\Gamma(x+a)\over x},
+ \qquad x>0 .
+\]
+Then \(h_3\) is increasing on \((0,\infty)\) if and only if
+\[
+  {1\over2}\le a\le1 .
+\]
+For \(0<a<1/2\) and for \(1<a<2\), \(h_3\) is not monotone on
+\((0,\infty)\).
+\end{theorem}
+
+\begin{proof}
+The source reduction writes \(t=x+a\) and
+\[
+ h_3'(x)={h_{31}(x+a)\over x^2},
+\]
+where
+\[
+ h_{31}(t)=-(t-a)^3\psi''(t)+(t-a)^2\psi'(t)
+          -2(t-a)\psi(t)+2\log\Gamma(t).
+\]
+For \(u>0\), set \(H_a(u)=h_{31}(a+u)\).  Then
+\[
+ H_a'(u)=-u^2\{u\psi'''(a+u)+2\psi''(a+u)\},
+ \qquad
+ H_a(0+)=2\log\Gamma(a).
+\]
+
+We first prove the middle window.  For \(t>1/2\), put
+\[
+ S_m(t)=\sum_{n=0}^\infty (n+t)^{-m}.
+\]
+Since \(\psi''(t)=-2S_3(t)\) and \(\psi'''(t)=6S_4(t)\), it is enough to show
+\[
+ 2S_3(t)-3\left(t-{1\over2}\right)S_4(t)>0 .
+\]
+Let \(y=t-1/2\) and \(K(x)=1/(2\sinh(x/2))\).  The standard integral
+representation for \(S_m\), followed by integration by parts, gives
+\[
+\begin{aligned}
+ 2S_3(t)-3yS_4(t)
+ &=\int_0^\infty e^{-yx}
+   \left(x^2K(x)-{1\over2}(x^3K(x))'\right)\,dx  \\
+ &=\int_0^\infty e^{-yx}
+   {x^2K(x)\over2}\left({x\over2}\coth{x\over2}-1\right)\,dx .
+\end{aligned}
+\]
+The last integrand is positive because \(z\coth z>1\) for \(z>0\).  Therefore
+\[
+ -{2\psi''(t)\over\psi'''(t)}>t-{1\over2}.
+\]
+If \(1/2\le a\le1\), then \(u=t-a\le t-1/2\), so
+\[
+ 2\psi''(t)+u\psi'''(t)<0 .
+\]
+Thus \(H_a'(u)>0\).  Also \(H_a(0+)=2\log\Gamma(a)\ge0\) on
+\([1/2,1]\), since \(\log\Gamma\) decreases there and \(\Gamma(1)=1\).
+Hence \(H_a(u)\ge0\), and therefore \(h_3'(x)\ge0\), on the whole middle
+window.
+
+It remains to exclude the outer windows.  As \(t\to\infty\), the standard
+asymptotics for \(\psi,\psi',\psi''\), and \(\log\Gamma\) give
+\[
+  h_{31}(t)=(2a-1)\log t+O(1).
+\]
+If \(0<a<1/2\), then \(h_{31}(a+)=2\log\Gamma(a)>0\), while
+\(h_{31}(t)<0\) for all sufficiently large \(t\).  If \(1<a<2\), then
+\(h_{31}(a+)=2\log\Gamma(a)<0\), while \(h_{31}(t)>0\) for all sufficiently
+large \(t\).  In both cases \(h_3'\) changes sign, so \(h_3\) is not monotone.
+\end{proof}
+
+\begin{theorem}[APP-0026: Baskakov even-power conjecture is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0026: Baskakov even-power conjecture is false}
+\label{thm:app26-baskakov-r8}
+For the Abel--Gawronski--Neuschel higher-power Baskakov family
+\[
+ f^{[r]}_\alpha(x)
+ =(1+x)^{-r\alpha}\sum_{k=0}^\infty
+ \binom{-\alpha}{k}^{r}\left({x\over1+x}\right)^{rk},
+\]
+the universal even-power complete-monotonicity conjecture is false.  Already
+at \(\alpha=1\) and \(r=8\),
+\[
+ f^{[8]}_1(x)={1\over (1+x)^8-x^8}
+\]
+is not completely monotone on \((0,\infty)\).
+\end{theorem}
+
+\begin{proof}
+For even \(r=2m\) and \(\alpha=1\), the source definition reduces to
+\[
+ f^{[2m]}_1(x)={1\over(1+x)^{2m}-x^{2m}}.
+\]
+Let \(D_m(x)=(1+x)^{2m}-x^{2m}\).  Its roots are
+\[
+ \lambda_{k,m}=-{1\over2}-{i\over2}\cot{\pi k\over 2m},
+ \qquad k=1,\ldots,2m-1,
+\]
+and the corresponding residues are
+\[
+ R_{k,m}={(-1)^{m+k}\over2m}
+ \left(2\sin{\pi k\over2m}\right)^{2m-2}.
+\]
+Thus the inverse-Laplace density of \(1/D_m\), if it were nonnegative, would
+be
+\[
+ \rho_m(t)={e^{-t/2}\over2m}
+ \left[
+ 2^{2m-2}
+ +2\sum_{k=1}^{m-1}(-1)^{m+k}
+ \left(2\sin{\pi k\over2m}\right)^{2m-2}
+ \cos\left({t\over2}\cot{\pi k\over2m}\right)
+ \right].
+\]
+For \(m=4\), write \(h_4(t)=e^{t/2}\rho_4(t)\).  The formula simplifies to
+\[
+\begin{aligned}
+ h_4(t)
+ &=8+2\cos{t\over2}
+ -{(2-\sqrt2)^3\over4}\cos\left({1+\sqrt2\over2}t\right) \\
+ &\hspace{1.2cm}
+ -{(2+\sqrt2)^3\over4}\cos\left({\sqrt2-1\over2}t\right).
+\end{aligned}
+\]
+At \(t=10\pi\),
+\[
+ h_4(10\pi)=6+10\cos(5\pi\sqrt2).
+\]
+Since \(0<5\sqrt2-7<1/4\),
+\[
+ \cos(5\pi\sqrt2)=-\cos(\pi(5\sqrt2-7))
+ <-{\sqrt2\over2}<-{3\over5}.
+\]
+Consequently \(h_4(10\pi)<0\), and so \(\rho_4(10\pi)<0\).  By uniqueness of
+Laplace transforms of positive measures, \(f^{[8]}_1\) cannot be completely
+monotone.
+\end{proof}
+
+\begin{theorem}[APP-0027: Ma--Weigert derivative regions form a chain]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0027: Ma--Weigert derivative regions form a chain}
+\label{thm:app27-ma-weigert-chain}
+Let
+\[
+ \mathcal F_{1,n}
+ =
+ \left\{x\mapsto {p(\log x)\over x}:p\in\mathbb R[y]_n\right\},
+\]
+and let \(L=-d/dx\).  If
+\[
+ D_k=\{f\in\mathcal F_{1,n}:L^kf(x)\ge0\text{ for all }x>0\},
+\]
+then
+\[
+ D_{k+1}\subseteq D_k
+ \qquad(k\ge0,\ n\ge0).
+\]
+\end{theorem}
+
+\begin{proof}
+For \(f(x)=p(\log x)/x\), induction gives
+\[
+ L^k f(x)=x^{-k-1}p_k(\log x)
+\]
+for a polynomial \(p_k\).  Indeed, if the formula holds at level \(k\), then
+\[
+ L^{k+1}f(x)
+ =x^{-k-2}\bigl((k+1)p_k(\log x)-p_k'(\log x)\bigr).
+\]
+Thus \(L^k f(x)\to0\) as \(x\to\infty\).  If \(f\in D_{k+1}\), put
+\(g=L^k f\).  Then \(-g'=L^{k+1}f\ge0\), and hence, for \(R>x\),
+\[
+ g(x)-g(R)=\int_x^R L^{k+1}f(t)\,dt .
+\]
+Letting \(R\to\infty\) gives
+\[
+ L^k f(x)=\int_x^\infty L^{k+1}f(t)\,dt\ge0.
+\]
+Therefore \(f\in D_k\).
+\end{proof}
+
+\begin{theorem}[APP-0028: divisor-polygamma parity correction]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0028: divisor-polygamma parity correction}
+\label{thm:app28-qa-divisor-polygamma}
+For \(n\in\mathbb N\), set
+\[
+ f_n(x)=\sum_{km=n}\bigl[\psi^{(k)}(x)\bigr]^m,\qquad x>0.
+\]
+Then \(f_n\) is completely monotone for every odd \(n\).  The asserted
+opposite parity law that \(f_{2\ell}\) is never completely monotone is false:
+\[
+ f_2(x)=[\psi'(x)]^2+\psi''(x)
+\]
+is completely monotone on \((0,\infty)\).
+\end{theorem}
+
+\begin{proof}
+The standard polygamma representation gives, for \(k\ge1\),
+\[
+ (-1)^{k+1}\psi^{(k)}(x)
+ =\int_0^\infty {t^ke^{-xt}\over1-e^{-t}}\,dt .
+\]
+Thus \(\psi^{(k)}\) is a positive completely monotone function whenever
+\(k\) is odd.  If \(n\) is odd and \(km=n\), both \(k\) and \(m\) are odd, so
+each summand \([\psi^{(k)}]^m\) is a finite product of positive completely
+monotone functions.  Finite sums preserve complete monotonicity.
+
+For \(n=2\), the divisor pairs are \((1,2)\) and \((2,1)\), hence
+\[
+ f_2(x)=[\psi'(x)]^2+\psi''(x).
+\]
+Qi--Agarwal record the sharp theorem that
+\[
+ [\psi'(x)]^2+\lambda\psi''(x)
+\]
+is completely monotone on \((0,\infty)\) if and only if \(\lambda\le1\).
+Taking \(\lambda=1\) proves that \(f_2\) is completely monotone.  This refutes
+the stated even-parity clause at \(\ell=1\).
+\end{proof}
+
+\begin{theorem}[APP-0029: Bulboaca--Zayed Gamma quotient one-critical-point theorem]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0029: Bulboaca--Zayed Gamma quotient one-critical-point theorem}
+\label{thm:app29-bz-gamma-quotient}
+Let
+\[
+ F(x)=
+ {\log\Gamma(x+1)\over \log(x^2+6)-\log(x+6)}
+\]
+with the removable values filled in on \((-1,\infty)\).  Then \(F'\) has a
+unique zero \(x_m\) on \((-1,\infty)\).  Moreover
+\[
+ F'(x)<0\quad(-1<x<x_m),\qquad
+ F'(x)>0\quad(x>x_m),
+\]
+and numerically \(x_m=1.126207061051643\ldots\).
+\end{theorem}
+
+\begin{proof}
+The source proves \(F'<0\) on \((-1,1)\).  For \(x>1\), set
+\[
+ G(x)=\log\Gamma(x+1),\qquad
+ D(x)=\log{x^2+6\over x+6},
+\]
+and
+\[
+ N_0(x)=\psi(x+1)D(x)-G(x)D'(x).
+\]
+Since \(F'=N_0/D^2\), the sign of \(F'\) on \(x>1\) is the sign of \(N_0\).
+A direct right-tail estimate gives \(N_0(x)>0\) for \(x\ge8\): with
+\[
+ P(x)=x^2+12x-6,\qquad Q(x)=(x^2+6)(x+6),
+\]
+one has \(D'=P/Q\); the bounds \(\psi(x+1)>\log x\),
+\(\log\Gamma(x+1)\le x\log x\), and
+\[
+ D(x)\ge {xP(x)\over Q(x)}
+ \qquad(x\ge8)
+\]
+imply \(N_0(x)>0\).
+
+It remains to prove a single crossing on \((1,8]\).  Define
+\[
+ r(x)={\psi(x+1)\over D'(x)}
+      =\psi(x+1){Q(x)\over P(x)}.
+\]
+Then
+\[
+ P(x)^2r'(x)=S(x),
+\]
+where
+\[
+ S(x)=\psi'(x+1)Q(x)P(x)
+ +\psi(x+1)\{Q'(x)P(x)-Q(x)P'(x)\}.
+\]
+Using the elementary bounds, valid for \(y\ge2\),
+\[
+ \psi(y)>\log y-{1\over y},\qquad
+ \psi'(y)>{1\over y}+{1\over2y^2},\qquad
+ \psi''(y)>-{1\over y^2}-{2\over y^3},
+\]
+one obtains \(S'(x)>0\) on \([1,8]\).  Also
+\[
+ S(1)=343\left({\pi^2\over6}-1\right)-539(1-\gamma)<0,
+\]
+while \(S(8)>0\).  Hence \(r'\) has exactly one zero on \([1,8]\).
+
+Now put \(I(x)=D(x)r(x)-G(x)\).  Then \(N_0(x)=D'(x)I(x)\) and
+\[
+ I'(x)=D(x)r'(x).
+\]
+Since \(D(x)>0\) for \(x>1\), \(I\) decreases once and then increases once.
+The removable endpoint has \(\lim_{x\downarrow1}I(x)=0\), and the quadratic
+leading coefficient of \(N_0\) at \(1\) is negative.  Finally,
+\[
+ N_0(8)=(H_8-\gamma)\log5-{11\over70}\log(40320)>0.
+\]
+Thus \(N_0\), and hence \(F'\), has exactly one zero on \((1,8]\).  Combining
+this with the source interval \((-1,1)\) and the right-tail estimate proves
+the theorem.
+\end{proof}
+
+\begin{theorem}[APP-0030: Ramanujan Turan window has a negative answer]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0030: Ramanujan Turan window has a negative answer}
+\label{thm:app30-ramanujan-turan}
+Let
+\[
+ I_R(x)=\int_0^\infty e^{-xt}{dt\over t(\pi^2+\log^2t)}
+\]
+and, for \(n\ge2\),
+\[
+ H_n(x;\alpha)
+ =
+ \bigl(I_R^{(n)}(x)\bigr)^2
+ -\alpha I_R^{(n-1)}(x)I_R^{(n+1)}(x).
+\]
+The proposed complete-monotonicity window
+\[
+ {n-2\over n-1}<\alpha<{n-1\over n}
+\]
+is false.  It already fails for \(n=2\).
+\end{theorem}
+
+\begin{proof}
+Put
+\[
+ A_k(x)=(-1)^kI_R^{(k)}(x)
+ =\int_0^\infty e^{-xt}{t^{k-1}\over \pi^2+\log^2t}\,dt .
+\]
+Then
+\[
+ H_2(x;\alpha)=A_2(x)^2-\alpha A_1(x)A_3(x).
+\]
+Let \(x=e^{-L}\).  After the substitution \(y=xt\),
+\[
+ A_k(e^{-L})
+ =
+ e^{kL}\int_0^\infty
+ {e^{-y}y^{k-1}\over \pi^2+(L+\log y)^2}\,dy .
+\]
+Splitting at \(|\log y|\le L^{2/3}\) and expanding the denominator uniformly
+on the central region gives, for fixed \(k=1,2,3\),
+\[
+ A_k(e^{-L})
+ =
+ e^{kL}L^{-2}\Gamma(k)
+ \left(1-{2\psi(k)\over L}+O(L^{-2})\right).
+\]
+Consequently
+\[
+ {A_2(e^{-L})^2\over A_1(e^{-L})A_3(e^{-L})}
+ =
+ {1\over2}
+ \left(
+ 1+{2(\psi(1)+\psi(3)-2\psi(2))\over L}+O(L^{-2})
+ \right).
+\]
+Since
+\[
+ \psi(1)=-\gamma,\qquad
+ \psi(2)=1-\gamma,\qquad
+ \psi(3)={3\over2}-\gamma,
+\]
+the bracketed correction is \(-1/L+O(L^{-2})\), and hence
+\[
+ {A_2(e^{-L})^2\over A_1(e^{-L})A_3(e^{-L})}
+ =
+ {1\over2}-{1\over2L}+O(L^{-2}).
+\]
+Choose \(\alpha_L=1/2-1/(4L)\).  For all sufficiently large \(L\),
+\(\alpha_L\in(0,1/2)\) and
+\[
+ A_2(e^{-L})^2-\alpha_L A_1(e^{-L})A_3(e^{-L})<0.
+\]
+Thus \(H_2(e^{-L};\alpha_L)<0\).  Complete monotonicity would imply
+nonnegativity at order zero, so the source's universal interval statement is
+false.
+\end{proof}
+
+\section{Late source applications}
+\label{sec:late-source-applications}
+The following applications are already admitted in the Theory graph and are placed together because they are source-facing consequences of mechanisms developed earlier: Ramanujan moment-ratio asymptotics, Bessel zero partial fractions, and local endpoint obstructions.
+
+\begin{counterexample}[APP-0039: Ramanujan Turan-window complete-monotonicity interval is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0039: Ramanujan Turan-window complete-monotonicity interval is false}
+\label{res:ramanujan-turan-window-negative-answer}
+The Mishra--Swaminathan Ramanujan integral Turan-window complete-monotonicity statement has a negative answer: the proposed interval already fails for \(n=2\) and suitable \(\alpha\in(0,1/2)\).  This resolves the source problem recorded as \textbf{APP-0039} \cite{mishra-swaminathan-ramanujan}.
+\end{counterexample}
+
+\begin{proof}
+Put
+\[
+A_k(x)=(-1)^k I_R^{(k)}(x)
+=\int_0^\infty e^{-xt}\frac{t^{k-1}}{\pi^2+\log^2 t}\,dt
+\qquad (k\ge1).
+\]
+Then \(H_2(x;\alpha)=A_2(x)^2-\alpha A_1(x)A_3(x)\).  Set \(x=e^{-L}\).  With \(y=xt\),
+\[
+A_k(e^{-L})
+=e^{kL}\int_0^\infty
+\frac{e^{-y}y^{k-1}}{\pi^2+(L+\log y)^2}\,dy.
+\]
+For \(k=1,2,3\), splitting the integral into \(|\log y|\le L^{2/3}\) and its complement gives
+\[
+A_k(e^{-L})
+=e^{kL}L^{-2}\Gamma(k)
+\left(1-\frac{2\psi(k)}{L}+O(L^{-2})\right).
+\]
+Therefore
+\[
+\frac{A_2(e^{-L})^2}{A_1(e^{-L})A_3(e^{-L})}
+=\frac{\Gamma(2)^2}{\Gamma(1)\Gamma(3)}
+\left(
+1+\frac{2(\psi(1)+\psi(3)-2\psi(2))}{L}+O(L^{-2})
+\right).
+\]
+Using \(\psi(1)=-\gamma\), \(\psi(2)=1-\gamma\), and \(\psi(3)=3/2-\gamma\), this ratio equals
+\[
+\frac12-\frac{1}{2L}+O(L^{-2}).
+\]
+Choose \(\alpha_L=1/2-1/(4L)\).  For all sufficiently large \(L\), \(\alpha_L\in(0,1/2)\) and \(H_2(e^{-L};\alpha_L)<0\).  Complete monotonicity would imply nonnegativity, so the universal Turan-window statement is false.
+\end{proof}
+
+
+\begin{proposition}[Bessel \(W_\nu\) zero representation]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Bessel Wnu zero representation}
+\label{res:yt-bessel-w-general-zero-partial-fraction}
+For every \(\nu>-1\), if \(j_{\nu+1,n}\) are the positive zeros of \(J_{\nu+1}\) and \(W_\nu(z)=zI_\nu(z)/I_{\nu+1}(z)\), then
+\[
+G_\nu(s):=W_\nu(\sqrt s)=2(\nu+1)+2\sum_{n=1}^\infty\frac{s}{s+j_{\nu+1,n}^2},
+\]
+and
+\[
+G_\nu'(s)=2\sum_{n=1}^\infty\frac{j_{\nu+1,n}^2}{(s+j_{\nu+1,n}^2)^2}.
+\]
+In particular \(G_\nu\) is a Bernstein function.
+\end{proposition}
+
+\begin{proof}
+Put \(\mu=\nu+1>0\).  The canonical product for \(I_\mu\) gives
+\[
+I_\mu(z)=\frac{(z/2)^\mu}{\Gamma(\mu+1)}\prod_{n=1}^\infty\left(1+\frac{z^2}{j_{\mu,n}^2}\right).
+\]
+Hence
+\[
+z\frac{I_\mu'(z)}{I_\mu(z)}=\mu+2\sum_{n=1}^\infty\frac{z^2}{z^2+j_{\mu,n}^2}.
+\]
+Using \(I_\mu'(z)=I_{\mu-1}(z)-\mu I_\mu(z)/z\), we obtain
+\[
+W_\nu(z)=z\frac{I_{\mu-1}(z)}{I_\mu(z)}=2\mu+2\sum_{n=1}^\infty\frac{z^2}{z^2+j_{\mu,n}^2}.
+\]
+Set \(s=z^2\).  Since \(j_{\nu+1,n}\sim\pi n\), the differentiated sums converge locally uniformly, and
+\[
+(-1)^k\frac{d^k}{ds^k}
+\frac{j_{\nu+1,n}^2}{(s+j_{\nu+1,n}^2)^2}
+=(k+1)!\frac{j_{\nu+1,n}^2}{(s+j_{\nu+1,n}^2)^{k+2}}\ge0.
+\]
+Thus \(G_\nu'\) is completely monotone, and \(G_\nu\) is Bernstein.
+\end{proof}
+
+\begin{corollary}[APP-0040: Yang-Tian Bessel-\(W\) power-Bernstein conjecture is true]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0040: Yang-Tian Bessel-W power-Bernstein conjecture is true}
+\label{res:yt-bessel-w-power-bernstein-conjecture}
+For \(\tau\in(0,1/2]\) and \(\nu>-1\), \(x\mapsto W_\nu(x^\tau)\) is a Bernstein function on \((0,\infty)\).  This resolves the source problem recorded as \textbf{APP-0040} \cite{app-app-0040-source}.
+\end{corollary}
+
+\begin{proof}
+By Proposition~\ref{res:yt-bessel-w-general-zero-partial-fraction}, \(G_\nu\) is Bernstein.  If \(0<\tau\le1/2\), then \(x^{2\tau}\) is Bernstein.  The Bernstein composition closure used in Theorem~\ref{thm:app19-w-symbol} gives
+\[
+W_\nu(x^\tau)=G_\nu(x^{2\tau}),
+\]
+which is Bernstein.
+\end{proof}
+
+
+\begin{counterexample}[APP-0041: Qi \(h_\lambda\) degree-four complete-monotonicity conjecture is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0041: Qi h-lambda degree-four complete-monotonicity conjecture is false}
+\label{res:not-qi-hlambda-degree4-conjecture}
+Let
+\[
+\Psi(x)=[\psi'(x)]^2+\psi''(x),\qquad
+h_\lambda(x)=\Psi(x)-\frac{x^2+\lambda x+12}{12x^4(x+1)^2}.
+\]
+The conjecture that \(\deg_x^{\rm cm}h_\lambda=\deg_x^{\rm cm}(-h_\mu)=4\) exactly for \(\lambda\le0\) and \(\mu\ge4\) is false.  This resolves the source problem recorded as \textbf{APP-0041} \cite{app-app-0041-source}.
+\end{counterexample}
+
+\begin{proof}
+At \(x=0^+\),
+\[
+\psi'(x)=\frac1{x^2}+\zeta(2)-2\zeta(3)x+3\zeta(4)x^2+O(x^3),
+\qquad
+\psi''(x)=-\frac2{x^3}-2\zeta(3)+6\zeta(4)x+O(x^2).
+\]
+Thus
+\[
+\Psi(x)=\frac1{x^4}-\frac2{x^3}+\frac{\pi^2}{3x^2}-\frac{4\zeta(3)}x+O(1).
+\]
+Also
+\[
+\frac{x^2+\lambda x+12}{12x^4(1+x)^2}
+=\frac1{x^4}+\left(\frac{\lambda}{12}-2\right)\frac1{x^3}
++\left(\frac{37}{12}-\frac{\lambda}{6}\right)\frac1{x^2}+O(x^{-1}).
+\]
+Hence
+\[
+h_\lambda(x)
+=-\frac{\lambda}{12x^3}
++\left(\frac{\lambda}{6}+\frac{\pi^2}{3}-\frac{37}{12}\right)\frac1{x^2}
++O(x^{-1}).
+\]
+If \(\lambda<0\), then \(\frac{d}{dx}[x^4h_\lambda(x)]=-\lambda/12+O(x)>0\) for small \(x>0\), so \(x^4h_\lambda\) is not completely monotone.  If \(\lambda=0\), then
+\[
+x^4h_0(x)=\left(\frac{\pi^2}{3}-\frac{37}{12}\right)x^2+O(x^3),
+\]
+and \(4\pi^2>37\) again gives a positive first derivative near zero.  Similarly, for \(\mu\ge4\),
+\[
+\frac{d}{dx}[x^4(-h_\mu(x))]=\frac{\mu}{12}+O(x)>0
+\]
+near zero.  The degree-four transforms required by the conjecture therefore fail on the conjectured source ranges.
+\end{proof}
+
+\section{Bessel endpoint obstruction}
+\label{sec:bessel-endpoint-obstruction}
+
+The next group belongs to the same endpoint-obstruction mechanism used throughout the paper: a universal positivity or concavity statement is reduced to a one-point Riccati certificate, and exact rational bounds then decide the sign.  The same certificate resolves the square-root log-concavity problem, the Riccati form of that problem, a related quadratic ratio bound, and the proposed three-regime certificate route.
+
+\begin{counterexample}[APP-0042: Modified Bessel square-root log-concavity fails]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0042: Modified Bessel square-root log-concavity fails}
+\label{res:not-bessel-i-sqrt-log-concavity-nu-ge-0}
+The assertion that, for every \(\nu\ge0\), the function
+\[
+u\longmapsto \sqrt{u}\,I_\nu(u)
+\]
+is strictly log-concave on \((0,\infty)\) is false.  More precisely, at \((\nu,u)=(0,10)\) the logarithmic second derivative is positive.  This resolves the source problem recorded as \textbf{APP-0042} \cite{app-app-0042-source}.
+\end{counterexample}
+
+\begin{proof}
+Let
+\[
+g_\nu(u)=\log(\sqrt u\,I_\nu(u)),
+\qquad
+r_\nu(u)=\frac{I_\nu'(u)}{I_\nu(u)}.
+\]
+Then
+\[
+g_\nu''(u)=r_\nu'(u)-\frac{1}{2u^2}.
+\]
+The modified Bessel equation
+\[
+u^2I_\nu''(u)+uI_\nu'(u)-(u^2+\nu^2)I_\nu(u)=0
+\]
+gives
+\[
+\frac{I_\nu''(u)}{I_\nu(u)}
+=1+\frac{\nu^2}{u^2}-\frac{r_\nu(u)}{u},
+\]
+and therefore
+\[
+g_\nu''(u)
+=
+1+\frac{\nu^2-\frac12}{u^2}
+-\frac{r_\nu(u)}{u}
+-r_\nu(u)^2.
+\]
+For \(\nu=0\), \(r_0(u)=I_1(u)/I_0(u)\).  At \(u=10\),
+\[
+g_0''(10)=\frac{199}{200}-\frac{r_0(10)}{10}-r_0(10)^2.
+\]
+It is enough to prove
+\[
+r_0(10)<\frac{9487}{10000},
+\]
+because
+\[
+\frac{199}{200}
+-\frac{1}{10}\frac{9487}{10000}
+-\left(\frac{9487}{10000}\right)^2
+=\frac{9831}{100000000}>0.
+\]
+
+The modified Bessel series are
+\[
+I_0(10)=\sum_{k=0}^\infty\frac{25^k}{(k!)^2},
+\qquad
+I_1(10)=\sum_{k=0}^\infty\frac{5\cdot25^k}{k!(k+1)!}.
+\]
+Using the first \(21\) terms as a lower bound for \(I_0(10)\), and bounding the \(I_1\)-tail after \(k=20\) by a geometric tail with ratio
+\[
+q=\frac{25}{22\cdot23}<1,
+\]
+the audited rational certificate gives an upper bound \(U_1>I_1(10)\) satisfying
+\[
+10000\,U_1<9487\sum_{k=0}^{20}\frac{25^k}{(k!)^2}.
+\]
+Hence \(I_1(10)/I_0(10)<9487/10000\), so \(g_0''(10)>0\).  The claimed universal strict log-concavity is therefore refuted.
+\end{proof}
+
+\begin{corollary}[APP-0043: Riccati log-concavity inequality for \(I_\nu\) is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0043: Riccati log-concavity inequality for Inu is false}
+\label{res:not-bessel-i-riccati-log-concavity-inequality}
+The inequality
+\[
+1+\frac{\nu^2-\frac12}{u^2}-\frac{r_\nu(u)}{u}-r_\nu(u)^2<0,
+\qquad r_\nu(u)=\frac{I_\nu'(u)}{I_\nu(u)},
+\]
+does not hold for every \(\nu\ge0\) and \(u>0\).  This resolves the source problem recorded as \textbf{APP-0043} \cite{app-app-0042-source}.
+\end{corollary}
+
+\begin{proof}
+The proof of Counterexample~\ref{res:not-bessel-i-sqrt-log-concavity-nu-ge-0} gives
+\[
+1-\frac{1}{2\cdot10^2}-\frac{r_0(10)}{10}-r_0(10)^2
+=g_0''(10)>0.
+\]
+This is the negation of the claimed strict Riccati inequality at \((\nu,u)=(0,10)\).
+\end{proof}
+
+\begin{counterexample}[APP-0044: Bessel ratio quadratic lower bound is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0044: Bessel ratio quadratic lower bound is false}
+\label{res:not-bessel-i-ratio-quadratic-bound}
+The claimed inequality
+\[
+q_\nu(u)^2+\frac{(2\nu+1)q_\nu(u)}{u}+\frac{\nu+\frac12}{u^2}>1,
+\qquad q_\nu(u)=\frac{I_{\nu+1}(u)}{I_\nu(u)},
+\]
+is false for all \(\nu\ge0\) and \(u>0\).  This resolves the source problem recorded as \textbf{APP-0044} \cite{app-app-0042-source}.
+\end{counterexample}
+
+\begin{proof}
+At \(\nu=0\) and \(u=10\), the same rational certificate used above gives
+\[
+q_0(10)=\frac{I_1(10)}{I_0(10)}<\frac{9487}{10000}.
+\]
+Therefore
+\[
+q_0(10)^2+\frac{q_0(10)}{10}+\frac1{200}
+<
+\left(\frac{9487}{10000}\right)^2
++\frac1{10}\frac{9487}{10000}
++\frac1{200}
+=1-\frac{9831}{100000000}<1.
+\]
+This contradicts the proposed strict lower bound.
+\end{proof}
+
+\begin{corollary}[APP-0045: Three-regime Bessel log-concavity certificate route is refuted]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0045: Three-regime Bessel log-concavity certificate route is refuted}
+\label{res:not-bessel-i-split-regime-log-concavity-certificate}
+No valid three-regime certificate can prove the universal Riccati log-concavity inequality for \(I_\nu\), because the universal inequality itself is false.  This resolves the source problem recorded as \textbf{APP-0045} \cite{app-app-0042-source}.
+\end{corollary}
+
+\begin{proof}
+Corollary~\ref{res:not-bessel-i-riccati-log-concavity-inequality} gives an explicit point \((\nu,u)=(0,10)\) where the target inequality fails.  A certificate proving the inequality for all \(\nu\ge0\) and \(u>0\) would imply the false universal statement.  Hence the proposed certificate route cannot exist.
+\end{proof}
+
+\section{Integrated applications added after the seed}
+\label{sec:post-seed-integrated-applications}
+The following applications have admitted Theory proof nodes and are rendered here before the append-only application ledger.  They are placed after the seed exposition so the public APP ledger can point to mathematical statements with proofs rather than to ledger-only entries.
+
+\begin{counterexample}[APP-0031: Baricz gamma-quotient Bernstein test is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0031: Baricz gamma-quotient Bernstein test is false}
+\label{res:baricz-gamma-quotient-bf-forall-negative-answer}
+Baricz's question asking whether \(x\mapsto\Gamma(x)\Gamma(x-a+b)/(\Gamma(x-a)\Gamma(x+b))\) is a Bernstein function on \((a,\infty)\) for every \(a,b>0\) has a negative answer.
+
+This resolves the source problem recorded as \textbf{APP-0031} \cite{baricz-turan}.
+\end{counterexample}
+
+\begin{proof}
+Take \(a=2\), \(b=3\), and set \(y=x-2>0\). Then by the Gamma recurrence,
+\[
+\frac{\Gamma(x)\Gamma(x-a+b)}{\Gamma(x-a)\Gamma(x+b)}
+=\frac{\Gamma(x)\Gamma(x+1)}{\Gamma(x-2)\Gamma(x+3)}
+=\frac{(x-2)(x-1)}{(x+1)(x+2)}
+=\frac{y(y+1)}{(y+3)(y+4)}.
+\]
+
+Let
+\[
+g(y)=\frac{y(y+1)}{(y+3)(y+4)},\qquad y>0.
+\]
+
+If \(g\) were a Bernstein function, then \(g'\) would be completely monotone. In particular \(g'''\ge0\) would be necessary.
+
+Exact symbolic differentiation gives
+\[
+g'(y)=\frac{6(y^2+4y+2)}{(y+3)^2(y+4)^2},
+\]
+\[
+g''(y)=
+-\frac{12(y^3+6y^2+6y-10)}{(y+3)^3(y+4)^3},
+\]
+and
+\[
+g'''(y)=
+\frac{36(y^4+8y^3+12y^2-40y-94)}{(y+3)^4(y+4)^4}.
+\]
+
+At \(y=1\),
+\[
+g'''(1)=-\frac{1017}{40000}<0.
+\]
+
+Therefore \(g'\) is not completely monotone, \(g\) is not Bernstein, and the Baricz for-all-\(a,b\) Bernstein question has a negative answer.
+\end{proof}
+
+\begin{proposition}[APP-0032: From's all-\(L\) Mills-ratio bound family is explicit]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: APP-0032: From's all-L Mills-ratio bound family is explicit}
+\label{res:from-mills-all-l-alternating-r-bound-family}
+Let \(P_0=1\), \(P_1=t\), \(P_{n+1}=tP_n+nP_{n-1}\), and \(B_0=0\), \(B_1=1\), \(B_{n+1}=nB_{n-1}-tB_n\). With \(U_L(t)\) as in the all-\(L\) moment-ratio bound, the standard normal Mills ratio satisfies, for even \(L\ge0\), \(r(t)>[B_{L+1}-U_LB_L]/[P_{L+1}+U_LP_L]\), and for odd \(L\ge1\), \(r(t)<[U_LB_L-B_{L+1}]/[P_{L+1}+U_LP_L]\), for all \(t\ge0\).
+
+This resolves the source problem recorded as \textbf{APP-0032} \cite{from-mills}.
+\end{proposition}
+
+\begin{proof}
+Set
+\[
+m_L(t)=\frac{M_{L+1}(t)}{M_L(t)}.
+\]
+
+The recurrence gives
+\[
+\frac{M_{L+2}}{M_L}=L+1-tm_L,
+\]
+\[
+\frac{M_{L+3}}{M_L}=(t^2+L+2)m_L-t(L+1),
+\]
+and
+\[
+\frac{M_{L+4}}{M_L}=(L+1)(t^2+L+3)-t(t^2+2L+5)m_L.
+\]
+
+Substitution into the determinant inequality and expansion give
+\[
+(L+1)(t^2+4L+6)-t(t^2+4L+7)m_L-(t^2+4L+8)m_L^2>0.
+\]
+
+Equivalently,
+\[
+(t^2+4L+8)m_L^2+t(t^2+4L+7)m_L-(L+1)(t^2+4L+6)<0.
+\]
+
+Since \(m_L>0\), the positive root yields the uniform strict bound
+\[
+m_L(t)<U_L(t),
+\]
+where
+\[
+U_L(t)=
+\frac{
+\sqrt{t^2(t^2+4L+7)^2+4(L+1)(t^2+4L+8)(t^2+4L+6)}
+-t(t^2+4L+7)
+}
+{2(t^2+4L+8)}.
+\]
+
+This is the determinant-to-bound extractor. It is a single theorem for every \(L\ge0\).
+
+Define polynomials \(P_n(t)\) by
+\[
+P_0=1,\qquad P_1=t,\qquad P_{n+1}=tP_n+nP_{n-1}.
+\]
+Define \(B_n(t)\) by
+\[
+B_0=0,\qquad B_1=1,\qquad B_{n+1}=nB_{n-1}-tB_n.
+\]
+
+Then the same recurrence gives
+\[
+M_n(t)=(-1)^nP_n(t)r(t)+B_n(t).
+\]
+
+The ratio bound \(M_{L+1}<U_LM_L\) becomes
+\[
+\left((-1)^{L+1}P_{L+1}-(-1)^L U_LP_L\right)r
+<U_LB_L-B_{L+1}.
+\]
+
+Since \(P_n(t)>0\) for \(t>0\) and \(P_{2j}(0)>0\), the coefficient has sign \((-1)^{L+1}\). Thus the bounds alternate:
+
+For even \(L\ge0\),
+\[
+r(t)>
+\frac{B_{L+1}(t)-U_L(t)B_L(t)}
+{P_{L+1}(t)+U_L(t)P_L(t)}.
+\]
+
+For odd \(L\ge1\),
+\[
+r(t)<
+\frac{U_L(t)B_L(t)-B_{L+1}(t)}
+{P_{L+1}(t)+U_L(t)P_L(t)}.
+\]
+
+These formulas are valid at \(t=0\) by direct evaluation of the recurrences and for \(t>0\) by the positivity of \(M_L\).
+\end{proof}
+
+\begin{proposition}[APP-0033: Ramanujan antiderivative is complete Bernstein]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: APP-0033: Ramanujan antiderivative is complete Bernstein}
+\label{res:ramanujan-antiderivative-complete-bernstein}
+The antiderivative \(\widetilde I_R(x)=a+\int_0^\infty(1-e^{-xt})\,dt/[t(\pi^2+\log^2 t)]\) of the Ramanujan integral is a complete Bernstein function.
+
+This resolves the source problem recorded as \textbf{APP-0033} \cite{mishra-swaminathan-ramanujan}.
+\end{proposition}
+
+\begin{proof}
+The density
+\[
+\phi_0(t)=\frac{1}{t(\pi^2+\log^2 t)}
+\]
+is completely monotone on \((0,\infty)\). Consequently \(I_R\) is a Stieltjes function. Moreover, the antiderivative
+\[
+\widetilde I_R(x)=a+\int_0^\infty (1-e^{-xt})\phi_0(t)\,dt
+\]
+is a complete Bernstein function.
+
+For \(u=\log t\),
+\[
+\int_0^1 e^{-au}\sin(\pi a)\,da
+=\frac{\pi(1+e^{-u})}{u^2+\pi^2}.
+\]
+Substituting \(u=\log t\) gives
+\[
+\int_0^1 t^{-a}\sin(\pi a)\,da
+=\frac{\pi(1+t^{-1})}{\pi^2+\log^2 t}.
+\]
+Therefore
+\[
+\phi_0(t)
+=\frac{1}{t(\pi^2+\log^2 t)}
+=\frac{1}{\pi(1+t)}\int_0^1 t^{-a}\sin(\pi a)\,da.
+\]
+
+For \(0<a<1\), \(t^{-a}\) is completely monotone because
+\[
+t^{-a}=\frac1{\Gamma(a)}\int_0^\infty e^{-ts}s^{a-1}\,ds.
+\]
+Also \(t\mapsto(1+t)^{-1}\) is completely monotone. Complete monotonicity is closed under products and positive mixtures, and \(\sin(\pi a)>0\) on \((0,1)\). Hence \(\phi_0\) is completely monotone.
+
+If \(\phi\) is completely monotone and
+\[
+F(x)=\int_0^\infty e^{-xt}\phi(t)\,dt
+\]
+is finite for \(x>0\), then \(F\) is Stieltjes: write \(\phi(t)=\int_0^\infty e^{-ts}\,d\mu(s)\) and use Tonelli to obtain
+\[
+F(x)=\int_0^\infty\frac{d\mu(s)}{x+s}.
+\]
+Applying this to \(\phi_0\) proves that \(I_R\) is Stieltjes.
+
+Finally, the source already proves that
+\[
+\widetilde I_R(x)=a+\int_0^\infty (1-e^{-xt})\phi_0(t)\,dt
+\]
+is a Bernstein function. The Levy density \(\phi_0\) is completely monotone, and it satisfies the Bernstein integrability condition
+\[
+\int_0^\infty (1\wedge t)\phi_0(t)\,dt<\infty.
+\]
+The standard complete-Bernstein criterion for Levy densities therefore gives that \(\widetilde I_R\) is a complete Bernstein function.
+\end{proof}
+
+\begin{proposition}[APP-0034: Bulboaca-Zayed gamma-quotient monotonicity solved]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: APP-0034: Bulboaca-Zayed gamma-quotient monotonicity solved}
+\label{res:bulboaca-zayed-gamma-quotient-full-monotonicity}
+For the continuous extension \(\widetilde F\) of \(F(x)=\log\Gamma(x+1)/(\log(x^2+6)-\log(x+6))\) on \((-1,\infty)\), prove analytically that \(\widetilde F'\) has a unique zero \(x_m\simeq1.126207061\ldots\), with \(\widetilde F'<0\) on \((-1,x_m)\) and \(\widetilde F'>0\) on \((x_m,\infty)\).
+
+This resolves the source problem recorded as \textbf{APP-0034} \cite{bulboaca-zayed-gamma}.
+\end{proposition}
+
+\begin{proof}
+\emph{Setup.}
+Use the notation from the previous Bulboaca--Zayed pass:
+\[
+G(x)=\log\Gamma(x+1),\qquad
+D(x)=\log\frac{x^2+6}{x+6},
+\]
+and
+\[
+F(x)=\frac{G(x)}{D(x)}.
+\]
+For \(x>1\), \(D(x)>0\), and
+\[
+D'(x)=p(x)=\frac{x^2+12x-6}{(x^2+6)(x+6)}.
+\]
+Let
+\[
+N_0(x)=\psi(x+1)D(x)-G(x)D'(x).
+\]
+The derivative-sign numerator recorded in
+the corresponding result is
+\[
+N(x)=((x^2+6)(x+6))\,N_0(x),
+\]
+so \(N\) and \(N_0\) have the same sign on \(x>1\).
+
+The source itself proves the decreasing part on \((-1,1)\), and the earlier
+the preceding theorem proves \(F'(x)>0\) for
+\(x\ge8\).  It remains to prove a single sign change of \(N_0\) on \((1,8]\).
+
+Put
+\[
+P(x)=x^2+12x-6,\qquad Q(x)=(x^2+6)(x+6),
+\]
+so \(p=P/Q\), and define
+\[
+r(x)=\frac{\psi(x+1)}{p(x)}=\psi(x+1)\frac{Q(x)}{P(x)}.
+\]
+Then
+\[
+P(x)^2r'(x)=S(x),
+\]
+where
+\[
+S(x)=\psi'(x+1)Q(x)P(x)+\psi(x+1)K(x),
+\]
+and
+\[
+K(x)=Q'(x)P(x)-Q(x)P'(x)
+=x^4+24x^3+48x^2-144x-468.
+\]
+Direct differentiation gives
+\[
+S'(x)=P(x)\{Q(x)\psi''(x+1)+2Q'(x)\psi'(x+1)\}+K'(x)\psi(x+1).
+\]
+
+For \(y=x+1\ge2\), use the standard elementary bounds
+\[
+\psi(y)>\log y-\frac1y,\qquad
+\psi'(y)>\frac1y+\frac{1}{2y^2},\qquad
+\psi''(y)>-\frac1{y^2}-\frac2{y^3}.
+\]
+The last inequality follows from the series
+\[
+\psi''(y)=-2\sum_{n=0}^{\infty}(n+y)^{-3}
+\]
+and an integral upper bound for the sum.
+
+Substituting these bounds into \(S'\) yields
+\[
+S'(x)>
+P(x)\frac{5x^4+30x^3+57x^2+12x-90}{(x+1)^3}
+K'(x)\left(\log(x+1)-\frac1{x+1}\right).
+\]
+On \(x\ge1\), \(P(x)>0\).  The quartic numerator has value \(14\) at \(x=1\)
+and positive derivative
+\[
+20x^3+90x^2+114x+12.
+\]
+Also
+\[
+K'(x)=4x^3+72x^2+96x-144
+\]
+has value \(28\) at \(x=1\) and positive derivative for \(x\ge1\), while
+\(\log(x+1)-1/(x+1)>0\) for \(x\ge1\).  Hence
+\[
+S'(x)>0\qquad(1\le x\le8).
+\]
+
+At the endpoints,
+\[
+S(1)=343\left(\frac{\pi^2}{6}-1\right)-539(1-\gamma)<0,
+\]
+for example using \(\pi^2<987/100\) and \(\gamma<5773/10000\), which gives
+\(-66003/10000<0\).  Also \(S(8)>0\), because \(K(8)=17836>0\),
+\(\psi'(9)>0\), and \(\psi(9)=H_8-\gamma>0\).  Therefore \(S\) has exactly
+one zero on \([1,8]\).  Since \(P^2>0\), \(r'\) has exactly one zero; \(r\)
+decreases first and then increases.
+
+Now define
+\[
+I(x)=D(x)r(x)-G(x).
+\]
+Then
+\[
+N_0(x)=p(x)I(x),\qquad I'(x)=D(x)r'(x).
+\]
+Because \(D(x)>0\) for \(x>1\), \(I\) decreases and then increases with the
+same turning point as \(r\).  Moreover \(\lim_{x\downarrow1}I(x)=0\), so
+\(I(x)<0\) immediately to the right of \(1\).
+
+Finally,
+\[
+N_0(8)=(H_8-\gamma)\log5-\frac{11}{70}\log(40320)>0.
+\]
+For instance, the bounds
+\[
+\gamma<\frac{5773}{10000},\quad \log5>\frac{1609}{1000},
+\quad \log(40320)<\frac{10605}{1000}
+\]
+give the lower bound
+\[
+\left(\frac{761}{280}-\frac{5773}{10000}\right)\frac{1609}{1000}
+-\frac{11}{70}\frac{10605}{1000}
+=\frac{124435951}{70000000}>0.
+\]
+Thus \(I\), and therefore \(N_0\) and \(N\), has exactly one zero on
+\((1,8]\).  Denote it by \(\xi\).  The sign pattern is
+\[
+N(x)<0\quad(1<x<\xi),\qquad
+N(\xi)=0,\qquad
+N(x)>0\quad(\xi<x\le8).
+\]
+
+A high-precision numerical check places
+\[
+\xi=1.12620706105164346558\ldots,
+\]
+matching the source's reported value.  The numerical value is not used in the
+proof.
+
+The raw numerator has a removable zero at \(x=1\), since \(G(1)=D(1)=0\).  Its
+quadratic leading coefficient is
+\[
+\lim_{x\downarrow1}\frac{N_0(x)}{(x-1)^2}
+=
+\frac{7(\pi^2/6-1)-11(1-\gamma)}{98}<0,
+\]
+again by \(\pi^2<987/100\) and \(\gamma<5773/10000\), which gives
+\(-1347/980000<0\).  Therefore any normalization dividing out the removable
+\((x-1)^2\) factor is negative at the left endpoint.
+
+The single-crossing candidate is true:
+\[
+T\text{-BZ-gamma-quotient-N-single-crossing-one-eight}.
+\]
+Together with the source's theorem on \((-1,1)\) and the previous local
+right-tail theorem for \(x\ge8\), this proves the critical-window reduction
+\[
+T\text{-BZ-gamma-quotient-critical-window-reduction}
+\]
+and then the source problem
+\[
+T\text{-Bulboaca-Zayed-gamma-quotient-full-monotonicity}.
+\]
+
+The finite-envelope candidate is not separately promoted: the proof above is a
+clean analytic ratio-kernel argument rather than the finite rational cover
+specified in that candidate.  The diagnostic obstruction-map candidate is also
+not needed after the single-crossing proof.
+\end{proof}
+
+\begin{counterexample}[APP-0035: Keady self-bijection inverse-CM question is negative]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0035: Keady self-bijection inverse-CM question is negative}
+\label{res:keady-q3-self-bijection-inverse-cm-negative-answer}
+Keady Question 3 has a negative answer for the self-range case: there is a completely monotone decreasing bijection \((0,\infty)\to(0,\infty)\) whose inverse is not completely monotone.
+
+This resolves the source problem recorded as \textbf{APP-0035} \cite{app-app-0035-source}.
+\end{counterexample}
+
+\begin{proof}
+There exists a completely monotone decreasing bijection
+\[
+f:(0,\infty)\to(0,\infty)
+\]
+whose inverse is not completely monotone. One explicit example is
+\[
+f(x)=\frac1x+100e^{-x}.
+\]
+
+For every \(n\ge0\),
+\[
+(-1)^n f^{(n)}(x)=\frac{n!}{x^{n+1}}+100e^{-x}>0.
+\]
+Thus \(f\) is strictly completely monotone. Also
+\[
+f'(x)=-x^{-2}-100e^{-x}<0,
+\]
+so \(f\) is strictly decreasing. Finally,
+\[
+\lim_{x\downarrow0}f(x)=\infty,
+\qquad
+\lim_{x\to\infty}f(x)=0.
+\]
+Therefore \(f\) is a decreasing bijection from \((0,\infty)\) onto \((0,\infty)\).
+
+Let \(g=f^{-1}\) and write \(y=f(x)\). Inverse differentiation gives
+\[
+g'''(f(x))=\frac{3(f''(x))^2-f'''(x)f'(x)}{(f'(x))^5}.
+\]
+For \(f_a(x)=x^{-1}+ae^{-x}\), define
+\[
+N_a(x)=3(f_a''(x))^2-f_a'''(x)f_a'(x).
+\]
+A direct calculation gives
+\[
+N_a(x)=\frac6{x^6}+ae^{-x}\left(-\frac6{x^4}+\frac{12}{x^3}-\frac1{x^2}\right)+2a^2e^{-2x}.
+\]
+At \(a=100\) and \(x_0=1/8\),
+\[
+N_{100}(1/8)=1{,}572{,}864-1{,}849{,}600e^{-1/8}+20{,}000e^{-1/4}.
+\]
+Using \(e^{-1/8}>7/8\) and \(e^{-1/4}<1\),
+\[
+N_{100}(1/8)<1{,}572{,}864-1{,}849{,}600\cdot\frac78+20{,}000=-25{,}536<0.
+\]
+Since \(f'(1/8)<0\), the denominator \((f'(1/8))^5\) is negative. Hence
+\[
+g'''(f(1/8))=\frac{N_{100}(1/8)}{(f'(1/8))^5}>0.
+\]
+A completely monotone function must satisfy \((-1)^3g'''\ge0\), i.e. \(g'''\le0\). Therefore \(g=f^{-1}\) is not completely monotone.
+\end{proof}
+
+\begin{counterexample}[APP-0036: Baskakov even-line complete-monotonicity fails at \(r=8\)]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0036: Baskakov even-line complete-monotonicity fails at r=8}
+\label{res:not-baskakov-higher-power-even-conjecture}
+Abel--Gawronski--Neuschel's even-power Baskakov complete-monotonicity conjecture is false; it fails at \(\alpha=1\), \(r=8\).
+
+This resolves the source problem recorded as \textbf{APP-0036} \cite{abel-gawronski-neuschel}.
+\end{counterexample}
+
+\begin{proof}
+Set
+\[
+D_m(x)=(1+x)^{2m}-x^{2m}.
+\]
+The roots are obtained from
+\[
+\frac{1+x}{x}=\omega_k,\qquad
+\omega_k=e^{\pi i k/m},\qquad k=1,\ldots,2m-1.
+\]
+Thus
+\[
+\lambda_{k,m}
+=\frac{1}{\omega_k-1}
+=-\frac12-\frac{i}{2}\cot\frac{\pi k}{2m}.
+\]
+At this root,
+\[
+D_m'(\lambda_{k,m})
+=2m\lambda_{k,m}^{2m-1}(\omega_k^{-1}-1),
+\]
+and direct simplification gives the real residue
+\[
+R_{k,m}
+=\frac{1}{D_m'(\lambda_{k,m})}
+=\frac{(-1)^{m+k}}{2m}
+\left(2\sin\frac{\pi k}{2m}\right)^{2m-2}.
+\]
+Consequently the inverse-Laplace density is
+\[
+\rho_m(t)
+=\sum_{k=1}^{2m-1}R_{k,m}e^{\lambda_{k,m}t}.
+\]
+Pairing conjugate roots gives
+\[
+\rho_m(t)
+=\frac{e^{-t/2}}{2m}
+\left[
+2^{2m-2}
++2\sum_{k=1}^{m-1}
+(-1)^{m+k}
+\left(2\sin\frac{\pi k}{2m}\right)^{2m-2}
+\cos\!\left(
+\frac{t}{2}\cot\frac{\pi k}{2m}
+\right)
+\right].
+\]
+
+This proves the finite trigonometric density formula used by the diagnostic
+candidate.
+
+For \(m=2\), this gives
+\[
+\rho_2(t)=e^{-t/2}\left(1-\cos\frac t2\right)
+=2e^{-t/2}\sin^2\frac t4\ge0,
+\]
+recovering the previously admitted \(r=4,\alpha=1\) seed.
+
+For \(m=3\),
+\[
+\rho_3(t)
+=\frac{e^{-t/2}}6
+\left[
+16+2\cos\left(\frac{\sqrt3\,t}{2}\right)
+-18\cos\left(\frac{t}{2\sqrt3}\right)
+\right].
+\]
+Set \(u=t/(2\sqrt3)\).  Since
+\(\cos(3u)=4\cos^3u-3\cos u\),
+\[
+\rho_3(t)
+=\frac{4}{3}e^{-t/2}(1-\cos u)^2(2+\cos u)\ge0.
+\]
+Thus \(r=6,\alpha=1\) is completely monotone by an explicit positive density.
+
+For \(m=4\), write \(h_4(t)=e^{t/2}\rho_4(t)\).  The density formula gives
+\[
+h_4(t)
+=8+2\cos\frac t2
+-\frac{(2-\sqrt2)^3}{4}
+\cos\left(\frac{1+\sqrt2}{2}t\right)
+-\frac{(2+\sqrt2)^3}{4}
+\cos\left(\frac{\sqrt2-1}{2}t\right).
+\]
+At \(t=10\pi\),
+\[
+\cos(t/2)=\cos(5\pi)=-1,
+\]
+and both other cosine terms equal \(-\cos(5\pi\sqrt2)\).  Since
+\[
+(2-\sqrt2)^3+(2+\sqrt2)^3=40,
+\]
+we obtain
+\[
+h_4(10\pi)=6+10\cos(5\pi\sqrt2).
+\]
+Now
+\[
+0<5\sqrt2-7<\frac14
+\]
+because \(7/5<\sqrt2<29/20\).  Hence, with
+\(\delta=5\sqrt2-7\),
+\[
+\cos(5\pi\sqrt2)=\cos(7\pi+\pi\delta)=-\cos(\pi\delta)
+<-\cos\frac\pi4=-\frac{\sqrt2}{2}<-\frac35.
+\]
+Therefore
+\[
+h_4(10\pi)<6+10\left(-\frac35\right)=0,
+\]
+and
+\[
+\rho_4(10\pi)=e^{-5\pi}h_4(10\pi)<0.
+\]
+Since the inverse-Laplace transform is unique for measures on
+\([0,\infty)\), \(f^{[8]}_1(x)=1/((1+x)^8-x^8)\) cannot be completely monotone.
+\end{proof}
+
+\begin{counterexample}[APP-0037: Du-Wang \(h\_3\) is increasing exactly on \(\frac12\le a\le1\)]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0037: Du-Wang h3 is increasing exactly on 12 a1}
+\label{res:du-wang-h3-open-problem-2-classification}
+For \(0<a<2\), Du--Wang's function \(h_3\) is increasing on \((0,\infty)\) exactly for \(1/2\le a\le1\), and is not monotone for \(0<a<1/2\) or \(1<a<2\).
+
+This resolves the source problem recorded as \textbf{APP-0037} \cite{du-wang-h3}.
+\end{counterexample}
+
+\begin{proof}
+For \(t>1/2\), define
+\[
+S_m(t)=\sum_{n=0}^{\infty}\frac1{(n+t)^m}.
+\]
+The polygamma identities give
+\[
+\psi''(t)=-2S_3(t),\qquad \psi'''(t)=6S_4(t).
+\]
+Thus the desired bound
+\[
+-\frac{2\psi''(t)}{\psi'''(t)}\ge t-\frac12
+\]
+is equivalent to
+\[
+2S_3(t)-3\left(t-\frac12\right)S_4(t)\ge0.
+\]
+Write \(y=t-\frac12>0\).  Using
+\[
+S_m(t)=\frac1{\Gamma(m)}
+\int_0^\infty \frac{x^{m-1}e^{-tx}}{1-e^{-x}}\,dx
+\]
+and
+\[
+\frac{e^{-tx}}{1-e^{-x}}
+=e^{-yx}\frac1{2\sinh(x/2)},
+\]
+set
+\[
+K(x)=\frac1{2\sinh(x/2)}.
+\]
+Then
+\[
+2S_3(t)-3yS_4(t)
+=
+\int_0^\infty e^{-yx}x^2K(x)\,dx
+-\frac y2\int_0^\infty e^{-yx}x^3K(x)\,dx.
+\]
+Since \(x^3K(x)\sim x^2\) as \(x\downarrow0\) and decays exponentially at
+infinity, integration by parts gives
+\[
+y\int_0^\infty e^{-yx}x^3K(x)\,dx
+=
+\int_0^\infty e^{-yx}(x^3K(x))'\,dx.
+\]
+Therefore
+\[
+2S_3(t)-3yS_4(t)
+=
+\int_0^\infty e^{-yx}
+\left(x^2K(x)-\frac12(x^3K(x))'\right)dx.
+\]
+Now
+\[
+K'(x)=-\frac12K(x)\coth(x/2),
+\]
+so
+\[
+x^2K(x)-\frac12(x^3K(x))'
+=
+\frac12x^2K(x)\left(\frac x2\coth(x/2)-1\right).
+\]
+For \(z>0\), \(z\coth z>1\).  The integrand is therefore strictly positive,
+and
+\[
+2S_3(t)-3\left(t-\frac12\right)S_4(t)>0.
+\]
+This proves
+\[
+-\frac{2\psi''(t)}{\psi'''(t)}>t-\frac12,
+\qquad t>\frac12.
+\]
+
+This proves the claim.
+
+Let \(1/2\le a\le1\), \(u>0\), and \(t=a+u\).  Since \(a\ge1/2\),
+\[
+u=t-a\le t-\frac12.
+\]
+The ratio lemma gives
+\[
+t-\frac12<-\frac{2\psi''(t)}{\psi'''(t)}.
+\]
+Because \(\psi'''(t)>0\),
+\[
+2\psi''(t)+u\psi'''(t)<0.
+\]
+Consequently
+\[
+H_a'(u)=-u^2\{2\psi''(t)+u\psi'''(t)\}>0.
+\]
+Together with \(H_a(0+)=2\log\Gamma(a)\ge0\), this gives
+\[
+H_a(u)\ge0
+\qquad (u>0,\ 1/2\le a\le1).
+\]
+
+This proves the claim.
+
+For \(x>0\), \(u=x\), and \(t=x+a\),
+\[
+h_3'(x)=\widetilde h_3'(x+a)=\frac{h_{31}(x+a)}{x^2}
+=\frac{H_a(x)}{x^2}\ge0.
+\]
+The inequality is strict for \(x>0\) except possibly at the endpoint
+\(a=1,u=0\), which is outside the open \(x\)-interval.  Thus \(h_3\) is
+increasing on \((0,\infty)\) for every
+\[
+\frac12\le a\le1.
+\]
+
+This proves the claim.
+the corresponding result.
+
+The earlier the preceding theorem proves that
+\(h_3\) is not monotone for
+\[
+0<a<\frac12
+\qquad\text{or}\qquad
+1<a<2.
+\]
+The middle-window theorem above proves increasing behavior for
+\[
+\frac12\le a\le1.
+\]
+Therefore Du--Wang Open Problem 2 is classified on \(0<a<2\):
+\[
+h_3 \text{ is increasing on }(0,\infty)
+\quad\Longleftrightarrow\quad
+\frac12\le a\le1,
+\]
+and it is not monotone on the two outer windows.
+
+This proves the claim.
+the corresponding result true by source-problem classification.
+\end{proof}
+
+\begin{proposition}[APP-0038: Ma-Weigert derivative-sign regions form a chain]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: APP-0038: Ma-Weigert derivative-sign regions form a chain}
+\label{res:ma-weigert-log-function-dk-chain-conjecture}
+In the Ma--Weigert log-function class \(\mathcal F_{1,n}\), the derivative-sign regions \(D_k=\{f:L^k f\ge0\}\), with \(L=-d/dx\), form a descending chain: \(D_{k+1}\subseteq D_k\) for every \(k,n\).
+
+This resolves the source problem recorded as \textbf{APP-0038} \cite{ma-weigert-log-functions}.
+\end{proposition}
+
+\begin{proof}
+We first prove that for each \(k\ge0\),
+\[
+L^k f(x)=x^{-k-1}p_k(\log x)
+\]
+for some polynomial \(p_k\).
+
+For \(k=0\), this is the definition with \(p_0=p\).  Suppose
+\[
+L^k f(x)=x^{-k-1}p_k(\log x).
+\]
+Then
+\[
+\begin{aligned}
+L^{k+1}f(x)
+&=-\frac{d}{dx}\left(x^{-k-1}p_k(\log x)\right)\\
+&=x^{-k-2}\left((k+1)p_k(\log x)-p_k'(\log x)\right).
+\end{aligned}
+\]
+Thus \(p_{k+1}(y)=(k+1)p_k(y)-p_k'(y)\), which is again a polynomial.
+
+Since every polynomial in \(\log x\) grows slower than every positive power of \(x\),
+\[
+x^{-k-1}p_k(\log x)\to0
+\qquad (x\to\infty).
+\]
+Therefore
+\[
+\lim_{x\to\infty}L^k f(x)=0
+\]
+for every \(k\ge0\).
+
+Assume \(f\in D_{k+1}\).  Then
+\[
+L^{k+1}f(x)\ge0
+\]
+on \((0,\infty)\).  Put
+\[
+g(x)=L^k f(x).
+\]
+By definition of \(L\),
+\[
+-g'(x)=L^{k+1}f(x)\ge0.
+\]
+Using \(g(x)\to0\) as \(x\to\infty\), integrate from \(x\) to \(R\):
+\[
+g(x)-g(R)=\int_x^R L^{k+1}f(t)\,dt.
+\]
+Letting \(R\to\infty\) gives
+\[
+L^k f(x)=g(x)=\int_x^\infty L^{k+1}f(t)\,dt\ge0.
+\]
+Hence \(f\in D_k\).  Therefore
+\[
+D_{k+1}\subseteq D_k
+\]
+for all \(k\ge0\) and all \(n\).
+\end{proof}
+
+\begin{proposition}[APP-0046: Tao--Sawin finite Weyl l1 minimum is exact]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: APP-0046: Tao--Sawin finite Weyl l1 minimum is exact}
+\label{res:tao-sawin-weyl-l1-exact-minimum}
+In the Weyl algebra \(DX-XD=1\), the least \(\ell^1\) coefficient norm of a balanced degree \((n,n)\) word combination equal to \(1\) is \(2^n/n!\).
+\[
+L_n=\min\{\sum_w |a_w|:\sum_w a_w w=1,\ w\text{ has }n\text{ copies of }D\text{ and }n\text{ copies of }X\}=\frac{2^n}{n!}.
+\]
+
+This resolves the source problem recorded as \textbf{APP-0046} \cite{app-app-0046-source}.
+\end{proposition}
+
+\begin{proof}
+Let \(A_1\) be the Weyl algebra over a field of characteristic \(0\), generated by \(X,D\) with
+\[
+DX-XD=1.
+\]
+Let \(W_n\) be the set of words containing exactly \(n\) copies of \(D\) and \(n\) copies of \(X\). For
+\[
+P=\sum_{w\in W_n}a_w w
+\]
+define
+\[
+\|P\|_1=\sum_{w\in W_n}|a_w|.
+\]
+Let
+\[
+L_n=\min\left\{\|P\|_1:\sum_{w\in W_n}a_w w=1\text{ in }A_1\right\}.
+\]
+Then
+\[
+L_n=\frac{2^n}{n!}.
+\]
+
+Set
+\[
+P_n=\frac1{n!}\operatorname{ad}_D^n(X^n).
+\]
+Since \(\operatorname{ad}_D(X)=1\), repeated derivation gives
+\[
+\operatorname{ad}_D^n(X^n)=n!.
+\]
+Also
+\[
+\operatorname{ad}_D^n(X^n)
+=
+\sum_{a=0}^n(-1)^a\binom naD^{n-a}X^nD^a.
+\]
+Thus \(P_n=1\) in \(A_1\), and
+\[
+\|P_n\|_1
+=
+\frac1{n!}\sum_{a=0}^n\binom na
+=
+\frac{2^n}{n!}.
+\]
+Therefore \(L_n\le2^n/n!\).
+
+For \(q\in\mathbb C\), define \(\Phi_q\) on normal-ordered monomials by
+\[
+\Phi_q(X^rD^s)=
+\begin{cases}
+q^r r!,&r=s,\\
+0,&r\ne s.
+\end{cases}
+\]
+The functional relevant to the lower bound is
+\[
+\Lambda_n=\Phi_{-1/2},
+\]
+so
+\[
+\Lambda_n(X^iD^i)=(-1)^i2^{-i}i!.
+\]
+In particular, \(\Lambda_n(1)=1\).
+
+For letters \(a_i\in\{X,D\}\),
+\[
+\Phi_q(a_1\cdots a_m)
+=
+\sum_\pi
+\prod_{\{i,j\}\in\pi,\ i<j} C_q(a_i,a_j),
+\]
+where \(\pi\) runs over pairings pairing each \(X\) with a \(D\), and
+\[
+C_q(X,D)=q,\qquad
+C_q(D,X)=q+1,\qquad
+C_q(X,X)=C_q(D,D)=0.
+\]
+
+To prove this, use formal exponentials. Since
+\[
+e^{uD}e^{vX}=e^{uv}e^{vX}e^{uD},
+\]
+normal ordering gives
+\[
+e^{t_1a_1}\cdots e^{t_ma_m}
+=
+\exp\left(\sum_{\substack{i<j\\a_i=D,\ a_j=X}}t_it_j\right)
+e^{UX}e^{VD},
+\]
+where
+\[
+U=\sum_{i:a_i=X}t_i,\qquad
+V=\sum_{i:a_i=D}t_i.
+\]
+Applying \(\Phi_q\) gives
+\[
+\Phi_q(e^{UX}e^{VD})=e^{qUV}.
+\]
+Hence
+\[
+\Phi_q(e^{t_1a_1}\cdots e^{t_ma_m})
+=
+\exp\left(\sum_{i<j}C_q(a_i,a_j)t_it_j\right).
+\]
+Extracting the coefficient of \(t_1\cdots t_m\) gives the Wick pairing formula.
+
+Take \(q=-1/2\). Then
+\[
+C_{-1/2}(X,D)=-\frac12,\qquad
+C_{-1/2}(D,X)=\frac12.
+\]
+Every nonzero contraction has absolute value \(1/2\). If \(w\in W_n\), then pairings of the \(n\) \(X\)'s with the \(n\) \(D\)'s are in bijection with permutations, so there are exactly \(n!\) possible pairings. Therefore
+\[
+|\Lambda_n(w)|
+=
+|\Phi_{-1/2}(w)|
+\le
+n!\left(\frac12\right)^n
+=
+\frac{n!}{2^n}.
+\]
+
+Now let
+\[
+P=\sum_{w\in W_n}a_w w
+\]
+and suppose \(P=1\) in \(A_1\). Applying \(\Lambda_n\),
+\[
+1=|\Lambda_n(1)|
+=
+|\Lambda_n(P)|
+\le
+\sum_{w\in W_n}|a_w|\,|\Lambda_n(w)|
+\le
+\frac{n!}{2^n}\sum_{w\in W_n}|a_w|.
+\]
+Thus
+\[
+\|P\|_1\ge\frac{2^n}{n!}.
+\]
+Combining this with the upper bound proves
+\[
+L_n=\frac{2^n}{n!}.
+\]
+
+This solves the finite homogeneous Weyl algebra \(\ell^1\) coefficient model problem from the Tao-Sawin comment thread. It does not solve the full operator-norm problem for commutators close to the identity.
+\end{proof}
+
+\begin{counterexample}[APP-0047: BPV noncentral chi-square HCM range has no positive noncentrality]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0047: BPV noncentral chi-square HCM range has no positive noncentrality}
+\label{res:bpv-noncentral-chi-square-hcm-no-positive-noncentrality}
+For every \(\mu>0\) and every positive noncentrality \(\lambda>0\), the noncentral chi-square density \(\chi_{\mu,\lambda}\) is not hyperbolically completely monotone. Equivalently, the BPV optimal HCM range for positive noncentrality is empty; if the central case \(\lambda=0\) is adjoined, the remaining HCM range is exactly the central gamma line.
+
+This resolves the source problem recorded as \textbf{APP-0047} \cite{app-app-0047-source}.
+\end{counterexample}
+
+\begin{proof}
+Let \(a=\mu/2>0\). The complete Bell generating function is
+\[
+\sum_{n\ge0}\frac{B_nz^n}{n!}
+=\exp\left(\sum_{j\ge1}\frac{c_jz^j}{j!}\right)
+=e^{-z/2}S_\mu(\lambda z).
+\]
+Indeed \(b_1(\mu)=1/(2\mu)\), so the \(j=1\) term of \(\log S_\mu(\lambda z)\) contributes \(\lambda z/(2\mu)\), and the exponential factor \(e^{-z/2}\) supplies the remaining \(-z/2\).
+
+Define
+\[
+A_n=\frac{(-1)^nB_n}{n!}.
+\]
+Then
+\[
+\sum_{n\ge0}A_nt^n
+=e^{t/2}S_\mu(-\lambda t)
+=e^{t/2}\,{}_0F_1\left(;a;-\frac{\lambda t}{4}\right).
+\]
+Equivalently,
+\[
+A_n=\frac{2^{-n}}{(a)_n}L_n^{a-1}\left(\frac{\lambda}{2}\right),
+\]
+so the leading HCM signs are exactly the fixed-argument Laguerre signs.
+
+Use the classical identity
+\[
+{}_0F_1\left(;a;-\frac{x^2}{4}\right)
+=\Gamma(a)\left(\frac{x}{2}\right)^{1-a}J_{a-1}(x).
+\]
+Since \(a>0\), the Bessel function \(J_{a-1}\) has a positive real zero \(j_{a-1,1}>0\). For \(\lambda>0\), set
+\[
+t_0=\frac{j_{a-1,1}^2}{\lambda}>0.
+\]
+Then
+\[
+e^{t_0/2}{}_0F_1\left(;a;-\frac{\lambda t_0}{4}\right)=0.
+\]
+If every leading HCM sign were nonnegative, then all coefficients \(A_n\) would be nonnegative and \(A_0=1\), forcing
+\[
+\sum_{n\ge0}A_nt_0^n>0,
+\]
+contradicting the displayed zero. Therefore, for every \(\mu>0\) and \(\lambda>0\), there is an integer \(n\ge1\) such that
+\[
+(-1)^nB_n<0.
+\]
+
+The leading expansion gives, for any fixed compact \(w\)-window,
+\[
+\frac{1}{H_u(w)}\frac{d^n}{dw^n}H_u(w)
+=B_nu^n+O(u^{n+1})
+\qquad(u\downarrow0).
+\]
+Choosing \(u>0\) sufficiently small yields
+\[
+(-1)^n\frac{d^n}{dw^n}H_u(w)<0,
+\]
+which violates complete monotonicity of \(w\mapsto H_u(w)\).
+
+\emph{Conclusion.}
+For every \(\mu>0\) and every positive noncentrality \(\lambda>0\),
+\[
+\chi_{\mu,\lambda}\notin HCM.
+\]
+Thus the BPV optimal HCM range for positive noncentrality is empty. If one adjoins the central case \(\lambda=0\), the remaining density is a gamma density and is HCM; hence the extended closed range is exactly the central line \(\lambda=0\).
+
+Strict APP status: candidate for the next APP slot after APP-0046 because the source explicitly asks the optimal range, the local theorem answers it, and the result is not among public APP-0001--APP-0045.
+\end{proof}
+
+\begin{counterexample}[APP-0048: BMR tau-Gauss ordinary concavity is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0048: BMR tau-Gauss ordinary concavity is false}
+\label{res:bmr-tau-gauss-not-globally-concave}
+The Bansal--Mehrez--Raina tau-Gauss source function \(a\mapsto {}_2\phi^\tau_1(a,c-a;c;z)\) is not concave in general on \((0,c)\). In the subcase \(c=2\), \(\tau=1\), and \(z=1-e^{-4}\), one has \(F''(a,z)>0\) for all sufficiently small \(a>0\).
+
+This resolves the source problem recorded as \textbf{APP-0048} \cite{app-app-0048-source}.
+\end{counterexample}
+
+\begin{proof}
+For \(0<z<1\), define probability weights
+\[
+w_k(a,z)=\frac{A_k(a)z^k/k!}{F(a,z)}.
+\]
+Let
+\[
+g_k(a)=\partial_a\log A_k(a),
+\qquad
+h_k(a)=\partial_a^2\log A_k(a).
+\]
+Then direct differentiation of the log-sum gives
+\[
+\partial_a^2\log F(a,z)
+=
+\sum_{k\ge0}w_k(a,z)h_k(a)
++\operatorname{Var}_{w(a,z)}(g_k(a)).
+\]
+Thus global log-concavity is equivalent to the variance-domination inequality
+\[
+\operatorname{Var}_{w(a,z)}(g_k(a))
+\le
+\sum_{k\ge0}w_k(a,z)(-h_k(a))
+\]
+for all \(0<a<c\), \(c,\tau>0\), and \(0<z<1\). This is the sharp remaining gate; coefficientwise log-concavity alone is insufficient.
+
+Take the classical subcase
+\[
+c=2,\qquad \tau=1,\qquad z=1-e^{-4}.
+\]
+Then
+\[
+F(a,z)=
+\sum_{k=0}^{\infty}
+\frac{(a)_k(2-a)_k}{(2)_k}\frac{z^k}{k!}.
+\]
+For \(k\ge1\), as \(a\downarrow0\),
+\[
+\frac{(a)_k(2-a)_k}{(2)_k\,k!}
+=
+\frac{a}{k}
++a^2\left(
+\frac1k-\frac1{k^2}-\frac1{k(k+1)}
+\right)+O(a^3),
+\]
+with locally uniform summability for fixed \(0<z<1\). Hence
+\[
+F(a,z)=1+aL(z)+a^2M(z)+O(a^3),
+\]
+where
+\[
+L(z)=\sum_{k\ge1}\frac{z^k}{k}=-\log(1-z)
+\]
+and
+\[
+M(z)=
+\sum_{k\ge1}z^k
+\left(
+\frac1k-\frac1{k^2}-\frac1{k(k+1)}
+\right)
+=
+\frac{L(z)}{z}-\operatorname{Li}_2(z)-1.
+\]
+For \(z=1-e^{-4}\), \(L(z)=4\), \(L(z)/z>4\), and \(\operatorname{Li}_2(z)<\pi^2/6<2\). Therefore
+\[
+M(z)>4-2-1=1>0.
+\]
+It follows that
+\[
+F''(a,z)\to2M(z)>0
+\qquad(a\downarrow0),
+\]
+so \(F''(a,z)>0\) for all sufficiently small \(a>0\). Therefore the source function is not concave in \(a\) in general.
+\end{proof}
+
+\begin{proposition}[APP-0049: Baricz arithmetic/arithmetic zero-balanced hypergeometric threshold]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: APP-0049: Baricz arithmetic/arithmetic zero-balanced hypergeometric threshold}
+\label{res:baricz-aa-zero-balanced-concavity-threshold}
+For \(c>0\), define \(F_a(r)={}_2F_1(a,c-a;c;r)\) on \(0<a<c\), \(0<r<1\). The uniform arithmetic/arithmetic inequality \((F_{a_1}(r)+F_{a_2}(r))/2\le F_{(a_1+a_2)/2}(r)\) for all \(a_1,a_2\in(0,c)\) and all \(r\in(0,1)\) holds if and only if \(0<c\le1\).
+
+This resolves the source problem recorded as \textbf{APP-0049} \cite{app-app-0049-source}.
+\end{proposition}
+
+\begin{proof}
+For \(c>0\), set
+\[
+F_a(r)={}_2F_1(a,c-a;c;r),\qquad 0<a<c,\quad 0<r<1.
+\]
+The Baricz arithmetic/arithmetic source slice asks when
+\[
+\frac{F_{a_1}(r)+F_{a_2}(r)}2\le F_{(a_1+a_2)/2}(r)
+\]
+holds for all \(a_1,a_2\in(0,c)\) and all \(r\in(0,1)\).
+
+The answer is exactly \(0<c\le1\).
+
+The existing local node the corresponding result imports Baricz's theorem:
+\[
+\sqrt{F_{a_1}(r)F_{a_2}(r)}
+\le
+\frac{F_{a_1}(r)+F_{a_2}(r)}2
+\le
+F_{(a_1+a_2)/2}(r)
+\]
+for \(0<c\le1\), \(a_1,a_2\in(0,c)\), and \(0<r<1\). This proves the A/A inequality on that range.
+
+Fix \(c>1\). For \(0<r<1\),
+\[
+F_a(r)=\sum_{k=0}^{\infty}
+\frac{(a)_k(c-a)_k}{(c)_k}\frac{r^k}{k!}.
+\]
+For \(k\ge1\), as \(a\to0\),
+\[
+(a)_k=a(k-1)!\left(1+aH_{k-1}+O(a^2)\right)
+\]
+and
+\[
+\frac{(c-a)_k}{(c)_k}
+=
+1-a\sum_{j=0}^{k-1}\frac1{c+j}+O(a^2).
+\]
+Hence
+\[
+\frac{(a)_k(c-a)_k}{(c)_k k!}
+=
+\frac ak+\frac{a^2}{k}
+\left(
+H_{k-1}-\sum_{j=0}^{k-1}\frac1{c+j}
+\right)
+ +O(a^3).
+\]
+For fixed \(r<1\), normal convergence of the differentiated hypergeometric series justifies termwise expansion, so
+\[
+F_a(r)=1+aL(r)+a^2M_c(r)+O(a^3),
+\]
+where
+\[
+L(r)=\sum_{k\ge1}\frac{r^k}{k}=-\log(1-r)
+\]
+and
+\[
+M_c(r)=
+\sum_{k\ge1}
+\left(
+H_{k-1}-\sum_{j=0}^{k-1}\frac1{c+j}
+\right)\frac{r^k}{k}.
+\]
+The bracket is
+\[
+B_{c,k}
+=
+\psi(k)+\gamma-\psi(c+k)+\psi(c),
+\]
+so
+\[
+B_{c,k}\to \gamma+\psi(c).
+\]
+Because \(c>1\), \(\psi(c)>\psi(1)=-\gamma\), and therefore \(\gamma+\psi(c)>0\). Thus \(B_{c,k}\ge\eta>0\) for all sufficiently large \(k\), and
+\[
+M_c(r)\to+\infty\qquad (r\uparrow1).
+\]
+Choose \(r_0\in(0,1)\) with \(M_c(r_0)>0\). Then
+\[
+\partial_a^2F_a(r_0)\to 2M_c(r_0)>0
+\qquad (a\downarrow0).
+\]
+For some sufficiently small interior \(a_0\in(0,c)\), \(\partial_a^2F_{a_0}(r_0)>0\). By continuity, \(\partial_a^2F_a(r_0)>0\) on a small interval around \(a_0\). Taking \(h>0\) small enough that \(a_0\pm h\in(0,c)\), Taylor's theorem gives
+\[
+\frac{F_{a_0-h}(r_0)+F_{a_0+h}(r_0)}2>F_{a_0}(r_0).
+\]
+Since \(a_0=((a_0-h)+(a_0+h))/2\), the A/A inequality fails.
+
+Therefore the source A/A inequality holds uniformly if and only if \(0<c\le1\).
+\end{proof}
+
+\begin{counterexample}[APP-0050: Stolarsky shifted power means with \(p>1\) are not Bernstein]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0050: Stolarsky shifted power means with p>1 are not Bernstein}
+\label{res:not-stolarsky-power-mean-pgt1-bernstein-all-shifts}
+not(For some \(p>1\), the shifted power mean \(x\mapsto H_p(x+a,x+b)\), where \(H_p(a,b)=((a^p+b^p)/2)^{1/p}\), is a Bernstein function for every positive pair of shifts \(a,b\).)
+
+This resolves the source problem recorded as \textbf{APP-0050} \cite{app-app-0050-source}.
+\end{counterexample}
+
+\begin{proof}
+Let
+\[
+c=\frac{a+b}{2},\qquad d=\frac{a-b}{2}.
+\]
+Since \(a,b>0\) and \(a\ne b\), we have \(c>|d|>0\). Put \(y=x+c\). Then on the natural half-line \(y>|d|\),
+\[
+F(x)=G(y),
+\qquad
+G(y)=\left(\frac{(y+d)^p+(y-d)^p}{2}\right)^{1/p}.
+\]
+Translation does not affect the sign pattern of derivatives, so it is enough to show that \(G\) is not Bernstein.
+
+For \(|t|<1\), define
+\[
+\phi_p(t)=H_p(1+t,1-t)
+=2^{-1/p}\left((1+t)^p+(1-t)^p\right)^{1/p}.
+\]
+By homogeneity,
+\[
+G(y)=y\phi_p(d/y).
+\]
+Let
+\[
+A=1+t,\qquad B=1-t,\qquad N=A^p+B^p.
+\]
+Then \(\phi_p(t)=2^{-1/p}N^{1/p}\). Differentiating twice gives
+\[
+\phi_p''(t)
+=2^{-1/p}(p-1)N^{1/p-2}
+\left(N(A^{p-2}+B^{p-2})-(A^{p-1}-B^{p-1})^2\right).
+\]
+The bracket simplifies to
+\[
+A^{p-2}B^{p-2}(A+B)^2,
+\]
+because
+\[
+(A^p+B^p)(A^{p-2}+B^{p-2})-(A^{p-1}-B^{p-1})^2
+=A^{p-2}B^{p-2}(A^2+2AB+B^2).
+\]
+For \(p>1\) and \(|t|<1\), all factors are positive, so
+\[
+\phi_p''(t)>0.
+\]
+Since \(t=d/y\),
+\[
+G'(y)=\phi_p(t)-t\phi_p'(t)
+\]
+and
+\[
+G''(y)=\frac{t^2}{y}\phi_p''(t)
+=\frac{d^2}{y^3}\phi_p''(d/y)>0
+\]
+for every \(y>|d|\).
+
+For \(|u|<1\), define
+\[
+A(u)=\frac{(1+u)^p+(1-u)^p}{2}.
+\]
+The odd terms cancel in the binomial expansion, giving
+\[
+A(u)=1+\frac{p(p-1)}{2}u^2+O(u^4)
+\qquad (u\to0).
+\]
+Since \(z\mapsto z^{1/p}\) is analytic near \(z=1\),
+\[
+A(u)^{1/p}
+=1+\frac1p\cdot\frac{p(p-1)}{2}u^2+O(u^4)
+=1+\frac{p-1}{2}u^2+O(u^4).
+\]
+With \(u=d/y\), this yields
+\[
+G(y)
+=yA(d/y)^{1/p}
+=y+\frac{(p-1)d^2}{2y}+O(y^{-3})
+\qquad (y\to\infty).
+\]
+Differentiating the same analytic expansion gives
+\[
+G'(y)
+=1-\frac{(p-1)d^2}{2y^2}+O(y^{-4}),
+\]
+and hence
+\[
+G''(y)
+=\frac{(p-1)d^2}{y^3}+O(y^{-5}).
+\]
+Because \(p>1\) and \(d\ne0\), the leading coefficient is positive. This recovers the tail obstruction from the exact curvature certificate above.
+
+If \(G\) were a Bernstein function, then \(G'\) would be completely monotone. In particular,
+\[
+(G')'(y)=G''(y)\le0
+\]
+throughout the interval. This contradicts the positivity of \(G''(y)\) proved above.
+
+Thus \(G\), and equivalently \(F\), is not a Bernstein function.
+\end{proof}
+
+\section{Conclusion}
+
+The theory developed here is organized around a single principle: positivity
+should be transported only through mechanisms that preserve the relevant
+analytic structure.  Zeta-law compression turns Dirichlet sums into
+probabilistic identities, special-function curvature is tested through
+Laplace kernels, and application-level claims are resolved by moving between
+Stieltjes, Bernstein, determinant, ratio, and endpoint-obstruction forms.
+
+This perspective gives the paper its hierarchy.  Definitions fix the common
+objects, lemmas and propositions isolate reusable transformations, theorems
+state the main transport mechanisms, corollaries and counterexamples record
+their consequences, and the application ledger points each source problem to
+the result that resolves it.  The result is a connected theory of positivity
+transport rather than a list of unrelated solved examples.
+\begin{thebibliography}{24}
+
+\bibitem{nantomah}
+K. Nantomah,
+\emph{Open Problem on Riemann Zeta Function},
+ResearchGate problem note, October 2024.
+\url{https://www.researchgate.net/publication/384676538_Open_Problem_on_Riemann_Zeta_Function}.
+
+\bibitem{sroysang}
+B. Sroysang,
+\emph{Two Inequalities for the Riemann Zeta Functions},
+Mathematica Aeterna 3, no. 1 (2013), 21--24.
+\url{https://arastirmax.com/en/system/files/dergiler/135290/makaleler/3/1/arastirmax-two-inequalities-riemann-zeta-functions.pdf}.
+
+\bibitem{alzer-kwong}
+H. Alzer and M. K. Kwong,
+\emph{On the concavity and convexity of \(1/\zeta\)},
+International Journal of Number Theory 21, no. 8 (2025), 1825--1835.
+\url{https://doi.org/10.1142/S1793042125500897}.
+
+\bibitem{qi-lim-nantomah-polygamma}
+F. Qi, D. Lim, and K. Nantomah,
+\emph{Monotonicity and positivity of several functions involving ratios and products of polygamma functions},
+Journal of Inequalities and Applications 2025, article 5.
+\url{https://doi.org/10.1186/s13660-024-03245-8}.
+
+\bibitem{bulboaca-zayed-gamma}
+T. Bulboaca and H. M. Zayed,
+\emph{Monotonic nature of the Gamma function},
+Journal of Inequalities and Applications 2026, article 27.
+\url{https://doi.org/10.1186/s13660-025-03425-0}.
+
+\bibitem{kim-song-tail}
+D. Kim and K. Song,
+\emph{The inverses of tails of the Riemann zeta function},
+Journal of Inequalities and Applications 2018, article 157.
+\url{https://doi.org/10.1186/s13660-018-1743-6}.
+
+\bibitem{pan-wu-tail}
+Z. Pan and Z. Wu,
+\emph{The inverse of tails of Riemann zeta function, Hurwitz zeta function and Dirichlet L-function},
+AIMS Mathematics 9, no. 6 (2024), 16564--16585.
+\url{https://doi.org/10.3934/math.2024803}.
+
+
+\bibitem{yin-zhang-k-beta}
+L. Yin and J. Zhang,
+\emph{On some properties of special functions involving \(k\)-gamma and \(k\)-digamma functions},
+arXiv:2502.15852, 2025.
+\url{https://arxiv.org/abs/2502.15852}.
+
+
+\bibitem{baricz-turan-thesis}
+A. Baricz,
+\emph{Turan type inequalities for some special functions},
+Ph.D. thesis, University of Debrecen, 2008.
+\url{https://dea.lib.unideb.hu/bitstreams/bdd4469f-1b1e-4996-9b90-73f5e1a6b0e8/download}.
+
+\bibitem{yin-pk-digamma}
+L. Yin,
+\emph{Complete monotonicity of a function involving the \((p,k)\)-digamma function},
+International Journal of Open Problems in Computer Mathematics 11(2) (2018), 103--108.
+\url{https://www.ijopcm.org/Vol/2018/2.9.pdf}.
+
+\bibitem{ma-weigert-log-functions}
+R. Ma and J. Weigert,
+\emph{Complete monotonicity of log-functions},
+arXiv:2505.04225.
+\url{https://arxiv.org/abs/2505.04225}.
+
+\bibitem{qi-agarwal-gamma-ratios}
+F. Qi and R. P. Agarwal,
+\emph{On complete monotonicity for several classes of functions related to
+ratios of gamma functions},
+Journal of Inequalities and Applications 2019, article 36.
+\url{https://doi.org/10.1186/s13660-019-1976-z}.
+
+
+\bibitem{mishra-swaminathan-ramanujan}
+D. Mishra and A. Swaminathan,
+\newblock Inequalities involving a Ramanujan integral,
+\newblock arXiv:2511.07443.
+\url{https://arxiv.org/abs/2511.07443}.
+
+\bibitem{sibisi-prabhakar}
+N. K. Sibisi,
+\newblock A probabilistic perspective on Feller, Pollard and the complete
+  monotonicity of the Mittag-Leffler function,
+\newblock arXiv:2301.01466.
+\url{https://arxiv.org/abs/2301.01466}.
+
+\bibitem{from-mills}
+S. G. From,
+\newblock Some new upper and lower bounds for the Mills ratio,
+\newblock J. Math. Anal. Appl. 486 (2020), 123872.
+\url{https://doi.org/10.1016/j.jmaa.2020.123872}.
+
+\bibitem{baricz-turan}
+A. Baricz,
+\newblock Turan type inequalities for hypergeometric functions,
+\newblock Proc. Amer. Math. Soc. 136 (2008), 3223--3229.
+\url{https://doi.org/10.1090/S0002-9939-08-09353-2}.
+
+\bibitem{qi-guo-2004}
+F. Qi and B.-N. Guo,
+\newblock Complete monotonicities of functions involving gamma and digamma
+  functions,
+\newblock RGMIA Res. Rep. Coll. 7 (2004), Article 8.
+\url{https://vuir.vu.edu.au/18037/}.
+
+\bibitem{wakrim-w}
+M. Wakrim,
+\newblock The W-operator: a Volterra fractional time operator with
+  non-Bernstein symbol,
+\newblock arXiv:2601.02876.
+\url{https://arxiv.org/abs/2601.02876}.
+
+\bibitem{qi-hlambda}
+F. Qi,
+\newblock Completely monotonic degree of a function involving trigamma and
+  tetragamma functions,
+\newblock AIMS Math. 5 (2020), 3391--3407.
+\url{https://doi.org/10.3934/math.2020219}.
+
+\bibitem{szabo-cm}
+V. E. S. Szabo,
+\newblock Completely monotone functions in general and some applications,
+\newblock arXiv:2411.17670.
+\url{https://arxiv.org/abs/2411.17670}.
+
+\bibitem{chen-choi-gurland}
+C.-P. Chen and J. Choi,
+\newblock Completely monotonic functions related to Gurland's ratio for the
+  gamma function,
+\newblock Math. Inequal. Appl. 20 (2017), 651--659.
+\url{https://doi.org/10.7153/mia-20-43}.
+
+\bibitem{sokal-gs}
+A. D. Sokal,
+\newblock Real-variables characterization of generalized Stieltjes functions,
+\newblock Expo. Math. 28 (2010), 179--185.
+\url{https://doi.org/10.1016/j.exmath.2009.06.004}.
+
+\bibitem{simon-moment}
+T. Simon,
+\newblock Moment problems related to Bernstein functions,
+\newblock Ann. Fac. Sci. Toulouse Math. 29 (2020), 577--594.
+\url{https://doi.org/10.5802/afst.1640}.
+
+\bibitem{du-wang-h3}
+P. Du and G. Wang,
+\newblock Monotonicity, convexity, and inequalities for functions involving
+  gamma function,
+\newblock arXiv:2205.12530.
+\url{https://arxiv.org/abs/2205.12530}.
+
+\bibitem{abel-gawronski-neuschel}
+U. Abel, W. Gawronski, and T. Neuschel,
+\newblock Complete monotonicity and zeros of sums of squared Baskakov
+  functions,
+\newblock Appl. Math. Comput. 258 (2015), 130--137.
+\url{https://arxiv.org/abs/1411.7945}.
+
+\bibitem{apostol}
+T. M. Apostol,
+\emph{Introduction to Analytic Number Theory},
+Undergraduate Texts in Mathematics, Springer, 1976.
+\url{https://doi.org/10.1007/978-1-4757-5579-4}.
+
+\bibitem{davenport}
+H. Davenport,
+\emph{Multiplicative Number Theory},
+3rd ed., revised by H. L. Montgomery, Graduate Texts in Mathematics, vol. 74, Springer, 2000.
+\url{https://doi.org/10.1007/978-1-4757-5927-3}.
+
+\bibitem{titchmarsh}
+E. C. Titchmarsh,
+\emph{The Theory of the Riemann Zeta-function},
+2nd ed., revised by D. R. Heath-Brown, Oxford University Press, 1986.
+\url{https://global.oup.com/academic/product/the-theory-of-the-riemann-zeta-function-9780198533696}.
+
+\bibitem{cover-thomas}
+T. M. Cover and J. A. Thomas,
+\emph{Elements of Information Theory},
+2nd ed., Wiley-Interscience, 2006.
+\url{https://doi.org/10.1002/047174882X}.
+
+\bibitem{app-app-0001-source}
+Horst Alzer and Man Kam Kwong, "On the concavity and convexity of \(1/\zeta\)", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897).
+\url{https://doi.org/10.1142/S1793042125500897}.
+
+\bibitem{app-app-0004-source}
+Feng Qi, Dongkyu Lim, and Kwara Nantomah, "Monotonicity and positivity of several functions involving ratios and products of polygamma functions", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8).
+\url{https://doi.org/10.1186/s13660-024-03245-8}.
+
+\bibitem{app-app-0009-source}
+Teodor Bulboaca and Hanaa M. Zayed, "Monotonic nature of the Gamma function", Journal of Inequalities and Applications 2026, article 27. DOI: [DOI](https://doi.org/10.1186/s13660-025-03425-0).
+\url{https://doi.org/10.1186/s13660-025-03425-0}.
+
+\bibitem{app-app-0035-source}
+G. Keady, N. Khajohnsaksumeth, and B. Wiwatanapataphee, On functions and inverses, both positive, decreasing and convex: and Stieltjes functions, Cogent Mathematics \& Statistics 5:1 (2018), 1477543..
+\url{https://doi.org/10.1080/25742558.2018.1477543}.
+
+\bibitem{app-app-0040-source}
+Zhen-Hang Yang and Jing-Feng Tian, Convexity of ratios of the modified Bessel functions of the first kind with applications, Revista Matematica Complutense, 2022..
+\url{https://doi.org/10.1007/s13163-022-00439-w}.
+
+\bibitem{app-app-0041-source}
+Feng Qi, "Completely monotonic degree of a function involving trigamma and tetragamma functions", AIMS Mathematics 5 (2020), 3391-3407. DOI: [DOI](https://doi.org/10.3934/math.2020219).
+\url{https://doi.org/10.3934/math.2020219}.
+
+\bibitem{app-app-0042-source}
+Mihaly Baricz, Pietro Ponnusamy, and Matti Vuorinen, Functional inequalities for modified Bessel functions, arXiv:1009.4814, DOI: [DOI](https://doi.org/10.1016/j.exmath.2011.07.001).
+\url{https://doi.org/10.1016/j.exmath.2011.07.001}.
+
+\bibitem{app-app-0046-source}
+Terence Tao, "Commutators close to the identity," blog post and comment thread, with Will Sawin's \(\ell^1\)/LP framing. https://terrytao.wordpress.com/2018/04/11/commutators-close-to-the-identity/.
+\url{https://terrytao.wordpress.com/2018/04/11/commutators-close-to-the-identity/}.
+
+\bibitem{app-app-0047-source}
+Baricz--Prabhu--Singh--Vijesh, Infinitely divisible modified Bessel distributions, Pacific Journal of Mathematics 343 (2026), 261--313. https://doi.org/10.2140/pjm.2026.343.261.
+\url{https://doi.org/10.2140/pjm.2026.343.261}.
+
+\bibitem{app-app-0048-source}
+Deepak Bansal, Khaled Mehrez, and Ravinder Krishna Raina, Certain functional inequalities for the tau-hypergeometric functions, Journal of Inequalities and Special Functions 12(3), 33--43, 2021. https://www.ilirias.com/jiasf/repository/docs/JIASF12-3-4.pdf.
+\url{https://www.ilirias.com/jiasf/repository/docs/JIASF12-3-4.pdf}.
+
+\bibitem{app-app-0049-source}
+Anderson--Vuorinen--Zhang, Topics in special functions III, arXiv:1209.1696, quoting Baricz's bivariate-means open problem..
+\url{https://arxiv.org/abs/1209.1696}.
+
+\bibitem{app-app-0050-source}
+Adam Bessenyei, On complete monotonicity of some functions related to means, Mathematical Inequalities and Applications 16 (2013), 233--239. https://files.ele-math.com/articles/mia-16-17.pdf.
+\url{https://files.ele-math.com/articles/mia-16-17.pdf}.
+
+\end{thebibliography}
+
+\end{document}

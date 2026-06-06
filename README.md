@@ -2,7 +2,7 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v015`, staged on 2026-06-05.
+This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v015`, staged on 2026-06-06.
 
 ## Public Theory
 

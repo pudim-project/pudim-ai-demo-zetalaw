@@ -4,7 +4,7 @@ type: "theorem"
 title: "three-regime certified proof of Bessel I sqrt log-concavity via small-u series, large-u asymptotics, compact interval certificate"
 status: "open"
 tags: ["attack-plan", "bessel", "certificate", "mixed", "open", "split-regime", "theorem"]
-parents: ["T-Bessel-I-sqrt-log-concavity-nu-ge-0"]
+parents: ["T-not-Bessel-I-split-regime-log-concavity-certificate"]
 refs: ["attack-plans/AP-20260526T123243-Bessel-I-log-concavity.json", "librarian/audits/LA-20260526T123243-attack-plan.json", "wiki/notes/frontier-bessel-i-log-concavity.md"]
 ---
 
@@ -16,7 +16,7 @@ There is a three-regime certificate proving the Riccati log-concavity inequality
 
 ## Dependencies
 
-- [[wiki/nodes/T-Bessel-I-sqrt-log-concavity-nu-ge-0|forall nu >= 0, u -> sqrt(u) I_nu(u) strictly log-concave on (0,infty)]]
+- [[wiki/nodes/T-not-Bessel-I-split-regime-log-concavity-certificate|no complete three-regime certificate can prove the false all-nu all-u Riccati log-concavity inequality]]
 
 ## Proof and provenance references
 

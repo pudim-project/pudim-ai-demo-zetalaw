@@ -4,6 +4,7 @@ This page is a public routing surface for the current vault. It is not a substit
 
 ## Recent notes
 
+- [[wiki/notes/tao-sawin-weyl-l1-exact-public-proof|tao-sawin-weyl-l1-exact-public-proof]]
 - [[wiki/notes/tao-erdos385-semiprime-gap-implication|tao-erdos385-semiprime-gap-implication]]
 - [[wiki/notes/tao-polymath15-symmetric-quartic-heat-flow|tao-polymath15-symmetric-quartic-heat-flow]]
 - [[wiki/notes/tao-popa-M4-selfcommutator-classification|tao-popa-M4-selfcommutator-classification]]
@@ -15,4 +16,3 @@ This page is a public routing surface for the current vault. It is not a substit
 - [[wiki/notes/tao-sendov-boundary-layer-expansion|tao-sendov-boundary-layer-expansion]]
 - [[wiki/notes/tao-sendov-root-gap-asymptotics-defect|tao-sendov-root-gap-asymptotics-defect]]
 - [[wiki/notes/tao-sendov-root-gap-contour-selection|tao-sendov-root-gap-contour-selection]]
-- [[wiki/notes/tao-sendov-logderivative-stability|tao-sendov-logderivative-stability]]

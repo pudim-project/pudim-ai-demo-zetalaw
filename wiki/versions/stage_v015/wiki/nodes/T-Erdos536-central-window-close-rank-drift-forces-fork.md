@@ -4,7 +4,7 @@ type: "theorem"
 title: "Erdos 536 central window close rank moving center drift forces cross top union fork"
 status: "open"
 tags: ["central-window", "close-ranks", "cross-top-union", "erdos-536", "moving-center", "open", "theorem"]
-parents: ["T-Erdos536-prime-biased-weighted-union-free-frontier"]
+parents: ["T-Erdos536-center-profile-regularization-close-rank-density", "T-Erdos536-occupied-union-coverage-from-close-rank-density"]
 refs: ["attack-plans/AP-20260531T192924-erdos536-central-window-moving-center.json", "librarian/audits/LA-20260531T192924-erdos536-central-window-moving-center-attack-plan.json", "raw/student/20260531T192341-erdos536-center-drift.md", "theory/nodes/T-Erdos536-disjoint-defect-shadow-equivalent-fork.json", "theory/nodes/T-Erdos536-fixed-center-toggle-close-ranks-force-forks.json"]
 ---
 
@@ -16,7 +16,8 @@ For \(P_k=\{p_1,\ldots,p_k\}\), \(S_k=\sum_{i\le k}1/p_i\), \(\nu_k(p_i\in S)=1/
 
 ## Dependencies
 
-- [[wiki/nodes/T-Erdos536-prime-biased-weighted-union-free-frontier|Erdos 536 prime biased high support union free theorem frontier]]
+- [[wiki/nodes/T-Erdos536-center-profile-regularization-close-rank-density|Erdos 536 center profile regularization reduces close rank moving center density to coverage or rank thin sparse code alternatives]]
+- [[wiki/nodes/T-Erdos536-occupied-union-coverage-from-close-rank-density|Erdos 536 occupied union coverage follows from close rank lower trace density and incompatible moving centers]]
 
 ## Proof and provenance references
 

@@ -1,0 +1,790 @@
+\section{Laplace, Stieltjes, and Bernstein transport}
+The most portable part of the theory is permanence.  Once a positive kernel, a Stieltjes representation, or a Bernstein derivative has been found, closure under products, mixtures, composition, integration, and stable subordination transports the result to many apparently different source problems.
+
+The section is written as a toolbox with proofs, not as a catalogue.  Definitions and closure principles come before their consequences, bridge propositions explain how a source-specific object enters the common framework, and APP consequences appear only after the transport chain that proves them is visible.
+\begin{theorem}
+\label{res:cm-closure-product-positive-mixture}
+Completely monotone functions on \((0,\infty)\) are closed under pointwise products, nonnegative finite sums, and nonnegative parameter integrals whenever the integral is finite.
+\end{theorem}
+\begin{proof}
+The density
+\[
+\phi_0(t)=\frac{1}{t(\pi^2+\log^2 t)}
+\]
+is completely monotone on \((0,\infty)\). Consequently \(I_R\) is a Stieltjes function. Moreover, the antiderivative
+\[
+\widetilde I_R(x)=a+\int_0^\infty (1-e^{-xt})\phi_0(t)\,dt
+\]
+is a complete Bernstein function.
+
+For \(u=\log t\),
+\[
+\int_0^1 e^{-au}\sin(\pi a)\,da
+=\frac{\pi(1+e^{-u})}{u^2+\pi^2}.
+\]
+Substituting \(u=\log t\) gives
+\[
+\int_0^1 t^{-a}\sin(\pi a)\,da
+=\frac{\pi(1+t^{-1})}{\pi^2+\log^2 t}.
+\]
+Therefore
+\[
+\phi_0(t)
+=\frac{1}{t(\pi^2+\log^2 t)}
+=\frac{1}{\pi(1+t)}\int_0^1 t^{-a}\sin(\pi a)\,da.
+\]
+
+For \(0<a<1\), \(t^{-a}\) is completely monotone because
+\[
+t^{-a}=\frac1{\Gamma(a)}\int_0^\infty e^{-ts}s^{a-1}\,ds.
+\]
+Also \(t\mapsto(1+t)^{-1}\) is completely monotone. Complete monotonicity is closed under products and positive mixtures, and \(\sin(\pi a)>0\) on \((0,1)\). Hence \(\phi_0\) is completely monotone.
+
+If \(\phi\) is completely monotone and
+\[
+F(x)=\int_0^\infty e^{-xt}\phi(t)\,dt
+\]
+is finite for \(x>0\), then \(F\) is Stieltjes: write \(\phi(t)=\int_0^\infty e^{-ts}\,d\mu(s)\) and use Tonelli to obtain
+\[
+F(x)=\int_0^\infty\frac{d\mu(s)}{x+s}.
+\]
+Applying this to \(\phi_0\) proves that \(I_R\) is Stieltjes.
+
+Finally, the source already proves that
+\[
+\widetilde I_R(x)=a+\int_0^\infty (1-e^{-xt})\phi_0(t)\,dt
+\]
+is a Bernstein function. The Levy density \(\phi_0\) is completely monotone, and it satisfies the Bernstein integrability condition
+\[
+\int_0^\infty (1\wedge t)\phi_0(t)\,dt<\infty.
+\]
+The standard complete-Bernstein criterion for Levy densities therefore gives that \(\widetilde I_R\) is a complete Bernstein function.
+\end{proof}
+
+\begin{proposition}
+\label{res:prabhakar-q-density-mixture-formula}
+If the transform-normalized Pollard measure \(P^\gamma_{\alpha,\beta}\) has density \(p^\gamma_{\alpha,\beta}\) and \(S_\alpha\) has density \(f_\alpha\), then the non-atomic part of Sibisi's \(Q^\gamma_{\alpha,\beta}(\cdot\mid\lambda)\) has density \(q^\gamma_{\alpha,\beta}(t\mid\lambda)=\int_0^\infty (\lambda r)^{-1/\alpha}f_\alpha(t/(\lambda r)^{1/\alpha})p^\gamma_{\alpha,\beta}(r)\,dr\), with a matching pushed-forward atom at zero if \(P^\gamma_{\alpha,\beta}\) has one.
+\end{proposition}
+\begin{proof}
+Let \(P\) be a finite positive measure on \([0,\infty)\), let
+\[
+F(u)=\int_0^\infty e^{-ur}\,dP(r),
+\]
+let \(0<\alpha<1\), \(\lambda>0\), and let \(S_\alpha\) be positive \(\alpha\)-stable:
+\[
+\mathbb E e^{-xS_\alpha}=e^{-x^\alpha}.
+\]
+Define a finite positive measure \(Q\) by
+\[
+Q(A)=\int_{[0,\infty)}
+\Pr\{(\lambda r)^{1/\alpha}S_\alpha\in A\}\,dP(r).
+\]
+Then Tonelli's theorem gives, for \(x>0\),
+\[
+\int_0^\infty e^{-xt}\,dQ(t)
+=\int_{[0,\infty)}
+\mathbb E e^{-x(\lambda r)^{1/\alpha}S_\alpha}\,dP(r)
+=\int_{[0,\infty)}e^{-\lambda r x^\alpha}\,dP(r)
+=F(\lambda x^\alpha).
+\]
+
+Apply the lemma to Sibisi's transform-normalized \(P=P^\gamma_{\alpha,\beta}\) and
+\[
+F(u)=E^\gamma_{\alpha,\beta}(-u).
+\]
+For \(0<\alpha<1\), \(\gamma>0\), \(\beta>\alpha\gamma\), and \(\lambda>0\), set
+\[
+Q^\gamma_{\alpha,\beta}(A\mid\lambda)
+=\int_{[0,\infty)}
+\Pr\{(\lambda r)^{1/\alpha}S_\alpha\in A\}\,
+dP^\gamma_{\alpha,\beta}(r).
+\]
+Then
+\[
+\int_0^\infty e^{-xt}\,dQ^\gamma_{\alpha,\beta}(t\mid\lambda)
+=E^\gamma_{\alpha,\beta}(-\lambda x^\alpha).
+\]
+By uniqueness of finite Laplace transforms, this is Sibisi's \(Q^\gamma_{\alpha,\beta}(\cdot\mid\lambda)\).
+
+If \(S_\alpha\) has density \(f_\alpha\), then the non-atomic density part is
+\[
+q^\gamma_{\alpha,\beta}(t\mid\lambda)
+=\int_{(0,\infty)}
+(\lambda r)^{-1/\alpha}
+f_\alpha\!\left(\frac{t}{(\lambda r)^{1/\alpha}}\right)
+dP^\gamma_{\alpha,\beta}(r),
+\]
+with an atom \(P^\gamma_{\alpha,\beta}(\{0\})\delta_0\) if \(P^\gamma_{\alpha,\beta}\) has an atom at zero. When \(P^\gamma_{\alpha,\beta}\) is represented by Sibisi's Pollard density \(p^\gamma_{\alpha,\beta}(r)\), this becomes
+\[
+q^\gamma_{\alpha,\beta}(t\mid\lambda)
+=\int_0^\infty
+(\lambda r)^{-1/\alpha}
+f_\alpha\!\left(\frac{t}{(\lambda r)^{1/\alpha}}\right)
+p^\gamma_{\alpha,\beta}(r)\,dr.
+\]
+
+Because
+\[
+E^\gamma_{\alpha,\beta}(0)=\frac1{\Gamma(\beta)},
+\]
+the representing measures \(P^\gamma_{\alpha,\beta}\) and \(Q^\gamma_{\alpha,\beta}(\cdot\mid\lambda)\) have total mass \(1/\Gamma(\beta)\). They are finite positive measures, not generally probability measures. The normalized probability version is
+\[
+\widehat Q^\gamma_{\alpha,\beta}=\Gamma(\beta)Q^\gamma_{\alpha,\beta},
+\qquad
+\mathcal L\widehat Q^\gamma_{\alpha,\beta}(x)
+=\Gamma(\beta)E^\gamma_{\alpha,\beta}(-\lambda x^\alpha).
+\]
+
+The boundary \(\beta=\alpha\gamma\) is not included here because Sibisi's ordinary convolution density uses \(1/\Gamma(\beta-\alpha\gamma)\). A limiting treatment is a separate open frontier.
+\end{proof}
+
+\begin{proposition}
+\label{res:ks-lemma1-stieltjes-normal-form}
+Under the Karp--Sitnik positive-density hypotheses \(b_i>a_i>0\), the function \(F(x)={}_{q+1}F_q(1,a_1,\ldots,a_q;b_1,\ldots,b_q;-x)\) is a normalized Stieltjes function on \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+Let \(q\ge1\) and \(b_i>a_i>0\). Define
+\[
+F(x)={}_{q+1}F_q(1,a_1,\ldots,a_q;b_1,\ldots,b_q;-x)
+\]
+and
+\[
+R(x)=
+\frac{{}_{q+1}F_q(1,a_1+1,\ldots,a_q+1;b_1+1,\ldots,b_q+1;-x)}
+{{}_{q+1}F_q(1,a_1,\ldots,a_q;b_1,\ldots,b_q;-x)}.
+\]
+Then \(R\) is a Stieltjes function on \((0,\infty)\), hence completely monotone. Moreover
+\[
+xR(x)
+\]
+is a complete Bernstein function up to the positive scalar \(\prod_i b_i/a_i\).
+
+For \(q=1\), this gives the Gauss/Beta slice:
+\[
+\frac{{}_2F_1(1,a+1;b+1;-x)}{{}_2F_1(1,a;b;-x)}
+\]
+is Stieltjes and completely monotone for \(b>a>0\).
+
+Karp--Sitnik's positive-density representation gives a compact-support Stieltjes form for \(F\):
+\[
+F(x)=\int_0^1 \frac{d\mu(s)}{1+sx},
+\qquad \mu\ge0,
+\qquad \mu([0,1])=F(0)=1.
+\]
+Thus \(F\) is a nonzero Stieltjes function.
+
+By the standard Stieltjes/complete-Bernstein duality, if \(F\) is nonzero Stieltjes, then
+\[
+G(x)=\frac1{F(x)}
+\]
+is a complete Bernstein function. Since \(G(0)=1\), the complete Bernstein representation gives
+\[
+G(x)=1+\alpha x+\int_0^\infty \frac{x}{x+t}\,d\nu(t),
+\qquad \alpha\ge0,\quad \nu\ge0.
+\]
+Therefore
+\[
+\frac{G(x)-1}{x}
+=\alpha+\int_0^\infty \frac{1}{x+t}\,d\nu(t)
+\]
+is Stieltjes.
+
+Karp--Sitnik's contiguous defect identity for \(\sigma=1,\delta=1\) is
+\[
+1-F(x)
+=x\,{}_{q+1}F_q(1,a_1+1,\ldots,a_q+1;b_1+1,\ldots,b_q+1;-x)
+\prod_{i=1}^q\frac{a_i}{b_i}.
+\]
+Hence
+\[
+R(x)=
+\prod_{i=1}^q\frac{b_i}{a_i}\,
+\frac{1-F(x)}{xF(x)}
+=
+\prod_{i=1}^q\frac{b_i}{a_i}\,
+\frac{G(x)-1}{x}.
+\]
+A positive scalar multiple of a Stieltjes function is Stieltjes. Thus \(R\) is Stieltjes and completely monotone.
+
+Finally,
+\[
+xR(x)=\prod_{i=1}^q\frac{b_i}{a_i}\,(G(x)-1).
+\]
+Since subtracting the finite value \(G(0)=1\) from a complete Bernstein function leaves the same nonnegative drift and Levy measure part, \(G(x)-1\) is complete Bernstein. Hence \(xR(x)\) is complete Bernstein up to the stated positive scalar.
+
+This is a strong local theorem and a reusable Stieltjes/CBF bridge. The subsequent primary-source wording audit did not find an explicit Karp--Sitnik open problem asking for the CM/Stieltjes/CBF upgrade, so this result is bridge-only unless a separate source asks for exactly this strengthening.
+\end{proof}
+
+\begin{proposition}
+\label{res:jovanovic-treml-arctan-logderivative-cm}
+The function \(x\mapsto ((1+x^2)\arctan x)^{-1}\) is completely monotone on \((0,\infty)\), by the Jovanovic--Treml positive-kernel theorem.
+\end{proposition}
+\begin{proof}
+If \(1/\arctan x\) were a Stieltjes function, then its reciprocal \(\arctan x\) would be a Bernstein function. A Bernstein function has completely monotone derivative.
+
+But
+\[
+(\arctan x)'=\frac1{1+x^2},
+\]
+and
+\[
+\left(\frac1{1+x^2}\right)''
+=\frac{2(3x^2-1)}{(1+x^2)^3},
+\]
+which is negative for \(0<x<1/\sqrt3\). Hence \((\arctan x)'\) is not completely monotone, \(\arctan x\) is not Bernstein, and \(1/\arctan x\) is not Stieltjes.
+\end{proof}
+
+\begin{proposition}[Heat-flow \(L^2\) energy]
+\label{res:heat-flow-l2-energy-completely-monotone}
+For every probability measure \(\mu\) on \(\mathbb R^d\), the heat-flow \(L^2\) energy \(N_2(t)=\int_{\mathbb R^d}(G_t*\mu)(x)^2\,dx\) is completely monotone on \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+Let \(\mu\) be a probability measure on \(\mathbb R^d\), and let \(G_t\) be the heat kernel with Fourier transform
+\[
+\widehat G_t(\xi)=e^{-t|\xi|^2}.
+\]
+For \(p_t=G_t*\mu\), define
+\[
+N_2(t)=\int_{\mathbb R^d}p_t(x)^2\,dx,\qquad t>0.
+\]
+Then \(N_2\) is completely monotone on \((0,\infty)\). If \(S_2(t)=1-N_2(t)\), then \(S_2'\) is completely monotone on \((0,\infty)\). Hence, for each \(t_0>0\), the normalized increment \(S_2(t)-S_2(t_0)\) is Bernstein as a function of \(t\ge t_0\).
+
+Since \(|\widehat\mu(\xi)|\le1\), the function \(e^{-t|\xi|^2}\widehat\mu(\xi)\) is in \(L^2(\mathbb R^d)\) for every \(t>0\). Thus \(p_t\in L^2\), and Plancherel gives
+\[
+N_2(t)
+=(2\pi)^{-d}\int_{\mathbb R^d}e^{-2t|\xi|^2}|\widehat\mu(\xi)|^2\,d\xi.
+\]
+Define \(\nu_\mu\) to be the locally finite positive pushforward of
+\[
+(2\pi)^{-d}|\widehat\mu(\xi)|^2\,d\xi
+\]
+under the map \(\xi\mapsto|\xi|^2\). Then
+\[
+N_2(t)=\int_0^\infty e^{-2tr}\,d\nu_\mu(r).
+\]
+The integral is finite for every \(t>0\), because \(|\widehat\mu|\le1\) and \(\int_{\mathbb R^d}e^{-2t|\xi|^2}\,d\xi<\infty\).
+
+For \(k\ge0\), differentiation under the integral is justified at \(t>0\) by the Gaussian factor. It yields
+\[
+(-1)^kN_2^{(k)}(t)
+=\int_0^\infty (2r)^k e^{-2tr}\,d\nu_\mu(r)\ge0.
+\]
+Therefore \(N_2\) is completely monotone.
+
+Now \(S_2'(t)=-N_2'(t)\), and
+\[
+S_2'(t)=\int_0^\infty 2r e^{-2tr}\,d\nu_\mu(r),
+\]
+another positive Laplace transform. Hence \(S_2'\) is completely monotone. This implies that every normalized increment \(S_2(t)-S_2(t_0)\), \(t\ge t_0>0\), is a Bernstein function on that restricted half-line.
+\end{proof}
+
+\begin{proposition}
+\label{res:bf-reciprocal-is-cm}
+If \(g\) is a nonzero Bernstein function on \((0,\infty)\), then \(1/g\) is completely monotone.
+\end{proposition}
+\begin{proof}
+For
+\[
+f_{\alpha,\beta}(x)=x^{-\alpha}(1+x^\beta)^{-1},\qquad x>0,
+\]
+the following hold.
+
+1. If \(\alpha\ge0\) and \(0\le\beta\le1\), then \(f_{\alpha,\beta}\) is completely monotone.
+2. If \(1<\beta\le2\) and \(\alpha\ge\beta/2\), then \(f_{\alpha,\beta}\) is completely monotone.
+3. If \(\beta=2\), then \(f_{\alpha,2}\) is completely monotone if and only if \(\alpha\ge1\).
+
+Consequently, for the Dagum threshold
+\[
+c(\beta)=\inf\{\alpha\ge0:f_{\alpha,\beta}\in CM\},
+\]
+one has \(c(1)=0\), \(c(2)=1\), and \(c(\beta)\le\beta/2\) for \(1<\beta\le2\).
+
+For \(0<\beta\le1\), \(x^\beta\) is a Bernstein function, so \(1+x^\beta\) is Bernstein. A nonzero Bernstein function has completely monotone reciprocal. Hence \((1+x^\beta)^{-1}\) is completely monotone. The factor \(x^{-\alpha}\) is completely monotone for \(\alpha\ge0\), and products of completely monotone functions are completely monotone. The case \(\beta=0\) is immediate because \(f_{\alpha,0}(x)=2^{-1}x^{-\alpha}\).
+
+For \(1<\beta\le2\), put \(\gamma=\beta/2\in(1/2,1]\). The elementary Laplace identity
+\[
+\frac1{x(1+x^2)}=\int_0^\infty e^{-xt}(1-\cos t)\,dt
+\]
+shows that \(h(x)=1/(x(1+x^2))\) is completely monotone. Since \(x^\gamma\) is Bernstein, \(h(x^\gamma)\) is completely monotone. But
+\[
+h(x^\gamma)=\frac1{x^\gamma(1+x^{2\gamma})}
+=\frac1{x^{\beta/2}(1+x^\beta)}
+=f_{\beta/2,\beta}(x).
+\]
+Multiplication by \(x^{-(\alpha-\beta/2)}\) proves complete monotonicity for \(\alpha\ge\beta/2\).
+
+For \(\beta=2\), sufficiency for \(\alpha\ge1\) follows from the preceding paragraph. For necessity, first \(f_{0,2}(x)=1/(1+x^2)\) is not completely monotone, for example because its inverse Laplace kernel is \(\sin t\).
+
+Let \(0<\alpha<1\). The inverse Laplace kernel of \(x^{-\alpha}\) is \(t^{\alpha-1}/\Gamma(\alpha)\), and the inverse Laplace kernel of \(1/(1+x^2)\) is \(\sin t\). Hence the inverse kernel of \(f_{\alpha,2}\) is
+\[
+\eta_\alpha(t)=\frac1{\Gamma(\alpha)}\int_0^t(t-s)^{\alpha-1}\sin s\,ds.
+\]
+At \(t=2\pi\),
+\[
+\Gamma(\alpha)\eta_\alpha(2\pi)
+=\int_0^\pi\left((2\pi-s)^{\alpha-1}-(\pi-s)^{\alpha-1}\right)\sin s\,ds.
+\]
+Since \(\alpha-1<0\), the bracket is negative for \(0<s<\pi\). Therefore \(\eta_\alpha(2\pi)<0\). By uniqueness of the Laplace transform for locally finite measures, \(f_{\alpha,2}\) cannot be completely monotone. Thus \(f_{\alpha,2}\in CM\) exactly when \(\alpha\ge1\).
+\end{proof}
+
+\begin{proposition}
+\label{res:baskakov-alpha1-r6-positive-density-factorization}
+For \(m=3\), equivalently \(r=6\), the Baskakov \(\alpha=1\) function \(f^{[6]}_1(x)=1/((1+x)^6-x^6)\) has inverse-Laplace density \(\rho_3(t)=\frac{4}{3}e^{-t/2}(1-\cos(t/(2\sqrt3)))^2(2+\cos(t/(2\sqrt3)))\), hence is completely monotone.
+\end{proposition}
+\begin{proof}
+Set
+\[
+D_m(x)=(1+x)^{2m}-x^{2m}.
+\]
+The roots are obtained from
+\[
+\frac{1+x}{x}=\omega_k,\qquad
+\omega_k=e^{\pi i k/m},\qquad k=1,\ldots,2m-1.
+\]
+Thus
+\[
+\lambda_{k,m}
+=\frac{1}{\omega_k-1}
+=-\frac12-\frac{i}{2}\cot\frac{\pi k}{2m}.
+\]
+At this root,
+\[
+D_m'(\lambda_{k,m})
+=2m\lambda_{k,m}^{2m-1}(\omega_k^{-1}-1),
+\]
+and direct simplification gives the real residue
+\[
+R_{k,m}
+=\frac{1}{D_m'(\lambda_{k,m})}
+=\frac{(-1)^{m+k}}{2m}
+\left(2\sin\frac{\pi k}{2m}\right)^{2m-2}.
+\]
+Consequently the inverse-Laplace density is
+\[
+\rho_m(t)
+=\sum_{k=1}^{2m-1}R_{k,m}e^{\lambda_{k,m}t}.
+\]
+Pairing conjugate roots gives
+\[
+\rho_m(t)
+=\frac{e^{-t/2}}{2m}
+\left[
+2^{2m-2}
++2\sum_{k=1}^{m-1}
+(-1)^{m+k}
+\left(2\sin\frac{\pi k}{2m}\right)^{2m-2}
+\cos\!\left(
+\frac{t}{2}\cot\frac{\pi k}{2m}
+\right)
+\right].
+\]
+
+This proves the finite trigonometric density formula used by the diagnostic
+candidate.
+
+For \(m=2\), this gives
+\[
+\rho_2(t)=e^{-t/2}\left(1-\cos\frac t2\right)
+=2e^{-t/2}\sin^2\frac t4\ge0,
+\]
+recovering the previously admitted \(r=4,\alpha=1\) seed.
+
+For \(m=3\),
+\[
+\rho_3(t)
+=\frac{e^{-t/2}}6
+\left[
+16+2\cos\left(\frac{\sqrt3\,t}{2}\right)
+-18\cos\left(\frac{t}{2\sqrt3}\right)
+\right].
+\]
+Set \(u=t/(2\sqrt3)\).  Since
+\(\cos(3u)=4\cos^3u-3\cos u\),
+\[
+\rho_3(t)
+=\frac{4}{3}e^{-t/2}(1-\cos u)^2(2+\cos u)\ge0.
+\]
+Thus \(r=6,\alpha=1\) is completely monotone by an explicit positive density.
+
+For \(m=4\), write \(h_4(t)=e^{t/2}\rho_4(t)\).  The density formula gives
+\[
+h_4(t)
+=8+2\cos\frac t2
+-\frac{(2-\sqrt2)^3}{4}
+\cos\left(\frac{1+\sqrt2}{2}t\right)
+-\frac{(2+\sqrt2)^3}{4}
+\cos\left(\frac{\sqrt2-1}{2}t\right).
+\]
+At \(t=10\pi\),
+\[
+\cos(t/2)=\cos(5\pi)=-1,
+\]
+and both other cosine terms equal \(-\cos(5\pi\sqrt2)\).  Since
+\[
+(2-\sqrt2)^3+(2+\sqrt2)^3=40,
+\]
+we obtain
+\[
+h_4(10\pi)=6+10\cos(5\pi\sqrt2).
+\]
+Now
+\[
+0<5\sqrt2-7<\frac14
+\]
+because \(7/5<\sqrt2<29/20\).  Hence, with
+\(\delta=5\sqrt2-7\),
+\[
+\cos(5\pi\sqrt2)=\cos(7\pi+\pi\delta)=-\cos(\pi\delta)
+<-\cos\frac\pi4=-\frac{\sqrt2}{2}<-\frac35.
+\]
+Therefore
+\[
+h_4(10\pi)<6+10\left(-\frac35\right)=0,
+\]
+and
+\[
+\rho_4(10\pi)=e^{-5\pi}h_4(10\pi)<0.
+\]
+Since the inverse-Laplace transform is unique for measures on
+\([0,\infty)\), \(f^{[8]}_1(x)=1/((1+x)^8-x^8)\) cannot be completely monotone.
+\end{proof}
+
+\begin{proposition}
+\label{res:bazhlekova-odd-derivative-polynomial-normal-form}
+For \(h(s)=\sqrt{c s^a+d s^b}\), with \(c,d>0\), \(\Delta=a-b\), \(B=b/2\), and \(y=(c/d)s^\Delta\), the derivatives have the form \(h^{(n)}(s)=\sqrt d\,s^{B-n}(1+y)^{1/2-n}Q_n(y)\), where \(Q_0=1\) and \(Q_{n+1}=(B-n)(1+y)Q_n+\Delta y((1+y)Q_n'+(1/2-n)Q_n)\).
+\end{proposition}
+\begin{proof}
+If for an odd \(n=2q+1\) there is \(y_0>0\) such that
+\[
+Q_n(y_0)<0,
+\]
+then for every \(c,d>0\) the point
+\[
+s_0=\left(\frac{d y_0}{c}\right)^{1/(a-b)}
+\]
+satisfies \(h^{(n)}(s_0)<0\).
+
+A Bernstein function \(h\) has completely monotone derivative, hence for odd \(n\ge3\) it must satisfy \(h^{(n)}\ge0\). Thus the displayed sign proves that \(h\) is not Bernstein.
+
+More directly for the Bazhlekova transform,
+\[
+F_x(s)=e^{-x h(s)}=\mathcal L\{w_t(x,\cdot)\}(s),
+\]
+we have
+\[
+F_x^{(n)}(s_0)=-x h^{(n)}(s_0)+O(x^2).
+\]
+For odd \(n\), complete monotonicity would require \(F_x^{(n)}(s_0)\le0\). If \(h^{(n)}(s_0)<0\), then \(F_x^{(n)}(s_0)>0\) for all sufficiently small \(x>0\), so \(w_t(x,\cdot)\) cannot be nonnegative.
+
+The previous exact inner-gap example is recovered by the recurrence. For
+\[
+(a,b)=\left(\frac{28}{25},\frac1{50}\right),
+\]
+one has
+\[
+a-b=\frac{11}{10},\qquad
+(a-1)^2+(b-1)^2=\frac{2437}{2500}<1,
+\]
+and
+\[
+Q_5(1)=-\frac{5570045943}{10000000000}<0.
+\]
+This matches the earlier value
+\[
+h^{(5)}(1)
+=-\frac{5570045943\sqrt2}{320000000000}<0
+\]
+when \(c=d=1\).
+
+The seventh derivative adds a new exact residual seed. For
+\[
+(a,b)=\left(\frac{107}{100},\frac1{100}\right),
+\]
+the point lies in the residual inner gap and exact Sturm counting gives no positive-root obstruction for \(Q_5\). But
+\[
+Q_7\left(\frac32\right)
+=-\frac{56394696198326721417}{327680000000000000}<0.
+\]
+
+The ninth derivative adds another seed. For
+\[
+(a,b)=\left(\frac{53}{50},\frac1{100}\right),
+\]
+exact Sturm counting gives no positive-root obstruction for \(Q_5\) or \(Q_7\), but
+\[
+Q_9\left(\frac74\right)
+=-\frac{3262653919060921278409379787}
+{262144000000000000000000}<0.
+\]
+
+The finite \(5,7,9\) diagnostic does not cover the residual inner gap. At
+\[
+(a,b)=\left(\frac32,\frac25\right)
+\]
+we have
+\[
+0<b<a-1,\qquad a-b=\frac{11}{10}>1,\qquad
+(a-1)^2+(b-1)^2=\frac{61}{100}<1.
+\]
+Exact Sturm counts show that \(Q_5,Q_7,Q_9\) have no positive roots. Since each has positive value at \(0\), each is positive on \(y>0\). Thus the fifth, seventh, and ninth derivative tests cannot decide this exponent pair.
+
+The same noncoverage phenomenon also occurs at the near-boundary residual point
+\[
+(a,b)=\left(\frac{11}{10},\frac1{20}\right),
+\qquad
+(a-1)^2+(b-1)^2=\frac{73}{80}<1.
+\]
+Again \(Q_5,Q_7,Q_9\) have no positive roots and are positive at \(0\).
+
+The derivative-polynomial normal form for \(h^{(n)}\).
+The odd-derivative small-\(x\) obstruction criterion.
+The exact fifth/seventh/ninth negative seeds above.
+The exact finite \(5,7,9\) no-cover seeds above.
+\end{proof}
+
+The next result applies the preceding method to the fixed source problem \textbf{APP-0014}.
+\begin{corollary}[APP-0014: Ramanujan integral is Stieltjes and has a complete Bernstein primitive]
+\label{res:ramanujan-density-logsquare-cm}
+The function \(\phi_0(t)=1/[t(\pi^2+\log^2 t)]\) is completely monotone on \((0,\infty)\).
+
+This resolves the fixed application label \textbf{APP-0014}: Classify the Ramanujan integral by a standard positive-kernel transform rather than only by inequalities.
+\emph{Source reference.} \cite{app-app-0014-source}.
+\end{corollary}
+\begin{proof}
+For \(t>0\),
+\[
+ {1\over t(\pi^2+\log^2t)}
+   ={1\over \pi(1+t)}\int_0^1 t^{-u}\sin(\pi u)\,du .
+\]
+The right side is a positive superposition of completely monotone powers and is
+therefore completely monotone as a function of \(t\).  The Laplace transform of
+a completely monotone density is Stieltjes.  Integrating the same density
+against \(1-e^{-xt}\) gives a complete Bernstein function by the standard
+Stieltjes-density characterization of complete Bernstein functions.
+\end{proof}
+
+\begin{proposition}
+\label{res:ks-general-q-delta1-sigma1-ratio-stieltjes-cm}
+For \(q\ge1\) and \(b_i>a_i>0\), the shifted ratio \({}_{q+1}F_q(1,a_1+1,\ldots,a_q+1;b_1+1,\ldots,b_q+1;-x)/{}_{q+1}F_q(1,a_1,\ldots,a_q;b_1,\ldots,b_q;-x)\) is a Stieltjes function, hence completely monotone, on \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+Let \(q\ge1\) and \(b_i>a_i>0\). Define
+\[
+F(x)={}_{q+1}F_q(1,a_1,\ldots,a_q;b_1,\ldots,b_q;-x)
+\]
+and
+\[
+R(x)=
+\frac{{}_{q+1}F_q(1,a_1+1,\ldots,a_q+1;b_1+1,\ldots,b_q+1;-x)}
+{{}_{q+1}F_q(1,a_1,\ldots,a_q;b_1,\ldots,b_q;-x)}.
+\]
+Then \(R\) is a Stieltjes function on \((0,\infty)\), hence completely monotone. Moreover
+\[
+xR(x)
+\]
+is a complete Bernstein function up to the positive scalar \(\prod_i b_i/a_i\).
+
+For \(q=1\), this gives the Gauss/Beta slice:
+\[
+\frac{{}_2F_1(1,a+1;b+1;-x)}{{}_2F_1(1,a;b;-x)}
+\]
+is Stieltjes and completely monotone for \(b>a>0\).
+
+Karp--Sitnik's positive-density representation gives a compact-support Stieltjes form for \(F\):
+\[
+F(x)=\int_0^1 \frac{d\mu(s)}{1+sx},
+\qquad \mu\ge0,
+\qquad \mu([0,1])=F(0)=1.
+\]
+Thus \(F\) is a nonzero Stieltjes function.
+
+By the standard Stieltjes/complete-Bernstein duality, if \(F\) is nonzero Stieltjes, then
+\[
+G(x)=\frac1{F(x)}
+\]
+is a complete Bernstein function. Since \(G(0)=1\), the complete Bernstein representation gives
+\[
+G(x)=1+\alpha x+\int_0^\infty \frac{x}{x+t}\,d\nu(t),
+\qquad \alpha\ge0,\quad \nu\ge0.
+\]
+Therefore
+\[
+\frac{G(x)-1}{x}
+=\alpha+\int_0^\infty \frac{1}{x+t}\,d\nu(t)
+\]
+is Stieltjes.
+
+Karp--Sitnik's contiguous defect identity for \(\sigma=1,\delta=1\) is
+\[
+1-F(x)
+=x\,{}_{q+1}F_q(1,a_1+1,\ldots,a_q+1;b_1+1,\ldots,b_q+1;-x)
+\prod_{i=1}^q\frac{a_i}{b_i}.
+\]
+Hence
+\[
+R(x)=
+\prod_{i=1}^q\frac{b_i}{a_i}\,
+\frac{1-F(x)}{xF(x)}
+=
+\prod_{i=1}^q\frac{b_i}{a_i}\,
+\frac{G(x)-1}{x}.
+\]
+A positive scalar multiple of a Stieltjes function is Stieltjes. Thus \(R\) is Stieltjes and completely monotone.
+
+Finally,
+\[
+xR(x)=\prod_{i=1}^q\frac{b_i}{a_i}\,(G(x)-1).
+\]
+Since subtracting the finite value \(G(0)=1\) from a complete Bernstein function leaves the same nonnegative drift and Levy measure part, \(G(x)-1\) is complete Bernstein. Hence \(xR(x)\) is complete Bernstein up to the stated positive scalar.
+
+This is a strong local theorem and a reusable Stieltjes/CBF bridge. The subsequent primary-source wording audit did not find an explicit Karp--Sitnik open problem asking for the CM/Stieltjes/CBF upgrade, so this result is bridge-only unless a separate source asks for exactly this strengthening.
+\end{proof}
+
+\begin{proposition}[reciprocal arctan is logarithmically completely monotone]
+\label{res:reciprocal-arctan-lcm}
+The function \(x\mapsto1/\arctan x\) is logarithmically completely monotone on \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+If \(1/\arctan x\) were a Stieltjes function, then its reciprocal \(\arctan x\) would be a Bernstein function. A Bernstein function has completely monotone derivative.
+
+But
+\[
+(\arctan x)'=\frac1{1+x^2},
+\]
+and
+\[
+\left(\frac1{1+x^2}\right)''
+=\frac{2(3x^2-1)}{(1+x^2)^3},
+\]
+which is negative for \(0<x<1/\sqrt3\). Hence \((\arctan x)'\) is not completely monotone, \(\arctan x\) is not Bernstein, and \(1/\arctan x\) is not Stieltjes.
+\end{proof}
+
+\begin{proposition}
+\label{res:bs-c-half-canonical-r-sequence-cm}
+For the Bondesson--Steutel distribution at \(c=1/2\), the canonical sequence \(r_n=(n+1/2)P_n(1/2)\) is completely monotone, with \(r_n=\frac{1}{2\pi}\int_0^1 x^{n+1/2}(1-x)^{-1/2}\,dx\).
+\end{proposition}
+\begin{proof}
+For \(c=1/2\), the source pgf is
+\[
+P(z)=\frac{1-\sqrt{1-z}}{z}.
+\]
+Using the Catalan generating function
+\[
+\sum_{n\ge0}C_n x^n=\frac{1-\sqrt{1-4x}}{2x},
+\]
+with \(x=z/4\), we get
+\[
+P(z)=\frac12\sum_{n\ge0}C_n\left(\frac z4\right)^n.
+\]
+Hence
+\[
+P_n(1/2)=\frac{C_n}{2\cdot4^n}
+=\frac{1}{2\cdot4^n(n+1)}\binom{2n}{n}.
+\]
+
+Now
+\[
+\frac1\pi\int_0^1 x^{n-1/2}(1-x)^{1/2}\,dx
+=\frac1\pi B(n+1/2,3/2).
+\]
+Since \(\Gamma(3/2)=\sqrt\pi/2\) and
+\[
+\Gamma(n+1/2)=\frac{(2n)!\sqrt\pi}{4^n n!},
+\]
+this beta integral equals
+\[
+\frac{(2n)!}{2\cdot4^n n!(n+1)!}
+=\frac{C_n}{2\cdot4^n}
+=P_n(1/2).
+\]
+Therefore
+\[
+P_n(1/2)=\frac1\pi\int_0^1 x^{n-1/2}(1-x)^{1/2}\,dx.
+\]
+This is a Hausdorff moment representation on \([0,1]\), so \((P_n(1/2))\) is completely monotone as a sequence.
+
+For \(c=1/2\), the canonical sequence is
+\[
+r_n=(n+1/2)P_n(1/2).
+\]
+Using the Hausdorff representation,
+\[
+r_n=\frac{n+1/2}{\pi}\int_0^1 x^{n-1/2}(1-x)^{1/2}\,dx.
+\]
+Because
+\[
+\frac{d}{dx}x^{n+1/2}=(n+1/2)x^{n-1/2},
+\]
+integration by parts gives
+\[
+r_n
+=\frac1\pi\int_0^1 (1-x)^{1/2}\,d(x^{n+1/2})
+=\frac{1}{2\pi}\int_0^1 x^{n+1/2}(1-x)^{-1/2}\,dx.
+\]
+The boundary terms vanish at \(0\) and \(1\). Thus
+\[
+r_n=\int_0^1 x^n\,d\nu(x),
+\qquad
+d\nu(x)=\frac{1}{2\pi}x^{1/2}(1-x)^{-1/2}\,dx.
+\]
+This is a positive finite measure on \([0,1]\). Hence \((r_n)\) is completely monotone.
+\end{proof}
+
+\begin{proposition}[Ramanujan integral I\_R is Stieltjes]
+\label{res:ramanujan-integral-stieltjes}
+The Ramanujan integral \(I_R(x)=\int_0^\infty e^{-xt}\,dt/[t(\pi^2+\log^2 t)]\) is a Stieltjes function on \((0,\infty)\).
+\end{proposition}
+\begin{proof}
+The density
+\[
+\phi_0(t)=\frac{1}{t(\pi^2+\log^2 t)}
+\]
+is completely monotone on \((0,\infty)\). Consequently \(I_R\) is a Stieltjes function. Moreover, the antiderivative
+\[
+\widetilde I_R(x)=a+\int_0^\infty (1-e^{-xt})\phi_0(t)\,dt
+\]
+is a complete Bernstein function.
+
+For \(u=\log t\),
+\[
+\int_0^1 e^{-au}\sin(\pi a)\,da
+=\frac{\pi(1+e^{-u})}{u^2+\pi^2}.
+\]
+Substituting \(u=\log t\) gives
+\[
+\int_0^1 t^{-a}\sin(\pi a)\,da
+=\frac{\pi(1+t^{-1})}{\pi^2+\log^2 t}.
+\]
+Therefore
+\[
+\phi_0(t)
+=\frac{1}{t(\pi^2+\log^2 t)}
+=\frac{1}{\pi(1+t)}\int_0^1 t^{-a}\sin(\pi a)\,da.
+\]
+
+For \(0<a<1\), \(t^{-a}\) is completely monotone because
+\[
+t^{-a}=\frac1{\Gamma(a)}\int_0^\infty e^{-ts}s^{a-1}\,ds.
+\]
+Also \(t\mapsto(1+t)^{-1}\) is completely monotone. Complete monotonicity is closed under products and positive mixtures, and \(\sin(\pi a)>0\) on \((0,1)\). Hence \(\phi_0\) is completely monotone.
+
+If \(\phi\) is completely monotone and
+\[
+F(x)=\int_0^\infty e^{-xt}\phi(t)\,dt
+\]
+is finite for \(x>0\), then \(F\) is Stieltjes: write \(\phi(t)=\int_0^\infty e^{-ts}\,d\mu(s)\) and use Tonelli to obtain
+\[
+F(x)=\int_0^\infty\frac{d\mu(s)}{x+s}.
+\]
+Applying this to \(\phi_0\) proves that \(I_R\) is Stieltjes.
+
+Finally, the source already proves that
+\[
+\widetilde I_R(x)=a+\int_0^\infty (1-e^{-xt})\phi_0(t)\,dt
+\]
+is a Bernstein function. The Levy density \(\phi_0\) is completely monotone, and it satisfies the Bernstein integrability condition
+\[
+\int_0^\infty (1\wedge t)\phi_0(t)\,dt<\infty.
+\]
+The standard complete-Bernstein criterion for Levy densities therefore gives that \(\widetilde I_R\) is a complete Bernstein function.
+\end{proof}

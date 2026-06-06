@@ -11,8 +11,9 @@ applications:
     reference: "Horst Alzer and Man Kam Kwong, \"On the concavity and convexity of \\(1/\\zeta\\)\", International Journal of Number Theory, Vol. 21, No. 8 (2025), 1825-1835. DOI: [DOI](https://doi.org/10.1142/S1793042125500897)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
-    dependencies: []
+    proof_node: "T-Alzer-Kwong-reciprocal-zeta-convexity-concavity-pattern"
+    dependencies:
+      - "T-Zeta-tail-inverse-asymptotic-telescoping-template"
     aliases: []
     supersedes: []
     superseded_by: []
@@ -46,8 +47,9 @@ applications:
     reference: "Banyat Sroysang, \"Two Inequalities for the Riemann Zeta Functions\", Mathematica Aeterna, Vol. 3, No. 1 (2013), 21-24. [PDF](https://arastirmax.com/en/system/files/dergiler/135290/makaleler/3/1/arastirmax-two-inequalities-riemann-zeta-functions.pdf)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
-    dependencies: []
+    proof_node: "T-Sroysang-generalized-Holder-zeta-inequality"
+    dependencies:
+      - "T-Zeta-tail-inverse-asymptotic-telescoping-template"
     aliases: []
     supersedes: []
     superseded_by: []
@@ -63,7 +65,7 @@ applications:
     reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-reciprocal-gamma-curvature-complete-monotonicity"
     dependencies: []
     aliases: []
     supersedes: []
@@ -80,7 +82,7 @@ applications:
     reference: "Donggyun Kim and Kyunghwan Song, \"The inverses of tails of the Riemann zeta function\", Journal of Inequalities and Applications 2018, article 157. [https://link.springer.com/article/10.1186/s13660-018-1743-6](https://link.springer.com/article/10.1186/s13660-018-1743-6); Zhenjiang Pan and Zhengang Wu, \"The inverse of tails of Riemann zeta function, Hurwitz zeta function and Dirichlet L-function\", AIMS Mathematics 9(6), 16564-16585, 2024. DOI: [DOI](https://doi.org/10.3934/math.2024803)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-Zeta-tail-s7-exact-floor-formula"
     dependencies: []
     aliases: []
     supersedes: []
@@ -97,7 +99,7 @@ applications:
     reference: "Donggyun Kim and Kyunghwan Song, \"The inverses of tails of the Riemann zeta function\", Journal of Inequalities and Applications 2018, article 157. [https://link.springer.com/article/10.1186/s13660-018-1743-6](https://link.springer.com/article/10.1186/s13660-018-1743-6); Zhenjiang Pan and Zhengang Wu, \"The inverse of tails of Riemann zeta function, Hurwitz zeta function and Dirichlet L-function\", AIMS Mathematics 9(6), 16564-16585, 2024. DOI: [DOI](https://doi.org/10.3934/math.2024803)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-Zeta-tail-s8-exact-floor-formula"
     dependencies: []
     aliases: []
     supersedes: []
@@ -114,7 +116,7 @@ applications:
     reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-reciprocal-digamma-product-curvature-strict-CM"
     dependencies: []
     aliases: []
     supersedes: []
@@ -131,7 +133,7 @@ applications:
     reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-polygamma-product-higher-curvature-CM-obstruction"
     dependencies: []
     aliases: []
     supersedes: []
@@ -148,7 +150,7 @@ applications:
     reference: "Teodor Bulboaca and Hanaa M. Zayed, \"Monotonic nature of the Gamma function\", Journal of Inequalities and Applications 2026, article 27. DOI: [DOI](https://doi.org/10.1186/s13660-025-03425-0)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-Gamma-product-reciprocal-sharp-monotonicity-threshold"
     dependencies: []
     aliases: []
     supersedes: []
@@ -165,7 +167,7 @@ applications:
     reference: "Li Yin and Jumei Zhang, \"On some properties of special functions involving \\(k\\)-gamma and \\(k\\)-digamma functions\", arXiv:2502.15852. [arXiv](https://arxiv.org/abs/2502.15852)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-Yin-Zhang-Nielsen-k-beta-open-problem-resolved"
     dependencies: []
     aliases: []
     supersedes: []
@@ -182,7 +184,7 @@ applications:
     reference: "Feng Qi, Dongkyu Lim, and Kwara Nantomah, \"Monotonicity and positivity of several functions involving ratios and products of polygamma functions\", Journal of Inequalities and Applications 2025, article 5. DOI: [DOI](https://doi.org/10.1186/s13660-024-03245-8)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-Q2-terminal-exact"
     dependencies: []
     aliases: []
     supersedes: []
@@ -199,7 +201,7 @@ applications:
     reference: "Arpad Baricz, \"Turan type inequalities for some special functions\", Ph.D. thesis, University of Debrecen, 2008. [PDF](https://dea.lib.unideb.hu/bitstreams/bdd4469f-1b1e-4996-9b90-73f5e1a6b0e8/download)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-Baricz-Vq-q-logconvexity-open-problem"
     dependencies: []
     aliases: []
     supersedes: []
@@ -216,7 +218,7 @@ applications:
     reference: "Li Yin, \"Complete monotonicity of a function involving the \\((p,k)\\)-digamma function\", International Journal of Open Problems in Computer Mathematics 11(2), 103-108, 2018. [PDF](https://www.ijopcm.org/Vol/2018/2.9.pdf)"
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: ""
+    proof_node: "T-Yin-pk-digamma-alpha-necessity-open-problem"
     dependencies: []
     aliases: []
     supersedes: []
@@ -233,7 +235,7 @@ applications:
     reference: "Mishra and Swaminathan, Inequalities involving a Ramanujan Integral, arXiv:2511.07443."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app14-ramanujan-stieltjes"
+    proof_node: "T-Ramanujan-integral-Stieltjes-and-antiderivative-CBF"
     dependencies: []
     aliases: []
     supersedes: []
@@ -250,7 +252,7 @@ applications:
     reference: "Sibisi, A Probabilistic Perspective on Feller, Pollard and the Complete Monotonicity of the Mittag-Leffler Function, arXiv:2301.01466."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app15-prabhakar-subordination"
+    proof_node: "T-Sibisi-Prabhakar-Q-measure-problem-solved-canonical"
     dependencies: []
     aliases: []
     supersedes: []
@@ -267,7 +269,7 @@ applications:
     reference: "From, Some new upper and lower bounds for the Mills ratio, J. Math. Anal. Appl. 486 (2020), 123872."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app16-mills-all-l"
+    proof_node: "T-From-Mills-general-L-bound-theorem-open-problem"
     dependencies: []
     aliases: []
     supersedes: []
@@ -284,7 +286,7 @@ applications:
     reference: "Baricz, Turan type inequalities for hypergeometric functions, Proc. Amer. Math. Soc. 136 (2008), 3223--3229."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app17-baricz-counterexample"
+    proof_node: "T-Baricz-gamma-quotient-BF-forall-negative-answer"
     dependencies: []
     aliases: []
     supersedes: []
@@ -301,7 +303,7 @@ applications:
     reference: "Qi and Guo, Complete Monotonicities of Functions Involving Gamma and Digamma Functions, RGMIA Res. Rep. Coll. 7 (2004), Article 8."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app18-qg-tau"
+    proof_node: "T-QG-open-problem-3-supremum-solved"
     dependencies: []
     aliases: []
     supersedes: []
@@ -318,7 +320,7 @@ applications:
     reference: "Wakrim, The W-Operator: A Volterra Fractional Time Operator with Non-Bernstein Symbol, arXiv:2601.02876."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app19-w-symbol"
+    proof_node: "T-Wakrim-W-operator-BF-gap-solved"
     dependencies: []
     aliases: []
     supersedes: []
@@ -335,7 +337,7 @@ applications:
     reference: "Qi, Completely monotonic degree of a function involving trigamma and tetragamma functions, AIMS Math. 5 (2020), 3391--3407."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app20-qi-hlambda"
+    proof_node: "T-not-Qi-hlambda-degree4-conjecture"
     dependencies: []
     aliases: []
     supersedes: []
@@ -352,7 +354,7 @@ applications:
     reference: "Szabo, Completely monotone functions in general and some applications, arXiv:2411.17670."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app21-szabo-cutoff"
+    proof_node: "T-Szabo-psi-difference-alpha0-exact-threshold-open"
     dependencies: []
     aliases: []
     supersedes: []
@@ -369,7 +371,7 @@ applications:
     reference: "Chen and Choi, Completely monotonic functions related to Gurland's ratio for the gamma function, Math. Inequal. Appl. 20 (2017), 651--659."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app22-gurland-logcm"
+    proof_node: "T-Chen-Choi-Conjecture1-Gurland-ratio-solved"
     dependencies: []
     aliases: []
     supersedes: []
@@ -386,7 +388,7 @@ applications:
     reference: "Sokal, Real-variables characterization of generalized Stieltjes functions, Expo. Math. 28 (2010), 179--185."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app23-sokal-lambda"
+    proof_node: "T-Sokal-GS-lambda-derivative-compression-open"
     dependencies: []
     aliases: []
     supersedes: []
@@ -403,7 +405,7 @@ applications:
     reference: "Thomas Simon, Moment problems related to Bernstein functions, Ann. Fac. Sci. Toulouse Math. 29 (2020), 577--594."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app24-simon-gamma-quotient"
+    proof_node: "T-Simon-gamma-quotient-BF-alpha-window-open-problem"
     dependencies: []
     aliases: []
     supersedes: []
@@ -420,7 +422,7 @@ applications:
     reference: "Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app25-du-wang-h3"
+    proof_node: "T-Du-Wang-h3-open-problem-2-classification"
     dependencies: []
     aliases: []
     supersedes: []
@@ -437,7 +439,7 @@ applications:
     reference: "Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app26-baskakov-r8"
+    proof_node: "T-not-Baskakov-higher-power-even-conjecture"
     dependencies: []
     aliases: []
     supersedes: []
@@ -454,7 +456,7 @@ applications:
     reference: "Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app27-ma-weigert-chain"
+    proof_node: "T-Ma-Weigert-log-function-Dk-chain-conjecture"
     dependencies: []
     aliases: []
     supersedes: []
@@ -471,7 +473,7 @@ applications:
     reference: "Feng Qi and Ravi P. Agarwal, On complete monotonicity for several classes of functions related to ratios of gamma functions, Journal of Inequalities and Applications 2019, article 36."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app28-qa-divisor-polygamma"
+    proof_node: "T-QA-divisor-polygamma-parity-correction"
     dependencies: []
     aliases: []
     supersedes: []
@@ -488,7 +490,7 @@ applications:
     reference: "Teodor Bulboaca and Hanaa M. Zayed, Monotonic nature of the Gamma function, Journal of Inequalities and Applications 2026, article 27."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app29-bz-gamma-quotient"
+    proof_node: "T-Bulboaca-Zayed-gamma-quotient-full-monotonicity"
     dependencies: []
     aliases: []
     supersedes: []
@@ -505,7 +507,7 @@ applications:
     reference: "D. Mishra and A. Swaminathan, Inequalities involving a Ramanujan integral, arXiv:2511.07443."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app30-ramanujan-turan"
+    proof_node: "T-Ramanujan-Turan-window-negative-answer"
     dependencies: []
     aliases: []
     supersedes: []
@@ -607,7 +609,7 @@ applications:
     reference: "Ulrich Abel, Wolfgang Gawronski, and Thorsten Neuschel, Complete Monotonicity and Zeros of Sums of Squared Baskakov Functions, arXiv:1411.7945."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app36-baskakov-even-line-negative-answer"
+    proof_node: "T-Baskakov-alpha1-r8-not-CM"
     dependencies: []
     aliases: []
     supersedes: []
@@ -624,7 +626,7 @@ applications:
     reference: "Peipei Du and Gendi Wang, Monotonicity, convexity, and inequalities for functions involving gamma function, arXiv:2205.12530."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app37-du-wang-h3-monotonicity-classification"
+    proof_node: "T-Du-Wang-h3-open-problem-2-classification"
     dependencies: []
     aliases: []
     supersedes: []
@@ -641,7 +643,7 @@ applications:
     reference: "Rourou Ma and Julian Weigert, Complete monotonicity of log-functions, arXiv:2505.04225."
     mechanism_group: ""
     render_class: "atlas"
-    proof_node: "thm:app38-ma-weigert-Dk-chain"
+    proof_node: "T-Ma-Weigert-log-function-Dk-chain-conjecture"
     dependencies: []
     aliases: []
     supersedes: []

@@ -4,7 +4,7 @@ type: "theorem"
 title: "Principal-return trace theorem for the ideal von Mangoldt chain"
 status: "proved"
 tags: ["proved", "theorem"]
-parents: []
+parents: ["T-Finite-combinatorial-packing-shadow-principle"]
 refs: [".pudim/attack-plans/AP-20260604T-tao-principal-return-chain.json", ".pudim/oracle/responses/ORACLE-FC-20260604T-tao-principal-return-chain-response.md", ".pudim/oracle/responses/ORACLE-OS-20260604T-tao-principal-return-chain-student-response.md", ".pudim/raw/student/20260604T-tao-principal-return-chain.md", ".pudim/wiki/notes/tao-principal-return-chain.md"]
 ---
 
@@ -25,6 +25,10 @@ P_hat_up(b to a)=nu_K(a) P_hat_down(a to b)/nu_K(b), strict blocks only; P_hat_u
 - upward reversal excludes the absorbing self-loop at the unit ideal
 - not an element-level non-UFD theorem
 
+## Dependencies
+
+- [[wiki/nodes/T-Finite-combinatorial-packing-shadow-principle|Finite combinatorial packing and shadow principle]]
+
 ## Proof and provenance references
 
 - `.pudim/attack-plans/AP-20260604T-tao-principal-return-chain.json`
@@ -32,6 +36,14 @@ P_hat_up(b to a)=nu_K(a) P_hat_down(a to b)/nu_K(b), strict blocks only; P_hat_u
 - `.pudim/oracle/responses/ORACLE-OS-20260604T-tao-principal-return-chain-student-response.md`
 - `.pudim/raw/student/20260604T-tao-principal-return-chain.md`
 - `.pudim/wiki/notes/tao-principal-return-chain.md`
+
+## Proof source health
+
+_No extractable public proof fragment was found for this proved theorem-like node._
+
+- .pudim/attack-plans/AP-20260604T-tao-principal-return-chain.json: not a public proof-fragment source
+- .pudim/raw/student/20260604T-tao-principal-return-chain.md: not a public proof-fragment source
+- .pudim/wiki/notes/tao-principal-return-chain.md: not a public proof-fragment source
 
 ## Do not claim
 
