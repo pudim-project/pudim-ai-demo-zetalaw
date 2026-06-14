@@ -4,7 +4,7 @@ type: "theorem"
 title: "YHL weighted k-digamma alpha <= 0 sufficient CM region mu <= kc/2"
 status: "proved"
 tags: ["alpha-nonpositive", "complete-monotonicity", "k-digamma", "non-app-theory-growth", "proved", "student-audit", "sufficient-region", "theorem", "weighted"]
-parents: ["T-Special-function-normal-form-calculus-principle", "T-YHL-k-digamma-base-alpha0-CM-classification"]
+parents: ["T-Special-function-normal-form-calculus-principle"]
 refs: ["librarian/audits/LA-20260603T153900-yhl-k-digamma-strict-app-audit.json", "raw/oracle/RO-OFC-20260603T-yhl-weighted-cm-strict-app-rerun.json", "raw/oracle/RO-OS-20260603T-yhl-weighted-cm-strict-app-temp.json", "raw/student/20260603T153900-yhl-k-digamma-strict-app-audit.md", "wiki/notes/frontier-yhl-k-digamma-weighted-cm.md"]
 ---
 
@@ -17,7 +17,6 @@ For positive \(k,a,b,c,d\), let \(B(x)=\psi_k(ax+b)-k\log(cx+d)\) and \(F_\alpha
 ## Dependencies
 
 - [[wiki/nodes/T-Special-function-normal-form-calculus-principle|Special-function normal-form calculus principle]]
-- [[wiki/nodes/T-YHL-k-digamma-base-alpha0-CM-classification|YHL alpha zero k-digamma bracket CM iff mu <= kc/2]]
 
 ## Proof and provenance references
 

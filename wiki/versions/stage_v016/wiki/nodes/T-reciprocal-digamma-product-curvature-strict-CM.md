@@ -4,7 +4,7 @@ type: "theorem"
 title: "T-reciprocal-digamma-product-curvature-strict-CM"
 status: "proved"
 tags: ["application-bridge", "complete-monotonicity", "digamma", "laplace-kernel", "polygamma", "proved", "source-open-solved", "theorem"]
-parents: ["T-positive-Laplace-kernel-complete-monotonicity-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-positive-Laplace-kernel-complete-monotonicity-principle"]
 refs: ["raw/student/20260605T-bridge-positive-laplace-kernel-polygamma-p0.md", "theory/latest/THEORY.tex#thm:reciprocal-digamma-product-complete-monotonicity"]
 ---
 
@@ -16,8 +16,8 @@ For \(P_0(x)=\psi(x)\psi(1/x)\), the function \(-P_0''\) is strictly completely 
 
 ## Dependencies
 
-- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 
 ## Proof and provenance references
 

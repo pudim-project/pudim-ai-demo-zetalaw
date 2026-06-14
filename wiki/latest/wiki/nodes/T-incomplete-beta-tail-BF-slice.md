@@ -4,7 +4,7 @@ type: "theorem"
 title: "incomplete beta tail is Bernstein for b positive and lambda between zero and one"
 status: "proved"
 tags: ["bernstein-function", "bridge-patch", "incomplete-beta", "proved", "source-slice", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-incomplete-beta-tail-derivative-CM-certificate", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle", "T-incomplete-beta-tail-derivative-CM-certificate"]
 refs: ["librarian/audits/LA-20260529T-next-loop-incomplete-beta-tail-student.json", "raw/student/20260529T-next-loop-incomplete-beta-tail.md", "wiki/notes/frontier-incomplete-beta-tail-bernstein.md"]
 ---
 
@@ -16,9 +16,9 @@ For \(b>0\) and \(0<\lambda\le1\), the incomplete-beta tail \(I_{b,\lambda}(x)=B
 
 ## Dependencies
 
+- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 - [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/T-incomplete-beta-tail-derivative-CM-certificate|incomplete beta tail derivative has positive discrete Laplace representation for lambda at most one]]
-- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references
 

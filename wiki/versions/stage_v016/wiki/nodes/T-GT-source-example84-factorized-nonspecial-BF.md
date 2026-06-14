@@ -4,7 +4,7 @@ type: "theorem"
 title: "Gomilko Tomilov Example 8.4 covered by finite factor denominator subclass"
 status: "proved"
 tags: ["bernstein-function", "gomilko-tomilov", "nonspecial", "not-staging-application", "proved", "source-example", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-GT-BF-factorized-denominator-power-closure", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["T-GT-BF-factorized-denominator-power-closure", "T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
 refs: ["librarian/audits/LA-20260531T114200-gt-bf-factor-subclass.json", "oracle/responses/ORACLE-OS-20260531T-gt-bf-factor-subclass-oracle-response.md", "raw/scout/sources/gomilko-tomilov-bf-fractional-power-open.md", "raw/student/20260531T114200-gt-bf-factor-subclass.md", "wiki/notes/frontier-gt-bf-fractional-power-closure.md"]
 ---
 
@@ -16,8 +16,8 @@ For the non-special source example \(\psi(x)=1-(1+x)^{-2}=x(2+x)/(1+x)^2\), the 
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/T-GT-BF-factorized-denominator-power-closure|Gomilko Tomilov finite Bernstein factor denominator fractional power closure subclass]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references

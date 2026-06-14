@@ -863,7 +863,388 @@ applications:
     superseded_by: []
     family_id: ""
     family_name: ""
-
-
+  - app_id: "APP-0051"
+    app_name: "Townes real-valued Poisson-mixture ID-to-DID conjecture is false"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Townes, source problem on Poisson mixtures and discrete infinite divisibility, arXiv:2509.05497. https://arxiv.org/abs/2509.05497"
+    mechanism_group: "Endpoint and complete-monotonicity obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-Townes-PoissonMixture-ID-implies-DID-conjecture"
+    dependencies:
+      - "T-not-Townes-FiniteInterval-BLT-Root-Preservation"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0052"
+    app_name: "Das-Swaminathan multiple-gamma Bernstein question is false"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Sourav Das and A. Swaminathan, Pick Functions Related to the Multiple Gamma Functions of order n, arXiv:1601.03167. https://arxiv.org/abs/1601.03167"
+    mechanism_group: "Gamma and Bernstein obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-DasSwaminathan-fn-Bernstein-all-n"
+    dependencies:
+      - "T-Das2020-logGn-derivative-positivity-source-import"
+      - "T-DasSwaminathan-logGn-unit-sign"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0053"
+    app_name: "arsinh-square logarithmic derivative is not Stieltjes"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Jedidi and Vakeroudis, Windings of planar processes, Exponential Functionals and Asian options, arXiv:1610.07030. https://arxiv.org/abs/1610.07030"
+    mechanism_group: "Stieltjes boundary obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-ArsinhSquare-log-derivative-Stieltjes"
+    dependencies:
+      - "T-ArsinhSquare-log-derivative-completely-monotone"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0054"
+    app_name: "GRWS Sector II weights-squared Bernstein interpolation fails"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Benhida, Curto, and Exner, Geometrically regular weighted shifts, arXiv:2309.05888; Revista de la Real Academia de Ciencias Exactas, Fisicas y Naturales. Serie A. Matematicas 119:54 (2025), DOI 10.1007/s13398-025-01719-y. https://arxiv.org/abs/2309.05888"
+    mechanism_group: "Hausdorff moment and Bernstein obstructions"
+    render_class: "atlas"
+    proof_node: "T-GRWS-SectorII-No-BF-WeightSquared-Interpolation"
+    dependencies:
+      - "L-BF-Integer-Increments-Are-Hausdorff-CM"
+      - "L-Signed-Atomic-Hausdorff-Negativity-Obstruction"
+      - "L-GRWS-SectorII-Difference-Atomic-Expansion"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0055"
+    app_name: "Snake-polynomial Chebyshev positivity conjecture is false"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Snake-polynomial Chebyshev positivity source, arXiv:2504.04845 and arXiv:2312.07754. https://arxiv.org/abs/2504.04845"
+    mechanism_group: "Finite certificate obstructions"
+    render_class: "atlas"
+    proof_node: "T-not-SnakePolynomial-Chebyshev-ConvexMajorant-Conjecture7-1"
+    dependencies:
+      - "D-SnakePolynomial-Chebyshev-Language"
+      - "L-SnakePolynomial-Corridor-Alternation-Certificate"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0056"
+    app_name: "BPV Bessel K logarithmic-derivative quotient monotonicity is classified"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "A. Baricz, S. Ponnusamy, and M. Vuorinen, Functional inequalities for modified Bessel functions, Expositiones Mathematicae 29(4), 399--414, arXiv:1009.4814, DOI 10.1016/j.exmath.2011.07.001. https://arxiv.org/abs/1009.4814"
+    mechanism_group: "Bessel endpoint obstructions"
+    render_class: "atlas"
+    proof_node: "T-BPV-BesselK-full-monotonicity-classification"
+    dependencies:
+      - "T-BPV-BesselK-open-range-nonmonotone"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0057"
+    app_name: "Qi log-concave convolution lower bound is strictly improved"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Feng Qi, Completely monotonic degree of a function involving trigamma and tetragamma functions, AIMS Mathematics 5 (2020), 3391--3407, DOI 10.3934/math.2020219. https://doi.org/10.3934/math.2020219"
+    mechanism_group: "Log-concavity and convolution bounds"
+    render_class: "atlas"
+    proof_node: "T-Qi-LogConcaveConvolution-StrictImprovement-Example"
+    dependencies:
+      - "T-Qi-LogConcaveConvolution-VertexChord-LowerBound"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0058"
+    app_name: "Bazhlekova two-seed Wright/Bernstein gap condition is relaxable"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Bazhlekova--Bazhlekov two-term fractional diffusion-wave propagation question, arXiv:1707.09828. https://arxiv.org/abs/1707.09828"
+    mechanism_group: "Bernstein transport and Wright-kernel certificates"
+    render_class: "atlas"
+    proof_node: "T-Bazhlekova-TwoSeed-SourcePackage-Relaxation"
+    dependencies:
+      - "T-Bazhlekova-TwoSeed-SqrtBF-OutsideGap"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0059"
+    app_name: "Guo ASCM/SCM Theorem 45 condition can be waived"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Guo, On Completely Monotonic and Related Functions, Filomat 30(7), DOI 10.2298/FIL1607083G. https://doi.org/10.2298/FIL1607083G"
+    mechanism_group: "Derivative-chain composition"
+    render_class: "atlas"
+    proof_node: "T-Guo-ASCM-SCM-DerivativeComposition-NoCondition"
+    dependencies:
+      - "D-Complete-monotonicity-Bernstein-Stieltjes-language"
+      - "D-Log-function-derivative-chain-language"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0060"
+    app_name: "Baricz coefficient-ratio complete-monotonicity transfer is false"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Arpad Baricz, Bounds for modified Bessel functions of the first and second kinds, Proceedings of the Edinburgh Mathematical Society 53 (2010), 575--599, DOI 10.1017/S0013091508001016. https://doi.org/10.1017/S0013091508001016"
+    mechanism_group: "Coefficient extraction and endpoint obstructions"
+    render_class: "atlas"
+    proof_node: "T-Baricz-CoefficientRatio-CMTransfer-Counterexample"
+    dependencies:
+      - "L-Baricz-GeometricSequence-StrictCM"
+      - "L-Baricz-AnalyticQuotient-SecondCoefficientObstruction"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0061"
+    app_name: "Khasnis-Sholapurkar Question 4.6 has a negative answer"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Khasnis--Sholapurkar, Joint Complete Monotonicity of reciprocal of a polynomial in two variables, arXiv:2506.08447v2. https://arxiv.org/abs/2506.08447"
+    mechanism_group: "Hausdorff slice endpoint obstructions"
+    render_class: "atlas"
+    proof_node: "T-Khasnis-Sholapurkar-Q46-NegativeAnswer"
+    dependencies:
+      - "T-PolynomialReciprocal-JCM-DegreeGap-Obstruction"
+      - "L-JCM-SliceEndpoint-ConcavityObstruction"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0062"
+    app_name: "Barbosa-Menegatto endpoint additive kernel is not strictly positive definite"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Barbosa--Menegatto generalized-Stieltjes product-kernel strict-positive-definiteness source, SIGMA 2020, arXiv:2006.12217. https://arxiv.org/abs/2006.12217"
+    mechanism_group: "Finite product-kernel certificates"
+    render_class: "atlas"
+    proof_node: "T-BarbosaMenegatto-endpoint-additive-rectangle-not-SPD"
+    dependencies:
+      - "L-Additive-product-kernel-rectangle-annihilator"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0063"
+    app_name: "Yamazaki generalized-Karcher operator-norm conjecture is false"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Yamazaki generalized-Karcher equation operator-norm conjecture, arXiv:1802.06200 / Journal of Mathematical Analysis and Applications, DOI 10.1016/j.jmaa.2019.06.036. https://arxiv.org/abs/1802.06200"
+    mechanism_group: "Scalar certificates for operator conjectures"
+    render_class: "atlas"
+    proof_node: "T-Yamazaki-GKE-operator-norm-conjecture-scalar-counterexample"
+    dependencies:
+      - "L-Scalar-subcase-refutes-universal-operator-inequality"
+      - "L-Yamazaki-fractional-linear-GKE-scalar-certificate"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0064"
+    app_name: "Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Dinh--Le--Nguyen--Vo matrix power-mean inverse question, arXiv:2106.05914, DOI 10.1080/03081087.2022.2134283. https://arxiv.org/abs/2106.05914"
+    mechanism_group: "Scalar certificates for matrix mean questions"
+    render_class: "atlas"
+    proof_node: "T-DLNV-MatrixPowerMeanInverse-ScalarRefutation"
+    dependencies:
+      - "L-Scalar-matrix-case-refutes-universal-existence"
+      - "L-ScalarPowerMean-Ratio-Endpoint"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0065"
+    app_name: "JKS alpha-two kernel is not TN5 by a symmetric determinant witness"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Khare, Jain--Karlin--Schoenberg kernel total-positivity question, arXiv:2008.05121. https://arxiv.org/abs/2008.05121"
+    mechanism_group: "Finite determinant obstructions"
+    render_class: "atlas"
+    proof_node: "T-JKS-Alpha2-NotTN5-PSDWitness"
+    dependencies:
+      - "D-JKS-Kernel"
+      - "D-TNKernel-FiniteOrder"
+      - "L-PSD-Minor-Obstructs-TN"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0066"
+    app_name: "Li cubic inverse-polynomial Bernstein branch has discriminant criterion"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Cheng-Gang Li, Space-Time Duality in Relativistic Diffusion via Subordination, arXiv:2606.04270. https://arxiv.org/abs/2606.04270"
+    mechanism_group: "Inverse-ODE and Pringsheim obstructions"
+    render_class: "atlas"
+    proof_node: "T-Li-CubicInversePolynomial-BF-Discriminant"
+    dependencies:
+      - "L-QuadraticDenominator-CM-NonpositiveRoots"
+      - "L-InverseODE-CM-to-BF"
+      - "L-AnalyticBF-Pringsheim-NegativeAxisObstruction"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0067"
+    app_name: "BPV Bessel K Question 7 has a half-order endpoint counterexample"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "A. Baricz, S. Ponnusamy, and M. Vuorinen, Functional inequalities for modified Bessel functions, Expositiones Mathematicae 29(4), 399--414, arXiv:1009.4814, DOI 10.1016/j.exmath.2011.07.001. https://arxiv.org/abs/1009.4814"
+    mechanism_group: "Bessel endpoint obstructions"
+    render_class: "atlas"
+    proof_node: "T-BesselK-Question7-Negative-Endpoint-Counterexample"
+    dependencies:
+      - "D-BesselK-Endpoint-Monotonicity-Question"
+      - "L-HalfOrder-BesselK-ClosedForm"
+      - "L-HalfOrder-KDerivative-SignRoot"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0068"
+    app_name: "Kummer M global modulus inequality fails at \\((\\alpha,\\beta)=(1,5/2)\\)"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Garrappa--Gerhold--Popolizio--Simon, On some inequalities for the two-parameter Mittag-Leffler function in the complex plane, JMAA 551(1), 2025, Article 129588 / arXiv:2410.11852. https://arxiv.org/abs/2410.11852"
+    mechanism_group: "Coefficient and imaginary-axis obstructions"
+    render_class: "atlas"
+    proof_node: "T-Kummer-M-Global-Modulus-Inequality-Fails-Alpha1-Beta5halves"
+    dependencies:
+      - "D-GGPS-KummerM-Remark6-Question"
+      - "D-KummerM-LocalSeries"
+      - "L-RealSeries-ImagAxis-Modulus-SecondCoefficient-Obstruction"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0069"
+    app_name: "Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Mecke, Nagel, and Weiss, Joseph Mecke's last fragmentary manuscripts - a compilation, arXiv:1703.10000v2. https://arxiv.org/abs/1703.10000"
+    mechanism_group: "Laplace-survival and Poissonization"
+    render_class: "atlas"
+    proof_node: "T-NagelWeissMecke-LaplaceSurvival-Poissonization-Solution"
+    dependencies:
+      - "D-LaplaceSurvivalTransform"
+      - "L-UniformExponentialRace-LaplaceSurvival"
+      - "L-CMSurvival-BernsteinWidder-InverseCriterion"
+      - "L-ConditionalPoissonization-PGF"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0070"
+    app_name: "Dytso-Bustin-Poor generalized-Gaussian product factorization classification"
+    created_at: "2026-06-14"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Dytso, Bustin, and Poor, generalized-Gaussian product-factorization source problem, Axioms 7 (2018), DOI 10.1186/s40488-018-0088-5, and thesis source. https://doi.org/10.1186/s40488-018-0088-5"
+    mechanism_group: "Mellin factorization and stable subordination"
+    render_class: "atlas"
+    proof_node: "T-DytsoBustinPoor-GeneralizedGaussian-ProductFactorization-Classification"
+    dependencies:
+      - "D-GeneralizedGaussian-Np01"
+      - "L-PositiveStable-NegativeMoment"
+      - "D-InverseStable-SizeBiasFactor"
+      - "L-MellinQuotient-To-ProductFactor"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
 
 

@@ -4,7 +4,7 @@ type: "theorem"
 title: "stable subordination pushes finite Laplace measure P to representing measure for F(lambda x^alpha)"
 status: "proved"
 tags: ["complete-monotonicity", "finite-measure", "laplace-transform", "proved", "stable-subordination", "theorem", "theory-growth"]
-parents: ["T-positive-Laplace-kernel-complete-monotonicity-principle", "D-Laplace-kernel-and-tilted-moment-language"]
+parents: ["D-Laplace-kernel-and-tilted-moment-language", "T-positive-Laplace-kernel-complete-monotonicity-principle"]
 refs: ["librarian/audits/LA-20260531T014000-prabhakar-q-stable-subordination.json", "oracle/responses/ORACLE-OS-20260531T-prabhakar-q-stable-subordination-oracle-response.md", "raw/student/20260531T014000-prabhakar-q-stable-subordination.md", "wiki/notes/frontier-prabhakar-q-stable-subordination.md"]
 ---
 
@@ -16,8 +16,8 @@ Let \(P\) be a finite positive measure on \([0,\infty)\), let \(F(u)=\int_0^\inf
 
 ## Dependencies
 
-- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 - [[wiki/nodes/D-Laplace-kernel-and-tilted-moment-language|Laplace kernels and tilted moment ratios]]
+- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 
 ## Proof and provenance references
 

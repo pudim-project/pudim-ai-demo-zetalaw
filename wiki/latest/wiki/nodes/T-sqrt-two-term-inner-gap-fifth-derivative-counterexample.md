@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bazhlekova two-term inner gap exact fifth derivative counterexample to Bernstein square root"
 status: "proved"
 tags: ["bazhlekova", "bernstein-function", "higher-derivative-obstruction", "inner-gap", "not-staging-application", "partial-source-answer", "proved", "theorem", "two-term"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["attack-plans/AP-20260531T110500-bazhlekova-inner-gap-fifth-derivative.json", "librarian/audits/LA-20260531T110500-bazhlekova-inner-gap-fifth-derivative.json", "oracle/responses/ORACLE-OS-20260531T-bazhlekova-inner-gap-fifth-derivative-oracle-response.md", "raw/student/20260531T110500-bazhlekova-inner-gap-fifth-derivative.md", "raw/student/20260531T110500-bazhlekova-inner-gap-fifth-derivative.py", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
 ---
 
@@ -16,8 +16,8 @@ For \(h(s)=\sqrt{s^{28/25}+s^{1/50}}\), the exponents lie in the Bazhlekova two-
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 
 ## Proof and provenance references
 

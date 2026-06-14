@@ -246,7 +246,7 @@ Librarian audit `LA-20260531T071000-ks-qdigamma-theta-family` admits `T-nonnegat
 
 As of `20260531T065400-0300`, Scout forage `ORACLE-FI-20260531T-rolling-071` was also rejected by the deterministic Oracle status gate. Candidate 1 and the SOLUTION repeated the solved Szabo Open Problem 1.5 exact cutoff branch (`BL-20260531-szabo-psi-difference-alpha0-exact-solved`). Audit `LA-20260531T065400-rolling-071-policy-rejection` records this as rejected raw output only: no Scout ingest, no Student execution, no Theory/Wiki mutation, no staging. This is now a loop-control failure, not a candidate failure. Pudimv2 has been patched so after two consecutive forage `policy_rejected` artifacts sharing a blocklist id, the next `oracle-forage --run` skips live browser launch unless `--force-after-policy-rejection` is explicitly passed. The active loop must rotate to local Scout/source-first fallback or a materially different source family before using Oracle again.
 
-As of `20260531T070100-0300`, the patched repeated-policy cooldown was canary-tested with `ORACLE-FI-20260531T-cooldown-canary`: the helper wrote a `policy_rejected` raw Oracle artifact before browser launch, no live log was created, and no Oracle process remained. The local Scout fallback then checked the Bosch--Simon/Jedidi stable-power HCM branch from older forage inboxes. Audit `LA-20260531T070100-stable-power-hcm-source-status` demotes that branch to `wiki_note_only`: Fourati's later primary-source arXiv paper explicitly refutes the strengthened Bosch--Simon conjectural direction, so this is not a fresh source-open application target. Keep it only as HCM/GGC source vocabulary and rotate again.
+As of `20260531T070100-0300`, the patched repeated-policy cooldown was canary-tested with `ORACLE-FI-20260531T-cooldown-canary`: the helper wrote a `policy_rejected` raw Oracle artifact before browser launch, no live log was created, and no Oracle process remained. The local Scout fallback then checked the Bosch--Simon/Jedidi stable-power HCM branch from older forage inboxes. Audit `LA-20260531T070100-stable-power-hcm-source-status` demotes that branch to `wiki_note_only`: Fourati's later primary-source arXiv paper explicitly refutes the strengthened Bosch--Simon conjectural direction, so this is not a fresh source application target. Keep it only as HCM/GGC source vocabulary and rotate again.
 
 As of `20260531T064600-0300`, Scout forage `ORACLE-FI-20260531T-rolling-070` was run live through the repaired Temporary Chat path (`--force`, archive-on-close, one-hour browser timeout). The Oracle response obeyed the first-token contract by starting with `CANDIDATES:`, but the deterministic helper rejected it because Candidate 1 repeated Szabo Open Problem 1.5, already solved locally as `T-Szabo-psi-difference-alpha0-exact-one` / audit `LA-20260531T024200-szabo-alpha0-exact`. Treat rolling-070 as rejected raw output only. Do not ingest it as a usable Scout result and do not Student-execute from any candidate in that response. Rotate immediately to a fresh forage context.
 
@@ -300,7 +300,7 @@ Student solved it in supremum-corrected form:
 =\frac{a_*}{1+a_*+a_*^2}=0.298425607525639\ldots,
 \qquad e^{a_*}=1+a_*+a_*^2,\quad a_*>0.
 \]
-No finite \((s,t)\) attains this value, so the source's word "maximum" should be recorded as a nonattained supremum. This is a fresh solved source-open problem and local application candidate; no public staging or Gmail drafting has been performed.
+No finite \((s,t)\) attains this value, so the source's word "maximum" should be recorded as a nonattained supremum. This is a fresh solved source problem and local application candidate; no public staging or Gmail drafting has been performed.
 
 As of `20260530T221200-0300`, forage `FC-20260530T-elegance-041` selected a Simon binomial/Raney Bernstein-moment bridge. Student proved the contained slice
 \[
@@ -643,7 +643,7 @@ T\text{-arctan-not-Bernstein},
 \quad
 T\text{-reciprocal-arctan-not-Stieltjes}.
 \]
-The conceptual gain is an LCM vocabulary layer and a concrete complete-monotone but non-Stieltjes separator. The next Advisor pass should select a fresh source-open problem with this stronger class-separation vocabulary available; preferred candidates from the same forage are the reciprocal Alzer--Berg Gini Gamma quotient frontier or Karp eventual complete-monotonicity threshold, both requiring source first-contact before Student proof execution.
+The conceptual gain is an LCM vocabulary layer and a concrete complete-monotone but non-Stieltjes separator. The next Advisor pass should select a fresh source problem with this stronger class-separation vocabulary available; preferred candidates from the same forage are the reciprocal Alzer--Berg Gini Gamma quotient frontier or Karp eventual complete-monotonicity threshold, both requiring source first-contact before Student proof execution.
 
 As of `20260530T190500-0300`, a narrowed source-open Scout forage `FC-20260530T-elegance-029` was run through Oracle. Oracle again followed the stale-session-then-force-fresh path and returned a source-open Alzer--Berg reciprocal Gini Gamma quotient frontier. The source defines
 \[
@@ -723,7 +723,7 @@ T\text{-KS-shift-ratio-times-x-CBF}.
 \]
 The general-\(\sigma\), arbitrary-\(\delta\), and parameter-relaxation frontiers remain open. This is strong theory growth and may be application-eligible after a strict audit of Karp--Sitnik's exact open-question wording; do not stage it as an application before that audit.
 
-As of `20260530T195500-0300`, the strict Karp--Sitnik source-wording audit was completed. The source explicitly lists open problems about multivariate expressions and analytic-continuation extensions for \(g\), relaxing Theorem 1 parameter restrictions, two inequality conjectures, and a Thomae-identity derivation. It does not explicitly ask whether the \(\sigma=1,\delta=1\) shifted quotient is Stieltjes/CM or whether \(xR(x)\) is CBF. Therefore the admitted Karp theorem is demoted to bridge-only theory growth, not a solved external application from this source. The next Advisor/Scout cycle should rotate to a new source-open problem and use the Stieltjes reciprocal-defect quotient bridge only when it genuinely helps the new source problem.
+As of `20260530T195500-0300`, the strict Karp--Sitnik source-wording audit was completed. The source explicitly lists open problems about multivariate expressions and analytic-continuation extensions for \(g\), relaxing Theorem 1 parameter restrictions, two inequality conjectures, and a Thomae-identity derivation. It does not explicitly ask whether the \(\sigma=1,\delta=1\) shifted quotient is Stieltjes/CM or whether \(xR(x)\) is CBF. Therefore the admitted Karp theorem is demoted to bridge-only theory growth, not a solved external application from this source. The next Advisor/Scout cycle should rotate to a new source problem and use the Stieltjes reciprocal-defect quotient bridge only when it genuinely helps the new source problem.
 
 As of `20260530T194200-0300`, Scout forage `FI-20260530T-elegance-032` was run through Oracle with the normal one-hour awaiting window. The helper reported the stale-session-then-force-fresh path and captured a valid response. Primary-source audit of Mishra--Swaminathan, arXiv:2511.07443, confirmed a genuine source-open statement: the \(n=0\) Stieltjes behavior of the Ramanujan integral
 \[
@@ -820,7 +820,7 @@ T\text{-From-Mills-general-L-bound-theorem-open-problem}
 \]
 to true. This is a solved source-open application candidate, not a public staging event. Wait for Oracle audit status, validate the graph, then rotate to a fresh non-public-app candidate; do not grind individual Mills \(L\) values.
 
-As of `20260530T212800-0300`, forage `FI-20260530T-elegance-038` produced a second solved source-open problem after a process fix. The public-application matcher initially rejected the candidate as `APP-0012` because the candidate text explicitly said it was not `APP-0012`; the matcher now ignores negated app-id mentions and does not match unrelated problems by the same author when the only distinctive overlap is the author name. Primary-source audit of Baricz, "Turan type inequalities for hypergeometric functions", confirms that the source asks whether
+As of `20260530T212800-0300`, forage `FI-20260530T-elegance-038` produced a second solved source problem after a process fix. The public-application matcher initially rejected the candidate as `APP-0012` because the candidate text explicitly said it was not `APP-0012`; the matcher now ignores negated app-id mentions and does not match unrelated problems by the same author when the only distinctive overlap is the author name. Primary-source audit of Baricz, "Turan type inequalities for hypergeometric functions", confirms that the source asks whether
 \[
 x\mapsto\frac{\Gamma(x)\Gamma(x-a+b)}{\Gamma(x-a)\Gamma(x+b)}
 \]
@@ -903,7 +903,7 @@ T\text{-Chen-Choi-Conjecture1-Gurland-ratio-solved}.
 \]
 Validation passed JSON/schema/graph/contradiction checks and a blocklist regression: the exact Chen--Choi reciprocal-variable repeat is hard-blocked as `BL-20260531-chen-choi-gurland-logcm-solved`, while shifted/source-distinct Gurland-ratio families remain allowed.
 
-As of `20260531T040400-0300`, live Oracle forage `ORACLE-FI-20260531T-rolling-062` completed through the repaired blank ChatGPT Scout target. It did not solve a fresh source-open problem. Candidate 1, the Chiu--Yin ladder-height converse for complete monotonicity in the Sparre Andersen model, was marked only as an open theory candidate: Oracle found the deconvolution obstruction and a small equilibrium-tail partial, not a proof of the full converse. Candidate 2, the Berg--Bradley logarithmic quotient theorem for
+As of `20260531T040400-0300`, live Oracle forage `ORACLE-FI-20260531T-rolling-062` completed through the repaired blank ChatGPT Scout target. It did not solve a fresh source problem. Candidate 1, the Chiu--Yin ladder-height converse for complete monotonicity in the Sparre Andersen model, was marked only as an open theory candidate: Oracle found the deconvolution obstruction and a small equilibrium-tail partial, not a proof of the full converse. Candidate 2, the Berg--Bradley logarithmic quotient theorem for
 \[
 f_r(x)=\frac{\log(1+rx)}{\log(1+x)},
 \]
@@ -1043,7 +1043,7 @@ R_{a,b}(x)=
 \frac{{}_2F_1(1,a+1;b+1;-x)}
 {{}_2F_1(1,a;b;-x)}.
 \]
-The source-wording audit `LA-20260530T-karp-sitnik-source-wording-audit` remains controlling: this slice is bridge-only/no-application and must not appear as Candidate 1, source-open, solved, or application-eligible unless a newer primary-source audit explicitly reverses the decision. Fixed-\(s\) zeta-tail parameter farming beyond the public \(s=7,8\) applications is also hard-blocked. The next forage should rotate to genuinely new source-open problems or a broad conceptual bridge, with diversity across authors.
+The source-wording audit `LA-20260530T-karp-sitnik-source-wording-audit` remains controlling: this slice is bridge-only/no-application and must not appear as Candidate 1, source-open, solved, or application-eligible unless a newer primary-source audit explicitly reverses the decision. Fixed-\(s\) zeta-tail parameter farming beyond the public \(s=7,8\) applications is also hard-blocked. The next forage should rotate to genuinely new source problems or a broad conceptual bridge, with diversity across authors.
 
 As of `20260530T224133-0300`, Oracle forage `FI-20260530T-elegance-043` passed the new Karp--Sitnik/Gauss-Beta and fixed-\(s\) zeta-tail blocklist gates, but its priority-1 Qi--Agarwal sinh-trigamma item was demoted by novelty audit. Qi--Agarwal explicitly asked whether
 \[

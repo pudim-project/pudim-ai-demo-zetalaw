@@ -4,7 +4,7 @@ type: "theorem"
 title: "T-polygamma-product-higher-curvature-CM-obstruction"
 status: "proved"
 tags: ["application-bridge", "complete-monotonicity", "pointwise-obstruction", "polygamma", "proved", "source-open-solved", "theorem"]
-parents: ["T-Pointwise-obstruction-certificate-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Pointwise-obstruction-certificate-principle"]
 refs: ["raw/student/20260605T-bridge-polygamma-product-higher-curvature-obstruction.md", "theory/latest/THEORY.tex#thm:pn-complete-monotonicity-counterexample"]
 ---
 
@@ -16,8 +16,8 @@ For the higher-order Qi--Lim--Nantomah polygamma products \(P_n(x)=\psi^{(n)}(x)
 
 ## Dependencies
 
-- [[wiki/nodes/T-Pointwise-obstruction-certificate-principle|T-Pointwise-obstruction-certificate-principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Pointwise-obstruction-certificate-principle|T-Pointwise-obstruction-certificate-principle]]
 
 ## Proof and provenance references
 

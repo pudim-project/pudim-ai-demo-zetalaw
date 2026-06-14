@@ -4,7 +4,7 @@ type: "theorem"
 title: "not Qi h_lambda degree four conjecture"
 status: "proved"
 tags: ["application-candidate", "complete-monotonicity", "degree", "polygamma", "proved", "qi", "refutation", "theorem"]
-parents: ["T-Special-function-normal-form-calculus-principle", "T-Qi-hlambda-x4-source-range-not-CM"]
+parents: ["T-Qi-hlambda-x4-source-range-not-CM", "T-Special-function-normal-form-calculus-principle"]
 refs: ["librarian/audits/LA-20260531T000800-qi-hlambda-degree-refutation.json", "oracle/responses/ORACLE-OS-20260531T-qi-hlambda-degree-refutation-oracle-response.md", "raw/student/20260531T000800-qi-hlambda-degree-refutation.md", "wiki/notes/frontier-qi-hlambda-degree-refutation.md"]
 ---
 
@@ -16,8 +16,8 @@ not(For \(\Psi(x)=[\psi'(x)]^2+\psi''(x)\) and \(h_\lambda(x)=\Psi(x)-(x^2+\lamb
 
 ## Dependencies
 
-- [[wiki/nodes/T-Special-function-normal-form-calculus-principle|Special-function normal-form calculus principle]]
 - [[wiki/nodes/T-Qi-hlambda-x4-source-range-not-CM|Qi h_lambda degree four transforms are not completely monotone on source ranges]]
+- [[wiki/nodes/T-Special-function-normal-form-calculus-principle|Special-function normal-form calculus principle]]
 
 ## Proof and provenance references
 

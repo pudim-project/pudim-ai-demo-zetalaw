@@ -41,7 +41,7 @@ _No extractable public proof fragment was found for this proved theorem-like nod
 
 ## Do not claim
 
-- Do not claim this is a source-open problem.
+- Do not claim this is a source problem.
 - Do not claim PNT is required.
 - Do not claim a uniform asymptotic constant.
 

@@ -1,14 +1,21 @@
 {
-  "date_utc": "20260605T095708Z",
-  "public_paths": {
-    "latex": "theory/versions/v015/THEORY_v015.tex",
-    "pdf": "theory/versions/v015/THEORY_v015.pdf",
-    "wiki_latest": "wiki/latest",
-    "wiki_snapshot": "wiki/versions/stage_v015"
-  },
-  "repo_full_name": "pudim-project/pudim-ai-demo-zetalaw",
-  "stage_id": "stage_v015",
-  "theory_version": "v015",
+  "stage_id": "stage_v016",
+  "theory_version": "v016",
+  "created_at": "2026-06-14T17:13:42Z",
+  "source_root": "C:\\Users\\domin\\OneDrive\\Projects_Codex\\pudim\\zetalaw-demov2",
+  "status": "pdf_compiled",
+  "public_scope": "public_repo",
+  "presentation_mode": "legacy-v013",
+  "staged_input_policy": "synthesize",
+  "frontier_render_policy": "report-only",
+  "case_study_count": 6,
+  "previous_tex": "C:\\Users\\domin\\OneDrive\\Projects_Codex\\pudim\\zetalaw-demov2\\theory\\latest\\THEORY.tex",
+  "previous_spec": "",
+  "latex_path": "theory/versions/v016/THEORY_v016.tex",
+  "pdf_path": "theory/versions/v016/THEORY_v016.pdf",
+  "latest_pdf_path": "theory/latest/THEORY.pdf",
+  "spec_path": "theory/spec/versions/v016",
+  "latest_spec_path": "theory/spec/latest",
   "public_doc_paths": [
     "README.md",
     "APPLICATIONS.md",
@@ -16,5 +23,39 @@
     "HUMANS.md",
     "STAGE_MANIFEST.json"
   ],
-  "warning": ""
+  "node_counts": {
+    "true": 462,
+    "open": 212,
+    "included_true": 80,
+    "included_open": 40
+  },
+  "presentation_artifacts": {
+    "presentation_plan": "staging/presentation_plan.json",
+    "app_lock_report": "staging/app_lock_report.json",
+    "dependency_render_audit": "staging/dependency_render_audit.json",
+    "theory_quality_audit": "staging/theory_quality_audit.json",
+    "theory_quality_goal_request": "staging/theory_quality_goal_request.json",
+    "human_readability_audit": "staging/human_readability_audit.json",
+    "node_healthcheck": "staging/node_healthcheck.json",
+    "staging_spec_manifest": "staging/staging_spec_manifest.json",
+    "spec_update_audit": "staging/spec_update_audit.json",
+    "application_registry_report": "staging/application_registry_report.json",
+    "staged_theory_json": "staging/STAGED_THEORY.json",
+    "staged_theory_md": "staging/STAGED_THEORY.md",
+    "application_atlas_tex": "staging/APPLICATION_ATLAS.tex",
+    "build_report_md": "staging/BUILD_REPORT.md"
+  },
+  "application_registry_path": "C:\\Users\\domin\\OneDrive\\Projects_Codex\\pudim\\zetalaw-demov2\\APPLICATION_REGISTRY.yml",
+  "application_registry_report": "staging/application_registry_report.json",
+  "theory_quality_score": 100,
+  "theory_quality_status": "passed",
+  "forbidden_terms_scan": "passed",
+  "audit": {
+    "issues": []
+  },
+  "wiki_snapshot_path": "wiki/versions/stage_v016",
+  "wiki_latest_path": "wiki/latest",
+  "wiki_node_count": 690,
+  "wiki_edge_count": 1057,
+  "pdf_engine": "auto"
 }

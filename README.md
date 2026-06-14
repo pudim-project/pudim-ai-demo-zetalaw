@@ -2,14 +2,14 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v015`, staged on 2026-06-06.
+This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v016`, staged on 2026-06-14.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v015/THEORY_v015.tex`](theory/versions/v015/THEORY_v015.tex)
-- Versioned PDF: [`theory/versions/v015/THEORY_v015.pdf`](theory/versions/v015/THEORY_v015.pdf)
+- Versioned TeX: [`theory/versions/v016/THEORY_v016.tex`](theory/versions/v016/THEORY_v016.tex)
+- Versioned PDF: [`theory/versions/v016/THEORY_v016.pdf`](theory/versions/v016/THEORY_v016.pdf)
 
 ## Abstract
 
@@ -17,7 +17,34 @@ We study the Riemann zeta function as the partition function of the probability 
 
 The public theory develops a common positivity calculus for zeta, gamma, polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, Bernstein, determinant, moment-ratio, endpoint-obstruction, and finite Weyl-algebra applications. Its reusable mechanisms include Laplace kernels, moment-ratio reductions, determinant compression, stable subordination, triangular coefficient extraction, endpoint obstructions, exact rational certificates, and Wick-dual extremal functionals.
 
-The public ledger for `v015` contains 50 solved applications, `APP-0001` through `APP-0050`, with immutable APP identifiers and source references.
+The public ledger for `v016` contains 70 solved applications, `APP-0001` through `APP-0070`, with immutable APP identifiers and source references.
+
+## New In v016
+
+The `v016` stage adds 20 solved applications. This index gives the stable APP id, public result name, mechanism family, and proof node in the public wiki vault.
+
+| APP | Name | Mechanism | Proof node |
+| --- | --- | --- | --- |
+| `APP-0051` | Townes real-valued Poisson-mixture ID-to-DID conjecture is false | Endpoint and complete-monotonicity obstructions | [`T-not-Townes-PoissonMixture-ID-implies-DID-conjecture`](wiki/latest/wiki/nodes/T-not-Townes-PoissonMixture-ID-implies-DID-conjecture.md) |
+| `APP-0052` | Das-Swaminathan multiple-gamma Bernstein question is false | Gamma and Bernstein obstructions | [`T-not-DasSwaminathan-fn-Bernstein-all-n`](wiki/latest/wiki/nodes/T-not-DasSwaminathan-fn-Bernstein-all-n.md) |
+| `APP-0053` | arsinh-square logarithmic derivative is not Stieltjes | Stieltjes boundary obstructions | [`T-not-ArsinhSquare-log-derivative-Stieltjes`](wiki/latest/wiki/nodes/T-not-ArsinhSquare-log-derivative-Stieltjes.md) |
+| `APP-0054` | GRWS Sector II weights-squared Bernstein interpolation fails | Hausdorff moment and Bernstein obstructions | [`T-GRWS-SectorII-No-BF-WeightSquared-Interpolation`](wiki/latest/wiki/nodes/T-GRWS-SectorII-No-BF-WeightSquared-Interpolation.md) |
+| `APP-0055` | Snake-polynomial Chebyshev positivity conjecture is false | Finite certificate obstructions | [`T-not-SnakePolynomial-Chebyshev-ConvexMajorant-Conjecture7-1`](wiki/latest/wiki/nodes/T-not-SnakePolynomial-Chebyshev-ConvexMajorant-Conjecture7-1.md) |
+| `APP-0056` | BPV Bessel K logarithmic-derivative quotient monotonicity is classified | Bessel endpoint obstructions | [`T-BPV-BesselK-full-monotonicity-classification`](wiki/latest/wiki/nodes/T-BPV-BesselK-full-monotonicity-classification.md) |
+| `APP-0057` | Qi log-concave convolution lower bound is strictly improved | Log-concavity and convolution bounds | [`T-Qi-LogConcaveConvolution-StrictImprovement-Example`](wiki/latest/wiki/nodes/T-Qi-LogConcaveConvolution-StrictImprovement-Example.md) |
+| `APP-0058` | Bazhlekova two-seed Wright/Bernstein gap condition is relaxable | Bernstein transport and Wright-kernel certificates | [`T-Bazhlekova-TwoSeed-SourcePackage-Relaxation`](wiki/latest/wiki/nodes/T-Bazhlekova-TwoSeed-SourcePackage-Relaxation.md) |
+| `APP-0059` | Guo ASCM/SCM Theorem 45 condition can be waived | Derivative-chain composition | [`T-Guo-ASCM-SCM-DerivativeComposition-NoCondition`](wiki/latest/wiki/nodes/T-Guo-ASCM-SCM-DerivativeComposition-NoCondition.md) |
+| `APP-0060` | Baricz coefficient-ratio complete-monotonicity transfer is false | Coefficient extraction and endpoint obstructions | [`T-Baricz-CoefficientRatio-CMTransfer-Counterexample`](wiki/latest/wiki/nodes/T-Baricz-CoefficientRatio-CMTransfer-Counterexample.md) |
+| `APP-0061` | Khasnis-Sholapurkar Question 4.6 has a negative answer | Hausdorff slice endpoint obstructions | [`T-Khasnis-Sholapurkar-Q46-NegativeAnswer`](wiki/latest/wiki/nodes/T-Khasnis-Sholapurkar-Q46-NegativeAnswer.md) |
+| `APP-0062` | Barbosa-Menegatto endpoint additive kernel is not strictly positive definite | Finite product-kernel certificates | [`T-BarbosaMenegatto-endpoint-additive-rectangle-not-SPD`](wiki/latest/wiki/nodes/T-BarbosaMenegatto-endpoint-additive-rectangle-not-SPD.md) |
+| `APP-0063` | Yamazaki generalized-Karcher operator-norm conjecture is false | Scalar certificates for operator conjectures | [`T-Yamazaki-GKE-operator-norm-conjecture-scalar-counterexample`](wiki/latest/wiki/nodes/T-Yamazaki-GKE-operator-norm-conjecture-scalar-counterexample.md) |
+| `APP-0064` | Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false | Scalar certificates for matrix mean questions | [`T-DLNV-MatrixPowerMeanInverse-ScalarRefutation`](wiki/latest/wiki/nodes/T-DLNV-MatrixPowerMeanInverse-ScalarRefutation.md) |
+| `APP-0065` | JKS alpha-two kernel is not TN5 by a symmetric determinant witness | Finite determinant obstructions | [`T-JKS-Alpha2-NotTN5-PSDWitness`](wiki/latest/wiki/nodes/T-JKS-Alpha2-NotTN5-PSDWitness.md) |
+| `APP-0066` | Li cubic inverse-polynomial Bernstein branch has discriminant criterion | Inverse-ODE and Pringsheim obstructions | [`T-Li-CubicInversePolynomial-BF-Discriminant`](wiki/latest/wiki/nodes/T-Li-CubicInversePolynomial-BF-Discriminant.md) |
+| `APP-0067` | BPV Bessel K Question 7 has a half-order endpoint counterexample | Bessel endpoint obstructions | [`T-BesselK-Question7-Negative-Endpoint-Counterexample`](wiki/latest/wiki/nodes/T-BesselK-Question7-Negative-Endpoint-Counterexample.md) |
+| `APP-0068` | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | Coefficient and imaginary-axis obstructions | [`T-Kummer-M-Global-Modulus-Inequality-Fails-Alpha1-Beta5halves`](wiki/latest/wiki/nodes/T-Kummer-M-Global-Modulus-Inequality-Fails-Alpha1-Beta5halves.md) |
+| `APP-0069` | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | Laplace-survival and Poissonization | [`T-NagelWeissMecke-LaplaceSurvival-Poissonization-Solution`](wiki/latest/wiki/nodes/T-NagelWeissMecke-LaplaceSurvival-Poissonization-Solution.md) |
+| `APP-0070` | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | Mellin factorization and stable subordination | [`T-DytsoBustinPoor-GeneralizedGaussian-ProductFactorization-Classification`](wiki/latest/wiki/nodes/T-DytsoBustinPoor-GeneralizedGaussian-ProductFactorization-Classification.md) |
 
 ## Applications
 
@@ -75,13 +102,33 @@ All entries below are `Solved`; detailed statements, proofs, and review notes ar
 | APP-0048 | BMR tau-Gauss ordinary concavity is false | [Deepak Bansal, Khaled Mehrez, and Ravinder Krishna Raina, Certain functional inequalities ...](https://www.ilirias.com/jiasf/repository/docs/JIASF12-3-4.pdf) |
 | APP-0049 | Baricz arithmetic/arithmetic zero-balanced hypergeometric threshold | [Anderson--Vuorinen--Zhang, Topics in special functions III, arXiv:1209.1696, quoting Baric...](https://arxiv.org/abs/1209.1696) |
 | APP-0050 | Stolarsky shifted power means with \(p>1\) are not Bernstein | [Adam Bessenyei, On complete monotonicity of some functions related to means, Mathematical ...](https://files.ele-math.com/articles/mia-16-17.pdf) |
+| APP-0051 | Townes real-valued Poisson-mixture ID-to-DID conjecture is false | [Townes, source problem on Poisson mixtures and discrete infinite divisibility, arXiv:2509....](https://arxiv.org/abs/2509.05497) |
+| APP-0052 | Das-Swaminathan multiple-gamma Bernstein question is false | [Sourav Das and A. Swaminathan, Pick Functions Related to the Multiple Gamma Functions of o...](https://arxiv.org/abs/1601.03167) |
+| APP-0053 | arsinh-square logarithmic derivative is not Stieltjes | [Jedidi and Vakeroudis, Windings of planar processes, Exponential Functionals and Asian opt...](https://arxiv.org/abs/1610.07030) |
+| APP-0054 | GRWS Sector II weights-squared Bernstein interpolation fails | [Benhida, Curto, and Exner, Geometrically regular weighted shifts, arXiv:2309.05888; Revist...](https://arxiv.org/abs/2309.05888) |
+| APP-0055 | Snake-polynomial Chebyshev positivity conjecture is false | [Snake-polynomial Chebyshev positivity source, arXiv:2504.04845 and arXiv:2312.07754. https...](https://arxiv.org/abs/2504.04845) |
+| APP-0056 | BPV Bessel K logarithmic-derivative quotient monotonicity is classified | [A. Baricz, S. Ponnusamy, and M. Vuorinen, Functional inequalities for modified Bessel func...](https://arxiv.org/abs/1009.4814) |
+| APP-0057 | Qi log-concave convolution lower bound is strictly improved | [Feng Qi, Completely monotonic degree of a function involving trigamma and tetragamma funct...](https://doi.org/10.3934/math.2020219) |
+| APP-0058 | Bazhlekova two-seed Wright/Bernstein gap condition is relaxable | [Bazhlekova--Bazhlekov two-term fractional diffusion-wave propagation question, arXiv:1707....](https://arxiv.org/abs/1707.09828) |
+| APP-0059 | Guo ASCM/SCM Theorem 45 condition can be waived | [Guo, On Completely Monotonic and Related Functions, Filomat 30(7), DOI 10.2298/FIL1607083G...](https://doi.org/10.2298/FIL1607083G) |
+| APP-0060 | Baricz coefficient-ratio complete-monotonicity transfer is false | [Arpad Baricz, Bounds for modified Bessel functions of the first and second kinds, Proceedi...](https://doi.org/10.1017/S0013091508001016) |
+| APP-0061 | Khasnis-Sholapurkar Question 4.6 has a negative answer | [Khasnis--Sholapurkar, Joint Complete Monotonicity of reciprocal of a polynomial in two var...](https://arxiv.org/abs/2506.08447) |
+| APP-0062 | Barbosa-Menegatto endpoint additive kernel is not strictly positive definite | [Barbosa--Menegatto generalized-Stieltjes product-kernel strict-positive-definiteness sourc...](https://arxiv.org/abs/2006.12217) |
+| APP-0063 | Yamazaki generalized-Karcher operator-norm conjecture is false | [Yamazaki generalized-Karcher equation operator-norm conjecture, arXiv:1802.06200 / Journal...](https://arxiv.org/abs/1802.06200) |
+| APP-0064 | Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false | [Dinh--Le--Nguyen--Vo matrix power-mean inverse question, arXiv:2106.05914, DOI 10.1080/030...](https://arxiv.org/abs/2106.05914) |
+| APP-0065 | JKS alpha-two kernel is not TN5 by a symmetric determinant witness | [Khare, Jain--Karlin--Schoenberg kernel total-positivity question, arXiv:2008.05121. https:...](https://arxiv.org/abs/2008.05121) |
+| APP-0066 | Li cubic inverse-polynomial Bernstein branch has discriminant criterion | [Cheng-Gang Li, Space-Time Duality in Relativistic Diffusion via Subordination, arXiv:2606....](https://arxiv.org/abs/2606.04270) |
+| APP-0067 | BPV Bessel K Question 7 has a half-order endpoint counterexample | [A. Baricz, S. Ponnusamy, and M. Vuorinen, Functional inequalities for modified Bessel func...](https://arxiv.org/abs/1009.4814) |
+| APP-0068 | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | [Garrappa--Gerhold--Popolizio--Simon, On some inequalities for the two-parameter Mittag-Lef...](https://arxiv.org/abs/2410.11852) |
+| APP-0069 | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | [Mecke, Nagel, and Weiss, Joseph Mecke's last fragmentary manuscripts - a compilation, arXi...](https://arxiv.org/abs/1703.10000) |
+| APP-0070 | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | [Dytso, Bustin, and Poor, generalized-Gaussian product-factorization source problem, Axioms...](https://doi.org/10.1186/s40488-018-0088-5) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v015`.
-The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v015`](wiki/versions/stage_v015).
+The latest staged theory snapshot is `stage_v016`.
+The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v016`](wiki/versions/stage_v016).
 
 ## Reading Notes
 

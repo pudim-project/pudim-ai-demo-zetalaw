@@ -4,7 +4,7 @@ type: "theorem"
 title: "new exact inverse zeta tail floor formula beyond s=8 or reusable enclosure template"
 status: "proved"
 tags: ["current-frontier", "fresh-forage", "open-problem", "proved", "proved-s9", "reciprocal-floor", "student", "theorem", "zeta-tail"]
-parents: ["T-Zeta-tail-s9-reusable-certificate", "T-Complete-monotonicity-closure-calculus-principle"]
+parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-Zeta-tail-s9-reusable-certificate"]
 refs: ["librarian/audits/LA-20260527T234000-zeta-tail-s9-ingest.json", "raw/student/20260527T233000-zeta-tail-template.md", "wiki/notes/frontier-zeta-tail-next-template.md"]
 ---
 
@@ -16,8 +16,8 @@ Find a new exact reciprocal zeta-tail floor formula beyond the staged \(s=7\) an
 
 ## Dependencies
 
-- [[wiki/nodes/T-Zeta-tail-s9-reusable-certificate|s=9 inverse zeta tail floor formula with reusable certificate template]]
 - [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
+- [[wiki/nodes/T-Zeta-tail-s9-reusable-certificate|s=9 inverse zeta tail floor formula with reusable certificate template]]
 
 ## Proof and provenance references
 

@@ -4,7 +4,7 @@ type: "theorem"
 title: "tail integration proves adjacent derivative sign region inclusion for Ma Weigert log functions"
 status: "proved"
 tags: ["complete-monotonicity", "integration-principle", "log-functions", "ma-weigert", "proved", "signed-derivatives", "theorem"]
-parents: ["T-log-function-signed-derivative-tail-vanishing", "D-Log-function-derivative-chain-language"]
+parents: ["D-Log-function-derivative-chain-language", "T-log-function-signed-derivative-tail-vanishing"]
 refs: ["attack-plans/AP-20260529T-next-loop-ma-weigert-log-chain.json", "librarian/audits/LA-20260529T-next-loop-ma-weigert-student.json", "raw/student/20260529T-next-loop-ma-weigert-log-chain.md", "wiki/notes/frontier-ma-weigert-log-function-chain.md"]
 ---
 
@@ -16,8 +16,8 @@ For \(f\in\mathcal F_{1,n}\), if \(L^{k+1}f\ge0\) on \((0,\infty)\), then \(L^k 
 
 ## Dependencies
 
-- [[wiki/nodes/T-log-function-signed-derivative-tail-vanishing|log function signed derivative polynomial normal form and tail vanishing]]
 - [[wiki/nodes/D-Log-function-derivative-chain-language|Log-function derivative-sign regions]]
+- [[wiki/nodes/T-log-function-signed-derivative-tail-vanishing|log function signed derivative polynomial normal form and tail vanishing]]
 
 ## Proof and provenance references
 

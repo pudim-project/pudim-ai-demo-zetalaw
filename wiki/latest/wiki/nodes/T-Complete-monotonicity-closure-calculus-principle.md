@@ -5,7 +5,7 @@ title: "Complete-monotonicity closure calculus principle"
 status: "proved"
 tags: ["bernstein", "closure-calculus", "complete-monotonicity", "primitive", "principle", "proved", "structural-tool", "theorem"]
 parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language"]
-refs: ["raw/student/20260605T-primitive-complete-monotonicity-closure-calculus-principle.md"]
+refs: ["raw/student/20260605T-primitive-complete-monotonicity-closure-calculus-principle.md", "raw/student/20260614T-v016-primitive-complete-monotonicity-closure-public.md"]
 ---
 
 # Theorem: Complete-monotonicity closure calculus principle
@@ -21,12 +21,21 @@ Complete monotonicity, logarithmic complete monotonicity, Stieltjes, Bernstein, 
 ## Proof and provenance references
 
 - `raw/student/20260605T-primitive-complete-monotonicity-closure-calculus-principle.md`
+- `raw/student/20260614T-v016-primitive-complete-monotonicity-closure-public.md`
 
-## Proof source health
+## Proof
 
-_No extractable public proof fragment was found for this proved theorem-like node._
+A completely monotone function has a positive Laplace representation
+\[
+f(x)=\int_{[0,\infty)} e^{-xt}\,d\mu(t),
+\]
+so
+\[
+(-1)^nf^{(n)}(x)=\int_{[0,\infty)}t^ne^{-xt}\,d\mu(t)\ge0.
+\]
+Positive sums and mixtures add the representing measures. The Stieltjes and Bernstein derivative criteria reduce to the same positivity of representing measures or of \(f'\). Thus once an expression is reduced by these standard closure operations to positive measures, reciprocal transforms, derivative criteria, or Bernstein composition, the required complete-monotonicity or Bernstein conclusion follows.
 
-- raw/student/20260605T-primitive-complete-monotonicity-closure-calculus-principle.md: no extractable public mathematical proof text
+_Proof source: `raw/student/20260614T-v016-primitive-complete-monotonicity-closure-public.md`._
 
 ## Tags
 

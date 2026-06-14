@@ -4,7 +4,7 @@ type: "theorem"
 title: "reciprocal arctan is completely monotone but not Stieltjes"
 status: "proved"
 tags: ["arctan", "bridge-patch", "complete-monotonicity", "proved", "separator", "stieltjes", "theorem"]
-parents: ["T-arctan-not-Bernstein", "T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-arctan-not-Bernstein", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["librarian/audits/LA-20260530T-elegance-028-arctan-bridge.json", "raw/student/20260530T-elegance-028-arctan-lcm-bridge.md", "wiki/notes/bridge-reciprocal-arctan-lcm-stieltjes.md"]
 ---
 
@@ -16,9 +16,9 @@ The function \(x\mapsto1/\arctan x\) is not a Stieltjes function.
 
 ## Dependencies
 
+- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 - [[wiki/nodes/T-arctan-not-Bernstein|arctan is not Bernstein since derivative is not completely monotone]]
 - [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
-- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references
 

@@ -4,7 +4,7 @@ type: "theorem"
 title: "Tsallis 2 heat flow entropy derivative is completely monotone and increments are Bernstein"
 status: "proved"
 tags: ["bernstein-increment", "bridge-patch", "complete-monotonicity", "entropy", "heat-flow", "proved", "theorem", "tsallis"]
-parents: ["T-heat-flow-L2-energy-completely-monotone", "T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle", "T-heat-flow-L2-energy-completely-monotone"]
 refs: ["librarian/audits/LA-20260529T-next-loop-heat-flow-l2-student.json", "raw/student/20260529T-next-loop-heat-flow-l2.md", "wiki/notes/frontier-heat-flow-l2-spectral-laplace.md"]
 ---
 
@@ -16,9 +16,9 @@ For \(S_2(t)=1-\int_{\mathbb R^d}(G_t*\mu)(x)^2\,dx\), the derivative \(S_2'(t)\
 
 ## Dependencies
 
-- [[wiki/nodes/T-heat-flow-L2-energy-completely-monotone|heat flow L2 energy is completely monotone in heat time]]
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
+- [[wiki/nodes/T-heat-flow-L2-energy-completely-monotone|heat flow L2 energy is completely monotone in heat time]]
 
 ## Proof and provenance references
 

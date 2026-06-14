@@ -4,7 +4,7 @@ type: "theorem"
 title: "generalized Stieltjes classes are closed under product with order addition"
 status: "proved"
 tags: ["bridge-patch", "finite-order", "generalized-stieltjes", "product-closure", "proved", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-generalized-Stieltjes-beta-product-kernel", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["T-generalized-Stieltjes-beta-product-kernel", "D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["librarian/audits/LA-20260530T-kp-gbf-bridge-mainardi-demotion.json", "librarian/audits/LA-20260530T-stieltjes-product-simon-partial.json", "raw/student/20260530T-kp-gbf-bridge-mainardi-demotion.md", "raw/student/20260530T-stieltjes-product-simon-partial.md", "wiki/definitions/generalized-stieltjes-bernstein-order.md"]
 ---
 
@@ -16,9 +16,9 @@ For \(\lambda_1,\lambda_2>0\), the product of a function in \(\mathcal S_{\lambd
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/T-generalized-Stieltjes-beta-product-kernel|beta identity represents product of generalized Stieltjes kernels as order-sum kernel mixture]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 
 ## Proof and provenance references
 

@@ -4,7 +4,7 @@ type: "theorem"
 title: "alpha two Tsallis entropy along heat flow has square derivative identity and CM signs"
 status: "proved"
 tags: ["attack-plan", "diagnostic", "heat-flow", "mixed", "noise-stability", "proved", "theorem", "tsallis"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["librarian/audits/LA-20260528T121000-tsallis-alpha2-noise-stability.json", "raw/student/20260528T120500-tsallis-alpha2-noise-stability.md", "wiki/notes/frontier-renyi-tsallis-heat-flow-cm.md"]
 ---
 
@@ -16,8 +16,8 @@ For a one-dimensional heat-flow density \(p(x,t)=T_t f(x)\), the order-two Tsall
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 
 ## Proof and provenance references
 

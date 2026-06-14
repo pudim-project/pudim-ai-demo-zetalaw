@@ -4,7 +4,7 @@ type: "theorem"
 title: "reciprocal arctan is completely monotone"
 status: "proved"
 tags: ["arctan", "bridge-patch", "complete-monotonicity", "proved", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-reciprocal-arctan-LCM", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle", "T-reciprocal-arctan-LCM"]
 refs: ["librarian/audits/LA-20260530T-elegance-028-arctan-bridge.json", "raw/student/20260530T-elegance-028-arctan-lcm-bridge.md", "wiki/notes/bridge-reciprocal-arctan-lcm-stieltjes.md"]
 ---
 
@@ -16,9 +16,9 @@ The function \(x\mapsto1/\arctan x\) is completely monotone on \((0,\infty)\).
 
 ## Dependencies
 
+- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 - [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/T-reciprocal-arctan-LCM|reciprocal arctan is logarithmically completely monotone]]
-- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references
 

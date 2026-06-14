@@ -4,7 +4,7 @@ type: "theorem"
 title: "beta identity represents product of generalized Stieltjes kernels as order-sum kernel mixture"
 status: "proved"
 tags: ["beta-kernel", "bridge-patch", "generalized-stieltjes", "product-closure", "proved", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["librarian/audits/LA-20260530T-stieltjes-product-simon-partial.json", "oracle/responses/ORACLE-FI-20260530T-elegance-034-oracle-forage-response.md", "raw/scout/FI-20260530T-elegance-034.md", "raw/student/20260530T-stieltjes-product-simon-partial.md", "wiki/definitions/generalized-stieltjes-bernstein-order.md"]
 ---
 
@@ -16,8 +16,8 @@ For \(\alpha,\beta>0\), \(s,t\ge0\), and \(x>0\), the product \((x+s)^{-\alpha}(
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 
 ## Proof and provenance references
 

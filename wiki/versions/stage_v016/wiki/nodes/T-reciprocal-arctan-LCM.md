@@ -4,7 +4,7 @@ type: "theorem"
 title: "reciprocal arctan is logarithmically completely monotone"
 status: "proved"
 tags: ["arctan", "bridge-patch", "complete-monotonicity", "logarithmically-completely-monotone", "proved", "theorem"]
-parents: ["T-Jovanovic-Treml-arctan-logderivative-CM", "T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["T-Jovanovic-Treml-arctan-logderivative-CM", "D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["librarian/audits/LA-20260530T-elegance-028-arctan-bridge.json", "oracle/responses/ORACLE-FI-20260530T-elegance-028-oracle-forage-response.md", "raw/student/20260530T-elegance-028-arctan-lcm-bridge.md", "wiki/definitions/logarithmically-completely-monotone.md", "wiki/notes/bridge-reciprocal-arctan-lcm-stieltjes.md"]
 ---
 
@@ -17,8 +17,8 @@ The function \(x\mapsto1/\arctan x\) is logarithmically completely monotone on \
 ## Dependencies
 
 - [[wiki/nodes/T-Jovanovic-Treml-arctan-logderivative-CM|reciprocal arctan logarithmic derivative has source imported complete monotonicity]]
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 
 ## Proof and provenance references
 

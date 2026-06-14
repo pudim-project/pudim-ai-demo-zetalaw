@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bondesson Steutel c=1/2 canonical r sequence completely monotone"
 status: "proved"
 tags: ["attack-plan", "branching-process", "complete-monotonicity", "hausdorff-moment", "proved", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-BS-c-half-Catalan-Hausdorff-representation", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["T-BS-c-half-Catalan-Hausdorff-representation", "T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
 refs: ["attack-plans/AP-20260528T151000-bondesson-steutel-shifted-cm.json", "librarian/audits/LA-20260528T151500-bondesson-steutel-student.json", "raw/student/20260528T151500-bondesson-steutel-shifted-cm.md", "wiki/notes/frontier-bondesson-steutel-shifted-cm.md"]
 ---
 
@@ -16,8 +16,8 @@ For the Bondesson--Steutel distribution at \(c=1/2\), the canonical sequence \(r
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/T-BS-c-half-Catalan-Hausdorff-representation|Bondesson Steutel c=1/2 Catalan beta Hausdorff representation]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references

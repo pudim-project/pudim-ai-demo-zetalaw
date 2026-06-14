@@ -4,7 +4,7 @@ type: "theorem"
 title: "incomplete beta tail derivative has positive discrete Laplace representation for lambda at most one"
 status: "proved"
 tags: ["bernstein-function", "bridge-patch", "complete-monotonicity", "incomplete-beta", "laplace-transform", "proved", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language", "D-Laplace-kernel-and-tilted-moment-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "D-Laplace-kernel-and-tilted-moment-language", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["attack-plans/AP-20260529T-next-loop-incomplete-beta-tail.json", "librarian/audits/LA-20260529T-next-loop-incomplete-beta-tail-student.json", "raw/oracle/ORACLE-FI-20260529T-next-loop-026.md", "raw/student/20260529T-next-loop-incomplete-beta-tail.md", "scout/forage/responses/FR-20260529T-next-loop-026-oracle-response.md", "wiki/notes/frontier-incomplete-beta-tail-bernstein.md"]
 ---
 
@@ -16,9 +16,9 @@ For \(b>0\) and \(0<\lambda\le1\), the derivative of \(I_{b,\lambda}(x)=B(b,\lam
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 - [[wiki/nodes/D-Laplace-kernel-and-tilted-moment-language|Laplace kernels and tilted moment ratios]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 
 ## Proof and provenance references
 

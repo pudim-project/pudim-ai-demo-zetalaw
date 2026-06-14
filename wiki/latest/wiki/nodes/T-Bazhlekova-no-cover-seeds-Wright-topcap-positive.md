@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bazhlekova no cover seeds Wright topcap limit positive"
 status: "proved"
 tags: ["attack-plan", "bazhlekova", "proved", "theorem", "top-cap", "wright-limit"]
-parents: ["T-endpoint-log-derivative-monotonicity-principle", "T-Bazhlekova-Wright-branch-audited-kernel-positive", "T-Bazhlekova-Wright-finite-window-tail-bridge", "T-Bazhlekova-Wright-two-seed-certified-positive-envelope", "T-Bazhlekova-Wright-positive-kernel-structure", "T-Bazhlekova-Wright-Watson-tail-closes-post-ten-gap"]
+parents: ["T-Bazhlekova-Wright-Watson-tail-closes-post-ten-gap", "T-Bazhlekova-Wright-branch-audited-kernel-positive", "T-Bazhlekova-Wright-finite-window-tail-bridge", "T-Bazhlekova-Wright-two-seed-certified-positive-envelope", "T-Bazhlekova-Wright-positive-kernel-structure", "T-endpoint-log-derivative-monotonicity-principle"]
 refs: ["librarian/audits/LA-20260601T023000-bazhlekova-post-ten-wright-tail-student.json", "theory/edges/E-Bazhlekova-Wright-finite-window-bridge-implies-topcap-positive.json", "theory/nodes/T-Bazhlekova-Wright-finite-window-tail-bridge.json", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
 ---
 
@@ -16,12 +16,12 @@ At the no-cover seeds \((a,b)=(3/2,2/5)\) and \((11/10,1/20)\), the Wright top-c
 
 ## Dependencies
 
-- [[wiki/nodes/T-endpoint-log-derivative-monotonicity-principle|T-endpoint-log-derivative-monotonicity-principle]]
+- [[wiki/nodes/T-Bazhlekova-Wright-Watson-tail-closes-post-ten-gap|Bazhlekova Wright Watson tail closes post ten positivity gap]]
 - [[wiki/nodes/T-Bazhlekova-Wright-branch-audited-kernel-positive|Bazhlekova Wright branch audited positive kernel representation]]
 - [[wiki/nodes/T-Bazhlekova-Wright-finite-window-tail-bridge|Bazhlekova Wright finite window asymptotic tail bridge]]
 - [[wiki/nodes/T-Bazhlekova-Wright-two-seed-certified-positive-envelope|Bazhlekova Wright two seed certified positive envelope]]
 - [[wiki/nodes/T-Bazhlekova-Wright-positive-kernel-structure|Bazhlekova Wright no cover seed positive kernel structure]]
-- [[wiki/nodes/T-Bazhlekova-Wright-Watson-tail-closes-post-ten-gap|Bazhlekova Wright Watson tail closes post ten positivity gap]]
+- [[wiki/nodes/T-endpoint-log-derivative-monotonicity-principle|T-endpoint-log-derivative-monotonicity-principle]]
 
 ## Proof and provenance references
 

@@ -4,7 +4,7 @@ type: "theorem"
 title: "heat flow L2 energy has Fourier spectral positive Laplace representation"
 status: "proved"
 tags: ["bridge-patch", "entropy", "forage", "heat-flow", "laplace-transform", "plancherel", "proved", "theorem"]
-parents: ["T-positive-Laplace-kernel-complete-monotonicity-principle", "D-Laplace-kernel-and-tilted-moment-language"]
+parents: ["D-Laplace-kernel-and-tilted-moment-language", "T-positive-Laplace-kernel-complete-monotonicity-principle"]
 refs: ["attack-plans/AP-20260529T-next-loop-heat-flow-l2.json", "librarian/audits/LA-20260529T-next-loop-heat-flow-l2-student.json", "raw/oracle/ORACLE-FI-20260529T-next-loop-024-force.md", "raw/student/20260529T-next-loop-heat-flow-l2.md", "scout/forage/responses/FR-20260529T-next-loop-024-oracle-response.md", "wiki/notes/frontier-heat-flow-l2-spectral-laplace.md"]
 ---
 
@@ -16,8 +16,8 @@ Let \(\mu\) be a probability measure on \(\mathbb R^d\), let \(\widehat G_t(\xi)
 
 ## Dependencies
 
-- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 - [[wiki/nodes/D-Laplace-kernel-and-tilted-moment-language|Laplace kernels and tilted moment ratios]]
+- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 
 ## Proof and provenance references
 

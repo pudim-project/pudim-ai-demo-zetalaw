@@ -1,9 +1,9 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0050` appear in `theory/latest/THEORY.tex` under the manuscript
+`APP-0001`--`APP-0070` appear in `theory/latest/THEORY.tex` under the manuscript
 `Applications` section and in the corresponding theorem names. Applications through
-`APP-0050` are currently staged in `THEORY_v015`.
+`APP-0070` are currently staged in `THEORY_v016`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -57,6 +57,26 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0048 | 2026-06-05 | Decide the ordinary-concavity alternative in the Bansal--Mehrez--Raina tau-Gauss open problem. | The classical subcase \(c=2,\tau=1,z=1-e^{-4}\) has positive parameter curvature near \(a=0\). | Solved | no contact |
 | APP-0049 | 2026-06-05 | Determine the arithmetic/arithmetic zero-balanced hypergeometric concavity threshold in Baricz's mean problem. | The forward inequality holds exactly for \(0<c\le1\); for \(c>1\), an endpoint coefficient obstruction violates concavity. | Solved | no contact |
 | APP-0050 | 2026-06-05 | Decide the \(p>1\) unequal-shift power-mean subfamily of the Chen--Qi/Bessenyei shifted Stolarsky problem. | Exact positive curvature of \(H_p(y+d,y-d)\) rules out the Bernstein property. | Solved | no contact |
+| APP-0051 | 2026-06-14 | Townes real-valued Poisson-mixture ID-to-DID conjecture is false | Townes real-valued Poisson-mixture ID-to-DID conjecture is false | Solved | no contact |
+| APP-0052 | 2026-06-14 | Das-Swaminathan multiple-gamma Bernstein question is false | Das-Swaminathan multiple-gamma Bernstein question is false | Solved | no contact |
+| APP-0053 | 2026-06-14 | arsinh-square logarithmic derivative is not Stieltjes | arsinh-square logarithmic derivative is not Stieltjes | Solved | no contact |
+| APP-0054 | 2026-06-14 | GRWS Sector II weights-squared Bernstein interpolation fails | GRWS Sector II weights-squared Bernstein interpolation fails | Solved | no contact |
+| APP-0055 | 2026-06-14 | Snake-polynomial Chebyshev positivity conjecture is false | Snake-polynomial Chebyshev positivity conjecture is false | Solved | no contact |
+| APP-0056 | 2026-06-14 | BPV Bessel K logarithmic-derivative quotient monotonicity is classified | BPV Bessel K logarithmic-derivative quotient monotonicity is classified | Solved | no contact |
+| APP-0057 | 2026-06-14 | Qi log-concave convolution lower bound is strictly improved | Qi log-concave convolution lower bound is strictly improved | Solved | no contact |
+| APP-0058 | 2026-06-14 | Bazhlekova two-seed Wright/Bernstein gap condition is relaxable | Bazhlekova two-seed Wright/Bernstein gap condition is relaxable | Solved | no contact |
+| APP-0059 | 2026-06-14 | Guo ASCM/SCM Theorem 45 condition can be waived | Guo ASCM/SCM Theorem 45 condition can be waived | Solved | no contact |
+| APP-0060 | 2026-06-14 | Baricz coefficient-ratio complete-monotonicity transfer is false | Baricz coefficient-ratio complete-monotonicity transfer is false | Solved | no contact |
+| APP-0061 | 2026-06-14 | Khasnis-Sholapurkar Question 4.6 has a negative answer | Khasnis-Sholapurkar Question 4.6 has a negative answer | Solved | no contact |
+| APP-0062 | 2026-06-14 | Barbosa-Menegatto endpoint additive kernel is not strictly positive definite | Barbosa-Menegatto endpoint additive kernel is not strictly positive definite | Solved | no contact |
+| APP-0063 | 2026-06-14 | Yamazaki generalized-Karcher operator-norm conjecture is false | Yamazaki generalized-Karcher operator-norm conjecture is false | Solved | no contact |
+| APP-0064 | 2026-06-14 | Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false | Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false | Solved | no contact |
+| APP-0065 | 2026-06-14 | JKS alpha-two kernel is not TN5 by a symmetric determinant witness | JKS alpha-two kernel is not TN5 by a symmetric determinant witness | Solved | no contact |
+| APP-0066 | 2026-06-14 | Li cubic inverse-polynomial Bernstein branch has discriminant criterion | Li cubic inverse-polynomial Bernstein branch has discriminant criterion | Solved | no contact |
+| APP-0067 | 2026-06-14 | BPV Bessel K Question 7 has a half-order endpoint counterexample | BPV Bessel K Question 7 has a half-order endpoint counterexample | Solved | no contact |
+| APP-0068 | 2026-06-14 | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | Solved | no contact |
+| APP-0069 | 2026-06-14 | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | Solved | no contact |
+| APP-0070 | 2026-06-14 | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | Solved | no contact |
 
 ## Application Details
 
@@ -723,3 +743,303 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - public result: For \(p>1\) and unequal shifts, \(H_p(y+d,y-d)\) has positive second derivative, so the shifted power mean is not Bernstein.
 - review status: no contact
 - solution theorem: `T-not-Stolarsky-power-mean-pgt1-Bernstein-all-shifts` in local theory.
+
+### APP-0051: Townes real-valued Poisson-mixture ID-to-DID conjecture is false
+
+- source reference: Townes, source problem on Poisson mixtures and discrete infinite divisibility, arXiv:2509.05497. https://arxiv.org/abs/2509.05497
+- solution: Townes real-valued Poisson-mixture ID-to-DID conjecture is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-not-Townes-PoissonMixture-ID-implies-DID-conjecture.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `T-not-Townes-FiniteInterval-BLT-Root-Preservation`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0051: Townes real-valued Poisson-mixture ID-to-DID conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0052: Das-Swaminathan multiple-gamma Bernstein question is false
+
+- source reference: Sourav Das and A. Swaminathan, Pick Functions Related to the Multiple Gamma Functions of order n, arXiv:1601.03167. https://arxiv.org/abs/1601.03167
+- solution: Das-Swaminathan multiple-gamma Bernstein question is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-not-DasSwaminathan-fn-Bernstein-all-n.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `T-Das2020-logGn-derivative-positivity-source-import`, `T-DasSwaminathan-logGn-unit-sign`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0052: Das-Swaminathan multiple-gamma Bernstein question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0053: arsinh-square logarithmic derivative is not Stieltjes
+
+- source reference: Jedidi and Vakeroudis, Windings of planar processes, Exponential Functionals and Asian options, arXiv:1610.07030. https://arxiv.org/abs/1610.07030
+- solution: arsinh-square logarithmic derivative is not Stieltjes
+- solution status: Solved
+- solution node: `wiki/nodes/T-not-ArsinhSquare-log-derivative-Stieltjes.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `T-ArsinhSquare-log-derivative-completely-monotone`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0053: arsinh-square logarithmic derivative is not Stieltjes. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0054: GRWS Sector II weights-squared Bernstein interpolation fails
+
+- source reference: Benhida, Curto, and Exner, Geometrically regular weighted shifts, arXiv:2309.05888; Revista de la Real Academia de Ciencias Exactas, Fisicas y Naturales. Serie A. Matematicas 119:54 (2025), DOI 10.1007/s13398-025-01719-y. https://arxiv.org/abs/2309.05888
+- solution: GRWS Sector II weights-squared Bernstein interpolation fails
+- solution status: Solved
+- solution node: `wiki/nodes/T-GRWS-SectorII-No-BF-WeightSquared-Interpolation.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `L-BF-Integer-Increments-Are-Hausdorff-CM`, `L-Signed-Atomic-Hausdorff-Negativity-Obstruction`, `L-GRWS-SectorII-Difference-Atomic-Expansion`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0054: GRWS Sector II weights-squared Bernstein interpolation fails. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0055: Snake-polynomial Chebyshev positivity conjecture is false
+
+- source reference: Snake-polynomial Chebyshev positivity source, arXiv:2504.04845 and arXiv:2312.07754. https://arxiv.org/abs/2504.04845
+- solution: Snake-polynomial Chebyshev positivity conjecture is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-not-SnakePolynomial-Chebyshev-ConvexMajorant-Conjecture7-1.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `D-SnakePolynomial-Chebyshev-Language`, `L-SnakePolynomial-Corridor-Alternation-Certificate`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0055: Snake-polynomial Chebyshev positivity conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0056: BPV Bessel K logarithmic-derivative quotient monotonicity is classified
+
+- source reference: A. Baricz, S. Ponnusamy, and M. Vuorinen, Functional inequalities for modified Bessel functions, Expositiones Mathematicae 29(4), 399--414, arXiv:1009.4814, DOI 10.1016/j.exmath.2011.07.001. https://arxiv.org/abs/1009.4814
+- solution: BPV Bessel K logarithmic-derivative quotient monotonicity is classified
+- solution status: Solved
+- solution node: `wiki/nodes/T-BPV-BesselK-full-monotonicity-classification.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `T-BPV-BesselK-open-range-nonmonotone`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0056: BPV Bessel K logarithmic-derivative quotient monotonicity is classified. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0057: Qi log-concave convolution lower bound is strictly improved
+
+- source reference: Feng Qi, Completely monotonic degree of a function involving trigamma and tetragamma functions, AIMS Mathematics 5 (2020), 3391--3407, DOI 10.3934/math.2020219. https://doi.org/10.3934/math.2020219
+- solution: Qi log-concave convolution lower bound is strictly improved
+- solution status: Solved
+- solution node: `wiki/nodes/T-Qi-LogConcaveConvolution-StrictImprovement-Example.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `T-Qi-LogConcaveConvolution-VertexChord-LowerBound`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0057: Qi log-concave convolution lower bound is strictly improved. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0058: Bazhlekova two-seed Wright/Bernstein gap condition is relaxable
+
+- source reference: Bazhlekova--Bazhlekov two-term fractional diffusion-wave propagation question, arXiv:1707.09828. https://arxiv.org/abs/1707.09828
+- solution: Bazhlekova two-seed Wright/Bernstein gap condition is relaxable
+- solution status: Solved
+- solution node: `wiki/nodes/T-Bazhlekova-TwoSeed-SourcePackage-Relaxation.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `T-Bazhlekova-TwoSeed-SqrtBF-OutsideGap`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0058: Bazhlekova two-seed Wright/Bernstein gap condition is relaxable. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0059: Guo ASCM/SCM Theorem 45 condition can be waived
+
+- source reference: Guo, On Completely Monotonic and Related Functions, Filomat 30(7), DOI 10.2298/FIL1607083G. https://doi.org/10.2298/FIL1607083G
+- solution: Guo ASCM/SCM Theorem 45 condition can be waived
+- solution status: Solved
+- solution node: `wiki/nodes/T-Guo-ASCM-SCM-DerivativeComposition-NoCondition.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `D-Complete-monotonicity-Bernstein-Stieltjes-language`, `D-Log-function-derivative-chain-language`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0059: Guo ASCM/SCM Theorem 45 condition can be waived. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0060: Baricz coefficient-ratio complete-monotonicity transfer is false
+
+- source reference: Arpad Baricz, Bounds for modified Bessel functions of the first and second kinds, Proceedings of the Edinburgh Mathematical Society 53 (2010), 575--599, DOI 10.1017/S0013091508001016. https://doi.org/10.1017/S0013091508001016
+- solution: Baricz coefficient-ratio complete-monotonicity transfer is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-Baricz-CoefficientRatio-CMTransfer-Counterexample.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `L-Baricz-GeometricSequence-StrictCM`, `L-Baricz-AnalyticQuotient-SecondCoefficientObstruction`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0060: Baricz coefficient-ratio complete-monotonicity transfer is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0061: Khasnis-Sholapurkar Question 4.6 has a negative answer
+
+- source reference: Khasnis--Sholapurkar, Joint Complete Monotonicity of reciprocal of a polynomial in two variables, arXiv:2506.08447v2. https://arxiv.org/abs/2506.08447
+- solution: Khasnis-Sholapurkar Question 4.6 has a negative answer
+- solution status: Solved
+- solution node: `wiki/nodes/T-Khasnis-Sholapurkar-Q46-NegativeAnswer.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `T-PolynomialReciprocal-JCM-DegreeGap-Obstruction`, `L-JCM-SliceEndpoint-ConcavityObstruction`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0061: Khasnis-Sholapurkar Question 4.6 has a negative answer. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0062: Barbosa-Menegatto endpoint additive kernel is not strictly positive definite
+
+- source reference: Barbosa--Menegatto generalized-Stieltjes product-kernel strict-positive-definiteness source, SIGMA 2020, arXiv:2006.12217. https://arxiv.org/abs/2006.12217
+- solution: Barbosa-Menegatto endpoint additive kernel is not strictly positive definite
+- solution status: Solved
+- solution node: `wiki/nodes/T-BarbosaMenegatto-endpoint-additive-rectangle-not-SPD.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `L-Additive-product-kernel-rectangle-annihilator`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0062: Barbosa-Menegatto endpoint additive kernel is not strictly positive definite. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0063: Yamazaki generalized-Karcher operator-norm conjecture is false
+
+- source reference: Yamazaki generalized-Karcher equation operator-norm conjecture, arXiv:1802.06200 / Journal of Mathematical Analysis and Applications, DOI 10.1016/j.jmaa.2019.06.036. https://arxiv.org/abs/1802.06200
+- solution: Yamazaki generalized-Karcher operator-norm conjecture is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-Yamazaki-GKE-operator-norm-conjecture-scalar-counterexample.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `L-Scalar-subcase-refutes-universal-operator-inequality`, `L-Yamazaki-fractional-linear-GKE-scalar-certificate`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0063: Yamazaki generalized-Karcher operator-norm conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0064: Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false
+
+- source reference: Dinh--Le--Nguyen--Vo matrix power-mean inverse question, arXiv:2106.05914, DOI 10.1080/03081087.2022.2134283. https://arxiv.org/abs/2106.05914
+- solution: Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-DLNV-MatrixPowerMeanInverse-ScalarRefutation.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `L-Scalar-matrix-case-refutes-universal-existence`, `L-ScalarPowerMean-Ratio-Endpoint`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0064: Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0065: JKS alpha-two kernel is not TN5 by a symmetric determinant witness
+
+- source reference: Khare, Jain--Karlin--Schoenberg kernel total-positivity question, arXiv:2008.05121. https://arxiv.org/abs/2008.05121
+- solution: JKS alpha-two kernel is not TN5 by a symmetric determinant witness
+- solution status: Solved
+- solution node: `wiki/nodes/T-JKS-Alpha2-NotTN5-PSDWitness.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `D-JKS-Kernel`, `D-TNKernel-FiniteOrder`, `L-PSD-Minor-Obstructs-TN`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0065: JKS alpha-two kernel is not TN5 by a symmetric determinant witness. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0066: Li cubic inverse-polynomial Bernstein branch has discriminant criterion
+
+- source reference: Cheng-Gang Li, Space-Time Duality in Relativistic Diffusion via Subordination, arXiv:2606.04270. https://arxiv.org/abs/2606.04270
+- solution: Li cubic inverse-polynomial Bernstein branch has discriminant criterion
+- solution status: Solved
+- solution node: `wiki/nodes/T-Li-CubicInversePolynomial-BF-Discriminant.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `L-QuadraticDenominator-CM-NonpositiveRoots`, `L-InverseODE-CM-to-BF`, `L-AnalyticBF-Pringsheim-NegativeAxisObstruction`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0066: Li cubic inverse-polynomial Bernstein branch has discriminant criterion. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0067: BPV Bessel K Question 7 has a half-order endpoint counterexample
+
+- source reference: A. Baricz, S. Ponnusamy, and M. Vuorinen, Functional inequalities for modified Bessel functions, Expositiones Mathematicae 29(4), 399--414, arXiv:1009.4814, DOI 10.1016/j.exmath.2011.07.001. https://arxiv.org/abs/1009.4814
+- solution: BPV Bessel K Question 7 has a half-order endpoint counterexample
+- solution status: Solved
+- solution node: `wiki/nodes/T-BesselK-Question7-Negative-Endpoint-Counterexample.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `D-BesselK-Endpoint-Monotonicity-Question`, `L-HalfOrder-BesselK-ClosedForm`, `L-HalfOrder-KDerivative-SignRoot`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0067: BPV Bessel K Question 7 has a half-order endpoint counterexample. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0068: Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\)
+
+- source reference: Garrappa--Gerhold--Popolizio--Simon, On some inequalities for the two-parameter Mittag-Leffler function in the complex plane, JMAA 551(1), 2025, Article 129588 / arXiv:2410.11852. https://arxiv.org/abs/2410.11852
+- solution: Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\)
+- solution status: Solved
+- solution node: `wiki/nodes/T-Kummer-M-Global-Modulus-Inequality-Fails-Alpha1-Beta5halves.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `D-GGPS-KummerM-Remark6-Question`, `D-KummerM-LocalSeries`, `L-RealSeries-ImagAxis-Modulus-SecondCoefficient-Obstruction`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0068: Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\). The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0069: Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions
+
+- source reference: Mecke, Nagel, and Weiss, Joseph Mecke's last fragmentary manuscripts - a compilation, arXiv:1703.10000v2. https://arxiv.org/abs/1703.10000
+- solution: Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions
+- solution status: Solved
+- solution node: `wiki/nodes/T-NagelWeissMecke-LaplaceSurvival-Poissonization-Solution.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `D-LaplaceSurvivalTransform`, `L-UniformExponentialRace-LaplaceSurvival`, `L-CMSurvival-BernsteinWidder-InverseCriterion`, `L-ConditionalPoissonization-PGF`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0069: Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0070: Dytso-Bustin-Poor generalized-Gaussian product factorization classification
+
+- source reference: Dytso, Bustin, and Poor, generalized-Gaussian product-factorization source problem, Axioms 7 (2018), DOI 10.1186/s40488-018-0088-5, and thesis source. https://doi.org/10.1186/s40488-018-0088-5
+- solution: Dytso-Bustin-Poor generalized-Gaussian product factorization classification
+- solution status: Solved
+- solution node: `wiki/nodes/T-DytsoBustinPoor-GeneralizedGaussian-ProductFactorization-Classification.md`
+- theory version: `v016`
+- stage: `stage_v016`
+- review status: no contact
+- dependencies: `D-GeneralizedGaussian-Np01`, `L-PositiveStable-NegativeMoment`, `D-InverseStable-SizeBiasFactor`, `L-MellinQuotient-To-ProductFactor`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0070: Dytso-Bustin-Poor generalized-Gaussian product factorization classification. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.

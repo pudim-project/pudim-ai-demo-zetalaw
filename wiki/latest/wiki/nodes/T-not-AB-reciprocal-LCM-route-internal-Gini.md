@@ -4,7 +4,7 @@ type: "theorem"
 title: "Alzer Berg reciprocal quotient LCM positive kernel route fails for strict internal Gini means"
 status: "proved"
 tags: ["alzer-berg", "gamma-quotient", "kernel-sign", "logarithmically-completely-monotone", "proved", "route-demotion", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle"]
 refs: ["attack-plans/AP-20260530T-ab-reciprocal-bounded-slice.json", "librarian/audits/LA-20260530T-ab-reciprocal-lcm-route-student.json", "oracle/responses/ORACLE-OS-20260530T-ab-reciprocal-lcm-oracle-response.md", "raw/student/20260530T-ab-reciprocal-lcm-route-obstruction.md", "wiki/notes/frontier-ab-reciprocal-gini-gamma-quotient.md"]
 ---
 
@@ -16,8 +16,8 @@ For \(v>u>0\), \(d=v-u\), and any strict internal Gini mean value \(u<G_{a,b}(u,
 
 ## Dependencies
 
-- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 
 ## Proof and provenance references
 

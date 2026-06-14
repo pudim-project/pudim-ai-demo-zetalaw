@@ -4,7 +4,7 @@ type: "theorem"
 title: "Ferreira Mittag Leffler reciprocal integer positive exponential gap"
 status: "proved"
 tags: ["bridge-subcase", "ferreira", "laplace-divergence", "mittag-leffler", "proved", "theorem"]
-parents: ["T-Ferreira-ML-all-alpha-elementary-divergence-frontier-open", "T-Complete-monotonicity-closure-calculus-principle"]
+parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-Ferreira-ML-all-alpha-elementary-divergence-frontier-open"]
 refs: ["attack-plans/AP-20260531T032700-ferreira-ml-reciprocal-divergence.json", "oracle/responses/ORACLE-FI-20260531T-rolling-060-oracle-forage-response.md", "oracle/responses/ORACLE-OS-20260531T-ferreira-ml-reciprocal-divergence-oracle-response.md", "raw/scout/sources/ferreira-ml-divergence-source-status.md", "raw/source-cache/ferreira-complete-monotonicity-discrete-equations/Ferreira.pdf", "raw/source-cache/ferreira-complete-monotonicity-discrete-equations/Ferreira.txt", "raw/student/20260531T032700-ferreira-ml-reciprocal-divergence.md", "wiki/notes/frontier-ferreira-ml-reciprocal-divergence.md"]
 ---
 
@@ -16,8 +16,8 @@ For every integer \(m\ge2\) and every \(t>0\), \(E_{1/m}(t^{1/m})>e^t\), where \
 
 ## Dependencies
 
-- [[wiki/nodes/T-Ferreira-ML-all-alpha-elementary-divergence-frontier-open|Ferreira Mittag Leffler all alpha elementary divergence frontier]]
 - [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
+- [[wiki/nodes/T-Ferreira-ML-all-alpha-elementary-divergence-frontier-open|Ferreira Mittag Leffler all alpha elementary divergence frontier]]
 
 ## Proof and provenance references
 

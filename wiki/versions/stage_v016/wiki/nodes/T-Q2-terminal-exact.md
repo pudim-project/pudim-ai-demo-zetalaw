@@ -4,7 +4,7 @@ type: "theorem"
 title: "determine exact I_2 via certified L_2 description"
 status: "proved"
 tags: ["n-2", "open-problem-4", "polygamma", "proved", "terminal", "theorem"]
-parents: ["T-Q2-adaptive-finite-middle-qJ-cover-terminal-certificate", "T-Q2-adaptive-middle-cover-reduced-terminal-certificate", "T-Q2-analytic-denominator-reduced-assembly-terminal-certificate", "T-Q2-atanh-outside-cover-terminal-certificate", "T-Q2-compact-G-interval-terminal-certificate", "T-Q2-compact-one-crossing-outside-J-terminal-certificate", "T-Q2-compact-taylor-monotonicity-J-terminal-certificate", "T-Q2-critical-sign-certificate", "T-Q2-critical-zero-exact-endpoint", "T-Q2-derivative-taylor-compact-J-terminal-certificate", "T-Q2-finite-middle-near-one-qJ-cover-terminal-certificate", "T-Q2-full-compact-G-subdivision-terminal-certificate", "T-Q2-J-rational-interval-terminal-certificate", "T-Q2-log-enclosure-reduction-terminal-certificate", "T-Q2-microinterval-zeta-terminal-certificate", "T-Q2-near-one-variable-cover-terminal-certificate", "T-Q2-near-zero-scaled-outside-cover-terminal-certificate", "T-Q2-outside-bracket-isolation-certificate", "T-Q2-finite-outside-cover-404-173-certificate", "T-Q2-reduced-terminal-assembly-certificate", "T-Q2-remaining-finite-middle-log-cover-terminal-certificate", "T-Q2-right-endpoint-G-sign-terminal-certificate", "T-Q2-taylor-compact-one-crossing-terminal-certificate", "T-Q2-three-regime-outside-cover-terminal-certificate"]
+parents: ["T-Q2-J-rational-interval-terminal-certificate", "T-Q2-adaptive-finite-middle-qJ-cover-terminal-certificate", "T-Q2-adaptive-middle-cover-reduced-terminal-certificate", "T-Q2-analytic-denominator-reduced-assembly-terminal-certificate", "T-Q2-atanh-outside-cover-terminal-certificate", "T-Q2-compact-G-interval-terminal-certificate", "T-Q2-compact-one-crossing-outside-J-terminal-certificate", "T-Q2-compact-taylor-monotonicity-J-terminal-certificate", "T-Q2-critical-sign-certificate", "T-Q2-critical-zero-exact-endpoint", "T-Q2-derivative-taylor-compact-J-terminal-certificate", "T-Q2-finite-middle-near-one-qJ-cover-terminal-certificate", "T-Q2-full-compact-G-subdivision-terminal-certificate", "T-Q2-log-enclosure-reduction-terminal-certificate", "T-Q2-microinterval-zeta-terminal-certificate", "T-Q2-near-one-variable-cover-terminal-certificate", "T-Q2-near-zero-scaled-outside-cover-terminal-certificate", "T-Q2-outside-bracket-isolation-certificate", "T-Q2-finite-outside-cover-404-173-certificate", "T-Q2-reduced-terminal-assembly-certificate", "T-Q2-remaining-finite-middle-log-cover-terminal-certificate", "T-Q2-right-endpoint-G-sign-terminal-certificate", "T-Q2-taylor-compact-one-crossing-terminal-certificate", "T-Q2-three-regime-outside-cover-terminal-certificate"]
 refs: ["librarian/audits/LA-20260525T195521-student-ingest.json", "raw/student/20260525T195521-q2-remainder-log-taylor-assembly-roll.md", "wiki/notes/frontier-q2-endpoint.md"]
 ---
 
@@ -16,6 +16,7 @@ The exact admissible beta set \(\mathcal I_2\) for Qi--Lim--Nantomah Open Proble
 
 ## Dependencies
 
+- [[wiki/nodes/T-Q2-J-rational-interval-terminal-certificate|deterministic rational interval certificate on J for R Lambda G Q2 proves terminal endpoint]]
 - [[wiki/nodes/T-Q2-adaptive-finite-middle-qJ-cover-terminal-certificate|adaptive finite middle cover below qJ plus compact and near one covers proves terminal endpoint]]
 - [[wiki/nodes/T-Q2-adaptive-middle-cover-reduced-terminal-certificate|adaptive reduced finite middle cover below qJ plus compact one crossing proves terminal endpoint]]
 - [[wiki/nodes/T-Q2-analytic-denominator-reduced-assembly-terminal-certificate|analytic denominator reduced assembly proves terminal endpoint]]
@@ -28,7 +29,6 @@ The exact admissible beta set \(\mathcal I_2\) for Qi--Lim--Nantomah Open Proble
 - [[wiki/nodes/T-Q2-derivative-taylor-compact-J-terminal-certificate|derivative or Taylor compact certificate outside J plus covers proves terminal endpoint]]
 - [[wiki/nodes/T-Q2-finite-middle-near-one-qJ-cover-terminal-certificate|finite middle and near one Q2 cover below qJ plus compact and near zero covers proves terminal endpoint]]
 - [[wiki/nodes/T-Q2-full-compact-G-subdivision-terminal-certificate|full compact G subdivision around J proves unique maximum and terminal endpoint]]
-- [[wiki/nodes/T-Q2-J-rational-interval-terminal-certificate|deterministic rational interval certificate on J for R Lambda G Q2 proves terminal endpoint]]
 - [[wiki/nodes/T-Q2-log-enclosure-reduction-terminal-certificate|analytic log enclosure reduction converts G and Q2 certification to rational inequalities determining L2]]
 - [[wiki/nodes/T-Q2-microinterval-zeta-terminal-certificate|microinterval J zeta and atanh log certificate proves terminal endpoint]]
 - [[wiki/nodes/T-Q2-near-one-variable-cover-terminal-certificate|near one variable change Q2 cover below qJ plus other covers proves terminal endpoint]]

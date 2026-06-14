@@ -4,7 +4,7 @@ type: "theorem"
 title: "negation of Gaussian heat-flow entropy complete monotonicity conjecture"
 status: "proved"
 tags: ["candidate-negation", "complete-monotonicity", "entropy", "fresh-forage", "gcm", "heat-flow", "proved", "theorem"]
-parents: ["T-GCM-fifth-derivative-counterexample-certificate", "T-Logconcave-GCM-explicit-failure-order", "T-Exact-finite-certificate-verification-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["T-GCM-fifth-derivative-counterexample-certificate", "T-Logconcave-GCM-explicit-failure-order", "D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Exact-finite-certificate-verification-principle"]
 refs: ["librarian/audits/LA-20260528T122000-gcm-counterexample-attack-plan.json", "librarian/audits/LA-20260528T123000-gcm-fifth-derivative-counterexample.json", "raw/scout/sources/gu-sellke-gcm-counterexample-2605.11656/main.tex", "raw/student/20260528T122500-gcm-fifth-derivative-counterexample.md", "scout/forage/inbox/FI-20260528T-next-loop-005.json", "wiki/notes/frontier-gcm-counterexample.md"]
 ---
 
@@ -18,8 +18,8 @@ not(For every probability measure \(\mu\) on \(\mathbb R\) for which the heat-fl
 
 - [[wiki/nodes/T-GCM-fifth-derivative-counterexample-certificate|Gu Sellke finite symmetric atomic measure has positive fifth heat-flow entropy derivative at t=1/3]]
 - [[wiki/nodes/T-Logconcave-GCM-explicit-failure-order|explicit log-concave Gaussian heat-flow entropy complete monotonicity failure order]]
-- [[wiki/nodes/T-Exact-finite-certificate-verification-principle|Exact finite certificate verification principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-Exact-finite-certificate-verification-principle|Exact finite certificate verification principle]]
 
 ## Proof and provenance references
 

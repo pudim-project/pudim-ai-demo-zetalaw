@@ -4,7 +4,7 @@ type: "theorem"
 title: "heat flow L2 energy is completely monotone in heat time"
 status: "proved"
 tags: ["bridge-patch", "complete-monotonicity", "heat-flow", "laplace-transform", "proved", "theorem"]
-parents: ["T-Complete-monotonicity-closure-calculus-principle", "T-heat-flow-L2-spectral-Laplace-normal-form", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-Complete-monotonicity-closure-calculus-principle", "T-heat-flow-L2-spectral-Laplace-normal-form"]
 refs: ["librarian/audits/LA-20260529T-next-loop-heat-flow-l2-student.json", "raw/student/20260529T-next-loop-heat-flow-l2.md", "wiki/notes/frontier-heat-flow-l2-spectral-laplace.md"]
 ---
 
@@ -16,9 +16,9 @@ For every probability measure \(\mu\) on \(\mathbb R^d\), the heat-flow \(L^2\) 
 
 ## Dependencies
 
+- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 - [[wiki/nodes/T-Complete-monotonicity-closure-calculus-principle|Complete-monotonicity closure calculus principle]]
 - [[wiki/nodes/T-heat-flow-L2-spectral-Laplace-normal-form|heat flow L2 energy has Fourier spectral positive Laplace representation]]
-- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references
 

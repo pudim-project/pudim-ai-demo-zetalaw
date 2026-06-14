@@ -4,7 +4,7 @@ type: "theorem"
 title: "T-reciprocal-gamma-curvature-complete-monotonicity"
 status: "proved"
 tags: ["application-bridge", "complete-monotonicity", "gamma", "laplace-kernel", "polygamma", "proved", "source-open-solved", "theorem"]
-parents: ["T-positive-Laplace-kernel-complete-monotonicity-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
+parents: ["D-Complete-monotonicity-Bernstein-Stieltjes-language", "T-positive-Laplace-kernel-complete-monotonicity-principle"]
 refs: ["raw/student/20260605T-bridge-reciprocal-gamma-curvature-cm.md", "theory/latest/THEORY.tex#thm:reciprocal-gamma-complete-monotonicity"]
 ---
 
@@ -16,8 +16,8 @@ For \(H(x)=\log\Gamma(x)+\log\Gamma(1/x)\), the second derivative \(H''\) is com
 
 ## Dependencies
 
-- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 - [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
+- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 
 ## Proof and provenance references
 

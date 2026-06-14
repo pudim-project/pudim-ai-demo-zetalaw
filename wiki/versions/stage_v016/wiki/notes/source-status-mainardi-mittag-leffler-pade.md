@@ -17,7 +17,7 @@ The checked arXiv source does state these bounds as a conjecture/open problem in
 
 Thomas Simon, "Comparing Fréchet and positive stable laws", Electron. J. Probab. 19 (2014), arXiv:1310.1888.
 
-Therefore this is not a fresh source-open problem for Pudim. It should not receive a local application label.
+Therefore this is not a fresh source problem for Pudim. It should not receive a local application label.
 
 The reduction
 \[

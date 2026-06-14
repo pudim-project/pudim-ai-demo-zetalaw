@@ -4,7 +4,7 @@ type: "theorem"
 title: "Tsallis alpha in (1,2) first entropy derivative has positive Laplace-kernel square-gradient representation"
 status: "proved"
 tags: ["first-derivative", "heat-flow", "positive-kernel", "proved", "theorem", "true-helper", "tsallis"]
-parents: ["T-positive-Laplace-kernel-complete-monotonicity-principle", "D-Laplace-kernel-and-tilted-moment-language"]
+parents: ["D-Laplace-kernel-and-tilted-moment-language", "T-positive-Laplace-kernel-complete-monotonicity-principle"]
 refs: ["librarian/audits/LA-20260528T121500-tsallis-first-derivative-kernel.json", "raw/oracle/OS-20260528T120500-renyi-tsallis.md", "raw/student/20260528T120500-tsallis-alpha2-noise-stability.md", "wiki/notes/frontier-renyi-tsallis-heat-flow-cm.md"]
 ---
 
@@ -16,8 +16,8 @@ For a one-dimensional positive heat-flow density \(p(x,t)=T_t f(x)\) and \(1<\al
 
 ## Dependencies
 
-- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 - [[wiki/nodes/D-Laplace-kernel-and-tilted-moment-language|Laplace kernels and tilted moment ratios]]
+- [[wiki/nodes/T-positive-Laplace-kernel-complete-monotonicity-principle|T-positive-Laplace-kernel-complete-monotonicity-principle]]
 
 ## Proof and provenance references
 

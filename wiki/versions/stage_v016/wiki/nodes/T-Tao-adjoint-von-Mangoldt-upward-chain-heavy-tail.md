@@ -41,7 +41,7 @@ _No extractable public proof fragment was found for this proved theorem-like nod
 
 ## Do not claim
 
-- Do not claim this is a source-open problem solved by the local theory.
+- Do not claim this is a source problem solved by the local theory.
 - Do not claim the tail asymptotic is uniform in n.
 - Do not claim the jump multiplier is infinite almost surely.
 
