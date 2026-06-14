@@ -19,33 +19,6 @@ The public theory develops a common positivity calculus for zeta, gamma, polygam
 
 The public ledger for `v016` contains 70 solved applications, `APP-0001` through `APP-0070`, with immutable APP identifiers and source references.
 
-## New In v016
-
-The `v016` stage adds 20 solved applications. This index gives the stable APP id, public result name, mechanism family, and proof node in the public wiki vault.
-
-| APP | Name | Mechanism | Proof node |
-| --- | --- | --- | --- |
-| `APP-0051` | Townes real-valued Poisson-mixture ID-to-DID conjecture is false | Endpoint and complete-monotonicity obstructions | [`T-not-Townes-PoissonMixture-ID-implies-DID-conjecture`](wiki/latest/wiki/nodes/T-not-Townes-PoissonMixture-ID-implies-DID-conjecture.md) |
-| `APP-0052` | Das-Swaminathan multiple-gamma Bernstein question is false | Gamma and Bernstein obstructions | [`T-not-DasSwaminathan-fn-Bernstein-all-n`](wiki/latest/wiki/nodes/T-not-DasSwaminathan-fn-Bernstein-all-n.md) |
-| `APP-0053` | arsinh-square logarithmic derivative is not Stieltjes | Stieltjes boundary obstructions | [`T-not-ArsinhSquare-log-derivative-Stieltjes`](wiki/latest/wiki/nodes/T-not-ArsinhSquare-log-derivative-Stieltjes.md) |
-| `APP-0054` | GRWS Sector II weights-squared Bernstein interpolation fails | Hausdorff moment and Bernstein obstructions | [`T-GRWS-SectorII-No-BF-WeightSquared-Interpolation`](wiki/latest/wiki/nodes/T-GRWS-SectorII-No-BF-WeightSquared-Interpolation.md) |
-| `APP-0055` | Snake-polynomial Chebyshev positivity conjecture is false | Finite certificate obstructions | [`T-not-SnakePolynomial-Chebyshev-ConvexMajorant-Conjecture7-1`](wiki/latest/wiki/nodes/T-not-SnakePolynomial-Chebyshev-ConvexMajorant-Conjecture7-1.md) |
-| `APP-0056` | BPV Bessel K logarithmic-derivative quotient monotonicity is classified | Bessel endpoint obstructions | [`T-BPV-BesselK-full-monotonicity-classification`](wiki/latest/wiki/nodes/T-BPV-BesselK-full-monotonicity-classification.md) |
-| `APP-0057` | Qi log-concave convolution lower bound is strictly improved | Log-concavity and convolution bounds | [`T-Qi-LogConcaveConvolution-StrictImprovement-Example`](wiki/latest/wiki/nodes/T-Qi-LogConcaveConvolution-StrictImprovement-Example.md) |
-| `APP-0058` | Bazhlekova two-seed Wright/Bernstein gap condition is relaxable | Bernstein transport and Wright-kernel certificates | [`T-Bazhlekova-TwoSeed-SourcePackage-Relaxation`](wiki/latest/wiki/nodes/T-Bazhlekova-TwoSeed-SourcePackage-Relaxation.md) |
-| `APP-0059` | Guo ASCM/SCM Theorem 45 condition can be waived | Derivative-chain composition | [`T-Guo-ASCM-SCM-DerivativeComposition-NoCondition`](wiki/latest/wiki/nodes/T-Guo-ASCM-SCM-DerivativeComposition-NoCondition.md) |
-| `APP-0060` | Baricz coefficient-ratio complete-monotonicity transfer is false | Coefficient extraction and endpoint obstructions | [`T-Baricz-CoefficientRatio-CMTransfer-Counterexample`](wiki/latest/wiki/nodes/T-Baricz-CoefficientRatio-CMTransfer-Counterexample.md) |
-| `APP-0061` | Khasnis-Sholapurkar Question 4.6 has a negative answer | Hausdorff slice endpoint obstructions | [`T-Khasnis-Sholapurkar-Q46-NegativeAnswer`](wiki/latest/wiki/nodes/T-Khasnis-Sholapurkar-Q46-NegativeAnswer.md) |
-| `APP-0062` | Barbosa-Menegatto endpoint additive kernel is not strictly positive definite | Finite product-kernel certificates | [`T-BarbosaMenegatto-endpoint-additive-rectangle-not-SPD`](wiki/latest/wiki/nodes/T-BarbosaMenegatto-endpoint-additive-rectangle-not-SPD.md) |
-| `APP-0063` | Yamazaki generalized-Karcher operator-norm conjecture is false | Scalar certificates for operator conjectures | [`T-Yamazaki-GKE-operator-norm-conjecture-scalar-counterexample`](wiki/latest/wiki/nodes/T-Yamazaki-GKE-operator-norm-conjecture-scalar-counterexample.md) |
-| `APP-0064` | Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false | Scalar certificates for matrix mean questions | [`T-DLNV-MatrixPowerMeanInverse-ScalarRefutation`](wiki/latest/wiki/nodes/T-DLNV-MatrixPowerMeanInverse-ScalarRefutation.md) |
-| `APP-0065` | JKS alpha-two kernel is not TN5 by a symmetric determinant witness | Finite determinant obstructions | [`T-JKS-Alpha2-NotTN5-PSDWitness`](wiki/latest/wiki/nodes/T-JKS-Alpha2-NotTN5-PSDWitness.md) |
-| `APP-0066` | Li cubic inverse-polynomial Bernstein branch has discriminant criterion | Inverse-ODE and Pringsheim obstructions | [`T-Li-CubicInversePolynomial-BF-Discriminant`](wiki/latest/wiki/nodes/T-Li-CubicInversePolynomial-BF-Discriminant.md) |
-| `APP-0067` | BPV Bessel K Question 7 has a half-order endpoint counterexample | Bessel endpoint obstructions | [`T-BesselK-Question7-Negative-Endpoint-Counterexample`](wiki/latest/wiki/nodes/T-BesselK-Question7-Negative-Endpoint-Counterexample.md) |
-| `APP-0068` | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | Coefficient and imaginary-axis obstructions | [`T-Kummer-M-Global-Modulus-Inequality-Fails-Alpha1-Beta5halves`](wiki/latest/wiki/nodes/T-Kummer-M-Global-Modulus-Inequality-Fails-Alpha1-Beta5halves.md) |
-| `APP-0069` | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | Laplace-survival and Poissonization | [`T-NagelWeissMecke-LaplaceSurvival-Poissonization-Solution`](wiki/latest/wiki/nodes/T-NagelWeissMecke-LaplaceSurvival-Poissonization-Solution.md) |
-| `APP-0070` | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | Mellin factorization and stable subordination | [`T-DytsoBustinPoor-GeneralizedGaussian-ProductFactorization-Classification`](wiki/latest/wiki/nodes/T-DytsoBustinPoor-GeneralizedGaussian-ProductFactorization-Classification.md) |
-
 ## Applications
 
 All entries below are `Solved`; detailed statements, proofs, and review notes are in [`APPLICATIONS.md`](APPLICATIONS.md).
