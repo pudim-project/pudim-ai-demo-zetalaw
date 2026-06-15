@@ -87,7 +87,7 @@ that make it work.
 The following list records the external source problems solved in the paper.  Each row gives the fixed application identifier, the result in which it is proved, and the source citation.
 \begin{enumerate}
 \item \label{ledger:app-0001}\textbf{APP-0001.} Alzer-Kwong convexity and concavity problem. Solved by Corollary~\ref{thm:alzer-kwong}; source problem reference \cite{app-app-0001-source}.
-\item \label{ledger:app-0002}\textbf{APP-0002.} Nantomah zeta positivity problem. Solved by Counterexample~\ref{thm:nantomah-positivity}; source problem reference \cite{nantomah}.
+\item \label{ledger:app-0002}\textbf{APP-0002.} Nantomah zeta positivity problem. Solved by Theorem~\ref{thm:nantomah-positivity}; source problem reference \cite{nantomah}.
 \item \label{ledger:app-0003}\textbf{APP-0003.} Sroysang generalized Holder problem. Solved by Corollary~\ref{thm:sroysang-holder}; source problem reference \cite{sroysang}.
 \item \label{ledger:app-0004}\textbf{APP-0004.} Complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\). Solved by Corollary~\ref{thm:reciprocal-gamma-complete-monotonicity}; source problem reference \cite{app-app-0004-source}.
 \item \label{ledger:app-0005}\textbf{APP-0005.} Exact inverse-tail floor formula at s=7. Solved by Corollary~\ref{thm:tail-s7-floor}; source problem reference \cite{kim-song-tail}.
@@ -1067,8 +1067,8 @@ Let \(D\) be a domain and let a universal claim require a sign condition \(F(x)\
 The proof is the elementary logic of a universal quantifier. The point \(x_0\) satisfies the hypotheses of the universal statement, while the certified sign computation violates the asserted conclusion. Multiplication by a positive factor preserves signs, so any equivalent reduced inequality has the same counterexample. Therefore the original universal sign, convexity, monotonicity, or complete-monotonicity claim is refuted.
 \end{proof}
 
-\begin{counterexample}[APP-0002: Affirmative solution of Nantomah zeta positivity problem]
-\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0002: Affirmative solution of Nantomah zeta positivity problem}
+\begin{theorem}[APP-0002: Affirmative solution of Nantomah zeta positivity problem]
+\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0002: Affirmative solution of Nantomah zeta positivity problem}
 \label{thm:nantomah-positivity}
 For every \(n\in\N\),
 \begin{equation}
@@ -1079,87 +1079,108 @@ For every \(n\in\N\),
 \end{equation}
 
 
-\end{counterexample}
+\end{theorem}
 
 \begin{proof}
-We use Proposition~\ref{res:pointwise-obstruction-certificate-principle} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
-
-Let
-\[
-g_\nu(u)=\log(\sqrt u\,I_\nu(u)),
+Put \(s=n+1\ge2\) and \(Z_s=\zeta(s)\).  The expression in \eqref{eq:nantomah-positivity} becomes
+\begin{equation}
+\label{eq:nantomah-ks}
+K_s=(s+1)Z_sZ_{s+2}-sZ_{s+1}^2-Z_sZ_{s+1}.
+\end{equation}
+Let \(X(m)=1/m\) under \(\rho_s\).  By \eqref{eq:zeta-law-moment},
+\begin{equation}
+\label{eq:nantomah-moments}
+\E_s[X]=\frac{Z_{s+1}}{Z_s},
 \qquad
-r_\nu(u)=\frac{I_\nu'(u)}{I_\nu(u)}.
-\]
-Then
-\[
-g_\nu''(u)=r_\nu'(u)-\frac{1}{2u^2}.
-\]
-The modified Bessel equation
-\[
-u^2I_\nu''(u)+uI_\nu'(u)-(u^2+\nu^2)I_\nu(u)=0
-\]
-gives
-\[
-\frac{I_\nu''(u)}{I_\nu(u)}
-=1+\frac{\nu^2}{u^2}-\frac{r_\nu(u)}{u}.
-\]
-Since
-\[
-r_\nu'(u)=\frac{I_\nu''(u)}{I_\nu(u)}-r_\nu(u)^2,
-\]
-we get
-\[
-g_\nu''(u)
-=
-1+\frac{\nu^2-\frac12}{u^2}
--\frac{r_\nu(u)}{u}
--r_\nu(u)^2.
-\]
-Thus the Bessel I Riccati log concavity inequality is exactly the strict log-concavity condition \(g_\nu''(u)<0\).
+\E_s[X^2]=\frac{Z_{s+2}}{Z_s}.
+\end{equation}
+Thus
+\begin{equation}
+\label{eq:nantomah-moment-form}
+\frac{K_s}{Z_s^2}
+=(s+1)\E_s[X^2]-s\E_s[X]^2-\E_s[X]
+=(s+1)\Var_s(X)+\E_s[X]^2-\E_s[X].
+\end{equation}
 
-For \(\nu=0\),
-\[
-r_0(u)=\frac{I_0'(u)}{I_0(u)}=\frac{I_1(u)}{I_0(u)}.
-\]
-At \(u=10\), the Riccati expression is
-\[
-g_0''(10)=\frac{199}{200}-\frac{r_0(10)}{10}-r_0(10)^2.
-\]
-It is enough to prove
-\[
-r_0(10)<\frac{9487}{10000},
-\]
-because
-\[
-\frac{199}{200}
--\frac{1}{10}\frac{9487}{10000}
--\left(\frac{9487}{10000}\right)^2
-=\frac{9831}{100000000}>0.
-\]
+Write \(a=\zeta(s)-1\), \(b=\zeta(s+1)-1\), and \(c=\zeta(s+2)-1\).  Expanding gives
+\begin{align}
+\label{eq:nantomah-lq-split}
+K_s&=L_s+Q_s,&
+L_s&=sa+(s+1)c-(2s+1)b,&
+Q_s&=(s+1)ac-sb^2-ab.
+\end{align}
+The linear part is termwise positive:
+\begin{equation}
+\label{eq:nantomah-linear-positive}
+L_s=
+\sum_{m=2}^{\infty}
+m^{-s}\frac{(m-1)(s(m-1)-1)}{m^2}
+\ge
+2^{-s}\frac{s-1}{4}.
+\end{equation}
+Since \(b\le a/2\) and \(c\ge0\),
+\begin{equation}
+\label{eq:nantomah-quadratic-correction}
+Q_s\ge -sb^2-ab\ge-\frac{s+2}{4}a^2.
+\end{equation}
+For \(s\ge4\),
+\begin{equation}
+\label{eq:nantomah-tail-bound}
+a=\sum_{m=2}^{\infty}m^{-s}
+\le2^{-s}+\int_2^\infty x^{-s}\,dx
+=2^{-s}\left(1+\frac2{s-1}\right).
+\end{equation}
+Equations \eqref{eq:nantomah-linear-positive}, \eqref{eq:nantomah-quadratic-correction}, and \eqref{eq:nantomah-tail-bound} imply
+\begin{equation}
+\label{eq:nantomah-lower-bound}
+K_s\ge
+\frac14\left[
+2^{-s}(s-1)
+-(s+2)2^{-2s}\left(1+\frac2{s-1}\right)^2
+\right].
+\end{equation}
+It is therefore enough to show
+\begin{equation}
+\label{eq:nantomah-sufficient-inequality}
+2^s(s-1)>(s+2)\left(1+\frac2{s-1}\right)^2.
+\end{equation}
+Equivalently,
+\begin{equation}
+\label{eq:nantomah-f-function}
+F(s)=\frac{2^s(s-1)^3}{(s+2)(s+1)^2}>1.
+\end{equation}
+Now \(F(4)=72/25>1\), and
+\begin{equation}
+\label{eq:nantomah-f-monotone}
+\frac{d}{ds}\log F(s)
+=\log2+\frac3{s-1}-\frac1{s+2}-\frac2{s+1}>0
+\qquad(s\ge4).
+\end{equation}
+Thus \(K_s>0\) for \(s\ge4\).
 
-\[
-I_0(10)=\sum_{k=0}^{\infty}\frac{25^k}{(k!)^2},
-\qquad
-I_1(10)=\sum_{k=0}^{\infty}\frac{5\cdot25^k}{k!(k+1)!}.
-\]
-With \(N=20\), set
-\[
-L_0=\sum_{k=0}^{20}\frac{25^k}{(k!)^2}<I_0(10).
-\]
-For the \(I_1\) tail after \(N=20\), the term ratio is bounded by
-\[
-q=\frac{25}{22\cdot23}<1,
-\]
-so the script computes an exact rational upper bound \(U_1>I_1(10)\) and verifies
-\[
-10000\,U_1<9487\,L_0.
-\]
-Therefore \(I_1(10)/I_0(10)<9487/10000\), and hence
-\[
-g_0''(10)>0.
-\]
-
-This proves the Bessel-\(I\) log-concavity counterexample to \(T\)-\(I\) sqrt-log concavity for \(\nu>0\), and the counterexample to \(T\)-\(I\) Riccati log-concavity inequality.
+For \(s=2\),
+\begin{equation}
+\label{eq:nantomah-k2}
+K_2=3\zeta(2)\zeta(4)-2\zeta(3)^2-\zeta(2)\zeta(3).
+\end{equation}
+Using \(\zeta(3)<5/4\), \(\zeta(2)=\pi^2/6\), and \(\zeta(4)=\pi^4/90\),
+\begin{equation}
+\label{eq:nantomah-k2-bound}
+K_2>
+\frac{\pi^6}{180}-\frac{5\pi^2}{24}-\frac{25}{8}
+>
+\frac{10415360504209}{180000000000000}>0.
+\end{equation}
+For \(s=3\), the estimates \(\zeta(3)>251/216\), \(\zeta(5)>8051/7776\), and \(\zeta(4)<13/12\) yield
+\begin{equation}
+\label{eq:nantomah-k3-bound}
+K_3>
+\frac{251}{216}
+\left(4\cdot\frac{8051}{7776}-\frac{13}{12}\right)
+-3\left(\frac{13}{12}\right)^2
+=\frac{13783}{419904}>0.
+\end{equation}
+Hence \(K_s>0\) for all integers \(s\ge2\), proving the theorem.  This answers Nantomah's question \cite{nantomah}.
 \end{proof}
 
 \begin{proposition}[Zeta free energy uniform curvature bound]
