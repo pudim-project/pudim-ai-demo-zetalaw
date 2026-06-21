@@ -1,4 +1,4 @@
-# Zeta-Law Entropy, Gamma Curvature, and Laplace-Measure Applications
+# A Laplace-Positivity Calculus for Special-Function Inequalities and Source Problems
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
@@ -13,9 +13,9 @@ This repository contains the public staged theory for the zetalaw-demov2 researc
 
 ## Abstract
 
-We study the Riemann zeta function as the partition function of the probability law \(\rho_\beta(n)=n^{-\beta}/\zeta(\beta)\) on the positive integers. This normalization turns zeta ratios into moments, logarithmic derivatives into energy cumulants, divisor identities into probabilistic decompositions, and zeta tails into reciprocal partition problems.
+This repository records a reusable positivity calculus for special-function, kernel, and moment problems. The theory grew from the zeta probability law, where zeta ratios become moments and logarithmic derivatives become cumulants, but the current scope is broader than the zeta seed.
 
-The public theory develops a common positivity calculus for zeta, gamma, polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, Bernstein, determinant, moment-ratio, endpoint-obstruction, and finite Weyl-algebra applications. Its reusable mechanisms include Laplace kernels, moment-ratio reductions, determinant compression, stable subordination, triangular coefficient extraction, endpoint obstructions, exact rational certificates, and Wick-dual extremal functionals.
+The public theory resolves source problems across gamma and polygamma inequalities, Bessel and Mills-ratio kernels, generalized Stieltjes functions, graph polynomials, total-positive sequences, finite Weyl-algebra certificates, and related convexity and monotonicity questions. Its reusable mechanisms include positive Laplace kernels, Mellin moment reductions, triangular coefficient extraction, stable-subordination pushforwards, determinant sign certificates, exact finite obstructions, and graph-polynomial Riesz representations.
 
 The public ledger for `v017` contains 80 solved applications, `APP-0001` through `APP-0080`, with immutable APP identifiers and source references.
 

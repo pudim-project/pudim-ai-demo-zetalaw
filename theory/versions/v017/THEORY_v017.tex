@@ -28,7 +28,7 @@
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\1}{\mathbf 1}
 
-\title{Zeta-Law Entropy, Gamma Curvature, and Laplace-Measure Applications}
+\title{A Laplace-Positivity Calculus for Special-Function Inequalities and Source Problems}
 \author{Domingos S. P. Salazar \and Pudim AI}
 \date{Version v017 -- 2026-06-21}
 
@@ -37,14 +37,26 @@
 \maketitle
 
 \begin{abstract}
-This paper develops a unified public theory built around Laplace-transform
-positivity.  Zeta-law entropy is organized through logarithmic compression,
-gamma-ratio and polygamma inequalities are expressed by completely monotone
-kernels, and applications are obtained by transporting measure positivity
-through Stieltjes, Bernstein, stable-subordination, determinant, triangular,
-inverse-Laplace, derivative-chain, ratio-kernel, and moment-ratio mechanisms.
-The emphasis is on reusable transformations: source problems enter as fixed
-applications, while the proofs expose the structural tools that connect them.
+We develop a reusable positivity calculus for resolving special-function,
+kernel, and moment problems through Laplace-measure representations,
+complete monotonicity, Bernstein and Stieltjes transforms, total positivity,
+determinant compression, endpoint obstructions, and finite certificate
+methods.  The framework grew from the zeta probability law, where zeta ratios
+become moments and logarithmic derivatives become cumulants, but its main
+scope is broader: it treats source problems across gamma and polygamma
+inequalities, Bessel and Mills-ratio kernels, generalized Stieltjes functions,
+graph polynomials, total-positive sequences, finite Weyl-algebra
+certificates, and related convexity and monotonicity questions.
+
+The paper records a public ledger of 80 solved applications.  Each
+application is tied to an external source question and to the structural
+result that resolves it.  The emphasis is not on isolated counterexamples or
+numerical inspection, but on proof mechanisms that can be reused: positive
+Laplace kernels, Mellin moment reductions, triangular coefficient extraction,
+stable-subordination pushforwards, determinant sign certificates, exact
+finite obstructions, and graph-polynomial Riesz representations.  In this
+sense the manuscript functions both as a theory paper and as an indexed
+appendix of verified applications.
 \end{abstract}
 
 \tableofcontents
@@ -53,17 +65,25 @@ applications, while the proofs expose the structural tools that connect them.
 
 
 
-\noindent\textbf{Keywords.} Riemann zeta function; zeta probability law; entropy; Laplace transform; complete monotonicity; Bernstein functions; Stieltjes functions; gamma function; digamma function; Mills ratio; generalized Stieltjes functions.
+\noindent\textbf{Keywords.} Laplace transform; complete monotonicity; Bernstein functions; Stieltjes functions; total positivity; special functions; gamma function; digamma function; Bessel functions; Mills ratio; graph polynomials; Riemann zeta function.
 
-\section{Motivation and main results}
+\section{Scope and organizing principles}
 
-Many classical identities for \(\zeta(s)\) become more transparent after a
-probabilistic normalization.  For \(\beta>1\), the weights \(n^{-\beta}\)
-define a Gibbs law whose partition function is precisely \(\zeta(\beta)\).
-The energy is \(\log n\), the free energy is \(\log\zeta(\beta)\), and ratios
-such as \(\zeta(\beta+r)/\zeta(\beta)\) become moments.  This viewpoint is
-elementary, but it packages several unrelated-looking zeta inequalities into a
-common calculus.
+This paper started from the zeta probability law, but its present scope is a
+broader calculus of positivity methods for externally posed special-function
+and kernel problems.  The zeta-law construction is the entry point, not the
+boundary of the paper.  It gives a simple model for the central pattern:
+normalize a classical analytic object until its inequalities become statements
+about positive measures, moments, kernels, determinants, or finite
+certificates.
+
+For example, many classical identities for \(\zeta(s)\) become more
+transparent after a probabilistic normalization.  For \(\beta>1\), the weights
+\(n^{-\beta}\) define a Gibbs law whose partition function is precisely
+\(\zeta(\beta)\).  The energy is \(\log n\), the free energy is
+\(\log\zeta(\beta)\), and ratios such as
+\(\zeta(\beta+r)/\zeta(\beta)\) become moments.  This viewpoint is elementary,
+but it illustrates the transport principle used throughout the paper.
 
 The same principle guides the special-function part of the paper.  Complete
 monotonicity, Bernstein properties, Stieltjes representations, and endpoint

@@ -7,6 +7,7 @@
 - Consolidated the post-v016 batch by mechanism rather than ingestion order. The strongest new packed family is the Scott--Sokal star-mesh/Riesz graph-polynomial cluster for APP-0074 and APP-0075.
 - Added bridge visibility for the remaining post-v016 families: strict total positivity, gamma/Mills Laplace tilts, Tricomi counterexamples, finite characteristic-function certificates, determinantal-stability certificates, and q-gamma Mellin kernels.
 - Updated the public wiki snapshot to `stage_v017`.
+- Retitled the v017 front matter around the broader Laplace-positivity calculus rather than the original zeta-law seed.
 
 Review artifacts:
 
