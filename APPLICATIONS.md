@@ -1,9 +1,9 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0070` appear in `theory/latest/THEORY.tex` under the manuscript
+`APP-0001`--`APP-0080` appear in `theory/latest/THEORY.tex` under the manuscript
 `Applications` section and in the corresponding theorem names. Applications through
-`APP-0070` are currently staged in `THEORY_v016`.
+`APP-0080` are currently staged in `THEORY_v017`.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -1043,3 +1043,153 @@ Resolve the source problem recorded for APP-0069: Nagel-Weiss/Mecke Laplace-surv
 #### Stated problem
 
 Resolve the source problem recorded for APP-0070: Dytso-Bustin-Poor generalized-Gaussian product factorization classification. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v016/THEORY_v016.tex`.
+
+### APP-0071: Bendikov-Cygan SBF renewal monotonicity
+
+- source reference: Bendikov--Cygan, Alpha-stable random walk has massive thorns, Colloquium Mathematicum 138(1), 105--129, 2015, arXiv:1307.4947, DOI 10.4064/cm138-1-7. https://arxiv.org/abs/1307.4947
+- solution: Bendikov-Cygan special-Bernstein renewal sequence is nonincreasing
+- solution status: Solved
+- solution node: `wiki/nodes/T-BendikovCygan-SBF-RenewalSequence-Nonincreasing.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-BendikovCygan-RenewalGeneratingFunction-SBFPotential`, `L-GammaMonotoneDensity-MomentSequence-Decreasing`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0071: Bendikov-Cygan SBF renewal monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0072: Buchstaber-Glutsyuk real-order Bessel I strict total positivity
+
+- source reference: Buchstaber--Glutsyuk, Total positivity, Grassmannian and modified Bessel functions, Contemporary Mathematics 733, 97--107, arXiv:1708.02154, DOI 10.1090/conm/733/14736. https://arxiv.org/abs/1708.02154
+- solution: Real-order modified-Bessel kernel is strictly totally positive
+- solution status: Solved
+- solution node: `wiki/nodes/T-BesselI-RealOrder-StrictTotalPositivity.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-SturmDarboux-PositiveSpectralFamily-Wronskians`, `L-PositiveWronskians-ECT-Determinants`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0072: Buchstaber-Glutsyuk real-order Bessel I strict total positivity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0073: BGKP PF-sequence total-positivity density
+
+- source reference: Belton--Guillot--Khare--Putinar, Preservers of totally positive kernels and Polya frequency functions, Journal d'Analyse Mathematique, arXiv:2006.16213, DOI 10.1007/s11854-022-0259-7. https://arxiv.org/abs/2006.16213
+- solution: Totally positive Polya-frequency sequences are dense
+- solution status: Solved
+- solution node: `wiki/nodes/T-PFSeq-TP-Density-DiscreteGaussian.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-DiscreteGaussian-Toeplitz-StrictTP`, `L-PFSequence-Annulus-Translate-Independence`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0073: BGKP PF-sequence total-positivity density. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0074: Scott-Sokal K5-e spanning-tree polynomial complete monotonicity
+
+- source reference: Scott--Sokal, Complete monotonicity for inverse powers of some combinatorially defined polynomials, Acta Mathematica 213, 323--392, arXiv:1301.2449, DOI 10.1007/s11511-014-0121-6. https://arxiv.org/abs/1301.2449
+- solution: K5 minus e belongs to G beta above one
+- solution status: Solved
+- solution node: `wiki/nodes/T-K5MinusE-SpanningTreePolynomial-CM-BetaGe1.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-StarMesh-SpanningTree-ApexElimination`, `L-TriangleKirchhoff-RieszLaplace-Representation`, `L-ConditionalStar-GaussianLaplaceKernel`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0074: Scott-Sokal K5-e spanning-tree polynomial complete monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0075: Scott-Sokal W4 spanning-tree polynomial complete monotonicity
+
+- source reference: Scott--Sokal, Complete monotonicity for inverse powers of some combinatorially defined polynomials, Acta Mathematica 213, 323--392, arXiv:1301.2449, DOI 10.1007/s11511-014-0121-6. https://arxiv.org/abs/1301.2449
+- solution: W4 belongs to G beta above one
+- solution status: Solved
+- solution node: `wiki/nodes/T-W4-SpanningTreePolynomial-CM-BetaGe1.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-StarMesh-SpanningTree-ApexElimination`, `L-K4Kirchhoff-RieszRank3-LaplaceRepresentation`, `L-ConditionalStar-GaussianLaplaceKernel`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0075: Scott-Sokal W4 spanning-tree polynomial complete monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0076: Yang Mills-ratio half-gamma log-convexity
+
+- source reference: Zhen-Hang Yang, Extension of a complete monotonicity theorem with applications, arXiv:2507.10954v1. https://arxiv.org/abs/2507.10954
+- solution: Yang Mills-ratio half-gamma log-convexity
+- solution status: Solved
+- solution node: `wiki/nodes/T-Yang-MillsRatio-HalfGamma-LogConvexity.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `D-Yang-MillsOrderMomentKernel`, `L-SqrtLaplace-GammaTilt-LogConvexity`, `T-From-Mills-Laplace-CM-normal-form`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0076: Yang Mills-ratio half-gamma log-convexity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0077: Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false
+
+- source reference: Rui A. C. Ferreira and Thomas Simon, Convolution of beta prime distribution, Transactions of the American Mathematical Society 376, 855--890, arXiv:2108.09244, DOI 10.1090/tran/8748. https://arxiv.org/abs/2108.09244
+- solution: Tricomi Psi quotient complete-monotonicity window is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-Not-TricomiPsiQuotient-CM-c-window.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `D-TricomiPsi-StandardIntegralRepresentation`, `L-TricomiPsi-IntegerPolynomial-CM-Counterfamily`, `D-Complete-monotonicity-Bernstein-Stieltjes-language`, `D-Laplace-kernel-and-tilted-moment-language`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0077: Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0078: Rastegar-Roitershtein condition-(3) removal conjecture is false
+
+- source reference: Rastegar--Roitershtein, On a Characterization of Exponential and Double Exponential Distributions, REVSTAT 23(1), 47--52, 2025, arXiv:2203.10495, DOI 10.57805/revstat.v23i1.530. https://arxiv.org/abs/2203.10495
+- solution: Rastegar-Roitershtein condition-removal conjecture is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-Not-RastegarRoitershtein-Condition3-Unnecessary.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-ReciprocalCharacteristicFunction-FiniteIdentity-Certificate`, `T-Exact-finite-certificate-verification-principle`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0078: Rastegar-Roitershtein condition-(3) removal conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0079: BBL determinantal stable Loewner converse is false
+
+- source reference: Borcea--Branden--Liggett, Negative dependence and the geometry of polynomials, Journal of the American Mathematical Society 22 (2009), 521--567, arXiv:0707.2340. https://arxiv.org/abs/0707.2340
+- solution: BBL determinantal stable Loewner converse is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-Not-BBL-DeterminantalStable-LoewnerConverse.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-DeterminantalPolynomial-SignConjugacy-Blindness`, `D-Determinant-triangular-compression-language`, `T-Exact-finite-certificate-verification-principle`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0079: BBL determinantal stable Loewner converse is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0080: q-gamma Hankel kernel is strictly totally positive
+
+- source reference: Karp--Vishnyakova--Zhang, Unimodality preservation by ratios of functional series and integral transforms, Results in Mathematics 80, Article 112, 2025, arXiv:2408.01755, DOI 10.1007/s00025-025-02431-4. https://arxiv.org/abs/2408.01755
+- solution: q-gamma Hankel kernel is strictly totally positive
+- solution status: Solved
+- solution node: `wiki/nodes/T-QGamma-HankelKernel-STPInfinity.md`
+- theory version: `v017`
+- stage: `stage_v017`
+- review status: no contact
+- dependencies: `L-QBinomial-Atomic-Mellin-Representation`, `L-Mellin-Moment-Kernel-STP-InfiniteSupport`, `L-Generalized-Vandermonde-Chebyshev-StrictSign`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0080: q-gamma Hankel kernel is strictly totally positive. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.

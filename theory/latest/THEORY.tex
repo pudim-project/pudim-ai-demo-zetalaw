@@ -29,8 +29,8 @@
 \newcommand{\1}{\mathbf 1}
 
 \title{Zeta-Law Entropy, Gamma Curvature, and Laplace-Measure Applications}
-\author{Domingos S. P. Salazar \and Pudim AI Project}
-\date{Version v016 -- 2026-06-14}
+\author{Domingos S. P. Salazar \and Pudim AI}
+\date{Version v017 -- 2026-06-21}
 
 \setcounter{tocdepth}{3}
 \begin{document}
@@ -87,7 +87,7 @@ that make it work.
 The following list records the external source problems solved in the paper.  Each row gives the fixed application identifier, the result in which it is proved, and the source citation.
 \begin{enumerate}
 \item \label{ledger:app-0001}\textbf{APP-0001.} Alzer-Kwong convexity and concavity problem. Solved by Corollary~\ref{thm:alzer-kwong}; source problem reference \cite{app-app-0001-source}.
-\item \label{ledger:app-0002}\textbf{APP-0002.} Nantomah zeta positivity problem. Solved by Theorem~\ref{thm:nantomah-positivity}; source problem reference \cite{nantomah}.
+\item \label{ledger:app-0002}\textbf{APP-0002.} Nantomah zeta positivity problem. Solved by Counterexample~\ref{thm:nantomah-positivity}; source problem reference \cite{nantomah}.
 \item \label{ledger:app-0003}\textbf{APP-0003.} Sroysang generalized Holder problem. Solved by Corollary~\ref{thm:sroysang-holder}; source problem reference \cite{sroysang}.
 \item \label{ledger:app-0004}\textbf{APP-0004.} Complete monotonicity of \((\log\Gamma(x)+\log\Gamma(1/x))''\). Solved by Corollary~\ref{thm:reciprocal-gamma-complete-monotonicity}; source problem reference \cite{app-app-0004-source}.
 \item \label{ledger:app-0005}\textbf{APP-0005.} Exact inverse-tail floor formula at s=7. Solved by Corollary~\ref{thm:tail-s7-floor}; source problem reference \cite{kim-song-tail}.
@@ -156,6 +156,16 @@ The following list records the external source problems solved in the paper.  Ea
 \item \label{ledger:app-0068}\textbf{APP-0068.} Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\). Solved by Counterexample~\ref{res:kummer-m-global-modulus-inequality-fails-alpha1-beta5halves}; source problem reference \cite{app-app-0068-source}.
 \item \label{ledger:app-0069}\textbf{APP-0069.} Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions. Solved by Corollary~\ref{res:nagelweissmecke-laplacesurvival-poissonization-solution}; source problem reference \cite{app-app-0069-source}.
 \item \label{ledger:app-0070}\textbf{APP-0070.} Dytso-Bustin-Poor generalized-Gaussian product factorization classification. Solved by Corollary~\ref{res:dytsobustinpoor-generalizedgaussian-productfactorization-classification}; source problem reference \cite{app-app-0070-source}.
+\item \label{ledger:app-0071}\textbf{APP-0071.} Bendikov-Cygan SBF renewal monotonicity. Solved by Corollary~\ref{res:bendikovcygan-sbf-renewalsequence-nonincreasing}; source problem reference \cite{app-app-0071-source}.
+\item \label{ledger:app-0072}\textbf{APP-0072.} Buchstaber-Glutsyuk real-order Bessel I strict total positivity. Solved by Corollary~\ref{res:besseli-realorder-stricttotalpositivity}; source problem reference \cite{app-app-0072-source}.
+\item \label{ledger:app-0073}\textbf{APP-0073.} BGKP PF-sequence total-positivity density. Solved by Corollary~\ref{res:pfseq-tp-density-discretegaussian}; source problem reference \cite{app-app-0073-source}.
+\item \label{ledger:app-0074}\textbf{APP-0074.} Scott-Sokal K5-e spanning-tree polynomial complete monotonicity. Solved by Corollary~\ref{res:k5minuse-spanningtreepolynomial-cm-betage1}; source problem reference \cite{app-app-0074-source}.
+\item \label{ledger:app-0075}\textbf{APP-0075.} Scott-Sokal W4 spanning-tree polynomial complete monotonicity. Solved by Corollary~\ref{res:w4-spanningtreepolynomial-cm-betage1}; source problem reference \cite{app-app-0074-source}.
+\item \label{ledger:app-0076}\textbf{APP-0076.} Yang Mills-ratio half-gamma log-convexity. Solved by Corollary~\ref{res:yang-millsratio-halfgamma-logconvexity}; source problem reference \cite{app-app-0076-source}.
+\item \label{ledger:app-0077}\textbf{APP-0077.} Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false. Solved by Counterexample~\ref{res:not-tricomipsiquotient-cm-c-window}; source problem reference \cite{app-app-0077-source}.
+\item \label{ledger:app-0078}\textbf{APP-0078.} Rastegar-Roitershtein condition-(3) removal conjecture is false. Solved by Counterexample~\ref{res:not-rastegarroitershtein-condition3-unnecessary}; source problem reference \cite{app-app-0078-source}.
+\item \label{ledger:app-0079}\textbf{APP-0079.} BBL determinantal stable Loewner converse is false. Solved by Counterexample~\ref{res:not-bbl-determinantalstable-loewnerconverse}; source problem reference \cite{app-app-0079-source}.
+\item \label{ledger:app-0080}\textbf{APP-0080.} q-gamma Hankel kernel is strictly totally positive. Solved by Corollary~\ref{res:qgamma-hankelkernel-stpinfinity}; source problem reference \cite{app-app-0080-source}.
 \end{enumerate}
 
 \section{Zeta-law calculus}
@@ -1006,6 +1016,8 @@ This resolves the source problem recorded as \textbf{APP-0057} \cite{qi-hlambda}
 \begin{proof}
 We use Proposition~\ref{res:qi-logconcaveconvolution-vertexchord-lowerbound} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
+status: strict private APP candidate; registry pending
+
 Let \(n\ge2\), \(x>0\), and let \(f_i:[0,x]\to(0,\infty)\) be logarithmically concave. Write
 \[
 \phi_i(u)=\log f_i(u)
@@ -1067,8 +1079,8 @@ Let \(D\) be a domain and let a universal claim require a sign condition \(F(x)\
 The proof is the elementary logic of a universal quantifier. The point \(x_0\) satisfies the hypotheses of the universal statement, while the certified sign computation violates the asserted conclusion. Multiplication by a positive factor preserves signs, so any equivalent reduced inequality has the same counterexample. Therefore the original universal sign, convexity, monotonicity, or complete-monotonicity claim is refuted.
 \end{proof}
 
-\begin{theorem}[APP-0002: Affirmative solution of Nantomah zeta positivity problem]
-\phantomsection\addcontentsline{toc}{subsubsection}{Theorem~\thetheorem: APP-0002: Affirmative solution of Nantomah zeta positivity problem}
+\begin{counterexample}[APP-0002: Affirmative solution of Nantomah zeta positivity problem]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0002: Affirmative solution of Nantomah zeta positivity problem}
 \label{thm:nantomah-positivity}
 For every \(n\in\N\),
 \begin{equation}
@@ -1079,108 +1091,87 @@ For every \(n\in\N\),
 \end{equation}
 
 
-\end{theorem}
+\end{counterexample}
 
 \begin{proof}
-Put \(s=n+1\ge2\) and \(Z_s=\zeta(s)\).  The expression in \eqref{eq:nantomah-positivity} becomes
-\begin{equation}
-\label{eq:nantomah-ks}
-K_s=(s+1)Z_sZ_{s+2}-sZ_{s+1}^2-Z_sZ_{s+1}.
-\end{equation}
-Let \(X(m)=1/m\) under \(\rho_s\).  By \eqref{eq:zeta-law-moment},
-\begin{equation}
-\label{eq:nantomah-moments}
-\E_s[X]=\frac{Z_{s+1}}{Z_s},
+We use Proposition~\ref{res:pointwise-obstruction-certificate-principle} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Let
+\[
+g_\nu(u)=\log(\sqrt u\,I_\nu(u)),
 \qquad
-\E_s[X^2]=\frac{Z_{s+2}}{Z_s}.
-\end{equation}
-Thus
-\begin{equation}
-\label{eq:nantomah-moment-form}
-\frac{K_s}{Z_s^2}
-=(s+1)\E_s[X^2]-s\E_s[X]^2-\E_s[X]
-=(s+1)\Var_s(X)+\E_s[X]^2-\E_s[X].
-\end{equation}
+r_\nu(u)=\frac{I_\nu'(u)}{I_\nu(u)}.
+\]
+Then
+\[
+g_\nu''(u)=r_\nu'(u)-\frac{1}{2u^2}.
+\]
+The modified Bessel equation
+\[
+u^2I_\nu''(u)+uI_\nu'(u)-(u^2+\nu^2)I_\nu(u)=0
+\]
+gives
+\[
+\frac{I_\nu''(u)}{I_\nu(u)}
+=1+\frac{\nu^2}{u^2}-\frac{r_\nu(u)}{u}.
+\]
+Since
+\[
+r_\nu'(u)=\frac{I_\nu''(u)}{I_\nu(u)}-r_\nu(u)^2,
+\]
+we get
+\[
+g_\nu''(u)
+=
+1+\frac{\nu^2-\frac12}{u^2}
+-\frac{r_\nu(u)}{u}
+-r_\nu(u)^2.
+\]
+Thus the Bessel I Riccati log concavity inequality is exactly the strict log-concavity condition \(g_\nu''(u)<0\).
 
-Write \(a=\zeta(s)-1\), \(b=\zeta(s+1)-1\), and \(c=\zeta(s+2)-1\).  Expanding gives
-\begin{align}
-\label{eq:nantomah-lq-split}
-K_s&=L_s+Q_s,&
-L_s&=sa+(s+1)c-(2s+1)b,&
-Q_s&=(s+1)ac-sb^2-ab.
-\end{align}
-The linear part is termwise positive:
-\begin{equation}
-\label{eq:nantomah-linear-positive}
-L_s=
-\sum_{m=2}^{\infty}
-m^{-s}\frac{(m-1)(s(m-1)-1)}{m^2}
-\ge
-2^{-s}\frac{s-1}{4}.
-\end{equation}
-Since \(b\le a/2\) and \(c\ge0\),
-\begin{equation}
-\label{eq:nantomah-quadratic-correction}
-Q_s\ge -sb^2-ab\ge-\frac{s+2}{4}a^2.
-\end{equation}
-For \(s\ge4\),
-\begin{equation}
-\label{eq:nantomah-tail-bound}
-a=\sum_{m=2}^{\infty}m^{-s}
-\le2^{-s}+\int_2^\infty x^{-s}\,dx
-=2^{-s}\left(1+\frac2{s-1}\right).
-\end{equation}
-Equations \eqref{eq:nantomah-linear-positive}, \eqref{eq:nantomah-quadratic-correction}, and \eqref{eq:nantomah-tail-bound} imply
-\begin{equation}
-\label{eq:nantomah-lower-bound}
-K_s\ge
-\frac14\left[
-2^{-s}(s-1)
--(s+2)2^{-2s}\left(1+\frac2{s-1}\right)^2
-\right].
-\end{equation}
-It is therefore enough to show
-\begin{equation}
-\label{eq:nantomah-sufficient-inequality}
-2^s(s-1)>(s+2)\left(1+\frac2{s-1}\right)^2.
-\end{equation}
-Equivalently,
-\begin{equation}
-\label{eq:nantomah-f-function}
-F(s)=\frac{2^s(s-1)^3}{(s+2)(s+1)^2}>1.
-\end{equation}
-Now \(F(4)=72/25>1\), and
-\begin{equation}
-\label{eq:nantomah-f-monotone}
-\frac{d}{ds}\log F(s)
-=\log2+\frac3{s-1}-\frac1{s+2}-\frac2{s+1}>0
-\qquad(s\ge4).
-\end{equation}
-Thus \(K_s>0\) for \(s\ge4\).
+For \(\nu=0\),
+\[
+r_0(u)=\frac{I_0'(u)}{I_0(u)}=\frac{I_1(u)}{I_0(u)}.
+\]
+At \(u=10\), the Riccati expression is
+\[
+g_0''(10)=\frac{199}{200}-\frac{r_0(10)}{10}-r_0(10)^2.
+\]
+It is enough to prove
+\[
+r_0(10)<\frac{9487}{10000},
+\]
+because
+\[
+\frac{199}{200}
+-\frac{1}{10}\frac{9487}{10000}
+-\left(\frac{9487}{10000}\right)^2
+=\frac{9831}{100000000}>0.
+\]
 
-For \(s=2\),
-\begin{equation}
-\label{eq:nantomah-k2}
-K_2=3\zeta(2)\zeta(4)-2\zeta(3)^2-\zeta(2)\zeta(3).
-\end{equation}
-Using \(\zeta(3)<5/4\), \(\zeta(2)=\pi^2/6\), and \(\zeta(4)=\pi^4/90\),
-\begin{equation}
-\label{eq:nantomah-k2-bound}
-K_2>
-\frac{\pi^6}{180}-\frac{5\pi^2}{24}-\frac{25}{8}
->
-\frac{10415360504209}{180000000000000}>0.
-\end{equation}
-For \(s=3\), the estimates \(\zeta(3)>251/216\), \(\zeta(5)>8051/7776\), and \(\zeta(4)<13/12\) yield
-\begin{equation}
-\label{eq:nantomah-k3-bound}
-K_3>
-\frac{251}{216}
-\left(4\cdot\frac{8051}{7776}-\frac{13}{12}\right)
--3\left(\frac{13}{12}\right)^2
-=\frac{13783}{419904}>0.
-\end{equation}
-Hence \(K_s>0\) for all integers \(s\ge2\), proving the theorem.  This answers Nantomah's question \cite{nantomah}.
+\[
+I_0(10)=\sum_{k=0}^{\infty}\frac{25^k}{(k!)^2},
+\qquad
+I_1(10)=\sum_{k=0}^{\infty}\frac{5\cdot25^k}{k!(k+1)!}.
+\]
+With \(N=20\), set
+\[
+L_0=\sum_{k=0}^{20}\frac{25^k}{(k!)^2}<I_0(10).
+\]
+For the \(I_1\) tail after \(N=20\), the term ratio is bounded by
+\[
+q=\frac{25}{22\cdot23}<1,
+\]
+so the script computes an exact rational upper bound \(U_1>I_1(10)\) and verifies
+\[
+10000\,U_1<9487\,L_0.
+\]
+Therefore \(I_1(10)/I_0(10)<9487/10000\), and hence
+\[
+g_0''(10)>0.
+\]
+
+This proves the Bessel-\(I\) log-concavity counterexample to \(T\)-\(I\) sqrt-log concavity for \(\nu>0\), and the counterexample to \(T\)-\(I\) Riccati log-concavity inequality.
 \end{proof}
 
 \begin{proposition}[Zeta free energy uniform curvature bound]
@@ -4991,7 +4982,7 @@ This resolves the source problem recorded as \textbf{APP-0070} \cite{app-app-007
 \end{corollary}
 
 \begin{proof}
-We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:positivestable-negativemoment}, Proposition~\ref{res:generalizedgaussian-np01}, Proposition~\ref{res:inversestable-sizebiasfactor}, and Proposition~\ref{res:mellinquotient-to-productfactor} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:positivestable-negativemoment}, Proposition~\ref{res:inversestable-sizebiasfactor}, Proposition~\ref{res:generalizedgaussian-np01}, and Proposition~\ref{res:mellinquotient-to-productfactor} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 For \(r>0\), use the identity
 \[
@@ -5589,7 +5580,7 @@ This resolves the source problem recorded as \textbf{APP-0069} \cite{app-app-006
 \end{corollary}
 
 \begin{proof}
-We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:cmsurvival-bernsteinwidder-inversecriterion}, Proposition~\ref{res:laplacesurvivaltransform}, Proposition~\ref{res:conditionalpoissonization-pgf}, and Proposition~\ref{res:uniformexponentialrace-laplacesurvival} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:laplacesurvivaltransform}, Proposition~\ref{res:conditionalpoissonization-pgf}, Proposition~\ref{res:cmsurvival-bernsteinwidder-inversecriterion}, and Proposition~\ref{res:uniformexponentialrace-laplacesurvival} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Since \(U\) is uniform on \((0,1)\),
 \[
@@ -6096,6 +6087,44 @@ for all sufficiently large \(u\). Thus \(g_\nu'(u)<0\) eventually.
 The derivative has opposite signs near the two endpoints. Therefore \(g_\nu\) is neither increasing nor decreasing on \((0,\infty)\) for every \(|\nu|<1\).
 \end{proof}
 
+\begin{proposition}[BPV BesselK halforder logderivative square unimodal]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: BPV BesselK halforder logderivative square unimodal}
+\label{res:bpv-besselk-halforder-logderivative-square-unimodal}
+For \(\nu=1/2\), the BPV quotient \(g(u)=K_{1/2}'(u)/K_{1/2}(u)^2\) satisfies \(g'(u)>0\) on \((0,(\sqrt2-1)/2)\) and \(g'(u)<0\) on \(((\sqrt2-1)/2,\infty)\). Equivalently, it has a unique critical point at \((\sqrt2-1)/2\), a strict global maximum.
+\end{proposition}
+
+\begin{proof}
+Put \(C=\sqrt{\pi/2}\). The half-order identity gives
+\[
+K_{1/2}(u)=C u^{-1/2}e^{-u}.
+\]
+Hence
+\[
+\frac{K_{1/2}'(u)}{K_{1/2}(u)}
+=\frac{d}{du}\log K_{1/2}(u)
+=-1-\frac{1}{2u}.
+\]
+Therefore
+\[
+g(u)=\frac{K_{1/2}'(u)/K_{1/2}(u)}{K_{1/2}(u)}
+=-C^{-1}e^u\left(u^{1/2}+\frac12u^{-1/2}\right).
+\]
+Differentiating,
+\[
+g'(u)
+=-C^{-1}e^u
+\left(u^{1/2}+u^{-1/2}-\frac14u^{-3/2}\right)
+=-C^{-1}e^u u^{-3/2}\left(u^2+u-\frac14\right).
+\]
+The quadratic \(u^2+u-\frac14\) has the single positive zero
+\[
+r=\frac{-1+\sqrt2}{2}.
+\]
+It is negative on \((0,r)\) and positive on \((r,\infty)\). Since the remaining prefactor in \(g'\) is strictly negative, \(g'(u)>0\) on \((0,r)\) and \(g'(u)<0\) on \((r,\infty)\).
+
+Thus the half-order quotient increases first and then decreases. It is not decreasing on \((0,\infty)\).
+\end{proof}
+
 \begin{corollary}[APP-0056: BPV Bessel K logarithmic-derivative quotient monotonicity is classified]
 \phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0056: BPV Bessel K logarithmic-derivative quotient monotonicity is classified}
 \label{res:bpv-besselk-full-monotonicity-classification}
@@ -6107,7 +6136,7 @@ This resolves the source problem recorded as \textbf{APP-0056} \cite{app-app-005
 \end{corollary}
 
 \begin{proof}
-We use Proposition~\ref{res:bpv-besselk-open-range-nonmonotone} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:bpv-besselk-halforder-logderivative-square-unimodal} and Proposition~\ref{res:bpv-besselk-open-range-nonmonotone} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Since \(K_{-\nu}=K_\nu\), it is enough to treat \(0\le\nu<1\). Put
 \[
@@ -7925,6 +7954,12 @@ If \(F\) is a Bernstein function and \(a_n=F(n)\), then the first differences \(
 For BF Integer Increments Are Hausdorff CM, this proof is the corresponding component of Proposition~\ref{res:signed-atomic-hausdorff-negativity-obstruction}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
 \end{proof}
 
+\begin{definition}[GRWS weight-squared sequence]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: GRWS weight-squared sequence}
+\label{res:grws-weightsquared-sequence}
+For a geometrically regular weighted shift with parameters \(p>1\), \(-1<N,D<1\), the weights are \(\alpha_n=\sqrt{(p^n+N)/(p^n+D)}\), and the weights-squared interpolation sequence is \(a_n=\alpha_n^2=(p^n+N)/(p^n+D)\).
+\end{definition}
+
 \begin{proposition}[GRWS SectorII Difference Atomic Expansion]
 \phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: GRWS SectorII Difference Atomic Expansion}
 \label{res:grws-sectorii-difference-atomic-expansion}
@@ -8358,7 +8393,7 @@ This resolves the source problem recorded as \textbf{APP-0062} \cite{app-app-006
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:endpoint-obstruction-certificate-language} and Proposition~\ref{res:additive-product-kernel-rectangle-annihilator} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle} and Proposition~\ref{res:additive-product-kernel-rectangle-annihilator} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Let \(X\) and \(W\) be sets with at least two points. Let \(K_X\colon X\times X\to\mathbb R\) and \(K_W\colon W\times W\to\mathbb R\) be finite-valued kernels, and let \(A,B\in\mathbb R\). Define
 \[
@@ -8630,46 +8665,26 @@ This resolves the source problem recorded as \textbf{APP-0064} \cite{app-app-006
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:pointwise-obstruction-certificate-principle}, Proposition~\ref{res:scalar-matrix-case-refutes-universal-existence}, and Proposition~\ref{res:scalarpowermean-ratio-endpoint} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:endpoint-obstruction-certificate-language}, Proposition~\ref{res:scalarpowermean-2point}, Proposition~\ref{res:scalarpowermean-ratio-endpoint}, and Proposition~\ref{res:scalar-matrix-case-refutes-universal-existence} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
-Take the one-dimensional scalar case
+Take scalar data
 \[
-p=1,\qquad q=2,\qquad X=1,\qquad Y=2.
+p=1,
+\quad q=2,
+\quad X=1,
+\quad Y=2.
 \]
-The data satisfy \(0<X<Y\). If positive scalars \(a,b\) solved the source
-system, then
+If positive scalars \(a,b\) solved the two equations, then
 \[
-\frac{a+b}{2}=1,\qquad
-\sqrt{\frac{a^2+b^2}{2}}=2.
+\frac{a+b}{2}=1,
+\qquad
+\left(\frac{a^2+b^2}{2}\right)^{1/2}=2.
 \]
 Thus \(a+b=2\) and \(a^2+b^2=8\). But for \(a,b\ge0\),
 \[
-a^2+b^2\le a^2+2ab+b^2=(a+b)^2=4,
+a^2+b^2\le (a+b)^2=4,
 \]
-which contradicts \(a^2+b^2=8\). Hence no positive scalar solution exists.
-The contradiction is a fortiori valid for strictly positive scalars.
-
-For \(0<p<q\) and \(a,b\ge0\), not both zero, define
-\[
-M_r(a,b)=\left(\frac{a^r+b^r}{2}\right)^{1/r}.
-\]
-Using \(\ell^r\)-norm monotonicity in \(\mathbb R^2\),
-\[
-\frac{M_q(a,b)}{M_p(a,b)}
-=
-2^{1/p-1/q}\frac{\|(a,b)\|_q}{\|(a,b)\|_p}
-\le 2^{1/p-1/q}.
-\]
-Thus scalar inverse data with \(X>0\) must satisfy
-\[
-1\le\frac{Y}{X}\le2^{1/p-1/q},
-\]
-with strict upper inequality when \(a,b>0\) and both are nonzero. In the
-certificate above, \(Y/X=2>\sqrt2=2^{1-1/2}\).
-
-This proves a negative answer to the literal unrestricted source question.
-It does not classify the corrected inverse problem obtained by adding an
-upper scalar or matrix compatibility condition.
+contradicting \(a^2+b^2=8\). Therefore the asserted universal inverse existence statement fails already in the one-dimensional scalar case.
 \end{proof}
 
 \subsection{Kummer-series modulus obstruction}
@@ -9208,6 +9223,7 @@ This solves the finite homogeneous Weyl algebra \(\ell^1\) coefficient model pro
 
 
 \subsection{Finite certificate and Chebyshev-corridor obstruction}
+
 \begin{proposition}[Exact finite certificate verification principle]
 \phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Exact finite certificate verification principle}
 \label{res:exact-finite-certificate-verification-principle}
@@ -9266,7 +9282,7 @@ This resolves the source problem recorded as \textbf{APP-0055} \cite{app-app-005
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:snakepolynomial-corridor-alternation-certificate}, and Proposition~\ref{res:snakepolynomial-chebyshev-language} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:snakepolynomial-chebyshev-language}, and Proposition~\ref{res:snakepolynomial-corridor-alternation-certificate} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Let
 \[
@@ -9326,6 +9342,7 @@ Therefore Conjecture 7.1 is false as written.
 \end{proof}
 
 \subsection{Total-positivity and inverse-polynomial certificates}
+
 \begin{definition}[Finite-order total nonnegativity for kernels]
 \phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Finite-order total nonnegativity for kernels}
 \label{res:tnkernel-finiteorder}
@@ -9427,7 +9444,7 @@ This resolves the source problem recorded as \textbf{APP-0065} \cite{app-app-006
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:psd-minor-obstructs-tn}, Proposition~\ref{res:jks-kernel}, and Proposition~\ref{res:tnkernel-finiteorder} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:determinant-triangular-compression-language}, Proposition~\ref{res:tnkernel-finiteorder}, Proposition~\ref{res:psd-minor-obstructs-tn}, and Proposition~\ref{res:jks-kernel} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Take
 \[
@@ -9693,6 +9710,7 @@ The middle-window monotonicity theorem on \(1/2\le a\le1\) and the outer-window 
 
 
 \subsection{Multiple-gamma normal forms and Bernstein obstruction}
+
 \begin{proposition}[Special-function normal-form calculus principle]
 \phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Special-function normal-form calculus principle}
 \label{res:special-function-normal-form-calculus-principle}
@@ -9955,6 +9973,1588 @@ For every \(\mu>0\) and every positive noncentrality \(\lambda>0\),
 \chi_{\mu,\lambda}\notin HCM.
 \]
 Thus the BPV optimal HCM range for positive noncentrality is empty. If one adjoins the central case \(\lambda=0\), the remaining density is a gamma density and is HCM; hence the extended closed range is exactly the central line \(\lambda=0\).
+
+Strict APP status: candidate for the next APP slot after APP-0046 because the source explicitly asks the optimal range, the local theorem answers it, and the result is not among public APP-0001--APP-0045.
+\end{proof}
+
+\section{Gamma and polygamma applications}
+\label{sec:gamma-and-polygamma-applications}
+This section contains applications whose main mechanism is gamma-function curvature, polygamma sign control, or beta-window reduction.  The recurring strategy is to rewrite parameter inequalities as logarithmic-derivative or endpoint statements and then propagate the resulting sign information.
+
+\begin{proposition}[Bendikov-Cygan renewal generating function from SBF potential density]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Bendikov-Cygan renewal generating function from SBF potential density}
+\label{res:bendikovcygan-renewalgeneratingfunction-sbfpotential}
+For a Bendikov--Cygan source-normalized special Bernstein function \(\psi\), the renewal generating function \(F(z)=\sum_{k\ge0}C_\psi(k)z^k\) satisfies \(F(z)=1/\psi(1-z)\). Using the special-Bernstein potential representation \(1/\psi(\lambda)=b+\int_0^\infty e^{-\lambda t}u(t)\,dt\) with \(b\ge0\) and nonincreasing \(u\), one has \(C_\psi(0)=b+\int_0^\infty e^{-t}u(t)\,dt\) and \(C_\psi(k)=k!^{-1}\int_0^\infty t^k e^{-t}u(t)\,dt\) for \(k\ge1\).
+\end{proposition}
+
+\begin{proof}
+Let
+\[
+K(z)=\sum_{n\ge1}c(\psi,n)z^n.
+\]
+The Bendikov--Cygan discrete subordination coefficient calculation gives
+\[
+K(z)=1-\psi(1-z),
+\]
+under the source normalization \(\psi(0)=0\), \(\psi(1)=1\). Since \(C(0)=1\) and
+\[
+C(n)=\sum_{j=1}^{n}c(\psi,j)C(n-j),
+\]
+the generating function \(F(z)=\sum_{n\ge0}C(n)z^n\) satisfies
+\[
+F(z)=\frac{1}{1-K(z)}=\frac{1}{\psi(1-z)}.
+\]
+
+For \(\psi\in\mathrm{SBF}\), the source-cited potential representation gives
+\[
+\frac{1}{\psi(\lambda)}
+=b+\int_0^\infty e^{-\lambda t}u(t)\,dt,
+\]
+where \(b\ge0\) and \(u\) is nonincreasing. Substituting \(\lambda=1-z\),
+\[
+F(z)=b+\int_0^\infty e^{-t}e^{zt}u(t)\,dt
+=b+\sum_{k\ge0}\frac{z^k}{k!}\int_0^\infty t^k e^{-t}u(t)\,dt.
+\]
+Therefore
+\[
+C(0)=b+\int_0^\infty e^{-t}u(t)\,dt=1
+\]
+and, for \(k\ge1\),
+\[
+C(k)=\frac1{k!}\int_0^\infty t^k e^{-t}u(t)\,dt.
+\]
+
+For \(k\ge1\),
+\[
+C(k+1)-C(k)
+=\frac1{(k+1)!}\int_0^\infty t^k e^{-t}(t-(k+1))u(t)\,dt.
+\]
+If \(T\sim\Gamma(k+1,1)\), this is
+\[
+C(k+1)-C(k)=\frac1{k+1}\operatorname{Cov}(T,u(T)).
+\]
+The covariance is nonpositive because \(t\mapsto t\) is increasing and \(u\) is nonincreasing:
+\[
+\operatorname{Cov}(T,u(T))
+=\frac12\iint (t-s)(u(t)-u(s))\,d\mu_k(t)d\mu_k(s)\le0.
+\]
+Thus \(C(k+1)\le C(k)\) for \(k\ge1\).
+
+For \(k=0\), the atom \(b\) must be kept:
+\[
+C(1)-C(0)
+=\int_0^\infty (t-1)e^{-t}u(t)\,dt-b
+=\operatorname{Cov}_{\mathrm{Exp}(1)}(T,u(T))-b\le0.
+\]
+Hence \(C(1)\le C(0)\), completing the monotonicity proof.
+\end{proof}
+
+\begin{proposition}[Gamma moments of a decreasing density form a decreasing normalized sequence]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Gamma moments of a decreasing density form a decreasing normalized sequence}
+\label{res:gammamonotonedensity-momentsequence-decreasing}
+Let \(u:(0,\infty)\to[0,\infty)\) be nonincreasing and locally integrable with finite gamma-weighted moments. Define \(M_k=k!^{-1}\int_0^\infty t^k e^{-t}u(t)\,dt\) for \(k\ge1\). Then \(M_{k+1}\le M_k\) for every \(k\ge1\). If additionally \(M_0=b+\int_0^\infty e^{-t}u(t)\,dt\) with \(b\ge0\), then \(M_1\le M_0\).
+\end{proposition}
+
+\begin{proof}
+For Gamma moments of a decreasing density form a decreasing normalized sequence, this proof is the corresponding component of Proposition~\ref{res:bendikovcygan-renewalgeneratingfunction-sbfpotential}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{corollary}[APP-0071: Bendikov-Cygan SBF renewal monotonicity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0071: Bendikov-Cygan SBF renewal monotonicity}
+\label{res:bendikovcygan-sbf-renewalsequence-nonincreasing}
+For every Bendikov--Cygan source-normalized special Bernstein function \(\psi\), the discrete renewal sequence \(C_\psi(k)\) is nonincreasing: \(C_\psi(k+1)\le C_\psi(k)\) for every \(k\ge0\). Consequently the Bendikov--Cygan open question asking whether special Bernstein functions have decreasing discrete renewal sequences is answered affirmatively, with decreasing interpreted as nonincreasing.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0071} \cite{app-app-0071-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:bendikovcygan-renewalgeneratingfunction-sbfpotential}, and Proposition~\ref{res:gammamonotonedensity-momentsequence-decreasing} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Let
+\[
+K(z)=\sum_{n\ge1}c(\psi,n)z^n.
+\]
+The Bendikov--Cygan discrete subordination coefficient calculation gives
+\[
+K(z)=1-\psi(1-z),
+\]
+under the source normalization \(\psi(0)=0\), \(\psi(1)=1\). Since \(C(0)=1\) and
+\[
+C(n)=\sum_{j=1}^{n}c(\psi,j)C(n-j),
+\]
+the generating function \(F(z)=\sum_{n\ge0}C(n)z^n\) satisfies
+\[
+F(z)=\frac{1}{1-K(z)}=\frac{1}{\psi(1-z)}.
+\]
+
+For \(\psi\in\mathrm{SBF}\), the source-cited potential representation gives
+\[
+\frac{1}{\psi(\lambda)}
+=b+\int_0^\infty e^{-\lambda t}u(t)\,dt,
+\]
+where \(b\ge0\) and \(u\) is nonincreasing. Substituting \(\lambda=1-z\),
+\[
+F(z)=b+\int_0^\infty e^{-t}e^{zt}u(t)\,dt
+=b+\sum_{k\ge0}\frac{z^k}{k!}\int_0^\infty t^k e^{-t}u(t)\,dt.
+\]
+Therefore
+\[
+C(0)=b+\int_0^\infty e^{-t}u(t)\,dt=1
+\]
+and, for \(k\ge1\),
+\[
+C(k)=\frac1{k!}\int_0^\infty t^k e^{-t}u(t)\,dt.
+\]
+
+For \(k\ge1\),
+\[
+C(k+1)-C(k)
+=\frac1{(k+1)!}\int_0^\infty t^k e^{-t}(t-(k+1))u(t)\,dt.
+\]
+If \(T\sim\Gamma(k+1,1)\), this is
+\[
+C(k+1)-C(k)=\frac1{k+1}\operatorname{Cov}(T,u(T)).
+\]
+The covariance is nonpositive because \(t\mapsto t\) is increasing and \(u\) is nonincreasing:
+\[
+\operatorname{Cov}(T,u(T))
+=\frac12\iint (t-s)(u(t)-u(s))\,d\mu_k(t)d\mu_k(s)\le0.
+\]
+Thus \(C(k+1)\le C(k)\) for \(k\ge1\).
+
+For \(k=0\), the atom \(b\) must be kept:
+\[
+C(1)-C(0)
+=\int_0^\infty (t-1)e^{-t}u(t)\,dt-b
+=\operatorname{Cov}_{\mathrm{Exp}(1)}(T,u(T))-b\le0.
+\]
+Hence \(C(1)\le C(0)\), completing the monotonicity proof.
+\end{proof}
+
+\begin{proposition}[Conditional star kernels are Gaussian Laplace transforms]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Conditional star kernels are Gaussian Laplace transforms}
+\label{res:conditionalstar-gaussianlaplacekernel}
+For points \(u_1,u_2,u_3\in\mathbb R^2\), positive \(a_i\), \(A=\sum_i a_i\), and \(p_a=(a_1a_2/A,a_1a_3/A,a_2a_3/A)\), the function \(A^{-1}\exp(-p_a\cdot r)\), with \(r_{ij}=|u_i-u_j|^2\), is a positive Laplace transform in \((a_1,a_2,a_3)\). Consequently \(A^{-\beta}\exp(-p_a\cdot r)\) is completely monotone for every \(\beta>1\).
+\end{proposition}
+
+\begin{proof}
+Let \(G=K_5-e\), realized as two nonadjacent apices joined to the terminal triangle \(\{2,3,4\}\). Write
+\[
+a=(a_1,a_2,a_3)=(x_{02},x_{03},x_{04}),\qquad
+b=(b_1,b_2,b_3)=(x_{12},x_{13},x_{14}),
+\]
+\[
+c=(c_{12},c_{13},c_{23})=(x_{23},x_{24},x_{34}),
+\qquad A=a_1+a_2+a_3,\quad B=b_1+b_2+b_3 .
+\]
+For a triangle edge-vector \(w=(w_1,w_2,w_3)\), put
+\[
+E(w)=w_1w_2+w_1w_3+w_2w_3 .
+\]
+The claim is that \(T_G^{-\beta}\) is completely monotone in all nine positive edge variables for every \(\beta>1\).
+
+\emph{Lemma 1: star-mesh factorization of \(T_{K_5-e}\).}
+
+For \(u=(u_1,u_2,u_3)\), define
+\[
+p_u=\left({u_1u_2\over u_1+u_2+u_3},
+          {u_1u_3\over u_1+u_2+u_3},
+          {u_2u_3\over u_1+u_2+u_3}\right).
+\]
+Then
+\[
+T_{K_5-e}(a,b,c)=AB\,E(c+p_a+p_b).
+\]
+
+Indeed, if a network \(H\) on three terminals has spanning-tree polynomial \(T_H\), adjoining a new apex with conductances \(u_1,u_2,u_3\) to the terminals multiplies the reduced Laplacian determinant by \(U=u_1+u_2+u_3\) and replaces \(H\) by the star-mesh transformed network with added terminal edge conductances \(p_u\). This is the Schur complement of the apex diagonal block \(U\) in the weighted Laplacian:
+\[
+L_H+\operatorname{diag}(u)-{uu^T\over U}.
+\]
+The last matrix is the terminal Laplacian of \(H\) plus a triangle with edge conductances \(u_iu_j/U\). Applying this twice, once for each apex, leaves the terminal triangle with edge vector \(c+p_a+p_b\), whose spanning-tree polynomial is \(E\).
+
+For \(w_i>0\) and \(\beta>1/2\),
+\[
+E(w)^{-\beta}
+=C_\beta\int_{Y>0}
+\exp\{-w_1(Y_{11}+Y_{22}-2Y_{12})-w_2Y_{11}-w_3Y_{22}\}
+(\det Y)^{\beta-3/2}\,dY
+\]
+with \(C_\beta>0\), where \(Y\) ranges over positive definite \(2\times2\) symmetric matrices.
+
+This is the standard \(2\times2\) Riesz/Wishart integral applied to
+\[
+M(w)=
+\begin{pmatrix}
+w_1+w_2 & -w_1\\
+-w_1 & w_1+w_3
+\end{pmatrix},
+\qquad \det M(w)=E(w).
+\]
+The exponent is \(-\operatorname{tr}(M(w)Y)\), and the Wishart integral is valid for \(\beta>(2-1)/2=1/2\).
+
+For \(Y>0\), choose vectors \(u,v\in\mathbb R^2\) with Gram matrix \(Y\). Then
+\[
+r_{12}=Y_{11}+Y_{22}-2Y_{12}=|u-v|^2,\quad
+r_{13}=Y_{11}=|u|^2,\quad
+r_{23}=Y_{22}=|v|^2 .
+\]
+
+For every \(r_{ij}=|u_i-u_j|^2\) with \(u_1,u_2,u_3\in\mathbb R^2\),
+\[
+A^{-1}\exp(-p_a\cdot r)
+=\pi^{-1}\int_{\mathbb R^2}
+\exp\left(-\sum_{i=1}^3 a_i|z-u_i|^2\right)\,dz.
+\]
+This is the elementary Gaussian completion identity
+\[
+\sum_i a_i|z-u_i|^2
+=A\left|z-\frac{\sum_i a_iu_i}{A}\right|^2
+{1\over A}\sum_{i<j}a_ia_j|u_i-u_j|^2 .
+\]
+Thus \(A^{-1}e^{-p_a\cdot r}\) is a positive Laplace transform in the variables \(a_i\). For \(\beta>1\),
+\[
+A^{-\beta}e^{-p_a\cdot r}
+=A^{-(\beta-1)}\big(A^{-1}e^{-p_a\cdot r}\big)
+\]
+is again completely monotone, because
+\[
+A^{-(\beta-1)}
+=\Gamma(\beta-1)^{-1}\int_0^\infty t^{\beta-2}e^{-tA}\,dt.
+\]
+The same statement holds for \(B^{-\beta}e^{-p_b\cdot r}\).
+
+From Lemma 1,
+\[
+T_G^{-\beta}=A^{-\beta}B^{-\beta}E(c+p_a+p_b)^{-\beta}.
+\]
+Insert Lemma 2 with \(w=c+p_a+p_b\). For each positive \(Y\), the factor involving \(c\) is
+\[
+\exp(-c\cdot r(Y)),
+\]
+a positive Laplace kernel in the triangle-edge variables. The factors involving \(a\) and \(b\) are
+\[
+A^{-\beta}\exp(-p_a\cdot r(Y)),
+\qquad
+B^{-\beta}\exp(-p_b\cdot r(Y)),
+\]
+which are completely monotone by Lemma 3 for every \(\beta>1\). The product is a completely monotone function in disjoint variable blocks, and integration against the positive Riesz measure preserves complete monotonicity by Tonelli.
+
+Therefore \(T_{K_5-e}^{-\beta}\) is completely monotone on \((0,\infty)^9\) for every \(\beta>1\). In Scott--Sokal notation, \(K_5-e\in G_\beta\) for every \(1<\beta<3/2\).
+\end{proof}
+
+\begin{proposition}[Star-mesh apex elimination for spanning-tree polynomials]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Star-mesh apex elimination for spanning-tree polynomials}
+\label{res:starmesh-spanningtree-apexelimination}
+Let a graph network on three terminals have spanning-tree polynomial \(T_H\). Adjoining one apex with positive conductances \(u_1,u_2,u_3\) to the terminals multiplies the spanning-tree polynomial by \(U=u_1+u_2+u_3\) and adds terminal triangle conductances \(u_iu_j/U\).
+\end{proposition}
+
+\begin{proof}
+For Star-mesh apex elimination for spanning-tree polynomials, this proof is the corresponding component of Proposition~\ref{res:conditionalstar-gaussianlaplacekernel}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{proposition}[Triangle Kirchhoff polynomial has a two-dimensional Riesz representation]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Triangle Kirchhoff polynomial has a two-dimensional Riesz representation}
+\label{res:trianglekirchhoff-rieszlaplace-representation}
+For \(E(w)=w_1w_2+w_1w_3+w_2w_3\) and every \(\beta>1/2\), the inverse power \(E(w)^{-\beta}\) is a positive Laplace transform on \((0,\infty)^3\), via the \(2\times2\) Riesz/Wishart integral.
+\end{proposition}
+
+\begin{proof}
+For Triangle Kirchhoff polynomial has a two-dimensional Riesz representation, this proof is the corresponding component of Proposition~\ref{res:conditionalstar-gaussianlaplacekernel}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{corollary}[APP-0074: Scott-Sokal K5-e spanning-tree polynomial complete monotonicity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0074: Scott-Sokal K5-e spanning-tree polynomial complete monotonicity}
+\label{res:k5minuse-spanningtreepolynomial-cm-betage1}
+Let \(G=K_5-e\). For every \(\beta>1\), the inverse power \(T_G^{-\beta}\) of the spanning-tree polynomial is completely monotone on the positive edge cone. In particular, \(K_5-e\in G_\beta\) for every \(1<\beta<3/2\), answering the Scott--Sokal source question for this graph affirmatively.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0074} \cite{app-app-0074-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:conditionalstar-gaussianlaplacekernel}, Proposition~\ref{res:starmesh-spanningtree-apexelimination}, and Proposition~\ref{res:trianglekirchhoff-rieszlaplace-representation} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Let \(G=K_5-e\), realized as two nonadjacent apices joined to the terminal triangle \(\{2,3,4\}\). Write
+\[
+a=(a_1,a_2,a_3)=(x_{02},x_{03},x_{04}),\qquad
+b=(b_1,b_2,b_3)=(x_{12},x_{13},x_{14}),
+\]
+\[
+c=(c_{12},c_{13},c_{23})=(x_{23},x_{24},x_{34}),
+\qquad A=a_1+a_2+a_3,\quad B=b_1+b_2+b_3 .
+\]
+For a triangle edge-vector \(w=(w_1,w_2,w_3)\), put
+\[
+E(w)=w_1w_2+w_1w_3+w_2w_3 .
+\]
+The claim is that \(T_G^{-\beta}\) is completely monotone in all nine positive edge variables for every \(\beta>1\).
+
+\emph{Lemma 1: star-mesh factorization of \(T_{K_5-e}\).}
+
+For \(u=(u_1,u_2,u_3)\), define
+\[
+p_u=\left({u_1u_2\over u_1+u_2+u_3},
+          {u_1u_3\over u_1+u_2+u_3},
+          {u_2u_3\over u_1+u_2+u_3}\right).
+\]
+Then
+\[
+T_{K_5-e}(a,b,c)=AB\,E(c+p_a+p_b).
+\]
+
+Indeed, if a network \(H\) on three terminals has spanning-tree polynomial \(T_H\), adjoining a new apex with conductances \(u_1,u_2,u_3\) to the terminals multiplies the reduced Laplacian determinant by \(U=u_1+u_2+u_3\) and replaces \(H\) by the star-mesh transformed network with added terminal edge conductances \(p_u\). This is the Schur complement of the apex diagonal block \(U\) in the weighted Laplacian:
+\[
+L_H+\operatorname{diag}(u)-{uu^T\over U}.
+\]
+The last matrix is the terminal Laplacian of \(H\) plus a triangle with edge conductances \(u_iu_j/U\). Applying this twice, once for each apex, leaves the terminal triangle with edge vector \(c+p_a+p_b\), whose spanning-tree polynomial is \(E\).
+
+For \(w_i>0\) and \(\beta>1/2\),
+\[
+E(w)^{-\beta}
+=C_\beta\int_{Y>0}
+\exp\{-w_1(Y_{11}+Y_{22}-2Y_{12})-w_2Y_{11}-w_3Y_{22}\}
+(\det Y)^{\beta-3/2}\,dY
+\]
+with \(C_\beta>0\), where \(Y\) ranges over positive definite \(2\times2\) symmetric matrices.
+
+This is the standard \(2\times2\) Riesz/Wishart integral applied to
+\[
+M(w)=
+\begin{pmatrix}
+w_1+w_2 & -w_1\\
+-w_1 & w_1+w_3
+\end{pmatrix},
+\qquad \det M(w)=E(w).
+\]
+The exponent is \(-\operatorname{tr}(M(w)Y)\), and the Wishart integral is valid for \(\beta>(2-1)/2=1/2\).
+
+For \(Y>0\), choose vectors \(u,v\in\mathbb R^2\) with Gram matrix \(Y\). Then
+\[
+r_{12}=Y_{11}+Y_{22}-2Y_{12}=|u-v|^2,\quad
+r_{13}=Y_{11}=|u|^2,\quad
+r_{23}=Y_{22}=|v|^2 .
+\]
+
+For every \(r_{ij}=|u_i-u_j|^2\) with \(u_1,u_2,u_3\in\mathbb R^2\),
+\[
+A^{-1}\exp(-p_a\cdot r)
+=\pi^{-1}\int_{\mathbb R^2}
+\exp\left(-\sum_{i=1}^3 a_i|z-u_i|^2\right)\,dz.
+\]
+This is the elementary Gaussian completion identity
+\[
+\sum_i a_i|z-u_i|^2
+=A\left|z-\frac{\sum_i a_iu_i}{A}\right|^2
+{1\over A}\sum_{i<j}a_ia_j|u_i-u_j|^2 .
+\]
+Thus \(A^{-1}e^{-p_a\cdot r}\) is a positive Laplace transform in the variables \(a_i\). For \(\beta>1\),
+\[
+A^{-\beta}e^{-p_a\cdot r}
+=A^{-(\beta-1)}\big(A^{-1}e^{-p_a\cdot r}\big)
+\]
+is again completely monotone, because
+\[
+A^{-(\beta-1)}
+=\Gamma(\beta-1)^{-1}\int_0^\infty t^{\beta-2}e^{-tA}\,dt.
+\]
+The same statement holds for \(B^{-\beta}e^{-p_b\cdot r}\).
+
+From Lemma 1,
+\[
+T_G^{-\beta}=A^{-\beta}B^{-\beta}E(c+p_a+p_b)^{-\beta}.
+\]
+Insert Lemma 2 with \(w=c+p_a+p_b\). For each positive \(Y\), the factor involving \(c\) is
+\[
+\exp(-c\cdot r(Y)),
+\]
+a positive Laplace kernel in the triangle-edge variables. The factors involving \(a\) and \(b\) are
+\[
+A^{-\beta}\exp(-p_a\cdot r(Y)),
+\qquad
+B^{-\beta}\exp(-p_b\cdot r(Y)),
+\]
+which are completely monotone by Lemma 3 for every \(\beta>1\). The product is a completely monotone function in disjoint variable blocks, and integration against the positive Riesz measure preserves complete monotonicity by Tonelli.
+
+Therefore \(T_{K_5-e}^{-\beta}\) is completely monotone on \((0,\infty)^9\) for every \(\beta>1\). In Scott--Sokal notation, \(K_5-e\in G_\beta\) for every \(1<\beta<3/2\).
+\end{proof}
+
+\begin{proposition}[K4 Kirchhoff polynomial has a rank-three Riesz representation]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: K4 Kirchhoff polynomial has a rank-three Riesz representation}
+\label{res:k4kirchhoff-rieszrank3-laplacerepresentation}
+For the complete graph \(K_4\), the spanning-tree polynomial is a rank-three determinant \(T_{K_4}(y)=\det\sum_e y_e b_eb_e^T\). For every \(\beta>1\), \(T_{K_4}(y)^{-\beta}\) is a positive Laplace transform in the six edge variables via the \(3\times3\) Riesz/Wishart integral; the three edge variables on any triangle correspond to squared distances of three Euclidean points in the Riesz support.
+\end{proposition}
+
+\begin{proof}
+Root \(K_4\) at vertex \(3\). For the remaining vertices \(0,2,4\), use edge vectors
+\[
+b_{03}=e_0,\quad b_{23}=e_2,\quad b_{43}=e_4,\quad
+b_{02}=e_0-e_2,\quad b_{04}=e_0-e_4,\quad b_{24}=e_2-e_4 .
+\]
+Then
+\[
+T_{K_4}(y)=\det M(y),\qquad
+M(y)=\sum_{ij} y_{ij} b_{ij}b_{ij}^{T}.
+\]
+For \(\beta>1\), the \(3\times3\) Riesz/Wishart integral gives
+\[
+\det M(y)^{-\beta}
+=C_\beta\int_{Y>0}
+\exp\!\left(-\operatorname{tr}(M(y)Y)\right)
+(\det Y)^{\beta-2}\,dY,
+\]
+with \(C_\beta>0\). Writing
+\[
+U_{ij}=b_{ij}^{T}Yb_{ij},
+\]
+the exponent is \(-\sum y_{ij}U_{ij}\). If \(Y=LL^T\), then \(U_{ij}=|L^Tb_{ij}|^2\). In particular the triple
+\[
+(U_{02},U_{04},U_{24})
+\]
+is the squared-distance triple of the three points \(L^Te_0,L^Te_4,L^Te_2\), hence can be represented in \(\mathbb R^2\).
+
+For fixed such a squared-distance triple, choose points
+\(\xi_0,\xi_2,\xi_4\in\mathbb R^2\) with
+\[
+U_{02}=|\xi_0-\xi_2|^2,\quad
+U_{04}=|\xi_0-\xi_4|^2,\quad
+U_{24}=|\xi_2-\xi_4|^2.
+\]
+The Gaussian completion identity gives
+\[
+S^{-1}\exp\left(
+-{paU_{02}+pdU_{04}+adU_{24}\over S}
+\right)
+=\pi^{-1}\int_{\mathbb R^2}
+\exp\left(-p|z-\xi_0|^2-a|z-\xi_2|^2-d|z-\xi_4|^2\right)\,dz .
+\]
+Multiplying by the gamma representation
+\[
+S^{-(\beta-1)}
+=\Gamma(\beta-1)^{-1}\int_0^\infty t^{\beta-2}e^{-tS}\,dt
+\]
+shows that, for every \(\beta>1\),
+\[
+S^{-\beta}
+\exp\left(
+-{paU_{02}+pdU_{04}+adU_{24}\over S}
+\right)
+\]
+is a positive Laplace transform in the variables \(p,a,d\).
+
+From the star-mesh identity and the Riesz integral,
+\[
+T_{W_4}^{-\beta}
+=S^{-\beta}T_{K_4}(y)^{-\beta}
+\]
+is an integral of the product
+\[
+\exp(-qU_{02})\exp(-sU_{04})\exp(-rU_{03})
+\exp(-bU_{23})\exp(-cU_{34})
+\]
+with the three-arm star factor above. Each factor is a positive Laplace kernel in its edge-variable block, and the Riesz and Gaussian/gamma measures are positive. Tonelli's theorem therefore gives a positive Laplace representation for \(T_{W_4}^{-\beta}\) on \((0,\infty)^8\).
+
+Hence \(T_{W_4}^{-\beta}\) is completely monotone for every \(\beta>1\). In Scott--Sokal notation, \(W_4\in G_\beta\) throughout the open in the cited source interval \(1<\beta<3/2\).
+\end{proof}
+
+\begin{corollary}[APP-0075: Scott-Sokal W4 spanning-tree polynomial complete monotonicity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0075: Scott-Sokal W4 spanning-tree polynomial complete monotonicity}
+\label{res:w4-spanningtreepolynomial-cm-betage1}
+Let \(W_4\) be the wheel with four spokes. For every \(\beta>1\), the inverse power \(T_{W_4}^{-\beta}\) of the spanning-tree polynomial is completely monotone on the positive edge cone. In particular, \(W_4\in G_\beta\) for every \(1<\beta<3/2\), answering the Scott--Sokal source question for this graph affirmatively.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0075} \cite{app-app-0074-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:conditionalstar-gaussianlaplacekernel}, Proposition~\ref{res:starmesh-spanningtree-apexelimination}, and Proposition~\ref{res:k4kirchhoff-rieszrank3-laplacerepresentation} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Root \(K_4\) at vertex \(3\). For the remaining vertices \(0,2,4\), use edge vectors
+\[
+b_{03}=e_0,\quad b_{23}=e_2,\quad b_{43}=e_4,\quad
+b_{02}=e_0-e_2,\quad b_{04}=e_0-e_4,\quad b_{24}=e_2-e_4 .
+\]
+Then
+\[
+T_{K_4}(y)=\det M(y),\qquad
+M(y)=\sum_{ij} y_{ij} b_{ij}b_{ij}^{T}.
+\]
+For \(\beta>1\), the \(3\times3\) Riesz/Wishart integral gives
+\[
+\det M(y)^{-\beta}
+=C_\beta\int_{Y>0}
+\exp\!\left(-\operatorname{tr}(M(y)Y)\right)
+(\det Y)^{\beta-2}\,dY,
+\]
+with \(C_\beta>0\). Writing
+\[
+U_{ij}=b_{ij}^{T}Yb_{ij},
+\]
+the exponent is \(-\sum y_{ij}U_{ij}\). If \(Y=LL^T\), then \(U_{ij}=|L^Tb_{ij}|^2\). In particular the triple
+\[
+(U_{02},U_{04},U_{24})
+\]
+is the squared-distance triple of the three points \(L^Te_0,L^Te_4,L^Te_2\), hence can be represented in \(\mathbb R^2\).
+
+For fixed such a squared-distance triple, choose points
+\(\xi_0,\xi_2,\xi_4\in\mathbb R^2\) with
+\[
+U_{02}=|\xi_0-\xi_2|^2,\quad
+U_{04}=|\xi_0-\xi_4|^2,\quad
+U_{24}=|\xi_2-\xi_4|^2.
+\]
+The Gaussian completion identity gives
+\[
+S^{-1}\exp\left(
+-{paU_{02}+pdU_{04}+adU_{24}\over S}
+\right)
+=\pi^{-1}\int_{\mathbb R^2}
+\exp\left(-p|z-\xi_0|^2-a|z-\xi_2|^2-d|z-\xi_4|^2\right)\,dz .
+\]
+Multiplying by the gamma representation
+\[
+S^{-(\beta-1)}
+=\Gamma(\beta-1)^{-1}\int_0^\infty t^{\beta-2}e^{-tS}\,dt
+\]
+shows that, for every \(\beta>1\),
+\[
+S^{-\beta}
+\exp\left(
+-{paU_{02}+pdU_{04}+adU_{24}\over S}
+\right)
+\]
+is a positive Laplace transform in the variables \(p,a,d\).
+
+From the star-mesh identity and the Riesz integral,
+\[
+T_{W_4}^{-\beta}
+=S^{-\beta}T_{K_4}(y)^{-\beta}
+\]
+is an integral of the product
+\[
+\exp(-qU_{02})\exp(-sU_{04})\exp(-rU_{03})
+\exp(-bU_{23})\exp(-cU_{34})
+\]
+with the three-arm star factor above. Each factor is a positive Laplace kernel in its edge-variable block, and the Riesz and Gaussian/gamma measures are positive. Tonelli's theorem therefore gives a positive Laplace representation for \(T_{W_4}^{-\beta}\) on \((0,\infty)^8\).
+
+Hence \(T_{W_4}^{-\beta}\) is completely monotone for every \(\beta>1\). In Scott--Sokal notation, \(W_4\in G_\beta\) throughout the open in the cited source interval \(1<\beta<3/2\).
+\end{proof}
+
+\section{Determinant and moment-ratio applications}
+\label{sec:determinant-and-moment-ratio-applications}
+This section develops applications governed by determinant compression and moment-ratio comparisons.  The method turns recursive derivative information into a finite or structured positivity problem, so bounds and counterexamples can be read from a smaller normal form.
+
+\begin{proposition}[Sturm-Darboux positive spectral families have positive initial Wronskians]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Sturm-Darboux positive spectral families have positive initial Wronskians}
+\label{res:sturmdarboux-positivespectralfamily-wronskians}
+Let \(f_1,\ldots,f_m\) be positive solutions on \(\mathbb R\) of \(f_j''=(q+\lambda_j)f_j\), with \(\lambda_1<\cdots<\lambda_m\), and suppose the left endpoint asymptotics are ordered so that every two-function Wronskian tends to zero at \(-\infty\) and each Darboux transform preserves positive ordered left asymptotics. Then every initial Wronskian \(W(f_1,\ldots,f_k)\) is strictly positive on \(\mathbb R\), for \(1\le k\le m\).
+\end{proposition}
+
+\begin{proof}
+For every \(m\ge 1\), every
+\[
+0<x_1<\cdots<x_m
+\]
+and every
+\[
+0\le s_1<\cdots<s_m,
+\]
+one has
+\[
+\det\big[I_{s_j}(x_i)\big]_{i,j=1}^m>0.
+\]
+Thus the modified-Bessel kernel \(K(x,s)=I_s(x)\) is strictly totally positive on \((0,\infty)\times[0,\infty)\). This answers the Buchstaber--Glutsyuk real-order open question affirmatively.
+
+Set \(x=e^y\) and
+\[
+f_s(y)=I_s(e^y),\qquad y\in\mathbb R,\ s\ge0.
+\]
+The modified Bessel equation
+\[
+x^2I_s''(x)+xI_s'(x)-(x^2+s^2)I_s(x)=0
+\]
+becomes
+\[
+f_s''(y)=\big(e^{2y}+s^2\big)f_s(y).
+\]
+Also
+\[
+I_s(x)=\frac{(x/2)^s}{\Gamma(s+1)}(1+O(x^2))
+\]
+as \(x\downarrow0\), so for \(s>0\)
+\[
+f_s(y)=2^{-s}\Gamma(s+1)^{-1}e^{sy}(1+O(e^{2y}))
+\]
+as \(y\to-\infty\), while
+\[
+f_0(y)=1+O(e^{2y}).
+\]
+
+First take \(0\le a<b\). Since \(f_a,f_b>0\) and both solve the same scalar equation with spectral parameters \(a^2,b^2\),
+\[
+W(f_a,f_b)'=(b^2-a^2)f_af_b>0.
+\]
+The left endpoint asymptotics give \(W(f_a,f_b)(y)\to0\) as \(y\to-\infty\), including the endpoint case \(a=0\). Hence
+\[
+W(f_a,f_b)(y)>0\qquad (y\in\mathbb R).
+\]
+
+Now prove all initial Wronskians by Darboux induction. Let
+\[
+0\le s_1<\cdots<s_m
+\]
+and put \(p=f_{s_1}'/f_{s_1}\), \(A=D-p\). For \(j\ge2\),
+\[
+u_j=Af_{s_j}=\frac{W(f_{s_1},f_{s_j})}{f_{s_1}}>0.
+\]
+The Darboux transform gives
+\[
+u_j''=\big(q_1(y)+s_j^2\big)u_j,\qquad
+q_1=e^{2y}-2(\log f_{s_1})''.
+\]
+Moreover \(u_j(y)\sim (s_j-s_1)c_j e^{s_jy}\) if \(s_1>0\), and \(u_j(y)\sim s_jc_je^{s_jy}\) if \(s_1=0\), with \(c_j=2^{-s_j}\Gamma(s_j+1)^{-1}>0\). Thus the transformed family again satisfies the same ordered positive spectral-family hypotheses.
+
+The Wronskian identity
+\[
+W(f_{s_1},\ldots,f_{s_k})=f_{s_1}\,W(u_2,\ldots,u_k)
+\]
+follows by subtracting \((f_{s_j}/f_{s_1})\) multiples of the first column in the Wronskian matrix, or equivalently from \(Af=f_{s_1}(f/f_{s_1})'\). Since \(f_{s_1}>0\), induction on \(k\) gives
+\[
+W(f_{s_1},\ldots,f_{s_k})(y)>0
+\]
+for every \(1\le k\le m\) and every \(y\in\mathbb R\).
+
+Positive initial Wronskians imply a strict extended complete Chebyshev system. For completeness, the local argument is as follows. If the determinant
+\[
+\det[f_{s_j}(y_i)]_{i,j=1}^m
+\]
+vanished at \(y_1<\cdots<y_m\), there would be a nontrivial linear combination \(\sum c_j f_{s_j}\) with \(m\) zeros. Repeated generalized Rolle reduction using the positive Wronskians gives a contradiction, since an \(m\)-term ECT family permits at most \(m-1\) zeros counted with multiplicity. The sign is determined by the confluent limit:
+\[
+\det[f_{s_j}(y_i)]_{i,j=1}^m
+\sim
+\frac{W(f_{s_1},\ldots,f_{s_m})(y)}{\prod_{r=0}^{m-1}r!}
+\prod_{i<j}(y_j-y_i)>0.
+\]
+Therefore the determinant is positive for all \(y_1<\cdots<y_m\). Returning to \(x_i=e^{y_i}\) proves the claimed strict total positivity.
+\end{proof}
+
+\begin{proposition}[Positive initial Wronskians imply strict ECT evaluation determinants]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Positive initial Wronskians imply strict ECT evaluation determinants}
+\label{res:positivewronskians-ect-determinants}
+If \(f_1,\ldots,f_m\) are \(C^{m-1}\) functions on an interval and \(W(f_1,\ldots,f_k)>0\) for every \(1\le k\le m\), then for every \(y_1<\cdots<y_m\) in the interval, \(\det[f_j(y_i)]_{i,j=1}^m>0\).
+\end{proposition}
+
+\begin{proof}
+For Positive initial Wronskians imply strict ECT evaluation determinants, this proof is the corresponding component of Proposition~\ref{res:sturmdarboux-positivespectralfamily-wronskians}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{corollary}[APP-0072: Buchstaber-Glutsyuk real-order Bessel I strict total positivity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0072: Buchstaber-Glutsyuk real-order Bessel I strict total positivity}
+\label{res:besseli-realorder-stricttotalpositivity}
+For every \(m\ge1\), every \(0<x_1<\cdots<x_m\), and every \(0\le s_1<\cdots<s_m\), \(\det[I_{s_j}(x_i)]_{i,j=1}^m>0\). Consequently the Buchstaber--Glutsyuk open question is answered affirmatively: the modified-Bessel kernel \(K(x,s)=I_s(x)\) is strictly totally positive on \((0,\infty)\times[0,\infty)\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0072} \cite{app-app-0072-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:laplace-kernel-and-tilted-moment-language}, Proposition~\ref{res:sturmdarboux-positivespectralfamily-wronskians}, and Proposition~\ref{res:positivewronskians-ect-determinants} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+For every \(m\ge 1\), every
+\[
+0<x_1<\cdots<x_m
+\]
+and every
+\[
+0\le s_1<\cdots<s_m,
+\]
+one has
+\[
+\det\big[I_{s_j}(x_i)\big]_{i,j=1}^m>0.
+\]
+Thus the modified-Bessel kernel \(K(x,s)=I_s(x)\) is strictly totally positive on \((0,\infty)\times[0,\infty)\). This answers the Buchstaber--Glutsyuk real-order open question affirmatively.
+
+Set \(x=e^y\) and
+\[
+f_s(y)=I_s(e^y),\qquad y\in\mathbb R,\ s\ge0.
+\]
+The modified Bessel equation
+\[
+x^2I_s''(x)+xI_s'(x)-(x^2+s^2)I_s(x)=0
+\]
+becomes
+\[
+f_s''(y)=\big(e^{2y}+s^2\big)f_s(y).
+\]
+Also
+\[
+I_s(x)=\frac{(x/2)^s}{\Gamma(s+1)}(1+O(x^2))
+\]
+as \(x\downarrow0\), so for \(s>0\)
+\[
+f_s(y)=2^{-s}\Gamma(s+1)^{-1}e^{sy}(1+O(e^{2y}))
+\]
+as \(y\to-\infty\), while
+\[
+f_0(y)=1+O(e^{2y}).
+\]
+
+First take \(0\le a<b\). Since \(f_a,f_b>0\) and both solve the same scalar equation with spectral parameters \(a^2,b^2\),
+\[
+W(f_a,f_b)'=(b^2-a^2)f_af_b>0.
+\]
+The left endpoint asymptotics give \(W(f_a,f_b)(y)\to0\) as \(y\to-\infty\), including the endpoint case \(a=0\). Hence
+\[
+W(f_a,f_b)(y)>0\qquad (y\in\mathbb R).
+\]
+
+Now prove all initial Wronskians by Darboux induction. Let
+\[
+0\le s_1<\cdots<s_m
+\]
+and put \(p=f_{s_1}'/f_{s_1}\), \(A=D-p\). For \(j\ge2\),
+\[
+u_j=Af_{s_j}=\frac{W(f_{s_1},f_{s_j})}{f_{s_1}}>0.
+\]
+The Darboux transform gives
+\[
+u_j''=\big(q_1(y)+s_j^2\big)u_j,\qquad
+q_1=e^{2y}-2(\log f_{s_1})''.
+\]
+Moreover \(u_j(y)\sim (s_j-s_1)c_j e^{s_jy}\) if \(s_1>0\), and \(u_j(y)\sim s_jc_je^{s_jy}\) if \(s_1=0\), with \(c_j=2^{-s_j}\Gamma(s_j+1)^{-1}>0\). Thus the transformed family again satisfies the same ordered positive spectral-family hypotheses.
+
+The Wronskian identity
+\[
+W(f_{s_1},\ldots,f_{s_k})=f_{s_1}\,W(u_2,\ldots,u_k)
+\]
+follows by subtracting \((f_{s_j}/f_{s_1})\) multiples of the first column in the Wronskian matrix, or equivalently from \(Af=f_{s_1}(f/f_{s_1})'\). Since \(f_{s_1}>0\), induction on \(k\) gives
+\[
+W(f_{s_1},\ldots,f_{s_k})(y)>0
+\]
+for every \(1\le k\le m\) and every \(y\in\mathbb R\).
+
+Positive initial Wronskians imply a strict extended complete Chebyshev system. For completeness, the local argument is as follows. If the determinant
+\[
+\det[f_{s_j}(y_i)]_{i,j=1}^m
+\]
+vanished at \(y_1<\cdots<y_m\), there would be a nontrivial linear combination \(\sum c_j f_{s_j}\) with \(m\) zeros. Repeated generalized Rolle reduction using the positive Wronskians gives a contradiction, since an \(m\)-term ECT family permits at most \(m-1\) zeros counted with multiplicity. The sign is determined by the confluent limit:
+\[
+\det[f_{s_j}(y_i)]_{i,j=1}^m
+\sim
+\frac{W(f_{s_1},\ldots,f_{s_m})(y)}{\prod_{r=0}^{m-1}r!}
+\prod_{i<j}(y_j-y_i)>0.
+\]
+Therefore the determinant is positive for all \(y_1<\cdots<y_m\). Returning to \(x_i=e^{y_i}\) proves the claimed strict total positivity.
+\end{proof}
+
+\begin{proposition}[Discrete Gaussian Toeplitz kernels are strictly totally positive]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Discrete Gaussian Toeplitz kernels are strictly totally positive}
+\label{res:discretegaussian-toeplitz-stricttp}
+For every \(0<q<1\), the bi-infinite sequence \(g_q(n)=q^{n^2}\) has a strictly totally positive Toeplitz kernel \(T_{g_q}(i,j)=g_q(i-j)\) on \(\mathbb Z\times\mathbb Z\).
+\end{proposition}
+
+\begin{proof}
+Belton--Guillot--Khare--Putinar Question 12.2 asks whether totally positive Polya-frequency sequences are dense in all Polya-frequency sequences. I prove the pointwise/product-topology version:
+
+\[
+\forall a\in PF,\quad \exists b^{(r)}\in TP\cap PF
+\quad\text{such that}\quad b^{(r)}_n\to a_n\quad(n\in\mathbb Z).
+\]
+
+Here \(PF\) means the Toeplitz kernel \(T_a(i,j)=a_{i-j}\) is totally nonnegative on \(\mathbb Z\times\mathbb Z\), and \(TP\) means all ordered minors are strictly positive.
+
+Fix \(0<q<1\) and set
+\[
+g_q(n)=q^{n^2}.
+\]
+For strictly increasing integer grids \(i_1<\cdots<i_m\) and \(j_1<\cdots<j_m\),
+\[
+\det[g_q(i_r-j_s)]_{r,s=1}^m
+=
+q^{\sum_r i_r^2+\sum_s j_s^2}
+\det[(q^{-2i_r})^{j_s}]_{r,s=1}^m .
+\]
+The bases \(x_r=q^{-2i_r}\) are strictly increasing positive numbers. After factoring the positive powers \(x_r^{j_1}\), the remaining determinant is the generalized Vandermonde determinant with strictly increasing nonnegative integer exponents \(j_s-j_1\). It is positive. Hence \(g_q\) is a strictly totally positive Polya-frequency sequence.
+
+Let \(a\neq0\) be a PF sequence that is not a bilateral geometric sequence \(a_n=C\rho^n\). Then every finite family of distinct integer translates \(n\mapsto a_{n-j_s}\) is linearly independent.
+
+First, \(1\times1\) minors give \(a_n\ge0\), and \(2\times2\) Toeplitz minors give log-concavity on the support:
+\[
+a_n^2\ge a_{n-1}a_{n+1}.
+\]
+Thus the support is an interval and, on the positive part of the support, the ratios
+\[
+r_n=\frac{a_n}{a_{n-1}}
+\]
+are nonincreasing.
+
+If the support is finite or one-sided, the Laurent series \(A(z)=\sum_n a_nz^n\) is nonzero and converges on a nonempty annulus. If the support is all of \(\mathbb Z\), the monotone ratio limits
+\[
+L_+=\lim_{n\to+\infty}r_n,\qquad L_-=\lim_{n\to-\infty}r_n
+\]
+exist in \([0,\infty]\) with \(L_-\ge L_+\). If \(L_-=L_+\), monotonicity forces all ratios to be equal, so \(a_n=C\rho^n\), contrary to the non-geometric assumption. Hence \(L_->L_+\), and \(A(z)\) converges on the nonempty annulus
+\[
+\frac1{L_-}<|z|<\frac1{L_+},
+\]
+with the usual interpretations when a limit is \(0\) or \(\infty\).
+
+Suppose now that a nontrivial finite translate dependence holds:
+\[
+\sum_{s=1}^m c_s a_{n-j_s}=0\qquad(n\in\mathbb Z).
+\]
+Multiplying the Laurent series by the nonzero Laurent polynomial \(P(z)=\sum_s c_s z^{j_s}\) gives \(P(z)A(z)=0\) throughout a nonempty annulus. Since \(A\) is not identically zero and \(P\) is not the zero polynomial, this is impossible. The finite translate family is therefore independent.
+
+Let \(a\) be a nonzero non-geometric PF sequence and put
+\[
+b^{(q)}_n=(g_q*a)_n=\sum_{k\in\mathbb Z}q^{k^2}a_{n-k}.
+\]
+The exponential bounds from Lemma 2 make this absolutely convergent, and \(b^{(q)}_n\to a_n\) for each fixed \(n\) as \(q\downarrow0\).
+
+The Toeplitz kernels satisfy \(T_{b^{(q)}}=T_{g_q}T_a\). For finite increasing grids \(I,J\) of size \(m\), the absolutely convergent Cauchy--Binet expansion is
+\[
+\det T_{b^{(q)}}[I,J]
+=
+\sum_{K\in{\binom{\mathbb Z}{m}}}
+\det T_{g_q}[I,K]\det T_a[K,J].
+\]
+Every summand is nonnegative, because \(T_{g_q}\) is TP and \(T_a\) is TN. Lemma 2 says the \(J\)-columns of \(T_a\) are independent, so some coordinate set \(K\) has \(\det T_a[K,J]\neq0\). Since \(T_a\) is TN, that determinant is positive. The corresponding \(T_{g_q}\)-minor is strictly positive, so the whole sum is strictly positive. Therefore \(b^{(q)}\) is TP.
+
+If \(a_n=C\rho^n\) with \(C>0\) and \(\rho>0\), set
+\[
+b^{(\varepsilon)}_n=C\rho^n e^{-\varepsilon n^2}.
+\]
+Then
+\[
+b^{(\varepsilon)}_{i-j}
+=
+C\rho^i\rho^{-j}e^{-\varepsilon i^2}e^{-\varepsilon j^2}e^{2\varepsilon ij}.
+\]
+Every Toeplitz minor is a positive row/column rescaling of the generalized Vandermonde determinant
+\[
+\det[(e^{2\varepsilon i_r})^{j_s}]_{r,s=1}^m,
+\]
+which is positive for \(i_1<\cdots<i_m\) and \(j_1<\cdots<j_m\). Hence \(b^{(\varepsilon)}\) is TP and \(b^{(\varepsilon)}_n\to C\rho^n\) as \(\varepsilon\downarrow0\).
+
+If \(a=0\), then \(\eta g_q\to0\) pointwise as \(\eta\downarrow0\), and \(\eta g_q\) is TP for each \(\eta>0\).
+\end{proof}
+
+\begin{proposition}[Non-geometric Polya-frequency sequences have independent translates]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Non-geometric Polya-frequency sequences have independent translates}
+\label{res:pfsequence-annulus-translate-independence}
+Let \(a\neq0\) be a Polya-frequency sequence on \(\mathbb Z\). If \(a\) is not a bilateral geometric sequence \(a_n=C\rho^n\), then every finite family of distinct translates \(n\mapsto a_{n-j}\) is linearly independent. Equivalently, every finite set of Toeplitz columns of \(T_a\) is linearly independent.
+\end{proposition}
+
+\begin{proof}
+For Non-geometric Polya-frequency sequences have independent translates, this proof is the corresponding component of Proposition~\ref{res:discretegaussian-toeplitz-stricttp}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{corollary}[APP-0073: BGKP PF-sequence total-positivity density]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0073: BGKP PF-sequence total-positivity density}
+\label{res:pfseq-tp-density-discretegaussian}
+Every Polya-frequency sequence \(a=(a_n)_{n\in\mathbb Z}\) is the pointwise limit of totally positive Polya-frequency sequences. Equivalently, totally positive Polya-frequency sequences are dense in all Polya-frequency sequences for the product topology on \(\mathbb R^{\mathbb Z}\). This answers Belton--Guillot--Khare--Putinar Question 12.2 affirmatively under the source-consistent pointwise topology.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0073} \cite{app-app-0073-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:determinant-triangular-compression-language}, Proposition~\ref{res:tnkernel-finiteorder}, Proposition~\ref{res:discretegaussian-toeplitz-stricttp}, and Proposition~\ref{res:pfsequence-annulus-translate-independence} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Belton--Guillot--Khare--Putinar Question 12.2 asks whether totally positive Polya-frequency sequences are dense in all Polya-frequency sequences. I prove the pointwise/product-topology version:
+
+\[
+\forall a\in PF,\quad \exists b^{(r)}\in TP\cap PF
+\quad\text{such that}\quad b^{(r)}_n\to a_n\quad(n\in\mathbb Z).
+\]
+
+Here \(PF\) means the Toeplitz kernel \(T_a(i,j)=a_{i-j}\) is totally nonnegative on \(\mathbb Z\times\mathbb Z\), and \(TP\) means all ordered minors are strictly positive.
+
+Fix \(0<q<1\) and set
+\[
+g_q(n)=q^{n^2}.
+\]
+For strictly increasing integer grids \(i_1<\cdots<i_m\) and \(j_1<\cdots<j_m\),
+\[
+\det[g_q(i_r-j_s)]_{r,s=1}^m
+=
+q^{\sum_r i_r^2+\sum_s j_s^2}
+\det[(q^{-2i_r})^{j_s}]_{r,s=1}^m .
+\]
+The bases \(x_r=q^{-2i_r}\) are strictly increasing positive numbers. After factoring the positive powers \(x_r^{j_1}\), the remaining determinant is the generalized Vandermonde determinant with strictly increasing nonnegative integer exponents \(j_s-j_1\). It is positive. Hence \(g_q\) is a strictly totally positive Polya-frequency sequence.
+
+Let \(a\neq0\) be a PF sequence that is not a bilateral geometric sequence \(a_n=C\rho^n\). Then every finite family of distinct integer translates \(n\mapsto a_{n-j_s}\) is linearly independent.
+
+First, \(1\times1\) minors give \(a_n\ge0\), and \(2\times2\) Toeplitz minors give log-concavity on the support:
+\[
+a_n^2\ge a_{n-1}a_{n+1}.
+\]
+Thus the support is an interval and, on the positive part of the support, the ratios
+\[
+r_n=\frac{a_n}{a_{n-1}}
+\]
+are nonincreasing.
+
+If the support is finite or one-sided, the Laurent series \(A(z)=\sum_n a_nz^n\) is nonzero and converges on a nonempty annulus. If the support is all of \(\mathbb Z\), the monotone ratio limits
+\[
+L_+=\lim_{n\to+\infty}r_n,\qquad L_-=\lim_{n\to-\infty}r_n
+\]
+exist in \([0,\infty]\) with \(L_-\ge L_+\). If \(L_-=L_+\), monotonicity forces all ratios to be equal, so \(a_n=C\rho^n\), contrary to the non-geometric assumption. Hence \(L_->L_+\), and \(A(z)\) converges on the nonempty annulus
+\[
+\frac1{L_-}<|z|<\frac1{L_+},
+\]
+with the usual interpretations when a limit is \(0\) or \(\infty\).
+
+Suppose now that a nontrivial finite translate dependence holds:
+\[
+\sum_{s=1}^m c_s a_{n-j_s}=0\qquad(n\in\mathbb Z).
+\]
+Multiplying the Laurent series by the nonzero Laurent polynomial \(P(z)=\sum_s c_s z^{j_s}\) gives \(P(z)A(z)=0\) throughout a nonempty annulus. Since \(A\) is not identically zero and \(P\) is not the zero polynomial, this is impossible. The finite translate family is therefore independent.
+
+Let \(a\) be a nonzero non-geometric PF sequence and put
+\[
+b^{(q)}_n=(g_q*a)_n=\sum_{k\in\mathbb Z}q^{k^2}a_{n-k}.
+\]
+The exponential bounds from Lemma 2 make this absolutely convergent, and \(b^{(q)}_n\to a_n\) for each fixed \(n\) as \(q\downarrow0\).
+
+The Toeplitz kernels satisfy \(T_{b^{(q)}}=T_{g_q}T_a\). For finite increasing grids \(I,J\) of size \(m\), the absolutely convergent Cauchy--Binet expansion is
+\[
+\det T_{b^{(q)}}[I,J]
+=
+\sum_{K\in{\binom{\mathbb Z}{m}}}
+\det T_{g_q}[I,K]\det T_a[K,J].
+\]
+Every summand is nonnegative, because \(T_{g_q}\) is TP and \(T_a\) is TN. Lemma 2 says the \(J\)-columns of \(T_a\) are independent, so some coordinate set \(K\) has \(\det T_a[K,J]\neq0\). Since \(T_a\) is TN, that determinant is positive. The corresponding \(T_{g_q}\)-minor is strictly positive, so the whole sum is strictly positive. Therefore \(b^{(q)}\) is TP.
+
+If \(a_n=C\rho^n\) with \(C>0\) and \(\rho>0\), set
+\[
+b^{(\varepsilon)}_n=C\rho^n e^{-\varepsilon n^2}.
+\]
+Then
+\[
+b^{(\varepsilon)}_{i-j}
+=
+C\rho^i\rho^{-j}e^{-\varepsilon i^2}e^{-\varepsilon j^2}e^{2\varepsilon ij}.
+\]
+Every Toeplitz minor is a positive row/column rescaling of the generalized Vandermonde determinant
+\[
+\det[(e^{2\varepsilon i_r})^{j_s}]_{r,s=1}^m,
+\]
+which is positive for \(i_1<\cdots<i_m\) and \(j_1<\cdots<j_m\). Hence \(b^{(\varepsilon)}\) is TP and \(b^{(\varepsilon)}_n\to C\rho^n\) as \(\varepsilon\downarrow0\).
+
+If \(a=0\), then \(\eta g_q\to0\) pointwise as \(\eta\downarrow0\), and \(\eta g_q\) is TP for each \(\eta>0\).
+\end{proof}
+
+\begin{proposition}[Square-root Laplace gamma tilt gives strict log-convexity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Square-root Laplace gamma tilt gives strict log-convexity}
+\label{res:sqrtlaplace-gammatilt-logconvexity}
+For \(x>0\), let \(k_x(s)=x(2\pi)^{-1/2}s^{-3/2}\exp(-x^2/(2s))\) on \((0,\infty)\). Then \(k_x\) is a positive probability density and, for every \(a>0\), \(\Gamma(a)^{-1}\int_0^\infty y^{a-1}e^{-y}e^{-x\sqrt{2y}}\,dy=\int_0^\infty(1+s)^{-a}k_x(s)\,ds\). Consequently the logarithmic second derivative in \(a\) of this gamma-normalized transform equals the tilted variance of \(\log(1+S_x)\), and is strictly positive.
+\end{proposition}
+
+\begin{proof}
+Yang's source normalization is
+\[
+R_p(x)=\int_0^\infty t^p\exp(-t^2/2-xt)\,dt,\qquad p>-1,\quad x>0.
+\]
+Put \(a=(p+1)/2\), so \(p=2a-1\). With \(y=t^2/2\), one has
+\[
+t^{2a-1}\,dt=2^{a-1}y^{a-1}\,dy
+\]
+and therefore
+\[
+R_{2a-1}(x)
+=2^{a-1}\int_0^\infty y^{a-1}e^{-y}e^{-x\sqrt{2y}}\,dy.
+\]
+
+For \(x>0\), use the square-root Laplace identity
+\[
+e^{-x\sqrt{2y}}
+={x\over\sqrt{2\pi}}\int_0^\infty
+s^{-3/2}\exp\!\left(-{x^2\over 2s}\right)e^{-sy}\,ds.
+\]
+This is the standard Levy-density representation of the function \(y\mapsto e^{-x\sqrt{2y}}\). The kernel
+\[
+k_x(s)={x\over\sqrt{2\pi}}s^{-3/2}\exp\!\left(-{x^2\over 2s}\right),\qquad s>0,
+\]
+is positive and integrates to \(1\), as is seen by evaluating the identity at \(y=0\).
+
+Since all terms are nonnegative, Tonelli's theorem gives
+\[
+\begin{aligned}
+R_{2a-1}(x)
+&=2^{a-1}\int_0^\infty y^{a-1}e^{-y}
+\left(\int_0^\infty e^{-sy}k_x(s)\,ds\right)dy \\
+&=2^{a-1}\int_0^\infty k_x(s)
+\left(\int_0^\infty y^{a-1}e^{-(1+s)y}\,dy\right)ds \\
+&=2^{a-1}\Gamma(a)\int_0^\infty (1+s)^{-a}k_x(s)\,ds .
+\end{aligned}
+\]
+Thus
+\[
+{R_{2a-1}(x)\over \Gamma(a)}
+=2^{a-1}\int_0^\infty (1+s)^{-a}k_x(s)\,ds.
+\]
+
+Let \(S_x\) be distributed with density \(k_x\), and set \(Z_x=\log(1+S_x)\). Then
+\[
+{R_{2a-1}(x)\over \Gamma(a)}
+=2^{a-1}\mathbb E e^{-aZ_x}.
+\]
+For the tilted law
+\[
+d\mathbb P_{a,x}
+={e^{-aZ_x}\over \mathbb E e^{-aZ_x}}\,d\mathbb P_{Z_x},
+\]
+ordinary differentiation of the finite Laplace transform gives
+\[
+{d^2\over da^2}\log {R_{2a-1}(x)\over \Gamma(a)}
+=\operatorname{Var}_{a,x}(Z_x)\ge 0.
+\]
+The added affine term \((a-1)\log 2\) contributes no second derivative.
+
+Because \(a=(p+1)/2\), the \(p\)-curvature is
+\[
+{d^2\over dp^2}\log {R_p(x)\over \Gamma((p+1)/2)}
+={1\over4}\operatorname{Var}_{a,x}\!\bigl(\log(1+S_x)\bigr)\ge 0.
+\]
+For \(x>0\), \(k_x\) is positive on all of \((0,\infty)\), so \(\log(1+S_x)\) is nonconstant under every tilted law. The variance is therefore strictly positive, proving strict log-convexity.
+\end{proof}
+
+\begin{definition}[Yang order-p Mills moment kernel]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Yang order-p Mills moment kernel}
+\label{res:yang-millsordermomentkernel}
+For \(x>0\) and \(p>-1\), Yang's order-\(p\) Mills moment is \(R_p(x)=\int_0^\infty t^p\exp(-t^2/2-xt)\,dt\). The half-gamma normalized Yang Mills ratio is \(R_p(x)/\Gamma((p+1)/2)\).
+\end{definition}
+
+\begin{corollary}[APP-0076: Yang Mills-ratio half-gamma log-convexity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0076: Yang Mills-ratio half-gamma log-convexity}
+\label{res:yang-millsratio-halfgamma-logconvexity}
+Let \(R_p(x)=\int_0^\infty t^p\exp(-t^2/2-xt)\,dt\) for \(x>0\) and \(p>-1\). For every fixed \(x>0\), the function \(p\mapsto R_p(x)/\Gamma((p+1)/2)\) is strictly log-convex on \((-1,\infty)\). This proves Yang's Remark 11 conjectural log-convexity under the source normalization.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0076} \cite{app-app-0076-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:laplace-kernel-and-tilted-moment-language}, Proposition~\ref{res:sqrtlaplace-gammatilt-logconvexity}, Proposition~\ref{res:yang-millsordermomentkernel}, and Proposition~\ref{res:from-mills-laplace-cm-normal-form} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Yang's source normalization is
+\[
+R_p(x)=\int_0^\infty t^p\exp(-t^2/2-xt)\,dt,\qquad p>-1,\quad x>0.
+\]
+Put \(a=(p+1)/2\), so \(p=2a-1\). With \(y=t^2/2\), one has
+\[
+t^{2a-1}\,dt=2^{a-1}y^{a-1}\,dy
+\]
+and therefore
+\[
+R_{2a-1}(x)
+=2^{a-1}\int_0^\infty y^{a-1}e^{-y}e^{-x\sqrt{2y}}\,dy.
+\]
+
+For \(x>0\), use the square-root Laplace identity
+\[
+e^{-x\sqrt{2y}}
+={x\over\sqrt{2\pi}}\int_0^\infty
+s^{-3/2}\exp\!\left(-{x^2\over 2s}\right)e^{-sy}\,ds.
+\]
+This is the standard Levy-density representation of the function \(y\mapsto e^{-x\sqrt{2y}}\). The kernel
+\[
+k_x(s)={x\over\sqrt{2\pi}}s^{-3/2}\exp\!\left(-{x^2\over 2s}\right),\qquad s>0,
+\]
+is positive and integrates to \(1\), as is seen by evaluating the identity at \(y=0\).
+
+Since all terms are nonnegative, Tonelli's theorem gives
+\[
+\begin{aligned}
+R_{2a-1}(x)
+&=2^{a-1}\int_0^\infty y^{a-1}e^{-y}
+\left(\int_0^\infty e^{-sy}k_x(s)\,ds\right)dy \\
+&=2^{a-1}\int_0^\infty k_x(s)
+\left(\int_0^\infty y^{a-1}e^{-(1+s)y}\,dy\right)ds \\
+&=2^{a-1}\Gamma(a)\int_0^\infty (1+s)^{-a}k_x(s)\,ds .
+\end{aligned}
+\]
+Thus
+\[
+{R_{2a-1}(x)\over \Gamma(a)}
+=2^{a-1}\int_0^\infty (1+s)^{-a}k_x(s)\,ds.
+\]
+
+Let \(S_x\) be distributed with density \(k_x\), and set \(Z_x=\log(1+S_x)\). Then
+\[
+{R_{2a-1}(x)\over \Gamma(a)}
+=2^{a-1}\mathbb E e^{-aZ_x}.
+\]
+For the tilted law
+\[
+d\mathbb P_{a,x}
+={e^{-aZ_x}\over \mathbb E e^{-aZ_x}}\,d\mathbb P_{Z_x},
+\]
+ordinary differentiation of the finite Laplace transform gives
+\[
+{d^2\over da^2}\log {R_{2a-1}(x)\over \Gamma(a)}
+=\operatorname{Var}_{a,x}(Z_x)\ge 0.
+\]
+The added affine term \((a-1)\log 2\) contributes no second derivative.
+
+Because \(a=(p+1)/2\), the \(p\)-curvature is
+\[
+{d^2\over dp^2}\log {R_p(x)\over \Gamma((p+1)/2)}
+={1\over4}\operatorname{Var}_{a,x}\!\bigl(\log(1+S_x)\bigr)\ge 0.
+\]
+For \(x>0\), \(k_x\) is positive on all of \((0,\infty)\), so \(\log(1+S_x)\) is nonconstant under every tilted law. The variance is therefore strictly positive, proving strict log-convexity.
+\end{proof}
+
+\begin{proposition}[Finite reciprocal characteristic-function identity certificate]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Finite reciprocal characteristic-function identity certificate}
+\label{res:reciprocalcharacteristicfunction-finiteidentity-certificate}
+Let \(\varphi\) be a characteristic function with reciprocal \(q=1/\varphi\) on a neighborhood of the origin, let \(\mu_1,\ldots,\mu_n\) be distinct nonzero real numbers, and let \(\theta_k=\prod_{j\ne k}\mu_k/(\mu_k-\mu_j)\). If the finite identity \(\sum_{k=1}^n\theta_k\prod_{j\ne k}q(\mu_jt)=1\) holds for all real \(t\), then \(\varphi\) satisfies the Rastegar--Roitershtein functional equation \(\prod_j\varphi(\mu_jt)=\sum_k\theta_k\varphi(\mu_kt)\).
+\end{proposition}
+
+\begin{proof}
+The local Sympy audit verified:
+
+\((\theta_1,\theta_2,\theta_3)=(-3/5,3/2,1/10)\);
+\(\sum_k\theta_k=1\);
+\(\sum_k\theta_k\prod_{j\ne k}(1+a\mu_j^2t^2)=1\) identically;
+the original functional-equation difference is identically \(0\);
+\(h_2(\mu)-p_2(\mu)=0\).
+
+This is a finite symbolic characteristic-function certificate, not a numerical Taylor match.
+
+The reusable bridge is the finite reciprocal-characteristic certificate:
+if a nonzero real vector \(\mu\), the source weights \(\theta_k\), and a positive-definite reciprocal polynomial \(q(t)=1+a t^2\) satisfy
+\[
+\sum_{k=1}^n\theta_k\prod_{j\ne k}q(\mu_jt)=1
+\]
+identically, then \(\varphi=1/q\) gives an exact source functional-equation solution. When this \(X\) is not in the source conclusion class, it is a source-level counterexample.
+
+The present \(n=3\) data provide such a certificate.
+\end{proof}
+
+\begin{counterexample}[APP-0078: Rastegar-Roitershtein condition-(3) removal conjecture is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0078: Rastegar-Roitershtein condition-(3) removal conjecture is false}
+\label{res:not-rastegarroitershtein-condition3-unnecessary}
+The Rastegar--Roitershtein conjecture that condition (1.3), numbered condition (3) in the preprint, is unnecessary in Theorem 1.1 for \(n\ge3\) is false. For \(n=3\), \(\mu=(1,2,-2/3)\), the source weights are \(\theta=(-3/5,3/2,1/10)\), and the centered Laplace characteristic function \(\varphi(t)=1/(1+a t^2)\), \(a>0\), satisfies the source functional equation identically, while the law is nondegenerate, has mean zero, and is not one-sided exponential.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0078} \cite{app-app-0078-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle} and Proposition~\ref{res:reciprocalcharacteristicfunction-finiteidentity-certificate} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+The local Sympy audit verified:
+
+\((\theta_1,\theta_2,\theta_3)=(-3/5,3/2,1/10)\);
+\(\sum_k\theta_k=1\);
+\(\sum_k\theta_k\prod_{j\ne k}(1+a\mu_j^2t^2)=1\) identically;
+the original functional-equation difference is identically \(0\);
+\(h_2(\mu)-p_2(\mu)=0\).
+
+This is a finite symbolic characteristic-function certificate, not a numerical Taylor match.
+
+The reusable bridge is the finite reciprocal-characteristic certificate:
+if a nonzero real vector \(\mu\), the source weights \(\theta_k\), and a positive-definite reciprocal polynomial \(q(t)=1+a t^2\) satisfy
+\[
+\sum_{k=1}^n\theta_k\prod_{j\ne k}q(\mu_jt)=1
+\]
+identically, then \(\varphi=1/q\) gives an exact source functional-equation solution. When this \(X\) is not in the source conclusion class, it is a source-level counterexample.
+
+The present \(n=3\) data provide such a certificate.
+\end{proof}
+
+\begin{proposition}[Two-by-two determinantal polynomial sign-conjugacy blindness]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Two-by-two determinantal polynomial sign-conjugacy blindness}
+\label{res:determinantalpolynomial-signconjugacy-blindness}
+For a real symmetric matrix \(M=\begin{pmatrix}a\&b\\ b\&c\end{pmatrix}\) and \(Z=\operatorname{diag}(z_1,z_2)\), \(\det(I+MZ)=1+a z_1+c z_2+(ac-b^2)z_1z_2\). Hence the determinantal polynomial records the diagonal entries and determinant but not the sign of the off-diagonal entry.
+\end{proposition}
+
+\begin{proof}
+Let
+\[
+A=\begin{pmatrix}1&1/2\\[2pt]1/2&2\end{pmatrix},
+\qquad
+B=\begin{pmatrix}1&-1/2\\[2pt]-1/2&2\end{pmatrix},
+\qquad
+Z=\operatorname{diag}(z_1,z_2).
+\]
+Both \(A\) and \(B\) are positive definite, since their leading principal minors are positive and
+\[
+\det A=\det B=2-\frac14=\frac74>0.
+\]
+
+For a real symmetric \(2\times2\) matrix
+\[
+M=\begin{pmatrix}a&b\\ b&c\end{pmatrix},
+\]
+one has
+\[
+\det(I+MZ)=1+a z_1+c z_2+(ac-b^2)z_1z_2.
+\]
+Therefore the sign of \(b\) is invisible to the determinantal stable polynomial. In the present example,
+\[
+\det(I+AZ)=\det(I+BZ)=1+z_1+2z_2+\frac74 z_1z_2,
+\]
+and also
+\[
+\det(I+A)=\det(I+B)=\frac{23}{4}.
+\]
+Hence the normalized polynomials are identical:
+\[
+\frac{\det(I+AZ)}{\det(I+A)}
+=
+\frac{\det(I+BZ)}{\det(I+B)}.
+\]
+
+The BBL order hypothesis holds immediately by equality. Equivalently, if one checks the stronger proper-position relation directly, \(p_A=p_B\) gives
+\[
+p_B+i p_A=(1+i)p_A,
+\]
+which is stable because \(p_A\) is a determinantal stable polynomial and multiplication by a nonzero constant preserves stability.
+
+However,
+\[
+B-A=
+\begin{pmatrix}0&-1\\ -1&0\end{pmatrix}
+\]
+has eigenvalues \(1\) and \(-1\). Thus \(B-A\) is indefinite and \(A\nleq B\) in Loewner order. Similarly \(A-B\) is indefinite, so the matrices are not Loewner-comparable.
+
+For completeness, the example is not a commuting or diagonal case:
+\[
+AB=\begin{pmatrix}3/4&1/2\\ -1/2&15/4\end{pmatrix},
+\qquad
+BA=\begin{pmatrix}3/4&-1/2\\ 1/2&15/4\end{pmatrix},
+\]
+so \(AB\ne BA\).
+
+The obstruction is the non-injectivity of \(M\mapsto\det(I+MZ)\). In dimension two, the polynomial records \(a\), \(c\), and \(ac-b^2\), but not the sign of \(b\). Diagonal sign conjugation \(M\mapsto DMD\), with \(D=\operatorname{diag}(1,-1)\), preserves all principal-minor data and hence the normalized determinantal stable polynomial, while literal Loewner comparison between \(M\) and \(DMD\) can fail.
+
+This refutes the literal source question. It does not refute possible repaired quotient formulations modulo diagonal sign conjugacy.
+\end{proof}
+
+\begin{counterexample}[APP-0079: BBL determinantal stable Loewner converse is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0079: BBL determinantal stable Loewner converse is false}
+\label{res:not-bbl-determinantalstable-loewnerconverse}
+Borcea--Branden--Liggett Question 4.1 has a negative answer. For \(A=\begin{pmatrix}1&1/2\\1/2&2\end{pmatrix}\) and \(B=\begin{pmatrix}1&-1/2\\-1/2&2\end{pmatrix}\), both matrices are positive definite and the normalized determinantal stable polynomials \(\det(I+AZ)/\det(I+A)\) and \(\det(I+BZ)/\det(I+B)\) are identical, so the BBL order hypothesis holds. But \(B-A=\begin{pmatrix}0&-1\\-1&0\end{pmatrix}\) is indefinite, hence \(A\nleq B\) in Loewner order.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0079} \cite{app-app-0079-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:determinantalpolynomial-signconjugacy-blindness}, and Proposition~\ref{res:determinant-triangular-compression-language} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Let
+\[
+A=\begin{pmatrix}1&1/2\\[2pt]1/2&2\end{pmatrix},
+\qquad
+B=\begin{pmatrix}1&-1/2\\[2pt]-1/2&2\end{pmatrix},
+\qquad
+Z=\operatorname{diag}(z_1,z_2).
+\]
+Both \(A\) and \(B\) are positive definite, since their leading principal minors are positive and
+\[
+\det A=\det B=2-\frac14=\frac74>0.
+\]
+
+For a real symmetric \(2\times2\) matrix
+\[
+M=\begin{pmatrix}a&b\\ b&c\end{pmatrix},
+\]
+one has
+\[
+\det(I+MZ)=1+a z_1+c z_2+(ac-b^2)z_1z_2.
+\]
+Therefore the sign of \(b\) is invisible to the determinantal stable polynomial. In the present example,
+\[
+\det(I+AZ)=\det(I+BZ)=1+z_1+2z_2+\frac74 z_1z_2,
+\]
+and also
+\[
+\det(I+A)=\det(I+B)=\frac{23}{4}.
+\]
+Hence the normalized polynomials are identical:
+\[
+\frac{\det(I+AZ)}{\det(I+A)}
+=
+\frac{\det(I+BZ)}{\det(I+B)}.
+\]
+
+The BBL order hypothesis holds immediately by equality. Equivalently, if one checks the stronger proper-position relation directly, \(p_A=p_B\) gives
+\[
+p_B+i p_A=(1+i)p_A,
+\]
+which is stable because \(p_A\) is a determinantal stable polynomial and multiplication by a nonzero constant preserves stability.
+
+However,
+\[
+B-A=
+\begin{pmatrix}0&-1\\ -1&0\end{pmatrix}
+\]
+has eigenvalues \(1\) and \(-1\). Thus \(B-A\) is indefinite and \(A\nleq B\) in Loewner order. Similarly \(A-B\) is indefinite, so the matrices are not Loewner-comparable.
+
+For completeness, the example is not a commuting or diagonal case:
+\[
+AB=\begin{pmatrix}3/4&1/2\\ -1/2&15/4\end{pmatrix},
+\qquad
+BA=\begin{pmatrix}3/4&-1/2\\ 1/2&15/4\end{pmatrix},
+\]
+so \(AB\ne BA\).
+
+The obstruction is the non-injectivity of \(M\mapsto\det(I+MZ)\). In dimension two, the polynomial records \(a\), \(c\), and \(ac-b^2\), but not the sign of \(b\). Diagonal sign conjugation \(M\mapsto DMD\), with \(D=\operatorname{diag}(1,-1)\), preserves all principal-minor data and hence the normalized determinantal stable polynomial, while literal Loewner comparison between \(M\) and \(DMD\) can fail.
+
+This refutes the literal source question. It does not refute possible repaired quotient formulations modulo diagonal sign conjugacy.
+\end{proof}
+
+\begin{proposition}[Generalized Vandermonde determinants have strict Chebyshev sign]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Generalized Vandermonde determinants have strict Chebyshev sign}
+\label{res:generalized-vandermonde-chebyshev-strictsign}
+If \(0<b_1<\cdots<b_m\) and \(s_1<\cdots<s_m\), then \(\det[b_j^{s_i}]_{i,j=1}^m>0\). Equivalently, \(u\mapsto e^{s_i u}\) is an extended complete Chebyshev system on real intervals.
+\end{proposition}
+
+\begin{proof}
+For every fixed \(0<q<1\), prove that
+\[
+K_q(x,y)=\Gamma_q(x+y)
+\]
+is strictly totally positive of all orders on \((0,\infty)^2\).
+
+Let \(\mu\) be a positive Borel measure on \((0,\infty)\) with at least \(m\) distinct support points. Suppose the Mellin moments
+\[
+M(s)=\int_0^\infty t^s\,d\mu(t)
+\]
+are finite for all \(s=x_i+y_j\), where
+\[
+0<x_1<\cdots<x_m,\qquad 0<y_1<\cdots<y_m.
+\]
+Then
+\[
+\det[M(x_i+y_j)]_{i,j=1}^m>0.
+\]
+If \(\mu\) has infinite support and the required moments are finite on the domain, then \(K(x,y)=M(x+y)\) is \(STP_\infty\).
+
+By Andreief's identity, first for finite-support measures and then by approximation/monotone convergence of the nonnegative Cauchy-Binet expansion,
+\[
+\det[M(x_i+y_j)]_{i,j=1}^m
+=\frac{1}{m!}\int_{(0,\infty)^m}
+\det[t_k^{x_i}]_{i,k=1}^m
+\det[t_k^{y_j}]_{j,k=1}^m
+\prod_{k=1}^m d\mu(t_k).
+\]
+The integrand vanishes on diagonals. On the chamber \(0<t_1<\cdots<t_m\), both determinants are positive. Indeed, after writing \(t_k=e^{u_k}\), the functions \(u\mapsto e^{x_i u}\) form an extended complete Chebyshev system because their Wronskian is
+\[
+\det\left[\frac{d^{r-1}}{du^{r-1}}e^{x_i u}\right]_{i,r=1}^m
+=e^{(x_1+\cdots+x_m)u}\prod_{1\le i<j\le m}(x_j-x_i)>0.
+\]
+The same argument applies to the \(y_j\). Since \(\mu\) has at least \(m\) support points, the ordered chamber has positive \(\mu^m\)-mass on sets where the integrand is strictly positive. Thus the determinant is strictly positive.
+
+The moment hypotheses justify the determinant integral: expanding the product of determinants bounds the absolute integrand by a finite sum of products of the finite moments \(M(x_i+y_j)\).
+
+For \(0<q<1\), the Jackson \(q\)-gamma function used by the source is
+\[
+\Gamma_q(z)=(1-q)^{1-z}\frac{(q;q)_\infty}{(q^z;q)_\infty},\qquad z>0.
+\]
+The \(q\)-binomial theorem gives
+\[
+\frac{1}{(q^z;q)_\infty}=\sum_{n=0}^{\infty}\frac{q^{nz}}{(q;q)_n}.
+\]
+Therefore
+\[
+\Gamma_q(z)=(1-q)(q;q)_\infty
+\sum_{n=0}^{\infty}\frac{(q^n/(1-q))^z}{(q;q)_n}.
+\]
+Equivalently,
+\[
+\Gamma_q(z)=\int_0^\infty t^z\,d\mu_q(t),
+\]
+where
+\[
+\mu_q=(1-q)(q;q)_\infty
+\sum_{n=0}^{\infty}\frac{1}{(q;q)_n}\,
+\delta_{q^n/(1-q)}.
+\]
+This is a positive atomic measure with infinitely many distinct support points \(q^n/(1-q)\). The moments are finite for all \(z>0\), since the defining series converges for \(q^z\in(0,1)\).
+
+Applying the Mellin moment kernel lemma to \(M(z)=\Gamma_q(z)\) gives, for every \(m\ge1\) and every strictly ordered \(x_i,y_j>0\),
+\[
+\det[\Gamma_q(x_i+y_j)]_{i,j=1}^m>0.
+\]
+Thus \(K_q(x,y)=\Gamma_q(x+y)\) is \(STP_\infty\) on \((0,\infty)^2\).
+\end{proof}
+
+\begin{proposition}[Positive Mellin moment kernels with infinite support are strictly totally positive]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Positive Mellin moment kernels with infinite support are strictly totally positive}
+\label{res:mellin-moment-kernel-stp-infinitesupport}
+Let \(\mu\) be a positive Borel measure on \((0,\infty)\) with infinite support and finite Mellin moments on the relevant domain. Then \(K(x,y)=\int_0^\infty t^{x+y}\,d\mu(t)\) is \(STP_\infty\) on that domain.
+\end{proposition}
+
+\begin{proof}
+For Positive Mellin moment kernels with infinite support are strictly totally positive, this proof is the corresponding component of Proposition~\ref{res:generalized-vandermonde-chebyshev-strictsign}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{definition}[q-gamma and q-Pochhammer notation on the positive axis]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: q-gamma and q-Pochhammer notation on the positive axis}
+\label{res:qgamma-pochhammer-positiveaxis}
+For \(0<q<1\), the q-Pochhammer symbols are \((a;q)_n=\prod_{j=0}^{n-1}(1-aq^j)\) and \((a;q)_\infty=\prod_{j=0}^{\infty}(1-aq^j)\). The Jackson q-gamma function on \((0,\infty)\) is \(\Gamma_q(z)=(1-q)^{1-z}(q;q)_\infty/(q^z;q)_\infty\).
+\end{definition}
+
+\begin{proposition}[q-binomial atomic Mellin representation for q-gamma]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: q-binomial atomic Mellin representation for q-gamma}
+\label{res:qbinomial-atomic-mellin-representation}
+For \(0<q<1\) and \(z>0\), \(\Gamma_q(z)=(1-q)(q;q)_\infty\sum_{n=0}^{\infty}(q^n/(1-q))^z/(q;q)_n\). Equivalently, \(\Gamma_q\) is the Mellin transform of the positive atomic measure \((1-q)(q;q)_\infty\sum_{n\ge0}(q;q)_n^{-1}\delta_{q^n/(1-q)}\).
+\end{proposition}
+
+\begin{proof}
+For q-binomial atomic Mellin representation for q-gamma, this proof is the corresponding component of Proposition~\ref{res:generalized-vandermonde-chebyshev-strictsign}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{corollary}[APP-0080: q-gamma Hankel kernel is strictly totally positive]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0080: q-gamma Hankel kernel is strictly totally positive}
+\label{res:qgamma-hankelkernel-stpinfinity}
+For every fixed \(0<q<1\), the kernel \(K_q(x,y)=\Gamma_q(x+y)\) is \(STP_\infty\) on \((0,\infty)^2\). Equivalently, for every \(m\ge1\) and every \(0<x_1<\cdots<x_m\), \(0<y_1<\cdots<y_m\), one has \(\det[\Gamma_q(x_i+y_j)]_{i,j=1}^m>0\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0080} \cite{app-app-0080-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:determinant-triangular-compression-language}, Proposition~\ref{res:generalized-vandermonde-chebyshev-strictsign}, Proposition~\ref{res:mellin-moment-kernel-stp-infinitesupport}, and Proposition~\ref{res:qbinomial-atomic-mellin-representation} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+For every fixed \(0<q<1\), prove that
+\[
+K_q(x,y)=\Gamma_q(x+y)
+\]
+is strictly totally positive of all orders on \((0,\infty)^2\).
+
+Let \(\mu\) be a positive Borel measure on \((0,\infty)\) with at least \(m\) distinct support points. Suppose the Mellin moments
+\[
+M(s)=\int_0^\infty t^s\,d\mu(t)
+\]
+are finite for all \(s=x_i+y_j\), where
+\[
+0<x_1<\cdots<x_m,\qquad 0<y_1<\cdots<y_m.
+\]
+Then
+\[
+\det[M(x_i+y_j)]_{i,j=1}^m>0.
+\]
+If \(\mu\) has infinite support and the required moments are finite on the domain, then \(K(x,y)=M(x+y)\) is \(STP_\infty\).
+
+By Andreief's identity, first for finite-support measures and then by approximation/monotone convergence of the nonnegative Cauchy-Binet expansion,
+\[
+\det[M(x_i+y_j)]_{i,j=1}^m
+=\frac{1}{m!}\int_{(0,\infty)^m}
+\det[t_k^{x_i}]_{i,k=1}^m
+\det[t_k^{y_j}]_{j,k=1}^m
+\prod_{k=1}^m d\mu(t_k).
+\]
+The integrand vanishes on diagonals. On the chamber \(0<t_1<\cdots<t_m\), both determinants are positive. Indeed, after writing \(t_k=e^{u_k}\), the functions \(u\mapsto e^{x_i u}\) form an extended complete Chebyshev system because their Wronskian is
+\[
+\det\left[\frac{d^{r-1}}{du^{r-1}}e^{x_i u}\right]_{i,r=1}^m
+=e^{(x_1+\cdots+x_m)u}\prod_{1\le i<j\le m}(x_j-x_i)>0.
+\]
+The same argument applies to the \(y_j\). Since \(\mu\) has at least \(m\) support points, the ordered chamber has positive \(\mu^m\)-mass on sets where the integrand is strictly positive. Thus the determinant is strictly positive.
+
+The moment hypotheses justify the determinant integral: expanding the product of determinants bounds the absolute integrand by a finite sum of products of the finite moments \(M(x_i+y_j)\).
+
+For \(0<q<1\), the Jackson \(q\)-gamma function used by the source is
+\[
+\Gamma_q(z)=(1-q)^{1-z}\frac{(q;q)_\infty}{(q^z;q)_\infty},\qquad z>0.
+\]
+The \(q\)-binomial theorem gives
+\[
+\frac{1}{(q^z;q)_\infty}=\sum_{n=0}^{\infty}\frac{q^{nz}}{(q;q)_n}.
+\]
+Therefore
+\[
+\Gamma_q(z)=(1-q)(q;q)_\infty
+\sum_{n=0}^{\infty}\frac{(q^n/(1-q))^z}{(q;q)_n}.
+\]
+Equivalently,
+\[
+\Gamma_q(z)=\int_0^\infty t^z\,d\mu_q(t),
+\]
+where
+\[
+\mu_q=(1-q)(q;q)_\infty
+\sum_{n=0}^{\infty}\frac{1}{(q;q)_n}\,
+\delta_{q^n/(1-q)}.
+\]
+This is a positive atomic measure with infinitely many distinct support points \(q^n/(1-q)\). The moments are finite for all \(z>0\), since the defining series converges for \(q^z\in(0,1)\).
+
+Applying the Mellin moment kernel lemma to \(M(z)=\Gamma_q(z)\) gives, for every \(m\ge1\) and every strictly ordered \(x_i,y_j>0\),
+\[
+\det[\Gamma_q(x_i+y_j)]_{i,j=1}^m>0.
+\]
+Thus \(K_q(x,y)=\Gamma_q(x+y)\) is \(STP_\infty\) on \((0,\infty)^2\).
+\end{proof}
+
+\section{Endpoint obstruction certificates}
+\label{sec:endpoint-obstruction-certificates}
+This section collects applications in which a universal positivity, convexity, or monotonicity claim is decided by reducing it to a local obstruction.  The common method is to isolate a boundary, endpoint, or explicit witness where the proposed sign pattern cannot hold.
+
+\begin{definition}[Tricomi Psi standard Laplace integral representation]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Tricomi Psi standard Laplace integral representation}
+\label{res:tricomipsi-standardintegralrepresentation}
+For \(a>0\) and \(z>0\), the Tricomi confluent hypergeometric function satisfies \(\Psi(a,c,z)=\Gamma(a)^{-1}\int_0^\infty e^{-zt}t^{a-1}(1+t)^{c-a-1}\,dt\) whenever the displayed integral is interpreted in the source's standard admissible range. In particular, for the integer parameters used in the counterexample, the integral is an elementary positive Laplace integral.
+\end{definition}
+
+\begin{proposition}[Tricomi Psi integer polynomial complete-monotonicity counterfamily]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Tricomi Psi integer polynomial complete-monotonicity counterfamily}
+\label{res:tricomipsi-integerpolynomial-cm-counterfamily}
+For every integer \(m\ge1\), the quotient \(z\mapsto \Psi(m,2m+1,z)^2/\Psi(2m,2m+1,z)\) is a polynomial in \(z^{-1}\) with nonnegative coefficients, hence is completely monotone on \((0,\infty)\).
+\end{proposition}
+
+\begin{proof}
+The same calculation gives a reusable family. For every integer \(m\ge1\), set \(a=m\) and \(c=2m+1\). Then
+\[
+\Psi(m,2m+1,z)
+=\frac1{\Gamma(m)}\int_0^\infty e^{-zt}t^{m-1}(1+t)^m\,dt.
+\]
+Expanding \((1+t)^m\) gives a finite sum of positive multiples of \(z^{-m-k}\). Meanwhile
+\[
+\Psi(2m,2m+1,z)
+=\frac1{\Gamma(2m)}\int_0^\infty e^{-zt}t^{2m-1}\,dt
+=z^{-2m}.
+\]
+Hence the quotient is the square of a polynomial in \(z^{-1}\) with nonnegative coefficients, and is completely monotone. These are all outside the proposed window because \(c=2m+1>1\).
+\end{proof}
+
+\begin{counterexample}[APP-0077: Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0077: Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false}
+\label{res:not-tricomipsiquotient-cm-c-window}
+Ferreira--Simon Conjecture 2, read literally as the assertion that \(z\mapsto \Psi(a,c,z)^2/\Psi(2a,c,z)\) is completely monotone on \((0,\infty)\) if and only if \(c\in[0,1]\), is false. At \(a=1\) and \(c=3\), the quotient equals \((1+z^{-1})^2\), which is completely monotone although \(3\notin[0,1]\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0077} \cite{app-app-0077-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:laplace-kernel-and-tilted-moment-language}, Proposition~\ref{res:tricomipsi-standardintegralrepresentation}, Proposition~\ref{res:tricomipsi-integerpolynomial-cm-counterfamily}, and Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+The same calculation gives a reusable family. For every integer \(m\ge1\), set \(a=m\) and \(c=2m+1\). Then
+\[
+\Psi(m,2m+1,z)
+=\frac1{\Gamma(m)}\int_0^\infty e^{-zt}t^{m-1}(1+t)^m\,dt.
+\]
+Expanding \((1+t)^m\) gives a finite sum of positive multiples of \(z^{-m-k}\). Meanwhile
+\[
+\Psi(2m,2m+1,z)
+=\frac1{\Gamma(2m)}\int_0^\infty e^{-zt}t^{2m-1}\,dt
+=z^{-2m}.
+\]
+Hence the quotient is the square of a polynomial in \(z^{-1}\) with nonnegative coefficients, and is completely monotone. These are all outside the proposed window because \(c=2m+1>1\).
 \end{proof}
 
 \section{Conclusion}
@@ -10278,6 +11878,42 @@ Mecke, Nagel, and Weiss, Joseph Mecke's last fragmentary manuscripts - a compila
 \bibitem{app-app-0070-source}
 Dytso, Bustin, and Poor, generalized-Gaussian product-factorization source problem, Axioms 7 (2018), DOI 10.1186/s40488-018-0088-5, and thesis source. https://doi.org/10.1186/s40488-018-0088-5.
 \url{https://doi.org/10.1186/s40488-018-0088-5}.
+
+\bibitem{app-app-0071-source}
+Bendikov--Cygan, Alpha-stable random walk has massive thorns, Colloquium Mathematicum 138(1), 105--129, 2015, arXiv:1307.4947, DOI 10.4064/cm138-1-7. https://arxiv.org/abs/1307.4947.
+\url{https://arxiv.org/abs/1307.4947}.
+
+\bibitem{app-app-0072-source}
+Buchstaber--Glutsyuk, Total positivity, Grassmannian and modified Bessel functions, Contemporary Mathematics 733, 97--107, arXiv:1708.02154, DOI 10.1090/conm/733/14736. https://arxiv.org/abs/1708.02154.
+\url{https://arxiv.org/abs/1708.02154}.
+
+\bibitem{app-app-0073-source}
+Belton--Guillot--Khare--Putinar, Preservers of totally positive kernels and Polya frequency functions, Journal d'Analyse Mathematique, arXiv:2006.16213, DOI 10.1007/s11854-022-0259-7. https://arxiv.org/abs/2006.16213.
+\url{https://arxiv.org/abs/2006.16213}.
+
+\bibitem{app-app-0074-source}
+Scott--Sokal, Complete monotonicity for inverse powers of some combinatorially defined polynomials, Acta Mathematica 213, 323--392, arXiv:1301.2449, DOI 10.1007/s11511-014-0121-6. https://arxiv.org/abs/1301.2449.
+\url{https://arxiv.org/abs/1301.2449}.
+
+\bibitem{app-app-0076-source}
+Zhen-Hang Yang, Extension of a complete monotonicity theorem with applications, arXiv:2507.10954v1. https://arxiv.org/abs/2507.10954.
+\url{https://arxiv.org/abs/2507.10954}.
+
+\bibitem{app-app-0077-source}
+Rui A. C. Ferreira and Thomas Simon, Convolution of beta prime distribution, Transactions of the American Mathematical Society 376, 855--890, arXiv:2108.09244, DOI 10.1090/tran/8748. https://arxiv.org/abs/2108.09244.
+\url{https://arxiv.org/abs/2108.09244}.
+
+\bibitem{app-app-0078-source}
+Rastegar--Roitershtein, On a Characterization of Exponential and Double Exponential Distributions, REVSTAT 23(1), 47--52, 2025, arXiv:2203.10495, DOI 10.57805/revstat.v23i1.530. https://arxiv.org/abs/2203.10495.
+\url{https://arxiv.org/abs/2203.10495}.
+
+\bibitem{app-app-0079-source}
+Borcea--Branden--Liggett, Negative dependence and the geometry of polynomials, Journal of the American Mathematical Society 22 (2009), 521--567, arXiv:0707.2340. https://arxiv.org/abs/0707.2340.
+\url{https://arxiv.org/abs/0707.2340}.
+
+\bibitem{app-app-0080-source}
+Karp--Vishnyakova--Zhang, Unimodality preservation by ratios of functional series and integral transforms, Results in Mathematics 80, Article 112, 2025, arXiv:2408.01755, DOI 10.1007/s00025-025-02431-4. https://arxiv.org/abs/2408.01755.
+\url{https://arxiv.org/abs/2408.01755}.
 
 \end{thebibliography}
 

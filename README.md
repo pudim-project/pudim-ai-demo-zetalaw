@@ -2,14 +2,14 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v016`, staged on 2026-06-14.
+This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v017`, staged on 2026-06-21.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v016/THEORY_v016.tex`](theory/versions/v016/THEORY_v016.tex)
-- Versioned PDF: [`theory/versions/v016/THEORY_v016.pdf`](theory/versions/v016/THEORY_v016.pdf)
+- Versioned TeX: [`theory/versions/v017/THEORY_v017.tex`](theory/versions/v017/THEORY_v017.tex)
+- Versioned PDF: [`theory/versions/v017/THEORY_v017.pdf`](theory/versions/v017/THEORY_v017.pdf)
 
 ## Abstract
 
@@ -17,7 +17,7 @@ We study the Riemann zeta function as the partition function of the probability 
 
 The public theory develops a common positivity calculus for zeta, gamma, polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, Bernstein, determinant, moment-ratio, endpoint-obstruction, and finite Weyl-algebra applications. Its reusable mechanisms include Laplace kernels, moment-ratio reductions, determinant compression, stable subordination, triangular coefficient extraction, endpoint obstructions, exact rational certificates, and Wick-dual extremal functionals.
 
-The public ledger for `v016` contains 70 solved applications, `APP-0001` through `APP-0070`, with immutable APP identifiers and source references.
+The public ledger for `v017` contains 80 solved applications, `APP-0001` through `APP-0080`, with immutable APP identifiers and source references.
 
 ## Applications
 
@@ -95,13 +95,23 @@ All entries below are `Solved`; detailed statements, proofs, and review notes ar
 | APP-0068 | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | [Garrappa--Gerhold--Popolizio--Simon, On some inequalities for the two-parameter Mittag-Lef...](https://arxiv.org/abs/2410.11852) |
 | APP-0069 | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | [Mecke, Nagel, and Weiss, Joseph Mecke's last fragmentary manuscripts - a compilation, arXi...](https://arxiv.org/abs/1703.10000) |
 | APP-0070 | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | [Dytso, Bustin, and Poor, generalized-Gaussian product-factorization source problem, Axioms...](https://doi.org/10.1186/s40488-018-0088-5) |
+| APP-0071 | Bendikov-Cygan SBF renewal monotonicity | [Bendikov--Cygan, Alpha-stable random walk has massive thorns](https://arxiv.org/abs/1307.4947) |
+| APP-0072 | Buchstaber-Glutsyuk real-order Bessel I strict total positivity | [Buchstaber--Glutsyuk, Total positivity, Grassmannian and modified Bessel functions](https://arxiv.org/abs/1708.02154) |
+| APP-0073 | BGKP PF-sequence total-positivity density | [Belton--Guillot--Khare--Putinar, Preservers of totally positive kernels and Polya frequency functions](https://arxiv.org/abs/2006.16213) |
+| APP-0074 | Scott-Sokal K5-e spanning-tree polynomial complete monotonicity | [Scott--Sokal, Complete monotonicity for inverse powers of combinatorially defined polynomials](https://arxiv.org/abs/1301.2449) |
+| APP-0075 | Scott-Sokal W4 spanning-tree polynomial complete monotonicity | [Scott--Sokal, Complete monotonicity for inverse powers of combinatorially defined polynomials](https://arxiv.org/abs/1301.2449) |
+| APP-0076 | Yang Mills-ratio half-gamma log-convexity | [Yang, Extension of a complete monotonicity theorem with applications](https://arxiv.org/abs/2507.10954) |
+| APP-0077 | Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false | [Ferreira--Simon, Convolution of beta prime distribution](https://arxiv.org/abs/2108.09244) |
+| APP-0078 | Rastegar-Roitershtein condition-(3) removal conjecture is false | [Rastegar--Roitershtein, On a Characterization of Exponential and Double Exponential Distributions](https://arxiv.org/abs/2203.10495) |
+| APP-0079 | BBL determinantal stable Loewner converse is false | [Borcea--Branden--Liggett, Negative dependence and the geometry of polynomials](https://arxiv.org/abs/0707.2340) |
+| APP-0080 | q-gamma Hankel kernel is strictly totally positive | [Karp--Vishnyakova--Zhang, Unimodality preservation by ratios of functional series and integral transforms](https://arxiv.org/abs/2408.01755) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v016`.
-The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v016`](wiki/versions/stage_v016).
+The latest staged theory snapshot is `stage_v017`.
+The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v017`](wiki/versions/stage_v017).
 
 ## Reading Notes
 

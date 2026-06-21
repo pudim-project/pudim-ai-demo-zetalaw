@@ -1246,5 +1246,201 @@ applications:
     superseded_by: []
     family_id: ""
     family_name: ""
-
+  - app_id: "APP-0071"
+    app_name: "Bendikov-Cygan SBF renewal monotonicity"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Bendikov--Cygan, Alpha-stable random walk has massive thorns, Colloquium Mathematicum 138(1), 105--129, 2015, arXiv:1307.4947, DOI 10.4064/cm138-1-7. https://arxiv.org/abs/1307.4947"
+    mechanism_group: "Laplace and gamma renewal monotonicity"
+    render_class: "atlas"
+    proof_node: "T-BendikovCygan-SBF-RenewalSequence-Nonincreasing"
+    dependencies:
+      - "L-BendikovCygan-RenewalGeneratingFunction-SBFPotential"
+      - "L-GammaMonotoneDensity-MomentSequence-Decreasing"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0072"
+    app_name: "Buchstaber-Glutsyuk real-order Bessel I strict total positivity"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Buchstaber--Glutsyuk, Total positivity, Grassmannian and modified Bessel functions, Contemporary Mathematics 733, 97--107, arXiv:1708.02154, DOI 10.1090/conm/733/14736. https://arxiv.org/abs/1708.02154"
+    mechanism_group: "Strict total positivity and Wronskian systems"
+    render_class: "atlas"
+    proof_node: "T-BesselI-RealOrder-StrictTotalPositivity"
+    dependencies:
+      - "L-SturmDarboux-PositiveSpectralFamily-Wronskians"
+      - "L-PositiveWronskians-ECT-Determinants"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0073"
+    app_name: "BGKP PF-sequence total-positivity density"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Belton--Guillot--Khare--Putinar, Preservers of totally positive kernels and Polya frequency functions, Journal d'Analyse Mathematique, arXiv:2006.16213, DOI 10.1007/s11854-022-0259-7. https://arxiv.org/abs/2006.16213"
+    mechanism_group: "Strict total positivity and PF strictification"
+    render_class: "atlas"
+    proof_node: "T-PFSeq-TP-Density-DiscreteGaussian"
+    dependencies:
+      - "L-DiscreteGaussian-Toeplitz-StrictTP"
+      - "L-PFSequence-Annulus-Translate-Independence"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0074"
+    app_name: "Scott-Sokal K5-e spanning-tree polynomial complete monotonicity"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Scott--Sokal, Complete monotonicity for inverse powers of some combinatorially defined polynomials, Acta Mathematica 213, 323--392, arXiv:1301.2449, DOI 10.1007/s11511-014-0121-6. https://arxiv.org/abs/1301.2449"
+    mechanism_group: "Graph-polynomial Laplace/Riesz representations"
+    render_class: "atlas"
+    proof_node: "T-K5MinusE-SpanningTreePolynomial-CM-BetaGe1"
+    dependencies:
+      - "L-StarMesh-SpanningTree-ApexElimination"
+      - "L-TriangleKirchhoff-RieszLaplace-Representation"
+      - "L-ConditionalStar-GaussianLaplaceKernel"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0075"
+    app_name: "Scott-Sokal W4 spanning-tree polynomial complete monotonicity"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Scott--Sokal, Complete monotonicity for inverse powers of some combinatorially defined polynomials, Acta Mathematica 213, 323--392, arXiv:1301.2449, DOI 10.1007/s11511-014-0121-6. https://arxiv.org/abs/1301.2449"
+    mechanism_group: "Graph-polynomial Laplace/Riesz representations"
+    render_class: "atlas"
+    proof_node: "T-W4-SpanningTreePolynomial-CM-BetaGe1"
+    dependencies:
+      - "L-StarMesh-SpanningTree-ApexElimination"
+      - "L-K4Kirchhoff-RieszRank3-LaplaceRepresentation"
+      - "L-ConditionalStar-GaussianLaplaceKernel"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0076"
+    app_name: "Yang Mills-ratio half-gamma log-convexity"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Zhen-Hang Yang, Extension of a complete monotonicity theorem with applications, arXiv:2507.10954v1. https://arxiv.org/abs/2507.10954"
+    mechanism_group: "Mills-ratio and gamma-tilt log-convexity"
+    render_class: "atlas"
+    proof_node: "T-Yang-MillsRatio-HalfGamma-LogConvexity"
+    dependencies:
+      - "D-Yang-MillsOrderMomentKernel"
+      - "L-SqrtLaplace-GammaTilt-LogConvexity"
+      - "T-From-Mills-Laplace-CM-normal-form"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0077"
+    app_name: "Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Rui A. C. Ferreira and Thomas Simon, Convolution of beta prime distribution, Transactions of the American Mathematical Society 376, 855--890, arXiv:2108.09244, DOI 10.1090/tran/8748. https://arxiv.org/abs/2108.09244"
+    mechanism_group: "Hypergeometric complete-monotonicity counterexamples"
+    render_class: "atlas"
+    proof_node: "T-Not-TricomiPsiQuotient-CM-c-window"
+    dependencies:
+      - "D-TricomiPsi-StandardIntegralRepresentation"
+      - "L-TricomiPsi-IntegerPolynomial-CM-Counterfamily"
+      - "D-Complete-monotonicity-Bernstein-Stieltjes-language"
+      - "D-Laplace-kernel-and-tilted-moment-language"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0078"
+    app_name: "Rastegar-Roitershtein condition-(3) removal conjecture is false"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Rastegar--Roitershtein, On a Characterization of Exponential and Double Exponential Distributions, REVSTAT 23(1), 47--52, 2025, arXiv:2203.10495, DOI 10.57805/revstat.v23i1.530. https://arxiv.org/abs/2203.10495"
+    mechanism_group: "Exact finite characteristic-function certificates"
+    render_class: "atlas"
+    proof_node: "T-Not-RastegarRoitershtein-Condition3-Unnecessary"
+    dependencies:
+      - "L-ReciprocalCharacteristicFunction-FiniteIdentity-Certificate"
+      - "T-Exact-finite-certificate-verification-principle"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0079"
+    app_name: "BBL determinantal stable Loewner converse is false"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Borcea--Branden--Liggett, Negative dependence and the geometry of polynomials, Journal of the American Mathematical Society 22 (2009), 521--567, arXiv:0707.2340. https://arxiv.org/abs/0707.2340"
+    mechanism_group: "Determinantal stable polynomial certificates"
+    render_class: "atlas"
+    proof_node: "T-Not-BBL-DeterminantalStable-LoewnerConverse"
+    dependencies:
+      - "L-DeterminantalPolynomial-SignConjugacy-Blindness"
+      - "D-Determinant-triangular-compression-language"
+      - "T-Exact-finite-certificate-verification-principle"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0080"
+    app_name: "q-gamma Hankel kernel is strictly totally positive"
+    created_at: "2026-06-21"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Karp--Vishnyakova--Zhang, Unimodality preservation by ratios of functional series and integral transforms, Results in Mathematics 80, Article 112, 2025, arXiv:2408.01755, DOI 10.1007/s00025-025-02431-4. https://arxiv.org/abs/2408.01755"
+    mechanism_group: "Mellin moment strict total positivity"
+    render_class: "atlas"
+    proof_node: "T-QGamma-HankelKernel-STPInfinity"
+    dependencies:
+      - "L-QBinomial-Atomic-Mellin-Representation"
+      - "L-Mellin-Moment-Kernel-STP-InfiniteSupport"
+      - "L-Generalized-Vandermonde-Chebyshev-StrictSign"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
 

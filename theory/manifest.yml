@@ -1,7 +1,10 @@
 title: Pudim Theory
-version: v015
-generated_at: 2026-06-06T00:20:09Z
-true_node_count: 391
-open_node_count: 201
-application_count: 50
-source: synthesized-by-pudimv2-staging
+version: v017
+authors:
+  - Domingos S. P. Salazar
+  - Pudim AI
+generated_at: 2026-06-21T13:56:35Z
+true_node_count: 577
+open_node_count: 333
+application_count: 80
+source: synthesized-by-pudimv3-staging
