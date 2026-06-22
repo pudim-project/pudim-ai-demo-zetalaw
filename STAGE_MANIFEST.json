@@ -1,11 +1,11 @@
 {
-  "stage_id": "stage_v018",
-  "theory_version": "v018",
+  "stage_id": "stage_v019",
+  "theory_version": "v019",
   "authors": [
     "Domingos S. P. Salazar",
     "Pudim AI"
   ],
-  "created_at": "2026-06-22T18:58:22Z",
+  "created_at": "2026-06-22T22:36:25Z",
   "source_root": ".",
   "status": "pdf_compiled",
   "public_scope": "public_repo",
@@ -13,14 +13,13 @@
   "staged_input_policy": "synthesize",
   "frontier_render_policy": "report-only",
   "case_study_count": 6,
-  "previous_tex": "theory/versions/v017/THEORY_v017.tex",
+  "previous_tex": "theory/latest/THEORY.tex",
   "previous_spec": "",
-  "latex_path": "theory/versions/v018/THEORY_v018.tex",
-  "pdf_path": "theory/versions/v018/THEORY_v018.pdf",
+  "latex_path": "theory/versions/v019/THEORY_v019.tex",
+  "pdf_path": "theory/versions/v019/THEORY_v019.pdf",
   "latest_pdf_path": "theory/latest/THEORY.pdf",
-  "spec_path": "",
-  "latest_spec_path": "",
-  "spec_status": "not_regenerated_in_legacy-v013_public_stage",
+  "spec_path": "theory/spec/versions/v019",
+  "latest_spec_path": "theory/spec/latest",
   "public_doc_paths": [
     "README.md",
     "APPLICATIONS.md",
@@ -58,7 +57,7 @@
   "audit": {
     "issues": []
   },
-  "wiki_snapshot_path": "wiki/versions/stage_v018",
+  "wiki_snapshot_path": "wiki/versions/stage_v019",
   "wiki_latest_path": "wiki/latest",
   "wiki_node_count": 991,
   "wiki_edge_count": 1824,

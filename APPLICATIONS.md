@@ -1,9 +1,8 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0070` appear in `theory/latest/THEORY.tex` under the manuscript
-`Applications` section and in the corresponding theorem names. Applications through
-`APP-0080` are currently staged in `THEORY_v017`.
+`APP-0001`--`APP-0090` appear in `theory/latest/THEORY.tex` under the manuscript
+`Applications` section and in the corresponding theorem names.
 
 | id | date | stated problem | solution | status | review |
 | --- | --- | --- | --- | --- | --- |
@@ -77,6 +76,26 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0068 | 2026-06-14 | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | Solved | no contact |
 | APP-0069 | 2026-06-14 | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | Solved | no contact |
 | APP-0070 | 2026-06-14 | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | Solved | no contact |
+| APP-0071 | 2026-06-21 | Bendikov-Cygan SBF renewal monotonicity | Bendikov-Cygan SBF renewal monotonicity | Solved | no contact |
+| APP-0072 | 2026-06-21 | Buchstaber-Glutsyuk real-order Bessel I strict total positivity | Buchstaber-Glutsyuk real-order Bessel I strict total positivity | Solved | no contact |
+| APP-0073 | 2026-06-21 | BGKP PF-sequence total-positivity density | BGKP PF-sequence total-positivity density | Solved | no contact |
+| APP-0074 | 2026-06-21 | Scott-Sokal K5-e spanning-tree polynomial complete monotonicity | Scott-Sokal K5-e spanning-tree polynomial complete monotonicity | Solved | no contact |
+| APP-0075 | 2026-06-21 | Scott-Sokal W4 spanning-tree polynomial complete monotonicity | Scott-Sokal W4 spanning-tree polynomial complete monotonicity | Solved | no contact |
+| APP-0076 | 2026-06-21 | Yang Mills-ratio half-gamma log-convexity | Yang Mills-ratio half-gamma log-convexity | Solved | no contact |
+| APP-0077 | 2026-06-21 | Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false | Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false | Solved | no contact |
+| APP-0078 | 2026-06-21 | Rastegar-Roitershtein condition-(3) removal conjecture is false | Rastegar-Roitershtein condition-(3) removal conjecture is false | Solved | no contact |
+| APP-0079 | 2026-06-21 | BBL determinantal stable Loewner converse is false | BBL determinantal stable Loewner converse is false | Solved | no contact |
+| APP-0080 | 2026-06-21 | q-gamma Hankel kernel is strictly totally positive | q-gamma Hankel kernel is strictly totally positive | Solved | no contact |
+| APP-0081 | 2026-06-22 | JKS remaining integer powers fail finite total nonnegativity | JKS remaining integer powers fail finite total nonnegativity | Solved | no contact |
+| APP-0082 | 2026-06-22 | Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false | Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false | Solved | no contact |
+| APP-0083 | 2026-06-22 | Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff | Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff | Solved | no contact |
+| APP-0084 | 2026-06-22 | Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer | Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer | Solved | no contact |
+| APP-0085 | 2026-06-22 | Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false | Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false | Solved | no contact |
+| APP-0086 | 2026-06-22 | Poly-double-gamma derivative Hankel matrix has fixed spectral sign | Poly-double-gamma derivative Hankel matrix has fixed spectral sign | Solved | no contact |
+| APP-0087 | 2026-06-22 | ALR Bernstein q=2 continuous converse is affirmative | ALR Bernstein q=2 continuous converse is affirmative | Solved | no contact |
+| APP-0088 | 2026-06-22 | Bourin antimonotone compression determinant inequality is affirmative | Bourin antimonotone compression determinant inequality is affirmative | Solved | no contact |
+| APP-0089 | 2026-06-22 | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | Solved | no contact |
+| APP-0090 | 2026-06-22 | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | Solved | no contact |
 
 ## Application Details
 
