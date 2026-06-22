@@ -2,14 +2,14 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v019`, staged on 2026-06-22.
+This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v020`, staged on 2026-06-22.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v019/THEORY_v019.tex`](theory/versions/v019/THEORY_v019.tex)
-- Versioned PDF: [`theory/versions/v019/THEORY_v019.pdf`](theory/versions/v019/THEORY_v019.pdf)
+- Versioned TeX: [`theory/versions/v020/THEORY_v020.tex`](theory/versions/v020/THEORY_v020.tex)
+- Versioned PDF: [`theory/versions/v020/THEORY_v020.pdf`](theory/versions/v020/THEORY_v020.pdf)
 
 ## Abstract
 
@@ -17,7 +17,7 @@ We study the Riemann zeta function as the partition function of the probability 
 
 The public theory develops a common positivity calculus for zeta, gamma, polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, Bernstein, determinant, moment-ratio, endpoint-obstruction, and finite Weyl-algebra applications. Its reusable mechanisms include Laplace kernels, moment-ratio reductions, determinant compression, stable subordination, triangular coefficient extraction, endpoint obstructions, exact rational certificates, and Wick-dual extremal functionals.
 
-The public ledger for `v019` contains 90 solved applications, `APP-0001` through `APP-0090`, with immutable APP identifiers and source references.
+The public ledger for `v020` contains 90 solved applications, `APP-0001` through `APP-0090`, with immutable APP identifiers and source references.
 
 ## Applications
 
@@ -95,33 +95,33 @@ All entries below are `Solved`; detailed statements, proofs, and review notes ar
 | APP-0068 | Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\) | [Garrappa--Gerhold--Popolizio--Simon, On some inequalities for the two-parameter Mittag-Lef...](https://arxiv.org/abs/2410.11852) |
 | APP-0069 | Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions | [Mecke, Nagel, and Weiss, Joseph Mecke's last fragmentary manuscripts - a compilation, arXi...](https://arxiv.org/abs/1703.10000) |
 | APP-0070 | Dytso-Bustin-Poor generalized-Gaussian product factorization classification | [Dytso, Bustin, and Poor, generalized-Gaussian product-factorization source problem, Axioms...](https://doi.org/10.1186/s40488-018-0088-5) |
-| APP-0071 | Bendikov-Cygan SBF renewal monotonicity | [Bendikov--Cygan](https://arxiv.org/abs/1307.4947) |
-| APP-0072 | Buchstaber-Glutsyuk real-order Bessel I strict total positivity | [Buchstaber--Glutsyuk](https://arxiv.org/abs/1708.02154) |
-| APP-0073 | BGKP PF-sequence total-positivity density | [Belton--Guillot--Khare--Putinar](https://arxiv.org/abs/2006.16213) |
-| APP-0074 | Scott-Sokal K5-e spanning-tree polynomial complete monotonicity | [Scott--Sokal](https://arxiv.org/abs/1301.2449) |
-| APP-0075 | Scott-Sokal W4 spanning-tree polynomial complete monotonicity | [Scott--Sokal](https://arxiv.org/abs/1301.2449) |
-| APP-0076 | Yang Mills-ratio half-gamma log-convexity | [Yang](https://arxiv.org/abs/2507.10954) |
-| APP-0077 | Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false | [Ferreira--Simon](https://arxiv.org/abs/2108.09244) |
-| APP-0078 | Rastegar-Roitershtein condition-(3) removal conjecture is false | [Rastegar--Roitershtein](https://arxiv.org/abs/2203.10495) |
-| APP-0079 | BBL determinantal stable Loewner converse is false | [Borcea--Branden--Liggett](https://arxiv.org/abs/0707.2340) |
-| APP-0080 | q-gamma Hankel kernel is strictly totally positive | [Karp--Vishnyakova--Zhang](https://arxiv.org/abs/2408.01755) |
-| APP-0081 | JKS remaining integer powers fail finite total nonnegativity | [Khare](https://arxiv.org/abs/2008.05121) |
-| APP-0082 | Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false | [Dulac--Simon](https://arxiv.org/abs/2210.09047) |
-| APP-0083 | Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff | [Berg--Pedersen](https://arxiv.org/abs/2008.06349) |
-| APP-0084 | Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer | [Mohle](https://alea.impa.br/articles/v18/18-44.pdf) |
-| APP-0085 | Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false | [Wang--Yang](https://doi.org/10.1090/tran/9081) |
-| APP-0086 | Poly-double-gamma derivative Hankel matrix has fixed spectral sign | [Mishra--Swaminathan](https://arxiv.org/abs/2511.07444) |
-| APP-0087 | ALR Bernstein q=2 continuous converse is affirmative | [Abel--Leviatan--Rasa](https://doi.org/10.1007/s00025-022-01764-8) |
-| APP-0088 | Bourin antimonotone compression determinant inequality is affirmative | [Bourin](https://arxiv.org/abs/math/0601543) |
-| APP-0089 | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | [Nantomah](https://www.ijopcm.org/Vol/2018/2.2.pdf) |
-| APP-0090 | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | [Sangal--Swaminathan](https://arxiv.org/abs/1705.03759) |
+| APP-0071 | Bendikov-Cygan SBF renewal monotonicity | [Bendikov--Cygan, Alpha-stable random walk has massive thorns, Colloquium Mathematicum 138(...](https://arxiv.org/abs/1307.4947) |
+| APP-0072 | Buchstaber-Glutsyuk real-order Bessel I strict total positivity | [Buchstaber--Glutsyuk, Total positivity, Grassmannian and modified Bessel functions, Contem...](https://arxiv.org/abs/1708.02154) |
+| APP-0073 | BGKP PF-sequence total-positivity density | [Belton--Guillot--Khare--Putinar, Preservers of totally positive kernels and Polya frequenc...](https://arxiv.org/abs/2006.16213) |
+| APP-0074 | Scott-Sokal K5-e spanning-tree polynomial complete monotonicity | [Scott--Sokal, Complete monotonicity for inverse powers of some combinatorially defined pol...](https://arxiv.org/abs/1301.2449) |
+| APP-0075 | Scott-Sokal W4 spanning-tree polynomial complete monotonicity | [Scott--Sokal, Complete monotonicity for inverse powers of some combinatorially defined pol...](https://arxiv.org/abs/1301.2449) |
+| APP-0076 | Yang Mills-ratio half-gamma log-convexity | [Zhen-Hang Yang, Extension of a complete monotonicity theorem with applications, arXiv:2507...](https://arxiv.org/abs/2507.10954) |
+| APP-0077 | Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false | [Rui A. C. Ferreira and Thomas Simon, Convolution of beta prime distribution, Transactions ...](https://arxiv.org/abs/2108.09244) |
+| APP-0078 | Rastegar-Roitershtein condition-(3) removal conjecture is false | [Rastegar--Roitershtein, On a Characterization of Exponential and Double Exponential Distri...](https://arxiv.org/abs/2203.10495) |
+| APP-0079 | BBL determinantal stable Loewner converse is false | [Borcea--Branden--Liggett, Negative dependence and the geometry of polynomials, Journal of ...](https://arxiv.org/abs/0707.2340) |
+| APP-0080 | q-gamma Hankel kernel is strictly totally positive | [Karp--Vishnyakova--Zhang, Unimodality preservation by ratios of functional series and inte...](https://arxiv.org/abs/2408.01755) |
+| APP-0081 | JKS remaining integer powers fail finite total nonnegativity | [Apoorva Khare, Multiply positive functions, critical exponent phenomena, and the Jain-Karl...](https://arxiv.org/abs/2008.05121) |
+| APP-0082 | Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false | [Guillaume Dulac and Thomas Simon, On cumulative Tsallis entropies, Acta Applicandae Mathem...](https://arxiv.org/abs/2210.09047) |
+| APP-0083 | Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff | [Christian Berg and Henrik L. Pedersen, A family of Horn-Bernstein functions, Experimental ...](https://arxiv.org/abs/2008.06349) |
+| APP-0084 | Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer | [Martin Mohle, The rate of convergence of the block counting process of exchangeable coales...](https://alea.impa.br/articles/v18/18-44.pdf) |
+| APP-0085 | Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false | [Larry X. W. Wang and Neil N. Y. Yang, Laguerre inequalities and complete monotonicity for ...](https://doi.org/10.1090/tran/9081) |
+| APP-0086 | Poly-double-gamma derivative Hankel matrix has fixed spectral sign | [Deepshikha Mishra and A. Swaminathan, Complete Monotonicity of the function involving deri...](https://arxiv.org/abs/2511.07444) |
+| APP-0087 | ALR Bernstein q=2 continuous converse is affirmative | [Ulrich Abel, Dany Leviatan, and Ioan Rasa, Relations Between the Bernstein Polynomials and...](https://doi.org/10.1007/s00025-022-01764-8) |
+| APP-0088 | Bourin antimonotone compression determinant inequality is affirmative | [Jean-Christophe Bourin, Matrix versions of some classical inequalities, Linear Algebra and...](https://arxiv.org/abs/math/0601543) |
+| APP-0089 | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | [Kwara Nantomah, A generalization of Nielsen's beta-function, International Journal of Open...](https://www.ijopcm.org/Vol/2018/2.2.pdf) |
+| APP-0090 | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | [Priyanka Sangal and A. Swaminathan, Vietoris type theorem related to positivity of trigono...](https://arxiv.org/abs/1705.03759) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v019`.
-The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v019`](wiki/versions/stage_v019).
+The latest staged theory snapshot is `stage_v020`.
+The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v020`](wiki/versions/stage_v020).
 
 ## Reading Notes
 
