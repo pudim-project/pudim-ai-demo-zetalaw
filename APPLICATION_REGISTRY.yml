@@ -1,5 +1,5 @@
 schema_version: 1
-generated_at: "2026-06-04T15:21:32Z"
+generated_at: "2026-06-22T18:54:44Z"
 applications:
   - app_id: "APP-0001"
     app_name: "Alzer-Kwong convexity and concavity problem"
@@ -1443,4 +1443,214 @@ applications:
     superseded_by: []
     family_id: ""
     family_name: ""
-
+  - app_id: "APP-0081"
+    app_name: "JKS remaining integer powers fail finite total nonnegativity"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Apoorva Khare, Multiply positive functions, critical exponent phenomena, and the Jain-Karlin-Schoenberg kernel, arXiv:2008.05121. https://arxiv.org/abs/2008.05121"
+    mechanism_group: "Finite determinant and total-positivity obstructions"
+    render_class: "atlas"
+    proof_node: "T-JKS-IntegerPowers-Mge3-NotTN"
+    dependencies:
+      - "B-Cutoff-Column-Against-CorankOne-Gram"
+      - "D-JKS-Kernel"
+      - "D-TNKernel-FiniteOrder"
+      - "L-PSD-Minor-Obstructs-TN"
+      - "T-Exact-finite-certificate-verification-principle"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0082"
+    app_name: "Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Guillaume Dulac and Thomas Simon, On cumulative Tsallis entropies, Acta Applicandae Mathematicae 188, Article 9, 2023, arXiv:2210.09047, DOI 10.1007/s10440-023-00620-3. https://arxiv.org/abs/2210.09047"
+    mechanism_group: "Signed inverse-Laplace endpoint obstructions"
+    render_class: "atlas"
+    proof_node: "T-DulacSimon-TsallisGammaRatio-NotCM"
+    dependencies:
+      - "B-SymmetricBeta-BetaLogistic-LaplaceKernel"
+      - "B-SignedInverseLaplace-Density-Negativity-Obstruction"
+      - "T-positive-Laplace-kernel-complete-monotonicity-principle"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0083"
+    app_name: "Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Christian Berg and Henrik L. Pedersen, A family of Horn-Bernstein functions, Experimental Mathematics 32(3), 505--513, arXiv:2008.06349, DOI 10.1080/10586458.2021.1980460. https://arxiv.org/abs/2008.06349"
+    mechanism_group: "Finite Hausdorff moment certificates"
+    render_class: "atlas"
+    proof_node: "T-BergPedersen-HornBernstein-a-NotHausdorff"
+    dependencies:
+      - "B-HausdorffMoment-FiniteDifference-Criterion"
+      - "B-HornBernstein-FirstEight-a-ExactRationals"
+      - "T-Exact-finite-certificate-verification-principle"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0084"
+    app_name: "Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Martin Mohle, The rate of convergence of the block counting process of exchangeable coalescents with dust, ALEA 18, 1195--1220, 2021, DOI 10.30757/ALEA.v18-44. https://alea.impa.br/articles/v18/18-44.pdf"
+    mechanism_group: "Finite simplex and kernel domination certificates"
+    render_class: "atlas"
+    proof_node: "T-Mohle-Problem63-FiniteKernel-Positive"
+    dependencies:
+      - "D-Mohle-BlockCounting-Problem63-Language"
+      - "B-Mohle-BinomialCollisionKernel-Integral"
+      - "B-Mohle-OrderedPair-Simplex-Domination"
+      - "B-Mohle-CountableSimplex-TruncationClosure"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0085"
+    app_name: "Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Larry X. W. Wang and Neil N. Y. Yang, Laguerre inequalities and complete monotonicity for the Riemann Xi-function and the partition function, Transactions of the American Mathematical Society 377 (2024), 4703--4725, DOI 10.1090/tran/9081. https://doi.org/10.1090/tran/9081"
+    mechanism_group: "Laguerre-Polya coefficient finite-difference obstructions"
+    render_class: "atlas"
+    proof_node: "T-WangYang-LP-PositiveDecreasing-CM-OpenProblem-Refuted"
+    dependencies:
+      - "D-LP-EGF-Coefficient-Sequence"
+      - "D-ForwardDifference-CompleteMonotone-Sequence"
+      - "L-LP-OneFactor-Exponential-Atom"
+      - "L-EGF-OneFactor-Atom-SecondDifference-Defect"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0086"
+    app_name: "Poly-double-gamma derivative Hankel matrix has fixed spectral sign"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_restricted_component"
+    reference: "Deepshikha Mishra and A. Swaminathan, Complete Monotonicity of the function involving derivatives of Barnes G-function, arXiv:2511.07444. https://arxiv.org/abs/2511.07444"
+    mechanism_group: "Signed moment-Gram matrix inertia"
+    render_class: "atlas"
+    proof_node: "T-PolyDoubleGamma-Hankel-Matrix-Inertia"
+    dependencies:
+      - "D-PolyDoubleGamma-Derivative-Hankel-Matrix"
+      - "B-PolyDoubleGamma-Derivative-Laplace-Representation"
+      - "L-Signed-Hankel-Moment-Gram-StrictPD"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0087"
+    app_name: "ALR Bernstein q=2 continuous converse is affirmative"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_scoped"
+    reference: "Ulrich Abel, Dany Leviatan, and Ioan Rasa, Relations Between the Bernstein Polynomials and q-monotone Functions, Results in Mathematics 77, Article 239 (2022), DOI 10.1007/s00025-022-01764-8. https://doi.org/10.1007/s00025-022-01764-8"
+    mechanism_group: "Bernstein-kernel coefficient extraction"
+    render_class: "atlas"
+    proof_node: "T-ALR-OpenQuestion-q2-Continuous-Affirmative"
+    dependencies:
+      - "D-Bernstein-Polynomial-Basis"
+      - "D-q-Monotone-Finite-Difference"
+      - "L-TwoBinomial-Diagonal-Generating-Kernel"
+      - "L-Diagonal-h2-Coefficient-Extracts-Second-Difference"
+      - "L-Bernstein-Second-Derivative-Discrete-Difference"
+      - "L-UniformLimit-Convexity-Closure"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0088"
+    app_name: "Bourin antimonotone compression determinant inequality is affirmative"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Jean-Christophe Bourin, Matrix versions of some classical inequalities, Linear Algebra and its Applications 416 (2006), DOI 10.1016/j.laa.2006.01.002. https://arxiv.org/abs/math/0601543"
+    mechanism_group: "Projection-DPP determinant compression"
+    render_class: "atlas"
+    proof_node: "T-Bourin-Antimonotone-CompressionDet-AllSubspaces"
+    dependencies:
+      - "D-Antimonotone-Positive-Pair"
+      - "D-Compression-Determinant-Polynomial"
+      - "L-CompressionDet-CauchyBinet-Measure"
+      - "L-ProjectionDPP-Covariance-Laplacian"
+      - "L-OppositeOrder-LogDet-Chebyshev"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0089"
+    app_name: "Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Kwara Nantomah, A generalization of Nielsen's beta-function, International Journal of Open Problems in Computer Science and Mathematics 11(2) (2018), 16--26. https://www.ijopcm.org/Vol/2018/2.2.pdf"
+    mechanism_group: "Complete-monotonicity finite derivative obstructions"
+    render_class: "atlas"
+    proof_node: "T-Nantomah-pBeta-NormalizedDerivativeCM-False-p1n1"
+    dependencies:
+      - "D-Nantomah-pBeta-2018"
+      - "L-pBeta-Normalized-Derivative-FiniteSum"
+      - "L-CM-Pointwise-SecondDerivative-Obstruction"
+      - "T-Exact-finite-certificate-verification-principle"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0090"
+    app_name: "Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set"
+    created_at: "2026-06-22"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_literal_scope"
+    reference: "Priyanka Sangal and A. Swaminathan, Vietoris type theorem related to positivity of trigonometric polynomials, arXiv:1705.03759, Section 4.3, Problem 2. https://arxiv.org/abs/1705.03759"
+    mechanism_group: "Analytic-function normalization obstructions"
+    render_class: "atlas"
+    proof_node: "T-Komatu-Caratheodory-Problem2-Literal-Refuted"
+    dependencies:
+      - "D-Analytic-Unit-Disk-Classes"
+      - "D-Caratheodory-Class-Normalization"
+      - "D-SangalSwaminathan-Komatu-Problem2-Literal"
+      - "L-ZeroConstant-Transform-Not-Caratheodory"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""

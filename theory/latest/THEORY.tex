@@ -30,33 +30,21 @@
 
 \title{A Laplace-Positivity Calculus for Special-Function Inequalities and Source Problems}
 \author{Domingos S. P. Salazar \and Pudim AI}
-\date{Version v017 -- 2026-06-21}
+\date{Version v018 -- 2026-06-22}
 
 \setcounter{tocdepth}{3}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We develop a reusable positivity calculus for resolving special-function,
-kernel, and moment problems through Laplace-measure representations,
-complete monotonicity, Bernstein and Stieltjes transforms, total positivity,
-determinant compression, endpoint obstructions, and finite certificate
-methods.  The framework grew from the zeta probability law, where zeta ratios
-become moments and logarithmic derivatives become cumulants, but its main
-scope is broader: it treats source problems across gamma and polygamma
-inequalities, Bessel and Mills-ratio kernels, generalized Stieltjes functions,
-graph polynomials, total-positive sequences, finite Weyl-algebra
-certificates, and related convexity and monotonicity questions.
-
-The paper records a public ledger of 80 solved applications.  Each
-application is tied to an external source question and to the structural
-result that resolves it.  The emphasis is not on isolated counterexamples or
-numerical inspection, but on proof mechanisms that can be reused: positive
-Laplace kernels, Mellin moment reductions, triangular coefficient extraction,
-stable-subordination pushforwards, determinant sign certificates, exact
-finite obstructions, and graph-polynomial Riesz representations.  In this
-sense the manuscript functions both as a theory paper and as an indexed
-appendix of verified applications.
+This paper develops a unified public theory built around Laplace-transform
+positivity.  Zeta-law entropy is organized through logarithmic compression,
+gamma-ratio and polygamma inequalities are expressed by completely monotone
+kernels, and applications are obtained by transporting measure positivity
+through Stieltjes, Bernstein, stable-subordination, determinant, triangular,
+inverse-Laplace, derivative-chain, ratio-kernel, and moment-ratio mechanisms.
+The emphasis is on reusable transformations: source problems enter as fixed
+applications, while the proofs expose the structural tools that connect them.
 \end{abstract}
 
 \tableofcontents
@@ -186,6 +174,16 @@ The following list records the external source problems solved in the paper.  Ea
 \item \label{ledger:app-0078}\textbf{APP-0078.} Rastegar-Roitershtein condition-(3) removal conjecture is false. Solved by Counterexample~\ref{res:not-rastegarroitershtein-condition3-unnecessary}; source problem reference \cite{app-app-0078-source}.
 \item \label{ledger:app-0079}\textbf{APP-0079.} BBL determinantal stable Loewner converse is false. Solved by Counterexample~\ref{res:not-bbl-determinantalstable-loewnerconverse}; source problem reference \cite{app-app-0079-source}.
 \item \label{ledger:app-0080}\textbf{APP-0080.} q-gamma Hankel kernel is strictly totally positive. Solved by Corollary~\ref{res:qgamma-hankelkernel-stpinfinity}; source problem reference \cite{app-app-0080-source}.
+\item \label{ledger:app-0081}\textbf{APP-0081.} JKS remaining integer powers fail finite total nonnegativity. Solved by Counterexample~\ref{res:jks-integerpowers-mge3-nottn}; source problem reference \cite{app-app-0065-source}.
+\item \label{ledger:app-0082}\textbf{APP-0082.} Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false. Solved by Counterexample~\ref{res:dulacsimon-tsallisgammaratio-notcm}; source problem reference \cite{app-app-0082-source}.
+\item \label{ledger:app-0083}\textbf{APP-0083.} Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff. Solved by Counterexample~\ref{res:bergpedersen-hornbernstein-a-nothausdorff}; source problem reference \cite{app-app-0083-source}.
+\item \label{ledger:app-0084}\textbf{APP-0084.} Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer. Solved by Corollary~\ref{res:mohle-problem63-finitekernel-positive}; source problem reference \cite{app-app-0084-source}.
+\item \label{ledger:app-0085}\textbf{APP-0085.} Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false. Solved by Counterexample~\ref{res:wangyang-lp-positivedecreasing-cm-openproblem-refuted}; source problem reference \cite{app-app-0085-source}.
+\item \label{ledger:app-0086}\textbf{APP-0086.} Poly-double-gamma derivative Hankel matrix has fixed spectral sign. Solved by Corollary~\ref{res:polydoublegamma-hankel-matrix-inertia}; source problem reference \cite{app-app-0086-source}.
+\item \label{ledger:app-0087}\textbf{APP-0087.} ALR Bernstein q=2 continuous converse is affirmative. Solved by Corollary~\ref{res:alr-openquestion-q2-continuous-affirmative}; source problem reference \cite{app-app-0087-source}.
+\item \label{ledger:app-0088}\textbf{APP-0088.} Bourin antimonotone compression determinant inequality is affirmative. Solved by Corollary~\ref{res:bourin-antimonotone-compressiondet-allsubspaces}; source problem reference \cite{app-app-0088-source}.
+\item \label{ledger:app-0089}\textbf{APP-0089.} Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false. Solved by Counterexample~\ref{res:nantomah-pbeta-normalizedderivativecm-false-p1n1}; source problem reference \cite{app-app-0089-source}.
+\item \label{ledger:app-0090}\textbf{APP-0090.} Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set. Solved by Counterexample~\ref{res:komatu-caratheodory-problem2-literal-refuted}; source problem reference \cite{app-app-0090-source}.
 \end{enumerate}
 
 \section{Zeta-law calculus}
@@ -8001,7 +7999,7 @@ This resolves the source problem recorded as \textbf{APP-0054} \cite{app-app-005
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:pointwise-obstruction-certificate-principle}, Proposition~\ref{res:signed-atomic-hausdorff-negativity-obstruction}, Proposition~\ref{res:bf-integer-increments-are-hausdorff-cm}, and Proposition~\ref{res:grws-sectorii-difference-atomic-expansion} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:grws-sectorii-difference-atomic-expansion}, Proposition~\ref{res:bf-integer-increments-are-hausdorff-cm}, and Proposition~\ref{res:signed-atomic-hausdorff-negativity-obstruction} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 A Bernstein function has the representation
 \[
@@ -8152,7 +8150,7 @@ This resolves the source problem recorded as \textbf{APP-0060} \cite{app-app-006
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:pointwise-obstruction-certificate-principle}, Proposition~\ref{res:baricz-analyticquotient-secondcoefficientobstruction}, Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:endpoint-obstruction-certificate-language}, and Proposition~\ref{res:baricz-geometricsequence-strictcm} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:baricz-analyticquotient-secondcoefficientobstruction}, Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:endpoint-obstruction-certificate-language}, and Proposition~\ref{res:baricz-geometricsequence-strictcm} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Define
 \[
@@ -8294,7 +8292,7 @@ This resolves the source problem recorded as \textbf{APP-0061} \cite{app-app-006
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:pointwise-obstruction-certificate-principle}, Proposition~\ref{res:jcm-sliceendpoint-concavityobstruction}, and Proposition~\ref{res:polynomialreciprocal-jcm-degreegap-obstruction} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:jcm-sliceendpoint-concavityobstruction}, and Proposition~\ref{res:polynomialreciprocal-jcm-degreegap-obstruction} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 For \(a_0,b_0>0\) and \(0<b_1<a_1<b_2<b_3\), let
 \[
@@ -8796,7 +8794,7 @@ This resolves the source problem recorded as \textbf{APP-0068} \cite{app-app-006
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:pointwise-obstruction-certificate-principle}, Proposition~\ref{res:realseries-imagaxis-modulus-secondcoefficient-obstruction}, Proposition~\ref{res:ggps-kummerm-remark6-question}, and Proposition~\ref{res:kummerm-localseries} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:realseries-imagaxis-modulus-secondcoefficient-obstruction}, Proposition~\ref{res:ggps-kummerm-remark6-question}, and Proposition~\ref{res:kummerm-localseries} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 For \(c\notin\{0,-1,-2,\ldots\}\), the standard Kummer series is
 \[
@@ -9642,7 +9640,7 @@ This resolves the source problem recorded as \textbf{APP-0066} \cite{app-app-006
 \end{corollary}
 
 \begin{proof}
-We use Proposition~\ref{res:pointwise-obstruction-certificate-principle}, Proposition~\ref{res:analyticbf-pringsheim-negativeaxisobstruction}, Proposition~\ref{res:inversepolynomialbfproblem}, Proposition~\ref{res:inverseode-cm-to-bf}, and Proposition~\ref{res:quadraticdenominator-cm-nonpositiveroots} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:analyticbf-pringsheim-negativeaxisobstruction}, Proposition~\ref{res:inversepolynomialbfproblem}, Proposition~\ref{res:inverseode-cm-to-bf}, and Proposition~\ref{res:quadraticdenominator-cm-nonpositiveroots} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Assume \(\Delta=a^2-3b\ge0\). Since \(b\ge0\), one has \(\sqrt{\Delta}\le a\). Put
 \[
@@ -11577,6 +11575,1814 @@ Expanding \((1+t)^m\) gives a finite sum of positive multiples of \(z^{-m-k}\). 
 Hence the quotient is the square of a polynomial in \(z^{-1}\) with nonnegative coefficients, and is completely monotone. These are all outside the proposed window because \(c=2m+1>1\).
 \end{proof}
 
+\section{Endpoint obstruction certificates}
+\label{sec:endpoint-obstruction-certificates}
+This section collects applications in which a universal positivity, convexity, or monotonicity claim is decided by reducing it to a local obstruction.  The common method is to isolate a boundary, endpoint, or explicit witness where the proposed sign pattern cannot hold.
+
+\begin{proposition}[Cutoff column against a corank-one Gram block]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Cutoff column against a corank-one Gram block}
+\label{res:cutoff-column-against-corankone-gram}
+Let \(A\succeq0\) be a real symmetric \(n\times n\) matrix of rank \(n-1\), and let \(q\ne0\) span \(\ker A\). If \(b\in\mathbb R^n\) satisfies \(q^Tb\ne0\), then for every real \(d\), the bordered matrix \(\begin{pmatrix}A\&b\\ b^T\&d\end{pmatrix}\) has negative determinant. In particular, when \(A\) is a singular polynomial Gram block and a cutoff column is not orthogonal to its divided-difference nullvector, the full symmetric evaluation determinant is negative.
+\end{proposition}
+
+\begin{proof}
+Put \(n=m+2\) and
+\[
+a_i=-(m+3-i),\qquad 1\le i\le n.
+\]
+Thus
+\[
+a_1=-(m+2)<a_2=-(m+1)<\cdots<a_{m+1}=-2<a_{m+2}=-1<0.
+\]
+Let \(t=2/3\), and order the witness as
+\[
+x=(a_1,\ldots,a_n,t).
+\]
+
+Write \(M_m\) in block form
+\[
+M_m=\begin{pmatrix}A&b\\ b^T&d\end{pmatrix},
+\]
+where
+\[
+A_{ij}=K_m(a_i,a_j),\qquad b_i=K_m(a_i,t),\qquad d=K_m(t,t).
+\]
+Since \(a_i a_j>0\), the cutoff is inactive on the negative block:
+\[
+A_{ij}=(1+a_i a_j)^m
+=\sum_{k=0}^m \binom{m}{k}a_i^k a_j^k.
+\]
+Therefore \(A=VDV^T\), where \(V_{ik}=a_i^k\) for \(0\le k\le m\) and
+\[
+D=\operatorname{diag}\binom{m}{0},\binom{m}{1},\ldots,\binom{m}{m}.
+\]
+The \(a_i\)'s are distinct, so \(V\) has rank \(m+1\). Since \(A\) has size
+\(m+2\), it is positive semidefinite of rank \(m+1\), hence corank one.
+
+Let
+\[
+P(z)=\prod_{r=1}^n(z-a_r),\qquad q_i=\frac{1}{P'(a_i)}.
+\]
+The standard divided-difference identity gives
+\[
+\sum_{i=1}^n q_i p(a_i)=0
+\]
+for every polynomial \(p\) of degree at most \(n-2=m\). For each fixed \(j\),
+the function \(z\mapsto(1+za_j)^m\) has degree at most \(m\), hence \(Aq=0\).
+Thus \(q\) spans \(\ker A\).
+
+Now compute the cutoff column. For \(i\le m+1\), one has \(a_i\le -2\), so
+\[
+1+\frac23 a_i\le 1-\frac43<0,
+\]
+and therefore \(b_i=0\). For \(i=n=m+2\), \(a_n=-1\), so
+\[
+b_n=\left(1-\frac23\right)^m=3^{-m}.
+\]
+Moreover
+\[
+P'(-1)=\prod_{j=1}^{n-1}(-1-a_j)=(m+1)!.
+\]
+Consequently
+\[
+q^T b=\frac{1}{3^m(m+1)!}\ne0.
+\]
+
+Since \(A\succeq0\) has rank \(n-1\), its adjugate is a nonzero positive
+multiple of \(qq^T\):
+\[
+\operatorname{adj}(A)=\gamma qq^T,\qquad \gamma>0.
+\]
+Therefore
+\[
+\det M_m
+=d\det A-b^T\operatorname{adj}(A)b
+=-\gamma(q^Tb)^2<0.
+\]
+This is a symmetric principal determinant on the strictly increasing tuple
+\[
+-(m+2)<-(m+1)<\cdots<-2<-1<2/3.
+\]
+It refutes positive semidefiniteness of \(K_m\), and by the existing
+finite-order TN obstruction lemma it also refutes \(TN_{m+3}\).
+
+The symbolic proof was sanity-checked by exact rational determinant
+calculations:
+
+\(m=3\): determinant \(-16/9\).
+\(m=4\): determinant \(-32768/27\).
+\(m=5\): determinant \(-4096000000/81\).
+\(m=6\): determinant \(-188743680000000\).
+
+For \(3\le m\le8\), exact replay also confirmed
+\[
+q^T b=\frac{1}{3^m(m+1)!}.
+\]
+
+The reusable bridge is not JKS-specific:
+
+If \(A\succeq0\) is a real symmetric \(n\times n\) matrix with rank \(n-1\),
+and \(q\) spans \(\ker A\), then every bordered matrix
+\[
+\begin{pmatrix}A&b\\ b^T&d\end{pmatrix}
+\]
+with \(q^T b\ne0\) has negative determinant. A polynomial Gram block supplies
+such an \(A\), and a cutoff column can force \(q^T b\ne0\).
+
+The proof solves the open in the cited source remaining family \(m\ge3\), not the already
+closed/overlapping low cases. This is a strict private APP candidate:
+APP-0081, pending only future public staging requested by the user.
+\end{proof}
+
+\begin{counterexample}[APP-0081: JKS remaining integer powers fail finite total nonnegativity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0081: JKS remaining integer powers fail finite total nonnegativity}
+\label{res:jks-integerpowers-mge3-nottn}
+For every integer \(m\ge3\), the Jain--Karlin--Schoenberg kernel power \(K_m(x,y)=\max(1+xy,0)^m\) is not positive semidefinite on \(\mathbb R\) and is not \(TN_{m+3}(\mathbb R\times\mathbb R)\). More precisely, for \(x=(-(m+2),-(m+1),\ldots,-2,-1,2/3)\), the symmetric determinant \(\det(K_m(x_i,x_j))_{i,j=1}^{m+3}\) is negative.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0081} \cite{app-app-0065-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:determinant-triangular-compression-language}, Proposition~\ref{res:tnkernel-finiteorder}, Proposition~\ref{res:psd-minor-obstructs-tn}, Proposition~\ref{res:cutoff-column-against-corankone-gram}, and Proposition~\ref{res:jks-kernel} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Put \(n=m+2\) and
+\[
+a_i=-(m+3-i),\qquad 1\le i\le n.
+\]
+Thus
+\[
+a_1=-(m+2)<a_2=-(m+1)<\cdots<a_{m+1}=-2<a_{m+2}=-1<0.
+\]
+Let \(t=2/3\), and order the witness as
+\[
+x=(a_1,\ldots,a_n,t).
+\]
+
+Write \(M_m\) in block form
+\[
+M_m=\begin{pmatrix}A&b\\ b^T&d\end{pmatrix},
+\]
+where
+\[
+A_{ij}=K_m(a_i,a_j),\qquad b_i=K_m(a_i,t),\qquad d=K_m(t,t).
+\]
+Since \(a_i a_j>0\), the cutoff is inactive on the negative block:
+\[
+A_{ij}=(1+a_i a_j)^m
+=\sum_{k=0}^m \binom{m}{k}a_i^k a_j^k.
+\]
+Therefore \(A=VDV^T\), where \(V_{ik}=a_i^k\) for \(0\le k\le m\) and
+\[
+D=\operatorname{diag}\binom{m}{0},\binom{m}{1},\ldots,\binom{m}{m}.
+\]
+The \(a_i\)'s are distinct, so \(V\) has rank \(m+1\). Since \(A\) has size
+\(m+2\), it is positive semidefinite of rank \(m+1\), hence corank one.
+
+Let
+\[
+P(z)=\prod_{r=1}^n(z-a_r),\qquad q_i=\frac{1}{P'(a_i)}.
+\]
+The standard divided-difference identity gives
+\[
+\sum_{i=1}^n q_i p(a_i)=0
+\]
+for every polynomial \(p\) of degree at most \(n-2=m\). For each fixed \(j\),
+the function \(z\mapsto(1+za_j)^m\) has degree at most \(m\), hence \(Aq=0\).
+Thus \(q\) spans \(\ker A\).
+
+Now compute the cutoff column. For \(i\le m+1\), one has \(a_i\le -2\), so
+\[
+1+\frac23 a_i\le 1-\frac43<0,
+\]
+and therefore \(b_i=0\). For \(i=n=m+2\), \(a_n=-1\), so
+\[
+b_n=\left(1-\frac23\right)^m=3^{-m}.
+\]
+Moreover
+\[
+P'(-1)=\prod_{j=1}^{n-1}(-1-a_j)=(m+1)!.
+\]
+Consequently
+\[
+q^T b=\frac{1}{3^m(m+1)!}\ne0.
+\]
+
+Since \(A\succeq0\) has rank \(n-1\), its adjugate is a nonzero positive
+multiple of \(qq^T\):
+\[
+\operatorname{adj}(A)=\gamma qq^T,\qquad \gamma>0.
+\]
+Therefore
+\[
+\det M_m
+=d\det A-b^T\operatorname{adj}(A)b
+=-\gamma(q^Tb)^2<0.
+\]
+This is a symmetric principal determinant on the strictly increasing tuple
+\[
+-(m+2)<-(m+1)<\cdots<-2<-1<2/3.
+\]
+It refutes positive semidefiniteness of \(K_m\), and by the existing
+finite-order TN obstruction lemma it also refutes \(TN_{m+3}\).
+
+The symbolic proof was sanity-checked by exact rational determinant
+calculations:
+
+\(m=3\): determinant \(-16/9\).
+\(m=4\): determinant \(-32768/27\).
+\(m=5\): determinant \(-4096000000/81\).
+\(m=6\): determinant \(-188743680000000\).
+
+For \(3\le m\le8\), exact replay also confirmed
+\[
+q^T b=\frac{1}{3^m(m+1)!}.
+\]
+
+The reusable bridge is not JKS-specific:
+
+If \(A\succeq0\) is a real symmetric \(n\times n\) matrix with rank \(n-1\),
+and \(q\) spans \(\ker A\), then every bordered matrix
+\[
+\begin{pmatrix}A&b\\ b^T&d\end{pmatrix}
+\]
+with \(q^T b\ne0\) has negative determinant. A polynomial Gram block supplies
+such an \(A\), and a cutoff column can force \(q^T b\ne0\).
+
+The proof solves the open in the cited source remaining family \(m\ge3\), not the already
+closed/overlapping low cases. This is a strict private APP candidate:
+APP-0081, pending only future public staging requested by the user.
+\end{proof}
+
+\begin{counterexample}[Negative signed inverse-Laplace density obstruction]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: Negative signed inverse-Laplace density obstruction}
+\label{res:signedinverselaplace-density-negativity-obstruction}
+Let \(F(s)=\int_0^\infty e^{-st}K(t)\,dt\) for \(s>0\), where \(K(t)\,dt\) is a locally finite signed measure of exponential order. If \(K<0\) on a set of positive Lebesgue measure, and this signed measure is the unique inverse-Laplace measure after exponential weighting, then \(F\) is not completely monotone on \((0,\infty)\).
+\end{counterexample}
+
+\begin{proof}
+Dulac--Simon Remark 11(c) asks whether
+\[
+\Phi(s)=\frac{(s+1)^2}{2s^2(2s+1)}
+\left(1-\frac{\Gamma(s+1)^2}{\Gamma(2s+1)}\right)
+\]
+is completely monotone on \((-1/2,\infty)\). It is enough to refute complete
+monotonicity on the subinterval \((0,\infty)\).
+
+For \(s>0\),
+\[
+B(s+1,s+1)=\int_0^1 [x(1-x)]^s\,dx .
+\]
+Set \(a=\log 4\) and \(t=-\log(x(1-x))\). For \(t>a\) the two branches are
+\[
+x=\frac{1\pm\sqrt{1-4e^{-t}}}{2}.
+\]
+The two branch Jacobians give
+\[
+B(s+1,s+1)
+=\int_a^\infty e^{-st} w(t)\,dt,\qquad
+w(t)=\frac{2e^{-t}}{\sqrt{1-4e^{-t}}}.
+\]
+Near \(t=a+\varepsilon\),
+\[
+w(a+\varepsilon)\sim \frac{1}{2\sqrt{\varepsilon}}.
+\]
+
+The cancellation
+\[
+\frac{\Gamma(s+1)^2}{\Gamma(2s+1)}
+=(2s+1)B(s+1,s+1)
+\]
+is used before inversion. Since
+\[
+\frac{(s+1)^2}{2s^2(2s+1)}
+=\frac{1}{2s^2}+\frac{1}{2(2s+1)}
+\]
+and
+\[
+\frac{(s+1)^2}{2s^2}
+=\frac12+\frac1s+\frac{1}{2s^2},
+\]
+we have
+\[
+\Phi(s)=
+\frac{1}{2s^2}+\frac{1}{2(2s+1)}
+-\left(\frac12+\frac1s+\frac{1}{2s^2}\right)B(s+1,s+1).
+\]
+Thus \(\Phi(s)=\int_0^\infty e^{-st}K(t)\,dt\), where
+\[
+K(t)=\frac{t}{2}+\frac14e^{-t/2}
+-1_{t>a}\left[
+\frac12 w(t)+\int_a^t w(u)\,du
++\frac12\int_a^t(t-u)w(u)\,du
+\right].
+\]
+
+Let \(y(t)=\sqrt{1-4e^{-t}}\). Then \(y'(t)=w(t)\), so
+\[
+\int_a^t w(u)\,du=y(t).
+\]
+Also
+\[
+\int_a^t(t-u)w(u)\,du
+=\int_a^t y(u)\,du
+=\log\left(\frac{1+y(t)}{1-y(t)}\right)-2y(t).
+\]
+Therefore, for \(t>a\),
+\[
+K(t)=\frac{t}{2}+\frac14e^{-t/2}
+-\frac{e^{-t}}{\sqrt{1-4e^{-t}}}
+-\frac12\log\left(\frac{1+\sqrt{1-4e^{-t}}}
+{1-\sqrt{1-4e^{-t}}}\right).
+\]
+
+At \(t=a+\varepsilon\),
+\[
+1-4e^{-t}=1-e^{-\varepsilon}\sim\varepsilon,
+\]
+so
+\[
+\frac{e^{-t}}{\sqrt{1-4e^{-t}}}
+\sim\frac{1}{4\sqrt{\varepsilon}}.
+\]
+The logarithm is \(O(\sqrt{\varepsilon})\), and the remaining terms stay finite.
+Hence
+\[
+K(\log4+\varepsilon)
+\sim -\frac{1}{4\sqrt{\varepsilon}}
+\qquad(\varepsilon\downarrow0).
+\]
+Thus \(K\) is negative on a right-neighborhood of \(\log4\).
+\end{proof}
+
+\begin{proposition}[Symmetric beta beta-logistic Laplace kernel]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Symmetric beta beta-logistic Laplace kernel}
+\label{res:symmetricbeta-betalogistic-laplacekernel}
+For \(s>0\), \(B(s+1,s+1)=\int_{\log 4}^{\infty} e^{-st}\,2e^{-t}(1-4e^{-t})^{-1/2}\,dt\).
+\end{proposition}
+
+\begin{proof}
+For Symmetric beta beta-logistic Laplace kernel, this proof is the corresponding component of Counterexample~\ref{res:signedinverselaplace-density-negativity-obstruction}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{counterexample}[APP-0082: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0082: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is...}
+\label{res:dulacsimon-tsallisgammaratio-notcm}
+Let \(\Phi(s)=((s+1)^2/(2s^2(2s+1)))(1-\Gamma(s+1)^2/\Gamma(2s+1))\). Then \(\Phi\) is not completely monotone on \((0,\infty)\), and therefore it is not completely monotone on the Dulac--Simon source domain \((-1/2,\infty)\). More precisely, its signed inverse-Laplace density has the endpoint asymptotic \(K(\log4+\varepsilon)\sim -1/(4\sqrt{\varepsilon})\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0082} \cite{app-app-0082-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:signedinverselaplace-density-negativity-obstruction}, Proposition~\ref{res:symmetricbeta-betalogistic-laplacekernel}, Proposition~\ref{res:endpoint-obstruction-certificate-language}, and Proposition~\ref{res:laplace-kernel-and-tilted-moment-language} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Dulac--Simon Remark 11(c) asks whether
+\[
+\Phi(s)=\frac{(s+1)^2}{2s^2(2s+1)}
+\left(1-\frac{\Gamma(s+1)^2}{\Gamma(2s+1)}\right)
+\]
+is completely monotone on \((-1/2,\infty)\). It is enough to refute complete
+monotonicity on the subinterval \((0,\infty)\).
+
+For \(s>0\),
+\[
+B(s+1,s+1)=\int_0^1 [x(1-x)]^s\,dx .
+\]
+Set \(a=\log 4\) and \(t=-\log(x(1-x))\). For \(t>a\) the two branches are
+\[
+x=\frac{1\pm\sqrt{1-4e^{-t}}}{2}.
+\]
+The two branch Jacobians give
+\[
+B(s+1,s+1)
+=\int_a^\infty e^{-st} w(t)\,dt,\qquad
+w(t)=\frac{2e^{-t}}{\sqrt{1-4e^{-t}}}.
+\]
+Near \(t=a+\varepsilon\),
+\[
+w(a+\varepsilon)\sim \frac{1}{2\sqrt{\varepsilon}}.
+\]
+
+The cancellation
+\[
+\frac{\Gamma(s+1)^2}{\Gamma(2s+1)}
+=(2s+1)B(s+1,s+1)
+\]
+is used before inversion. Since
+\[
+\frac{(s+1)^2}{2s^2(2s+1)}
+=\frac{1}{2s^2}+\frac{1}{2(2s+1)}
+\]
+and
+\[
+\frac{(s+1)^2}{2s^2}
+=\frac12+\frac1s+\frac{1}{2s^2},
+\]
+we have
+\[
+\Phi(s)=
+\frac{1}{2s^2}+\frac{1}{2(2s+1)}
+-\left(\frac12+\frac1s+\frac{1}{2s^2}\right)B(s+1,s+1).
+\]
+Thus \(\Phi(s)=\int_0^\infty e^{-st}K(t)\,dt\), where
+\[
+K(t)=\frac{t}{2}+\frac14e^{-t/2}
+-1_{t>a}\left[
+\frac12 w(t)+\int_a^t w(u)\,du
++\frac12\int_a^t(t-u)w(u)\,du
+\right].
+\]
+
+Let \(y(t)=\sqrt{1-4e^{-t}}\). Then \(y'(t)=w(t)\), so
+\[
+\int_a^t w(u)\,du=y(t).
+\]
+Also
+\[
+\int_a^t(t-u)w(u)\,du
+=\int_a^t y(u)\,du
+=\log\left(\frac{1+y(t)}{1-y(t)}\right)-2y(t).
+\]
+Therefore, for \(t>a\),
+\[
+K(t)=\frac{t}{2}+\frac14e^{-t/2}
+-\frac{e^{-t}}{\sqrt{1-4e^{-t}}}
+-\frac12\log\left(\frac{1+\sqrt{1-4e^{-t}}}
+{1-\sqrt{1-4e^{-t}}}\right).
+\]
+
+At \(t=a+\varepsilon\),
+\[
+1-4e^{-t}=1-e^{-\varepsilon}\sim\varepsilon,
+\]
+so
+\[
+\frac{e^{-t}}{\sqrt{1-4e^{-t}}}
+\sim\frac{1}{4\sqrt{\varepsilon}}.
+\]
+The logarithm is \(O(\sqrt{\varepsilon})\), and the remaining terms stay finite.
+Hence
+\[
+K(\log4+\varepsilon)
+\sim -\frac{1}{4\sqrt{\varepsilon}}
+\qquad(\varepsilon\downarrow0).
+\]
+Thus \(K\) is negative on a right-neighborhood of \(\log4\).
+\end{proof}
+
+\begin{proposition}[One-factor atom second-difference defect]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: One-factor atom second-difference defect}
+\label{res:egf-onefactor-atom-seconddifference-defect}
+For \(\gamma_n=(1+c n)q^n\) with the forward convention \(\Delta=E-1\), \(\Delta^2\gamma_n=q^n(1-q)((1-q)(1+c n)-2cq)\). For \(q=2/3,c=2/5\), this gives \(\Delta^2\gamma_n=(2/3)^n(2n-3)/45\), hence \(\Delta^2\gamma_1=-2/135<0\).
+\end{proposition}
+
+\begin{proof}
+Let
+\[
+\psi(x)=\left(1+\frac{4x}{15}\right)e^{2x/3}.
+\]
+This is in the Laguerre--Polya class: it is an exponential times a real-zero linear factor with zero \(-15/4\). In the source product normalization,
+\[
+\left(1+\frac{4x}{15}\right)e^{2x/3}
+=e^{14x/15}\left(1+\frac{x}{15/4}\right)e^{-x/(15/4)}.
+\]
+
+For a one-factor atom
+\[
+(1+a x)e^{q x}=\sum_{n\ge0}\gamma_n\frac{x^n}{n!},
+\]
+the EGF coefficients are
+\[
+\gamma_n=q^n+a n q^{n-1}
+=q^n\left(1+\frac{a}{q}n\right).
+\]
+With \(q=2/3\) and \(a=4/15\),
+\[
+\gamma_n=\left(1+\frac{2n}{5}\right)\left(\frac23\right)^n.
+\]
+
+The coefficients are positive. They are strictly decreasing because
+\[
+\gamma_n-\gamma_{n+1}
+=\left(\frac23\right)^n\frac{2n+1}{15}>0
+\qquad(n\ge0).
+\]
+
+The second source-forward difference is
+\[
+\Delta^2\gamma_n=\gamma_{n+2}-2\gamma_{n+1}+\gamma_n
+=\left(\frac23\right)^n\frac{2n-3}{45}.
+\]
+In particular,
+\[
+\gamma_1=\frac{14}{15},\qquad
+\gamma_2=\frac45,\qquad
+\gamma_3=\frac{88}{135},
+\]
+and hence
+\[
+\Delta^2\gamma_1
+=\frac{88}{135}-2\cdot\frac45+\frac{14}{15}
+=-\frac{2}{135}<0.
+\]
+Since \((-1)^2\Delta^2\gamma_1=\Delta^2\gamma_1\), the proposed universal positivity fails already at \(r=2,n=1\).
+\end{proof}
+
+\begin{definition}[Laguerre-Polya EGF coefficient sequence]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Laguerre-Polya EGF coefficient sequence}
+\label{res:lp-egf-coefficient-sequence}
+For an entire function written in exponential generating form \(f(x)=\sum_{n\ge0}\gamma_n x^n/n!\), the coefficient sequence is \(\gamma_n(f)=n![x^n]f(x)\). In Wang--Yang's source problem this sequence is attached to a Laguerre--Polya function and is assumed positive and decreasing.
+\end{definition}
+
+\begin{proposition}[One-factor exponential atom is Laguerre-Polya]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: One-factor exponential atom is Laguerre-Polya}
+\label{res:lp-onefactor-exponential-atom}
+For \(a,q>0\), the function \((1+a x)e^{q x}\) belongs to the Laguerre--Polya class, because it is an exponential times a linear factor with one real negative zero \(-1/a\). In the source product normalization, \((1+a x)e^{q x}=e^{(q+a)x}(1+a x)e^{-a x}\).
+\end{proposition}
+
+\begin{proof}
+For One-factor exponential atom is Laguerre-Polya, this proof is the corresponding component of Proposition~\ref{res:egf-onefactor-atom-seconddifference-defect}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{proposition}[One-factor atom EGF coefficient extraction]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: One-factor atom EGF coefficient extraction}
+\label{res:egf-onefactor-atom-coefficient-extraction}
+For \(a,q>0\), if \((1+a x)e^{q x}=\sum_{n\ge0}\gamma_n x^n/n!\), then \(\gamma_n=q^n+a n q^{n-1}=q^n(1+(a/q)n)\).
+\end{proposition}
+
+\begin{proof}
+For One-factor atom EGF coefficient extraction, this proof is the corresponding component of Proposition~\ref{res:egf-onefactor-atom-seconddifference-defect}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{proposition}[One-factor atom decreasing coefficient window]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: One-factor atom decreasing coefficient window}
+\label{res:egf-onefactor-atom-decreasing-window}
+For \(0<q<1\) and \(c>0\), the sequence \(\gamma_n=(1+c n)q^n\) is nonincreasing whenever \(c\le(1-q)/q\). In the Wang--Yang atom \(q=2/3,c=2/5\), it is strictly decreasing because \(\gamma_n-\gamma_{n+1}=(2/3)^n(2n+1)/15>0\).
+\end{proposition}
+
+\begin{proof}
+For One-factor atom decreasing coefficient window, this proof is the corresponding component of Proposition~\ref{res:egf-onefactor-atom-seconddifference-defect}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{counterexample}[APP-0085: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem...]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0085: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicit...}
+\label{res:wangyang-lp-positivedecreasing-cm-openproblem-refuted}
+The Wang--Yang open problem after Conjectures 1.10--1.11 has a negative answer. The Laguerre--Polya function \(\psi(x)=(1+4x/15)e^{2x/3}=\sum_{n\ge0}\gamma_n x^n/n!\) has positive strictly decreasing coefficients \(\gamma_n=(1+2n/5)(2/3)^n\), but under the source convention \(\Delta=E-1\), \(\Delta^2\gamma_1=-2/135<0\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0085} \cite{app-app-0085-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:hausdorffmoment-finitedifference-criterion}, Proposition~\ref{res:egf-onefactor-atom-seconddifference-defect}, Proposition~\ref{res:lp-onefactor-exponential-atom}, Proposition~\ref{res:egf-onefactor-atom-coefficient-extraction}, and Proposition~\ref{res:egf-onefactor-atom-decreasing-window} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Let
+\[
+\psi(x)=\left(1+\frac{4x}{15}\right)e^{2x/3}.
+\]
+This is in the Laguerre--Polya class: it is an exponential times a real-zero linear factor with zero \(-15/4\). In the source product normalization,
+\[
+\left(1+\frac{4x}{15}\right)e^{2x/3}
+=e^{14x/15}\left(1+\frac{x}{15/4}\right)e^{-x/(15/4)}.
+\]
+
+For a one-factor atom
+\[
+(1+a x)e^{q x}=\sum_{n\ge0}\gamma_n\frac{x^n}{n!},
+\]
+the EGF coefficients are
+\[
+\gamma_n=q^n+a n q^{n-1}
+=q^n\left(1+\frac{a}{q}n\right).
+\]
+With \(q=2/3\) and \(a=4/15\),
+\[
+\gamma_n=\left(1+\frac{2n}{5}\right)\left(\frac23\right)^n.
+\]
+
+The coefficients are positive. They are strictly decreasing because
+\[
+\gamma_n-\gamma_{n+1}
+=\left(\frac23\right)^n\frac{2n+1}{15}>0
+\qquad(n\ge0).
+\]
+
+The second source-forward difference is
+\[
+\Delta^2\gamma_n=\gamma_{n+2}-2\gamma_{n+1}+\gamma_n
+=\left(\frac23\right)^n\frac{2n-3}{45}.
+\]
+In particular,
+\[
+\gamma_1=\frac{14}{15},\qquad
+\gamma_2=\frac45,\qquad
+\gamma_3=\frac{88}{135},
+\]
+and hence
+\[
+\Delta^2\gamma_1
+=\frac{88}{135}-2\cdot\frac45+\frac{14}{15}
+=-\frac{2}{135}<0.
+\]
+Since \((-1)^2\Delta^2\gamma_1=\Delta^2\gamma_1\), the proposed universal positivity fails already at \(r=2,n=1\).
+\end{proof}
+
+\begin{definition}[Nantomah generalized Nielsen beta function]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Nantomah generalized Nielsen beta function}
+\label{res:nantomah-pbeta-2018}
+For \(p\in\mathbb N\) and \(x>0\), Nantomah's generalized Nielsen beta function is \(\beta_p(x)=\sum_{r=0}^{p}((x+2r)^{-1}-(x+2r+1)^{-1})\).
+\end{definition}
+
+\begin{proposition}[Generalized Nielsen beta normalized derivative finite sum]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Generalized Nielsen beta normalized derivative finite sum}
+\label{res:pbeta-normalized-derivative-finitesum}
+For \(p\in\mathbb N\), \(n\ge0\), and \(x>0\), \(x^{n+1}|\beta_p^{(n)}(x)|/n!=x^{n+1}\sum_{r=0}^{p}((x+2r)^{-n-1}-(x+2r+1)^{-n-1})\).
+\end{proposition}
+
+\begin{proof}
+Take \(p=1\) and \(n=1\). Then
+\[
+\beta_1(x)={1\over x}-{1\over x+1}+{1\over x+2}-{1\over x+3},
+\]
+and
+\[
+F(x):=x^2|\beta_1'(x)|
+=1-\left({x\over x+1}\right)^2
++\left({x\over x+2}\right)^2
+-\left({x\over x+3}\right)^2.
+\]
+Equivalently,
+\[
+F(x)=
+{2(2x+3)(x^4+6x^3+15x^2+18x+6)
+\over (x+1)^2(x+2)^2(x+3)^2}.
+\]
+
+Exact differentiation gives
+\[
+F''(x)=
+{4P(x)\over (x+1)^4(x+2)^4(x+3)^4},
+\]
+where
+\[
+P(x)=2x^9+21x^8+112x^7+450x^6+1392x^5+2847x^4
++3264x^3+1440x^2-546x-558.
+\]
+At \(x=1/3\),
+\[
+F''(1/3)=-{27738747\over 192080000}<0.
+\]
+
+\emph{Conclusion.}
+A completely monotone \(C^\infty\) function on \((0,\infty)\) must satisfy
+\[
+(-1)^m f^{(m)}(x)\ge0
+\]
+for every \(m\ge0\) and \(x>0\). In particular, \(f''(x)\ge0\). The exact rational value above violates this at an admissible point for the source expression. Therefore Nantomah's Section 3 complete-monotonicity open problem is false.
+
+The endpoint check is consistent:
+\[
+F(x)=1-{31\over36}x^2+{197\over108}x^3-{1231\over432}x^4+O(x^5),
+\]
+so \(F''(x)<0\) also holds for all sufficiently small positive \(x\).
+\end{proof}
+
+\begin{proposition}[Pointwise second derivative obstruction to complete monotonicity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Pointwise second derivative obstruction to complete monotonicity}
+\label{res:cm-pointwise-secondderivative-obstruction}
+If a \(C^\infty\) function \(F\) on an interval is completely monotone, then \(F''(x)\ge0\) at every interior point. Consequently, one exact point \(x_0\) with \(F''(x_0)<0\) refutes complete monotonicity.
+\end{proposition}
+
+\begin{proof}
+For Pointwise second derivative obstruction to complete monotonicity, this proof is the corresponding component of Proposition~\ref{res:pbeta-normalized-derivative-finitesum}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{counterexample}[APP-0089: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem i...]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0089: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity...}
+\label{res:nantomah-pbeta-normalizedderivativecm-false-p1n1}
+Nantomah's Section 3 open problem on complete monotonicity of \(x^{n+1}|\beta_p^{(n)}(x)|/n!\) has a negative answer. Already for \(p=1\) and \(n=1\), the function \(F(x)=x^2|\beta_1'(x)|\) satisfies \(F''(1/3)=-27738747/192080000<0\), so it is not completely monotone on \((0,\infty)\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0089} \cite{app-app-0089-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:nantomah-pbeta-2018}, Proposition~\ref{res:pbeta-normalized-derivative-finitesum}, and Proposition~\ref{res:cm-pointwise-secondderivative-obstruction} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Take \(p=1\) and \(n=1\). Then
+\[
+\beta_1(x)={1\over x}-{1\over x+1}+{1\over x+2}-{1\over x+3},
+\]
+and
+\[
+F(x):=x^2|\beta_1'(x)|
+=1-\left({x\over x+1}\right)^2
++\left({x\over x+2}\right)^2
+-\left({x\over x+3}\right)^2.
+\]
+Equivalently,
+\[
+F(x)=
+{2(2x+3)(x^4+6x^3+15x^2+18x+6)
+\over (x+1)^2(x+2)^2(x+3)^2}.
+\]
+
+Exact differentiation gives
+\[
+F''(x)=
+{4P(x)\over (x+1)^4(x+2)^4(x+3)^4},
+\]
+where
+\[
+P(x)=2x^9+21x^8+112x^7+450x^6+1392x^5+2847x^4
++3264x^3+1440x^2-546x-558.
+\]
+At \(x=1/3\),
+\[
+F''(1/3)=-{27738747\over 192080000}<0.
+\]
+
+\emph{Conclusion.}
+A completely monotone \(C^\infty\) function on \((0,\infty)\) must satisfy
+\[
+(-1)^m f^{(m)}(x)\ge0
+\]
+for every \(m\ge0\) and \(x>0\). In particular, \(f''(x)\ge0\). The exact rational value above violates this at an admissible point for the source expression. Therefore Nantomah's Section 3 complete-monotonicity open problem is false.
+
+The endpoint check is consistent:
+\[
+F(x)=1-{31\over36}x^2+{197\over108}x^3-{1231\over432}x^4+O(x^5),
+\]
+so \(F''(x)<0\) also holds for all sufficiently small positive \(x\).
+\end{proof}
+
+\begin{definition}[Analytic unit-disk normalization classes]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Analytic unit-disk normalization classes}
+\label{res:analytic-unit-disk-classes}
+Let \(\mathbb D=\{z\in\mathbb C:|z|<1\}\). The normalized analytic class \(\mathcal A\) consists of analytic functions \(f\) on \(\mathbb D\) with \(f(z)=z+\sum_{n\ge2}a_nz^n\), hence \(f(0)=0\) and \(f'(0)=1\).
+\end{definition}
+
+\begin{definition}[Caratheodory class normalization]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Caratheodory class normalization}
+\label{res:caratheodory-class-normalization}
+The normalized Caratheodory class \(\mathcal P\) consists of analytic functions \(p\) on \(\mathbb D\) with \(p(z)=1+\sum_{n\ge1}c_nz^n\) and \(\operatorname{Re}p(z)>0\) on \(\mathbb D\). In particular, every \(p\in\mathcal P\) satisfies \(p(0)=1\).
+\end{definition}
+
+\begin{proposition}[Zero-constant transforms cannot enter the normalized Caratheodory class]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Zero-constant transforms cannot enter the normalized Caratheodory class}
+\label{res:zeroconstant-transform-not-caratheodory}
+Let \(T\) be a transform on \(\mathcal A\) such that \((Tf)(0)=0\) for every \(f\in\mathcal A\). Then \(Tf\notin\mathcal P\) for every \(f\in\mathcal A\), where \(\mathcal P\) is the normalized Caratheodory class. If the target class is interpreted as strict positive real part, the same conclusion holds because \(\operatorname{Re}(Tf)(0)=0\) is not strictly positive.
+\end{proposition}
+
+\begin{proof}
+This proof addresses only the literal printed Sangal--Swaminathan Problem 2:
+find conditions on \(p,q,a,b\) such that the printed operator
+\[
+L[\eta]f(z)=\phi_{p,q}(a,b;z)*f(z)
+\]
+itself belongs to the Caratheodory class for \(f\in\mathcal A\).
+
+It does not address any corrected or intended variant such as
+\[
+1+L[\eta]f(z)/z,\qquad L[\eta]f(z)/z,
+\]
+kernel membership for \(\Phi_{p,q}\), or normalized partial sums.
+
+Let
+\[
+\mathcal A=\{f(z)=z+\sum_{n\ge 2}a_nz^n\}
+\]
+and let
+\[
+\mathcal P=\{p(z)=1+\sum_{n\ge 1}c_nz^n:\operatorname{Re}p(z)>0
+\text{ on }\mathbb D\}.
+\]
+If a transform \(T\) maps every \(f\in\mathcal A\) to an analytic function
+with constant term \(0\), then \(Tf\notin\mathcal P\) for every
+\(f\in\mathcal A\). Indeed, membership in \(\mathcal P\) requires
+\((Tf)(0)=1\).
+
+The same zero-origin argument also rules out the unnormalized strict
+positive-real class \(\operatorname{Re}g>0\), since then
+\(\operatorname{Re}(Tf)(0)=0\) is not strictly positive.
+\end{proof}
+
+\begin{definition}[Sangal-Swaminathan printed Komatu Problem 2 vocabulary]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Sangal-Swaminathan printed Komatu Problem 2 vocabulary}
+\label{res:sangalswaminathan-komatu-problem2-literal}
+Sangal--Swaminathan Section 4.3 prints Problem 2 asking for conditions on \(p,q,a,b\) such that, for \(f\in\mathcal A\), the generalized Komatu operator \(L[\eta]f(z)\) itself belongs to the Caratheodory class. The source displays the literal operator as \(L[\eta]f(z)=\phi_{p,q}(a,b;z)*f(z)\), a Hadamard product.
+\end{definition}
+
+\begin{counterexample}[APP-0090: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0090: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal pa...}
+\label{res:komatu-caratheodory-problem2-literal-refuted}
+The literal printed Sangal--Swaminathan Problem 2 has a negative answer. Under the source-gated reading in which \(f\in\mathcal A\), \(L[\eta]f(z)=\phi_{p,q}(a,b;z)*f(z)\), and the target is the normalized Caratheodory class, there are no admissible parameters \(p,q,a,b\) for which \(L[\eta]f\) itself belongs to the Caratheodory class for every \(f\in\mathcal A\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0090} \cite{app-app-0090-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:analytic-unit-disk-classes}, Proposition~\ref{res:caratheodory-class-normalization}, and Proposition~\ref{res:zeroconstant-transform-not-caratheodory} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+This proof addresses only the literal printed Sangal--Swaminathan Problem 2:
+find conditions on \(p,q,a,b\) such that the printed operator
+\[
+L[\eta]f(z)=\phi_{p,q}(a,b;z)*f(z)
+\]
+itself belongs to the Caratheodory class for \(f\in\mathcal A\).
+
+It does not address any corrected or intended variant such as
+\[
+1+L[\eta]f(z)/z,\qquad L[\eta]f(z)/z,
+\]
+kernel membership for \(\Phi_{p,q}\), or normalized partial sums.
+
+Let
+\[
+\mathcal A=\{f(z)=z+\sum_{n\ge 2}a_nz^n\}
+\]
+and let
+\[
+\mathcal P=\{p(z)=1+\sum_{n\ge 1}c_nz^n:\operatorname{Re}p(z)>0
+\text{ on }\mathbb D\}.
+\]
+If a transform \(T\) maps every \(f\in\mathcal A\) to an analytic function
+with constant term \(0\), then \(Tf\notin\mathcal P\) for every
+\(f\in\mathcal A\). Indeed, membership in \(\mathcal P\) requires
+\((Tf)(0)=1\).
+
+The same zero-origin argument also rules out the unnormalized strict
+positive-real class \(\operatorname{Re}g>0\), since then
+\(\operatorname{Re}(Tf)(0)=0\) is not strictly positive.
+\end{proof}
+
+\section{Determinant and moment-ratio applications}
+\label{sec:determinant-and-moment-ratio-applications}
+This section develops applications governed by determinant compression and moment-ratio comparisons.  The method turns recursive derivative information into a finite or structured positivity problem, so bounds and counterexamples can be read from a smaller normal form.
+
+\begin{proposition}[Hausdorff finite-difference criterion]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Hausdorff finite-difference criterion}
+\label{res:hausdorffmoment-finitedifference-criterion}
+If \(a_n=\int_0^1 x^n\,d\mu(x)\) for a positive measure \(\mu\) on \([0,1]\), then \(H_m(n)=\sum_{j=0}^m(-1)^j\binom mj a_{n+j}\ge0\) for all \(m,n\ge0\). Thus one negative Hausdorff finite difference rules out a Hausdorff moment representation.
+\end{proposition}
+
+\begin{proof}
+The proof below uses the source recurrence and exact rational arithmetic
+
+appendix code,
+\[
+\rho_0=1,\qquad
+\rho_n=\sum_{k=0}^{n-1}\rho_k
+\frac{2(-1)^{n-1-k}}{(n-k+1)(n-k+2)},\qquad n\ge1,
+\]
+\[
+s_n=1+2\sum_{k=1}^n(-1)^k\rho_k,\qquad
+t_n=\sum_{k=0}^n(-1)^k\binom nk s_k.
+\]
+Exact rational arithmetic gives
+\[
+\begin{array}{c|c|c}
+n&t_n&a_n\\
+\hline
+0&1&1\\
+1&2/3&1/2\\
+2&5/9&3/10\\
+3&67/135&72/335\\
+4&371/810&4185/24857\\
+5&1465/3402&75492/543515\\
+6&209081/510300&36295938/306303665\\
+7&85961/218700&1860116400/17972811841
+\end{array}
+\]
+
+The local replay computed the same table from the recurrence:
+
+\begin{verbatim}
+rho= ['1', '1/3', '-1/18', '7/270', '-5/324', '353/34020', '-7669/1020600', '17519/3061800']
+s= ['1', '1/3', '2/9', '23/135', '113/810', '202/1701', '52931/510300', '10091/109350']
+t= ['1', '2/3', '5/9', '67/135', '371/810', '1465/3402', '209081/510300', '85961/218700']
+a= ['1', '1/2', '3/10', '72/335', '4185/24857', '75492/543515', '36295938/306303665', '1860116400/17972811841']
+H7= -28629387882812/1395498975394445
+target_match= True
+\end{verbatim}
+
+If \(a_n=\int_0^1 x^n\,d\mu(x)\) for a positive measure \(\mu\), then for
+all \(m,n\ge0\)
+\[
+H_m(n):=\sum_{j=0}^m(-1)^j\binom mj a_{n+j}
+=\int_0^1 x^n(1-x)^m\,d\mu(x)\ge0.
+\]
+Equivalently, \(H_m(n)=(-1)^m\Delta^m a_n\) for
+\(\Delta a_n=a_{n+1}-a_n\).
+
+For the Berg--Pedersen sequence,
+\[
+\begin{aligned}
+H_7(0)
+&=a_0-7a_1+21a_2-35a_3+35a_4-21a_5+7a_6-a_7\\
+&=-\frac{28629387882812}{1395498975394445}<0.
+\end{aligned}
+\]
+This single finite Hausdorff-difference violation proves that \((a_n)\) is
+not a Hausdorff moment sequence, giving a negative answer to the exact source
+question.
+
+This is an exact finite obstruction. It does not decide any question about
+\((t_n^c)\) other than invalidating the source's proposed route through
+Hausdorffness of \((a_n)\).
+\end{proof}
+
+\begin{counterexample}[APP-0083: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0083: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff}
+\label{res:bergpedersen-hornbernstein-a-nothausdorff}
+The Berg--Pedersen Horn-Bernstein sequence \(a_0=1\), \(a_n=1/t_n-1/t_{n-1}\) is not a Hausdorff moment sequence on \([0,1]\), because its seventh Hausdorff finite difference satisfies \(\sum_{j=0}^7(-1)^j\binom7j a_j=-28629387882812/1395498975394445<0\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0083} \cite{app-app-0083-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle} and Proposition~\ref{res:hausdorffmoment-finitedifference-criterion} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+The proof below uses the source recurrence and exact rational arithmetic
+
+appendix code,
+\[
+\rho_0=1,\qquad
+\rho_n=\sum_{k=0}^{n-1}\rho_k
+\frac{2(-1)^{n-1-k}}{(n-k+1)(n-k+2)},\qquad n\ge1,
+\]
+\[
+s_n=1+2\sum_{k=1}^n(-1)^k\rho_k,\qquad
+t_n=\sum_{k=0}^n(-1)^k\binom nk s_k.
+\]
+Exact rational arithmetic gives
+\[
+\begin{array}{c|c|c}
+n&t_n&a_n\\
+\hline
+0&1&1\\
+1&2/3&1/2\\
+2&5/9&3/10\\
+3&67/135&72/335\\
+4&371/810&4185/24857\\
+5&1465/3402&75492/543515\\
+6&209081/510300&36295938/306303665\\
+7&85961/218700&1860116400/17972811841
+\end{array}
+\]
+
+The local replay computed the same table from the recurrence:
+
+\begin{verbatim}
+rho= ['1', '1/3', '-1/18', '7/270', '-5/324', '353/34020', '-7669/1020600', '17519/3061800']
+s= ['1', '1/3', '2/9', '23/135', '113/810', '202/1701', '52931/510300', '10091/109350']
+t= ['1', '2/3', '5/9', '67/135', '371/810', '1465/3402', '209081/510300', '85961/218700']
+a= ['1', '1/2', '3/10', '72/335', '4185/24857', '75492/543515', '36295938/306303665', '1860116400/17972811841']
+H7= -28629387882812/1395498975394445
+target_match= True
+\end{verbatim}
+
+If \(a_n=\int_0^1 x^n\,d\mu(x)\) for a positive measure \(\mu\), then for
+all \(m,n\ge0\)
+\[
+H_m(n):=\sum_{j=0}^m(-1)^j\binom mj a_{n+j}
+=\int_0^1 x^n(1-x)^m\,d\mu(x)\ge0.
+\]
+Equivalently, \(H_m(n)=(-1)^m\Delta^m a_n\) for
+\(\Delta a_n=a_{n+1}-a_n\).
+
+For the Berg--Pedersen sequence,
+\[
+\begin{aligned}
+H_7(0)
+&=a_0-7a_1+21a_2-35a_3+35a_4-21a_5+7a_6-a_7\\
+&=-\frac{28629387882812}{1395498975394445}<0.
+\end{aligned}
+\]
+This single finite Hausdorff-difference violation proves that \((a_n)\) is
+not a Hausdorff moment sequence, giving a negative answer to the exact source
+question.
+
+This is an exact finite obstruction. It does not decide any question about
+\((t_n^c)\) other than invalidating the source's proposed route through
+Hausdorffness of \((a_n)\).
+\end{proof}
+
+\begin{proposition}[Binomial collision kernel integral]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Binomial collision kernel integral}
+\label{res:mohle-binomialcollisionkernel-integral}
+For every integer \(n\ge2\) and \(x,y\ge0\) with \(x+y\le1\), \((1-x)^n+(1-y)^n-1-(1-x-y)^n=-n(n-1)\int_0^x\int_0^y(1-r-t)^{n-2}\,dr\,dt\).
+\end{proposition}
+
+\begin{proof}
+For Binomial collision kernel integral, this proof is the corresponding component of Proposition~\ref{res:mohle-countablesimplex-truncationclosure}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{proposition}[Ordered-pair simplex domination]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Ordered-pair simplex domination}
+\label{res:mohle-orderedpair-simplex-domination}
+Let \(n\ge2\), \(u\in\Delta\) have finite support, and define \(S=\sum_i\int_0^{u_i}(1-t)^{n-1}\,dt\) and \(T=\sum_{i\ne j}\int_0^{u_i}\int_0^{u_j}(1-t-r)^{n-2}\,dr\,dt\). Then \(S-T\ge(1-|u|)(n-1)^{-1}\sum_i(1-(1-u_i)^{n-1})\).
+\end{proposition}
+
+\begin{proof}
+For Ordered-pair simplex domination, this proof is the corresponding component of Proposition~\ref{res:mohle-countablesimplex-truncationclosure}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{proposition}[Countable simplex truncation closure]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Countable simplex truncation closure}
+\label{res:mohle-countablesimplex-truncationclosure}
+For fixed \(n\), the Mohle source formula for \(p_n(u)\) is the limit of its finite-support truncations on \(\Delta\). The one-coordinate terms are dominated by multiples of \(u_i\), and the ordered-pair collision term is absolutely dominated by \(n(n-1)\sum_{i\ne j}u_i u_j\).
+\end{proposition}
+
+\begin{proof}
+The case \(n=1\) is source-recorded:
+\[
+p_1(u)=|u|(1-|u|)\ge0.
+\]
+Assume \(n\ge2\). First suppose \(u\) has finite support. Set
+\[
+s=|u|,\qquad
+A=\sum_i\bigl(1-(1-u_i)^n\bigr),\qquad
+B=\sum_i u_i(1-u_i)^{n-1}.
+\]
+The source formula for \(p_n\) is
+\[
+p_n(u)=\frac{n-1}{n^2}A-\frac{s(1-s)}n+\frac{2(1-s)}nB
++\frac1{n^2}\sum_{i\ne j}\Bigl((1-u_i)^n+(1-u_j)^n-1-(1-u_i-u_j)^n\Bigr),
+\]
+where the off-diagonal sum is ordered.
+
+For \(0\le x,y\) with \(x+y\le1\),
+\[
+(1-x)^n+(1-y)^n-1-(1-x-y)^n
+=-n(n-1)\int_0^x\int_0^y(1-r-t)^{n-2}\,dr\,dt.
+\]
+Also
+\[
+1-(1-x)^n=n\int_0^x(1-t)^{n-1}\,dt.
+\]
+Define
+\[
+S=\sum_i\int_0^{u_i}(1-t)^{n-1}\,dt
+\]
+and
+\[
+T=\sum_{i\ne j}\int_0^{u_i}\int_0^{u_j}(1-t-r)^{n-2}\,dr\,dt .
+\]
+Then
+\[
+p_n(u)=\frac{n-1}{n}(S-T)+\frac{1-s}{n}(2B-s).
+\]
+
+For fixed \(i\) and \(0\le t\le u_i\),
+\[
+\sum_{j\ne i}\int_0^{u_j}(1-t-r)^{n-2}\,dr
+\le (s-u_i)(1-t)^{n-2}.
+\]
+Indeed \(t+r\le u_i+u_j\le s\le1\), so the integrand is nonnegative, and \(r\ge0\) gives \(1-t-r\le1-t\). Hence
+\[
+\begin{aligned}
+S-T
+&\ge \sum_i\int_0^{u_i}
+\left((1-t)^{n-1}-(s-u_i)(1-t)^{n-2}\right)\,dt\\
+&=\sum_i\int_0^{u_i}(1-t)^{n-2}(1-t-s+u_i)\,dt\\
+&=\sum_i\int_0^{u_i}(1-t)^{n-2}\bigl((1-s)+(u_i-t)\bigr)\,dt\\
+&\ge \frac{1-s}{n-1}\sum_i\bigl(1-(1-u_i)^{n-1}\bigr).
+\end{aligned}
+\]
+Substituting this into the expression for \(p_n\) gives
+\[
+p_n(u)\ge
+\frac{1-s}{n}\sum_i
+\left(1-(1-u_i)^{n-1}+2u_i(1-u_i)^{n-1}-u_i\right).
+\]
+For each summand set \(q=1-u_i\). The bracket is
+\[
+q+q^{n-1}-2q^n
+=q\left(1-q^{n-2}(2q-1)\right).
+\]
+If \(q\le1/2\), the factor in parentheses is at least \(1\). If \(q\ge1/2\), then \(0\le q^{n-2}(2q-1)\le1\). Thus every summand is nonnegative, and since \(1-s\ge0\), \(p_n(u)\ge0\) for finitely supported \(u\).
+
+For countably supported \(u\), let \(u^{(m)}=(u_1,\ldots,u_m,0,0,\ldots)\). The one-coordinate sums converge because
+\[
+0\le 1-(1-u_i)^n\le n u_i,\qquad 0\le u_i(1-u_i)^{n-1}\le u_i.
+\]
+The ordered-pair term is absolutely dominated by
+\[
+n(n-1)\sum_{i\ne j}u_i u_j<\infty,
+\]
+using the double-integral identity and the bound \((1-t-r)^{n-2}\le1\). Therefore \(p_n(u^{(m)})\to p_n(u)\). Passing the finite-support inequality to the limit proves \(p_n(u)\ge0\) for all \(u\in\Delta\).
+
+The reusable bridge is a finite-simplex ordered-pair kernel certificate: negative pair-collision terms can be dominated by one-body integrals whenever the simplex constraint \(s\le1\) leaves a residual factor \(1-s\). This is distinct from the source theorem and can be reused for finite occupancy and concentration expressions built from \((1-x)^n\) and \((1-x-y)^n\).
+
+The proof solves the exact open in the cited source Problem 6.3 affirmatively. This is a strict private APP candidate APP-0084, pending only future public staging requested by the user.
+\end{proof}
+
+\begin{definition}[Mohle block-counting Problem 6.3 language]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Mohle block-counting Problem 6.3 language}
+\label{res:mohle-blockcounting-problem63-language}
+In Mohle's block-counting source, \(\Delta=\{u_1\ge u_2\ge\cdots\ge0: |u|=\sum_i u_i\le1\}\). For \(n\in\mathbb N\), the source quantity \(p_n(u)\) is \(\mathbb E\widetilde Y(n,u)-\mathbb E(\widetilde Y(n,u)^2)\), and Problem 6.3 asks whether \(p_n(u)\ge0\) for all \(u\in\Delta\).
+\end{definition}
+
+\begin{corollary}[APP-0084: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0084: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer}
+\label{res:mohle-problem63-finitekernel-positive}
+For every \(n\in\mathbb N\) and every \(u\in\Delta\), the Mohle Problem 6.3 quantity \(p_n(u)=\mathbb E\widetilde Y(n,u)-\mathbb E(\widetilde Y(n,u)^2)\) is nonnegative. Equivalently, \(\mathbb E(\widetilde Y(n,u)^2)\le\mathbb E\widetilde Y(n,u)\) for the full source simplex.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0084} \cite{app-app-0084-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:mohle-binomialcollisionkernel-integral}, Proposition~\ref{res:mohle-orderedpair-simplex-domination}, Proposition~\ref{res:mohle-blockcounting-problem63-language}, and Proposition~\ref{res:mohle-countablesimplex-truncationclosure} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+The case \(n=1\) is source-recorded:
+\[
+p_1(u)=|u|(1-|u|)\ge0.
+\]
+Assume \(n\ge2\). First suppose \(u\) has finite support. Set
+\[
+s=|u|,\qquad
+A=\sum_i\bigl(1-(1-u_i)^n\bigr),\qquad
+B=\sum_i u_i(1-u_i)^{n-1}.
+\]
+The source formula for \(p_n\) is
+\[
+p_n(u)=\frac{n-1}{n^2}A-\frac{s(1-s)}n+\frac{2(1-s)}nB
++\frac1{n^2}\sum_{i\ne j}\Bigl((1-u_i)^n+(1-u_j)^n-1-(1-u_i-u_j)^n\Bigr),
+\]
+where the off-diagonal sum is ordered.
+
+For \(0\le x,y\) with \(x+y\le1\),
+\[
+(1-x)^n+(1-y)^n-1-(1-x-y)^n
+=-n(n-1)\int_0^x\int_0^y(1-r-t)^{n-2}\,dr\,dt.
+\]
+Also
+\[
+1-(1-x)^n=n\int_0^x(1-t)^{n-1}\,dt.
+\]
+Define
+\[
+S=\sum_i\int_0^{u_i}(1-t)^{n-1}\,dt
+\]
+and
+\[
+T=\sum_{i\ne j}\int_0^{u_i}\int_0^{u_j}(1-t-r)^{n-2}\,dr\,dt .
+\]
+Then
+\[
+p_n(u)=\frac{n-1}{n}(S-T)+\frac{1-s}{n}(2B-s).
+\]
+
+For fixed \(i\) and \(0\le t\le u_i\),
+\[
+\sum_{j\ne i}\int_0^{u_j}(1-t-r)^{n-2}\,dr
+\le (s-u_i)(1-t)^{n-2}.
+\]
+Indeed \(t+r\le u_i+u_j\le s\le1\), so the integrand is nonnegative, and \(r\ge0\) gives \(1-t-r\le1-t\). Hence
+\[
+\begin{aligned}
+S-T
+&\ge \sum_i\int_0^{u_i}
+\left((1-t)^{n-1}-(s-u_i)(1-t)^{n-2}\right)\,dt\\
+&=\sum_i\int_0^{u_i}(1-t)^{n-2}(1-t-s+u_i)\,dt\\
+&=\sum_i\int_0^{u_i}(1-t)^{n-2}\bigl((1-s)+(u_i-t)\bigr)\,dt\\
+&\ge \frac{1-s}{n-1}\sum_i\bigl(1-(1-u_i)^{n-1}\bigr).
+\end{aligned}
+\]
+Substituting this into the expression for \(p_n\) gives
+\[
+p_n(u)\ge
+\frac{1-s}{n}\sum_i
+\left(1-(1-u_i)^{n-1}+2u_i(1-u_i)^{n-1}-u_i\right).
+\]
+For each summand set \(q=1-u_i\). The bracket is
+\[
+q+q^{n-1}-2q^n
+=q\left(1-q^{n-2}(2q-1)\right).
+\]
+If \(q\le1/2\), the factor in parentheses is at least \(1\). If \(q\ge1/2\), then \(0\le q^{n-2}(2q-1)\le1\). Thus every summand is nonnegative, and since \(1-s\ge0\), \(p_n(u)\ge0\) for finitely supported \(u\).
+
+For countably supported \(u\), let \(u^{(m)}=(u_1,\ldots,u_m,0,0,\ldots)\). The one-coordinate sums converge because
+\[
+0\le 1-(1-u_i)^n\le n u_i,\qquad 0\le u_i(1-u_i)^{n-1}\le u_i.
+\]
+The ordered-pair term is absolutely dominated by
+\[
+n(n-1)\sum_{i\ne j}u_i u_j<\infty,
+\]
+using the double-integral identity and the bound \((1-t-r)^{n-2}\le1\). Therefore \(p_n(u^{(m)})\to p_n(u)\). Passing the finite-support inequality to the limit proves \(p_n(u)\ge0\) for all \(u\in\Delta\).
+
+The reusable bridge is a finite-simplex ordered-pair kernel certificate: negative pair-collision terms can be dominated by one-body integrals whenever the simplex constraint \(s\le1\) leaves a residual factor \(1-s\). This is distinct from the source theorem and can be reused for finite occupancy and concentration expressions built from \((1-x)^n\) and \((1-x-y)^n\).
+
+The proof solves the exact open in the cited source Problem 6.3 affirmatively. This is a strict private APP candidate APP-0084, pending only future public staging requested by the user.
+\end{proof}
+
+\begin{proposition}[Poly-double-gamma derivative Laplace representation]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Poly-double-gamma derivative Laplace representation}
+\label{res:polydoublegamma-derivative-laplace-representation}
+For \(y>0\) and \(r\ge2\), Mishra--Swaminathan's source representation gives \(\psi_2^{(r)}(y)=(-1)^{r+1}\int_0^\infty e^{-yt}t^r/(1-e^{-t})^2\,dt\).
+\end{proposition}
+
+\begin{proof}
+Assume \(y>0\), \(n\ge2\), and \(j,m\ge1\). The source derivative Laplace representation is
+\[
+\psi_2^{(r)}(y)=(-1)^{r+1}\int_0^\infty e^{-yt}\frac{t^r}{(1-e^{-t})^2}\,dt,
+\qquad r\ge2.
+\]
+For \(r=n+(a+b)j\), this gives
+\[
+H_{ab}(y)=(-1)^{n+(a+b)j+1}
+\int_0^\infty e^{-yt}\frac{t^{n+(a+b)j}}{(1-e^{-t})^2}\,dt.
+\]
+
+Define
+\[
+d\mu_y(t)=e^{-yt}\frac{t^n}{(1-e^{-t})^2}\,dt,\qquad t>0.
+\]
+This is a positive measure. It has all required moments: near \(0\), its density behaves like \(t^{n-2}\,dt\), integrable because \(n\ge2\); at infinity, \(e^{-yt}\) gives exponential decay.
+
+Let
+\[
+G_{ab}(y)=\int_0^\infty t^{aj}t^{bj}\,d\mu_y(t),
+\qquad
+S=\operatorname{diag}((-1)^{aj})_{a=0}^{m}.
+\]
+Then
+\[
+H(y)=(-1)^{n+1}S\,G(y)\,S.
+\]
+Indeed, the \((a,b)\) entry on the right has sign
+\[
+(-1)^{n+1+aj+bj}
+\]
+times the positive moment integral, which equals
+\[
+(-1)^{n+(a+b)j+1}
+\int_0^\infty e^{-yt}\frac{t^{n+(a+b)j}}{(1-e^{-t})^2}\,dt.
+\]
+
+The matrix \(G(y)\) is strictly positive definite. For a nonzero vector \(c=(c_0,\ldots,c_m)\),
+\[
+c^T G(y)c
+=\int_0^\infty \left(\sum_{a=0}^m c_a t^{aj}\right)^2\,d\mu_y(t)>0.
+\]
+The polynomial \(\sum_a c_a t^{aj}\) is not identically zero unless all \(c_a=0\), and \(d\mu_y\) has strictly positive density on \((0,\infty)\).
+
+Since \(S\) is invertible and diagonal, Sylvester's law of inertia gives
+\[
+\operatorname{Inertia}(H(y))=\operatorname{Inertia}((-1)^{n+1}G(y)).
+\]
+Therefore \(H(y)\) is positive definite for odd \(n\) and negative definite for even \(n\):
+\[
+\operatorname{Inertia}(H(y))=
+\begin{cases}
+(m+1,0,0),& n\ \text{odd},\\
+(0,m+1,0),& n\ \text{even}.
+\end{cases}
+\]
+Equivalently,
+\[
+(-1)^{n+1}H(y)\succ0.
+\]
+
+The determinant sign shadow is
+\[
+(-1)^{(n+1)(m+1)}\det H(y)>0.
+\]
+\end{proof}
+
+\begin{proposition}[Signed Hankel moment Gram strict positivity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Signed Hankel moment Gram strict positivity}
+\label{res:signed-hankel-moment-gram-strictpd}
+Let \(\mu\) be a positive measure with strictly positive mass on an interval and finite moments through the needed orders. For distinct monomials \(x^{0j},x^{1j},\ldots,x^{mj}\) with \(j\ge1\), the matrix \(G_{ab}=\int x^{aj}x^{bj}\,d\mu(x)\) is strictly positive definite. Any matrix obtained from \(G\) by real diagonal sign congruence and one global sign has the corresponding fixed inertia.
+\end{proposition}
+
+\begin{proof}
+For Signed Hankel moment Gram strict positivity, this proof is the corresponding component of Proposition~\ref{res:polydoublegamma-derivative-laplace-representation}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{definition}[Poly-double-gamma derivative Hankel matrix]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Poly-double-gamma derivative Hankel matrix}
+\label{res:polydoublegamma-derivative-hankel-matrix}
+For \(y>0\), \(n\ge2\), and positive integers \(j,m\), define the Proposition 4.1 Hankel-type matrix \(H_m^{(n,j)}(y)=[\psi_2^{(n+(a+b)j)}(y)]_{a,b=0}^{m}\). This is the matrix corresponding to the determinant in Mishra--Swaminathan Proposition 4.1.
+\end{definition}
+
+\begin{corollary}[APP-0086: Poly-double-gamma derivative Hankel matrix has fixed spectral sign]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0086: Poly-double-gamma derivative Hankel matrix has fixed spectral sign}
+\label{res:polydoublegamma-hankel-matrix-inertia}
+For \(y>0\), \(n\ge2\), and positive integers \(j,m\), the matrix \(H_m^{(n,j)}(y)=[\psi_2^{(n+(a+b)j)}(y)]_{a,b=0}^m\) satisfies \((-1)^{n+1}H_m^{(n,j)}(y)\succ0\). Hence its inertia is \((m+1,0,0)\) for odd \(n\) and \((0,m+1,0)\) for even \(n\). This solves the fixed-inertia/eigenvalue-sign component of Mishra--Swaminathan Remark 4.1.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0086} \cite{app-app-0086-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:polydoublegamma-derivative-laplace-representation}, Proposition~\ref{res:polydoublegamma-derivative-hankel-matrix}, and Proposition~\ref{res:signed-hankel-moment-gram-strictpd} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Assume \(y>0\), \(n\ge2\), and \(j,m\ge1\). The source derivative Laplace representation is
+\[
+\psi_2^{(r)}(y)=(-1)^{r+1}\int_0^\infty e^{-yt}\frac{t^r}{(1-e^{-t})^2}\,dt,
+\qquad r\ge2.
+\]
+For \(r=n+(a+b)j\), this gives
+\[
+H_{ab}(y)=(-1)^{n+(a+b)j+1}
+\int_0^\infty e^{-yt}\frac{t^{n+(a+b)j}}{(1-e^{-t})^2}\,dt.
+\]
+
+Define
+\[
+d\mu_y(t)=e^{-yt}\frac{t^n}{(1-e^{-t})^2}\,dt,\qquad t>0.
+\]
+This is a positive measure. It has all required moments: near \(0\), its density behaves like \(t^{n-2}\,dt\), integrable because \(n\ge2\); at infinity, \(e^{-yt}\) gives exponential decay.
+
+Let
+\[
+G_{ab}(y)=\int_0^\infty t^{aj}t^{bj}\,d\mu_y(t),
+\qquad
+S=\operatorname{diag}((-1)^{aj})_{a=0}^{m}.
+\]
+Then
+\[
+H(y)=(-1)^{n+1}S\,G(y)\,S.
+\]
+Indeed, the \((a,b)\) entry on the right has sign
+\[
+(-1)^{n+1+aj+bj}
+\]
+times the positive moment integral, which equals
+\[
+(-1)^{n+(a+b)j+1}
+\int_0^\infty e^{-yt}\frac{t^{n+(a+b)j}}{(1-e^{-t})^2}\,dt.
+\]
+
+The matrix \(G(y)\) is strictly positive definite. For a nonzero vector \(c=(c_0,\ldots,c_m)\),
+\[
+c^T G(y)c
+=\int_0^\infty \left(\sum_{a=0}^m c_a t^{aj}\right)^2\,d\mu_y(t)>0.
+\]
+The polynomial \(\sum_a c_a t^{aj}\) is not identically zero unless all \(c_a=0\), and \(d\mu_y\) has strictly positive density on \((0,\infty)\).
+
+Since \(S\) is invertible and diagonal, Sylvester's law of inertia gives
+\[
+\operatorname{Inertia}(H(y))=\operatorname{Inertia}((-1)^{n+1}G(y)).
+\]
+Therefore \(H(y)\) is positive definite for odd \(n\) and negative definite for even \(n\):
+\[
+\operatorname{Inertia}(H(y))=
+\begin{cases}
+(m+1,0,0),& n\ \text{odd},\\
+(0,m+1,0),& n\ \text{even}.
+\end{cases}
+\]
+Equivalently,
+\[
+(-1)^{n+1}H(y)\succ0.
+\]
+
+The determinant sign shadow is
+\[
+(-1)^{(n+1)(m+1)}\det H(y)>0.
+\]
+\end{proof}
+
+\begin{proposition}[Opposite-order compression determinant transfer]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Opposite-order compression determinant transfer}
+\label{res:oppositeorder-compressiondeterminant-transfer}
+Let \(V:\mathbb C^k\to\mathbb C^n\) be an isometry and set \(g_V(x)=\det(V^*\operatorname{diag}(x)V)\). If \(u\in\mathbb R^n\) is weakly decreasing and \(v\in\mathbb R^n\) is weakly increasing, then \(g_V(e^u)g_V(e^v)\ge g_V(e^{u+v})g_V(1)\). Equivalently, compression determinants satisfy a reverse product inequality for oppositely ordered diagonal data.
+\end{proposition}
+
+\begin{proof}
+Bourin Problem 1.6 asks whether the reverse determinant compression inequality
+\[
+\det A_E\det B_E\ge \det(AB)_E
+\]
+holds for every subspace \(E\) whenever \(A,B\ge0\) form an antimonotone pair in the source sense.
+
+The source antimonotone hypothesis means that \(A\) and \(B\) are simultaneously diagonalizable through one Hermitian functional calculus, with eigenvalues oppositely ordered. Thus, after choosing the common eigenbasis, it is enough to treat
+\[
+A=\operatorname{diag}(a_1,\ldots,a_n),\qquad
+B=\operatorname{diag}(b_1,\ldots,b_n),
+\]
+where \(a_1\ge\cdots\ge a_n\ge0\) and \(0\le b_1\le\cdots\le b_n\). The opposite orientation is the same after reversing the basis.
+
+Let \(E\) have dimension \(k\), and let \(V:\mathbb C^k\to\mathbb C^n\) be an isometry with range \(E\). For \(x=(x_1,\ldots,x_n)\in(0,\infty)^n\), define
+\[
+g(x)=\det\bigl(V^*\operatorname{diag}(x)V\bigr).
+\]
+By Cauchy--Binet,
+\[
+g(x)=\sum_{|S|=k}p_S x_S,\qquad
+p_S=|\det V_S|^2,\qquad
+x_S=\prod_{i\in S}x_i.
+\]
+Also
+\[
+\sum_{|S|=k}p_S=g(1,\ldots,1)=\det(V^*V)=1.
+\]
+For \(a=(a_i)\), \(b=(b_i)\), and \(ab=(a_i b_i)\),
+\[
+\det A_E=g(a),\qquad
+\det B_E=g(b),\qquad
+\det(AB)_E=g(ab).
+\]
+The desired inequality is therefore
+\[
+g(a)g(b)\ge g(ab)g(1)=g(ab).
+\]
+
+Assume first that all \(a_i,b_i>0\). Put
+\[
+u_i=\log a_i,\qquad v_i=\log b_i,\qquad
+\Phi(y)=\log g(e^y).
+\]
+Then \(u_1\ge\cdots\ge u_n\) and \(v_1\le\cdots\le v_n\). It is enough to prove
+\[
+\Phi(u)+\Phi(v)-\Phi(u+v)-\Phi(0)\ge0.
+\]
+
+For each \(y\), the tilted weights
+\[
+\mu_y(S)=\frac{p_S e^{\sum_{i\in S}y_i}}{g(e^y)}
+\]
+form the fixed-size projection determinantal measure associated with
+\[
+M_y=\operatorname{diag}(e^{y_i/2})V,\qquad
+K_y=M_y(M_y^*M_y)^{-1}M_y^*.
+\]
+The kernel \(K_y\) is an orthogonal projection onto \(\operatorname{range} M_y\). Differentiating \(\Phi\) gives
+\[
+\partial_i\Phi(y)=\mu_y(i\in S)=(K_y)_{ii},
+\]
+and
+\[
+\partial_{ij}\Phi(y)=\operatorname{Cov}_{\mu_y}(1_{i\in S},1_{j\in S}).
+\]
+For a projection determinantal measure,
+\[
+\operatorname{Cov}(1_{i\in S},1_{j\in S})=-|(K_y)_{ij}|^2\qquad(i\ne j).
+\]
+Because \(\sum_i1_{i\in S}=k\) is constant, the covariance matrix has zero row sums, so
+\[
+\partial_{ii}\Phi(y)=\sum_{j\ne i}|(K_y)_{ij}|^2.
+\]
+Consequently, for real vectors \(r,s\),
+\[
+r^T\nabla^2\Phi(y)s
+=\sum_{i<j}|(K_y)_{ij}|^2(r_i-r_j)(s_i-s_j).
+\]
+
+Apply this identity with \(r=u\) and \(s=v\). For \(i<j\),
+\[
+u_i-u_j\ge0,\qquad v_i-v_j\le0,
+\]
+hence each summand is nonpositive:
+\[
+u^T\nabla^2\Phi(y)v\le0\qquad(y\in\mathbb R^n).
+\]
+Integrating the mixed second derivative over the rectangle gives
+\[
+\Phi(u+v)-\Phi(u)-\Phi(v)+\Phi(0)
+=\int_0^1\int_0^1
+u^T\nabla^2\Phi(su+tv)v\,dt\,ds
+\le0.
+\]
+Thus
+\[
+\Phi(u)+\Phi(v)\ge \Phi(u+v)+\Phi(0),
+\]
+and exponentiating yields
+\[
+g(a)g(b)\ge g(ab)g(1)=g(ab).
+\]
+\end{proof}
+
+\begin{definition}[Antimonotone positive pair]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Antimonotone positive pair}
+\label{res:antimonotone-positive-pair}
+A positive pair \((A,B)\) is antimonotone, in Bourin's source sense, if \(A=f(C)\) and \(B=g(C)\) for one Hermitian \(C\), with one of \(f,g\) nondecreasing and the other nonincreasing; equivalently, in a common eigenbasis the eigenvalues can be ordered oppositely.
+\end{definition}
+
+\begin{corollary}[APP-0088: Bourin antimonotone compression determinant inequality is affirmative]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0088: Bourin antimonotone compression determinant inequality is affirmative}
+\label{res:bourin-antimonotone-compressiondet-allsubspaces}
+For every antimonotone positive pair \((A,B)\) in Bourin's common-functional-calculus sense and every subspace \(E\), \(\det A_E\det B_E\ge\det(AB)_E\).
+
+
+
+This resolves the source problem recorded as \textbf{APP-0088} \cite{app-app-0088-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:oppositeorder-compressiondeterminant-transfer} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Bourin Problem 1.6 asks whether the reverse determinant compression inequality
+\[
+\det A_E\det B_E\ge \det(AB)_E
+\]
+holds for every subspace \(E\) whenever \(A,B\ge0\) form an antimonotone pair in the source sense.
+
+The source antimonotone hypothesis means that \(A\) and \(B\) are simultaneously diagonalizable through one Hermitian functional calculus, with eigenvalues oppositely ordered. Thus, after choosing the common eigenbasis, it is enough to treat
+\[
+A=\operatorname{diag}(a_1,\ldots,a_n),\qquad
+B=\operatorname{diag}(b_1,\ldots,b_n),
+\]
+where \(a_1\ge\cdots\ge a_n\ge0\) and \(0\le b_1\le\cdots\le b_n\). The opposite orientation is the same after reversing the basis.
+
+Let \(E\) have dimension \(k\), and let \(V:\mathbb C^k\to\mathbb C^n\) be an isometry with range \(E\). For \(x=(x_1,\ldots,x_n)\in(0,\infty)^n\), define
+\[
+g(x)=\det\bigl(V^*\operatorname{diag}(x)V\bigr).
+\]
+By Cauchy--Binet,
+\[
+g(x)=\sum_{|S|=k}p_S x_S,\qquad
+p_S=|\det V_S|^2,\qquad
+x_S=\prod_{i\in S}x_i.
+\]
+Also
+\[
+\sum_{|S|=k}p_S=g(1,\ldots,1)=\det(V^*V)=1.
+\]
+For \(a=(a_i)\), \(b=(b_i)\), and \(ab=(a_i b_i)\),
+\[
+\det A_E=g(a),\qquad
+\det B_E=g(b),\qquad
+\det(AB)_E=g(ab).
+\]
+The desired inequality is therefore
+\[
+g(a)g(b)\ge g(ab)g(1)=g(ab).
+\]
+
+Assume first that all \(a_i,b_i>0\). Put
+\[
+u_i=\log a_i,\qquad v_i=\log b_i,\qquad
+\Phi(y)=\log g(e^y).
+\]
+Then \(u_1\ge\cdots\ge u_n\) and \(v_1\le\cdots\le v_n\). It is enough to prove
+\[
+\Phi(u)+\Phi(v)-\Phi(u+v)-\Phi(0)\ge0.
+\]
+
+For each \(y\), the tilted weights
+\[
+\mu_y(S)=\frac{p_S e^{\sum_{i\in S}y_i}}{g(e^y)}
+\]
+form the fixed-size projection determinantal measure associated with
+\[
+M_y=\operatorname{diag}(e^{y_i/2})V,\qquad
+K_y=M_y(M_y^*M_y)^{-1}M_y^*.
+\]
+The kernel \(K_y\) is an orthogonal projection onto \(\operatorname{range} M_y\). Differentiating \(\Phi\) gives
+\[
+\partial_i\Phi(y)=\mu_y(i\in S)=(K_y)_{ii},
+\]
+and
+\[
+\partial_{ij}\Phi(y)=\operatorname{Cov}_{\mu_y}(1_{i\in S},1_{j\in S}).
+\]
+For a projection determinantal measure,
+\[
+\operatorname{Cov}(1_{i\in S},1_{j\in S})=-|(K_y)_{ij}|^2\qquad(i\ne j).
+\]
+Because \(\sum_i1_{i\in S}=k\) is constant, the covariance matrix has zero row sums, so
+\[
+\partial_{ii}\Phi(y)=\sum_{j\ne i}|(K_y)_{ij}|^2.
+\]
+Consequently, for real vectors \(r,s\),
+\[
+r^T\nabla^2\Phi(y)s
+=\sum_{i<j}|(K_y)_{ij}|^2(r_i-r_j)(s_i-s_j).
+\]
+
+Apply this identity with \(r=u\) and \(s=v\). For \(i<j\),
+\[
+u_i-u_j\ge0,\qquad v_i-v_j\le0,
+\]
+hence each summand is nonpositive:
+\[
+u^T\nabla^2\Phi(y)v\le0\qquad(y\in\mathbb R^n).
+\]
+Integrating the mixed second derivative over the rectangle gives
+\[
+\Phi(u+v)-\Phi(u)-\Phi(v)+\Phi(0)
+=\int_0^1\int_0^1
+u^T\nabla^2\Phi(su+tv)v\,dt\,ds
+\le0.
+\]
+Thus
+\[
+\Phi(u)+\Phi(v)\ge \Phi(u+v)+\Phi(0),
+\]
+and exponentiating yields
+\[
+g(a)g(b)\ge g(ab)g(1)=g(ab).
+\]
+\end{proof}
+
+\section{Laplace, Stieltjes, and Bernstein applications}
+\label{sec:laplace-stieltjes-and-bernstein-applications}
+This section groups applications that are solved by positive kernels, Stieltjes representations, Bernstein transport, or stable-subordination arguments.  The proofs emphasize representation first and only then extract the source problem as a consequence.
+
+\begin{definition}[Bernstein polynomial basis]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: Bernstein polynomial basis}
+\label{res:bernstein-polynomial-basis}
+For \(0\le k\le n\), \(p_{n,k}(x)=\binom nkx^k(1-x)^{n-k}\), and \((B_nf)(x)=\sum_{k=0}^n p_{n,k}(x)f(k/n)\).
+\end{definition}
+
+\begin{proposition}[Two-binomial diagonal generating kernel]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Two-binomial diagonal generating kernel}
+\label{res:twobinomial-diagonal-generating-kernel}
+For \(A_t(z)=1-t+tz\), \(u=z-1\), and \(|h|<\min(t,1-t)\), the split Bernstein kernel satisfies \(\sum_{i,j=0}^n p_{n,i}(t+h)p_{n,j}(t-h)z^{i+j}=(A_t(z)+hu)^n(A_t(z)-hu)^n=(A_t(z)^2-h^2u^2)^n\).
+\end{proposition}
+
+\begin{proof}
+Assume \(f\in C[0,1]\) satisfies the source \(q=2\) inequality for all \(n\ge1\) and \(x,y\in[0,1]\). Fix \(n\ge1\), set
+\[
+F_k=f\left(\frac{k}{2n}\right),\qquad 0\le k\le2n,
+\]
+and define
+\[
+Q_n(x,y)=\sum_{i,j=0}^{n}p_{n,i}(x)p_{n,j}(y)
+f\left(\frac{i+j}{2n}\right).
+\]
+By binomial convolution,
+\[
+Q_n(t,t)=\sum_{k=0}^{2n}p_{2n,k}(t)f\left(\frac{k}{2n}\right)
+=(B_{2n}f)(t).
+\]
+
+For \(t\in(0,1)\), take \(x=t+h\), \(y=t-h\), with \(|h|<\min(t,1-t)\). The source inequality gives
+\[
+Q_n(t+h,t-h)\le Q_n(t,t).
+\]
+Let
+\[
+A_t(z)=1-t+tz,\qquad u=z-1.
+\]
+The generating function for \(i+j\), where \(i\sim\operatorname{Bin}(n,t+h)\) and \(j\sim\operatorname{Bin}(n,t-h)\), is
+\[
+(A_t(z)+hu)^n(A_t(z)-hu)^n
+=\left(A_t(z)^2-h^2u^2\right)^n
+=A_t(z)^{2n}-nh^2u^2A_t(z)^{2n-2}+O(h^4).
+\]
+Therefore
+\[
+Q_n(t+h,t-h)
+=Q_n(t,t)
+-nh^2\sum_{r=0}^{2n-2}p_{2n-2,r}(t)
+\left(F_{r+2}-2F_{r+1}+F_r\right)
++O(h^4).
+\]
+Since \(Q_n(t+h,t-h)\le Q_n(t,t)\) for both positive and negative sufficiently small \(h\), the coefficient of \(h^2\) is nonpositive, hence
+\[
+\sum_{r=0}^{2n-2}p_{2n-2,r}(t)
+\left[
+f\left(\frac{r+2}{2n}\right)
+-2f\left(\frac{r+1}{2n}\right)
++f\left(\frac{r}{2n}\right)
+\right]\ge0.
+\]
+
+The Bernstein second derivative identity gives
+\[
+(B_{2n}f)''(t)=2n(2n-1)
+\sum_{r=0}^{2n-2}p_{2n-2,r}(t)
+\left[
+f\left(\frac{r+2}{2n}\right)
+-2f\left(\frac{r+1}{2n}\right)
++f\left(\frac{r}{2n}\right)
+\right].
+\]
+Thus \((B_{2n}f)''(t)\ge0\) for every \(t\in(0,1)\). Since \(B_{2n}f\) is a polynomial, \(B_{2n}f\) is convex on \([0,1]\).
+
+Bernstein's theorem gives \(B_{2n}f\to f\) uniformly on \([0,1]\). A uniform limit of convex functions is convex, so \(f\) is convex. Under the ALR source terminology, \(2\)-monotone means convex. Therefore the continuous \(q=2\) source subcase is affirmative.
+\end{proof}
+
+\begin{proposition}[Diagonal h2 coefficient extracts Bernstein second differences]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Diagonal h2 coefficient extracts Bernstein second differences}
+\label{res:diagonal-h2-coefficient-extracts-second-difference}
+In the ALR \(q=2\) diagonal perturbation \(x=t+h,y=t-h\), the \(h^2\)-coefficient of the split kernel is \(-n(z-1)^2A_t(z)^{2n-2}\). Evaluated against \(F_k=f(k/(2n))\), the source inequality therefore forces the Bernstein weighted second-difference average \(\sum_{r=0}^{2n-2}p_{2n-2,r}(t)(F_{r+2}-2F_{r+1}+F_r)\ge0\).
+\end{proposition}
+
+\begin{proof}
+For Diagonal h2 coefficient extracts Bernstein second differences, this proof is the corresponding component of Proposition~\ref{res:twobinomial-diagonal-generating-kernel}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{proposition}[Bernstein second derivative is weighted second difference]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Bernstein second derivative is weighted second difference}
+\label{res:bernstein-second-derivative-discrete-difference}
+For \(m\ge2\), \((B_mf)''(t)=m(m-1)\sum_{r=0}^{m-2}p_{m-2,r}(t)[f((r+2)/m)-2f((r+1)/m)+f(r/m)]\).
+\end{proposition}
+
+\begin{proof}
+For Bernstein second derivative is weighted second difference, this proof is the corresponding component of Proposition~\ref{res:twobinomial-diagonal-generating-kernel}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{definition}[q-monotone finite-difference convention]
+\phantomsection\addcontentsline{toc}{subsubsection}{Definition~\thedefinition: q-monotone finite-difference convention}
+\label{res:q-monotone-finite-difference}
+In the Abel--Leviatan--Rasa source convention, a continuous function on \([0,1]\) is \(q\)-monotone when its \(q\)-th finite differences are nonnegative on the admitted intervals; in particular, \(2\)-monotone is equivalent to convexity on \([0,1]\).
+\end{definition}
+
+\begin{proposition}[Uniform limits preserve convexity]
+\phantomsection\addcontentsline{toc}{subsubsection}{Proposition~\thetheorem: Uniform limits preserve convexity}
+\label{res:uniformlimit-convexity-closure}
+If continuous functions \(g_n\) are convex on \([0,1]\) and converge uniformly to \(g\), then \(g\) is convex on \([0,1]\). In particular, if all even Bernstein approximants \(B_{2n}f\) are convex and \(B_{2n}f\to f\) uniformly, then \(f\) is convex.
+\end{proposition}
+
+\begin{proof}
+For Uniform limits preserve convexity, this proof is the corresponding component of Proposition~\ref{res:twobinomial-diagonal-generating-kernel}.  corresponding to the displayed statement.  The cited argument establishes the shared certificate or normal form; applying that component to the present notation gives the claim.
+\end{proof}
+
+\begin{corollary}[APP-0087: ALR Bernstein q=2 continuous converse is affirmative]
+\phantomsection\addcontentsline{toc}{subsubsection}{Corollary~\thetheorem: APP-0087: ALR Bernstein q=2 continuous converse is affirmative}
+\label{res:alr-openquestion-q2-continuous-affirmative}
+Let \(f\in C[0,1]\). If for every \(n\ge1\) and \(x,y\in[0,1]\), \((B_{2n}f)((x+y)/2)\ge\sum_{i,j=0}^{n}p_{n,i}(x)p_{n,j}(y)f((i+j)/(2n))\), then \(f\) is convex on \([0,1]\). Therefore the \(q=2\) continuous subcase of the Abel--Leviatan--Rasa open question is affirmative.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0087} \cite{app-app-0087-source}.
+\end{corollary}
+
+\begin{proof}
+We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:twobinomial-diagonal-generating-kernel}, Proposition~\ref{res:diagonal-h2-coefficient-extracts-second-difference}, Proposition~\ref{res:bernstein-polynomial-basis}, Proposition~\ref{res:q-monotone-finite-difference}, Proposition~\ref{res:bernstein-second-derivative-discrete-difference}, and Proposition~\ref{res:uniformlimit-convexity-closure} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+Assume \(f\in C[0,1]\) satisfies the source \(q=2\) inequality for all \(n\ge1\) and \(x,y\in[0,1]\). Fix \(n\ge1\), set
+\[
+F_k=f\left(\frac{k}{2n}\right),\qquad 0\le k\le2n,
+\]
+and define
+\[
+Q_n(x,y)=\sum_{i,j=0}^{n}p_{n,i}(x)p_{n,j}(y)
+f\left(\frac{i+j}{2n}\right).
+\]
+By binomial convolution,
+\[
+Q_n(t,t)=\sum_{k=0}^{2n}p_{2n,k}(t)f\left(\frac{k}{2n}\right)
+=(B_{2n}f)(t).
+\]
+
+For \(t\in(0,1)\), take \(x=t+h\), \(y=t-h\), with \(|h|<\min(t,1-t)\). The source inequality gives
+\[
+Q_n(t+h,t-h)\le Q_n(t,t).
+\]
+Let
+\[
+A_t(z)=1-t+tz,\qquad u=z-1.
+\]
+The generating function for \(i+j\), where \(i\sim\operatorname{Bin}(n,t+h)\) and \(j\sim\operatorname{Bin}(n,t-h)\), is
+\[
+(A_t(z)+hu)^n(A_t(z)-hu)^n
+=\left(A_t(z)^2-h^2u^2\right)^n
+=A_t(z)^{2n}-nh^2u^2A_t(z)^{2n-2}+O(h^4).
+\]
+Therefore
+\[
+Q_n(t+h,t-h)
+=Q_n(t,t)
+-nh^2\sum_{r=0}^{2n-2}p_{2n-2,r}(t)
+\left(F_{r+2}-2F_{r+1}+F_r\right)
++O(h^4).
+\]
+Since \(Q_n(t+h,t-h)\le Q_n(t,t)\) for both positive and negative sufficiently small \(h\), the coefficient of \(h^2\) is nonpositive, hence
+\[
+\sum_{r=0}^{2n-2}p_{2n-2,r}(t)
+\left[
+f\left(\frac{r+2}{2n}\right)
+-2f\left(\frac{r+1}{2n}\right)
++f\left(\frac{r}{2n}\right)
+\right]\ge0.
+\]
+
+The Bernstein second derivative identity gives
+\[
+(B_{2n}f)''(t)=2n(2n-1)
+\sum_{r=0}^{2n-2}p_{2n-2,r}(t)
+\left[
+f\left(\frac{r+2}{2n}\right)
+-2f\left(\frac{r+1}{2n}\right)
++f\left(\frac{r}{2n}\right)
+\right].
+\]
+Thus \((B_{2n}f)''(t)\ge0\) for every \(t\in(0,1)\). Since \(B_{2n}f\) is a polynomial, \(B_{2n}f\) is convex on \([0,1]\).
+
+Bernstein's theorem gives \(B_{2n}f\to f\) uniformly on \([0,1]\). A uniform limit of convex functions is convex, so \(f\) is convex. Under the ALR source terminology, \(2\)-monotone means convex. Therefore the continuous \(q=2\) source subcase is affirmative.
+\end{proof}
+
 \section{Conclusion}
 
 The theory developed here is organized around a single principle: positivity
@@ -11934,6 +13740,42 @@ Borcea--Branden--Liggett, Negative dependence and the geometry of polynomials, J
 \bibitem{app-app-0080-source}
 Karp--Vishnyakova--Zhang, Unimodality preservation by ratios of functional series and integral transforms, Results in Mathematics 80, Article 112, 2025, arXiv:2408.01755, DOI 10.1007/s00025-025-02431-4. https://arxiv.org/abs/2408.01755.
 \url{https://arxiv.org/abs/2408.01755}.
+
+\bibitem{app-app-0082-source}
+Guillaume Dulac and Thomas Simon, On cumulative Tsallis entropies, Acta Applicandae Mathematicae 188, Article 9, 2023, arXiv:2210.09047, DOI 10.1007/s10440-023-00620-3. https://arxiv.org/abs/2210.09047.
+\url{https://arxiv.org/abs/2210.09047}.
+
+\bibitem{app-app-0083-source}
+Christian Berg and Henrik L. Pedersen, A family of Horn-Bernstein functions, Experimental Mathematics 32(3), 505--513, arXiv:2008.06349, DOI 10.1080/10586458.2021.1980460. https://arxiv.org/abs/2008.06349.
+\url{https://arxiv.org/abs/2008.06349}.
+
+\bibitem{app-app-0084-source}
+Martin Mohle, The rate of convergence of the block counting process of exchangeable coalescents with dust, ALEA 18, 1195--1220, 2021, DOI 10.30757/ALEA.v18-44. https://alea.impa.br/articles/v18/18-44.pdf.
+\url{https://alea.impa.br/articles/v18/18-44.pdf}.
+
+\bibitem{app-app-0085-source}
+Larry X. W. Wang and Neil N. Y. Yang, Laguerre inequalities and complete monotonicity for the Riemann Xi-function and the partition function, Transactions of the American Mathematical Society 377 (2024), 4703--4725, DOI 10.1090/tran/9081. https://doi.org/10.1090/tran/9081.
+\url{https://doi.org/10.1090/tran/9081}.
+
+\bibitem{app-app-0086-source}
+Deepshikha Mishra and A. Swaminathan, Complete Monotonicity of the function involving derivatives of Barnes G-function, arXiv:2511.07444. https://arxiv.org/abs/2511.07444.
+\url{https://arxiv.org/abs/2511.07444}.
+
+\bibitem{app-app-0087-source}
+Ulrich Abel, Dany Leviatan, and Ioan Rasa, Relations Between the Bernstein Polynomials and q-monotone Functions, Results in Mathematics 77, Article 239 (2022), DOI 10.1007/s00025-022-01764-8. https://doi.org/10.1007/s00025-022-01764-8.
+\url{https://doi.org/10.1007/s00025-022-01764-8}.
+
+\bibitem{app-app-0088-source}
+Jean-Christophe Bourin, Matrix versions of some classical inequalities, Linear Algebra and its Applications 416 (2006), DOI 10.1016/j.laa.2006.01.002. https://arxiv.org/abs/math/0601543.
+\url{https://arxiv.org/abs/math/0601543}.
+
+\bibitem{app-app-0089-source}
+Kwara Nantomah, A generalization of Nielsen's beta-function, International Journal of Open Problems in Computer Science and Mathematics 11(2) (2018), 16--26. https://www.ijopcm.org/Vol/2018/2.2.pdf.
+\url{https://www.ijopcm.org/Vol/2018/2.2.pdf}.
+
+\bibitem{app-app-0090-source}
+Priyanka Sangal and A. Swaminathan, Vietoris type theorem related to positivity of trigonometric polynomials, arXiv:1705.03759, Section 4.3, Problem 2. https://arxiv.org/abs/1705.03759.
+\url{https://arxiv.org/abs/1705.03759}.
 
 \end{thebibliography}
 

@@ -1,7 +1,7 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0080` appear in `theory/latest/THEORY.tex` under the manuscript
+`APP-0001`--`APP-0070` appear in `theory/latest/THEORY.tex` under the manuscript
 `Applications` section and in the corresponding theorem names. Applications through
 `APP-0080` are currently staged in `THEORY_v017`.
 
@@ -1193,3 +1193,153 @@ Resolve the source problem recorded for APP-0079: BBL determinantal stable Loewn
 #### Stated problem
 
 Resolve the source problem recorded for APP-0080: q-gamma Hankel kernel is strictly totally positive. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v017/THEORY_v017.tex`.
+
+### APP-0081: JKS remaining integer powers fail finite total nonnegativity
+
+- source reference: Apoorva Khare, Multiply positive functions, critical exponent phenomena, and the Jain-Karlin-Schoenberg kernel, arXiv:2008.05121. https://arxiv.org/abs/2008.05121
+- solution: JKS remaining integer powers fail finite total nonnegativity
+- solution status: Solved
+- solution node: `wiki/nodes/T-JKS-IntegerPowers-Mge3-NotTN.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `B-Cutoff-Column-Against-CorankOne-Gram`, `D-JKS-Kernel`, `D-TNKernel-FiniteOrder`, `L-PSD-Minor-Obstructs-TN`, `T-Exact-finite-certificate-verification-principle`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0081: JKS remaining integer powers fail finite total nonnegativity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0082: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false
+
+- source reference: Guillaume Dulac and Thomas Simon, On cumulative Tsallis entropies, Acta Applicandae Mathematicae 188, Article 9, 2023, arXiv:2210.09047, DOI 10.1007/s10440-023-00620-3. https://arxiv.org/abs/2210.09047
+- solution: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-DulacSimon-TsallisGammaRatio-NotCM.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `B-SymmetricBeta-BetaLogistic-LaplaceKernel`, `B-SignedInverseLaplace-Density-Negativity-Obstruction`, `T-positive-Laplace-kernel-complete-monotonicity-principle`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0082: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0083: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff
+
+- source reference: Christian Berg and Henrik L. Pedersen, A family of Horn-Bernstein functions, Experimental Mathematics 32(3), 505--513, arXiv:2008.06349, DOI 10.1080/10586458.2021.1980460. https://arxiv.org/abs/2008.06349
+- solution: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff
+- solution status: Solved
+- solution node: `wiki/nodes/T-BergPedersen-HornBernstein-a-NotHausdorff.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `B-HausdorffMoment-FiniteDifference-Criterion`, `B-HornBernstein-FirstEight-a-ExactRationals`, `T-Exact-finite-certificate-verification-principle`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0083: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0084: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer
+
+- source reference: Martin Mohle, The rate of convergence of the block counting process of exchangeable coalescents with dust, ALEA 18, 1195--1220, 2021, DOI 10.30757/ALEA.v18-44. https://alea.impa.br/articles/v18/18-44.pdf
+- solution: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer
+- solution status: Solved
+- solution node: `wiki/nodes/T-Mohle-Problem63-FiniteKernel-Positive.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `D-Mohle-BlockCounting-Problem63-Language`, `B-Mohle-BinomialCollisionKernel-Integral`, `B-Mohle-OrderedPair-Simplex-Domination`, `B-Mohle-CountableSimplex-TruncationClosure`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0084: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0085: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false
+
+- source reference: Larry X. W. Wang and Neil N. Y. Yang, Laguerre inequalities and complete monotonicity for the Riemann Xi-function and the partition function, Transactions of the American Mathematical Society 377 (2024), 4703--4725, DOI 10.1090/tran/9081. https://doi.org/10.1090/tran/9081
+- solution: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-WangYang-LP-PositiveDecreasing-CM-OpenProblem-Refuted.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `D-LP-EGF-Coefficient-Sequence`, `D-ForwardDifference-CompleteMonotone-Sequence`, `L-LP-OneFactor-Exponential-Atom`, `L-EGF-OneFactor-Atom-SecondDifference-Defect`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0085: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0086: Poly-double-gamma derivative Hankel matrix has fixed spectral sign
+
+- source reference: Deepshikha Mishra and A. Swaminathan, Complete Monotonicity of the function involving derivatives of Barnes G-function, arXiv:2511.07444. https://arxiv.org/abs/2511.07444
+- solution: Poly-double-gamma derivative Hankel matrix has fixed spectral sign
+- solution status: Solved
+- solution node: `wiki/nodes/T-PolyDoubleGamma-Hankel-Matrix-Inertia.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `D-PolyDoubleGamma-Derivative-Hankel-Matrix`, `B-PolyDoubleGamma-Derivative-Laplace-Representation`, `L-Signed-Hankel-Moment-Gram-StrictPD`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0086: Poly-double-gamma derivative Hankel matrix has fixed spectral sign. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0087: ALR Bernstein q=2 continuous converse is affirmative
+
+- source reference: Ulrich Abel, Dany Leviatan, and Ioan Rasa, Relations Between the Bernstein Polynomials and q-monotone Functions, Results in Mathematics 77, Article 239 (2022), DOI 10.1007/s00025-022-01764-8. https://doi.org/10.1007/s00025-022-01764-8
+- solution: ALR Bernstein q=2 continuous converse is affirmative
+- solution status: Solved
+- solution node: `wiki/nodes/T-ALR-OpenQuestion-q2-Continuous-Affirmative.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `D-Bernstein-Polynomial-Basis`, `D-q-Monotone-Finite-Difference`, `L-TwoBinomial-Diagonal-Generating-Kernel`, `L-Diagonal-h2-Coefficient-Extracts-Second-Difference`, `L-Bernstein-Second-Derivative-Discrete-Difference`, `L-UniformLimit-Convexity-Closure`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0087: ALR Bernstein q=2 continuous converse is affirmative. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0088: Bourin antimonotone compression determinant inequality is affirmative
+
+- source reference: Jean-Christophe Bourin, Matrix versions of some classical inequalities, Linear Algebra and its Applications 416 (2006), DOI 10.1016/j.laa.2006.01.002. https://arxiv.org/abs/math/0601543
+- solution: Bourin antimonotone compression determinant inequality is affirmative
+- solution status: Solved
+- solution node: `wiki/nodes/T-Bourin-Antimonotone-CompressionDet-AllSubspaces.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `D-Antimonotone-Positive-Pair`, `D-Compression-Determinant-Polynomial`, `L-CompressionDet-CauchyBinet-Measure`, `L-ProjectionDPP-Covariance-Laplacian`, `L-OppositeOrder-LogDet-Chebyshev`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0088: Bourin antimonotone compression determinant inequality is affirmative. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0089: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false
+
+- source reference: Kwara Nantomah, A generalization of Nielsen's beta-function, International Journal of Open Problems in Computer Science and Mathematics 11(2) (2018), 16--26. https://www.ijopcm.org/Vol/2018/2.2.pdf
+- solution: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false
+- solution status: Solved
+- solution node: `wiki/nodes/T-Nantomah-pBeta-NormalizedDerivativeCM-False-p1n1.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `D-Nantomah-pBeta-2018`, `L-pBeta-Normalized-Derivative-FiniteSum`, `L-CM-Pointwise-SecondDerivative-Obstruction`, `T-Exact-finite-certificate-verification-principle`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0089: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.
+
+### APP-0090: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set
+
+- source reference: Priyanka Sangal and A. Swaminathan, Vietoris type theorem related to positivity of trigonometric polynomials, arXiv:1705.03759, Section 4.3, Problem 2. https://arxiv.org/abs/1705.03759
+- solution: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set
+- solution status: Solved
+- solution node: `wiki/nodes/T-Komatu-Caratheodory-Problem2-Literal-Refuted.md`
+- theory version: `v018`
+- stage: `stage_v018`
+- review status: no contact
+- dependencies: `D-Analytic-Unit-Disk-Classes`, `D-Caratheodory-Class-Normalization`, `D-SangalSwaminathan-Komatu-Problem2-Literal`, `L-ZeroConstant-Transform-Not-Caratheodory`
+
+#### Stated problem
+
+Resolve the source problem recorded for APP-0090: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v018/THEORY_v018.tex`.

@@ -1,11 +1,11 @@
 {
-  "stage_id": "stage_v017",
-  "theory_version": "v017",
+  "stage_id": "stage_v018",
+  "theory_version": "v018",
   "authors": [
     "Domingos S. P. Salazar",
     "Pudim AI"
   ],
-  "created_at": "2026-06-21T13:56:35Z",
+  "created_at": "2026-06-22T18:58:22Z",
   "source_root": ".",
   "status": "pdf_compiled",
   "public_scope": "public_repo",
@@ -13,10 +13,10 @@
   "staged_input_policy": "synthesize",
   "frontier_render_policy": "report-only",
   "case_study_count": 6,
-  "previous_tex": "theory/latest/THEORY.tex",
+  "previous_tex": "theory/versions/v017/THEORY_v017.tex",
   "previous_spec": "",
-  "latex_path": "theory/versions/v017/THEORY_v017.tex",
-  "pdf_path": "theory/versions/v017/THEORY_v017.pdf",
+  "latex_path": "theory/versions/v018/THEORY_v018.tex",
+  "pdf_path": "theory/versions/v018/THEORY_v018.pdf",
   "latest_pdf_path": "theory/latest/THEORY.pdf",
   "spec_path": "",
   "latest_spec_path": "",
@@ -29,8 +29,8 @@
     "STAGE_MANIFEST.json"
   ],
   "node_counts": {
-    "true": 577,
-    "open": 333,
+    "true": 624,
+    "open": 351,
     "included_true": 80,
     "included_open": 40
   },
@@ -58,9 +58,9 @@
   "audit": {
     "issues": []
   },
-  "wiki_snapshot_path": "wiki/versions/stage_v017",
+  "wiki_snapshot_path": "wiki/versions/stage_v018",
   "wiki_latest_path": "wiki/latest",
-  "wiki_node_count": 926,
-  "wiki_edge_count": 1548,
+  "wiki_node_count": 991,
+  "wiki_edge_count": 1824,
   "pdf_engine": "auto"
 }
