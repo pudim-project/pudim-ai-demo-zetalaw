@@ -1,0 +1,175 @@
+---
+id: "T-Q2-remaining-finite-middle-9-50-9-10-qJ-cover"
+type: "theorem"
+title: "remaining finite middle cover proves Q2 below qJ on [9/50,1409/5000] union [293/1000,9/10]"
+status: "proved"
+tags: ["direct-log", "finite-middle", "outside-cover", "proved", "student", "theorem"]
+parents: ["T-Exact-finite-certificate-verification-principle", "D-Rational-certificate-and-finite-cover-language"]
+refs: ["raw/student/20260525T195521-q2-remainder-log-taylor-assembly-roll.md", "raw/student/20260525T195521-q2-remaining-finite-middle-cover.py"]
+---
+
+# Theorem: remaining finite middle cover proves Q2 below qJ on [9/50,1409/5000] union [293/1000,9/10]
+
+## Statement
+
+A finite rational certificate proves \(Q_2(x)<q_J\) on \([9/50,1409/5000]\cup[293/1000,9/10]\). The interval \([9/50,221050/1000000]\) is covered by the analytic bound \(R(x)>Z_3(1/x)>x^{1157/500}\), and the intervals \([221050/1000000,1409/5000]\) and \([293/1000,9/10]\) are covered by direct range-reduced logarithm comparisons \(\log R(x)>(115727/50000)\log x\), with \(115727/50000<q_J\).
+
+## Dependencies
+
+- [[wiki/nodes/T-Exact-finite-certificate-verification-principle|Exact finite certificate verification principle]]
+- [[wiki/nodes/D-Rational-certificate-and-finite-cover-language|Rational certificates and finite covers]]
+
+## Proof and provenance references
+
+- `raw/student/20260525T195521-q2-remainder-log-taylor-assembly-roll.md`
+- `raw/student/20260525T195521-q2-remaining-finite-middle-cover.py`
+
+## Proof
+
+This script proves a true auxiliary finite-middle outside-cover node:
+
+the Q2 remaining finite middle 9 50 9 10 qJ cover.
+
+The replayable certificate is:
+
+\begin{verbatim}
+\end{verbatim}
+
+It proves
+\[
+Q_2(x)<q_J
+\]
+on
+\[
+\left[\frac9{50},\frac{1409}{5000}\right]
+\cup
+\left[\frac{293}{1000},\frac9{10}\right].
+\]
+
+The left bridge \([9/50,221050/1000000]\) uses the already-derived identity
+\[
+3xZ_4(x)-Z_3(x)
+=2x^{-3}+\sum_{k=1}^{\infty}\frac{2x-k}{(x+k)^4}.
+\]
+For \(x<1/2\), this gives
+\[
+R(x)>Z_3(1/x).
+\]
+The certificate proves
+\[
+Z_3(1/x)>x^{1157/500}
+\]
+on \([9/50,221050/1000000]\). Since
+\[
+\frac{1157}{500}<\frac{115727}{50000}<q_J,
+\]
+this gives \(Q_2(x)<q_J\) on the bridge.
+
+The remaining two subintervals use the direct comparison
+\[
+\log R(x)>\frac{115727}{50000}\log x.
+\]
+Since \(\log x<0\), this implies
+\[
+Q_2(x)<\frac{115727}{50000}<q_J.
+\]
+The script uses power-of-two range reduction for the atanh logarithm enclosure:
+\[
+\log r=\log(2^k r)-k\log 2,
+\]
+so every logarithm is evaluated with an argument in \([1,2)\).
+
+The certificate output was:
+
+\begin{verbatim}
+interval_count 245
+worst_margin_positive True
+interval_count 3739
+worst_margin_positive True
+interval_count 3801
+worst_margin_positive True
+\end{verbatim}
+
+Together with the earlier true covers \((0,9/50]\) and \([9/10,1)\), this covers all outside-compact points below \(q_J\).
+
+This certificate also proves:
+
+the Q2 compact monotonicity J certificate.
+
+The replayable certificate is:
+
+\begin{verbatim}
+\end{verbatim}
+
+Let
+\[
+H(x)=\Lambda(x)+x\Lambda'(x).
+\]
+Using \(Z_s'(x)=-sZ_{s+1}(x)\) and
+\[
+\frac{d}{dx}Z_s(1/x)=s x^{-2} Z_{s+1}(1/x),
+\]
+the script builds a rational interval enclosure for \(H\) using \(Z_3,\ldots,Z_6\) at \(x\) and \(Z_3,\ldots,Z_5\) at \(1/x\). It proves
+\[
+H(x)>0
+\qquad
+\left(\frac{1409}{5000}\le x\le\frac{293}{1000}\right).
+\]
+
+Since
+\[
+G'(x)=\log x\,H(x)
+\]
+and \(\log x<0\) on the compact bracket, this gives
+\[
+G'(x)<0.
+\]
+The existing endpoint certificate proves
+\[
+G(287345/1000000)>0,
+\qquad
+G(287346/1000000)<0.
+\]
+Therefore \(G\) has a unique zero
+\[
+\xi\in J=\left[\frac{287345}{1000000},\frac{287346}{1000000}\right],
+\]
+with \(G>0\) to the left of \(J\) and \(G<0\) to the right of \(J\) on the compact bracket.
+
+Because
+\[
+Q_2'(x)=\frac{G(x)}{x(\log x)^2},
+\]
+\(Q_2\) is increasing before \(\xi\) and decreasing after \(\xi\) on the compact bracket.
+
+The certificate output was:
+
+\begin{verbatim}
+\end{verbatim}
+
+The true cover package is now:
+
+\[
+(0,9/50]\cup
+\left[9/50,\frac{1409}{5000}\right]\cup
+\left[\frac{293}{1000},9/10\right]\cup
+[9/10,1).
+\]
+
+All points outside the compact bracket have \(Q_2(x)<q_J\), and \(q_J<Q_2(\xi)\) by the certified inner witness. On the compact bracket, \(Q_2\) has a unique maximum at the unique zero \(\xi\in J\). Thus
+\[
+L_2=Q_2(\xi).
+\]
+
+At \(\beta=Q_2(\xi)\), the defining inequality has equality at \(x=\xi\), so the lower endpoint is excluded. The known upper endpoint remains included. Therefore
+\[
+\mathcal I_2=(Q_2(\xi),3].
+\]
+
+This proves the terminal exact endpoint node.
+
+_Proof source: `raw/student/20260525T195521-q2-remainder-log-taylor-assembly-roll.md`._
+
+## Tags
+
+`direct-log`, `finite-middle`, `outside-cover`, `proved`, `student`, `theorem`
