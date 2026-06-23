@@ -2,14 +2,14 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v020`, staged on 2026-06-22.
+This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v021`, staged on 2026-06-23.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v020/THEORY_v020.tex`](theory/versions/v020/THEORY_v020.tex)
-- Versioned PDF: [`theory/versions/v020/THEORY_v020.pdf`](theory/versions/v020/THEORY_v020.pdf)
+- Versioned TeX: [`theory/versions/v021/THEORY_v021.tex`](theory/versions/v021/THEORY_v021.tex)
+- Versioned PDF: [`theory/versions/v021/THEORY_v021.pdf`](theory/versions/v021/THEORY_v021.pdf)
 
 ## Abstract
 
@@ -17,7 +17,7 @@ We study the Riemann zeta function as the partition function of the probability 
 
 The public theory develops a common positivity calculus for zeta, gamma, polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, Bernstein, determinant, moment-ratio, endpoint-obstruction, and finite Weyl-algebra applications. Its reusable mechanisms include Laplace kernels, moment-ratio reductions, determinant compression, stable subordination, triangular coefficient extraction, endpoint obstructions, exact rational certificates, and Wick-dual extremal functionals.
 
-The public ledger for `v020` contains 90 solved applications, `APP-0001` through `APP-0090`, with immutable APP identifiers and source references.
+The public ledger for `v021` contains 91 solved applications, `APP-0001` through `APP-0091`, with immutable APP identifiers and source references.
 
 ## Applications
 
@@ -115,13 +115,14 @@ All entries below are `Solved`; detailed statements, proofs, and review notes ar
 | APP-0088 | Bourin antimonotone compression determinant inequality is affirmative | [Jean-Christophe Bourin, Matrix versions of some classical inequalities, Linear Algebra and...](https://arxiv.org/abs/math/0601543) |
 | APP-0089 | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | [Kwara Nantomah, A generalization of Nielsen's beta-function, International Journal of Open...](https://www.ijopcm.org/Vol/2018/2.2.pdf) |
 | APP-0090 | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | [Priyanka Sangal and A. Swaminathan, Vietoris type theorem related to positivity of trigono...](https://arxiv.org/abs/1705.03759) |
+| APP-0091 | Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution | [Matthieu Jonckheere and Seva Shneer, Waves Everywhere: A Distributional Equation Approach...](https://arxiv.org/abs/2604.16956) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v020`.
-The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v020`](wiki/versions/stage_v020).
+The latest staged theory snapshot is `stage_v021`.
+The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v021`](wiki/versions/stage_v021).
 
 ## Reading Notes
 

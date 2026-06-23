@@ -30,7 +30,7 @@
 
 \title{A Laplace-Positivity Calculus for Special-Function Inequalities and Source Problems}
 \author{Domingos S. P. Salazar \and Pudim AI}
-\date{Version v020 -- 2026-06-22}
+\date{Version v021 -- 2026-06-23}
 
 \setcounter{tocdepth}{3}
 \begin{document}
@@ -184,6 +184,7 @@ The following list records the external source problems solved in the paper.  Ea
 \item \label{ledger:app-0088}\textbf{APP-0088.} Bourin antimonotone compression determinant inequality is affirmative. Solved by Corollary~\ref{res:bourin-antimonotone-compressiondet-allsubspaces}; source problem reference \cite{app-app-0088-source}.
 \item \label{ledger:app-0089}\textbf{APP-0089.} Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false. Solved by Counterexample~\ref{res:nantomah-pbeta-normalizedderivativecm-false-p1n1}; source problem reference \cite{app-app-0089-source}.
 \item \label{ledger:app-0090}\textbf{APP-0090.} Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set. Solved by Counterexample~\ref{res:komatu-caratheodory-problem2-literal-refuted}; source problem reference \cite{app-app-0090-source}.
+\item \label{ledger:app-0091}\textbf{APP-0091.} Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution. Solved by Counterexample~\ref{res:equation16-deterministicscale-weibull-noncm-solution}; source problem reference \cite{app-app-0091-source}.
 \end{enumerate}
 
 \section{Zeta-law calculus}
@@ -8150,7 +8151,7 @@ This resolves the source problem recorded as \textbf{APP-0060} \cite{app-app-006
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:baricz-analyticquotient-secondcoefficientobstruction}, Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:endpoint-obstruction-certificate-language}, and Proposition~\ref{res:baricz-geometricsequence-strictcm} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:baricz-analyticquotient-secondcoefficientobstruction}, Proposition~\ref{res:endpoint-obstruction-certificate-language}, and Proposition~\ref{res:baricz-geometricsequence-strictcm} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Define
 \[
@@ -12138,7 +12139,7 @@ This resolves the source problem recorded as \textbf{APP-0085} \cite{app-app-008
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:hausdorffmoment-finitedifference-criterion}, Proposition~\ref{res:egf-onefactor-atom-seconddifference-defect}, Proposition~\ref{res:lp-onefactor-exponential-atom}, Proposition~\ref{res:egf-onefactor-atom-coefficient-extraction}, and Proposition~\ref{res:egf-onefactor-atom-decreasing-window} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:hausdorffmoment-finitedifference-criterion}, Proposition~\ref{res:egf-onefactor-atom-seconddifference-defect}, Proposition~\ref{res:lp-onefactor-exponential-atom}, Proposition~\ref{res:egf-onefactor-atom-coefficient-extraction}, and Proposition~\ref{res:egf-onefactor-atom-decreasing-window} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Let
 \[
@@ -12272,7 +12273,7 @@ This resolves the source problem recorded as \textbf{APP-0089} \cite{app-app-008
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:exact-finite-certificate-verification-principle}, Proposition~\ref{res:nantomah-pbeta-2018}, Proposition~\ref{res:pbeta-normalized-derivative-finitesum}, and Proposition~\ref{res:cm-pointwise-secondderivative-obstruction} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language}, Proposition~\ref{res:nantomah-pbeta-2018}, Proposition~\ref{res:pbeta-normalized-derivative-finitesum}, Proposition~\ref{res:cm-pointwise-secondderivative-obstruction}, and Proposition~\ref{res:exact-finite-certificate-verification-principle} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 Take \(p=1\) and \(n=1\). Then
 \[
@@ -12510,7 +12511,7 @@ This resolves the source problem recorded as \textbf{APP-0083} \cite{app-app-008
 \end{counterexample}
 
 \begin{proof}
-We use Proposition~\ref{res:exact-finite-certificate-verification-principle} and Proposition~\ref{res:hausdorffmoment-finitedifference-criterion} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language} and Proposition~\ref{res:hausdorffmoment-finitedifference-criterion} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
 
 The proof below uses the source recurrence and exact rational arithmetic
 
@@ -13383,6 +13384,82 @@ Thus \((B_{2n}f)''(t)\ge0\) for every \(t\in(0,1)\). Since \(B_{2n}f\) is a poly
 Bernstein's theorem gives \(B_{2n}f\to f\) uniformly on \([0,1]\). A uniform limit of convex functions is convex, so \(f\) is convex. Under the ALR source terminology, \(2\)-monotone means convex. Therefore the continuous \(q=2\) source subcase is affirmative.
 \end{proof}
 
+\section{Endpoint obstruction certificates}
+\label{sec:endpoint-obstruction-certificates}
+This section collects applications in which a universal positivity, convexity, or monotonicity claim is decided by reducing it to a local obstruction.  The common method is to isolate a boundary, endpoint, or explicit witness where the proposed sign pattern cannot hold.
+
+\begin{counterexample}[APP-0091: Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution]
+\phantomsection\addcontentsline{toc}{subsubsection}{Counterexample~\thetheorem: APP-0091: Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail...}
+\label{res:equation16-deterministicscale-weibull-noncm-solution}
+For every \(b\in(1/2,1)\) and \(c>0\), let \(\alpha=\log(1/2)/\log b>1\), let \(\widetilde B=b\) almost surely, and set \(F(x)=e^{-cx^\alpha}\) on \([0,\infty)\). Then \(F\) is a continuous non-increasing survival function satisfying Jonckheere--Shneer equation (16), \(F(x)=\int_0^\infty F(xu)^2\,\mathbb P(\widetilde B\in du)\), but \(F\) is not completely monotone.
+
+
+
+This resolves the source problem recorded as \textbf{APP-0091} \cite{app-app-0091-source}.
+\end{counterexample}
+
+\begin{proof}
+We use Proposition~\ref{res:complete-monotonicity-bernstein-stieltjes-language} and Proposition~\ref{res:endpoint-obstruction-certificate-language} as the upstream structural result. The source-specific objects in the statement are then verified as follows.
+
+This proof addresses the literal transformed nonlinear tail equation printed as
+\[
+F(x)=\int_0^\infty F(xb)^2\,\mathbb P(\widetilde B\in db).
+\]
+
+The source observes that this equation has the same form as the completely
+monotone Laplace-transform equation, but here one seeks only a non-increasing
+tail-type function \(F\), and explicitly asks whether solutions that are not
+completely monotone exist.
+
+The APP statement is deliberately restricted to this literal equation-(16)
+existential question. It does not classify all laws of \(\widetilde B\), and it
+does not translate the witness back through the source's sign convention for
+the original \(\xi\)-equation.
+
+Fix \(b\in(1/2,1)\) and \(c>0\), and define
+\[
+\alpha=\frac{\log(1/2)}{\log b}.
+\]
+Then \(\log b<0\), so \(\alpha>1\), and
+\[
+b^\alpha=\exp(\alpha\log b)=\frac12.
+\]
+Let \(\widetilde B=b\) almost surely and set
+\[
+F(x)=e^{-cx^\alpha},\qquad x\ge0.
+\]
+
+Then \(F(0)=1\), \(0<F\le1\), \(F\) is continuous and decreasing, and
+\(F(x)\to0\) as \(x\to\infty\). Hence \(F\) is a survival function, namely of
+the Weibull law with density
+\[
+f_\eta(x)=c\alpha x^{\alpha-1}e^{-cx^\alpha},\qquad x>0.
+\]
+
+For deterministic \(\widetilde B=b\),
+\[
+\int_0^\infty F(xu)^2\,\mathbb P(\widetilde B\in du)
+=F(bx)^2
+=\exp(-2cb^\alpha x^\alpha)
+=\exp(-cx^\alpha)
+=F(x).
+\]
+Thus \(F\) solves the printed equation (16).
+
+Complete monotonicity on \((0,\infty)\) would imply \(F''(x)\ge0\) for all
+\(x>0\). Direct differentiation gives
+\[
+F''(x)=c\alpha x^{\alpha-2}e^{-cx^\alpha}
+\left(c\alpha x^\alpha-(\alpha-1)\right).
+\]
+Since \(\alpha>1\), for
+\[
+0<x<\left(\frac{\alpha-1}{c\alpha}\right)^{1/\alpha}
+\]
+the term in parentheses is negative, while the prefactor is positive. Hence
+\(F''(x)<0\) on a nonempty interval and \(F\) is not completely monotone.
+\end{proof}
+
 \section{Conclusion}
 
 The theory developed here is organized around a single principle: positivity
@@ -13776,6 +13853,10 @@ Kwara Nantomah, A generalization of Nielsen's beta-function, International Journ
 \bibitem{app-app-0090-source}
 Priyanka Sangal and A. Swaminathan, Vietoris type theorem related to positivity of trigonometric polynomials, arXiv:1705.03759, Section 4.3, Problem 2. https://arxiv.org/abs/1705.03759.
 \url{https://arxiv.org/abs/1705.03759}.
+
+\bibitem{app-app-0091-source}
+Matthieu Jonckheere and Seva Shneer, Waves Everywhere: A Distributional Equation Approach to Front Propagation, arXiv:2604.16956, equation (16) and following question. https://arxiv.org/abs/2604.16956.
+\url{https://arxiv.org/abs/2604.16956}.
 
 \end{thebibliography}
 

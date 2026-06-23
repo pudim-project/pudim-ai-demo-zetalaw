@@ -1,5 +1,5 @@
 schema_version: 1
-generated_at: "2026-06-22T18:54:44Z"
+generated_at: "2026-06-23T00:56:00Z"
 applications:
   - app_id: "APP-0001"
     app_name: "Alzer-Kwong convexity and concavity problem"
@@ -1649,6 +1649,29 @@ applications:
       - "D-Caratheodory-Class-Normalization"
       - "D-SangalSwaminathan-Komatu-Problem2-Literal"
       - "L-ZeroConstant-Transform-Not-Caratheodory"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0091"
+    app_name: "Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution"
+    created_at: "2026-06-23"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open_literal_scope"
+    reference: "Matthieu Jonckheere and Seva Shneer, Waves Everywhere: A Distributional Equation Approach to Front Propagation, arXiv:2604.16956, equation (16) and following question. https://arxiv.org/abs/2604.16956"
+    mechanism_group: "Endpoint and sign obstructions"
+    render_class: "atlas"
+    proof_node: "T-Equation16-DeterministicScale-Weibull-NonCM-Solution"
+    dependencies:
+      - "O-JonckheereShneer-Equation16-NonCM-Solution-source-gate"
+      - "B-DeterministicQuadraticScaleTail-SolutionCriterion"
+      - "B-WeibullShapeGreaterThanOne-NotCompletelyMonotone"
+      - "D-Complete-monotonicity-Bernstein-Stieltjes-language"
+      - "D-Endpoint-obstruction-certificate-language"
+      - "T-Special-function-normal-form-calculus-principle"
     aliases: []
     supersedes: []
     superseded_by: []
