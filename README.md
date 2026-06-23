@@ -2,14 +2,14 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v026`, staged on 2026-06-23.
+This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v027`, staged on 2026-06-23.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v026/THEORY_v026.tex`](theory/versions/v026/THEORY_v026.tex)
-- Versioned PDF: [`theory/versions/v026/THEORY_v026.pdf`](theory/versions/v026/THEORY_v026.pdf)
+- Versioned TeX: [`theory/versions/v027/THEORY_v027.tex`](theory/versions/v027/THEORY_v027.tex)
+- Versioned PDF: [`theory/versions/v027/THEORY_v027.pdf`](theory/versions/v027/THEORY_v027.pdf)
 
 ## Abstract
 
@@ -17,7 +17,7 @@ We study the Riemann zeta function as the partition function of the probability 
 
 The public theory develops a common positivity calculus for zeta, gamma, polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, Bernstein, determinant, moment-ratio, endpoint-obstruction, and finite Weyl-algebra applications. Its reusable mechanisms include Laplace kernels, moment-ratio reductions, determinant compression, stable subordination, triangular coefficient extraction, endpoint obstructions, exact rational certificates, and Wick-dual extremal functionals.
 
-The public ledger for `v026` contains 92 solved applications, `APP-0001` through `APP-0092`, with immutable APP identifiers and source references.
+The public ledger for `v027` contains 92 solved applications, `APP-0001` through `APP-0092`, with immutable APP identifiers and source references.
 
 ## Applications
 
@@ -116,14 +116,14 @@ All entries below are `Solved`; detailed statements, proofs, and review notes ar
 | APP-0089 | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | [Kwara Nantomah, A generalization of Nielsen's beta-function, International Journal of Open...](https://www.ijopcm.org/Vol/2018/2.2.pdf) |
 | APP-0090 | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | [Priyanka Sangal and A. Swaminathan, Vietoris type theorem related to positivity of trigono...](https://arxiv.org/abs/1705.03759) |
 | APP-0091 | Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution | [Matthieu Jonckheere and Seva Shneer, Waves Everywhere: A Distributional Equation Approach ...](https://arxiv.org/abs/2604.16956) |
-| APP-0092 | Pearse-Bondell power-divergence inverse complete-monotonicity conjecture is true | [Alan R. Pearse and Howard Bondell, Power-divergence copulas](https://arxiv.org/abs/2510.06177) |
+| APP-0092 | Pearse-Bondell power-divergence inverse complete-monotonicity conjecture is true | [Alan R. Pearse and Howard Bondell, Power-divergence copulas: A new class of Archimedean co...](https://arxiv.org/abs/2510.06177) |
 
 See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application ledger and source references.
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v026`.
-The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v026`](wiki/versions/stage_v026).
+The latest staged theory snapshot is `stage_v027`.
+The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v027`](wiki/versions/stage_v027).
 
 ## Reading Notes
 

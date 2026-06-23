@@ -1386,11 +1386,11 @@ Resolve the literal equation-(16) question recorded for APP-0091: whether Jonckh
 - solution: Pearse-Bondell power-divergence inverse complete-monotonicity conjecture is true
 - solution status: Solved
 - solution node: `wiki/nodes/T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne.md`
-- theory version: `v026`
-- stage: `stage_v026`
+- theory version: `v027`
+- stage: `stage_v027`
 - review status: no contact
 - dependencies: `D-Complete-monotonicity-Bernstein-Stieltjes-language`, `D-Power-Divergence-Generator-Pearse-Bondell`, `D-PD-Strict-Inverse-Lambda-LeMinusOne`, `L-PD-Inverse-ODE`, `L-Positive-Generalized-Power-Series-Flow-Closure`, `T-positive-Laplace-kernel-complete-monotonicity-principle`
 
 #### Stated problem
 
-Pearse and Bondell ask for the missing proof that, for the power-divergence generator \(\phi_\lambda\), every inverse \(\phi_\lambda^{-1}\) with \(\lambda\le -1\) is completely monotone. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v026/THEORY_v026.tex`.
+Pearse and Bondell ask for the missing proof that, for the power-divergence generator \(\phi_\lambda\), every inverse \(\phi_\lambda^{-1}\) with \(\lambda\le -1\) is completely monotone. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v027/THEORY_v027.tex`.
