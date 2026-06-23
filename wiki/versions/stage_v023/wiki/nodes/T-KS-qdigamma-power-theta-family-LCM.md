@@ -4,7 +4,7 @@ type: "theorem"
 title: "Krasniqi Shabani q-digamma theta_{q eta} explicit power family is LCM"
 status: "proved"
 tags: ["inverse-design", "krasniqi-shabani", "literal-existential-solution", "literal-source-solution", "logarithmically-completely-monotone", "not-staging-application", "proved", "q-digamma", "tautological-family", "theorem"]
-parents: ["T-KS-qdigamma-theta-family-open-problem"]
+parents: ["T-Finite-combinatorial-packing-shadow-principle", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
 refs: ["attack-plans/AP-20260531T071000-ks-qdigamma-theta-family.json", "librarian/audits/LA-20260531T071000-ks-qdigamma-theta-family.json", "raw/student/20260531T071000-ks-qdigamma-theta-family.md", "wiki/notes/frontier-ks-qdigamma-theta-family.md"]
 ---
 
@@ -16,7 +16,8 @@ For every fixed real-valued q-digamma function \(\psi_q\) on \((0,\infty)\) and 
 
 ## Dependencies
 
-- [[wiki/nodes/T-KS-qdigamma-theta-family-open-problem|Krasniqi Shabani q-digamma theta family LCM existential problem has literal admissible solution]]
+- [[wiki/nodes/T-Finite-combinatorial-packing-shadow-principle|Finite combinatorial packing and shadow principle]]
+- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references
 
@@ -24,6 +25,36 @@ For every fixed real-valued q-digamma function \(\psi_q\) on \((0,\infty)\) and 
 - `librarian/audits/LA-20260531T071000-ks-qdigamma-theta-family.json`
 - `raw/student/20260531T071000-ks-qdigamma-theta-family.md`
 - `wiki/notes/frontier-ks-qdigamma-theta-family.md`
+
+## Proof
+
+The definition gives
+\[
+\log\theta_{q,\eta}(t)=\psi_q(t)+\frac{\eta-\gamma}{t}.
+\]
+Therefore
+\[
+t(\psi_q(t)-\log\theta_{q,\eta}(t))-\gamma
+=t\left(-\frac{\eta-\gamma}{t}\right)-\gamma
+=-\eta.
+\]
+So \(Q_{q,\eta}(t)=t^{-\eta}\). Its logarithm is
+\[
+\log Q_{q,\eta}(t)=-\eta\log t.
+\]
+For every \(n\ge1\),
+\[
+(\log Q_{q,\eta})^{(n)}(t)
+=(-1)^n\eta (n-1)!t^{-n}.
+\]
+Thus
+\[
+(-1)^n(\log Q_{q,\eta})^{(n)}(t)
+=\eta (n-1)!t^{-n}\ge0,
+\]
+for all \(t>0\) and all \(n\ge1\). Hence \(Q_{q,\eta}\) is logarithmically completely monotone. The endpoint \(\eta=0\) gives the constant function \(1\), which is also LCM.
+
+_Proof source: `raw/student/20260531T071000-ks-qdigamma-theta-family.md`._
 
 ## Tags
 

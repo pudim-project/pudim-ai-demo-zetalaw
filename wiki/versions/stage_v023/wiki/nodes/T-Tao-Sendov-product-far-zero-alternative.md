@@ -4,7 +4,7 @@ type: "theorem"
 title: "Tao-Sendov product far-zero alternative"
 status: "proved"
 tags: ["effectivization", "partial-source-progress", "product-certificate", "proved", "sendov", "tao-related", "theorem"]
-parents: []
+parents: ["T-Polynomial-root-logderivative-localization-principle"]
 refs: [".pudim/attack-plans/AP-20260604T-tao-sendov-annular-explicit-window.json", ".pudim/raw/student/20260604T-tao-sendov-annular-structural-alternatives.md", ".pudim/wiki/notes/tao-sendov-annular-structural-alternatives.md"]
 ---
 
@@ -17,11 +17,23 @@ If Sendov fails at a simple zero a of a degree n polynomial with all zeros in th
 M_R\ge\max\{0,\lfloor(\log n-(n-1)\log R)/\log(2/R)\rfloor+1\}.
 \]
 
+## Dependencies
+
+- [[wiki/nodes/T-Polynomial-root-logderivative-localization-principle|Polynomial root and logarithmic-derivative localization principle]]
+
 ## Proof and provenance references
 
 - `.pudim/attack-plans/AP-20260604T-tao-sendov-annular-explicit-window.json`
 - `.pudim/raw/student/20260604T-tao-sendov-annular-structural-alternatives.md`
 - `.pudim/wiki/notes/tao-sendov-annular-structural-alternatives.md`
+
+## Proof source health
+
+_No extractable public proof fragment was found for this proved theorem-like node._
+
+- .pudim/attack-plans/AP-20260604T-tao-sendov-annular-explicit-window.json: not a public proof-fragment source
+- .pudim/raw/student/20260604T-tao-sendov-annular-structural-alternatives.md: not a public proof-fragment source
+- .pudim/wiki/notes/tao-sendov-annular-structural-alternatives.md: not a public proof-fragment source
 
 ## Tags
 

@@ -4,7 +4,7 @@ type: "theorem"
 title: "Tao von Mangoldt chain invariant weight as a zeta-law balance"
 status: "accepted_local_node"
 tags: ["accepted_local_node", "theorem"]
-parents: []
+parents: ["D-Riemann-zeta-probability-law"]
 refs: [".pudim/attack-plans/AP-20260604T-tao-von-mangoldt-zeta-invariance.json", ".pudim/librarian/audits/LA-20260604T-tao-von-mangoldt-zeta-invariant-weight.json", ".pudim/raw/student/20260604T-tao-von-mangoldt-zeta-invariant-weight.md", ".pudim/wiki/notes/tao-von-mangoldt-zeta-invariant-weight.md"]
 ---
 
@@ -16,6 +16,10 @@ For n > 1, the weight nu_Lambda(n)=int_1^infty log(n)/(zeta(s)n^s) ds is invaria
 \[
 nu_Lambda(n)=sum_{q>=2} nu_Lambda(nq)Lambda(q)/log(nq), n>1
 \]
+
+## Dependencies
+
+- [[wiki/nodes/D-Riemann-zeta-probability-law|Riemann zeta probability law]]
 
 ## Proof and provenance references
 

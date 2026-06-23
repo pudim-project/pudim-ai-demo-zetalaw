@@ -4,7 +4,7 @@ type: "theorem"
 title: "Ramanujan log square density phi zero is completely monotone"
 status: "proved"
 tags: ["complete-monotonicity", "logarithmic-density", "proved", "ramanujan-integral", "source-solving", "theorem"]
-parents: ["T-Ramanujan-antiderivative-complete-Bernstein", "T-Ramanujan-integral-Stieltjes"]
+parents: ["T-CM-closure-product-positive-mixture", "D-Complete-monotonicity-Bernstein-Stieltjes-language"]
 refs: ["librarian/audits/LA-20260530T-ramanujan-integral-stieltjes.json", "oracle/responses/ORACLE-FI-20260530T-elegance-032-oracle-forage-response.md", "raw/scout/FI-20260530T-elegance-032.md", "raw/student/20260530T-ramanujan-integral-stieltjes.md", "wiki/notes/frontier-ramanujan-integral-stieltjes.md"]
 ---
 
@@ -16,8 +16,8 @@ The function \(\phi_0(t)=1/[t(\pi^2+\log^2 t)]\) is completely monotone on \((0,
 
 ## Dependencies
 
-- [[wiki/nodes/T-Ramanujan-antiderivative-complete-Bernstein|Ramanujan integral antiderivative is complete Bernstein]]
-- [[wiki/nodes/T-Ramanujan-integral-Stieltjes|Ramanujan integral I_R is Stieltjes]]
+- [[wiki/nodes/T-CM-closure-product-positive-mixture|complete monotone functions closed under product positive sums and positive mixtures]]
+- [[wiki/nodes/D-Complete-monotonicity-Bernstein-Stieltjes-language|Complete monotonicity, Bernstein, and Stieltjes language]]
 
 ## Proof and provenance references
 
@@ -26,6 +26,62 @@ The function \(\phi_0(t)=1/[t(\pi^2+\log^2 t)]\) is completely monotone on \((0,
 - `raw/scout/FI-20260530T-elegance-032.md`
 - `raw/student/20260530T-ramanujan-integral-stieltjes.md`
 - `wiki/notes/frontier-ramanujan-integral-stieltjes.md`
+
+## Proof
+
+For \(u=\log t\),
+\[
+\int_0^1 e^{-au}\sin(\pi a)\,da
+=\frac{\pi(1+e^{-u})}{u^2+\pi^2}.
+\]
+Substituting \(u=\log t\) gives
+\[
+\int_0^1 t^{-a}\sin(\pi a)\,da
+=\frac{\pi(1+t^{-1})}{\pi^2+\log^2 t}.
+\]
+Therefore
+\[
+\phi_0(t)
+=\frac{1}{t(\pi^2+\log^2 t)}
+=\frac{1}{\pi(1+t)}\int_0^1 t^{-a}\sin(\pi a)\,da.
+\]
+
+For \(0<a<1\), \(t^{-a}\) is completely monotone because
+\[
+t^{-a}=\frac1{\Gamma(a)}\int_0^\infty e^{-ts}s^{a-1}\,ds.
+\]
+Also \(t\mapsto(1+t)^{-1}\) is completely monotone. Complete monotonicity is closed under products and positive mixtures, and \(\sin(\pi a)>0\) on \((0,1)\). Hence \(\phi_0\) is completely monotone.
+
+If \(\phi\) is completely monotone and
+\[
+F(x)=\int_0^\infty e^{-xt}\phi(t)\,dt
+\]
+is finite for \(x>0\), then \(F\) is Stieltjes: write \(\phi(t)=\int_0^\infty e^{-ts}\,d\mu(s)\) and use Tonelli to obtain
+\[
+F(x)=\int_0^\infty\frac{d\mu(s)}{x+s}.
+\]
+Applying this to \(\phi_0\) proves that \(I_R\) is Stieltjes.
+
+Finally, the source already proves that
+\[
+\widetilde I_R(x)=a+\int_0^\infty (1-e^{-xt})\phi_0(t)\,dt
+\]
+is a Bernstein function. The Levy density \(\phi_0\) is completely monotone, and it satisfies the Bernstein integrability condition
+\[
+\int_0^\infty (1\wedge t)\phi_0(t)\,dt<\infty.
+\]
+The standard complete-Bernstein criterion for Levy densities therefore gives that \(\widetilde I_R\) is a complete Bernstein function.
+
+the CM closure product positive mixture
+the Stieltjes density criterion S1
+the CBF Levy density CM criterion
+the Ramanujan density logsquare CM
+the Ramanujan integral Stieltjes
+the Ramanujan antiderivative complete Bernstein
+
+the Ramanujan Turan window CM open problem
+
+_Proof source: `raw/student/20260530T-ramanujan-integral-stieltjes.md`._
 
 ## Tags
 

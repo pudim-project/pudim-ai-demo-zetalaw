@@ -4,7 +4,7 @@ type: "theorem"
 title: "Dedekind-ideal von Mangoldt chain and invariant hitting weight"
 status: "proved"
 tags: ["proved", "theorem"]
-parents: ["unique factorization of nonzero integral ideals into prime ideals", "Dedekind Euler product and -zeta_K'/zeta_K Dirichlet series", "simple pole of zeta_K at s=1", "Tao chain/antichain duality mechanism"]
+parents: ["unique factorization of nonzero integral ideals into prime ideals", "Dedekind Euler product and -zeta_K'/zeta_K Dirichlet series", "simple pole of zeta_K at s=1", "Tao chain/antichain duality mechanism", "T-Finite-combinatorial-packing-shadow-principle"]
 refs: [".pudim/attack-plans/AP-20260604T-tao-dedekind-ideal-vm-chain.json", ".pudim/oracle/responses/ORACLE-FC-20260604T-tao-dedekind-ideal-chain-response.md", ".pudim/oracle/responses/ORACLE-OS-20260604T-tao-dedekind-ideal-chain-student-response.md", ".pudim/raw/student/20260604T-tao-dedekind-ideal-vm-chain.md", ".pudim/wiki/notes/tao-dedekind-ideal-vm-chain.md"]
 ---
 
@@ -30,6 +30,7 @@ nu_K(a)=int_1^infty log Na/(zeta_K(s)Na^s) ds for Na>1, nu_K((1))=1, and P_up(hi
 - Dedekind Euler product and -zeta_K'/zeta_K Dirichlet series
 - simple pole of zeta_K at s=1
 - Tao chain/antichain duality mechanism
+- [[wiki/nodes/T-Finite-combinatorial-packing-shadow-principle|Finite combinatorial packing and shadow principle]]
 
 ## Proof and provenance references
 
@@ -38,6 +39,14 @@ nu_K(a)=int_1^infty log Na/(zeta_K(s)Na^s) ds for Na>1, nu_K((1))=1, and P_up(hi
 - `.pudim/oracle/responses/ORACLE-OS-20260604T-tao-dedekind-ideal-chain-student-response.md`
 - `.pudim/raw/student/20260604T-tao-dedekind-ideal-vm-chain.md`
 - `.pudim/wiki/notes/tao-dedekind-ideal-vm-chain.md`
+
+## Proof source health
+
+_No extractable public proof fragment was found for this proved theorem-like node._
+
+- .pudim/attack-plans/AP-20260604T-tao-dedekind-ideal-vm-chain.json: not a public proof-fragment source
+- .pudim/raw/student/20260604T-tao-dedekind-ideal-vm-chain.md: not a public proof-fragment source
+- .pudim/wiki/notes/tao-dedekind-ideal-vm-chain.md: not a public proof-fragment source
 
 ## Do not claim
 
