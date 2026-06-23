@@ -770,14 +770,14 @@ Thus \(\delta_{p,k,\alpha}(x)\sim x^{\alpha-1}\). If \(\alpha>1\), this tends to
 - solution: Townes real-valued Poisson-mixture ID-to-DID conjecture is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-not-Townes-PoissonMixture-ID-implies-DID-conjecture.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `T-not-Townes-FiniteInterval-BLT-Root-Preservation`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0051: Townes real-valued Poisson-mixture ID-to-DID conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0051: Townes real-valued Poisson-mixture ID-to-DID conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0052: Das-Swaminathan multiple-gamma Bernstein question is false
 
@@ -785,14 +785,14 @@ Resolve the source problem recorded for APP-0051: Townes real-valued Poisson-mix
 - solution: Das-Swaminathan multiple-gamma Bernstein question is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-not-DasSwaminathan-fn-Bernstein-all-n.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `T-Das2020-logGn-derivative-positivity-source-import`, `T-DasSwaminathan-logGn-unit-sign`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0052: Das-Swaminathan multiple-gamma Bernstein question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0052: Das-Swaminathan multiple-gamma Bernstein question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0053: arsinh-square logarithmic derivative is not Stieltjes
 
@@ -800,14 +800,14 @@ Resolve the source problem recorded for APP-0052: Das-Swaminathan multiple-gamma
 - solution: arsinh-square logarithmic derivative is not Stieltjes
 - solution status: Solved
 - solution node: `wiki/nodes/T-not-ArsinhSquare-log-derivative-Stieltjes.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `T-ArsinhSquare-log-derivative-completely-monotone`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0053: arsinh-square logarithmic derivative is not Stieltjes. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0053: arsinh-square logarithmic derivative is not Stieltjes. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0054: GRWS Sector II weights-squared Bernstein interpolation fails
 
@@ -815,14 +815,14 @@ Resolve the source problem recorded for APP-0053: arsinh-square logarithmic deri
 - solution: GRWS Sector II weights-squared Bernstein interpolation fails
 - solution status: Solved
 - solution node: `wiki/nodes/T-GRWS-SectorII-No-BF-WeightSquared-Interpolation.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-BF-Integer-Increments-Are-Hausdorff-CM`, `L-Signed-Atomic-Hausdorff-Negativity-Obstruction`, `L-GRWS-SectorII-Difference-Atomic-Expansion`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0054: GRWS Sector II weights-squared Bernstein interpolation fails. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0054: GRWS Sector II weights-squared Bernstein interpolation fails. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0055: Snake-polynomial Chebyshev positivity conjecture is false
 
@@ -830,14 +830,14 @@ Resolve the source problem recorded for APP-0054: GRWS Sector II weights-squared
 - solution: Snake-polynomial Chebyshev positivity conjecture is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-not-SnakePolynomial-Chebyshev-ConvexMajorant-Conjecture7-1.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-SnakePolynomial-Chebyshev-Language`, `L-SnakePolynomial-Corridor-Alternation-Certificate`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0055: Snake-polynomial Chebyshev positivity conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0055: Snake-polynomial Chebyshev positivity conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0056: BPV Bessel K logarithmic-derivative quotient monotonicity is classified
 
@@ -845,14 +845,14 @@ Resolve the source problem recorded for APP-0055: Snake-polynomial Chebyshev pos
 - solution: BPV Bessel K logarithmic-derivative quotient monotonicity is classified
 - solution status: Solved
 - solution node: `wiki/nodes/T-BPV-BesselK-full-monotonicity-classification.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `T-BPV-BesselK-open-range-nonmonotone`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0056: BPV Bessel K logarithmic-derivative quotient monotonicity is classified. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0056: BPV Bessel K logarithmic-derivative quotient monotonicity is classified. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0057: Qi log-concave convolution lower bound is strictly improved
 
@@ -860,14 +860,14 @@ Resolve the source problem recorded for APP-0056: BPV Bessel K logarithmic-deriv
 - solution: Qi log-concave convolution lower bound is strictly improved
 - solution status: Solved
 - solution node: `wiki/nodes/T-Qi-LogConcaveConvolution-StrictImprovement-Example.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `T-Qi-LogConcaveConvolution-VertexChord-LowerBound`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0057: Qi log-concave convolution lower bound is strictly improved. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0057: Qi log-concave convolution lower bound is strictly improved. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0058: Bazhlekova two-seed Wright/Bernstein gap condition is relaxable
 
@@ -875,14 +875,14 @@ Resolve the source problem recorded for APP-0057: Qi log-concave convolution low
 - solution: Bazhlekova two-seed Wright/Bernstein gap condition is relaxable
 - solution status: Solved
 - solution node: `wiki/nodes/T-Bazhlekova-TwoSeed-SourcePackage-Relaxation.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `T-Bazhlekova-TwoSeed-SqrtBF-OutsideGap`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0058: Bazhlekova two-seed Wright/Bernstein gap condition is relaxable. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0058: Bazhlekova two-seed Wright/Bernstein gap condition is relaxable. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0059: Guo ASCM/SCM Theorem 45 condition can be waived
 
@@ -890,14 +890,14 @@ Resolve the source problem recorded for APP-0058: Bazhlekova two-seed Wright/Ber
 - solution: Guo ASCM/SCM Theorem 45 condition can be waived
 - solution status: Solved
 - solution node: `wiki/nodes/T-Guo-ASCM-SCM-DerivativeComposition-NoCondition.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-Complete-monotonicity-Bernstein-Stieltjes-language`, `D-Log-function-derivative-chain-language`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0059: Guo ASCM/SCM Theorem 45 condition can be waived. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0059: Guo ASCM/SCM Theorem 45 condition can be waived. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0060: Baricz coefficient-ratio complete-monotonicity transfer is false
 
@@ -905,14 +905,14 @@ Resolve the source problem recorded for APP-0059: Guo ASCM/SCM Theorem 45 condit
 - solution: Baricz coefficient-ratio complete-monotonicity transfer is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-Baricz-CoefficientRatio-CMTransfer-Counterexample.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-Baricz-GeometricSequence-StrictCM`, `L-Baricz-AnalyticQuotient-SecondCoefficientObstruction`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0060: Baricz coefficient-ratio complete-monotonicity transfer is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0060: Baricz coefficient-ratio complete-monotonicity transfer is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0061: Khasnis-Sholapurkar Question 4.6 has a negative answer
 
@@ -920,14 +920,14 @@ Resolve the source problem recorded for APP-0060: Baricz coefficient-ratio compl
 - solution: Khasnis-Sholapurkar Question 4.6 has a negative answer
 - solution status: Solved
 - solution node: `wiki/nodes/T-Khasnis-Sholapurkar-Q46-NegativeAnswer.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `T-PolynomialReciprocal-JCM-DegreeGap-Obstruction`, `L-JCM-SliceEndpoint-ConcavityObstruction`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0061: Khasnis-Sholapurkar Question 4.6 has a negative answer. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0061: Khasnis-Sholapurkar Question 4.6 has a negative answer. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0062: Barbosa-Menegatto endpoint additive kernel is not strictly positive definite
 
@@ -935,14 +935,14 @@ Resolve the source problem recorded for APP-0061: Khasnis-Sholapurkar Question 4
 - solution: Barbosa-Menegatto endpoint additive kernel is not strictly positive definite
 - solution status: Solved
 - solution node: `wiki/nodes/T-BarbosaMenegatto-endpoint-additive-rectangle-not-SPD.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-Additive-product-kernel-rectangle-annihilator`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0062: Barbosa-Menegatto endpoint additive kernel is not strictly positive definite. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0062: Barbosa-Menegatto endpoint additive kernel is not strictly positive definite. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0063: Yamazaki generalized-Karcher operator-norm conjecture is false
 
@@ -950,14 +950,14 @@ Resolve the source problem recorded for APP-0062: Barbosa-Menegatto endpoint add
 - solution: Yamazaki generalized-Karcher operator-norm conjecture is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-Yamazaki-GKE-operator-norm-conjecture-scalar-counterexample.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-Scalar-subcase-refutes-universal-operator-inequality`, `L-Yamazaki-fractional-linear-GKE-scalar-certificate`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0063: Yamazaki generalized-Karcher operator-norm conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0063: Yamazaki generalized-Karcher operator-norm conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0064: Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false
 
@@ -965,14 +965,14 @@ Resolve the source problem recorded for APP-0063: Yamazaki generalized-Karcher o
 - solution: Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-DLNV-MatrixPowerMeanInverse-ScalarRefutation.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-Scalar-matrix-case-refutes-universal-existence`, `L-ScalarPowerMean-Ratio-Endpoint`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0064: Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0064: Dinh-Le-Nguyen-Vo matrix power-mean inverse question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0065: JKS alpha-two kernel is not TN5 by a symmetric determinant witness
 
@@ -980,14 +980,14 @@ Resolve the source problem recorded for APP-0064: Dinh-Le-Nguyen-Vo matrix power
 - solution: JKS alpha-two kernel is not TN5 by a symmetric determinant witness
 - solution status: Solved
 - solution node: `wiki/nodes/T-JKS-Alpha2-NotTN5-PSDWitness.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-JKS-Kernel`, `D-TNKernel-FiniteOrder`, `L-PSD-Minor-Obstructs-TN`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0065: JKS alpha-two kernel is not TN5 by a symmetric determinant witness. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0065: JKS alpha-two kernel is not TN5 by a symmetric determinant witness. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0066: Li cubic inverse-polynomial Bernstein branch has discriminant criterion
 
@@ -995,14 +995,14 @@ Resolve the source problem recorded for APP-0065: JKS alpha-two kernel is not TN
 - solution: Li cubic inverse-polynomial Bernstein branch has discriminant criterion
 - solution status: Solved
 - solution node: `wiki/nodes/T-Li-CubicInversePolynomial-BF-Discriminant.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-QuadraticDenominator-CM-NonpositiveRoots`, `L-InverseODE-CM-to-BF`, `L-AnalyticBF-Pringsheim-NegativeAxisObstruction`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0066: Li cubic inverse-polynomial Bernstein branch has discriminant criterion. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0066: Li cubic inverse-polynomial Bernstein branch has discriminant criterion. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0067: BPV Bessel K Question 7 has a half-order endpoint counterexample
 
@@ -1010,14 +1010,14 @@ Resolve the source problem recorded for APP-0066: Li cubic inverse-polynomial Be
 - solution: BPV Bessel K Question 7 has a half-order endpoint counterexample
 - solution status: Solved
 - solution node: `wiki/nodes/T-BesselK-Question7-Negative-Endpoint-Counterexample.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-BesselK-Endpoint-Monotonicity-Question`, `L-HalfOrder-BesselK-ClosedForm`, `L-HalfOrder-KDerivative-SignRoot`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0067: BPV Bessel K Question 7 has a half-order endpoint counterexample. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0067: BPV Bessel K Question 7 has a half-order endpoint counterexample. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0068: Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\)
 
@@ -1025,14 +1025,14 @@ Resolve the source problem recorded for APP-0067: BPV Bessel K Question 7 has a 
 - solution: Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\)
 - solution status: Solved
 - solution node: `wiki/nodes/T-Kummer-M-Global-Modulus-Inequality-Fails-Alpha1-Beta5halves.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-GGPS-KummerM-Remark6-Question`, `D-KummerM-LocalSeries`, `L-RealSeries-ImagAxis-Modulus-SecondCoefficient-Obstruction`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0068: Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\). The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0068: Kummer M global modulus inequality fails at \((\alpha,\beta)=(1,5/2)\). The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0069: Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions
 
@@ -1040,14 +1040,14 @@ Resolve the source problem recorded for APP-0068: Kummer M global modulus inequa
 - solution: Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions
 - solution status: Solved
 - solution node: `wiki/nodes/T-NagelWeissMecke-LaplaceSurvival-Poissonization-Solution.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-LaplaceSurvivalTransform`, `L-UniformExponentialRace-LaplaceSurvival`, `L-CMSurvival-BernsteinWidder-InverseCriterion`, `L-ConditionalPoissonization-PGF`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0069: Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0069: Nagel-Weiss/Mecke Laplace-survival and Poissonization constructions. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0070: Dytso-Bustin-Poor generalized-Gaussian product factorization classification
 
@@ -1055,14 +1055,14 @@ Resolve the source problem recorded for APP-0069: Nagel-Weiss/Mecke Laplace-surv
 - solution: Dytso-Bustin-Poor generalized-Gaussian product factorization classification
 - solution status: Solved
 - solution node: `wiki/nodes/T-DytsoBustinPoor-GeneralizedGaussian-ProductFactorization-Classification.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-GeneralizedGaussian-Np01`, `L-PositiveStable-NegativeMoment`, `D-InverseStable-SizeBiasFactor`, `L-MellinQuotient-To-ProductFactor`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0070: Dytso-Bustin-Poor generalized-Gaussian product factorization classification. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0070: Dytso-Bustin-Poor generalized-Gaussian product factorization classification. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0071: Bendikov-Cygan SBF renewal monotonicity
 
@@ -1070,14 +1070,14 @@ Resolve the source problem recorded for APP-0070: Dytso-Bustin-Poor generalized-
 - solution: Bendikov-Cygan special-Bernstein renewal sequence is nonincreasing
 - solution status: Solved
 - solution node: `wiki/nodes/T-BendikovCygan-SBF-RenewalSequence-Nonincreasing.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-BendikovCygan-RenewalGeneratingFunction-SBFPotential`, `L-GammaMonotoneDensity-MomentSequence-Decreasing`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0071: Bendikov-Cygan SBF renewal monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0071: Bendikov-Cygan SBF renewal monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0072: Buchstaber-Glutsyuk real-order Bessel I strict total positivity
 
@@ -1085,14 +1085,14 @@ Resolve the source problem recorded for APP-0071: Bendikov-Cygan SBF renewal mon
 - solution: Real-order modified-Bessel kernel is strictly totally positive
 - solution status: Solved
 - solution node: `wiki/nodes/T-BesselI-RealOrder-StrictTotalPositivity.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-SturmDarboux-PositiveSpectralFamily-Wronskians`, `L-PositiveWronskians-ECT-Determinants`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0072: Buchstaber-Glutsyuk real-order Bessel I strict total positivity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0072: Buchstaber-Glutsyuk real-order Bessel I strict total positivity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0073: BGKP PF-sequence total-positivity density
 
@@ -1100,14 +1100,14 @@ Resolve the source problem recorded for APP-0072: Buchstaber-Glutsyuk real-order
 - solution: Totally positive Polya-frequency sequences are dense
 - solution status: Solved
 - solution node: `wiki/nodes/T-PFSeq-TP-Density-DiscreteGaussian.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-DiscreteGaussian-Toeplitz-StrictTP`, `L-PFSequence-Annulus-Translate-Independence`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0073: BGKP PF-sequence total-positivity density. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0073: BGKP PF-sequence total-positivity density. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0074: Scott-Sokal K5-e spanning-tree polynomial complete monotonicity
 
@@ -1115,14 +1115,14 @@ Resolve the source problem recorded for APP-0073: BGKP PF-sequence total-positiv
 - solution: K5 minus e belongs to G beta above one
 - solution status: Solved
 - solution node: `wiki/nodes/T-K5MinusE-SpanningTreePolynomial-CM-BetaGe1.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-StarMesh-SpanningTree-ApexElimination`, `L-TriangleKirchhoff-RieszLaplace-Representation`, `L-ConditionalStar-GaussianLaplaceKernel`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0074: Scott-Sokal K5-e spanning-tree polynomial complete monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0074: Scott-Sokal K5-e spanning-tree polynomial complete monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0075: Scott-Sokal W4 spanning-tree polynomial complete monotonicity
 
@@ -1130,14 +1130,14 @@ Resolve the source problem recorded for APP-0074: Scott-Sokal K5-e spanning-tree
 - solution: W4 belongs to G beta above one
 - solution status: Solved
 - solution node: `wiki/nodes/T-W4-SpanningTreePolynomial-CM-BetaGe1.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-StarMesh-SpanningTree-ApexElimination`, `L-K4Kirchhoff-RieszRank3-LaplaceRepresentation`, `L-ConditionalStar-GaussianLaplaceKernel`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0075: Scott-Sokal W4 spanning-tree polynomial complete monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0075: Scott-Sokal W4 spanning-tree polynomial complete monotonicity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0076: Yang Mills-ratio half-gamma log-convexity
 
@@ -1145,14 +1145,14 @@ Resolve the source problem recorded for APP-0075: Scott-Sokal W4 spanning-tree p
 - solution: Yang Mills-ratio half-gamma log-convexity
 - solution status: Solved
 - solution node: `wiki/nodes/T-Yang-MillsRatio-HalfGamma-LogConvexity.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-Yang-MillsOrderMomentKernel`, `L-SqrtLaplace-GammaTilt-LogConvexity`, `T-From-Mills-Laplace-CM-normal-form`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0076: Yang Mills-ratio half-gamma log-convexity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0076: Yang Mills-ratio half-gamma log-convexity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0077: Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false
 
@@ -1160,14 +1160,14 @@ Resolve the source problem recorded for APP-0076: Yang Mills-ratio half-gamma lo
 - solution: Tricomi Psi quotient complete-monotonicity window is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-Not-TricomiPsiQuotient-CM-c-window.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-TricomiPsi-StandardIntegralRepresentation`, `L-TricomiPsi-IntegerPolynomial-CM-Counterfamily`, `D-Complete-monotonicity-Bernstein-Stieltjes-language`, `D-Laplace-kernel-and-tilted-moment-language`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0077: Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0077: Ferreira-Simon Tricomi Psi quotient complete-monotonicity window is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0078: Rastegar-Roitershtein condition-(3) removal conjecture is false
 
@@ -1175,14 +1175,14 @@ Resolve the source problem recorded for APP-0077: Ferreira-Simon Tricomi Psi quo
 - solution: Rastegar-Roitershtein condition-removal conjecture is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-Not-RastegarRoitershtein-Condition3-Unnecessary.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-ReciprocalCharacteristicFunction-FiniteIdentity-Certificate`, `T-Exact-finite-certificate-verification-principle`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0078: Rastegar-Roitershtein condition-(3) removal conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0078: Rastegar-Roitershtein condition-(3) removal conjecture is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0079: BBL determinantal stable Loewner converse is false
 
@@ -1190,14 +1190,14 @@ Resolve the source problem recorded for APP-0078: Rastegar-Roitershtein conditio
 - solution: BBL determinantal stable Loewner converse is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-Not-BBL-DeterminantalStable-LoewnerConverse.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-DeterminantalPolynomial-SignConjugacy-Blindness`, `D-Determinant-triangular-compression-language`, `T-Exact-finite-certificate-verification-principle`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0079: BBL determinantal stable Loewner converse is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0079: BBL determinantal stable Loewner converse is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0080: q-gamma Hankel kernel is strictly totally positive
 
@@ -1205,14 +1205,14 @@ Resolve the source problem recorded for APP-0079: BBL determinantal stable Loewn
 - solution: q-gamma Hankel kernel is strictly totally positive
 - solution status: Solved
 - solution node: `wiki/nodes/T-QGamma-HankelKernel-STPInfinity.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `L-QBinomial-Atomic-Mellin-Representation`, `L-Mellin-Moment-Kernel-STP-InfiniteSupport`, `L-Generalized-Vandermonde-Chebyshev-StrictSign`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0080: q-gamma Hankel kernel is strictly totally positive. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0080: q-gamma Hankel kernel is strictly totally positive. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0081: JKS remaining integer powers fail finite total nonnegativity
 
@@ -1220,14 +1220,14 @@ Resolve the source problem recorded for APP-0080: q-gamma Hankel kernel is stric
 - solution: JKS remaining integer powers fail finite total nonnegativity
 - solution status: Solved
 - solution node: `wiki/nodes/T-JKS-IntegerPowers-Mge3-NotTN.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `B-Cutoff-Column-Against-CorankOne-Gram`, `D-JKS-Kernel`, `D-TNKernel-FiniteOrder`, `L-PSD-Minor-Obstructs-TN`, `T-Exact-finite-certificate-verification-principle`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0081: JKS remaining integer powers fail finite total nonnegativity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0081: JKS remaining integer powers fail finite total nonnegativity. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0082: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false
 
@@ -1235,14 +1235,14 @@ Resolve the source problem recorded for APP-0081: JKS remaining integer powers f
 - solution: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-DulacSimon-TsallisGammaRatio-NotCM.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `B-SymmetricBeta-BetaLogistic-LaplaceKernel`, `B-SignedInverseLaplace-Density-Negativity-Obstruction`, `T-positive-Laplace-kernel-complete-monotonicity-principle`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0082: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0082: Dulac-Simon cumulative Tsallis gamma-ratio complete-monotonicity question is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0083: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff
 
@@ -1250,14 +1250,14 @@ Resolve the source problem recorded for APP-0082: Dulac-Simon cumulative Tsallis
 - solution: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff
 - solution status: Solved
 - solution node: `wiki/nodes/T-BergPedersen-HornBernstein-a-NotHausdorff.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `B-HausdorffMoment-FiniteDifference-Criterion`, `B-HornBernstein-FirstEight-a-ExactRationals`, `T-Exact-finite-certificate-verification-principle`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0083: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0083: Berg-Pedersen Horn-Bernstein derived sequence is not Hausdorff. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0084: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer
 
@@ -1265,14 +1265,14 @@ Resolve the source problem recorded for APP-0083: Berg-Pedersen Horn-Bernstein d
 - solution: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer
 - solution status: Solved
 - solution node: `wiki/nodes/T-Mohle-Problem63-FiniteKernel-Positive.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-Mohle-BlockCounting-Problem63-Language`, `B-Mohle-BinomialCollisionKernel-Integral`, `B-Mohle-OrderedPair-Simplex-Domination`, `B-Mohle-CountableSimplex-TruncationClosure`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0084: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0084: Mohle block-counting dust Problem 6.3 has a finite-kernel affirmative answer. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0085: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false
 
@@ -1280,14 +1280,14 @@ Resolve the source problem recorded for APP-0084: Mohle block-counting dust Prob
 - solution: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-WangYang-LP-PositiveDecreasing-CM-OpenProblem-Refuted.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-LP-EGF-Coefficient-Sequence`, `D-ForwardDifference-CompleteMonotone-Sequence`, `L-LP-OneFactor-Exponential-Atom`, `L-EGF-OneFactor-Atom-SecondDifference-Defect`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0085: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0085: Wang-Yang Laguerre-Polya positive-decreasing coefficient complete-monotonicity problem is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0086: Poly-double-gamma derivative Hankel matrix has fixed spectral sign
 
@@ -1295,14 +1295,14 @@ Resolve the source problem recorded for APP-0085: Wang-Yang Laguerre-Polya posit
 - solution: Poly-double-gamma derivative Hankel matrix has fixed spectral sign
 - solution status: Solved
 - solution node: `wiki/nodes/T-PolyDoubleGamma-Hankel-Matrix-Inertia.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-PolyDoubleGamma-Derivative-Hankel-Matrix`, `B-PolyDoubleGamma-Derivative-Laplace-Representation`, `L-Signed-Hankel-Moment-Gram-StrictPD`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0086: Poly-double-gamma derivative Hankel matrix has fixed spectral sign. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0086: Poly-double-gamma derivative Hankel matrix has fixed spectral sign. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0087: ALR Bernstein q=2 continuous converse is affirmative
 
@@ -1310,14 +1310,14 @@ Resolve the source problem recorded for APP-0086: Poly-double-gamma derivative H
 - solution: ALR Bernstein q=2 continuous converse is affirmative
 - solution status: Solved
 - solution node: `wiki/nodes/T-ALR-OpenQuestion-q2-Continuous-Affirmative.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-Bernstein-Polynomial-Basis`, `D-q-Monotone-Finite-Difference`, `L-TwoBinomial-Diagonal-Generating-Kernel`, `L-Diagonal-h2-Coefficient-Extracts-Second-Difference`, `L-Bernstein-Second-Derivative-Discrete-Difference`, `L-UniformLimit-Convexity-Closure`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0087: ALR Bernstein q=2 continuous converse is affirmative. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0087: ALR Bernstein q=2 continuous converse is affirmative. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0088: Bourin antimonotone compression determinant inequality is affirmative
 
@@ -1325,14 +1325,14 @@ Resolve the source problem recorded for APP-0087: ALR Bernstein q=2 continuous c
 - solution: Bourin antimonotone compression determinant inequality is affirmative
 - solution status: Solved
 - solution node: `wiki/nodes/T-Bourin-Antimonotone-CompressionDet-AllSubspaces.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-Antimonotone-Positive-Pair`, `D-Compression-Determinant-Polynomial`, `L-CompressionDet-CauchyBinet-Measure`, `L-ProjectionDPP-Covariance-Laplacian`, `L-OppositeOrder-LogDet-Chebyshev`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0088: Bourin antimonotone compression determinant inequality is affirmative. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0088: Bourin antimonotone compression determinant inequality is affirmative. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0089: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false
 
@@ -1340,14 +1340,14 @@ Resolve the source problem recorded for APP-0088: Bourin antimonotone compressio
 - solution: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false
 - solution status: Solved
 - solution node: `wiki/nodes/T-Nantomah-pBeta-NormalizedDerivativeCM-False-p1n1.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-Nantomah-pBeta-2018`, `L-pBeta-Normalized-Derivative-FiniteSum`, `L-CM-Pointwise-SecondDerivative-Obstruction`, `T-Exact-finite-certificate-verification-principle`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0089: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0089: Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0090: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set
 
@@ -1355,14 +1355,14 @@ Resolve the source problem recorded for APP-0089: Nantomah generalized Nielsen b
 - solution: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set
 - solution status: Solved
 - solution node: `wiki/nodes/T-Komatu-Caratheodory-Problem2-Literal-Refuted.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `D-Analytic-Unit-Disk-Classes`, `D-Caratheodory-Class-Normalization`, `D-SangalSwaminathan-Komatu-Problem2-Literal`, `L-ZeroConstant-Transform-Not-Caratheodory`
 
 #### Stated problem
 
-Resolve the source problem recorded for APP-0090: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the source problem recorded for APP-0090: Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
 
 ### APP-0091: Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution
 
@@ -1370,11 +1370,11 @@ Resolve the source problem recorded for APP-0090: Sangal-Swaminathan printed Kom
 - solution: Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution
 - solution status: Solved
 - solution node: `wiki/nodes/T-Equation16-DeterministicScale-Weibull-NonCM-Solution.md`
-- theory version: `v021`
-- stage: `stage_v021`
+- theory version: `v022`
+- stage: `stage_v022`
 - review status: no contact
 - dependencies: `O-JonckheereShneer-Equation16-NonCM-Solution-source-gate`, `B-DeterministicQuadraticScaleTail-SolutionCriterion`, `B-WeibullShapeGreaterThanOne-NotCompletelyMonotone`, `D-Complete-monotonicity-Bernstein-Stieltjes-language`, `D-Endpoint-obstruction-certificate-language`, `T-Special-function-normal-form-calculus-principle`
 
 #### Stated problem
 
-Resolve the literal equation-(16) question recorded for APP-0091: whether Jonckheere and Shneer's transformed front-propagation equation admits a non-increasing solution that is not completely monotone. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v021/THEORY_v021.tex`.
+Resolve the literal equation-(16) question recorded for APP-0091: whether Jonckheere and Shneer's transformed front-propagation equation admits a non-increasing solution that is not completely monotone. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
