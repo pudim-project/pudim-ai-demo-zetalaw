@@ -2,14 +2,14 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v031`, staged on 2026-06-23.
+This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v032`, staged on 2026-06-23.
 
 ## Public Theory
 
 - Latest TeX: [`theory/latest/THEORY.tex`](theory/latest/THEORY.tex)
 - Latest PDF: [`theory/latest/THEORY.pdf`](theory/latest/THEORY.pdf)
-- Versioned TeX: [`theory/versions/v031/THEORY_v031.tex`](theory/versions/v031/THEORY_v031.tex)
-- Versioned PDF: [`theory/versions/v031/THEORY_v031.pdf`](theory/versions/v031/THEORY_v031.pdf)
+- Versioned TeX: [`theory/versions/v032/THEORY_v032.tex`](theory/versions/v032/THEORY_v032.tex)
+- Versioned PDF: [`theory/versions/v032/THEORY_v032.pdf`](theory/versions/v032/THEORY_v032.pdf)
 
 ## Abstract
 
@@ -17,7 +17,7 @@ We study the Riemann zeta function as the partition function of the probability 
 
 The public theory develops a common positivity calculus for zeta, gamma, polygamma, Mills-ratio, Ramanujan-integral, Bessel, Stieltjes, Bernstein, determinant, moment-ratio, endpoint-obstruction, and finite Weyl-algebra applications. Its reusable mechanisms include Laplace kernels, moment-ratio reductions, determinant compression, stable subordination, triangular coefficient extraction, endpoint obstructions, exact rational certificates, and Wick-dual extremal functionals.
 
-The public ledger for `v031` contains 92 solved applications, `APP-0001` through `APP-0092`, with immutable APP identifiers and source references.
+The public ledger for `v032` contains 92 solved applications, `APP-0001` through `APP-0092`, with immutable APP identifiers and source references.
 
 ## Applications
 
@@ -122,8 +122,8 @@ See [`APPLICATIONS.md`](APPLICATIONS.md) for the detailed public application led
 
 ## Public Vault Note
 
-The latest staged theory snapshot is `stage_v031`.
-The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v031`](wiki/versions/stage_v031).
+The latest staged theory snapshot is `stage_v032`.
+The public wiki vault is synchronized at [`wiki/latest`](wiki/latest), with the immutable snapshot stored under [`wiki/versions/stage_v032`](wiki/versions/stage_v032).
 
 ## Reading Notes
 
