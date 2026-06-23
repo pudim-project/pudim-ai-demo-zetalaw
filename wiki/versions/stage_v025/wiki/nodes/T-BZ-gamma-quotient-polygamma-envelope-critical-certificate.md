@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bulboaca Zayed gamma quotient finite polygamma envelope critical certificate"
 status: "open"
 tags: ["attack-plan", "gamma", "interval-certificate", "open", "psi", "stronger", "theorem"]
-parents: ["T-BZ-gamma-quotient-critical-window-reduction"]
+parents: ["T-endpoint-log-derivative-monotonicity-principle"]
 refs: ["attack-plans/AP-20260531T211500-bz-gamma-critical-window.json", "librarian/audits/LA-20260531T211500-bz-gamma-critical-window-attack-plan.json", "wiki/notes/frontier-bulboaca-zayed-gamma-quotient.md"]
 ---
 
@@ -16,7 +16,7 @@ There is a finite rational cover of \([1,8]\), using explicit logarithm, \(\log\
 
 ## Dependencies
 
-- [[wiki/nodes/T-BZ-gamma-quotient-critical-window-reduction|Bulboaca-Zayed gamma quotient critical window reduction]]
+- [[wiki/nodes/T-endpoint-log-derivative-monotonicity-principle|T-endpoint-log-derivative-monotonicity-principle]]
 
 ## Proof and provenance references
 

@@ -2,7 +2,7 @@
 
 Back to [[Home]].
 
-Snapshot: `stage_v024`.
+Snapshot: `stage_v025`.
 
 ## Entry Points
 

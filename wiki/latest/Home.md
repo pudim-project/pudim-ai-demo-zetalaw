@@ -1,6 +1,6 @@
-# Pudim Public Wiki stage_v024
+# Pudim Public Wiki stage_v025
 
-This public vault was generated from the current Pudim Wiki/Theory store for `v024`.
+This public vault was generated from the current Pudim Wiki/Theory store for `v025`.
 
 - Start at [[wiki/index|Node index]].
 - Read [[STATUS]] for the current public graph summary.

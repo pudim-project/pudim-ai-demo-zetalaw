@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bazhlekova no cover seed neighborhood normalized derivative density decision"
 status: "open"
 tags: ["attack-plan", "bazhlekova", "bernstein-functions", "inverse-laplace", "open", "theorem"]
-parents: ["T-Bazhlekova-no-cover-seeds-inverse-laplace-density-dichotomy"]
+parents: []
 refs: ["attack-plans/AP-20260601T034800-bazhlekova-wright-density-thresholds.json", "raw/student/20260601T033000-bazhlekova-topcap-island-map.md", "theory/nodes/T-Bazhlekova-plain-BF-normalized-derivative-reduction.json", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
 ---
 
@@ -13,10 +13,6 @@ refs: ["attack-plans/AP-20260601T034800-bazhlekova-wright-density-thresholds.jso
 ## Statement
 
 For the normalized derivative \(h'(s)=s^{b/2-1}(1+s^{a-b})^{-1/2}(b/2+(a/2)s^{a-b})\), decide complete monotonicity at the no-cover seeds and establish the corresponding rational-neighborhood stability: either a positive inverse-Laplace/Levy density certificate proves the local plain Bernstein side, or a certified negative density/finite-derivative witness gives a finite-\(x\) obstruction for \(e^{-xh(s)}\).
-
-## Dependencies
-
-- [[wiki/nodes/T-Bazhlekova-no-cover-seeds-inverse-laplace-density-dichotomy|Bazhlekova no cover seeds inverse Laplace density plain BF dichotomy]]
 
 ## Proof and provenance references
 

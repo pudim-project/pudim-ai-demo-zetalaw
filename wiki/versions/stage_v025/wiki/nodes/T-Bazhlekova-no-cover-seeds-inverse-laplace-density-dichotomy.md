@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bazhlekova no cover seeds inverse Laplace density plain BF dichotomy"
 status: "open"
 tags: ["attack-plan", "bazhlekova", "bernstein-functions", "inverse-laplace", "open", "theorem"]
-parents: ["T-Bazhlekova-apparent-island-plain-BF-or-inverse-Laplace-dichotomy"]
+parents: ["T-Bazhlekova-no-cover-seed-neighborhood-normalized-density-decision"]
 refs: ["attack-plans/AP-20260601T032000-bazhlekova-topcap-island-map.json", "librarian/audits/LA-20260601T025500-bazhlekova-island-split-student.json", "raw/student/20260601T025500-bazhlekova-island-split.md", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
 ---
 
@@ -16,7 +16,7 @@ For a certified neighborhood of the no-cover seeds, derive and decide an inverse
 
 ## Dependencies
 
-- [[wiki/nodes/T-Bazhlekova-apparent-island-plain-BF-or-inverse-Laplace-dichotomy|Bazhlekova apparent no cover island plain Bernstein or inverse Laplace dichotomy]]
+- [[wiki/nodes/T-Bazhlekova-no-cover-seed-neighborhood-normalized-density-decision|Bazhlekova no cover seed neighborhood normalized derivative density decision]]
 
 ## Proof and provenance references
 
