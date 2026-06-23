@@ -5,11 +5,11 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v025/`: immutable wiki snapshot matching theory `v025`.
+- `versions/stage_v026/`: immutable wiki snapshot matching theory `v026`.
 - `versions/stage_v001/`--`versions/stage_v006/`: legacy immutable wiki snapshots.
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
 
-Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v025/wiki/nodes/` for the current immutable snapshot. The file `T-Tao-Sawin-Weyl-l1-exact-minimum.md`, for example, lives at `wiki/latest/wiki/nodes/T-Tao-Sawin-Weyl-l1-exact-minimum.md`.
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v026/wiki/nodes/` for the current immutable snapshot. The file `T-Tao-Sawin-Weyl-l1-exact-minimum.md`, for example, lives at `wiki/latest/wiki/nodes/T-Tao-Sawin-Weyl-l1-exact-minimum.md`.
 
 ## Open In Obsidian
 
@@ -19,9 +19,9 @@ In Obsidian, start at `Home.md`, then open `wiki/index.md`. Use Backlinks to ins
 
 ## Current Node Summary
 
-- total nodes: 995
-- by type: corollary: 3, counterexample: 2, definition: 46, example: 1, lemma: 82, negative_result: 4, obstruction: 1, obstruction_lemma: 1, obstruction_theorem: 1, open_problem: 110, proposition: 3, theorem: 740, theorem_import: 1
-- by status: accepted_local_node: 1, open: 351, proved: 628, proved_local: 11, resolved: 4
+- total nodes: 1002
+- by type: corollary: 4, counterexample: 2, definition: 48, example: 1, lemma: 84, negative_result: 4, obstruction: 1, obstruction_lemma: 1, obstruction_theorem: 1, open_problem: 111, proposition: 3, theorem: 741, theorem_import: 1
+- by status: accepted_local_node: 1, open: 351, proved: 635, proved_local: 11, resolved: 4
 
 ## Reading Order
 

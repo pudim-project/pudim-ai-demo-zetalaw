@@ -4,7 +4,7 @@ type: "negative_result"
 title: "T-not-Popa-Tao-Mn-trace-neutral-selfcommutator-spectral-radius"
 status: "proved"
 tags: ["negative_result", "proved"]
-parents: ["T-Popa-Tao-M3-trace-neutral-self-commutator-normal-form"]
+parents: ["T-Popa-Tao-M3-trace-neutral-self-commutator-normal-form", "T-Finite-matrix-spectral-certificate-principle"]
 refs: ["oracle/responses/ORACLE-OS-20260604T-tao-popa-finite-selfcommutator-Mn-student-response.md", "raw/student/20260604T-tao-popa-finite-selfcommutator-Mn.md", "wiki/notes/tao-popa-finite-selfcommutator-Mn.md"]
 ---
 
@@ -21,6 +21,7 @@ The formula inf{||V||^2 : H=VV^*-V^*V}=max(lambda_max(H),-lambda_min(H)) for tra
 ## Dependencies
 
 - [[wiki/nodes/T-Popa-Tao-M3-trace-neutral-self-commutator-normal-form|Popa-Tao M3 trace-neutral self-commutator normal form]]
+- [[wiki/nodes/T-Finite-matrix-spectral-certificate-principle|Finite matrix spectral certificate principle]]
 
 ## Proof and provenance references
 

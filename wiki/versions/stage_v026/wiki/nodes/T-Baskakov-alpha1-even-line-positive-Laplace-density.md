@@ -4,7 +4,7 @@ type: "theorem"
 title: "Baskakov alpha one even line positive inverse Laplace density implies complete monotonicity"
 status: "open"
 tags: ["alpha1-even-line", "attack-plan", "baskakov", "complete-monotonicity", "laplace-density", "open", "theorem"]
-parents: ["T-Baskakov-alpha1-even-r-frontier-open"]
+parents: ["T-Baskakov-alpha1-even-line-Fejer-density-factorization"]
 refs: ["attack-plans/AP-20260601T000500-baskakov-alpha1-even-line.json", "librarian/audits/LA-20260601T000500-baskakov-alpha1-even-line-attack-plan.json", "wiki/notes/frontier-baskakov-r4-alpha1-seed.md"]
 ---
 
@@ -16,7 +16,7 @@ For every integer \(m\ge2\), the rational function \(f^{[2m]}_1(x)=1/((1+x)^{2m}
 
 ## Dependencies
 
-- [[wiki/nodes/T-Baskakov-alpha1-even-r-frontier-open|Baskakov alpha 1 even r rational seed line complete monotonicity frontier]]
+- [[wiki/nodes/T-Baskakov-alpha1-even-line-Fejer-density-factorization|Baskakov alpha one even line inverse Laplace density has nonnegative Fejer type factorization]]
 
 ## Proof and provenance references
 

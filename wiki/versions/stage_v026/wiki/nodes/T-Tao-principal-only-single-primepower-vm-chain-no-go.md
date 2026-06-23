@@ -4,7 +4,7 @@ type: "obstruction_lemma"
 title: "Principal-only single-primepower von Mangoldt row normalization forces class number one"
 status: "proved"
 tags: ["obstruction_lemma", "proved"]
-parents: []
+parents: ["T-Finite-combinatorial-packing-shadow-principle"]
 refs: [".pudim/oracle/responses/ORACLE-FC-20260604T-tao-principal-only-no-go-response.md", ".pudim/oracle/responses/ORACLE-OS-20260604T-tao-principal-only-no-go-student-response.md", ".pudim/raw/student/20260604T-tao-principal-only-no-go.md", ".pudim/wiki/notes/tao-principal-only-no-go.md"]
 ---
 
@@ -25,12 +25,23 @@ R(a)=sum_{q|a, q=p^j, a/q principal} Lambda_K(q)=log Na for all nonunit principa
 - weights are Lambda_K(p^j)=log Np
 - normalization is Tao's unmodified log Na row sum
 
+## Dependencies
+
+- [[wiki/nodes/T-Finite-combinatorial-packing-shadow-principle|Finite combinatorial packing and shadow principle]]
+
 ## Proof and provenance references
 
 - `.pudim/oracle/responses/ORACLE-FC-20260604T-tao-principal-only-no-go-response.md`
 - `.pudim/oracle/responses/ORACLE-OS-20260604T-tao-principal-only-no-go-student-response.md`
 - `.pudim/raw/student/20260604T-tao-principal-only-no-go.md`
 - `.pudim/wiki/notes/tao-principal-only-no-go.md`
+
+## Proof source health
+
+_No extractable public proof fragment was found for this proved theorem-like node._
+
+- .pudim/raw/student/20260604T-tao-principal-only-no-go.md: not a public proof-fragment source
+- .pudim/wiki/notes/tao-principal-only-no-go.md: not a public proof-fragment source
 
 ## Do not claim
 

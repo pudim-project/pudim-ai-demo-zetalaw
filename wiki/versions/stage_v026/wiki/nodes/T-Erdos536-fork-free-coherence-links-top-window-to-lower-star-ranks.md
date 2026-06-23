@@ -4,7 +4,7 @@ type: "theorem"
 title: "Erdos 536 fork free coherence links top windows to lower star ranks excluding predecessor obstruction"
 status: "open"
 tags: ["erdos-536", "fork-free-coherence", "lower-star-rank", "open", "predecessor-obstruction", "theorem", "top-window"]
-parents: ["T-Erdos536-star-fiber-union-occupied-top-density"]
+parents: ["T-Erdos536-partial-predecessor-window-fork-theorem", "T-Erdos536-sparse-predecessor-layer-mass-collapse"]
 refs: ["attack-plans/AP-20260531T203012-erdos536-predecessor-obstruction.json", "librarian/audits/LA-20260531T203012-erdos536-predecessor-obstruction-attack-plan.json", "raw/student/20260531T202634-erdos536-locally-unique-centers.md", "theory/nodes/T-Erdos536-linear-window-predecessor-star-code-avoids-pushforward.json", "theory/nodes/T-Erdos536-nondegenerate-lower-rank-stars-hit-top-code.json", "theory/nodes/T-Erdos536-star-fiber-union-occupied-top-density.json"]
 ---
 
@@ -16,7 +16,8 @@ Fork-free coherence theorem linking top windows to lower-star ranks: every posit
 
 ## Dependencies
 
-- [[wiki/nodes/T-Erdos536-star-fiber-union-occupied-top-density|Erdos 536 occupied top density for unions of threshold sharp star fibers]]
+- [[wiki/nodes/T-Erdos536-partial-predecessor-window-fork-theorem|Erdos 536 partial predecessor rank window density forces fork or nondegenerate lower ranks]]
+- [[wiki/nodes/T-Erdos536-sparse-predecessor-layer-mass-collapse|Erdos 536 sparse predecessor layer alternative collapses to zero prime biased mass]]
 
 ## Proof and provenance references
 

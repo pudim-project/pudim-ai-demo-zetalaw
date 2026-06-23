@@ -2,11 +2,12 @@
 
 Back to [[Home]].
 
-Snapshot: `stage_v025`.
+Snapshot: `stage_v026`.
 
 ## Entry Points
 
 - [[wiki/nodes/C-Dedekind-ideal-antichain-Erdos-tail-bound|Ideal-antichain Erdos tail bound over a fixed number field]] corollary (proved)
+- [[wiki/nodes/C-PD-Copulas-AllDimensions-Lambda-LeMinusOne|Pearse-Bondell PD copulas in all dimensions for lambda <= -1]] corollary (proved)
 - [[wiki/nodes/T-Tao-Sendov-root-adaptive-positive-gap|Tao-Sendov root-adaptive positive gap]] corollary (proved)
 - [[wiki/nodes/C-Tao-Sendov-tangent-cluster-uniform-margin|Tao-Sendov tangent-cluster uniform margin]] corollary (proved)
 - [[wiki/nodes/T-Not-BBL-DeterminantalStable-LoewnerConverse|BBL determinantal stable Loewner converse is false]] counterexample (proved)
@@ -40,6 +41,7 @@ Snapshot: `stage_v025`.
 - [[wiki/nodes/D-Modular-residue-successor-entropy|Modular residue distribution and successor entropy]] definition (proved)
 - [[wiki/nodes/D-Mohle-BlockCounting-Problem63-Language|Mohle block-counting Problem 6.3 language]] definition (proved)
 - [[wiki/nodes/D-Nantomah-pBeta-2018|Nantomah generalized Nielsen beta function]] definition (proved)
+- [[wiki/nodes/D-Power-Divergence-Generator-Pearse-Bondell|Pearse-Bondell power-divergence generator]] definition (proved)
 - [[wiki/nodes/D-PolyDoubleGamma-Derivative-Hankel-Matrix|Poly-double-gamma derivative Hankel matrix]] definition (proved)
 - [[wiki/nodes/D-Qi-Convolution-LowerBound-Language|Qi log-concave convolution lower-bound language]] definition (proved)
 - [[wiki/nodes/D-RSS-UniversalConvexity-TClass-Language|RSS universal convexity and T-class language]] definition (proved)
@@ -48,6 +50,7 @@ Snapshot: `stage_v025`.
 - [[wiki/nodes/D-SangalSwaminathan-Komatu-Problem2-Literal|Sangal-Swaminathan printed Komatu Problem 2 vocabulary]] definition (proved)
 - [[wiki/nodes/D-SnakePolynomial-Chebyshev-Language|Snake polynomials and Chebyshev-expansion language]] definition (proved)
 - [[wiki/nodes/D-NExtremal-Endpoint-AB-Language|Special N-extremal endpoint A/B language]] definition (proved)
+- [[wiki/nodes/D-PD-Strict-Inverse-Lambda-LeMinusOne|Strict inverse in the Pearse-Bondell lambda <= -1 range]] definition (proved)
 - [[wiki/nodes/D-Tail-zeta-partition-function|Tail zeta partition function]] definition (proved)
 - [[wiki/nodes/D-TricomiPsi-StandardIntegralRepresentation|Tricomi Psi standard Laplace integral representation]] definition (proved)
 - [[wiki/nodes/D-ScalarPowerMean-2Point|Two-point scalar power means]] definition (proved)
@@ -108,8 +111,10 @@ Snapshot: `stage_v025`.
 - [[wiki/nodes/L-LP-OneFactor-Exponential-Atom|One-factor exponential atom is Laguerre-Polya]] lemma (proved)
 - [[wiki/nodes/L-OppositeOrder-LogDet-Chebyshev|Opposite-order log-determinant Chebyshev inequality]] lemma (proved)
 - [[wiki/nodes/B-Mohle-OrderedPair-Simplex-Domination|Ordered-pair simplex domination]] lemma (proved)
+- [[wiki/nodes/L-PD-Inverse-ODE|Pearse-Bondell inverse ODE]] lemma (proved)
 - [[wiki/nodes/L-CM-Pointwise-SecondDerivative-Obstruction|Pointwise second derivative obstruction to complete monotonicity]] lemma (proved)
 - [[wiki/nodes/L-Mellin-Moment-Kernel-STP-InfiniteSupport|Positive Mellin moment kernels with infinite support are strictly totally positive]] lemma (proved)
+- [[wiki/nodes/L-Positive-Generalized-Power-Series-Flow-Closure|Positive generalized-power-series flow closure]] lemma (proved)
 - [[wiki/nodes/L-PositiveWronskians-ECT-Determinants|Positive initial Wronskians imply strict ECT evaluation determinants]] lemma (proved)
 - [[wiki/nodes/L-PositiveStable-NegativeMoment|Positive stable negative moment formula]] lemma (proved)
 - [[wiki/nodes/L-ProjectionDPP-Covariance-Laplacian|Projection-DPP covariance Laplacian]] lemma (proved)
@@ -253,6 +258,7 @@ Snapshot: `stage_v025`.
 - [[wiki/nodes/O-DBNKernel-PolyaFrequency-PF4-PF5-Certificate|de Bruijn-Newman kernel Polya-frequency PF4/PF5 certificate problem]] open_problem (open)
 - [[wiki/nodes/O-QGamma-HankelKernel-STPInfinity-source-gate|q-gamma Hankel kernel strict total positivity source gate]] open_problem (open)
 - [[wiki/nodes/O-JonckheereShneer-Equation16-NonCM-Solution-source-gate|Jonckheere-Shneer equation (16) non-CM solution question]] open_problem (proved)
+- [[wiki/nodes/O-PearseBondell-PowerDivergence-InverseCM-source-gate|Pearse-Bondell power-divergence inverse complete-monotonicity source gate]] open_problem (proved)
 - [[wiki/nodes/O-Popa-Tao-M4-selfcommutator-spectral-radius-classification|O-Popa-Tao-M4-selfcommutator-spectral-radius-classification]] open_problem (resolved)
 - [[wiki/nodes/O-Tao-Sendov-below-boundary-second-order-crossing|O-Tao-Sendov-below-boundary-second-order-crossing]] open_problem (resolved)
 - [[wiki/nodes/O-Tao-Sendov-check-q-ge-r-in-original-reduction|O-Tao-Sendov-check-q-ge-r-in-original-reduction]] open_problem (resolved)
@@ -758,6 +764,7 @@ Snapshot: `stage_v025`.
 - [[wiki/nodes/T-not-Tao-Sendov-uniform-root-gap-away-from-unit-circle|No uniform Tao-Sendov tangent-cluster root gap away from the unit circle]] theorem (proved)
 - [[wiki/nodes/T-Q2-op4-reduction-n2|OP4 solved except n=2 exact lower endpoint unresolved]] theorem (proved)
 - [[wiki/nodes/B-OppositeOrder-CompressionDeterminant-Transfer|Opposite-order compression determinant transfer]] theorem (proved)
+- [[wiki/nodes/T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne|Pearse-Bondell inverse complete monotonicity for all lambda <= -1]] theorem (proved)
 - [[wiki/nodes/T-PolyDoubleGamma-Hankel-Matrix-Inertia|Poly-double-gamma derivative Hankel matrix has fixed inertia]] theorem (proved)
 - [[wiki/nodes/T-Polymath15-quartic-backward-heat-certificate|Polymath15 quartic backward-heat certificate]] theorem (proved)
 - [[wiki/nodes/T-Polynomial-root-logderivative-localization-principle|Polynomial root and logarithmic-derivative localization principle]] theorem (proved)

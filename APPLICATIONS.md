@@ -1,7 +1,7 @@
 # Applications Changelog
 
 This changelog records staged applications of the theory to externally stated problems and strict APP-level rolling candidates. Contact/review notes are intentionally minimal.
-`APP-0001`--`APP-0091` appear in `theory/latest/THEORY.tex` under the manuscript
+`APP-0001`--`APP-0092` appear in `theory/latest/THEORY.tex` under the manuscript
 `Applications` section and in the corresponding theorem names.
 
 | id | date | stated problem | solution | status | review |
@@ -97,6 +97,7 @@ This changelog records staged applications of the theory to externally stated pr
 | APP-0089 | 2026-06-22 | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | Nantomah generalized Nielsen beta normalized derivative complete-monotonicity problem is false | Solved | no contact |
 | APP-0090 | 2026-06-22 | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | Sangal-Swaminathan printed Komatu Caratheodory Problem 2 has empty literal parameter set | Solved | no contact |
 | APP-0091 | 2026-06-23 | Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution | Jonckheere-Shneer equation (16) has a deterministic-scale non-CM Weibull tail solution | Solved | no contact |
+| APP-0092 | 2026-06-23 | Pearse--Bondell Section 3.8 power-divergence inverse complete-monotonicity conjecture | Pearse-Bondell power-divergence inverse complete-monotonicity conjecture is true | Solved | no contact |
 
 ## Application Details
 
@@ -1377,4 +1378,19 @@ Resolve the source problem recorded for APP-0090: Sangal-Swaminathan printed Kom
 
 #### Stated problem
 
-Resolve the literal equation-(16) question recorded for APP-0091: whether Jonckheere and Shneer's transformed front-propagation equation admits a non-increasing solution that is not completely monotone. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v022/THEORY_v022.tex`.
+Resolve the literal equation-(16) question recorded for APP-0091: whether Jonckheere and Shneer's transformed front-propagation equation admits a non-increasing solution that is not completely monotone. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v025/THEORY_v025.tex`.
+
+### APP-0092: Pearse-Bondell power-divergence inverse complete-monotonicity conjecture is true
+
+- source reference: Alan R. Pearse and Howard Bondell, Power-divergence copulas: A new class of Archimedean copulas, with an insurance application, arXiv:2510.06177, Section 3.8 conjecture. https://arxiv.org/abs/2510.06177
+- solution: Pearse-Bondell power-divergence inverse complete-monotonicity conjecture is true
+- solution status: Solved
+- solution node: `wiki/nodes/T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne.md`
+- theory version: `v026`
+- stage: `stage_v026`
+- review status: no contact
+- dependencies: `D-Complete-monotonicity-Bernstein-Stieltjes-language`, `D-Power-Divergence-Generator-Pearse-Bondell`, `D-PD-Strict-Inverse-Lambda-LeMinusOne`, `L-PD-Inverse-ODE`, `L-Positive-Generalized-Power-Series-Flow-Closure`, `T-positive-Laplace-kernel-complete-monotonicity-principle`
+
+#### Stated problem
+
+Pearse and Bondell ask for the missing proof that, for the power-divergence generator \(\phi_\lambda\), every inverse \(\phi_\lambda^{-1}\) with \(\lambda\le -1\) is completely monotone. The complete public statement and proof are staged in `theory/latest/THEORY.tex` and `theory/versions/v026/THEORY_v026.tex`.

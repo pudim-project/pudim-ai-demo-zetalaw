@@ -1,8 +1,8 @@
 {
   "schema_version": "public_wiki_v1",
-  "stage_id": "stage_v025",
-  "theory_version": "v025",
-  "generated_at": "2026-06-23T03:40:04Z",
+  "stage_id": "stage_v026",
+  "theory_version": "v026",
+  "generated_at": "2026-06-23T04:11:15Z",
   "source_public_snapshot": "wiki/latest",
   "nodes": [
     {
@@ -19,6 +19,24 @@
         "T-Dedekind-ideal-von-Mangoldt-chain-invariant-weight",
         "L-Dedekind-zeta-invariant-weight-tail-asymptotic",
         "T-Finite-combinatorial-packing-shadow-principle"
+      ]
+    },
+    {
+      "id": "C-PD-Copulas-AllDimensions-Lambda-LeMinusOne",
+      "title": "Pearse-Bondell PD copulas in all dimensions for lambda <= -1",
+      "type": "corollary",
+      "status": "proved",
+      "file": "wiki/nodes/C-PD-Copulas-AllDimensions-Lambda-LeMinusOne.md",
+      "tags": [
+        "app-0092",
+        "archimedean-copula",
+        "corollary",
+        "proved",
+        "source-consequence",
+        "true"
+      ],
+      "parents": [
+        "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne"
       ]
     },
     {
@@ -647,6 +665,25 @@
       ]
     },
     {
+      "id": "D-Power-Divergence-Generator-Pearse-Bondell",
+      "title": "Pearse-Bondell power-divergence generator",
+      "type": "definition",
+      "status": "proved",
+      "file": "wiki/nodes/D-Power-Divergence-Generator-Pearse-Bondell.md",
+      "tags": [
+        "app-0092-bridge",
+        "archimedean-copula",
+        "definition",
+        "power-divergence",
+        "proved",
+        "source-vocabulary",
+        "true"
+      ],
+      "parents": [
+        "D-Complete-monotonicity-Bernstein-Stieltjes-language"
+      ]
+    },
+    {
       "id": "D-PolyDoubleGamma-Derivative-Hankel-Matrix",
       "title": "Poly-double-gamma derivative Hankel matrix",
       "type": "definition",
@@ -797,6 +834,24 @@
         "source-vocabulary"
       ],
       "parents": []
+    },
+    {
+      "id": "D-PD-Strict-Inverse-Lambda-LeMinusOne",
+      "title": "Strict inverse in the Pearse-Bondell lambda <= -1 range",
+      "type": "definition",
+      "status": "proved",
+      "file": "wiki/nodes/D-PD-Strict-Inverse-Lambda-LeMinusOne.md",
+      "tags": [
+        "app-0092-bridge",
+        "definition",
+        "power-divergence",
+        "proved",
+        "strict-inverse",
+        "true"
+      ],
+      "parents": [
+        "D-Power-Divergence-Generator-Pearse-Bondell"
+      ]
     },
     {
       "id": "D-Tail-zeta-partition-function",
@@ -2046,6 +2101,26 @@
       ]
     },
     {
+      "id": "L-PD-Inverse-ODE",
+      "title": "Pearse-Bondell inverse ODE",
+      "type": "lemma",
+      "status": "proved",
+      "file": "wiki/nodes/L-PD-Inverse-ODE.md",
+      "tags": [
+        "app-0092-bridge",
+        "bridge",
+        "inverse-ode",
+        "lemma",
+        "power-divergence",
+        "proved",
+        "true"
+      ],
+      "parents": [
+        "D-Power-Divergence-Generator-Pearse-Bondell",
+        "D-PD-Strict-Inverse-Lambda-LeMinusOne"
+      ]
+    },
+    {
       "id": "L-CM-Pointwise-SecondDerivative-Obstruction",
       "title": "Pointwise second derivative obstruction to complete monotonicity",
       "type": "lemma",
@@ -2087,6 +2162,28 @@
         "L-Generalized-Vandermonde-Chebyshev-StrictSign",
         "D-Determinant-triangular-compression-language",
         "T-Triangular-Positive-Coefficient-Extraction-Compression-20260608"
+      ]
+    },
+    {
+      "id": "L-Positive-Generalized-Power-Series-Flow-Closure",
+      "title": "Positive generalized-power-series flow closure",
+      "type": "lemma",
+      "status": "proved",
+      "file": "wiki/nodes/L-Positive-Generalized-Power-Series-Flow-Closure.md",
+      "tags": [
+        "app-0092-bridge",
+        "bridge",
+        "derivative-chain",
+        "generalized-power-series",
+        "lemma",
+        "positive-coefficients",
+        "primitive-candidate",
+        "proved",
+        "true"
+      ],
+      "parents": [
+        "D-Complete-monotonicity-Bernstein-Stieltjes-language",
+        "T-positive-Laplace-kernel-complete-monotonicity-principle"
       ]
     },
     {
@@ -5347,6 +5444,34 @@
       ],
       "parents": [
         "D-Complete-monotonicity-Bernstein-Stieltjes-language"
+      ]
+    },
+    {
+      "id": "O-PearseBondell-PowerDivergence-InverseCM-source-gate",
+      "title": "Pearse-Bondell power-divergence inverse complete-monotonicity source gate",
+      "type": "open_problem",
+      "status": "proved",
+      "file": "wiki/nodes/O-PearseBondell-PowerDivergence-InverseCM-source-gate.md",
+      "tags": [
+        "app-0092-bridge",
+        "app-0092-candidate",
+        "archimedean-copula",
+        "complete-monotonicity",
+        "derivative-chain",
+        "open_problem",
+        "oracle-repaired",
+        "pearse-bondell",
+        "power-divergence",
+        "proved",
+        "source-gate",
+        "source-open-solved",
+        "true"
+      ],
+      "parents": [
+        "D-Complete-monotonicity-Bernstein-Stieltjes-language",
+        "T-positive-Laplace-kernel-complete-monotonicity-principle",
+        "T-log-function-signed-derivative-tail-vanishing",
+        "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne"
       ]
     },
     {
@@ -14941,6 +15066,29 @@
       "parents": [
         "L-OppositeOrder-LogDet-Chebyshev",
         "D-Determinant-triangular-compression-language"
+      ]
+    },
+    {
+      "id": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "title": "Pearse-Bondell inverse complete monotonicity for all lambda <= -1",
+      "type": "theorem",
+      "status": "proved",
+      "file": "wiki/nodes/T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne.md",
+      "tags": [
+        "app-0092",
+        "archimedean-copula",
+        "complete-monotonicity",
+        "power-divergence",
+        "proved",
+        "source-open-solved",
+        "strict-app-candidate",
+        "theorem",
+        "true"
+      ],
+      "parents": [
+        "D-PD-Strict-Inverse-Lambda-LeMinusOne",
+        "L-PD-Inverse-ODE",
+        "L-Positive-Generalized-Power-Series-Flow-Closure"
       ]
     },
     {
@@ -26557,6 +26705,36 @@
       "relation": "uses"
     },
     {
+      "source": "C-PD-Copulas-AllDimensions-Lambda-LeMinusOne",
+      "target": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "relation": "uses"
+    },
+    {
+      "source": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "target": "O-PearseBondell-PowerDivergence-InverseCM-source-gate",
+      "relation": "implies"
+    },
+    {
+      "source": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "target": "L-PD-Inverse-ODE",
+      "relation": "uses"
+    },
+    {
+      "source": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "target": "L-Positive-Generalized-Power-Series-Flow-Closure",
+      "relation": "uses"
+    },
+    {
+      "source": "L-PD-Inverse-ODE",
+      "target": "D-PD-Strict-Inverse-Lambda-LeMinusOne",
+      "relation": "uses"
+    },
+    {
+      "source": "D-PD-Strict-Inverse-Lambda-LeMinusOne",
+      "target": "D-Power-Divergence-Generator-Pearse-Bondell",
+      "relation": "uses"
+    },
+    {
       "source": "L-PSD-Minor-Obstructs-TN",
       "target": "B-Cutoff-Column-Against-CorankOne-Gram",
       "relation": "implies"
@@ -26712,6 +26890,11 @@
       "relation": "implies"
     },
     {
+      "source": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "target": "C-PD-Copulas-AllDimensions-Lambda-LeMinusOne",
+      "relation": "implies"
+    },
+    {
       "source": "O-AlzerBerg-EulerLimit-palphabeta-CM-source-gate",
       "target": "D-AlzerBerg-EulerLimit-palphabeta-Language",
       "relation": "implies"
@@ -26827,6 +27010,11 @@
       "relation": "implies"
     },
     {
+      "source": "D-Power-Divergence-Generator-Pearse-Bondell",
+      "target": "D-PD-Strict-Inverse-Lambda-LeMinusOne",
+      "relation": "implies"
+    },
+    {
       "source": "O-PolyDoubleGamma-HankelSpectralBehavior-source-gate",
       "target": "D-PolyDoubleGamma-Derivative-Hankel-Matrix",
       "relation": "implies"
@@ -26834,6 +27022,11 @@
     {
       "source": "D-Determinant-triangular-compression-language",
       "target": "D-PolyDoubleGamma-Derivative-Hankel-Matrix",
+      "relation": "implies"
+    },
+    {
+      "source": "D-Complete-monotonicity-Bernstein-Stieltjes-language",
+      "target": "D-Power-Divergence-Generator-Pearse-Bondell",
       "relation": "implies"
     },
     {
@@ -27122,6 +27315,16 @@
       "relation": "implies"
     },
     {
+      "source": "D-Power-Divergence-Generator-Pearse-Bondell",
+      "target": "L-PD-Inverse-ODE",
+      "relation": "implies"
+    },
+    {
+      "source": "D-PD-Strict-Inverse-Lambda-LeMinusOne",
+      "target": "L-PD-Inverse-ODE",
+      "relation": "implies"
+    },
+    {
       "source": "D-Determinant-triangular-compression-language",
       "target": "L-PFSequence-Annulus-Translate-Independence",
       "relation": "implies"
@@ -27129,6 +27332,16 @@
     {
       "source": "D-TNKernel-FiniteOrder",
       "target": "L-PFSequence-Annulus-Translate-Independence",
+      "relation": "implies"
+    },
+    {
+      "source": "D-Complete-monotonicity-Bernstein-Stieltjes-language",
+      "target": "L-Positive-Generalized-Power-Series-Flow-Closure",
+      "relation": "implies"
+    },
+    {
+      "source": "T-positive-Laplace-kernel-complete-monotonicity-principle",
+      "target": "L-Positive-Generalized-Power-Series-Flow-Closure",
       "relation": "implies"
     },
     {
@@ -27719,6 +27932,21 @@
     {
       "source": "T-Exact-finite-certificate-verification-principle",
       "target": "O-Nantomah-pBeta-NormalizedDerivativeCM-source-gate",
+      "relation": "implies"
+    },
+    {
+      "source": "D-Complete-monotonicity-Bernstein-Stieltjes-language",
+      "target": "O-PearseBondell-PowerDivergence-InverseCM-source-gate",
+      "relation": "implies"
+    },
+    {
+      "source": "T-positive-Laplace-kernel-complete-monotonicity-principle",
+      "target": "O-PearseBondell-PowerDivergence-InverseCM-source-gate",
+      "relation": "implies"
+    },
+    {
+      "source": "T-log-function-signed-derivative-tail-vanishing",
+      "target": "O-PearseBondell-PowerDivergence-InverseCM-source-gate",
       "relation": "implies"
     },
     {
@@ -28797,6 +29025,21 @@
       "relation": "implies"
     },
     {
+      "source": "D-PD-Strict-Inverse-Lambda-LeMinusOne",
+      "target": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "relation": "implies"
+    },
+    {
+      "source": "L-PD-Inverse-ODE",
+      "target": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "relation": "implies"
+    },
+    {
+      "source": "L-Positive-Generalized-Power-Series-Flow-Closure",
+      "target": "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne",
+      "relation": "implies"
+    },
+    {
       "source": "O-PFSeq-TP-Density-source-gate",
       "target": "T-PFSeq-TP-Density-DiscreteGaussian",
       "relation": "implies"
@@ -28978,27 +29221,27 @@
     }
   ],
   "counts": {
-    "nodes": 995,
-    "edges": 1834,
+    "nodes": 1002,
+    "edges": 1853,
     "by_type": {
-      "corollary": 3,
+      "corollary": 4,
       "counterexample": 2,
-      "definition": 46,
+      "definition": 48,
       "example": 1,
-      "lemma": 82,
+      "lemma": 84,
       "negative_result": 4,
       "obstruction": 1,
       "obstruction_lemma": 1,
       "obstruction_theorem": 1,
-      "open_problem": 110,
+      "open_problem": 111,
       "proposition": 3,
-      "theorem": 740,
+      "theorem": 741,
       "theorem_import": 1
     },
     "by_status": {
       "accepted_local_node": 1,
       "open": 351,
-      "proved": 628,
+      "proved": 635,
       "proved_local": 11,
       "resolved": 4
     }

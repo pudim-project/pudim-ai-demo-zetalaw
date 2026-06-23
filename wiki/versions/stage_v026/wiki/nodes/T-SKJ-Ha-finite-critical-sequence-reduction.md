@@ -4,7 +4,7 @@ type: "theorem"
 title: "SKJ CM threshold equals limit of certified finite derivative obstruction sequence"
 status: "open"
 tags: ["attack-plan", "derivative-recursion", "finite-obstruction", "open", "parameter-threshold", "stronger", "theorem"]
-parents: ["T-SKJ-power-exponential-CM-threshold"]
+parents: []
 refs: ["attack-plans/AP-20260528T003000-skj-power-exponential.json", "librarian/audits/LA-20260528T003000-skj-attack-plan.json", "wiki/notes/frontier-skj-power-exponential-cm-threshold.md"]
 ---
 
@@ -13,10 +13,6 @@ refs: ["attack-plans/AP-20260528T003000-skj-power-exponential.json", "librarian/
 ## Statement
 
 The SKJ threshold is determined by a rigorously defined decreasing sequence of finite-derivative obstruction values \(a_n\), where each \(a_n\) is certified by a double-root condition for \((-1)^n\partial_x^nH_a(x)\), and \(H_a\) is completely monotonic exactly for \(0\le a\le\lim_n a_n\).
-
-## Dependencies
-
-- [[wiki/nodes/T-SKJ-power-exponential-CM-threshold|determine a parameter set where H_a=e^a-(1+a/x)^x is completely monotonic on (0,infty)]]
 
 ## Proof and provenance references
 

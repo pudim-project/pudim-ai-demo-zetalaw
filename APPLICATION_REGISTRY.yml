@@ -1,5 +1,5 @@
 schema_version: 1
-generated_at: "2026-06-23T00:56:00Z"
+generated_at: "2026-06-23T04:10:55Z"
 applications:
   - app_id: "APP-0001"
     app_name: "Alzer-Kwong convexity and concavity problem"
@@ -1672,6 +1672,29 @@ applications:
       - "D-Complete-monotonicity-Bernstein-Stieltjes-language"
       - "D-Endpoint-obstruction-certificate-language"
       - "T-Special-function-normal-form-calculus-principle"
+    aliases: []
+    supersedes: []
+    superseded_by: []
+    family_id: ""
+    family_name: ""
+  - app_id: "APP-0092"
+    app_name: "Pearse-Bondell power-divergence inverse complete-monotonicity conjecture is true"
+    created_at: "2026-06-23"
+    canonical: true
+    registry_status: "active"
+    publicly_referenced: true
+    source_status: "source_open"
+    reference: "Alan R. Pearse and Howard Bondell, Power-divergence copulas: A new class of Archimedean copulas, with an insurance application, arXiv:2510.06177, Section 3.8 conjecture. https://arxiv.org/abs/2510.06177"
+    mechanism_group: "Complete-monotonicity derivative-chain transport"
+    render_class: "atlas"
+    proof_node: "T-PD-Inverse-Complete-Monotonicity-All-Lambda-LeMinusOne"
+    dependencies:
+      - "D-Complete-monotonicity-Bernstein-Stieltjes-language"
+      - "D-Power-Divergence-Generator-Pearse-Bondell"
+      - "D-PD-Strict-Inverse-Lambda-LeMinusOne"
+      - "L-PD-Inverse-ODE"
+      - "L-Positive-Generalized-Power-Series-Flow-Closure"
+      - "T-positive-Laplace-kernel-complete-monotonicity-principle"
     aliases: []
     supersedes: []
     superseded_by: []
