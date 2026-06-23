@@ -6,4 +6,4 @@ The generated wiki is intentionally documented inside `wiki/README.md`. For Obsi
 
 Read node statuses conservatively: `proved` means locally audited with a proof in the node; `open`, `partial`, and `conjectural` are frontier material; application candidates are not solved claims.
 
-Current immutable snapshots live under `theory/versions/v030/` and `wiki/versions/stage_v030/`.
+Current immutable snapshots live under `theory/versions/v031/` and `wiki/versions/stage_v031/`.

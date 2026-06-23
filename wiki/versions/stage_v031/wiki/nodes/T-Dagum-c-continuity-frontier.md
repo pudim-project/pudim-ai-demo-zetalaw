@@ -1,0 +1,26 @@
+---
+id: "T-Dagum-c-continuity-frontier"
+type: "theorem"
+title: "Dagum complete monotonicity threshold c beta continuity conjecture on one two"
+status: "open"
+tags: ["complete-monotonicity", "dagum", "fresh-forage", "open", "open-problem", "theorem", "threshold"]
+parents: []
+refs: ["librarian/audits/LA-20260529T-next-loop-dagum-cm-student.json", "raw/oracle/ORACLE-FI-20260529T-next-loop-025-force.md", "scout/forage/responses/FR-20260529T-next-loop-025-oracle-response.md", "wiki/notes/frontier-dagum-cm-threshold.md"]
+---
+
+# Theorem: Dagum complete monotonicity threshold c beta continuity conjecture on one two
+
+## Statement
+
+For the Dagum complete-monotonicity threshold \(c(\beta)=\inf\{\alpha\ge0:x^{-\alpha}(1+x^\beta)^{-1}\in CM\}\) on \([1,2]\), prove the source conjecture that \(c\) is continuous.
+
+## Proof and provenance references
+
+- `librarian/audits/LA-20260529T-next-loop-dagum-cm-student.json`
+- `raw/oracle/ORACLE-FI-20260529T-next-loop-025-force.md`
+- `scout/forage/responses/FR-20260529T-next-loop-025-oracle-response.md`
+- `wiki/notes/frontier-dagum-cm-threshold.md`
+
+## Tags
+
+`complete-monotonicity`, `dagum`, `fresh-forage`, `open`, `open-problem`, `theorem`, `threshold`
