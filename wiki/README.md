@@ -5,11 +5,11 @@ This folder is the public wiki surface for the staged theory. It is intentionall
 ## Layout
 
 - `latest/`: mutable latest public wiki vault for the current staged theory.
-- `versions/stage_v028/`: immutable wiki snapshot matching theory `v028`.
+- `versions/stage_v029/`: immutable wiki snapshot matching theory `v029`.
 - `versions/stage_v001/`--`versions/stage_v006/`: legacy immutable wiki snapshots.
 - Each vault contains `Home.md`, `GOAL.md`, `STATUS.md`, `STRATEGY.md`, `wiki/index.md`, `wiki/graph.json`, and `wiki/nodes/`.
 
-Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v028/wiki/nodes/` for the current immutable snapshot. The file `T-Tao-Sawin-Weyl-l1-exact-minimum.md`, for example, lives at `wiki/latest/wiki/nodes/T-Tao-Sawin-Weyl-l1-exact-minimum.md`.
+Direct node paths are `wiki/latest/wiki/nodes/` for the latest vault and `wiki/versions/stage_v029/wiki/nodes/` for the current immutable snapshot. The file `T-Tao-Sawin-Weyl-l1-exact-minimum.md`, for example, lives at `wiki/latest/wiki/nodes/T-Tao-Sawin-Weyl-l1-exact-minimum.md`.
 
 ## Open In Obsidian
 

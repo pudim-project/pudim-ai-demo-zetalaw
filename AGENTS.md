@@ -8,4 +8,4 @@ Use rendered Markdown LaTeX delimiters in public docs: `\(...\)` for inline math
 
 Do not infer private contact data from public review notes. Contact ledgers, raw logs, Oracle transcripts, and Gmail payloads are intentionally not published.
 
-The latest staged theory snapshot is `stage_v028`; the public wiki vault points at the matching wiki snapshot.
+The latest staged theory snapshot is `stage_v029`; the public wiki vault points at the matching wiki snapshot.
