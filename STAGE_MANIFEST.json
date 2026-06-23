@@ -1,11 +1,11 @@
 {
-  "stage_id": "stage_v033",
-  "theory_version": "v033",
+  "stage_id": "stage_v034",
+  "theory_version": "v034",
   "authors": [
     "Domingos S. P. Salazar",
     "Pudim AI"
   ],
-  "created_at": "2026-06-23T07:44:41Z",
+  "created_at": "2026-06-23T07:56:30Z",
   "source_root": ".",
   "status": "pdf_compiled",
   "public_scope": "public_repo",
@@ -15,8 +15,8 @@
   "case_study_count": 6,
   "previous_tex": "theory/latest/THEORY.tex",
   "previous_spec": "",
-  "latex_path": "theory/versions/v033/THEORY_v033.tex",
-  "pdf_path": "theory/versions/v033/THEORY_v033.pdf",
+  "latex_path": "theory/versions/v034/THEORY_v034.tex",
+  "pdf_path": "theory/versions/v034/THEORY_v034.pdf",
   "latest_pdf_path": "theory/latest/THEORY.pdf",
   "spec_path": "",
   "latest_spec_path": "",
@@ -57,7 +57,7 @@
   "audit": {
     "issues": []
   },
-  "wiki_snapshot_path": "wiki/versions/stage_v033",
+  "wiki_snapshot_path": "wiki/versions/stage_v034",
   "wiki_latest_path": "wiki/latest",
   "wiki_node_count": 1003,
   "wiki_edge_count": 1856,
