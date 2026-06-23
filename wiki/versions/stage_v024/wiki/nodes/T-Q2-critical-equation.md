@@ -4,7 +4,7 @@ type: "theorem"
 title: "exists xi in bracket with Q2(xi)>4629/2000 and critical equation G(xi)=0"
 status: "proved"
 tags: ["critical-point", "derivative-certificate", "proved", "theorem"]
-parents: []
+parents: ["T-Exact-finite-certificate-verification-principle"]
 refs: ["wiki/latest/wiki/nodes/mrw-a3170d192f6c.md"]
 ---
 
@@ -14,9 +14,19 @@ refs: ["wiki/latest/wiki/nodes/mrw-a3170d192f6c.md"]
 
 There is \(\xi\in(1409/5000,293/1000)\) such that \(Q_2(\xi)>4629/2000\) and \(\xi\log\xi\,\Lambda(\xi)=\log R(\xi)\).
 
+## Dependencies
+
+- [[wiki/nodes/T-Exact-finite-certificate-verification-principle|Exact finite certificate verification principle]]
+
 ## Proof and provenance references
 
 - `wiki/latest/wiki/nodes/mrw-a3170d192f6c.md`
+
+## Proof source health
+
+_No extractable public proof fragment was found for this proved theorem-like node._
+
+- wiki/latest/wiki/nodes/mrw-a3170d192f6c.md: not a public proof-fragment source
 
 ## Tags
 

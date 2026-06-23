@@ -4,7 +4,7 @@ type: "theorem"
 title: "Bazhlekova two term gap universal wt positivity failure"
 status: "open"
 tags: ["attack-plan", "bazhlekova", "bernstein-functions", "complete-monotonicity", "open", "theorem", "two-term-gap"]
-parents: ["T-Bazhlekova-general-two-term-gap-open"]
+parents: ["T-Bazhlekova-inner-gap-universal-odd-derivative-obstruction"]
 refs: ["attack-plans/AP-20260601T013500-bazhlekova-two-term-gap-universal.json", "librarian/audits/LA-20260601T013500-bazhlekova-two-term-gap-universal-attack-plan.json", "wiki/notes/frontier-bazhlekova-square-root-bf-gap.md"]
 ---
 
@@ -16,7 +16,7 @@ For every two-term symbol \(g(s)=c s^a+d s^b\), with \(c,d>0\), \(1<a\le2\), \(0
 
 ## Dependencies
 
-- [[wiki/nodes/T-Bazhlekova-general-two-term-gap-open|Bazhlekova general two-term gap a-b>1 positivity package failure remains open]]
+- [[wiki/nodes/T-Bazhlekova-inner-gap-universal-odd-derivative-obstruction|Bazhlekova inner gap universal odd derivative obstruction for square root two term symbol]]
 
 ## Proof and provenance references
 

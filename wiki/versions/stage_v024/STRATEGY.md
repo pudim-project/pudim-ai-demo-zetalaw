@@ -4,15 +4,15 @@ This page is a public routing surface for the current vault. It is not a substit
 
 ## Recent notes
 
+- [[wiki/notes/frontier-ressel-hornich-hlawka-bernstein-vector|frontier-ressel-hornich-hlawka-bernstein-vector]]
+- [[wiki/notes/frontier-karp-zhang-cubic-pochhammer-logconcavity|frontier-karp-zhang-cubic-pochhammer-logconcavity]]
+- [[wiki/notes/frontier-arsinh-square-thorin-bernstein|frontier-arsinh-square-thorin-bernstein]]
+- [[wiki/notes/frontier-das-swaminathan-multiple-gamma-pick-stieltjes|frontier-das-swaminathan-multiple-gamma-pick-stieltjes]]
+- [[wiki/notes/frontier-heatflow-fisher-dfunctional-negativity|frontier-heatflow-fisher-dfunctional-negativity]]
+- [[wiki/notes/frontier-ggps-ml-reciprocal-cm-conjecture25|frontier-ggps-ml-reciprocal-cm-conjecture25]]
+- [[wiki/notes/buric-elezovic-best-b-threshold|buric-elezovic-best-b-threshold]]
+- [[wiki/notes/tao-sawin-weyl-l1-exact-public-proof|tao-sawin-weyl-l1-exact-public-proof]]
 - [[wiki/notes/tao-erdos385-semiprime-gap-implication|tao-erdos385-semiprime-gap-implication]]
 - [[wiki/notes/tao-polymath15-symmetric-quartic-heat-flow|tao-polymath15-symmetric-quartic-heat-flow]]
 - [[wiki/notes/tao-popa-M4-selfcommutator-classification|tao-popa-M4-selfcommutator-classification]]
 - [[wiki/notes/tao-popa-finite-selfcommutator-Mn|tao-popa-finite-selfcommutator-Mn]]
-- [[wiki/notes/tao-sendov-product-root-uniform-stability|tao-sendov-product-root-uniform-stability]]
-- [[wiki/notes/tao-sendov-q-ge-r-relevance|tao-sendov-q-ge-r-relevance]]
-- [[wiki/notes/tao-sendov-below-boundary-second-order-crossing|tao-sendov-below-boundary-second-order-crossing]]
-- [[wiki/notes/tao-sendov-discrete-root-gap-patch|tao-sendov-discrete-root-gap-patch]]
-- [[wiki/notes/tao-sendov-boundary-layer-expansion|tao-sendov-boundary-layer-expansion]]
-- [[wiki/notes/tao-sendov-root-gap-asymptotics-defect|tao-sendov-root-gap-asymptotics-defect]]
-- [[wiki/notes/tao-sendov-root-gap-contour-selection|tao-sendov-root-gap-contour-selection]]
-- [[wiki/notes/tao-sendov-logderivative-stability|tao-sendov-logderivative-stability]]
