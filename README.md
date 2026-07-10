@@ -2,7 +2,61 @@
 
 Powered by the [Pudim AI Project](https://github.com/pudim-project/pudim-project).
 
-This repository contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v036`, staged on 2026-06-23.
+This repository is the public theory and provenance archive behind a series of research papers developed through the Pudim AI / zeta-law program. Its application ledger records the source problems, proof mechanisms, and staged results from which the papers below emerged.
+
+## Papers
+
+### Stable size-biasing and the positive scale-mixture order of generalized Gaussian laws
+
+A complete classification of when one generalized Gaussian law is a positive scale mixture of another, with an explicit factor constructed by size-biasing a positive stable random variable.
+
+**[Read on arXiv](https://arxiv.org/abs/2606.18458)** — Related APPs: `APP-0070` — [application ledger](APPLICATIONS.md)
+
+### A Bessel-zero obstruction to hyperbolic complete monotonicity of noncentral chi-square densities
+
+Determines the exact hyperbolically completely monotone range of the noncentral chi-square family: only the central case survives. The obstruction comes from positive Bessel zeros and the resulting failure of the required coefficient signs.
+
+**[Read on arXiv](https://arxiv.org/abs/2606.22066)** — Related APPs: `APP-0047` — [application ledger](APPLICATIONS.md)
+
+### Bounded Treewidth and Complete Monotonicity for Scott–Sokal Spanning-Tree Polynomials
+
+Proves a bounded-treewidth criterion for complete monotonicity of inverse powers of spanning-tree polynomials, covering partial \(3\)-trees, finite Apollonian networks, \(K_5-e\), and \(W_4\) in the first Scott–Sokal open interval.
+
+**[Read on arXiv](https://arxiv.org/abs/2606.26275)** — Related APPs: `APP-0074`, `APP-0075` — [application ledger](APPLICATIONS.md)
+
+### Order-Moment Transport and Hankel Determinants in Special-Function Inequalities
+
+Turns scalar log-convexity inequalities into all-order Hankel determinant statements through positive moment representations. Applications include the Jackson \(q\)-gamma kernel, the Mills ratio, Tricomi functions, and Coulomb regularization.
+
+**[Read the latest version on arXiv](https://arxiv.org/abs/2606.31647)** — Related APPs: `APP-0012`, `APP-0076`, `APP-0080` — [application ledger](APPLICATIONS.md)
+
+### Strict Total Positivity from Spectral Darboux and Toeplitz Smoothing Mechanisms
+
+Develops two strictification mechanisms: spectral Darboux induction for continuous kernels and Toeplitz smoothing for Pólya-frequency sequences. It proves strict total positivity of the real-order modified-Bessel kernel and a product-topology density theorem for two-sided Pólya-frequency sequences.
+
+**[Read on arXiv](https://arxiv.org/abs/2607.02778)** — Related APPs: `APP-0072`, `APP-0073` — [application ledger](APPLICATIONS.md)
+
+### Bernstein Functions at Work: Coalescents, Copulas, and Subordination
+
+Applies a common Bernstein-function recognition calculus to exchangeable coalescents, Archimedean copulas, stable subordination, renewal sequences, and mixed-Poisson constructions, combining affirmative representation theorems with explicit obstructions.
+
+**[Read on arXiv](https://arxiv.org/abs/2607.04467)** — Related APPs: `APP-0015`, `APP-0051`, `APP-0058`, `APP-0066`, `APP-0069`, `APP-0071`, `APP-0078`, `APP-0084`, `APP-0091`, `APP-0092` — [application ledger](APPLICATIONS.md)
+
+### Riccati Reductions for Modified Bessel Ratios: Bernstein Positivity, Exact Certificates, and Transfer Obstructions
+
+Uses Riccati reductions, canonical products, and exact rational certificates to classify Bernstein positivity for modified-Bessel ratios, settle several monotonicity questions, and produce counterexamples to proposed log-concavity and transfer principles.
+
+**[Read on arXiv](https://arxiv.org/abs/2607.05538)** — Related APPs: `APP-0040`, `APP-0042`, `APP-0043`, `APP-0044`, `APP-0045`, `APP-0056`, `APP-0060`, `APP-0067` — [application ledger](APPLICATIONS.md)
+
+### Determinacy Witnesses in the Completely Monotone–Stieltjes–Bernstein Hierarchy
+
+Organizes positivity and non-positivity questions around uniquely determined Laplace, Stieltjes, and Hausdorff witnesses. Applications include gamma quotients, the Wakrim symbol, the Ramanujan integral, weighted shifts, and Hausdorff-moment obstructions.
+
+**Submitted to arXiv; public identifier pending.** — Related APPs: `APP-0014`, `APP-0017`, `APP-0019`, `APP-0021`, `APP-0024`, `APP-0031`, `APP-0033`, `APP-0054`, `APP-0082`, `APP-0083`, `APP-0085` — [application ledger](APPLICATIONS.md)
+
+## Research Archive
+
+This repository also contains the public staged theory for the zetalaw-demov2 research track. The latest snapshot is `THEORY_v036`, staged on 2026-06-23.
 
 ## Public Theory
 
